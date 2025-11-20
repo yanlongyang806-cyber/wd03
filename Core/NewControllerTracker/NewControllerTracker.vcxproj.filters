@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\CrossRoads\Common\accountCommon.c" />
+    <ClCompile Include="AccountTokenParsing.c" />
+    <ClCompile Include="AutoGen\NewControllerTracker_AutoGen_1.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoGen\NewControllerTracker_AutoGen_2.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="NewControllerTracker.c" />
+    <ClCompile Include="NewControllerTracker_AlertTrackers.c" />
+    <ClCompile Include="NewControllerTracker_CriticalSystems.c" />
+    <ClCompile Include="NewControllerTracker_Dictionary.c" />
+    <ClCompile Include="NewControllerTracker_MailingLists.c" />
+    <ClCompile Include="NewControllerTracker_MCPCom.c" />
+    <ClCompile Include="NewControllerTracker_ShardCom.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\CrossRoads\Common\accountCommon.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\UtilitiesLib\components\Alerts.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\UtilitiesLib\components\GlobalTypes.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\UtilitiesLib\components\StatusReporting.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\UtilitiesLib\net\accountnet.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="AccountTokenParsing.h" />
+    <ClInclude Include="NewControllerTracker.h" />
+    <ClInclude Include="NewControllerTracker_AlertTrackers.h" />
+    <ClInclude Include="NewControllerTracker_CriticalSystems.h" />
+    <ClInclude Include="NewControllerTracker_MailingLists.h" />
+    <ClInclude Include="pub\NewControllerTracker_Pub.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="AutoGen">
+      <UniqueIdentifier>{7b8fe1c2-7760-4719-b74d-4db0a7341565}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExternHeaders">
+      <UniqueIdentifier>{aebb67db-c2a9-46fd-8955-eedf649efb99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pub">
+      <UniqueIdentifier>{2e2f7fdb-4c74-4f05-b8d3-189436b4acea}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

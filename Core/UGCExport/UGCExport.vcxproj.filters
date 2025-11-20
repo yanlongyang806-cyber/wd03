@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\CrossRoads\Common\UGCExportImport\UGCExportImport.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoGen\UGCExport_AutoGen_1.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoGen\UGCExport_AutoGen_2.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="UGCExportMain.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\CrossRoads\Common\UGCExportImport\resource_ugcexportimport.h">
+      <Filter>resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\UGCExportImport\UGCExportImport.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\Common\ugcprojectcommon.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\PatchClientLib\pcl_client.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\PythonLib\resource_pylib.h">
+      <Filter>resources</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="AutoGen">
+      <UniqueIdentifier>{095657bc-e785-45e5-9823-ca407508b810}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{b86ae32b-0a7d-469d-90a2-2e97787292ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExternHeaders">
+      <UniqueIdentifier>{a0ce4d8c-2535-48f2-b84b-c8db6d40f9a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resources">
+      <UniqueIdentifier>{9b6d3f2d-40f9-4157-a5d3-8f24079f7e84}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\CrossRoads\Common\UGCExportImport\UGCExportImport.py">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="..\..\libs\PythonLib\import.py">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="..\..\libs\PythonLib\profile.py">
+      <Filter>resources</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\CrossRoads\Common\UGCExportImport\UGCExportImport.rc">
+      <Filter>resources</Filter>
+    </ResourceCompile>
+    <ResourceCompile Include="..\..\libs\PythonLib\PythonLib.rc">
+      <Filter>resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

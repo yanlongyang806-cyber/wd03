@@ -1,0 +1,11 @@
+//These are variables that are loaded into CB scripts that are linked to SVN, not to gimme. Use this sparingly. Talk to Alex or Vinay.
+
+COREEXES = TextureServer,Launcher,Multiplexer,TransactionServer,Controller,MasterControlProgram,LogServer,NewControllerTracker,ObjectDB,LogParser,ChatServer,AccountServer,TestServer,GlobalChatServer,TestClient,HeadshotServer,ChatRelay,UGCExport,UGCImport
+OBSOLETE_EXES = CrypticPatcher
+GENERATE_AUTO_SETTINGS = 1
+CODE_SUPPORTS_LOGINHAMMER_TESTING = 1
+CODE_SUPPORTS_ONLYMAPTOBIN_ERRORFILE = 1
+CODE_SUPPORTS_PO_EXPORT = 1
+CODE_SUPPORTS_LARGE_ADDRES_AWARE_CLIENT = 1
+
+LARGE_ADDRESS_AWARE_CLIENT_ALWAYS = 1

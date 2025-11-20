@@ -1,0 +1,1080 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\CrossRoads\AppServerLib\mission\aslMapState.c">
+      <Filter>common\mission</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\accountCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\AccountDataCache.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\ActivityCalendar.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\ActivityCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\ActivityLogCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\ArmamentSwapCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\AuctionBrokerCommon.c">
+      <Filter>common\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\AutoGen\GameServerLib_autotransactions_autogen_wrappers.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\chatCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\AbilityScores_DD.c">
+      <Filter>common\combat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\AttribCurve.c">
+      <Filter>common\combat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\AttribCurveImp.c">
+      <Filter>common\combat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\AttribMod.c">
+      <Filter>common\combat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\AttribModFragility.c">
+      <Filter>common\combat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\Character.c">
+      <Filter>common\combat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\Character_combat.c">
+      <Filter>common\combat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\Character_mods.c">
+      <Filter>common\combat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\Character_target.c">
+      <Filter>common\combat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\CharacterAttribs.c">
+      <Filter>common\combat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\CharacterAttribute.c">
+      <Filter>common\combat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\CharacterClass.c">
+      <Filter>common\combat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\Combat_DD.c">
+      <Filter>common\combat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\combatAdvantage.c">
+      <Filter>common\combat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\CombatCallbacks.c">
+      <Filter>common\combat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\CombatConfig.c">
+      <Filter>common\combat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\CombatDebug.c">
+      <Filter>common\combat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\CombatEval.c">
+      <Filter>common\combat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\CombatEvents.c">
+      <Filter>common\combat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\CombatPool.c">
+      <Filter>common\combat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\CombatPowerStateSwitching.c">
+      <Filter>common\combat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\CombatReactivePower.c">
+      <Filter>common\combat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\CombatSensitivity.c">
+      <Filter>common\combat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\ComboTracker.c">
+      <Filter>common\combat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\DamageTracker.c">
+      <Filter>common\combat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\PowerActivation.c">
+      <Filter>common\combat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\PowerAnimFX.c">
+      <Filter>common\combat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\PowerApplication.c">
+      <Filter>common\combat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\PowerEnhancements.c">
+      <Filter>common\combat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\PowerHelpers.c">
+      <Filter>common\combat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\PowerModes.c">
+      <Filter>common\combat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\PowerReplace.c">
+      <Filter>common\combat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\Powers.c">
+      <Filter>common\combat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\PowersAEDebug.c">
+      <Filter>common\combat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\PowersAutoDesc.c">
+      <Filter>common\combat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\PowerSlots.c">
+      <Filter>common\combat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\PowerSubtarget.c">
+      <Filter>common\combat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\PowerTree.c">
+      <Filter>common\combat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\PowerTreeEval.c">
+      <Filter>common\combat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\PowerTreeHelpers.c">
+      <Filter>common\combat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\PowerVars.c">
+      <Filter>common\combat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\StatPoints.c">
+      <Filter>common\combat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\ControlScheme.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\CurrencyExchangeCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\DiaryCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\DiscountShared.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\DoorTransitionCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\EntDebugMenu.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\allegiance.c">
+      <Filter>common\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\AuctionLot.c">
+      <Filter>common\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\CombatMods.c">
+      <Filter>common\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\CostumeCommonEntity.c">
+      <Filter>common\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\CostumeCommonGenerate.c">
+      <Filter>common\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\CostumeCommonLoad.c">
+      <Filter>common\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\CostumeCommonRandom.c">
+      <Filter>common\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\CostumeCommonTailor.c">
+      <Filter>common\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\entCritter.c">
+      <Filter>common\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\Entity.c">
+      <Filter>common\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\EntityBuild.c">
+      <Filter>common\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\EntityDataQuery.c">
+      <Filter>common\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\EntityExprFunc.c">
+      <Filter>common\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\EntityInteraction.c">
+      <Filter>common\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\EntityIterator.c">
+      <Filter>common\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\EntityLib.c">
+      <Filter>common\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\EntityMailCommon.c">
+      <Filter>common\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\EntityNet.c">
+      <Filter>common\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\EntitySystem.c">
+      <Filter>common\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\GameAccountDataCommon.c">
+      <Filter>common\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\Guild.c">
+      <Filter>common\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\InteriorCommon.c">
+      <Filter>common\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\Leaderboard.c">
+      <Filter>common\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\OfficerCommon.c">
+      <Filter>common\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\PlayerDifficultyCommon.c">
+      <Filter>common\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\RegionRules.c">
+      <Filter>common\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\SavedPetCommon.c">
+      <Filter>common\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\SharedBankCommon.c">
+      <Filter>common\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\SkelInfoFixup.c">
+      <Filter>common\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\Team.c">
+      <Filter>common\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\Tray.c">
+      <Filter>common\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\XboxStructs.c">
+      <Filter>common\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\GameAccountData\GameAccountData.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\GameBranch.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\GameEvent.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\GamePermissionsCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\GameStringFormat.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\GlobalExpressions.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\GroupProjectCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\interaction_common.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\interactionManager_common.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\item\algoItemCommon.c">
+      <Filter>common\item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\item\AlgoPet.c">
+      <Filter>common\item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\item\containerTrade.c">
+      <Filter>common\item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\item\inventoryCommon.c">
+      <Filter>common\item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\item\itemArt.c">
+      <Filter>common\item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\item\ItemAssignmentEval.c">
+      <Filter>common\item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\item\ItemAssignments.c">
+      <Filter>common\item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\item\itemCommon.c">
+      <Filter>common\item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\item\itemEval.c">
+      <Filter>common\item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\item\itemGenCommon.c">
+      <Filter>common\item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\item\itemupgrade.c">
+      <Filter>common\item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\item\rewardCommon.c">
+      <Filter>common\item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\item\RewardTable.c">
+      <Filter>common\item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\item\SuperCritterPet.c">
+      <Filter>common\item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\item\tradeCommon.c">
+      <Filter>common\item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\LoginCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\MailCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\MapRevealCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\mechanics_common.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\MicroTransactions.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\microtransactions_common.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\MinigameCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Mission\contact_common.c">
+      <Filter>common\mission</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Mission\cutscene_common.c">
+      <Filter>common\mission</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Mission\encounter_common.c">
+      <Filter>common\mission</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Mission\gameaction_common.c">
+      <Filter>common\mission</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Mission\gametimer_common.c">
+      <Filter>common\mission</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Mission\mapstate_common.c">
+      <Filter>common\mission</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Mission\mapstate_common_eval.c">
+      <Filter>common\mission</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Mission\mission_common.c">
+      <Filter>common\mission</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Mission\mission_templates.c">
+      <Filter>common\mission</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Mission\nemesis_common.c">
+      <Filter>common\mission</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Mission\playerstats_common.c">
+      <Filter>common\mission</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Mission\progression_common.c">
+      <Filter>common\mission</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Mission\progression_transact.c">
+      <Filter>common\mission</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\NameGen.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\NotifyCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\NumericConversionCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\powerStoreCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\pvp_common.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\PvPGameCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\queue_common_structs.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\ShardEventTimingCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\ShardVariableCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\SocialCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\species_common.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\storeCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\TeamPetsCommonStructs.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\TeamUpCommon.c">
+      <Filter>common\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\TransformationCommon.c">
+      <Filter>common\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\UGC\UGCAchievements.c">
+      <Filter>common\UGC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\UGC\UGCCommon.c">
+      <Filter>common\UGC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\UGC\UGCTipsCommon.c">
+      <Filter>common\UGC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs\Common\MapDescription.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs\Common\NoUGCInThisProject.c" />
+    <ClCompile Include="AutoGen\LogParser_AutoGen_1.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoGen\LogParser_AutoGen_2.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="LogParser.c" />
+    <ClCompile Include="LogParser_CompileLinkSupport.c" />
+    <ClCompile Include="LogParser_Http.c" />
+    <ClCompile Include="LogParser_Xmlrpc.c" />
+    <ClCompile Include="LogParserAggregator.c" />
+    <ClCompile Include="LogParserAggregatorCommands.c" />
+    <ClCompile Include="LogParserBinning.c" />
+    <ClCompile Include="LogParserConstructedObjects.c" />
+    <ClCompile Include="LogParserFilteredLogFile.c" />
+    <ClCompile Include="LogParserFrontEndFiltering.c" />
+    <ClCompile Include="LogParserGameServerFilters.c" />
+    <ClCompile Include="LogParserGraphs.c" />
+    <ClCompile Include="LogParserLaunching.c" />
+    <ClCompile Include="LogParserPlayerFilters.c" />
+    <ClCompile Include="LogParserUniqueCounter.c" />
+    <ClCompile Include="LogParserUtils.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\CrossRoads\Common\accountCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\AccountDataCache.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\ActivityCalendar.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\ActivityCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\ActivityLogCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\ArmamentSwapCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\AuctionBrokerCommon.h">
+      <Filter>common\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\chatCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\chatCommonStructs.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\AbilityScores_DD.h">
+      <Filter>common\combat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\AttribCurve.h">
+      <Filter>common\combat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\AttribCurveImp.h">
+      <Filter>common\combat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\AttribMod.h">
+      <Filter>common\combat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\AttribModFragility.h">
+      <Filter>common\combat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\Character.h">
+      <Filter>common\combat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\Character_combat.h">
+      <Filter>common\combat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\Character_mods.h">
+      <Filter>common\combat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\Character_target.h">
+      <Filter>common\combat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\CharacterAttribs.h">
+      <Filter>common\combat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\CharacterAttribsMinimal.h">
+      <Filter>common\combat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\CharacterAttribute.h">
+      <Filter>common\combat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\CharacterClass.h">
+      <Filter>common\combat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\Combat_DD.h">
+      <Filter>common\combat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\combatAdvantage.h">
+      <Filter>common\combat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\CombatCallbacks.h">
+      <Filter>common\combat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\CombatConfig.h">
+      <Filter>common\combat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\CombatDebug.h">
+      <Filter>common\combat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\CombatEnums.h">
+      <Filter>common\combat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\CombatEval.h">
+      <Filter>common\combat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\CombatEvents.h">
+      <Filter>common\combat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\CombatMods.h">
+      <Filter>common\combat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\CombatPool.h">
+      <Filter>common\combat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\CombatPowerStateSwitching.h">
+      <Filter>common\combat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\CombatReactivePower.h">
+      <Filter>common\combat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\CombatSensitivity.h">
+      <Filter>common\combat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\ComboTracker.h">
+      <Filter>common\combat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\DamageTracker.h">
+      <Filter>common\combat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\PowerActivation.h">
+      <Filter>common\combat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\PowerAnimFX.h">
+      <Filter>common\combat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\PowerApplication.h">
+      <Filter>common\combat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\PowerEnhancements.h">
+      <Filter>common\combat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\PowerHelpers.h">
+      <Filter>common\combat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\PowerModes.h">
+      <Filter>common\combat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\PowerReplace.h">
+      <Filter>common\combat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\Powers.h">
+      <Filter>common\combat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\PowersAEDebug.h">
+      <Filter>common\combat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\PowersAutoDesc.h">
+      <Filter>common\combat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\PowersEnums.h">
+      <Filter>common\combat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\PowerSlots.h">
+      <Filter>common\combat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\PowerSubtarget.h">
+      <Filter>common\combat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\PowerTree.h">
+      <Filter>common\combat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\PowerTreeEval.h">
+      <Filter>common\combat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\PowerTreeHelpers.h">
+      <Filter>common\combat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\PowerVars.h">
+      <Filter>common\combat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\StatPoints.h">
+      <Filter>common\combat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\ControlScheme.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\CostumeCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\CostumeCommonEnums.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\CurrencyExchangeCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\DiaryCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\DiaryEnums.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\DiscountShared.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\DoorTransitionCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\EntDebugMenu.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\aiDebugShared.h">
+      <Filter>common\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\allegiance.h">
+      <Filter>common\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\AuctionLot.h">
+      <Filter>common\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\CostumeCommonEntity.h">
+      <Filter>common\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\CostumeCommonGenerate.h">
+      <Filter>common\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\CostumeCommonLoad.h">
+      <Filter>common\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\CostumeCommonRandom.h">
+      <Filter>common\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\CostumeCommonTailor.h">
+      <Filter>common\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\entCritter.h">
+      <Filter>common\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\entEnums.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\Entity.h">
+      <Filter>common\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\EntityAttach.h">
+      <Filter>common\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\EntityBuild.h">
+      <Filter>common\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\EntityDataQuery.h">
+      <Filter>common\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\EntityExtern.h">
+      <Filter>common\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\EntityInteraction.h">
+      <Filter>common\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\EntityIterator.h">
+      <Filter>common\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\EntityLib.h">
+      <Filter>common\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\EntityMailCommon.h">
+      <Filter>common\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\EntityNet.h">
+      <Filter>common\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\EntitySavedData.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\EntitySystemInternal.h">
+      <Filter>common\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\GameAccountDataCommon.h">
+      <Filter>common\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\Guild.h">
+      <Filter>common\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\InteriorCommon.h">
+      <Filter>common\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\Leaderboard.h">
+      <Filter>common\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\OfficerCommon.h">
+      <Filter>common\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\Player.h">
+      <Filter>common\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\PlayerDifficultyCommon.h">
+      <Filter>common\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\RegionRules.h">
+      <Filter>common\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\SavedPetCommon.h">
+      <Filter>common\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\SharedBankCommon.h">
+      <Filter>common\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\Team.h">
+      <Filter>common\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\Tray.h">
+      <Filter>common\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\XBoxStructs.h">
+      <Filter>common\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\GameAccountData\GameAccountData.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\GameBranch.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\GameEvent.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\GamePermissionsCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\GameStringFormat.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\GlobalExpressions.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\GroupProjectCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\interaction_common.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\interactionManager_common.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\item\algoItemCommon.h">
+      <Filter>common\item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\item\AlgoPet.h">
+      <Filter>common\item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\item\containerTrade.h">
+      <Filter>common\item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\item\inventoryCommon.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\item\itemArt.h">
+      <Filter>common\item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\item\ItemAssignments.h">
+      <Filter>common\item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\item\itemCommon.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\item\itemEnums.h">
+      <Filter>common\item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\item\itemGenCommon.h">
+      <Filter>common\item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\item\itemupgrade.h">
+      <Filter>common\item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\item\rewardCommon.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\item\SuperCritterPet.h">
+      <Filter>common\item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\item\tradeCommon.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\LoginCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\MailCommon.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\MapRevealCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\mechanics_common.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\MicroTransactions.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\microtransactions_common.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\MinigameCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Mission\contact_common.h">
+      <Filter>common\mission</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Mission\contact_enums.h">
+      <Filter>common\mission</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Mission\cutscene_common.h">
+      <Filter>common\mission</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Mission\encounter_common.h">
+      <Filter>common\mission</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Mission\Encounter_enums.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Mission\gameaction_common.h">
+      <Filter>common\mission</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Mission\gametimer_common.h">
+      <Filter>common\mission</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Mission\mapstate_common.h">
+      <Filter>common\mission</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Mission\mission_common.h">
+      <Filter>common\mission</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Mission\mission_enums.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Mission\nemesis_common.h">
+      <Filter>common\mission</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Mission\playerstats_common.h">
+      <Filter>common\mission</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Mission\progression_common.h">
+      <Filter>common\mission</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Mission\progression_transact.h">
+      <Filter>common\mission</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\NameGen.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\NotifyCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\NotifyEnum.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\NumericConversionCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\powerStoreCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\pvp_common.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\PvPGameCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\queue_common_structs.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\ShardEventTimingCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\ShardVariableCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\SocialCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\species_common.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\storeCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Survey.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\TeamPetsCommonStructs.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\TeamUpCommon.h">
+      <Filter>common\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\TransformationCommon.h">
+      <Filter>common\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\UGC\UGCAchievements.h">
+      <Filter>common\UGC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\UGC\UGCCommon.h">
+      <Filter>common\UGC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\UGC\UGCTipsCommon.h">
+      <Filter>common\UGC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\Common\GlobalEnums.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\Common\MapDescription.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\Common\ugcprojectcommon.h">
+      <Filter>common\UGC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\GraphicsLib\pub\GraphicsLib.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\Renderers\pub\RdrEnums.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\ServerLib\pub\svrGlobalInfo.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\UtilitiesLib\components\GlobalTypeEnum.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\UtilitiesLib\components\GlobalTypes.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\UtilitiesLib\components\objPath.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\UtilitiesLib\components\ResourceInfo.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\UtilitiesLib\components\WorldVariable.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\UtilitiesLib\net\accountnet.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\UtilitiesLib\utils\Capsule.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\UtilitiesLib\utils\EventCountingHeatMap.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\UtilitiesLib\utils\LogParsing.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\UtilitiesLib\utils\LogParsingFileBuckets.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\UtilitiesLib\utils\StringUtil.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\WorldLib\pub\wlCostume.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\WorldLib\pub\wlGenesisMissionsGameStructs.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\WorldLib\pub\WorldLib.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\WorldLib\pub\WorldLibEnums.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controller\Pub\ControllerPub.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NewControllerTracker\pub\NewControllerTracker_Pub.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="LogParser.h" />
+    <ClInclude Include="LogParserAggregator.h" />
+    <ClInclude Include="LogParserBinning.h" />
+    <ClInclude Include="LogParserConstructedObjects.h" />
+    <ClInclude Include="LogParserFilteredLogFile.h" />
+    <ClInclude Include="LogParserFrontEndFiltering.h" />
+    <ClInclude Include="LogParserGraphs.h" />
+    <ClInclude Include="LogParserLaunching.h" />
+    <ClInclude Include="LogParserUniqueCounter.h" />
+    <ClInclude Include="LogParserUtils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="AutoGen">
+      <UniqueIdentifier>{7ed9c2cd-853e-4b61-9757-3aaa8234090c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{d01fa971-3bc3-48d8-a5d2-a7cb6c941c6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common\combat">
+      <UniqueIdentifier>{5325bbb8-b696-4278-843b-7c09aa1c5def}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common\entity">
+      <UniqueIdentifier>{23fe9344-128e-4572-9313-2e6da650ca90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common\item">
+      <UniqueIdentifier>{7927e71c-ea30-4256-bb3f-a461eb00b879}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common\mission">
+      <UniqueIdentifier>{3875e4f9-48ee-43c6-92e9-4f52275abd53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common\UGC">
+      <UniqueIdentifier>{e1ce53a3-c4b9-44b5-b2b0-0e64c6f67dfc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExternHeaders">
+      <UniqueIdentifier>{ff824c08-fda1-40dc-9cd5-f8ba4f007444}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

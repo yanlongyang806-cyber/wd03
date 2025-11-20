@@ -1,0 +1,768 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Full Debug|Win32">
+      <Configuration>Full Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Full Debug|x64">
+      <Configuration>Full Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{032C079D-BE1F-4008-9006-6C65CFA82DC1}</ProjectGuid>
+    <RootNamespace>AppServerLib</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="..\..\PropertySheets\GeneralSettings.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="..\..\PropertySheets\GeneralSettings.props" />
+    <Import Project="..\..\PropertySheets\x64.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'" Label="PropertySheets">
+    <Import Project="..\..\PropertySheets\GeneralSettings.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|x64'" Label="PropertySheets">
+    <Import Project="..\..\PropertySheets\GeneralSettings.props" />
+    <Import Project="..\..\PropertySheets\x64.props" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>UGCDataManager;MapManager;LeaderboardServer;LoginServer;TeamServer;GuildServer;ChatServer;../../libs/WorldLib;../../libs/Renderers/pub;../../libs/WorldLib/StaticWorld;../../libs/GraphicsLib/pub;../../libs/WorldLib/pub;../../libs/InputLib/pub;../../libs/AILib/pub;../../libs/UILib/pub;../../libs/EntityLib/mission;../../libs/EntityLib/Combat;../../libs/EntityLib/pub;../../libs/ServerLib/pub;../../libs/PatchClientLib;../../libs/ContentLib/pub;../../libs/Common;../../Core/Common;../Common;../Common/entity;../Common/Genesis;../Common/UGC;../Common/Mission;../Common/item;../Common/Combat;../../libs/HttpLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_WINDOWS;_CRTDBG_MAP_ALLOC=1;USEZLIB=1;EDITLIB=1;APPSERVER=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <PreBuildEvent>
+      <Command>..\..\utilities\bin\structparser X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>UGCDataManager;MapManager;LeaderboardServer;LoginServer;TeamServer;GuildServer;ChatServer;../../libs/WorldLib;../../libs/Renderers/pub;../../libs/WorldLib/StaticWorld;../../libs/GraphicsLib/pub;../../libs/WorldLib/pub;../../libs/InputLib/pub;../../libs/AILib/pub;../../libs/UILib/pub;../../libs/EntityLib/mission;../../libs/EntityLib/Combat;../../libs/EntityLib/pub;../../libs/ServerLib/pub;../../libs/PatchClientLib;../../libs/ContentLib/pub;../../libs/Common;../../Core/Common;../Common;../Common/entity;../Common/Genesis;../Common/UGC;../Common/Mission;../Common/item;../Common/Combat;../../libs/HttpLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>PSDK_DISABLED;_WIN64;WIN32;_DEBUG;_LIB;_WINDOWS;_CRTDBG_MAP_ALLOC=1;USEZLIB=1;EDITLIB=1;APPSERVER=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <PreBuildEvent>
+      <Command>..\..\utilities\bin\structparser X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>UGCDataManager;MapManager;LeaderboardServer;LoginServer;TeamServer;GuildServer;ChatServer;../../libs/WorldLib;../../libs/Renderers/pub;../../libs/WorldLib/StaticWorld;../../libs/GraphicsLib/pub;../../libs/WorldLib/pub;../../libs/InputLib/pub;../../libs/AILib/pub;../../libs/UILib/pub;../../libs/EntityLib/mission;../../libs/EntityLib/Combat;../../libs/EntityLib/pub;../../libs/ServerLib/pub;../../libs/PatchClientLib;../../libs/ContentLib/pub;../../libs/Common;../../Core/Common;../Common;../Common/entity;../Common/Genesis;../Common/UGC;../Common/Mission;../Common/item;../Common/Combat;../../libs/HttpLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_FULLDEBUG;_LIB;_WINDOWS;_CRTDBG_MAP_ALLOC=1;USEZLIB=1;EDITLIB=1;APPSERVER=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <PreBuildEvent>
+      <Command>..\..\utilities\bin\structparser X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>UGCDataManager;MapManager;LeaderboardServer;LoginServer;TeamServer;GuildServer;ChatServer;../../libs/WorldLib;../../libs/Renderers/pub;../../libs/WorldLib/StaticWorld;../../libs/GraphicsLib/pub;../../libs/WorldLib/pub;../../libs/InputLib/pub;../../libs/AILib/pub;../../libs/UILib/pub;../../libs/EntityLib/mission;../../libs/EntityLib/Combat;../../libs/EntityLib/pub;../../libs/ServerLib/pub;../../libs/PatchClientLib;../../libs/ContentLib/pub;../../libs/Common;../../Core/Common;../Common;../Common/entity;../Common/Genesis;../Common/UGC;../Common/Mission;../Common/item;../Common/Combat;../../libs/HttpLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>PSDK_DISABLED;_WIN64;WIN32;_DEBUG;_FULLDEBUG;_LIB;_WINDOWS;_CRTDBG_MAP_ALLOC=1;USEZLIB=1;EDITLIB=1;APPSERVER=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <PreBuildEvent>
+      <Command>..\..\utilities\bin\structparser X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Core\Common\AutoGen\ChatServer_autogen_RemoteFuncs.c" />
+    <ClCompile Include="..\..\Core\Common\AutoGen\ObjectDB_autogen_RemoteFuncs.c" />
+    <ClCompile Include="..\..\Core\Common\AutoGen\ObjectDB_autogen_SlowFuncs.c" />
+    <ClCompile Include="..\..\Core\Common\AutoGen\ObjectDB_autotransactions_autogen_wrappers.c" />
+    <ClCompile Include="..\..\libs\Common\MapDescription.c" />
+    <ClCompile Include="..\..\libs\Common\UGCProjectCommon.c" />
+    <ClCompile Include="..\..\libs\Common\VirtualShard.c" />
+    <ClCompile Include="..\Common\accountCommon.c" />
+    <ClCompile Include="..\Common\AccountDataCache.c" />
+    <ClCompile Include="..\Common\AccountProxyCommon.c" />
+    <ClCompile Include="..\Common\ActivityCalendar.c" />
+    <ClCompile Include="..\Common\ActivityCommon.c" />
+    <ClCompile Include="..\Common\ActivityLog_Trans.c" />
+    <ClCompile Include="..\Common\ActivityLogCommon.c" />
+    <ClCompile Include="..\Common\aiStructCommon.c" />
+    <ClCompile Include="..\Common\ArmamentSwapCommon.c" />
+    <ClCompile Include="..\Common\AuctionBrokerCommon.c" />
+    <ClCompile Include="..\Common\AuctionCommon.c" />
+    <ClCompile Include="..\Common\AutoGen\AppServerLib_autogen_RemoteFuncs.c" />
+    <ClCompile Include="..\Common\AutoGen\AppServerLib_autogen_ServerCmdWrappers.c" />
+    <ClCompile Include="..\Common\AutoGen\AppServerLib_autotransactions_autogen_wrappers.c" />
+    <ClCompile Include="..\Common\AutoGen\GameServerLib_autogen_RemoteFuncs.c" />
+    <ClCompile Include="..\Common\chatCommon.c" />
+    <ClCompile Include="..\Common\Combat\AbilityScores_DD.c" />
+    <ClCompile Include="..\Common\Combat\AttribCurve.c" />
+    <ClCompile Include="..\Common\Combat\AttribCurveImp.c" />
+    <ClCompile Include="..\Common\Combat\AttribMod.c" />
+    <ClCompile Include="..\Common\Combat\AttribModFragility.c" />
+    <ClCompile Include="..\Common\Combat\Character.c" />
+    <ClCompile Include="..\Common\Combat\Character_combat.c" />
+    <ClCompile Include="..\Common\Combat\Character_mods.c" />
+    <ClCompile Include="..\Common\Combat\Character_target.c" />
+    <ClCompile Include="..\Common\Combat\CharacterAttribs.c" />
+    <ClCompile Include="..\Common\Combat\CharacterAttribute.c" />
+    <ClCompile Include="..\Common\Combat\CharacterClass.c" />
+    <ClCompile Include="..\Common\Combat\Combat_DD.c" />
+    <ClCompile Include="..\Common\Combat\combatAdvantage.c" />
+    <ClCompile Include="..\Common\Combat\CombatCallbacks.c" />
+    <ClCompile Include="..\Common\Combat\CombatConfig.c" />
+    <ClCompile Include="..\Common\Combat\CombatDebug.c" />
+    <ClCompile Include="..\Common\Combat\CombatEval.c" />
+    <ClCompile Include="..\Common\Combat\CombatEvents.c" />
+    <ClCompile Include="..\Common\Combat\CombatPool.c" />
+    <ClCompile Include="..\Common\Combat\CombatPowerStateSwitching.c" />
+    <ClCompile Include="..\Common\Combat\CombatReactivePower.c" />
+    <ClCompile Include="..\Common\Combat\CombatSensitivity.c" />
+    <ClCompile Include="..\Common\Combat\ComboTracker.c" />
+    <ClCompile Include="..\Common\Combat\DamageTracker.c" />
+    <ClCompile Include="..\Common\Combat\PowerActivation.c" />
+    <ClCompile Include="..\Common\Combat\PowerAnimFX.c" />
+    <ClCompile Include="..\Common\Combat\PowerApplication.c" />
+    <ClCompile Include="..\Common\Combat\PowerEnhancements.c" />
+    <ClCompile Include="..\Common\Combat\PowerHelpers.c" />
+    <ClCompile Include="..\Common\Combat\PowerModes.c" />
+    <ClCompile Include="..\Common\Combat\PowerReplace.c" />
+    <ClCompile Include="..\Common\Combat\Powers.c" />
+    <ClCompile Include="..\Common\Combat\PowersAEDebug.c" />
+    <ClCompile Include="..\Common\Combat\PowersAutoDesc.c" />
+    <ClCompile Include="..\Common\Combat\PowerSlots.c" />
+    <ClCompile Include="..\Common\Combat\PowerSubtarget.c" />
+    <ClCompile Include="..\Common\Combat\PowerTree.c" />
+    <ClCompile Include="..\Common\Combat\PowerTreeEval.c" />
+    <ClCompile Include="..\Common\Combat\PowerTreeHelpers.c" />
+    <ClCompile Include="..\Common\Combat\PowerVars.c" />
+    <ClCompile Include="..\Common\Combat\Skills_DD.c" />
+    <ClCompile Include="..\Common\Combat\StatPoints.c" />
+    <ClCompile Include="..\Common\ControlScheme.c" />
+    <ClCompile Include="..\Common\CurrencyExchangeCommon.c" />
+    <ClCompile Include="..\Common\CurrencyExchangeCommon_trans.c" />
+    <ClCompile Include="..\Common\DiaryCommon.c" />
+    <ClCompile Include="..\Common\DiscountShared.c" />
+    <ClCompile Include="..\Common\DoorTransitionCommon.c" />
+    <ClCompile Include="..\Common\EntDebugMenu.c" />
+    <ClCompile Include="..\Common\Entity\AccountProxyServerLocks.c" />
+    <ClCompile Include="..\Common\Entity\allegiance.c" />
+    <ClCompile Include="..\Common\Entity\AuctionLot.c" />
+    <ClCompile Include="..\Common\Entity\AuctionLot_Transact.c" />
+    <ClCompile Include="..\Common\Entity\CombatMods.c" />
+    <ClCompile Include="..\Common\Entity\CostumeCommonEntity.c" />
+    <ClCompile Include="..\Common\Entity\CostumeCommonGenerate.c" />
+    <ClCompile Include="..\Common\Entity\CostumeCommonLoad.c" />
+    <ClCompile Include="..\Common\Entity\CostumeCommonRandom.c" />
+    <ClCompile Include="..\Common\Entity\CostumeCommonTailor.c" />
+    <ClCompile Include="..\Common\Entity\entCritter.c" />
+    <ClCompile Include="..\Common\Entity\Entity.c" />
+    <ClCompile Include="..\Common\Entity\EntityBuild.c" />
+    <ClCompile Include="..\Common\Entity\EntityDataQuery.c" />
+    <ClCompile Include="..\Common\Entity\EntityExprFunc.c" />
+    <ClCompile Include="..\Common\Entity\EntityInteraction.c" />
+    <ClCompile Include="..\Common\Entity\EntityIterator.c" />
+    <ClCompile Include="..\Common\Entity\EntityLib.c" />
+    <ClCompile Include="..\Common\Entity\EntityMailCommon.c" />
+    <ClCompile Include="..\Common\Entity\EntityMovementRequesterDefs.c" />
+    <ClCompile Include="..\Common\Entity\EntityNet.c" />
+    <ClCompile Include="..\Common\Entity\EntityPlayerTypeConversion.c" />
+    <ClCompile Include="..\Common\Entity\EntitySystem.c" />
+    <ClCompile Include="..\Common\Entity\GameAccountDataCommon.c" />
+    <ClCompile Include="..\Common\Entity\GameSession.c" />
+    <ClCompile Include="..\Common\Entity\Guild.c" />
+    <ClCompile Include="..\Common\Entity\InteriorCommon.c" />
+    <ClCompile Include="..\Common\Entity\Leaderboard.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\OfficerCommon.c" />
+    <ClCompile Include="..\Common\Entity\PlayerDifficultyCommon.c" />
+    <ClCompile Include="..\Common\Entity\ProjectileEntity.c" />
+    <ClCompile Include="..\Common\Entity\RegionRules.c" />
+    <ClCompile Include="..\Common\Entity\SavedPetCommon.c" />
+    <ClCompile Include="..\Common\Entity\SavedPetTransactions.c" />
+    <ClCompile Include="..\Common\Entity\SharedBankCommon.c" />
+    <ClCompile Include="..\Common\Entity\SkelInfoFixup.c" />
+    <ClCompile Include="..\Common\Entity\Team.c" />
+    <ClCompile Include="..\Common\Entity\Tray.c" />
+    <ClCompile Include="..\Common\Entity\XboxStructs.c" />
+    <ClCompile Include="..\Common\GameAccountData\GameAccountData.c" />
+    <ClCompile Include="..\Common\GameBranch.c" />
+    <ClCompile Include="..\Common\GameEvent.c" />
+    <ClCompile Include="..\Common\GamePermissionsCommon.c" />
+    <ClCompile Include="..\Common\GamePermissionsLoad.c" />
+    <ClCompile Include="..\Common\GamePermissionTransactions.c" />
+    <ClCompile Include="..\Common\GameStringFormat.c" />
+    <ClCompile Include="..\Common\Genesis\Genesis.c" />
+    <ClCompile Include="..\Common\Genesis\GenesisMissions.c" />
+    <ClCompile Include="..\Common\GlobalExpressions.c" />
+    <ClCompile Include="..\Common\GroupProjectCommon.c" />
+    <ClCompile Include="..\Common\GroupProjectCommon_eval.c" />
+    <ClCompile Include="..\Common\GroupProjectCommon_trans.c" />
+    <ClCompile Include="..\Common\guildCommonStructs.c" />
+    <ClCompile Include="..\Common\interaction_common.c" />
+    <ClCompile Include="..\Common\interactionManager_common.c" />
+    <ClCompile Include="..\Common\item\AlgoItemCommon.c" />
+    <ClCompile Include="..\Common\item\AlgoPet.c" />
+    <ClCompile Include="..\Common\item\inventoryCommon.c" />
+    <ClCompile Include="..\Common\item\itemArt.c" />
+    <ClCompile Include="..\Common\item\ItemAssignmentEval.c" />
+    <ClCompile Include="..\Common\item\ItemAssignments.c" />
+    <ClCompile Include="..\Common\item\itemCommon.c" />
+    <ClCompile Include="..\Common\item\itemEval.c" />
+    <ClCompile Include="..\Common\item\itemGenCommon.c" />
+    <ClCompile Include="..\Common\item\itemupgrade.c" />
+    <ClCompile Include="..\Common\item\rewardCommon.c" />
+    <ClCompile Include="..\Common\item\RewardTable.c" />
+    <ClCompile Include="..\Common\item\RewardValTable.c" />
+    <ClCompile Include="..\Common\item\SuperCritterPet.c" />
+    <ClCompile Include="..\Common\item\tradeCommon.c" />
+    <ClCompile Include="..\Common\LoadScreen\LoadScreen_Common.c" />
+    <ClCompile Include="..\Common\LobbyCommon.c" />
+    <ClCompile Include="..\Common\LoggedTransactions.c" />
+    <ClCompile Include="..\Common\Login2CharacterDetail.c" />
+    <ClCompile Include="..\Common\Login2Common.c" />
+    <ClCompile Include="..\Common\Login2ServerCommon.c" />
+    <ClCompile Include="..\Common\LoginCharTypeFlags.c" />
+    <ClCompile Include="..\Common\LoginCommon.c" />
+    <ClCompile Include="..\Common\MailCommon.c" />
+    <ClCompile Include="..\Common\MapRevealCommon.c" />
+    <ClCompile Include="..\Common\mechanics_common.c" />
+    <ClCompile Include="..\Common\MicroTransactions.c" />
+    <ClCompile Include="..\Common\microtransactions_common.c" />
+    <ClCompile Include="..\Common\Microtransactions_Transact.c" />
+    <ClCompile Include="..\Common\MinigameCommon.c" />
+    <ClCompile Include="..\Common\Mission\contact_common.c" />
+    <ClCompile Include="..\Common\Mission\cutscene_common.c" />
+    <ClCompile Include="..\Common\Mission\encounter_common.c" />
+    <ClCompile Include="..\Common\Mission\gameaction_common.c" />
+    <ClCompile Include="..\Common\Mission\gametimer_common.c" />
+    <ClCompile Include="..\Common\Mission\mapstate_common.c" />
+    <ClCompile Include="..\Common\Mission\mapstate_common_eval.c" />
+    <ClCompile Include="..\Common\Mission\mission_common.c" />
+    <ClCompile Include="..\Common\Mission\missionset_common.c" />
+    <ClCompile Include="..\Common\Mission\nemesis_common.c" />
+    <ClCompile Include="..\Common\Mission\oldencounter_common.c" />
+    <ClCompile Include="..\Common\Mission\playerstats_common.c" />
+    <ClCompile Include="..\Common\Mission\progression_common.c" />
+    <ClCompile Include="..\Common\Mission\progression_transact.c" />
+    <ClCompile Include="..\Common\NameGen.c" />
+    <ClCompile Include="..\Common\NotifyCommon.c" />
+    <ClCompile Include="..\Common\NumericConversionCommon.c" />
+    <ClCompile Include="..\Common\powerStoreCommon.c" />
+    <ClCompile Include="..\Common\pvp_common.c" />
+    <ClCompile Include="..\Common\PvPGameCommon.c" />
+    <ClCompile Include="..\Common\queue_common.c" />
+    <ClCompile Include="..\Common\queue_common_structs.c" />
+    <ClCompile Include="..\Common\queue_smartGroup.c" />
+    <ClCompile Include="..\Common\ShardEventTimingCommon.c" />
+    <ClCompile Include="..\Common\ShardVariable_Transact.c" />
+    <ClCompile Include="..\Common\ShardVariableCommon.c" />
+    <ClCompile Include="..\Common\SocialCommon.c" />
+    <ClCompile Include="..\Common\species_common.c" />
+    <ClCompile Include="..\Common\SteamCommon.c" />
+    <ClCompile Include="..\Common\SteamCommonServer.c" />
+    <ClCompile Include="..\Common\storeCommon.c" />
+    <ClCompile Include="..\Common\SuggestedContentCommon.c" />
+    <ClCompile Include="..\Common\TeamPetsCommonStructs.c" />
+    <ClCompile Include="..\Common\TeamUpCommon.c" />
+    <ClCompile Include="..\Common\TextFilterCommon.c" />
+    <ClCompile Include="..\Common\TransformationCommon.c" />
+    <ClCompile Include="..\Common\UGC\UGCAchievements.c" />
+    <ClCompile Include="..\Common\UGC\UGCCommon.c" />
+    <ClCompile Include="..\Common\UGC\UGCError.c" />
+    <ClCompile Include="..\Common\UGC\UGCInteriorCommon.c" />
+    <ClCompile Include="..\Common\UGC\UGCSearchCache.c" />
+    <ClCompile Include="..\Common\UGC\UGCTipsCommon.c" />
+    <ClCompile Include="AccountProxyServer\AccountProxyServer.c" />
+    <ClCompile Include="AccountProxyServer\aslAccountProxyServer.c" />
+    <ClCompile Include="AccountProxyServer\aslAccountProxyServer_cmds.c" />
+    <ClCompile Include="AccountProxyServer\aslAccountProxyServerInit.c" />
+    <ClCompile Include="AccountProxyServer\aslAPAccountLocation.c" />
+    <ClCompile Include="AppServerLib.c" />
+    <ClCompile Include="AppServerMain.c" />
+    <ClCompile Include="aslMapManagerNewMapTransfer_GetAddress.c" />
+    <ClCompile Include="aslPatchCompletionQuerying.c" />
+    <ClCompile Include="aslPatching.c" />
+    <ClCompile Include="aslTextSearch.c" />
+    <ClCompile Include="AuctionServer\aslAuctionServer.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MaxSpeed</Optimization>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="AuctionServer\aslPersistedStores.c" />
+    <ClCompile Include="AuctionServer\AuctionServer.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MaxSpeed</Optimization>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="AutoGen\appserverlib_AutoGen_1.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="AutoGen\AppServerLib_AutoGen_2.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="CurrencyExchangeServer\aslCurrencyAutoTrading.c" />
+    <ClCompile Include="CurrencyExchangeServer\aslCurrencyExchange.c" />
+    <ClCompile Include="CurrencyExchangeServer\aslCurrencyExchange_cmds.c" />
+    <ClCompile Include="CurrencyExchangeServer\aslCurrencyExchange_trans.c" />
+    <ClCompile Include="CurrencyExchangeServer\aslCurrencyExchangeServer.c" />
+    <ClCompile Include="CurrencyExchangeServer\aslMTCTransfer.c" />
+    <ClCompile Include="GatewayLoginLauncher\aslGatewayLoginLauncher.c" />
+    <ClCompile Include="GroupProjectServer\aslGroupProjectServer.c" />
+    <ClCompile Include="GroupProjectServer\aslGroupProjectServer_cmds.c" />
+    <ClCompile Include="GroupProjectServer\aslGroupProjectServer_trans.c" />
+    <ClCompile Include="GuildServer\aslGuildServer.c" />
+    <ClCompile Include="GuildServer\aslGuildWebCommands.c" />
+    <ClCompile Include="GuildServer\GuildTransactions.c" />
+    <ClCompile Include="JobManager\aslJobManager.c" />
+    <ClCompile Include="JobManager\aslJobManager_RemoteCommands.c" />
+    <ClCompile Include="JobManager\aslJobManagerHTTP.c" />
+    <ClCompile Include="JobManager\aslJobManagerJobQueues.c" />
+    <ClCompile Include="LeaderboardServer\aslLeaderboardDB.c" />
+    <ClCompile Include="LeaderboardServer\aslLeaderboardServer.c" />
+    <ClCompile Include="LeaderboardServer\aslLeaderboardServerInit.c" />
+    <ClCompile Include="LeaderboardServer\LeaderBoardServer.c" />
+    <ClCompile Include="LoginServer\aslLogin2_Booting.c" />
+    <ClCompile Include="LoginServer\aslLogin2_CharacterCreation.c" />
+    <ClCompile Include="LoginServer\aslLogin2_ClientComm.c" />
+    <ClCompile Include="LoginServer\aslLogin2_Debug.c" />
+    <ClCompile Include="LoginServer\aslLogin2_DeleteCharacter.c" />
+    <ClCompile Include="LoginServer\aslLogin2_EntityFixup.c" />
+    <ClCompile Include="LoginServer\aslLogin2_Error.c" />
+    <ClCompile Include="LoginServer\aslLogin2_GetCharacterChoices.c" />
+    <ClCompile Include="LoginServer\aslLogin2_GetCharacterDetail.c" />
+    <ClCompile Include="LoginServer\aslLogin2_IntershardCommands.c" />
+    <ClCompile Include="LoginServer\aslLogin2_Redirect.c" />
+    <ClCompile Include="LoginServer\aslLogin2_RefreshGAD.c" />
+    <ClCompile Include="LoginServer\aslLogin2_RefreshGAD_trans.c" />
+    <ClCompile Include="LoginServer\aslLogin2_RenameCharacter.c" />
+    <ClCompile Include="LoginServer\aslLogin2_StateMachine.c" />
+    <ClCompile Include="LoginServer\aslLogin2_StateMachine_trans.c" />
+    <ClCompile Include="LoginServer\aslLogin2_UGC.c" />
+    <ClCompile Include="LoginServer\aslLogin2_Util.c" />
+    <ClCompile Include="LoginServer\aslLogin2_ValidateLoginTicket.c" />
+    <ClCompile Include="LoginServer\aslLoginCharacterSelect.c" />
+    <ClCompile Include="LoginServer\aslLoginCStore.c" />
+    <ClCompile Include="LoginServer\aslLoginEntityMigrate.c" />
+    <ClCompile Include="LoginServer\aslLoginServer.c" />
+    <ClCompile Include="LoginServer\aslLoginServerHTTP.c" />
+    <ClCompile Include="LoginServer\aslLoginTokenParsing.c" />
+    <ClCompile Include="LoginServer\aslLoginUGCProject.c" />
+    <ClCompile Include="MapManager\aslMapManager.c" />
+    <ClCompile Include="MapManager\aslMapManager_cmd.c" />
+    <ClCompile Include="MapManager\aslMapManagerActivity.c" />
+    <ClCompile Include="MapManager\aslMapManagerActivityTransaction.c" />
+    <ClCompile Include="MapManager\aslMapManagerNewMapTransfer.c" />
+    <ClCompile Include="mapmanager\aslMapManagerNewMapTransfer_GetChoices.c" />
+    <ClCompile Include="MapManager\aslMapManagerNewMapTransfer_InnerStructs.c" />
+    <ClCompile Include="MapManager\aslMapManagerRandomQueueRelay.c" />
+    <ClCompile Include="MapManager\aslMapManagerVirtualShard.c" />
+    <ClCompile Include="mission\aslMapState.c" />
+    <ClCompile Include="QueueServer\aslQueueServer.c" />
+    <ClCompile Include="QueueServer\aslQueueServerInit.c" />
+    <ClCompile Include="QueueServer\aslQueueServerMapCreate.c" />
+    <ClCompile Include="QueueServer\QueueTransactions.c" />
+    <ClCompile Include="ResourceDB\aslResourceDB.c" />
+    <ClCompile Include="ResourceDB\aslResourceDB_RemoteCommands.c" />
+    <ClCompile Include="TeamServer\aslTeamServer.c" />
+    <ClCompile Include="TeamServer\aslTeamServerInit.c" />
+    <ClCompile Include="TeamServer\TeamServer.c" />
+    <ClCompile Include="TeamServer\TeamTransactions.c" />
+    <ClCompile Include="UGCDataManager\aslUGCDataManager.c" />
+    <ClCompile Include="UGCDataManager\aslUGCDataManager_cmd.c" />
+    <ClCompile Include="UGCDataManager\aslUGCDataManager_transact.c" />
+    <ClCompile Include="UGCDataManager\aslUGCDataManagerAchievements.c" />
+    <ClCompile Include="UGCDataManager\aslUGCDataManagerProject.c" />
+    <ClCompile Include="UGCDataManager\aslUGCDataManagerWhatsHot.c" />
+    <ClCompile Include="UGCSearchManager\aslUGCSearchManager.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AnySuitable</InlineFunctionExpansion>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="UGCSearchManager\aslUGCSearchManagerAccounts.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AnySuitable</InlineFunctionExpansion>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="UGCSearchManager\aslUGCSearchManagerSortByRatings.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AnySuitable</InlineFunctionExpansion>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Core\Controller\Pub\ControllerPub.h" />
+    <ClInclude Include="..\..\libs\Common\GlobalComm.h" />
+    <ClInclude Include="..\..\libs\Common\GlobalEnums.h" />
+    <ClInclude Include="..\..\libs\Common\MapDescription.h" />
+    <ClInclude Include="..\..\libs\Common\ResourceDBUtils.h" />
+    <ClInclude Include="..\..\libs\Common\ugcprojectcommon.h" />
+    <ClInclude Include="..\..\libs\Common\VirtualShard.h" />
+    <ClInclude Include="..\..\libs\ServerLib\pub\RemoteCommandGroup.h" />
+    <ClInclude Include="..\..\libs\ServerLib\pub\ShardCluster.h" />
+    <ClInclude Include="..\..\libs\ServerLib\pub\svrGlobalInfo.h" />
+    <ClInclude Include="..\..\libs\UtilitiesLib\components\GlobalTypeEnum.h" />
+    <ClInclude Include="..\..\libs\UtilitiesLib\components\GlobalTypes.h" />
+    <ClInclude Include="..\..\libs\UtilitiesLib\components\WorldVariable.h" />
+    <ClInclude Include="..\..\libs\UtilitiesLib\net\accountnet.h" />
+    <ClInclude Include="..\..\libs\UtilitiesLib\utils\Capsule.h" />
+    <ClInclude Include="..\..\libs\UtilitiesLib\utils\UGCProjectUtils.h" />
+    <ClInclude Include="..\..\libs\UtilitiesLib\utils\UtilitiesLibEnums.h" />
+    <ClInclude Include="..\..\libs\WorldLib\pub\dynNode.h" />
+    <ClInclude Include="..\..\libs\WorldLib\pub\wlCostume.h" />
+    <ClInclude Include="..\..\libs\WorldLib\pub\wlGenesisMissions.h" />
+    <ClInclude Include="..\..\libs\WorldLib\pub\wlGenesisMissionsGameStructs.h" />
+    <ClInclude Include="..\..\libs\WorldLib\pub\wlGroupPropertyStructs.h" />
+    <ClInclude Include="..\..\libs\WorldLib\pub\wlSky.h" />
+    <ClInclude Include="..\..\libs\WorldLib\pub\wlUGC.h" />
+    <ClInclude Include="..\..\libs\WorldLib\pub\WorldGrid.h" />
+    <ClInclude Include="..\..\libs\WorldLib\pub\WorldLibEnums.h" />
+    <ClInclude Include="..\..\libs\WorldLib\pub\WorldLibStructs.h" />
+    <ClInclude Include="..\Common\accountCommon.h" />
+    <ClInclude Include="..\Common\AccountDataCache.h" />
+    <ClInclude Include="..\Common\AccountProxyCommon.h" />
+    <ClInclude Include="..\Common\ActivityCalendar.h" />
+    <ClInclude Include="..\Common\ActivityCommon.h" />
+    <ClInclude Include="..\Common\ActivityLogCommon.h" />
+    <ClInclude Include="..\Common\aiStructCommon.h" />
+    <ClInclude Include="..\Common\ArmamentSwapCommon.h" />
+    <ClInclude Include="..\Common\AuctionBrokerCommon.h" />
+    <ClInclude Include="..\Common\AuctionCommon.h" />
+    <ClInclude Include="..\Common\chatCommon.h" />
+    <ClInclude Include="..\Common\chatCommonStructs.h" />
+    <ClInclude Include="..\Common\Combat\AbilityScores_DD.h" />
+    <ClInclude Include="..\Common\Combat\AttribCurve.h" />
+    <ClInclude Include="..\Common\Combat\AttribCurveImp.h" />
+    <ClInclude Include="..\Common\Combat\AttribMod.h" />
+    <ClInclude Include="..\Common\Combat\AttribModFragility.h" />
+    <ClInclude Include="..\Common\Combat\Character.h" />
+    <ClInclude Include="..\Common\Combat\Character_combat.h" />
+    <ClInclude Include="..\Common\Combat\Character_mods.h" />
+    <ClInclude Include="..\Common\Combat\Character_target.h" />
+    <ClInclude Include="..\Common\Combat\CharacterAttribs.h" />
+    <ClInclude Include="..\Common\Combat\CharacterAttribsMinimal.h" />
+    <ClInclude Include="..\Common\Combat\CharacterAttribute.h" />
+    <ClInclude Include="..\Common\Combat\CharacterClass.h" />
+    <ClInclude Include="..\Common\Combat\Combat_DD.h" />
+    <ClInclude Include="..\Common\Combat\combatAdvantage.h" />
+    <ClInclude Include="..\Common\Combat\CombatCallbacks.h" />
+    <ClInclude Include="..\Common\Combat\CombatConfig.h" />
+    <ClInclude Include="..\Common\Combat\CombatDebug.h" />
+    <ClInclude Include="..\Common\Combat\CombatEnums.h" />
+    <ClInclude Include="..\Common\Combat\CombatEval.h" />
+    <ClInclude Include="..\Common\Combat\CombatEvents.h" />
+    <ClInclude Include="..\Common\Combat\CombatMods.h" />
+    <ClInclude Include="..\Common\Combat\CombatPool.h" />
+    <ClInclude Include="..\Common\Combat\CombatPowerStateSwitching.h" />
+    <ClInclude Include="..\Common\Combat\CombatReactivePower.h" />
+    <ClInclude Include="..\Common\Combat\CombatSensitivity.h" />
+    <ClInclude Include="..\Common\Combat\ComboTracker.h" />
+    <ClInclude Include="..\Common\Combat\DamageTracker.h" />
+    <ClInclude Include="..\Common\Combat\PowerActivation.h" />
+    <ClInclude Include="..\Common\Combat\PowerAnimFX.h" />
+    <ClInclude Include="..\Common\Combat\PowerApplication.h" />
+    <ClInclude Include="..\Common\Combat\PowerEnhancements.h" />
+    <ClInclude Include="..\Common\Combat\PowerHelpers.h" />
+    <ClInclude Include="..\Common\Combat\PowerModes.h" />
+    <ClInclude Include="..\Common\Combat\PowerReplace.h" />
+    <ClInclude Include="..\Common\Combat\Powers.h" />
+    <ClInclude Include="..\Common\Combat\PowersAEDebug.h" />
+    <ClInclude Include="..\Common\Combat\PowersAutoDesc.h" />
+    <ClInclude Include="..\Common\Combat\PowersEnums.h" />
+    <ClInclude Include="..\Common\Combat\PowerSlots.h" />
+    <ClInclude Include="..\Common\Combat\PowerSubtarget.h" />
+    <ClInclude Include="..\Common\Combat\PowerTree.h" />
+    <ClInclude Include="..\Common\Combat\PowerTreeEval.h" />
+    <ClInclude Include="..\Common\Combat\PowerTreeHelpers.h" />
+    <ClInclude Include="..\Common\Combat\PowerVars.h" />
+    <ClInclude Include="..\Common\Combat\Skills_DD.h" />
+    <ClInclude Include="..\Common\Combat\StatPoints.h" />
+    <ClInclude Include="..\Common\ControlScheme.h" />
+    <ClInclude Include="..\Common\CostumeCommon.h" />
+    <ClInclude Include="..\Common\CostumeCommonEnums.h" />
+    <ClInclude Include="..\Common\CurrencyExchangeCommon.h" />
+    <ClInclude Include="..\Common\DiaryCommon.h" />
+    <ClInclude Include="..\Common\DiaryEnums.h" />
+    <ClInclude Include="..\Common\DiscountShared.h" />
+    <ClInclude Include="..\Common\DoorTransitionCommon.h" />
+    <ClInclude Include="..\Common\EntDebugMenu.h" />
+    <ClInclude Include="..\Common\Entity\aiDebugShared.h" />
+    <ClInclude Include="..\Common\Entity\allegiance.h" />
+    <ClInclude Include="..\Common\Entity\AuctionLot.h" />
+    <ClInclude Include="..\Common\Entity\AuctionLot_Transact.h" />
+    <ClInclude Include="..\Common\Entity\AuctionLotEnums.h" />
+    <ClInclude Include="..\Common\Entity\CostumeCommonEntity.h" />
+    <ClInclude Include="..\Common\Entity\CostumeCommonGenerate.h" />
+    <ClInclude Include="..\Common\Entity\CostumeCommonLoad.h" />
+    <ClInclude Include="..\Common\Entity\CostumeCommonRandom.h" />
+    <ClInclude Include="..\Common\Entity\CostumeCommonTailor.h" />
+    <ClInclude Include="..\Common\Entity\entCritter.h" />
+    <ClInclude Include="..\Common\Entity\entEnums.h" />
+    <ClInclude Include="..\Common\Entity\Entity.h" />
+    <ClInclude Include="..\Common\Entity\EntityAttach.h" />
+    <ClInclude Include="..\Common\Entity\EntityBuild.h" />
+    <ClInclude Include="..\Common\Entity\EntityDataQuery.h" />
+    <ClInclude Include="..\Common\Entity\EntityExtern.h" />
+    <ClInclude Include="..\Common\Entity\EntityInteraction.h" />
+    <ClInclude Include="..\Common\Entity\EntityIterator.h" />
+    <ClInclude Include="..\Common\Entity\EntityLib.h" />
+    <ClInclude Include="..\Common\Entity\EntityMailCommon.h" />
+    <ClInclude Include="..\Common\Entity\EntityMovementRequesterDefs.h" />
+    <ClInclude Include="..\Common\Entity\EntityNet.h" />
+    <ClInclude Include="..\Common\Entity\EntityPlayerTypeConversion.h" />
+    <ClInclude Include="..\Common\Entity\EntitySavedData.h" />
+    <ClInclude Include="..\Common\Entity\EntitySystemInternal.h" />
+    <ClInclude Include="..\Common\Entity\GameAccountDataCommon.h" />
+    <ClInclude Include="..\Common\Entity\GameSession.h" />
+    <ClInclude Include="..\Common\Entity\Guild.h" />
+    <ClInclude Include="..\Common\Entity\InteriorCommon.h" />
+    <ClInclude Include="..\Common\Entity\Leaderboard.h" />
+    <ClInclude Include="..\Common\Entity\OfficerCommon.h" />
+    <ClInclude Include="..\Common\Entity\Player.h" />
+    <ClInclude Include="..\Common\Entity\PlayerDifficultyCommon.h" />
+    <ClInclude Include="..\Common\Entity\ProjectileEntity.h" />
+    <ClInclude Include="..\Common\Entity\RegionRules.h" />
+    <ClInclude Include="..\Common\Entity\SavedPetCommon.h" />
+    <ClInclude Include="..\Common\Entity\SavedPetTransactions.h" />
+    <ClInclude Include="..\Common\Entity\SharedBankCommon.h" />
+    <ClInclude Include="..\Common\Entity\Team.h" />
+    <ClInclude Include="..\Common\Entity\Tray.h" />
+    <ClInclude Include="..\Common\Entity\XBoxStructs.h" />
+    <ClInclude Include="..\Common\GameAccountData\GameAccountData.h" />
+    <ClInclude Include="..\Common\GameBranch.h" />
+    <ClInclude Include="..\Common\GameEvent.h" />
+    <ClInclude Include="..\Common\GamePermissionsCommon.h" />
+    <ClInclude Include="..\Common\GamePermissionTransactions.h" />
+    <ClInclude Include="..\Common\GameStringFormat.h" />
+    <ClInclude Include="..\Common\Genesis\Genesis.h" />
+    <ClInclude Include="..\Common\Genesis\GenesisMissions.h" />
+    <ClInclude Include="..\Common\GlobalExpressions.h" />
+    <ClInclude Include="..\Common\GroupProjectCommon.h" />
+    <ClInclude Include="..\Common\guildCommonStructs.h" />
+    <ClInclude Include="..\Common\interaction_common.h" />
+    <ClInclude Include="..\Common\interactionManager_common.h" />
+    <ClInclude Include="..\Common\item\AlgoItemCommon.h" />
+    <ClInclude Include="..\Common\item\AlgoPet.h" />
+    <ClInclude Include="..\Common\item\inventoryCommon.h" />
+    <ClInclude Include="..\Common\item\itemArt.h" />
+    <ClInclude Include="..\Common\item\ItemAssignments.h" />
+    <ClInclude Include="..\Common\item\itemCommon.h" />
+    <ClInclude Include="..\Common\item\itemEnums.h" />
+    <ClInclude Include="..\Common\item\itemGenCommon.h" />
+    <ClInclude Include="..\Common\item\itemupgrade.h" />
+    <ClInclude Include="..\Common\item\rewardCommon.h" />
+    <ClInclude Include="..\Common\item\SuperCritterPet.h" />
+    <ClInclude Include="..\Common\item\tradeCommon.h" />
+    <ClInclude Include="..\Common\LoadScreen\LoadScreen_Common.h" />
+    <ClInclude Include="..\Common\LobbyCommon.h" />
+    <ClInclude Include="..\Common\LoggedTransactions.h" />
+    <ClInclude Include="..\Common\Login2CharacterDetail.h" />
+    <ClInclude Include="..\Common\Login2Common.h" />
+    <ClInclude Include="..\Common\Login2ServerCommon.h" />
+    <ClInclude Include="..\Common\LoginCommon.h" />
+    <ClInclude Include="..\Common\MailCommon.h" />
+    <ClInclude Include="..\Common\MapRevealCommon.h" />
+    <ClInclude Include="..\Common\mechanics_common.h" />
+    <ClInclude Include="..\Common\MicroTransactions.h" />
+    <ClInclude Include="..\Common\microtransactions_common.h" />
+    <ClInclude Include="..\Common\Microtransactions_Transact.h" />
+    <ClInclude Include="..\Common\MinigameCommon.h" />
+    <ClInclude Include="..\Common\Mission\contact_common.h" />
+    <ClInclude Include="..\Common\Mission\contact_enums.h" />
+    <ClInclude Include="..\Common\Mission\cutscene_common.h" />
+    <ClInclude Include="..\Common\Mission\encounter_common.h" />
+    <ClInclude Include="..\Common\Mission\Encounter_enums.h" />
+    <ClInclude Include="..\Common\Mission\gameaction_common.h" />
+    <ClInclude Include="..\Common\Mission\gametimer_common.h" />
+    <ClInclude Include="..\Common\Mission\mapstate_common.h" />
+    <ClInclude Include="..\Common\Mission\mission_common.h" />
+    <ClInclude Include="..\Common\Mission\mission_enums.h" />
+    <ClInclude Include="..\Common\Mission\missionset_common.h" />
+    <ClInclude Include="..\Common\Mission\nemesis_common.h" />
+    <ClInclude Include="..\Common\Mission\oldencounter_common.h" />
+    <ClInclude Include="..\Common\Mission\playerstats_common.h" />
+    <ClInclude Include="..\Common\Mission\progression_common.h" />
+    <ClInclude Include="..\Common\Mission\progression_transact.h" />
+    <ClInclude Include="..\Common\NameGen.h" />
+    <ClInclude Include="..\Common\NotifyCommon.h" />
+    <ClInclude Include="..\Common\NotifyEnum.h" />
+    <ClInclude Include="..\Common\NumericConversionCommon.h" />
+    <ClInclude Include="..\Common\powerStoreCommon.h" />
+    <ClInclude Include="..\Common\pvp_common.h" />
+    <ClInclude Include="..\Common\PvPGameCommon.h" />
+    <ClInclude Include="..\Common\queue_common.h" />
+    <ClInclude Include="..\Common\queue_common_structs.h" />
+    <ClInclude Include="..\Common\queue_smartGroup.h" />
+    <ClInclude Include="..\Common\ShardEventTimingCommon.h" />
+    <ClInclude Include="..\Common\ShardVariable_Transact.h" />
+    <ClInclude Include="..\Common\ShardVariableCommon.h" />
+    <ClInclude Include="..\Common\SocialCommon.h" />
+    <ClInclude Include="..\Common\species_common.h" />
+    <ClInclude Include="..\Common\SteamCommon.h" />
+    <ClInclude Include="..\Common\SteamCommonServer.h" />
+    <ClInclude Include="..\Common\storeCommon.h" />
+    <ClInclude Include="..\Common\SuggestedContentCommon.h" />
+    <ClInclude Include="..\Common\TeamPetsCommonStructs.h" />
+    <ClInclude Include="..\Common\TeamUpCommon.h" />
+    <ClInclude Include="..\Common\TransformationCommon.h" />
+    <ClInclude Include="..\Common\UGC\UGCAchievements.h" />
+    <ClInclude Include="..\Common\UGC\UGCCommon.h" />
+    <ClInclude Include="..\Common\UGC\UGCError.h" />
+    <ClInclude Include="..\Common\UGC\UGCInteriorCommon.h" />
+    <ClInclude Include="..\Common\UGC\UGCSearchCache.h" />
+    <ClInclude Include="..\Common\UGC\UGCTipsCommon.h" />
+    <ClInclude Include="AccountProxyServer\aslAccountProxyServer.h" />
+    <ClInclude Include="AccountProxyServer\aslAccountProxyServerInit.h" />
+    <ClInclude Include="AccountProxyServer\aslAPAccountLocation.h" />
+    <ClInclude Include="AppServerLib_AnonAutoRunIncludes.h" />
+    <ClInclude Include="aslMapManagerVirtualShard.h" />
+    <ClInclude Include="aslPatchCompletionQuerying.h" />
+    <ClInclude Include="aslPatching.h" />
+    <ClInclude Include="aslTextSearch.h" />
+    <ClInclude Include="AuctionServer\aslAuctionServer.h" />
+    <ClInclude Include="AuctionServer\aslPersistedStores.h" />
+    <ClInclude Include="AuctionServer\AuctionServer.h" />
+    <ClInclude Include="CurrencyExchangeServer\aslCurrencyAutoTrading.h" />
+    <ClInclude Include="CurrencyExchangeServer\aslCurrencyExchange.h" />
+    <ClInclude Include="CurrencyExchangeServer\aslCurrencyExchangeServer.h" />
+    <ClInclude Include="CurrencyExchangeServer\aslMTCTransfer.h" />
+    <ClInclude Include="GatewayLoginLauncher\aslGatewayLoginLauncher.h" />
+    <ClInclude Include="GroupProjectServer\aslGroupProjectServer.h" />
+    <ClInclude Include="GuildServer\aslGuildServer.h" />
+    <ClInclude Include="JobManager\aslJobManager.h" />
+    <ClInclude Include="JobManager\aslJobManagerJobQueues.h" />
+    <ClInclude Include="LeaderboardServer\aslLeaderboardDB.h" />
+    <ClInclude Include="LeaderboardServer\aslLeaderboardServer.h" />
+    <ClInclude Include="LeaderboardServer\aslLeaderboardServerInit.h" />
+    <ClInclude Include="LoginServer\aslLogin2_Booting.h" />
+    <ClInclude Include="LoginServer\aslLogin2_CharacterCreation.h" />
+    <ClInclude Include="LoginServer\aslLogin2_ClientComm.h" />
+    <ClInclude Include="LoginServer\aslLogin2_DeleteCharacter.h" />
+    <ClInclude Include="LoginServer\aslLogin2_EntityFixup.h" />
+    <ClInclude Include="LoginServer\aslLogin2_Error.h" />
+    <ClInclude Include="LoginServer\aslLogin2_GetCharacterChoices.h" />
+    <ClInclude Include="LoginServer\aslLogin2_GetCharacterDetail.h" />
+    <ClInclude Include="LoginServer\aslLogin2_IntershardCommands.h" />
+    <ClInclude Include="LoginServer\aslLogin2_Redirect.h" />
+    <ClInclude Include="LoginServer\aslLogin2_RefreshGAD.h" />
+    <ClInclude Include="LoginServer\aslLogin2_RenameCharacter.h" />
+    <ClInclude Include="LoginServer\aslLogin2_StateMachine.h" />
+    <ClInclude Include="LoginServer\aslLogin2_UGC.h" />
+    <ClInclude Include="LoginServer\aslLogin2_Util.h" />
+    <ClInclude Include="LoginServer\aslLogin2_ValidateLoginTicket.h" />
+    <ClInclude Include="LoginServer\aslLoginCharacterSelect.h" />
+    <ClInclude Include="LoginServer\aslLoginCStore.h" />
+    <ClInclude Include="LoginServer\aslLoginEntityMigrate.h" />
+    <ClInclude Include="LoginServer\aslLoginServer.h" />
+    <ClInclude Include="LoginServer\aslLoginTokenParsing.h" />
+    <ClInclude Include="LoginServer\aslLoginUGCProject.h" />
+    <ClInclude Include="MapManager\aslMapManager.h" />
+    <ClInclude Include="MapManager\aslMapManager_cmd.h" />
+    <ClInclude Include="MapManager\aslMapManagerActivity.h" />
+    <ClInclude Include="MapManager\aslMapManagerConfig.h" />
+    <ClInclude Include="mapmanager\aslMapManagerNewMapTransfer.h" />
+    <ClInclude Include="MapManager\aslMapManagerNewMapTransfer_GetAddress.h" />
+    <ClInclude Include="mapmanager\aslMapManagerNewMapTransfer_GetChoices.h" />
+    <ClInclude Include="MapManager\aslMapManagerNewMapTransfer_InnerStructs.h" />
+    <ClInclude Include="mapmanager\aslMapManagerNewMapTransfer_Private.h" />
+    <ClInclude Include="MapManager\aslMapManagerrandomQueueRelay.h" />
+    <ClInclude Include="pub\AppServerLib.h" />
+    <ClInclude Include="pub\aslJobManagerPub.h" />
+    <ClInclude Include="pub\aslMapManagerPub.h" />
+    <ClInclude Include="pub\aslResourceDBPub.h" />
+    <ClInclude Include="QueueServer\aslQueue.h" />
+    <ClInclude Include="ResourceDB\aslResourceDB.h" />
+    <ClInclude Include="TeamServer\aslTeamServer.h" />
+    <ClInclude Include="TeamServer\aslTeamServerInit.h" />
+    <ClInclude Include="TeamServer\TeamServer.h" />
+    <ClInclude Include="UGCDataManager\aslUGCDataManager.h" />
+    <ClInclude Include="UGCDataManager\aslUGCDataManagerProject.h" />
+    <ClInclude Include="UGCDataManager\aslUGCDataManagerWhatsHot.h" />
+    <ClInclude Include="UGCSearchManager\aslUGCSearchManager.h" />
+    <ClInclude Include="UGCSearchManager\aslUGCSearchManagerAccounts.h" />
+    <ClInclude Include="UGCSearchManager\aslUGCSearchManagerSortByRatings.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\libs\StructParserStub\StructParserStub.vcxproj">
+      <Project>{1d29e421-93b2-4e32-9186-7fafc3971c5b}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

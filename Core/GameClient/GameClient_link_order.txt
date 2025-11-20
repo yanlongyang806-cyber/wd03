@@ -1,0 +1,2 @@
+??0CCriticalSection@@QAA@XZ
+RtlInitializeCriticalSection

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="AutoGen\TransactionServer_AutoGen_1.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoGen\TransactionServer_AutoGen_2.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="TransactionServer.c" />
+    <ClCompile Include="TransactionServer_HTTP.c" />
+    <ClCompile Include="TransactionServer_ShardCluster.c" />
+    <ClCompile Include="TransactionServerUtilities.c" />
+    <ClCompile Include="TransServerMain.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\libs\ServerLib\pub\ServerLib.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\ServerLib\pub\ShardCluster.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\ServerLib\pub\svrGlobalInfo.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\UtilitiesLib\components\GlobalTypes.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="TransactionServer.h" />
+    <ClInclude Include="TransactionServer_ShardCluster.h" />
+    <ClInclude Include="TransactionServerUtilities.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="AutoGen">
+      <UniqueIdentifier>{f9b87b31-400c-43e5-bae6-4bded2e6afa8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{fd141f77-bc5f-426f-99cb-c3fa18fba712}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExternHeaders">
+      <UniqueIdentifier>{554622af-20d7-4dd5-a75a-9125fb053932}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameDefinitionFile xmlns:baseTypes="urn:schemas-microsoft-com:GamesExplorerBaseTypes.v1" xmlns="urn:schemas-microsoft-com:GameDescription.v1">
+    <GameDefinition gameID="{0B04C972-8509-423B-AF62-5C665707D191}">
+        <Name>Star Trek Online</Name>
+        <Description>Become part of Star Trek: The Star Trek universe will appear for the first time in a massively multiplayer online game. Everything from the elegant domes of Starfleet Academy to the ancient temples of Vulcan, from the towers of Qo'noS to the Fire Caves of Bajor, from the mysterious Mutara Nebula to the unexplored voids of deep space, all will be represented in stunning 3-D graphics. Immerse yourself in the future of the Trek universe as it moves into the 25th century: a time of shifting alliances and new discoveries.
+
+Adventure in the Final Frontier: Explore strange new worlds, seek out new life and new civilizations in an expanding vast universe. Make contact with alien races, discover resources and uncover mysteries that will change the future of the Star Trek universe.
+
+You Are the Captain: Command your own starship as a Federation Captain or a Klingon Warrior. Outfit it with the systems that you need to make your mark in the galaxy. Customize your ship as you see fit. Recruit, train and mold your crew into an elite force for exploration and combat.
+
+Surface, Shipboard and Deep Space Adventures: Command your vessel in thrilling space battles, or beam down to planets with your away team for face-to-face confrontations. Missions will take you and your friends into space, planetside and even inside starships!
+
+Powered by the Cryptic Engine, Star Trek Online will be developed for both console and PC formats. With customizable ships and characters from the Klingon Empire and United Federation of Planets, ground, space and shipboard gameplay and unique options for player-generated content set in the Star Trek universe, Star Trek Online is the MMOG that allows you to boldly go where no one has gone before!</Description>
+        <ReleaseDate>2010-02-02</ReleaseDate>
+        <Genres>
+            <Genre>MMORPG</Genre>
+            <Genre>Action</Genre>
+        </Genres>
+        <Version>
+            <VersionFile path="Star Trek Online.exe" />
+        </Version>
+        <WindowsSystemPerformanceRating minimum="4.1" recommended="5.6" />
+        <Developers>
+            <Developer URI="http://www.crypticstudios.com/">Cryptic Studios</Developer>
+        </Developers>
+        <Publishers>
+            <Publisher URI="http://fr.perfectworld.eu/">Perfect World</Publisher>
+        </Publishers>
+        <GameExecutables>
+            <GameExecutable path="Star Trek Online.exe" />
+            <GameExecutable path="Star Trek Online\Live\GameClient.exe" />
+            <GameExecutable path="Star Trek Online\Playtest\GameClient.exe" />
+            <GameExecutable path="Star Trek Online\Tip\GameClient.exe" />
+        </GameExecutables>
+        <Ratings>
+            <Rating ratingSystemID="{768BD93D-63BE-46A9-8994-0B53C4B5248F}" ratingID="{18CD34B7-7AA3-42b9-A303-5A729B2FF228}">
+                <Descriptor descriptorID="{56C2626D-3794-473c-B57F-40D31D012C4C}" />
+                <Descriptor descriptorID="{9BE7B916-F237-4328-8157-24282DA66151}" />
+                <Descriptor descriptorID="{E04AAEE8-950C-43c4-B75C-D87736A7FAFD}" />
+            </Rating>
+            <Rating ratingSystemID="{C705DCF4-6AFE-4f4f-BC51-21807E4E5CFB}" ratingID="{B3F8E60B-DF77-4104-88AC-F5919C64649A}" />
+            <Rating ratingSystemID="{EC290BBB-D618-4cb9-9963-1CAAE515443E}" ratingID="{068D40C4-7809-4c67-8FEA-DA457CF990B4}" />
+            <Rating ratingSystemID="{36798944-B235-48ac-BF21-E25671F597EE}" ratingID="{CEC5DB5A-B4C9-4809-96C6-39CE715E4790}">
+                <Descriptor descriptorID="{F110F831-9412-40c9-860A-B489407ED374}" />
+            </Rating>
+        </Ratings>
+    </GameDefinition>
+</GameDefinitionFile>

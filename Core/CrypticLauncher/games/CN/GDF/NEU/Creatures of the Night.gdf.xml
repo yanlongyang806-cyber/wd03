@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameDefinitionFile xmlns:baseTypes="urn:schemas-microsoft-com:GamesExplorerBaseTypes.v1" xmlns="urn:schemas-microsoft-com:GameDescription.v1">
+    <GameDefinition gameID="{399c8d69-ce7d-4e7b-b668-15f77ff7ef1b}">
+        <Name>Creatures of the Night</Name>
+        <Description></Description>
+        <ReleaseDate>1970-01-01</ReleaseDate>
+        <Genres>
+            <Genre>MMORPG</Genre>
+        </Genres>
+        <Version>
+            <VersionFile path="Creatures of the Night.exe" />
+        </Version>
+        <WindowsSystemPerformanceRating minimum="4.1" recommended="5.6" />
+        <Developers>
+            <Developer URI="http://www.crypticstudios.com/">Cryptic Studios</Developer>
+        </Developers>
+        <Publishers>
+            <Publisher URI="http://atari.com/">Atari</Publisher>
+        </Publishers>
+        <GameExecutables>
+            <GameExecutable path="Creatures of the Night.exe" />
+            <GameExecutable path="Creatures of the Night\Playtest\GameClient.exe" />
+            <GameExecutable path="Creatures of the Night\Tip\GameClient.exe" />
+            <GameExecutable path="Creatures of the Night\Live\GameClient.exe" />
+        </GameExecutables>
+    </GameDefinition>
+</GameDefinitionFile>

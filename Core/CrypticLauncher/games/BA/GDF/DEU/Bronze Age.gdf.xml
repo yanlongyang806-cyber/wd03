@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameDefinitionFile xmlns:baseTypes="urn:schemas-microsoft-com:GamesExplorerBaseTypes.v1" xmlns="urn:schemas-microsoft-com:GameDescription.v1">
+    <GameDefinition gameID="{4bd2ea4d-4eb8-47e8-b461-8b1a7dab5fc6}">
+        <Name>Bronze Age</Name>
+        <Description></Description>
+        <ReleaseDate>1970-01-01</ReleaseDate>
+        <Genres>
+            <Genre>MMORPG</Genre>
+        </Genres>
+        <Version>
+            <VersionFile path="Bronze Age.exe" />
+        </Version>
+        <WindowsSystemPerformanceRating minimum="4.1" recommended="5.6" />
+        <Developers>
+            <Developer URI="http://www.crypticstudios.com/">Cryptic Studios</Developer>
+        </Developers>
+        <Publishers>
+            <Publisher URI="http://atari.com/">Atari</Publisher>
+        </Publishers>
+        <GameExecutables>
+            <GameExecutable path="Bronze Age.exe" />
+            <GameExecutable path="Bronze Age\Playtest\GameClient.exe" />
+            <GameExecutable path="Bronze Age\Tip\GameClient.exe" />
+            <GameExecutable path="Bronze Age\Live\GameClient.exe" />
+            <GameExecutable path="Bronze Age\Avatar\GameClient.exe" />
+        </GameExecutables>
+    </GameDefinition>
+</GameDefinitionFile>

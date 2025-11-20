@@ -1,0 +1,701 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Full Debug|Win32">
+      <Configuration>Full Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Full Debug|x64">
+      <Configuration>Full Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C88AA743-F9F7-4081-AA5D-E677AC324C50}</ProjectGuid>
+    <RootNamespace>LogParser</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="..\..\PropertySheets\GeneralSettings.props" />
+    <Import Project="..\..\PropertySheets\CrypticApplication.props" />
+    <Import Project="..\..\PropertySheets\LinkerOptimizations.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="..\..\PropertySheets\GeneralSettings.props" />
+    <Import Project="..\..\PropertySheets\CrypticApplication.props" />
+    <Import Project="..\..\PropertySheets\LinkerOptimizations.props" />
+    <Import Project="..\..\PropertySheets\x64.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'" Label="PropertySheets">
+    <Import Project="..\..\PropertySheets\GeneralSettings.props" />
+    <Import Project="..\..\PropertySheets\CrypticApplication.props" />
+    <Import Project="..\..\PropertySheets\LinkerOptimizations.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|x64'" Label="PropertySheets">
+    <Import Project="..\..\PropertySheets\GeneralSettings.props" />
+    <Import Project="..\..\PropertySheets\CrypticApplication.props" />
+    <Import Project="..\..\PropertySheets\LinkerOptimizations.props" />
+    <Import Project="..\..\PropertySheets\x64.props" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectName)X64</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">$(ProjectName)FD</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Full Debug|x64'">$(ProjectName)X64FD</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../core/controller/pub;../../libs/Renderers/pub;../../libs/GraphicsLib/pub;../../CrossRoads/GameClientLib;../../CrossRoads/GameClientLib/pub;../../libs/WorldLib;../../libs/WorldLib/pub;../../libs/AILib/pub;../../CrossRoads/Common/Mission;../../CrossRoads/Common/item;../../CrossRoads/Common/Entity;../../CrossRoads/Common/Combat;../../CrossRoads/Common/Genesis;../../CrossRoads/Common/UGC;../../CrossRoads/Common;../../libs/ServerLib/pub;../../3rdparty/zlib;../common/utils;../common/components;../common/network;../common;../../libs/Common;../../libs/HttpLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRTDBG_MAP_ALLOC=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/MACHINE:I386 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>psapi.lib;kernel32.lib;user32.lib;uuid.lib;shell32.lib;advapi32.lib;gdi32.lib</AdditionalDependencies>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <DelayLoadDLLs>%(DelayLoadDLLs)</DelayLoadDLLs>
+      <SubSystem>Console</SubSystem>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <PreBuildEvent>
+      <Command>..\..\utilities\bin\structparser X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)</Command>
+    </PreBuildEvent>
+    <PreLinkEvent>
+      <Command>
+      </Command>
+    </PreLinkEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../core/controller/pub;../../libs/Renderers/pub;../../libs/GraphicsLib/pub;../../CrossRoads/GameClientLib;../../CrossRoads/GameClientLib/pub;../../libs/WorldLib;../../libs/WorldLib/pub;../../libs/AILib/pub;../../CrossRoads/Common/Mission;../../CrossRoads/Common/item;../../CrossRoads/Common/Entity;../../CrossRoads/Common/Combat;../../CrossRoads/Common/Genesis;../../CrossRoads/Common/UGC;../../CrossRoads/Common;../../libs/ServerLib/pub;../../3rdparty/zlib;../common/utils;../common/components;../common/network;../common;../../libs/Common;../../libs/HttpLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN64;PSDK_DISABLED;WIN32;_DEBUG;_CONSOLE;_CRTDBG_MAP_ALLOC=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>psapi.lib;kernel32.lib;user32.lib;uuid.lib;shell32.lib;advapi32.lib;gdi32.lib</AdditionalDependencies>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <DelayLoadDLLs>%(DelayLoadDLLs)</DelayLoadDLLs>
+      <SubSystem>Console</SubSystem>
+      <LargeAddressAware>true</LargeAddressAware>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <PreBuildEvent>
+      <Command>..\..\utilities\bin\structparser X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)</Command>
+    </PreBuildEvent>
+    <PreLinkEvent>
+      <Command>
+      </Command>
+    </PreLinkEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../core/controller/pub;../../libs/Renderers/pub;../../libs/GraphicsLib/pub;../../CrossRoads/GameClientLib;../../CrossRoads/GameClientLib/pub;../../libs/WorldLib;../../libs/WorldLib/pub;../../libs/AILib/pub;../../CrossRoads/Common/Mission;../../CrossRoads/Common/item;../../CrossRoads/Common/Entity;../../CrossRoads/Common/Combat;../../CrossRoads/Common/Genesis;../../CrossRoads/Common/UGC;../../CrossRoads/Common;../../libs/ServerLib/pub;../../3rdparty/zlib;../common/utils;../common/components;../common/network;../common;../../libs/Common;../../libs/HttpLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRTDBG_MAP_ALLOC=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/MACHINE:I386 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>psapi.lib;kernel32.lib;user32.lib;uuid.lib;shell32.lib;advapi32.lib;gdi32.lib</AdditionalDependencies>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <DelayLoadDLLs>%(DelayLoadDLLs)</DelayLoadDLLs>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <PreBuildEvent>
+      <Command>..\..\utilities\bin\structparser X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)</Command>
+    </PreBuildEvent>
+    <PreLinkEvent>
+      <Command>
+      </Command>
+    </PreLinkEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../core/controller/pub;../../libs/Renderers/pub;../../libs/GraphicsLib/pub;../../CrossRoads/GameClientLib;../../CrossRoads/GameClientLib/pub;../../libs/WorldLib;../../libs/WorldLib/pub;../../libs/AILib/pub;../../CrossRoads/Common/Mission;../../CrossRoads/Common/item;../../CrossRoads/Common/Entity;../../CrossRoads/Common/Combat;../../CrossRoads/Common/Genesis;../../CrossRoads/Common/UGC;../../CrossRoads/Common;../../libs/ServerLib/pub;../../3rdparty/zlib;../common/utils;../common/components;../common/network;../common;../../libs/Common;../../libs/HttpLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN64;PSDK_DISABLED;WIN32;_DEBUG;_CONSOLE;_CRTDBG_MAP_ALLOC=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>psapi.lib;kernel32.lib;user32.lib;uuid.lib;shell32.lib;advapi32.lib;gdi32.lib</AdditionalDependencies>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <DelayLoadDLLs>%(DelayLoadDLLs)</DelayLoadDLLs>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <PreBuildEvent>
+      <Command>..\..\utilities\bin\structparser X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)</Command>
+    </PreBuildEvent>
+    <PreLinkEvent>
+      <Command>
+      </Command>
+    </PreLinkEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\CrossRoads\AppServerLib\mission\aslMapState.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\accountCommon.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\AccountDataCache.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\ActivityCalendar.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\ActivityCommon.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\ActivityLogCommon.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\ArmamentSwapCommon.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\AuctionBrokerCommon.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\AutoGen\GameServerLib_autotransactions_autogen_wrappers.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\chatCommon.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\AbilityScores_DD.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\AttribCurve.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\AttribCurveImp.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\AttribMod.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\AttribModFragility.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\Character.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\Character_combat.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\Character_mods.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\Character_target.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\CharacterAttribs.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\CharacterAttribute.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\CharacterClass.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\Combat_DD.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\combatAdvantage.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\CombatCallbacks.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\CombatConfig.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\CombatDebug.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\CombatEval.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\CombatEvents.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\CombatPool.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\CombatPowerStateSwitching.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\CombatReactivePower.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\CombatSensitivity.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\ComboTracker.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\DamageTracker.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\PowerActivation.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\PowerAnimFX.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\PowerApplication.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\PowerEnhancements.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\PowerHelpers.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\PowerModes.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\PowerReplace.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\Powers.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\PowersAEDebug.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\PowersAutoDesc.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\PowerSlots.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\PowerSubtarget.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\PowerTree.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\PowerTreeEval.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\PowerTreeHelpers.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\PowerVars.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Combat\StatPoints.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\ControlScheme.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\CurrencyExchangeCommon.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\DiaryCommon.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\DiscountShared.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\DoorTransitionCommon.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\EntDebugMenu.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\allegiance.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\AuctionLot.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\CombatMods.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\CostumeCommonEntity.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\CostumeCommonGenerate.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\CostumeCommonLoad.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\CostumeCommonRandom.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\CostumeCommonTailor.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\entCritter.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\Entity.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\EntityBuild.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\EntityDataQuery.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\EntityExprFunc.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\EntityInteraction.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\EntityIterator.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\EntityLib.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\EntityMailCommon.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\EntityNet.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\EntitySystem.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\GameAccountDataCommon.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\Guild.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\InteriorCommon.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\Leaderboard.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\OfficerCommon.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\PlayerDifficultyCommon.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\RegionRules.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\SavedPetCommon.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\SharedBankCommon.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\SkelInfoFixup.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\Team.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\Tray.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Entity\XboxStructs.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\GameAccountData\GameAccountData.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\GameBranch.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\GameEvent.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\GamePermissionsCommon.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\GameStringFormat.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\GlobalExpressions.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\GroupProjectCommon.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\interaction_common.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\interactionManager_common.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\item\algoItemCommon.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\item\AlgoPet.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\item\containerTrade.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\item\inventoryCommon.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\item\itemArt.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\item\ItemAssignmentEval.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\item\ItemAssignments.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\item\itemCommon.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\item\itemEval.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\item\itemGenCommon.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\item\itemupgrade.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\item\rewardCommon.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\item\RewardTable.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\item\SuperCritterPet.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\item\tradeCommon.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\LoginCommon.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\MailCommon.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\MapRevealCommon.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\mechanics_common.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\MicroTransactions.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\microtransactions_common.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\MinigameCommon.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Mission\contact_common.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Mission\cutscene_common.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Mission\encounter_common.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Mission\gameaction_common.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Mission\gametimer_common.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Mission\mapstate_common.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Mission\mapstate_common_eval.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Mission\mission_common.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Mission\mission_templates.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Mission\nemesis_common.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Mission\playerstats_common.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Mission\progression_common.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Mission\progression_transact.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\NameGen.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\NotifyCommon.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\NumericConversionCommon.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\powerStoreCommon.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\pvp_common.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\PvPGameCommon.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\queue_common_structs.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\ShardEventTimingCommon.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\ShardVariableCommon.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\SocialCommon.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\species_common.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\storeCommon.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\TeamPetsCommonStructs.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\TeamUpCommon.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\TransformationCommon.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\UGC\UGCAchievements.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\UGC\UGCCommon.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\UGC\UGCTipsCommon.c" />
+    <ClCompile Include="..\..\libs\Common\MapDescription.c" />
+    <ClCompile Include="..\..\libs\Common\NoUGCInThisProject.c" />
+    <ClCompile Include="AutoGen\LogParser_AutoGen_1.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="AutoGen\LogParser_AutoGen_2.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="LogParser.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Default</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">Disabled</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">Default</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">StackFrameRuntimeCheck</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Full Debug|x64'">Disabled</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Full Debug|x64'">Default</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Full Debug|x64'">StackFrameRuntimeCheck</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="LogParser_CompileLinkSupport.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Default</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">Disabled</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">Default</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">StackFrameRuntimeCheck</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Full Debug|x64'">Disabled</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Full Debug|x64'">Default</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Full Debug|x64'">StackFrameRuntimeCheck</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="LogParser_Http.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Default</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">Disabled</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">Default</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">StackFrameRuntimeCheck</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Full Debug|x64'">Disabled</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Full Debug|x64'">Default</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Full Debug|x64'">StackFrameRuntimeCheck</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="LogParser_Xmlrpc.c" />
+    <ClCompile Include="LogParserAggregator.c" />
+    <ClCompile Include="LogParserAggregatorCommands.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="LogParserBinning.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Default</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">Disabled</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">Default</InlineFunctionExpansion>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Full Debug|x64'">Disabled</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Full Debug|x64'">Default</InlineFunctionExpansion>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="LogParserConstructedObjects.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Default</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">Disabled</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">Default</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">StackFrameRuntimeCheck</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Full Debug|x64'">Disabled</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Full Debug|x64'">Default</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Full Debug|x64'">StackFrameRuntimeCheck</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="LogParserFilteredLogFile.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="LogParserFrontEndFiltering.c" />
+    <ClCompile Include="LogParserGameServerFilters.c" />
+    <ClCompile Include="LogParserGraphs.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Default</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">Disabled</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">Default</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">StackFrameRuntimeCheck</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Full Debug|x64'">Disabled</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Full Debug|x64'">Default</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Full Debug|x64'">StackFrameRuntimeCheck</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="LogParserLaunching.c" />
+    <ClCompile Include="LogParserPlayerFilters.c" />
+    <ClCompile Include="LogParserUniqueCounter.c" />
+    <ClCompile Include="LogParserUtils.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\CrossRoads\Common\accountCommon.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\AccountDataCache.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\ActivityCalendar.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\ActivityCommon.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\ActivityLogCommon.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\ArmamentSwapCommon.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\AuctionBrokerCommon.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\chatCommon.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\chatCommonStructs.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\AbilityScores_DD.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\AttribCurve.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\AttribCurveImp.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\AttribMod.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\AttribModFragility.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\Character.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\Character_combat.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\Character_mods.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\Character_target.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\CharacterAttribs.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\CharacterAttribsMinimal.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\CharacterAttribute.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\CharacterClass.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\Combat_DD.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\combatAdvantage.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\CombatCallbacks.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\CombatConfig.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\CombatDebug.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\CombatEnums.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\CombatEval.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\CombatEvents.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\CombatMods.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\CombatPool.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\CombatPowerStateSwitching.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\CombatReactivePower.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\CombatSensitivity.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\ComboTracker.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\DamageTracker.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\PowerActivation.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\PowerAnimFX.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\PowerApplication.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\PowerEnhancements.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\PowerHelpers.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\PowerModes.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\PowerReplace.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\Powers.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\PowersAEDebug.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\PowersAutoDesc.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\PowersEnums.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\PowerSlots.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\PowerSubtarget.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\PowerTree.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\PowerTreeEval.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\PowerTreeHelpers.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\PowerVars.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\StatPoints.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\ControlScheme.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\CostumeCommon.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\CostumeCommonEnums.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\CurrencyExchangeCommon.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\DiaryCommon.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\DiaryEnums.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\DiscountShared.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\DoorTransitionCommon.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\EntDebugMenu.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\aiDebugShared.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\allegiance.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\AuctionLot.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\CostumeCommonEntity.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\CostumeCommonGenerate.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\CostumeCommonLoad.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\CostumeCommonRandom.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\CostumeCommonTailor.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\entCritter.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\entEnums.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\Entity.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\EntityAttach.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\EntityBuild.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\EntityDataQuery.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\EntityExtern.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\EntityInteraction.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\EntityIterator.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\EntityLib.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\EntityMailCommon.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\EntityNet.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\EntitySavedData.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\EntitySystemInternal.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\GameAccountDataCommon.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\Guild.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\InteriorCommon.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\Leaderboard.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\OfficerCommon.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\Player.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\PlayerDifficultyCommon.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\RegionRules.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\SavedPetCommon.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\SharedBankCommon.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\Team.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\Tray.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\XBoxStructs.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\GameAccountData\GameAccountData.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\GameBranch.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\GameEvent.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\GamePermissionsCommon.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\GameStringFormat.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\GlobalExpressions.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\GroupProjectCommon.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\interaction_common.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\interactionManager_common.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\item\algoItemCommon.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\item\AlgoPet.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\item\containerTrade.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\item\inventoryCommon.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\item\itemArt.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\item\ItemAssignments.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\item\itemCommon.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\item\itemEnums.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\item\itemGenCommon.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\item\itemupgrade.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\item\rewardCommon.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\item\SuperCritterPet.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\item\tradeCommon.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\LoginCommon.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\MailCommon.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\MapRevealCommon.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\mechanics_common.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\MicroTransactions.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\microtransactions_common.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\MinigameCommon.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Mission\contact_common.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Mission\contact_enums.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Mission\cutscene_common.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Mission\encounter_common.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Mission\Encounter_enums.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Mission\gameaction_common.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Mission\gametimer_common.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Mission\mapstate_common.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Mission\mission_common.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Mission\mission_enums.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Mission\nemesis_common.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Mission\playerstats_common.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Mission\progression_common.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Mission\progression_transact.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\NameGen.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\NotifyCommon.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\NotifyEnum.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\NumericConversionCommon.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\powerStoreCommon.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\pvp_common.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\PvPGameCommon.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\queue_common_structs.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\ShardEventTimingCommon.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\ShardVariableCommon.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\SocialCommon.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\species_common.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\storeCommon.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Survey.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\TeamPetsCommonStructs.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\TeamUpCommon.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\TransformationCommon.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\UGC\UGCAchievements.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\UGC\UGCCommon.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\UGC\UGCTipsCommon.h" />
+    <ClInclude Include="..\..\libs\Common\GlobalEnums.h" />
+    <ClInclude Include="..\..\libs\Common\MapDescription.h" />
+    <ClInclude Include="..\..\libs\Common\ugcprojectcommon.h" />
+    <ClInclude Include="..\..\libs\GraphicsLib\pub\GraphicsLib.h" />
+    <ClInclude Include="..\..\libs\Renderers\pub\RdrEnums.h" />
+    <ClInclude Include="..\..\libs\ServerLib\pub\svrGlobalInfo.h" />
+    <ClInclude Include="..\..\libs\UtilitiesLib\components\GlobalTypeEnum.h" />
+    <ClInclude Include="..\..\libs\UtilitiesLib\components\GlobalTypes.h" />
+    <ClInclude Include="..\..\libs\UtilitiesLib\components\objPath.h" />
+    <ClInclude Include="..\..\libs\UtilitiesLib\components\ResourceInfo.h" />
+    <ClInclude Include="..\..\libs\UtilitiesLib\components\WorldVariable.h" />
+    <ClInclude Include="..\..\libs\UtilitiesLib\net\accountnet.h" />
+    <ClInclude Include="..\..\libs\UtilitiesLib\utils\Capsule.h" />
+    <ClInclude Include="..\..\libs\UtilitiesLib\utils\EventCountingHeatMap.h" />
+    <ClInclude Include="..\..\libs\UtilitiesLib\utils\LogParsing.h" />
+    <ClInclude Include="..\..\libs\UtilitiesLib\utils\LogParsingFileBuckets.h" />
+    <ClInclude Include="..\..\libs\UtilitiesLib\utils\StringUtil.h" />
+    <ClInclude Include="..\..\libs\WorldLib\pub\wlCostume.h" />
+    <ClInclude Include="..\..\libs\WorldLib\pub\wlGenesisMissionsGameStructs.h" />
+    <ClInclude Include="..\..\libs\WorldLib\pub\WorldLib.h" />
+    <ClInclude Include="..\..\libs\WorldLib\pub\WorldLibEnums.h" />
+    <ClInclude Include="..\Controller\Pub\ControllerPub.h" />
+    <ClInclude Include="..\NewControllerTracker\pub\NewControllerTracker_Pub.h" />
+    <ClInclude Include="LogParser.h" />
+    <ClInclude Include="LogParserAggregator.h" />
+    <ClInclude Include="LogParserBinning.h" />
+    <ClInclude Include="LogParserConstructedObjects.h" />
+    <ClInclude Include="LogParserFilteredLogFile.h" />
+    <ClInclude Include="LogParserFrontEndFiltering.h" />
+    <ClInclude Include="LogParserGraphs.h" />
+    <ClInclude Include="LogParserLaunching.h" />
+    <ClInclude Include="LogParserUniqueCounter.h" />
+    <ClInclude Include="LogParserUtils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\libs\HttpLib\HttpLib.vcxproj">
+      <Project>{2acc94ec-3e38-48bd-b97f-5b46328a4aef}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\libs\PatchClientLib\PatchClientLib.vcxproj">
+      <Project>{487db8d6-6faf-4e86-9800-75088911a703}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\libs\ServerLib\ServerLib.vcxproj">
+      <Project>{dd475a7c-b1d4-43c4-acb7-d73c24be1eb7}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\libs\StructParserStub\StructParserStub.vcxproj">
+      <Project>{1d29e421-93b2-4e32-9186-7fafc3971c5b}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\libs\UtilitiesLib\UtilitiesLib.vcxproj">
+      <Project>{a6741f6e-5476-4f9f-9d65-62b54aaf1d08}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\libs\WorldLib\WorldLib.vcxproj">
+      <Project>{e9aeb79e-085b-4392-a53f-8a9c609e8385}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

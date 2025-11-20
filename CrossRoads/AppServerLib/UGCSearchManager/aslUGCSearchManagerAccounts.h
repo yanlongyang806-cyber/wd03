@@ -1,0 +1,4 @@
+#pragma once
+
+void aslUGCSearchManagerAddAccountIDForPermissionChecking(U32 iAccountID);
+bool aslUGCSearchManagerIsAccountUGCPublishBanned(U32 iAccountID);

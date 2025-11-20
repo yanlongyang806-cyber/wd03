@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\CrossRoads\Common\accountCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\AutoGen\GameServerLib_autogen_RemoteFuncs.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\chatCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\TextFilterCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\AutoGen\GlobalChatServer_autogen_RemoteFuncs.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\AutoGen\GlobalChatServer_autotransactions_autogen_wrappers.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\chatdb.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ChatServer\chatBlacklist.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ChatServer\chatShared.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ChatServer\xmppShared.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ChatServer\xmppTypes.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="aslChatServer.c" />
+    <ClCompile Include="aslChatServerInit.c" />
+    <ClCompile Include="AutoGen\GlobalChatServer_AutoGen_1.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoGen\GlobalChatServer_AutoGen_2.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="channels.c" />
+    <ClCompile Include="chatGlobal.c" />
+    <ClCompile Include="chatGlobalCommands.c" />
+    <ClCompile Include="chatGlobalConfig.c" />
+    <ClCompile Include="chatGuild.c" />
+    <ClCompile Include="chatMail.c" />
+    <ClCompile Include="ChatServer.c" />
+    <ClCompile Include="chatShardCluster.c" />
+    <ClCompile Include="chatUtilities.c" />
+    <ClCompile Include="csr.c" />
+    <ClCompile Include="friendsIgnore.c" />
+    <ClCompile Include="loadsave.c" />
+    <ClCompile Include="msgsend.c" />
+    <ClCompile Include="shardnet.c" />
+    <ClCompile Include="userPermissions.c" />
+    <ClCompile Include="users.c" />
+    <ClCompile Include="userStatus.c" />
+    <ClCompile Include="xmpp\XMPP_Chat.c">
+      <Filter>xmpp</Filter>
+    </ClCompile>
+    <ClCompile Include="xmpp\XMPP_ChatRoom.c">
+      <Filter>xmpp</Filter>
+    </ClCompile>
+    <ClCompile Include="xmpp\XMPP_ChatUtils.c">
+      <Filter>xmpp</Filter>
+    </ClCompile>
+    <ClCompile Include="xmpp\XMPP_Gateway.c">
+      <Filter>xmpp</Filter>
+    </ClCompile>
+    <ClCompile Include="xmpp\XMPP_Structs.c">
+      <Filter>xmpp</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\CrossRoads\Common\accountCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\chatCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\chatCommonStructs.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\UtilitiesLib\net\accountnet.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\chatdb.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ChatServer\chatBlacklist.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ChatServer\chatShared.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ChatServer\xmppShared.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ChatServer\xmppTypes.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="aslChatServer.h" />
+    <ClInclude Include="aslChatServerInit.h" />
+    <ClInclude Include="channels.h" />
+    <ClInclude Include="chatCommandStrings.h" />
+    <ClInclude Include="chatGlobal.h" />
+    <ClInclude Include="chatGlobalCommands.h" />
+    <ClInclude Include="chatGlobalConfig.h" />
+    <ClInclude Include="chatGuild.h" />
+    <ClInclude Include="ChatServer.h" />
+    <ClInclude Include="chatShardCluster.h" />
+    <ClInclude Include="chatUtilities.h" />
+    <ClInclude Include="csr.h" />
+    <ClInclude Include="friendsIgnore.h" />
+    <ClInclude Include="loadsave.h" />
+    <ClInclude Include="msgsend.h" />
+    <ClInclude Include="shardnet.h" />
+    <ClInclude Include="userPermissions.h" />
+    <ClInclude Include="users.h" />
+    <ClInclude Include="userStatus.h" />
+    <ClInclude Include="xmpp\XMPP_Chat.h">
+      <Filter>xmpp</Filter>
+    </ClInclude>
+    <ClInclude Include="xmpp\XMPP_ChatRoom.h">
+      <Filter>xmpp</Filter>
+    </ClInclude>
+    <ClInclude Include="xmpp\XMPP_ChatUtils.h">
+      <Filter>xmpp</Filter>
+    </ClInclude>
+    <ClInclude Include="xmpp\XMPP_Gateway.h">
+      <Filter>xmpp</Filter>
+    </ClInclude>
+    <ClInclude Include="xmpp\XMPP_Structs.h">
+      <Filter>xmpp</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="AutoGen">
+      <UniqueIdentifier>{f58fd3db-af7f-4108-ba1b-d550a821703a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{119c7d71-2895-4837-b6ea-b82b8c449874}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExternHeaders">
+      <UniqueIdentifier>{e30a64b8-380b-4374-a637-2f477f8eb024}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xmpp">
+      <UniqueIdentifier>{4c064e9e-b443-4d83-bec6-eaeacda82577}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

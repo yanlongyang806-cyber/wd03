@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\CrossRoads\Common\AutoGen\AppServerLib_autogen_RemoteFuncs.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\AutoGen\ChatRelay_autogen_RemoteFuncs.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\AutoGen\GameServerLib_autogen_RemoteFuncs.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\chatCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\GameAccountData\GameAccountData.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\guildCommonStructs.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\microtransactions_common.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\PvPGameCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\queue_common_structs.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\TextFilterCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\AutoGen\ChatServer_autogen_RemoteFuncs.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\AutoGen\ChatServer_autotransactions_autogen_wrappers.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\chatdb.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ChatServer\chatBlacklist.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ChatServer\chatShard_Shared.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ChatServer\chatShared.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="aslChatServer.c" />
+    <ClCompile Include="aslChatServerInit.c" />
+    <ClCompile Include="AutoGen\ChatServer_AutoGen_1.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoGen\ChatServer_AutoGen_2.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="channels.c" />
+    <ClCompile Include="chatGlobal.c" />
+    <ClCompile Include="chatGuild.c" />
+    <ClCompile Include="chatLocal.c" />
+    <ClCompile Include="chatMail.c" />
+    <ClCompile Include="chatRelay\chatRelayManager.c">
+      <Filter>chatRelay</Filter>
+    </ClCompile>
+    <ClCompile Include="ChatServer.c" />
+    <ClCompile Include="chatShardConfig.c" />
+    <ClCompile Include="chatStringFormat.c" />
+    <ClCompile Include="chatUtilities.c" />
+    <ClCompile Include="chatVoice.c" />
+    <ClCompile Include="csr.c" />
+    <ClCompile Include="friendsIgnore.c" />
+    <ClCompile Include="loadsave.c" />
+    <ClCompile Include="msgsend.c" />
+    <ClCompile Include="shardnet.c" />
+    <ClCompile Include="users.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\CrossRoads\Common\AutoGen\ChatRelay_autogen_RemoteFuncs.h">
+      <Filter>AutoGen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\chatCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\chatCommonStructs.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\GameAccountData\GameAccountData.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\guildCommonStructs.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\microtransactions_common.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\PvPGameCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\queue_common_structs.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\ServerLib\pub\ShardCluster.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\chatdb.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ChatServer\chatBlacklist.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ChatServer\chatShard_Shared.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ChatServer\chatShared.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="aslChatServer.h" />
+    <ClInclude Include="aslChatServerInit.h" />
+    <ClInclude Include="channels.h" />
+    <ClInclude Include="chatCommandStrings.h" />
+    <ClInclude Include="chatGlobal.h" />
+    <ClInclude Include="chatLocal.h" />
+    <ClInclude Include="chatMail.h" />
+    <ClInclude Include="chatRelay\chatRelayManager.h">
+      <Filter>chatRelay</Filter>
+    </ClInclude>
+    <ClInclude Include="ChatServer.h" />
+    <ClInclude Include="chatShardConfig.h" />
+    <ClInclude Include="chatStringFormat.h" />
+    <ClInclude Include="chatUtilities.h" />
+    <ClInclude Include="chatVoice.h" />
+    <ClInclude Include="csr.h" />
+    <ClInclude Include="friendsIgnore.h" />
+    <ClInclude Include="loadsave.h" />
+    <ClInclude Include="msgsend.h" />
+    <ClInclude Include="shardnet.h" />
+    <ClInclude Include="users.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="AutoGen">
+      <UniqueIdentifier>{dffdf7fd-4b69-44e7-9250-61aa32656beb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="chatRelay">
+      <UniqueIdentifier>{e69075ee-ba63-465d-8093-a5724d0ec913}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{b5a09673-7271-414e-b911-7c45aec53cd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExternHeaders">
+      <UniqueIdentifier>{74166946-b1cd-450a-b080-f80e57d446c0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

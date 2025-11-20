@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameDefinitionFile xmlns:baseTypes="urn:schemas-microsoft-com:GamesExplorerBaseTypes.v1" xmlns="urn:schemas-microsoft-com:GameDescription.v1">
+    <GameDefinition gameID="{90E0B09B-C1D1-49CD-920D-74BAEABD2AC5}">
+        <Name>Cryptic Launcher</Name>
+        <Description></Description>
+        <ReleaseDate>2008-07-18</ReleaseDate>
+        <Genres>
+            <Genre>MMORPG</Genre>
+        </Genres>
+        <Version>
+            <VersionFile path="CrypticLauncher.exe" />
+        </Version>
+        <WindowsSystemPerformanceRating minimum="1" recommended="1" />
+        <Developers>
+            <Developer URI="http://www.crypticstudios.com/">Cryptic Studios</Developer>
+        </Developers>
+        <Publishers>
+            <Publisher URI="http://atari.com/us/">Atari</Publisher>
+        </Publishers>
+        <GameExecutables>
+            <GameExecutable path="CrypticLauncher.exe" />
+        </GameExecutables>
+    </GameDefinition>
+</GameDefinitionFile>

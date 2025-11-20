@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\libs\HostIOLib\xboxHostIO.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="accountinfo.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ArtistSetup.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ArtistTools.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoGen\MasterControlProgram_AutoGen_1.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoGen\MasterControlProgram_AutoGen_2.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandLineScreen.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ControllerScriptScreen.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="genericmessage.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainScreen.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MasterControlProgram.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MCP_ControllerTracker.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MCP_TestBed.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mcp_win_init.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MCPConfig.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MCPErrors.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MCPGimmeCheckins.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MCPHttp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MCPMemLeakFinder.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MCPPurgeLogFiles.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MCPSVNCheckins.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MCPUtilities.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MCPXboxCP.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OtherOptions.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="quitmessage.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SentryServerTestScreen.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerList.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerMonitorControlScreen.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StartingScreen.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SuperEscaperScreen.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TimingConversionScreen.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\libs\Common\ugcprojectcommon.h">
+      <Filter>UGC\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\HostIOLib\xboxHostIO.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\UtilitiesLib\net\accountnet.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NewControllerTracker\pub\NewControllerTracker_Pub.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="accountinfo.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ArtistTools.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ControllerScriptScreen.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="genericmessage.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MasterControlProgram.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MCPConfig.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MCPErrors.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MCPGimmeCheckins.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MCPHttp.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MCPMemLeakFinder.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MCPPurgeLogFiles.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MCPSVNCheckins.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MCPUtilities.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MCPXboxCP.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OtherOptions.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="quitmessage.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource_mastercontrolprogram.h" />
+    <ClInclude Include="ServerList.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="AutoGen">
+      <UniqueIdentifier>{2d4c6b85-f587-4de9-9106-befb93cb7025}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExternHeaders">
+      <UniqueIdentifier>{c15cd404-b63f-45dc-ba51-dc8f0cbfa9ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="UGC">
+      <UniqueIdentifier>{62fca095-fa32-4861-81fd-4e0be6a29ee1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UGC\common">
+      <UniqueIdentifier>{8dbec4bc-9f1b-4d46-85bf-f02144e71f5d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\data\server\MCPServerSetup.txt" />
+    <None Include="..\..\data\server\MemLeakCategories.txt" />
+    <None Include="arrow.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="BGBdn.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="BGBLoading.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="BGBup.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bitmap2.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bitmap5.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="black.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="copymcp.bat">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="exclamation point.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon1.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ReadMe.txt" />
+    <None Include="ScriptCompleteWErrors.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ScriptFailed.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ScriptSucceeded.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="small exclamation point.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MasterControlProgram1.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,1274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Full Debug|Win32">
+      <Configuration>Full Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{99999999-9AD9-4149-9CBD-07BA24320884}</ProjectGuid>
+    <RootNamespace>GameServerLib</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="..\..\PropertySheets\GeneralSettings.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'" Label="PropertySheets">
+    <Import Project="..\..\PropertySheets\GeneralSettings.props" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>reward;gateway;cmdparse;item;chat;entity;ai;combat;progression;mission;world;social;editors;team;map;UGC;../../libs/Renderers/pub;../../libs/GraphicsLib/pub;../../libs/WorldLib;../../libs/WorldLib/pub;../../libs/InputLib/pub;../../libs/UILib/pub;../../libs/ServerLib/pub;../../libs/AILib/pub;../../libs/Common;../../libs/PatchClientLib;../../libs/ContentLib/pub;../../Core/Common;../Common/entity;../Common/Combat;../Common/Genesis;../Common/UGC;../Common/Mission;../Common/Sound;../Common/item;../Common;../../libs/HttpLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_WINDOWS;_CRTDBG_MAP_ALLOC=1;USEZLIB=1;EDITLIB=1;GAMESERVER=1;JOB_GROUP_VARIABLES=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <PreBuildEvent>
+      <Command>..\..\utilities\bin\structparser X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>reward;cmdparse;gateway;item;chat;entity;ai;combat;progression;mission;world;social;editors;team;map;UGC;../../libs/Renderers/pub;../../libs/GraphicsLib/pub;../../libs/WorldLib;../../libs/WorldLib/pub;../../libs/InputLib/pub;../../libs/UILib/pub;../../libs/ServerLib/pub;../../libs/AILib/pub;../../libs/Common;../../libs/PatchClientLib;../../libs/ContentLib/pub;../../Core/Common;../Common/entity;../Common/Combat;../Common/Genesis;../Common/UGC;../Common/Mission;../Common/Sound;../Common/item;../Common;../../libs/HttpLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_FULLDEBUG;_LIB;_WINDOWS;_CRTDBG_MAP_ALLOC=1;USEZLIB=1;EDITLIB=1;GAMESERVER=1;JOB_GROUP_VARIABLES=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <PreBuildEvent>
+      <Command>..\..\utilities\bin\structparser X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Core\Common\AutoGen\ChatServer_autogen_RemoteFuncs.c" />
+    <ClCompile Include="..\..\Core\Common\AutoGen\HeadshotServer_autogen_RemoteFuncs.c" />
+    <ClCompile Include="..\..\Core\Common\AutoGen\ObjectDB_autogen_RemoteFuncs.c" />
+    <ClCompile Include="..\..\Core\Common\AutoGen\TestServer_autogen_RemoteFuncs.c" />
+    <ClCompile Include="..\..\libs\Common\MapDescription.c" />
+    <ClCompile Include="..\..\libs\Common\UGCProjectCommon.c" />
+    <ClCompile Include="..\..\libs\Common\VirtualShard.c" />
+    <ClCompile Include="..\Common\accountCommon.c" />
+    <ClCompile Include="..\Common\AccountDataCache.c" />
+    <ClCompile Include="..\Common\AccountProxyCommon.c" />
+    <ClCompile Include="..\Common\ActivityCalendar.c" />
+    <ClCompile Include="..\Common\ActivityCommon.c" />
+    <ClCompile Include="..\Common\ActivityLog_Trans.c" />
+    <ClCompile Include="..\Common\ActivityLogCommon.c" />
+    <ClCompile Include="..\Common\aiStructCommon.c" />
+    <ClCompile Include="..\Common\AnimList_Common.c" />
+    <ClCompile Include="..\Common\ArmamentSwapCommon.c" />
+    <ClCompile Include="..\Common\AuctionBrokerCommon.c" />
+    <ClCompile Include="..\Common\AuctionCommon.c" />
+    <ClCompile Include="..\Common\AutoGen\AppServerLib_autogen_RemoteFuncs.c" />
+    <ClCompile Include="..\Common\AutoGen\GameServerLib_autogen_RemoteFuncs.c" />
+    <ClCompile Include="..\Common\AutoGen\GameServerLib_autotransactions_autogen_wrappers.c" />
+    <ClCompile Include="..\Common\autoPlacementCommon.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="..\Common\chatCommon.c" />
+    <ClCompile Include="..\Common\Combat\AbilityScores_DD.c" />
+    <ClCompile Include="..\Common\Combat\AttribCurve.c" />
+    <ClCompile Include="..\Common\Combat\AttribCurveImp.c" />
+    <ClCompile Include="..\Common\Combat\AttribMod.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\AttribModFragility.c" />
+    <ClCompile Include="..\Common\Combat\Character.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\Character_combat.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\Character_mods.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\Character_target.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\Character_tick.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\CharacterAttribs.c" />
+    <ClCompile Include="..\Common\Combat\CharacterAttribute.c" />
+    <ClCompile Include="..\Common\Combat\CharacterClass.c" />
+    <ClCompile Include="..\Common\Combat\Combat_DD.c" />
+    <ClCompile Include="..\Common\Combat\combatAdvantage.c" />
+    <ClCompile Include="..\Common\Combat\CombatCallbacks.c" />
+    <ClCompile Include="..\Common\Combat\CombatConfig.c" />
+    <ClCompile Include="..\Common\Combat\CombatDebug.c" />
+    <ClCompile Include="..\Common\Combat\CombatEval.c" />
+    <ClCompile Include="..\Common\Combat\CombatEvents.c" />
+    <ClCompile Include="..\Common\Combat\CombatPool.c" />
+    <ClCompile Include="..\Common\Combat\CombatPowerStateSwitching.c" />
+    <ClCompile Include="..\Common\Combat\CombatReactivePower.c" />
+    <ClCompile Include="..\Common\Combat\CombatSensitivity.c" />
+    <ClCompile Include="..\Common\Combat\ComboTracker.c" />
+    <ClCompile Include="..\Common\Combat\DamageTracker.c" />
+    <ClCompile Include="..\Common\Combat\PowerActivation.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\PowerAnimFX.c" />
+    <ClCompile Include="..\Common\Combat\PowerApplication.c" />
+    <ClCompile Include="..\Common\Combat\PowerEnhancements.c" />
+    <ClCompile Include="..\Common\Combat\PowerHelpers.c" />
+    <ClCompile Include="..\Common\Combat\PowerModes.c" />
+    <ClCompile Include="..\Common\Combat\PowerReplace.c" />
+    <ClCompile Include="..\Common\Combat\Powers.c" />
+    <ClCompile Include="..\Common\Combat\PowersAEDebug.c" />
+    <ClCompile Include="..\Common\Combat\PowersAutoDesc.c" />
+    <ClCompile Include="..\Common\Combat\PowerSlots.c" />
+    <ClCompile Include="..\Common\Combat\PowersMovement.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\PowerSubtarget.c" />
+    <ClCompile Include="..\Common\Combat\PowerTree.c" />
+    <ClCompile Include="..\Common\Combat\PowerTreeEval.c" />
+    <ClCompile Include="..\Common\Combat\PowerTreeHelpers.c" />
+    <ClCompile Include="..\Common\Combat\PowerVars.c" />
+    <ClCompile Include="..\Common\Combat\Skills_DD.c" />
+    <ClCompile Include="..\Common\Combat\StatPoints.c" />
+    <ClCompile Include="..\Common\ControlScheme.c" />
+    <ClCompile Include="..\Common\CSVExport.c" />
+    <ClCompile Include="..\Common\CurrencyExchangeCommon.c" />
+    <ClCompile Include="..\Common\CurrencyExchangeCommon_trans.c" />
+    <ClCompile Include="..\Common\DiaryCommon.c" />
+    <ClCompile Include="..\Common\DiaryDisplay.c" />
+    <ClCompile Include="..\Common\DiscountShared.c" />
+    <ClCompile Include="..\Common\DoorTransitionCommon.c" />
+    <ClCompile Include="..\Common\EntDebugMenu.c" />
+    <ClCompile Include="..\Common\Entity\AccountProxyServerLocks.c" />
+    <ClCompile Include="..\Common\Entity\allegiance.c" />
+    <ClCompile Include="..\Common\Entity\AuctionLot.c" />
+    <ClCompile Include="..\Common\Entity\AuctionLot_Transact.c" />
+    <ClCompile Include="..\Common\Entity\BeaconMovement.c" />
+    <ClCompile Include="..\Common\Entity\CombatMods.c" />
+    <ClCompile Include="..\Common\Entity\CostumeCommonEntity.c" />
+    <ClCompile Include="..\Common\Entity\CostumeCommonGenerate.c" />
+    <ClCompile Include="..\Common\Entity\CostumeCommonLoad.c" />
+    <ClCompile Include="..\Common\Entity\CostumeCommonRandom.c" />
+    <ClCompile Include="..\Common\Entity\CostumeCommonTailor.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\entCritter.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\Entity.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityBuild.c" />
+    <ClCompile Include="..\Common\Entity\EntityCritterEval.c" />
+    <ClCompile Include="..\Common\Entity\EntityDataQuery.c" />
+    <ClCompile Include="..\Common\Entity\EntityExprFunc.c" />
+    <ClCompile Include="..\Common\Entity\EntityInteraction.c" />
+    <ClCompile Include="..\Common\Entity\EntityIterator.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityLib.c" />
+    <ClCompile Include="..\Common\Entity\EntityMailCommon.c" />
+    <ClCompile Include="..\Common\Entity\EntityMovementAttachment.c" />
+    <ClCompile Include="..\Common\Entity\EntityMovementAuto.c" />
+    <ClCompile Include="..\Common\Entity\EntityMovementDead.c" />
+    <ClCompile Include="..\Common\Entity\EntityMovementDefault.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementDisableMovement.c" />
+    <ClCompile Include="..\Common\Entity\EntityMovementDoor.c" />
+    <ClCompile Include="..\Common\Entity\EntityMovementDragon.c">
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementEmote.c" />
+    <ClCompile Include="..\Common\Entity\EntityMovementFlight.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementFx.c" />
+    <ClCompile Include="..\Common\Entity\EntityMovementGrab.c" />
+    <ClCompile Include="..\Common\Entity\EntityMovementInteraction.c" />
+    <ClCompile Include="..\Common\Entity\EntityMovementManager.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementManagerBG.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementManagerLog.c" />
+    <ClCompile Include="..\Common\Entity\EntityMovementManagerNet.c" />
+    <ClCompile Include="..\Common\Entity\EntityMovementManagerNetPrepare.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementManagerNetReceive.c" />
+    <ClCompile Include="..\Common\Entity\EntityMovementManagerNetSend.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementManagerResource.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementManagerResourceBG.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementPlatform.c" />
+    <ClCompile Include="..\Common\Entity\EntityMovementProjectile.c" />
+    <ClCompile Include="..\Common\Entity\EntityMovementProjectileEntity.c">
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementPush.c" />
+    <ClCompile Include="..\Common\Entity\EntityMovementRequesterDefs.c">
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementSwing.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementTactical.c" />
+    <ClCompile Include="..\Common\Entity\EntityMovementTargetedRotation.c" />
+    <ClCompile Include="..\Common\Entity\EntityMovementTemplate.c" />
+    <ClCompile Include="..\Common\Entity\EntityMovementTest.c" />
+    <ClCompile Include="..\Common\Entity\EntityNet.c" />
+    <ClCompile Include="..\Common\Entity\EntityPlayerTypeConversion.c" />
+    <ClCompile Include="..\Common\Entity\EntityResolver.c" />
+    <ClCompile Include="..\Common\Entity\EntitySystem.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\GameAccountDataCommon.c" />
+    <ClCompile Include="..\Common\Entity\grid\EntityGrid.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\grid\EntityGridDebug.c" />
+    <ClCompile Include="..\Common\Entity\grid\EntityGridInterface.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\Guild.c" />
+    <ClCompile Include="..\Common\Entity\InteriorCommon.c" />
+    <ClCompile Include="..\Common\Entity\Leaderboard.c" />
+    <ClCompile Include="..\Common\Entity\OfficerCommon.c" />
+    <ClCompile Include="..\Common\Entity\PlayerDifficultyCommon.c" />
+    <ClCompile Include="..\Common\Entity\ProjectileEntity.c" />
+    <ClCompile Include="..\Common\Entity\RegionRules.c" />
+    <ClCompile Include="..\Common\Entity\SavedPetCommon.c" />
+    <ClCompile Include="..\Common\Entity\SavedPetTransactions.c" />
+    <ClCompile Include="..\Common\Entity\SharedBankCommon.c" />
+    <ClCompile Include="..\Common\Entity\SkelInfoFixup.c" />
+    <ClCompile Include="..\Common\Entity\Team.c" />
+    <ClCompile Include="..\Common\Entity\Tray.c" />
+    <ClCompile Include="..\Common\Entity\XboxStructs.c" />
+    <ClCompile Include="..\Common\GameAccountData\GameAccountData.c" />
+    <ClCompile Include="..\Common\GameBranch.c" />
+    <ClCompile Include="..\Common\GameEvent.c" />
+    <ClCompile Include="..\Common\GamePermissionsCommon.c" />
+    <ClCompile Include="..\Common\GamePermissionsLoad.c" />
+    <ClCompile Include="..\Common\GamePermissionTransactions.c" />
+    <ClCompile Include="..\Common\GameStringFormat.c" />
+    <ClCompile Include="..\Common\Genesis\Genesis.c" />
+    <ClCompile Include="..\Common\Genesis\GenesisMissions.c" />
+    <ClCompile Include="..\Common\GlobalExpressions.c" />
+    <ClCompile Include="..\Common\GroupProjectCommon.c" />
+    <ClCompile Include="..\Common\GroupProjectCommon_eval.c" />
+    <ClCompile Include="..\Common\GroupProjectCommon_trans.c" />
+    <ClCompile Include="..\Common\guildCommonStructs.c" />
+    <ClCompile Include="..\Common\HUDOptionsCommon.c" />
+    <ClCompile Include="..\Common\interaction_common.c" />
+    <ClCompile Include="..\Common\interactionManager_common.c" />
+    <ClCompile Include="..\Common\item\AlgoItemCommon.c" />
+    <ClCompile Include="..\Common\item\AlgoPet.c" />
+    <ClCompile Include="..\Common\item\containerTrade.c" />
+    <ClCompile Include="..\Common\item\inventoryCommon.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="..\Common\item\inventoryTransactions.c" />
+    <ClCompile Include="..\Common\item\itemArt.c" />
+    <ClCompile Include="..\Common\item\ItemAssignmentEval.c" />
+    <ClCompile Include="..\Common\item\itemAssignments.c" />
+    <ClCompile Include="..\Common\Item\ItemAssignmentsUICommon.c" />
+    <ClCompile Include="..\Common\item\itemCommon.c" />
+    <ClCompile Include="..\Common\item\itemDescCommon.c" />
+    <ClCompile Include="..\Common\item\itemEval.c">
+      <PreprocessToFile Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">false</PreprocessToFile>
+      <PreprocessSuppressLineNumbers Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">false</PreprocessSuppressLineNumbers>
+    </ClCompile>
+    <ClCompile Include="..\Common\item\itemGenCommon.c" />
+    <ClCompile Include="..\Common\item\itemupgrade.c" />
+    <ClCompile Include="..\Common\item\rewardCommon.c" />
+    <ClCompile Include="..\Common\item\RewardTable.c" />
+    <ClCompile Include="..\Common\item\RewardValTable.c" />
+    <ClCompile Include="..\Common\item\SuperCritterPet.c" />
+    <ClCompile Include="..\Common\item\tradeCommon.c" />
+    <ClCompile Include="..\Common\LobbyCommon.c" />
+    <ClCompile Include="..\Common\LoggedTransactions.c" />
+    <ClCompile Include="..\Common\Login2Common.c" />
+    <ClCompile Include="..\Common\LoginCharTypeFlags.c" />
+    <ClCompile Include="..\Common\LoginCommon.c" />
+    <ClCompile Include="..\Common\MailCommon.c" />
+    <ClCompile Include="..\Common\MapNotificationsCommon.c" />
+    <ClCompile Include="..\Common\MapRevealCommon.c" />
+    <ClCompile Include="..\Common\MapTransferCommon.c" />
+    <ClCompile Include="..\Common\mechanics_common.c" />
+    <ClCompile Include="..\Common\MicroTransactions.c" />
+    <ClCompile Include="..\Common\microtransactions_common.c" />
+    <ClCompile Include="..\Common\Microtransactions_Transact.c" />
+    <ClCompile Include="..\Common\MinigameCommon.c" />
+    <ClCompile Include="..\Common\Mission\contact_common.c" />
+    <ClCompile Include="..\Common\Mission\cutscene_common.c" />
+    <ClCompile Include="..\Common\Mission\encounter_common.c" />
+    <ClCompile Include="..\Common\Mission\gameaction_common.c" />
+    <ClCompile Include="..\Common\Mission\gametimer_common.c" />
+    <ClCompile Include="..\Common\Mission\mapstate_common.c" />
+    <ClCompile Include="..\Common\Mission\mapstate_common_cmd.c" />
+    <ClCompile Include="..\Common\Mission\mapstate_common_eval.c" />
+    <ClCompile Include="..\Common\Mission\mission_common.c" />
+    <ClCompile Include="..\Common\Mission\mission_templates.c" />
+    <ClCompile Include="..\Common\Mission\missionset_common.c" />
+    <ClCompile Include="..\Common\Mission\nemesis_common.c" />
+    <ClCompile Include="..\Common\Mission\oldencounter_common.c" />
+    <ClCompile Include="..\Common\Mission\playerMatchStats_common.c" />
+    <ClCompile Include="..\Common\Mission\playerstats_common.c" />
+    <ClCompile Include="..\Common\mission\progression_common.c" />
+    <ClCompile Include="..\Common\Mission\progression_transact.c" />
+    <ClCompile Include="..\Common\NameGen.c" />
+    <ClCompile Include="..\Common\NotifyCommon.c" />
+    <ClCompile Include="..\Common\NotifyCommon_eval.c" />
+    <ClCompile Include="..\Common\NumericConversionCommon.c" />
+    <ClCompile Include="..\Common\powerStoreCommon.c" />
+    <ClCompile Include="..\Common\pvp_common.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="..\Common\PvPGameCommon.c" />
+    <ClCompile Include="..\Common\queue_common.c" />
+    <ClCompile Include="..\Common\queue_common_structs.c" />
+    <ClCompile Include="..\Common\queue_smartGroup.c" />
+    <ClCompile Include="..\Common\ShardEventTimingCommon.c" />
+    <ClCompile Include="..\Common\ShardVariable_Transact.c" />
+    <ClCompile Include="..\Common\ShardVariableCommon.c" />
+    <ClCompile Include="..\Common\SocialCommon.c" />
+    <ClCompile Include="..\Common\Sound\Sound_common.c" />
+    <ClCompile Include="..\Common\species_common.c" />
+    <ClCompile Include="..\Common\SteamCommon.c" />
+    <ClCompile Include="..\Common\SteamCommonServer.c" />
+    <ClCompile Include="..\Common\storeCommon.c" />
+    <ClCompile Include="..\Common\StoredCredentialsCommon.c" />
+    <ClCompile Include="..\Common\SuggestedContentCommon.c" />
+    <ClCompile Include="..\Common\TeamPetsCommonStructs.c" />
+    <ClCompile Include="..\Common\TeamUpCommon.c" />
+    <ClCompile Include="..\Common\TextFilterCommon.c" />
+    <ClCompile Include="..\Common\TransformationCommon.c" />
+    <ClCompile Include="..\Common\UGC\UGCAchievements.c" />
+    <ClCompile Include="..\Common\UGC\UGCCommon.c" />
+    <ClCompile Include="..\Common\UGC\UGCError.c" />
+    <ClCompile Include="..\Common\UGC\UGCInteriorCommon.c" />
+    <ClCompile Include="..\Common\UGC\UGCSearchCache.c" />
+    <ClCompile Include="..\Common\UGC\UGCTipsCommon.c" />
+    <ClCompile Include="ai\aiFCExprFunc.c" />
+    <ClCompile Include="ai\aiFCInstance.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="AutoGen\gameserverlib_AutoGen_1.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="AutoGen\GameServerLib_AutoGen_2.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="chat\gslChat.c" />
+    <ClCompile Include="chat\gslChat_eval.c" />
+    <ClCompile Include="chat\gslChatConfig.c" />
+    <ClCompile Include="chat\gslChatConfig_eval.c" />
+    <ClCompile Include="cmdDataFixup.c" />
+    <ClCompile Include="cmdparse\cmdServerCombat.c" />
+    <ClCompile Include="cmdServer.c" />
+    <ClCompile Include="cmdServerCharacter.c" />
+    <ClCompile Include="cmdServerEditor.c" />
+    <ClCompile Include="cmdServerReport.c" />
+    <ClCompile Include="cmdServerSyntheticLogs.c" />
+    <ClCompile Include="Combat\CharacterRespecServer.c" />
+    <ClCompile Include="Combat\CombatGlobal.c" />
+    <ClCompile Include="Combat\CoreServerCombatCallbacks.c" />
+    <ClCompile Include="Combat\gslCombatAdvantage.c" />
+    <ClCompile Include="Combat\gslCombatDeathPrediction.c" />
+    <ClCompile Include="Combat\gslCombatReactivePower.c" />
+    <ClCompile Include="Combat\gslPowerCart.c" />
+    <ClCompile Include="Combat\gslPowersAEDebug.c" />
+    <ClCompile Include="Combat\PowerTreeTransactions.c" />
+    <ClCompile Include="ControllerMirror.c" />
+    <ClCompile Include="CSRChatCommands.c" />
+    <ClCompile Include="CSRDebugMenu.c" />
+    <ClCompile Include="editors\ExprEditorCommands.c" />
+    <ClCompile Include="editors\gslEditor.c" />
+    <ClCompile Include="editors\gslEditor_cmd.c" />
+    <ClCompile Include="editors\speciesGen.c" />
+    <ClCompile Include="entity\EntityServer.c" />
+    <ClCompile Include="entity\gslCostume.c" />
+    <ClCompile Include="entity\gslCostume_cmd.c" />
+    <ClCompile Include="entity\gslCostume_eval.c" />
+    <ClCompile Include="entity\gslCostume_Transact.c" />
+    <ClCompile Include="entity\gslLeaderboard.c" />
+    <ClCompile Include="entity\gslOfficerTransactions.c" />
+    <ClCompile Include="entity\gslPetCommand.c" />
+    <ClCompile Include="entity\gslProjectileEntity.c">
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+    </ClCompile>
+    <ClCompile Include="entity\gslSavedPetTransactions.c" />
+    <ClCompile Include="entity\gslSharedBank.c" />
+    <ClCompile Include="entity\gslSharedBank_cmd.c" />
+    <ClCompile Include="entity\gslTray.c" />
+    <ClCompile Include="entity\gslUserExperience.c" />
+    <ClCompile Include="GameEvent_log.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="GameServer_Http.c" />
+    <ClCompile Include="GameServerHandleMsg.c" />
+    <ClCompile Include="GameServerLib.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="GameServerMain.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="gametimer.c" />
+    <ClCompile Include="gateway\gslGateway_Auction_cmd.c" />
+    <ClCompile Include="gateway\gslGateway_cmd.c" />
+    <ClCompile Include="gateway\gslGateway_ItemAssignments_cmd.c" />
+    <ClCompile Include="gateway\gslGateway_trans.c" />
+    <ClCompile Include="gateway\gslGatewayAuction.c" />
+    <ClCompile Include="gateway\gslGatewayContainerMapping.c" />
+    <ClCompile Include="gateway\gslGatewayMappedEntity.c" />
+    <ClCompile Include="gateway\gslGatewayMappedLoginEntity.c" />
+    <ClCompile Include="gateway\gslGatewayMessages.c" />
+    <ClCompile Include="gateway\gslGatewayServer.c" />
+    <ClCompile Include="gateway\gslGatewaySession.c" />
+    <ClCompile Include="gateway\gslGatewayStructMapping.c" />
+    <ClCompile Include="Genesis\gslGenesis_cmd.c" />
+    <ClCompile Include="gslAccountProxy.c" />
+    <ClCompile Include="gslAccountProxy_cmds.c" />
+    <ClCompile Include="gslActivity.c" />
+    <ClCompile Include="gslActivityLog.c" />
+    <ClCompile Include="gslArmamentSwap.c" />
+    <ClCompile Include="gslAuction.c" />
+    <ClCompile Include="gslAutoPlacement.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="gslAway.c" />
+    <ClCompile Include="GSLBaseStates.c" />
+    <ClCompile Include="gslBeaconInterface.c" />
+    <ClCompile Include="gslBugReport.c" />
+    <ClCompile Include="gslBulletins.c" />
+    <ClCompile Include="gslChoiceTable_cmd.c" />
+    <ClCompile Include="gslCluster.c" />
+    <ClCompile Include="gslCombatCallbacks.c" />
+    <ClCompile Include="gslCommandParse.c" />
+    <ClCompile Include="gslControlScheme.c" />
+    <ClCompile Include="gslCritter.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="gslCurrencyExchange.c" />
+    <ClCompile Include="gslDataDump.c" />
+    <ClCompile Include="gslDataFixupUtils.c" />
+    <ClCompile Include="gslDiary.c" />
+    <ClCompile Include="gslDiary_Cmds.c" />
+    <ClCompile Include="gslDiary_Trans.c" />
+    <ClCompile Include="gslDiaryBucketManager.c" />
+    <ClCompile Include="gslDiaryWebRequest.c" />
+    <ClCompile Include="gslDoorTransition.c" />
+    <ClCompile Include="gslEmote.c" />
+    <ClCompile Include="gslEncounterLog.c" />
+    <ClCompile Include="gslEntDebugMenu.c" />
+    <ClCompile Include="gslEntity.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="gslEntity_cmd.c" />
+    <ClCompile Include="gslEntity_eval.c" />
+    <ClCompile Include="gslEntityDebug.c" />
+    <ClCompile Include="gslEntityNet.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="gslEntityPresence.c" />
+    <ClCompile Include="gslExprFunc.c" />
+    <ClCompile Include="gslFriendsIgnore.c" />
+    <ClCompile Include="gslGameAccountData.c" />
+    <ClCompile Include="gslGamePermissions.c" />
+    <ClCompile Include="gslGroupProject.c" />
+    <ClCompile Include="gslGroupProject_cmds.c" />
+    <ClCompile Include="gslGroupProject_eval.c" />
+    <ClCompile Include="gslGroupProject_trans.c" />
+    <ClCompile Include="gslGuild.c" />
+    <ClCompile Include="gslGuild_eval.c" />
+    <ClCompile Include="gslHandleMsg.c" />
+    <ClCompile Include="gslHeatMaps.c" />
+    <ClCompile Include="gslHttpAsync.c" />
+    <ClCompile Include="gslHUDOptions.c" />
+    <ClCompile Include="gslInteractionManager.c" />
+    <ClCompile Include="gslInteractionManager_cmd.c" />
+    <ClCompile Include="gslInteractionManager_eval.c" />
+    <ClCompile Include="gslInterior.c" />
+    <ClCompile Include="gslInterior_Cmds.c" />
+    <ClCompile Include="gslInterior_Expr.c" />
+    <ClCompile Include="gslInterior_Trans.c" />
+    <ClCompile Include="gslLobby.c" />
+    <ClCompile Include="gslLobbyCommands.c" />
+    <ClCompile Include="gslLogSettings.c" />
+    <ClCompile Include="gslMail.c" />
+    <ClCompile Include="gslMail_Old.c" />
+    <ClCompile Include="gslMailNPC.c" />
+    <ClCompile Include="gslMapChange.c" />
+    <ClCompile Include="gslMapPopulationCache.c" />
+    <ClCompile Include="gslMapTransfer.c" />
+    <ClCompile Include="gslMessageFixup.c" />
+    <ClCompile Include="gslMicroTransactions.c" />
+    <ClCompile Include="gslNotify.c" />
+    <ClCompile Include="gslNotify_cmd.c" />
+    <ClCompile Include="gslNumericConversion.c" />
+    <ClCompile Include="gslPartition.c" />
+    <ClCompile Include="gslPartition_cmd.c" />
+    <ClCompile Include="gslPatching.c" />
+    <ClCompile Include="gslPlayerDifficulty.c" />
+    <ClCompile Include="gslPlayerDifficulty_cmd.c" />
+    <ClCompile Include="gslPlayerFSM.c" />
+    <ClCompile Include="gslPowerStore.c" />
+    <ClCompile Include="gslPowerTransactions.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Full</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="gslPromoGameCurrency.c" />
+    <ClCompile Include="gslPVP.c" />
+    <ClCompile Include="gslPVP_eval.c" />
+    <ClCompile Include="gslPvPGame.c" />
+    <ClCompile Include="gslPvPGameEval.c" />
+    <ClCompile Include="gslQueue.c" />
+    <ClCompile Include="gslQueue_cmd.c" />
+    <ClCompile Include="gslQueue_eval.c" />
+    <ClCompile Include="gslResourceDBSupport.c" />
+    <ClCompile Include="gslSavedPet.c" />
+    <ClCompile Include="gslScoreboard.c" />
+    <ClCompile Include="gslSendToClient.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="gslSimpleCpuUsage.c" />
+    <ClCompile Include="gslSound.c" />
+    <ClCompile Include="gslSteam.c" />
+    <ClCompile Include="gslStoredCredentials.c" />
+    <ClCompile Include="gslSuggestedContent.c" />
+    <ClCompile Include="gslSurvey.c" />
+    <ClCompile Include="gslTeamUp.c" />
+    <ClCompile Include="gslTeamUp_cmd.c" />
+    <ClCompile Include="gslTestClient.c" />
+    <ClCompile Include="gslTicketInfo.c" />
+    <ClCompile Include="gslTimeControl.c" />
+    <ClCompile Include="gslTrade.c" />
+    <ClCompile Include="gslTransactions.c" />
+    <ClCompile Include="gslTransactionTests.c" />
+    <ClCompile Include="gslUGCAchievements.c" />
+    <ClCompile Include="gslUGCAchievements_cmd.c" />
+    <ClCompile Include="gslUtils.c" />
+    <ClCompile Include="gslWarp.c" />
+    <ClCompile Include="gslWorldDebug.c" />
+    <ClCompile Include="gslWorldVariable.c" />
+    <ClCompile Include="gslXBoxTransactions.c" />
+    <ClCompile Include="guild\GuildCommands.c" />
+    <ClCompile Include="item\gslInventory_eval.c" />
+    <ClCompile Include="item\gslItemAssignments.c" />
+    <ClCompile Include="item\gslItemUpgrade.c" />
+    <ClCompile Include="item\gslSuperCritterPet.c" />
+    <ClCompile Include="item\item_gen\itemGen.c" />
+    <ClCompile Include="item\itemServer.c" />
+    <ClCompile Include="item\itemTransaction.c" />
+    <ClCompile Include="item\Store.c" />
+    <ClCompile Include="map\gslMapNotifications.c" />
+    <ClCompile Include="mission\cutscene.c" />
+    <ClCompile Include="mission\cutscene_eval.c" />
+    <ClCompile Include="mission\gslCallout.c" />
+    <ClCompile Include="mission\gslContact.c" />
+    <ClCompile Include="mission\gslContact_cmd.c" />
+    <ClCompile Include="mission\gslContact_eval.c" />
+    <ClCompile Include="mission\gslEventSend.c" />
+    <ClCompile Include="mission\gslEventSend_cmd.c" />
+    <ClCompile Include="mission\gslEventTracker.c" />
+    <ClCompile Include="mission\gslEventTracker_cmd.c" />
+    <ClCompile Include="mission\gslGameAction.c" />
+    <ClCompile Include="mission\gslMapState.c" />
+    <ClCompile Include="mission\gslMapState_cmd.c" />
+    <ClCompile Include="mission\gslMapState_eval.c" />
+    <ClCompile Include="mission\gslMission.c" />
+    <ClCompile Include="mission\gslMission_cmd.c" />
+    <ClCompile Include="mission\gslMission_eval.c" />
+    <ClCompile Include="mission\gslMission_transact.c" />
+    <ClCompile Include="mission\gslMissionDebug.c" />
+    <ClCompile Include="mission\gslMissionDebug_cmd.c" />
+    <ClCompile Include="mission\gslMissionDrop.c" />
+    <ClCompile Include="mission\gslMissionEvents.c" />
+    <ClCompile Include="mission\gslMissionLockout.c" />
+    <ClCompile Include="mission\gslMissionLockout_eval.c" />
+    <ClCompile Include="mission\gslMissionRequest.c" />
+    <ClCompile Include="mission\gslMissionRequest_eval.c" />
+    <ClCompile Include="mission\gslMissionSet.c" />
+    <ClCompile Include="mission\gslMissionTemplate.c" />
+    <ClCompile Include="mission\gslMissionTemplate_eval.c" />
+    <ClCompile Include="mission\gslOldEncounter.c" />
+    <ClCompile Include="mission\gslOldEncounter_cmd.c" />
+    <ClCompile Include="mission\gslOldEncounter_events.c" />
+    <ClCompile Include="mission\gslOpenMission.c" />
+    <ClCompile Include="mission\gslOpenMission_cmd.c" />
+    <ClCompile Include="mission\gslOpenMission_eval.c" />
+    <ClCompile Include="mission\gslPlayerMatchStats.c" />
+    <ClCompile Include="mission\gslPlayerStats.c" />
+    <ClCompile Include="mission\gslPlayerStats_cmd.c" />
+    <ClCompile Include="mission\gslPlayerStats_eval.c" />
+    <ClCompile Include="mission\gslWaypoint.c" />
+    <ClCompile Include="mission\gslWaypoint_cmd.c" />
+    <ClCompile Include="mission\nemesis.c" />
+    <ClCompile Include="mission\nemesis_eval.c" />
+    <ClCompile Include="mission\timedeventqueue.c" />
+    <ClCompile Include="progression\gslProgression.c" />
+    <ClCompile Include="progression\gslProgression_eval.c" />
+    <ClCompile Include="reward\AlgoItem.c" />
+    <ClCompile Include="reward\Reward.c" />
+    <ClCompile Include="reward\RewardCmdSlow.c" />
+    <ClCompile Include="social\gslSocial.c" />
+    <ClCompile Include="social\gslSocial_cmds.c" />
+    <ClCompile Include="social\gslSocialCryptic.c" />
+    <ClCompile Include="social\gslSocialFacebook.c" />
+    <ClCompile Include="social\gslSocialFlickr.c" />
+    <ClCompile Include="social\gslSocialLivejournal.c" />
+    <ClCompile Include="social\gslSocialRaptr.c" />
+    <ClCompile Include="social\gslSocialTwitter.c" />
+    <ClCompile Include="social\gslSocialUtils.c" />
+    <ClCompile Include="social\gslSocialWebhook.c" />
+    <ClCompile Include="team\gslTeam.c" />
+    <ClCompile Include="team\gslTeamCorral.c" />
+    <ClCompile Include="team\TeamCommands.c" />
+    <ClCompile Include="UGC\gslUGC.c" />
+    <ClCompile Include="UGC\gslUGC_cmd.c" />
+    <ClCompile Include="UGC\gslUGC_eval.c" />
+    <ClCompile Include="UGC\gslUGC_ExportImport_WebRequest.c" />
+    <ClCompile Include="UGC\gslUGCTips.c" />
+    <ClCompile Include="UGC\gslUGCTransactions.c" />
+    <ClCompile Include="WebRequests.c" />
+    <ClCompile Include="WebRequestServer\wrContainerSubs.c" />
+    <ClCompile Include="world\gslEncounter.c" />
+    <ClCompile Include="world\gslEncounter_cmd.c" />
+    <ClCompile Include="world\gslEncounter_eval.c" />
+    <ClCompile Include="world\gslEncounterDebug.c" />
+    <ClCompile Include="world\gslInteractable.c">
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+    </ClCompile>
+    <ClCompile Include="world\gslInteractable_cmd.c" />
+    <ClCompile Include="world\gslInteractable_eval.c" />
+    <ClCompile Include="world\gslInteraction.c" />
+    <ClCompile Include="world\gslInteraction_cmd.c" />
+    <ClCompile Include="world\gslInteractLoot.c" />
+    <ClCompile Include="world\gslInteractLoot_cmd.c" />
+    <ClCompile Include="world\gslLandmark.c" />
+    <ClCompile Include="world\gslLayerFSM.c" />
+    <ClCompile Include="world\gslLayerFSM_eval.c" />
+    <ClCompile Include="world\gslMapReveal.c" />
+    <ClCompile Include="world\gslMapVariable.c" />
+    <ClCompile Include="world\gslMapVariable_cmd.c" />
+    <ClCompile Include="world\gslMapVariable_eval.c" />
+    <ClCompile Include="world\gslMechanics.c" />
+    <ClCompile Include="world\gslMechanics_cmd.c" />
+    <ClCompile Include="world\gslMechanics_eval.c" />
+    <ClCompile Include="world\gslNamedPoint.c" />
+    <ClCompile Include="world\gslNeighborhood.c" />
+    <ClCompile Include="world\gslPatrolRoute.c" />
+    <ClCompile Include="world\gslShardVariable.c" />
+    <ClCompile Include="world\gslShardVariable_cmd.c" />
+    <ClCompile Include="world\gslShardVariable_eval.c" />
+    <ClCompile Include="world\gslSpawnPoint.c" />
+    <ClCompile Include="world\gslSpawnPoint_cmd.c" />
+    <ClCompile Include="world\gslTriggerCondition.c" />
+    <ClCompile Include="world\gslTriggerCondition_eval.c" />
+    <ClCompile Include="world\gslVolume.c" />
+    <ClCompile Include="world\gslVolume_eval.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Core\Controller\Pub\ControllerPub.h" />
+    <ClInclude Include="..\..\libs\AILib\pub\aiJobs.h" />
+    <ClInclude Include="..\..\libs\Common\GlobalComm.h" />
+    <ClInclude Include="..\..\libs\Common\GlobalEnums.h" />
+    <ClInclude Include="..\..\libs\Common\MapDescription.h" />
+    <ClInclude Include="..\..\libs\Common\ResourceDBUtils.h" />
+    <ClInclude Include="..\..\libs\Common\testclient_comm.h" />
+    <ClInclude Include="..\..\libs\Common\ugcprojectcommon.h" />
+    <ClInclude Include="..\..\libs\Common\VirtualShard.h" />
+    <ClInclude Include="..\..\libs\ServerLib\pub\svrGlobalInfo.h" />
+    <ClInclude Include="..\..\libs\UtilitiesLib\components\Expression.h" />
+    <ClInclude Include="..\..\libs\UtilitiesLib\components\GlobalTypeEnum.h" />
+    <ClInclude Include="..\..\libs\UtilitiesLib\components\GlobalTypes.h" />
+    <ClInclude Include="..\..\libs\UtilitiesLib\components\WorldVariable.h" />
+    <ClInclude Include="..\..\libs\UtilitiesLib\net\accountnet.h" />
+    <ClInclude Include="..\..\libs\UtilitiesLib\utils\Capsule.h" />
+    <ClInclude Include="..\..\libs\UtilitiesLib\utils\Money.h" />
+    <ClInclude Include="..\..\libs\UtilitiesLib\utils\UtilitiesLibEnums.h" />
+    <ClInclude Include="..\..\libs\WorldLib\pub\beacon.h" />
+    <ClInclude Include="..\..\libs\WorldLib\pub\dynNode.h" />
+    <ClInclude Include="..\..\libs\WorldLib\pub\wlCostume.h" />
+    <ClInclude Include="..\..\libs\WorldLib\pub\wlGenesisMissions.h" />
+    <ClInclude Include="..\..\libs\WorldLib\pub\wlGenesisMissionsGameStructs.h" />
+    <ClInclude Include="..\..\libs\WorldLib\pub\wlGroupPropertyStructs.h" />
+    <ClInclude Include="..\..\libs\WorldLib\pub\wlSky.h" />
+    <ClInclude Include="..\..\libs\WorldLib\pub\wlUGC.h" />
+    <ClInclude Include="..\..\libs\WorldLib\pub\WorldGrid.h" />
+    <ClInclude Include="..\..\libs\WorldLib\pub\WorldLibEnums.h" />
+    <ClInclude Include="..\..\libs\WorldLib\pub\WorldLibStructs.h" />
+    <ClInclude Include="..\..\libs\WorldLib\StaticWorld\group.h" />
+    <ClInclude Include="..\AppServerLib\pub\aslJobManagerPub.h" />
+    <ClInclude Include="..\Common\accountCommon.h" />
+    <ClInclude Include="..\Common\AccountDataCache.h" />
+    <ClInclude Include="..\Common\AccountProxyCommon.h" />
+    <ClInclude Include="..\Common\ActivityCalendar.h" />
+    <ClInclude Include="..\Common\ActivityCommon.h" />
+    <ClInclude Include="..\Common\ActivityLogCommon.h" />
+    <ClInclude Include="..\Common\aiStructCommon.h" />
+    <ClInclude Include="..\Common\AnimList_Common.h" />
+    <ClInclude Include="..\Common\ArmamentSwapCommon.h" />
+    <ClInclude Include="..\Common\AuctionBrokerCommon.h" />
+    <ClInclude Include="..\Common\AuctionCommon.h" />
+    <ClInclude Include="..\Common\autoPlacementCommon.h" />
+    <ClInclude Include="..\Common\chatCommon.h" />
+    <ClInclude Include="..\Common\chatCommonStructs.h" />
+    <ClInclude Include="..\Common\cmdClientReport.h" />
+    <ClInclude Include="..\Common\Combat\AbilityScores_DD.h" />
+    <ClInclude Include="..\Common\Combat\AttribCurve.h" />
+    <ClInclude Include="..\Common\Combat\AttribCurveImp.h" />
+    <ClInclude Include="..\Common\Combat\AttribMod.h" />
+    <ClInclude Include="..\Common\Combat\AttribModFragility.h" />
+    <ClInclude Include="..\Common\Combat\Character.h" />
+    <ClInclude Include="..\Common\Combat\Character_combat.h" />
+    <ClInclude Include="..\Common\Combat\Character_mods.h" />
+    <ClInclude Include="..\Common\Combat\Character_target.h" />
+    <ClInclude Include="..\Common\Combat\Character_tick.h" />
+    <ClInclude Include="..\Common\Combat\CharacterAttribs.h" />
+    <ClInclude Include="..\Common\Combat\CharacterAttribsMinimal.h" />
+    <ClInclude Include="..\Common\Combat\CharacterAttribute.h" />
+    <ClInclude Include="..\Common\Combat\CharacterClass.h" />
+    <ClInclude Include="..\Common\Combat\Combat_DD.h" />
+    <ClInclude Include="..\Common\Combat\combatAdvantage.h" />
+    <ClInclude Include="..\Common\Combat\CombatCallbacks.h" />
+    <ClInclude Include="..\Common\Combat\CombatConfig.h" />
+    <ClInclude Include="..\Common\Combat\CombatDebug.h" />
+    <ClInclude Include="..\Common\Combat\CombatEnums.h" />
+    <ClInclude Include="..\Common\Combat\CombatEval.h" />
+    <ClInclude Include="..\Common\Combat\CombatEvents.h" />
+    <ClInclude Include="..\Common\Combat\CombatMods.h" />
+    <ClInclude Include="..\Common\Combat\CombatPool.h" />
+    <ClInclude Include="..\Common\Combat\CombatPowerStateSwitching.h" />
+    <ClInclude Include="..\Common\Combat\CombatReactivePower.h" />
+    <ClInclude Include="..\Common\Combat\CombatSensitivity.h" />
+    <ClInclude Include="..\Common\Combat\ComboTracker.h" />
+    <ClInclude Include="..\Common\Combat\DamageTracker.h" />
+    <ClInclude Include="..\Common\Combat\PowerActivation.h" />
+    <ClInclude Include="..\Common\Combat\PowerAnimFX.h" />
+    <ClInclude Include="..\Common\Combat\PowerApplication.h" />
+    <ClInclude Include="..\Common\Combat\PowerEnhancements.h" />
+    <ClInclude Include="..\Common\Combat\PowerHelpers.h" />
+    <ClInclude Include="..\Common\Combat\PowerModes.h" />
+    <ClInclude Include="..\Common\Combat\PowerReplace.h" />
+    <ClInclude Include="..\Common\Combat\Powers.h" />
+    <ClInclude Include="..\Common\Combat\PowersAEDebug.h" />
+    <ClInclude Include="..\Common\Combat\PowersAutoDesc.h" />
+    <ClInclude Include="..\Common\Combat\PowersEnums.h" />
+    <ClInclude Include="..\Common\Combat\PowerSlots.h" />
+    <ClInclude Include="..\Common\Combat\PowersMovement.h" />
+    <ClInclude Include="..\Common\Combat\PowerSubtarget.h" />
+    <ClInclude Include="..\Common\Combat\PowerTree.h" />
+    <ClInclude Include="..\Common\Combat\PowerTreeEval.h" />
+    <ClInclude Include="..\Common\Combat\PowerTreeHelpers.h" />
+    <ClInclude Include="..\Common\Combat\PowerVars.h" />
+    <ClInclude Include="..\Common\Combat\Skills_DD.h" />
+    <ClInclude Include="..\Common\Combat\StatPoints.h" />
+    <ClInclude Include="..\Common\ControlScheme.h" />
+    <ClInclude Include="..\Common\CostumeCommon.h" />
+    <ClInclude Include="..\Common\CostumeCommonEnums.h" />
+    <ClInclude Include="..\Common\CSVExport.h" />
+    <ClInclude Include="..\Common\CurrencyExchangeCommon.h" />
+    <ClInclude Include="..\Common\DiaryCommon.h" />
+    <ClInclude Include="..\Common\DiaryDisplay.h" />
+    <ClInclude Include="..\Common\DiaryEnums.h" />
+    <ClInclude Include="..\Common\DiscountShared.h" />
+    <ClInclude Include="..\Common\DoorTransitionCommon.h" />
+    <ClInclude Include="..\Common\EmoteCommon.h" />
+    <ClInclude Include="..\Common\EntDebugMenu.h" />
+    <ClInclude Include="..\Common\Entity\aiDebugShared.h" />
+    <ClInclude Include="..\Common\Entity\allegiance.h" />
+    <ClInclude Include="..\Common\Entity\AuctionLot.h" />
+    <ClInclude Include="..\Common\Entity\AuctionLot_Transact.h" />
+    <ClInclude Include="..\Common\Entity\AuctionLotEnums.h" />
+    <ClInclude Include="..\Common\Entity\BeaconMovement.h" />
+    <ClInclude Include="..\Common\Entity\CostumeCommonEntity.h" />
+    <ClInclude Include="..\Common\Entity\CostumeCommonGenerate.h" />
+    <ClInclude Include="..\Common\Entity\CostumeCommonLoad.h" />
+    <ClInclude Include="..\Common\Entity\CostumeCommonRandom.h" />
+    <ClInclude Include="..\Common\Entity\CostumeCommonTailor.h" />
+    <ClInclude Include="..\Common\Entity\entCritter.h" />
+    <ClInclude Include="..\Common\Entity\entEnums.h" />
+    <ClInclude Include="..\Common\Entity\Entity.h" />
+    <ClInclude Include="..\Common\Entity\EntityAttach.h" />
+    <ClInclude Include="..\Common\Entity\EntityBuild.h" />
+    <ClInclude Include="..\Common\Entity\EntityDataQuery.h" />
+    <ClInclude Include="..\Common\Entity\EntityExtern.h" />
+    <ClInclude Include="..\Common\Entity\EntityGrid.h" />
+    <ClInclude Include="..\Common\Entity\EntityInteraction.h" />
+    <ClInclude Include="..\Common\Entity\EntityIterator.h" />
+    <ClInclude Include="..\Common\Entity\EntityLib.h" />
+    <ClInclude Include="..\Common\Entity\EntityMailCommon.h" />
+    <ClInclude Include="..\Common\Entity\EntityMovementAttachment.h" />
+    <ClInclude Include="..\Common\Entity\EntityMovementDead.h" />
+    <ClInclude Include="..\Common\Entity\EntityMovementDefault.h" />
+    <ClInclude Include="..\Common\Entity\EntityMovementDisableMovement.h" />
+    <ClInclude Include="..\Common\Entity\EntityMovementDoor.h" />
+    <ClInclude Include="..\Common\Entity\EntityMovementDragon.h" />
+    <ClInclude Include="..\Common\Entity\EntityMovementEmote.h" />
+    <ClInclude Include="..\Common\Entity\EntityMovementFlight.h" />
+    <ClInclude Include="..\Common\Entity\EntityMovementFx.h" />
+    <ClInclude Include="..\Common\Entity\EntityMovementGrab.h" />
+    <ClInclude Include="..\Common\Entity\EntityMovementInteraction.h" />
+    <ClInclude Include="..\Common\Entity\EntityMovementManager.h" />
+    <ClInclude Include="..\Common\Entity\EntityMovementManagerDemo.h" />
+    <ClInclude Include="..\Common\Entity\EntityMovementManagerPrivate.h" />
+    <ClInclude Include="..\Common\Entity\EntityMovementPlatform.h" />
+    <ClInclude Include="..\Common\Entity\EntityMovementProjectile.h" />
+    <ClInclude Include="..\Common\Entity\EntityMovementProjectileEntity.h" />
+    <ClInclude Include="..\Common\Entity\EntityMovementPush.h" />
+    <ClInclude Include="..\Common\Entity\EntityMovementRequesterDefs.h" />
+    <ClInclude Include="..\Common\Entity\EntityMovementSwing.h" />
+    <ClInclude Include="..\Common\Entity\EntityMovementTactical.h" />
+    <ClInclude Include="..\Common\Entity\EntityMovementTargetedRotation.h" />
+    <ClInclude Include="..\Common\Entity\EntityMovementTemplate.h" />
+    <ClInclude Include="..\Common\Entity\EntityMovementTest.h" />
+    <ClInclude Include="..\Common\Entity\EntityNet.h" />
+    <ClInclude Include="..\Common\Entity\EntityPlayerTypeConversion.h" />
+    <ClInclude Include="..\Common\Entity\EntityResolver.h" />
+    <ClInclude Include="..\Common\Entity\EntitySavedData.h" />
+    <ClInclude Include="..\Common\Entity\EntitySystemInternal.h" />
+    <ClInclude Include="..\Common\Entity\GameAccountDataCommon.h" />
+    <ClInclude Include="..\Common\Entity\grid\EntityGridPrivate.h" />
+    <ClInclude Include="..\Common\Entity\Guild.h" />
+    <ClInclude Include="..\Common\Entity\InteriorCommon.h" />
+    <ClInclude Include="..\Common\Entity\Leaderboard.h" />
+    <ClInclude Include="..\Common\Entity\OfficerCommon.h" />
+    <ClInclude Include="..\Common\Entity\Player.h" />
+    <ClInclude Include="..\Common\Entity\PlayerDifficultyCommon.h" />
+    <ClInclude Include="..\Common\Entity\ProjectileEntity.h" />
+    <ClInclude Include="..\Common\Entity\RegionRules.h" />
+    <ClInclude Include="..\Common\Entity\SavedPetCommon.h" />
+    <ClInclude Include="..\Common\Entity\SavedPetTransactions.h" />
+    <ClInclude Include="..\Common\Entity\SharedBankCommon.h" />
+    <ClInclude Include="..\Common\Entity\Team.h" />
+    <ClInclude Include="..\Common\Entity\Tray.h" />
+    <ClInclude Include="..\Common\Entity\XBoxStructs.h" />
+    <ClInclude Include="..\Common\GameAccountData\GameAccountData.h" />
+    <ClInclude Include="..\Common\GameBranch.h" />
+    <ClInclude Include="..\Common\GameEvent.h" />
+    <ClInclude Include="..\Common\GamePermissionsCommon.h" />
+    <ClInclude Include="..\Common\GameStringFormat.h" />
+    <ClInclude Include="..\Common\Genesis\Genesis.h" />
+    <ClInclude Include="..\Common\Genesis\GenesisMissions.h" />
+    <ClInclude Include="..\Common\GlobalExpressions.h" />
+    <ClInclude Include="..\Common\GroupProjectCommon.h" />
+    <ClInclude Include="..\Common\GroupProjectCommon_trans.h" />
+    <ClInclude Include="..\Common\guildCommonStructs.h" />
+    <ClInclude Include="..\Common\HUDOptionsCommon.h" />
+    <ClInclude Include="..\Common\interaction_common.h" />
+    <ClInclude Include="..\Common\interactionManager_common.h" />
+    <ClInclude Include="..\Common\item\AlgoItemCommon.h" />
+    <ClInclude Include="..\Common\item\AlgoPet.h" />
+    <ClInclude Include="..\Common\item\containerTrade.h" />
+    <ClInclude Include="..\Common\item\inventoryCommon.h" />
+    <ClInclude Include="..\Common\item\inventoryTransactions.h" />
+    <ClInclude Include="..\Common\item\itemArt.h" />
+    <ClInclude Include="..\Common\item\itemAssignments.h" />
+    <ClInclude Include="..\Common\Item\ItemAssignmentsUICommon.h" />
+    <ClInclude Include="..\Common\item\itemCommon.h" />
+    <ClInclude Include="..\Common\item\itemDescCommon.h" />
+    <ClInclude Include="..\Common\item\itemEnums.h" />
+    <ClInclude Include="..\Common\item\itemGenCommon.h" />
+    <ClInclude Include="..\Common\item\itemupgrade.h" />
+    <ClInclude Include="..\Common\item\rewardCommon.h" />
+    <ClInclude Include="..\Common\item\SuperCritterPet.h" />
+    <ClInclude Include="..\Common\item\tradeCommon.h" />
+    <ClInclude Include="..\Common\LobbyCommon.h" />
+    <ClInclude Include="..\Common\LoggedTransactions.h" />
+    <ClInclude Include="..\Common\Login2Common.h" />
+    <ClInclude Include="..\Common\LoginCommon.h" />
+    <ClInclude Include="..\Common\MailCommon.h" />
+    <ClInclude Include="..\Common\MapNotificationsCommon.h" />
+    <ClInclude Include="..\Common\MapRevealCommon.h" />
+    <ClInclude Include="..\Common\MapTransferCommon.h" />
+    <ClInclude Include="..\Common\mechanics_common.h" />
+    <ClInclude Include="..\Common\MicroTransactions.h" />
+    <ClInclude Include="..\Common\microtransactions_common.h" />
+    <ClInclude Include="..\Common\Microtransactions_Transact.h" />
+    <ClInclude Include="..\Common\MinigameCommon.h" />
+    <ClInclude Include="..\Common\Mission\contact_common.h" />
+    <ClInclude Include="..\Common\Mission\contact_enums.h" />
+    <ClInclude Include="..\Common\Mission\cutscene_common.h" />
+    <ClInclude Include="..\Common\Mission\encounter_common.h" />
+    <ClInclude Include="..\Common\Mission\Encounter_enums.h" />
+    <ClInclude Include="..\Common\Mission\gameaction_common.h" />
+    <ClInclude Include="..\Common\Mission\gametimer_common.h" />
+    <ClInclude Include="..\Common\Mission\mapstate_common.h" />
+    <ClInclude Include="..\Common\Mission\mission_common.h" />
+    <ClInclude Include="..\Common\Mission\mission_enums.h" />
+    <ClInclude Include="..\Common\Mission\missionset_common.h" />
+    <ClInclude Include="..\Common\Mission\nemesis_common.h" />
+    <ClInclude Include="..\Common\Mission\oldencounter_common.h" />
+    <ClInclude Include="..\Common\Mission\playerMatchStats_common.h" />
+    <ClInclude Include="..\Common\Mission\playerstats_common.h" />
+    <ClInclude Include="..\Common\mission\progression_common.h" />
+    <ClInclude Include="..\Common\Mission\progression_transact.h" />
+    <ClInclude Include="..\Common\NameGen.h" />
+    <ClInclude Include="..\Common\NotifyCommon.h" />
+    <ClInclude Include="..\Common\NotifyEnum.h" />
+    <ClInclude Include="..\Common\NumericConversionCommon.h" />
+    <ClInclude Include="..\Common\powerStoreCommon.h" />
+    <ClInclude Include="..\Common\pvp_common.h" />
+    <ClInclude Include="..\Common\PvPGameCommon.h" />
+    <ClInclude Include="..\Common\queue_common.h" />
+    <ClInclude Include="..\Common\queue_common_structs.h" />
+    <ClInclude Include="..\Common\queue_smartGroup.h" />
+    <ClInclude Include="..\Common\ShardEventTimingCommon.h" />
+    <ClInclude Include="..\Common\ShardVariable_Transact.h" />
+    <ClInclude Include="..\Common\ShardVariableCommon.h" />
+    <ClInclude Include="..\Common\SocialCommon.h" />
+    <ClInclude Include="..\Common\Sound\Sound_common.h" />
+    <ClInclude Include="..\Common\species_common.h" />
+    <ClInclude Include="..\Common\SteamCommon.h" />
+    <ClInclude Include="..\Common\SteamCommonServer.h" />
+    <ClInclude Include="..\Common\storeCommon.h" />
+    <ClInclude Include="..\Common\StoredCredentialsCommon.h" />
+    <ClInclude Include="..\Common\SuggestedContentCommon.h" />
+    <ClInclude Include="..\Common\Survey.h" />
+    <ClInclude Include="..\Common\TeamPetsCommonStructs.h" />
+    <ClInclude Include="..\Common\TeamUpCommon.h" />
+    <ClInclude Include="..\Common\TestClientCommon.h" />
+    <ClInclude Include="..\Common\TransformationCommon.h" />
+    <ClInclude Include="..\Common\UGC\UGCAchievements.h" />
+    <ClInclude Include="..\Common\UGC\UGCCommon.h" />
+    <ClInclude Include="..\Common\UGC\UGCError.h" />
+    <ClInclude Include="..\Common\UGC\UGCInteriorCommon.h" />
+    <ClInclude Include="..\Common\UGC\UGCSearchCache.h" />
+    <ClInclude Include="..\Common\UGC\UGCTipsCommon.h" />
+    <ClInclude Include="ai\aiFCExprFunc.h" />
+    <ClInclude Include="ai\aiFCStruct.h" />
+    <ClInclude Include="cmdparse\cmdServerCombat.h" />
+    <ClInclude Include="cmdServer.h" />
+    <ClInclude Include="cmdServerCharacter.h" />
+    <ClInclude Include="Combat\CharacterRespecServer.h" />
+    <ClInclude Include="Combat\CombatGlobal.h" />
+    <ClInclude Include="Combat\CoreServerCombatCallbacks.h" />
+    <ClInclude Include="Combat\gslCombatAdvantage.h" />
+    <ClInclude Include="Combat\gslCombatDeathPrediction.h" />
+    <ClInclude Include="Combat\gslCombatReactivePower.h" />
+    <ClInclude Include="Combat\gslPowersAEDebug.h" />
+    <ClInclude Include="Combat\PowerTreeTransactions.h" />
+    <ClInclude Include="ControllerMirror.h" />
+    <ClInclude Include="editors\gslEditor.h" />
+    <ClInclude Include="entity\EntityServer.h" />
+    <ClInclude Include="entity\gslCostume.h" />
+    <ClInclude Include="entity\gslProjectileEntity.h" />
+    <ClInclude Include="entity\gslSharedBank.h" />
+    <ClInclude Include="entity\gslTray.h" />
+    <ClInclude Include="entity\gslUserExperience.h" />
+    <ClInclude Include="GameServerHandleMsg.h" />
+    <ClInclude Include="GameServerLib_AnonAutoRunIncludes.h" />
+    <ClInclude Include="gametimer.h" />
+    <ClInclude Include="gateway\gslGatewayAuction.h" />
+    <ClInclude Include="gateway\gslGatewayContainerMapping.h" />
+    <ClInclude Include="gateway\gslGatewayMappedEntity.h" />
+    <ClInclude Include="gateway\gslGatewayMessages.h" />
+    <ClInclude Include="gateway\gslGatewayServer.h" />
+    <ClInclude Include="gateway\gslGatewaySession.h" />
+    <ClInclude Include="gateway\gslGatewayStructMapping.h" />
+    <ClInclude Include="gslActivity.h" />
+    <ClInclude Include="gslActivityLog.h" />
+    <ClInclude Include="gslArmamentSwap.h" />
+    <ClInclude Include="gslAuction.h" />
+    <ClInclude Include="gslBeaconInterface.h" />
+    <ClInclude Include="gslBulletins.h" />
+    <ClInclude Include="gslCombatCallbacks.h" />
+    <ClInclude Include="gslControlScheme.h" />
+    <ClInclude Include="gslCurrencyExchange.h" />
+    <ClInclude Include="gslDataDump.h" />
+    <ClInclude Include="gslDataFixupUtils.h" />
+    <ClInclude Include="gslDiary.h" />
+    <ClInclude Include="gslDiaryBucketManager.h" />
+    <ClInclude Include="gslDiaryWebRequest.h" />
+    <ClInclude Include="gslDoorTransition.h" />
+    <ClInclude Include="gslEntityNet.h" />
+    <ClInclude Include="gslEntityPresence.h" />
+    <ClInclude Include="gslGameAccountData.h" />
+    <ClInclude Include="gslGamePermissions.h" />
+    <ClInclude Include="gslGroupProject.h" />
+    <ClInclude Include="gslGuild.h" />
+    <ClInclude Include="gslHandleMsg.h" />
+    <ClInclude Include="gslHttpAsync.h" />
+    <ClInclude Include="gslHUDOptions.h" />
+    <ClInclude Include="gslInterior.h" />
+    <ClInclude Include="gslLobby.h" />
+    <ClInclude Include="gslLogSettings.h" />
+    <ClInclude Include="gslMail.h" />
+    <ClInclude Include="gslMail_Old.h" />
+    <ClInclude Include="gslMailNPC.h" />
+    <ClInclude Include="gslMapPopulationCache.h" />
+    <ClInclude Include="gslMessageFixup.h" />
+    <ClInclude Include="gslMicroTransactions.h" />
+    <ClInclude Include="gslNotify.h" />
+    <ClInclude Include="gslNumericConversion.h" />
+    <ClInclude Include="gslPartition.h" />
+    <ClInclude Include="gslPatching.h" />
+    <ClInclude Include="gslPlayerDifficulty.h" />
+    <ClInclude Include="gslPlayerFSM.h" />
+    <ClInclude Include="gslPowerStore.h" />
+    <ClInclude Include="gslPromoGameCurrency.h" />
+    <ClInclude Include="gslPVP.h" />
+    <ClInclude Include="gslPvPGame.h" />
+    <ClInclude Include="gslQueue.h" />
+    <ClInclude Include="gslResourceDBSupport.h" />
+    <ClInclude Include="gslSavedPet.h" />
+    <ClInclude Include="gslScoreboard.h" />
+    <ClInclude Include="gslSimpleCpuUsage.h" />
+    <ClInclude Include="gslSound.h" />
+    <ClInclude Include="gslSteam.h" />
+    <ClInclude Include="gslStoredCredentials.h" />
+    <ClInclude Include="gslTeamUp.h" />
+    <ClInclude Include="gslTicketInfo.h" />
+    <ClInclude Include="gslTimeControl.h" />
+    <ClInclude Include="GslUtils.h" />
+    <ClInclude Include="gslWarp.h" />
+    <ClInclude Include="gslWorldDebug.h" />
+    <ClInclude Include="gslWorldVariable.h" />
+    <ClInclude Include="item\gslItemAssignments.h" />
+    <ClInclude Include="item\gslItemUpgrade.h" />
+    <ClInclude Include="item\gslSuperCritterPet.h" />
+    <ClInclude Include="item\itemServer.h" />
+    <ClInclude Include="item\itemTransaction.h" />
+    <ClInclude Include="item\Store.h" />
+    <ClInclude Include="mission\cutscene.h" />
+    <ClInclude Include="mission\gslCallout.h" />
+    <ClInclude Include="mission\gslContact.h" />
+    <ClInclude Include="mission\gslEventSend.h" />
+    <ClInclude Include="mission\gslEventTracker.h" />
+    <ClInclude Include="mission\gslGameAction.h" />
+    <ClInclude Include="mission\gslMapState.h" />
+    <ClInclude Include="mission\gslMission.h" />
+    <ClInclude Include="mission\gslMission_transact.h" />
+    <ClInclude Include="mission\gslMissionDebug.h" />
+    <ClInclude Include="mission\gslMissionDrop.h" />
+    <ClInclude Include="mission\gslMissionEvents.h" />
+    <ClInclude Include="mission\gslMissionLockout.h" />
+    <ClInclude Include="mission\gslMissionRequest.h" />
+    <ClInclude Include="mission\gslMissionSet.h" />
+    <ClInclude Include="mission\gslMissionTemplate.h" />
+    <ClInclude Include="mission\gslOldEncounter.h" />
+    <ClInclude Include="mission\gslOldEncounter_events.h" />
+    <ClInclude Include="mission\gslOpenMission.h" />
+    <ClInclude Include="mission\gslPlayerMatchStats.h" />
+    <ClInclude Include="mission\gslPlayerStats.h" />
+    <ClInclude Include="mission\gslWaypoint.h" />
+    <ClInclude Include="mission\nemesis.h" />
+    <ClInclude Include="mission\timedeventqueue.h" />
+    <ClInclude Include="progression\gslProgression.h" />
+    <ClInclude Include="pub\GameServerLib.h" />
+    <ClInclude Include="pub\gslAccountProxy.h" />
+    <ClInclude Include="pub\gslBaseStates.h" />
+    <ClInclude Include="pub\gslBugReport.h" />
+    <ClInclude Include="pub\gslChat.h" />
+    <ClInclude Include="pub\gslChatConfig.h" />
+    <ClInclude Include="pub\gslCommandParse.h" />
+    <ClInclude Include="pub\gslCritter.h" />
+    <ClInclude Include="pub\gslEncounterLog.h" />
+    <ClInclude Include="pub\gslEntity.h" />
+    <ClInclude Include="pub\gslExtern.h" />
+    <ClInclude Include="pub\gslFriendsIgnore.h" />
+    <ClInclude Include="pub\gslHeatMaps.h" />
+    <ClInclude Include="pub\gslInteractionManager.h" />
+    <ClInclude Include="pub\gslMapTransfer.h" />
+    <ClInclude Include="pub\gslPetCommand.h" />
+    <ClInclude Include="pub\gslPowerTransactions.h" />
+    <ClInclude Include="pub\gslSendToClient.h" />
+    <ClInclude Include="pub\gslTrade.h" />
+    <ClInclude Include="pub\gslTransactions.h" />
+    <ClInclude Include="reward\AlgoItem.h" />
+    <ClInclude Include="reward\Reward.h" />
+    <ClInclude Include="social\gslSocial.h" />
+    <ClInclude Include="social\gslSocialUtils.h" />
+    <ClInclude Include="team\gslTeam.h" />
+    <ClInclude Include="team\gslTeamCorral.h" />
+    <ClInclude Include="team\TeamCommands.h" />
+    <ClInclude Include="UGC\gslUGC.h" />
+    <ClInclude Include="UGC\gslUGC_cmd.h" />
+    <ClInclude Include="UGC\gslUGCTips.h" />
+    <ClInclude Include="UGC\gslUGCTransactions.h" />
+    <ClInclude Include="WebRequests.h" />
+    <ClInclude Include="WebRequestServer\wrContainerSubs.h" />
+    <ClInclude Include="world\gslEncounter.h" />
+    <ClInclude Include="world\gslEncounterDebug.h" />
+    <ClInclude Include="world\gslInteractable.h" />
+    <ClInclude Include="world\gslInteraction.h" />
+    <ClInclude Include="world\gslInteractLoot.h" />
+    <ClInclude Include="world\gslLandmark.h" />
+    <ClInclude Include="world\gslLayerFSM.h" />
+    <ClInclude Include="world\gslMapReveal.h" />
+    <ClInclude Include="world\gslMapVariable.h" />
+    <ClInclude Include="world\gslMechanics.h" />
+    <ClInclude Include="world\gslNamedPoint.h" />
+    <ClInclude Include="world\gslNeighborhood.h" />
+    <ClInclude Include="world\gslPatrolRoute.h" />
+    <ClInclude Include="world\gslShardVariable.h" />
+    <ClInclude Include="world\gslSpawnPoint.h" />
+    <ClInclude Include="world\gslTriggerCondition.h" />
+    <ClInclude Include="world\gslVolume.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\libs\StructParserStub\StructParserStub.vcxproj">
+      <Project>{1d29e421-93b2-4e32-9186-7fafc3971c5b}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

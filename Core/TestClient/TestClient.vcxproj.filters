@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\CrossRoads\Common\TestClientCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\GameClientLib\AutoGen\GameClientLib_commands_autogen_CommandFuncs.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\AutoGen\ObjectDB_autogen_RemoteFuncs.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\AutoGen\TestServer_autogen_RemoteFuncs.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoGen\TestClient_AutoGen_1.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoGen\TestClient_AutoGen_2.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="scripting\tcScriptCallbacks.c">
+      <Filter>scripting</Filter>
+    </ClCompile>
+    <ClCompile Include="scripting\tcScriptEntity.c">
+      <Filter>scripting</Filter>
+    </ClCompile>
+    <ClCompile Include="scripting\tcScriptMetrics.c">
+      <Filter>scripting</Filter>
+    </ClCompile>
+    <ClCompile Include="scripting\tcScriptMission.c">
+      <Filter>scripting</Filter>
+    </ClCompile>
+    <ClCompile Include="scripting\tcScriptMove.c">
+      <Filter>scripting</Filter>
+    </ClCompile>
+    <ClCompile Include="scripting\tcScriptStateMachine.c">
+      <Filter>scripting</Filter>
+    </ClCompile>
+    <ClCompile Include="scripting\tcScriptTicket.c">
+      <Filter>scripting</Filter>
+    </ClCompile>
+    <ClCompile Include="TestClient.c" />
+    <ClCompile Include="TestClientLua.c" />
+    <ClCompile Include="TestClientPython.c" />
+    <ClCompile Include="TestClientScripting.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\CrossRoads\Common\TestClientCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\Common\testclient_comm.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\PythonLib\resource_pylib.h">
+      <Filter>resources</Filter>
+    </ClInclude>
+    <ClInclude Include="TestClient.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="AutoGen">
+      <UniqueIdentifier>{2dcdf0e6-53d2-4736-9847-ec7b527b3cba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{28ed8fc9-0948-4a4a-a641-0733bf7bb1ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resources">
+      <UniqueIdentifier>{9e511523-ed91-4e6d-9da0-321f210d1aeb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scripting">
+      <UniqueIdentifier>{67dd14d6-6059-4d84-bb12-4bfe27e4cefa}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\libs\PythonLib\import.py">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="..\..\libs\PythonLib\profile.py">
+      <Filter>resources</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\libs\PythonLib\PythonLib.rc">
+      <Filter>resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

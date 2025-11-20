@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="AutoGen\Multiplexer_AutoGen_1.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoGen\Multiplexer_AutoGen_2.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="Multiplexer.c" />
+    <ClCompile Include="multiplexer_main.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Multiplexer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="AutoGen">
+      <UniqueIdentifier>{12e23631-27c0-4090-9ef5-7ea14b666eea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{5adfda5a-0f54-4205-a333-b816e9d7d8b2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\CrossRoads\GameClientLib\AutoGen\GameClientLib_commands_autogen_CommandFuncs.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs\Common\AutoGen\UtilitiesLib_autogen_RemoteFuncs.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\AutoGen\ObjectDB_autogen_RemoteFuncs.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoGen\HeadshotServer_AutoGen_1.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoGen\HeadshotServer_AutoGen_2.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="HeadshotServer.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\libs\Common\testclient_comm.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="HeadshotServer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="AutoGen">
+      <UniqueIdentifier>{6eaba0a7-9959-4c57-bbd2-f1b2cf54d632}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{e6b6ab3d-55cb-40d2-aefe-051214540acb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

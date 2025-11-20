@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Full Debug|Win32">
+      <Configuration>Full Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Full Debug|x64">
+      <Configuration>Full Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{12966658-3B35-4126-8761-1382CEAE7203}</ProjectGuid>
+    <RootNamespace>ChatServer</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="..\..\PropertySheets\GeneralSettings.props" />
+    <Import Project="..\..\PropertySheets\CrypticApplication.props" />
+    <Import Project="..\..\PropertySheets\LinkerOptimizations.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="..\..\PropertySheets\GeneralSettings.props" />
+    <Import Project="..\..\PropertySheets\CrypticApplication.props" />
+    <Import Project="..\..\PropertySheets\LinkerOptimizations.props" />
+    <Import Project="..\..\PropertySheets\x64.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'" Label="PropertySheets">
+    <Import Project="..\..\PropertySheets\GeneralSettings.props" />
+    <Import Project="..\..\PropertySheets\CrypticApplication.props" />
+    <Import Project="..\..\PropertySheets\LinkerOptimizations.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|x64'" Label="PropertySheets">
+    <Import Project="..\..\PropertySheets\GeneralSettings.props" />
+    <Import Project="..\..\PropertySheets\CrypticApplication.props" />
+    <Import Project="..\..\PropertySheets\LinkerOptimizations.props" />
+    <Import Project="..\..\PropertySheets\x64.props" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectName)X64</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">$(ProjectName)FD</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Full Debug|x64'">$(ProjectName)X64FD</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../libs/WorldLib;../../libs/WorldLib/StaticWorld;../../libs/WorldLib/pub;../../libs/InputLib/pub;../../libs/AILib/pub;../../libs/UILib/pub;../../libs/ServerLib/pub;../../libs/PatchClientLib;../../libs/ContentLib/pub;../../libs/Common;../Common;../../CrossRoads/Common;../../CrossRoads/Common/entity;../../CrossRoads/Common/Mission;../../CrossRoads/Common/item;../../CrossRoads/Common/Combat;../../libs/HttpLib;../ChatServerLib;../Controller/Pub;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRTDBG_MAP_ALLOC=1;EDITLIB=1;CHATSERVER=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/MACHINE:I386 /fixed:no %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>psapi.lib;kernel32.lib;user32.lib;uuid.lib;shell32.lib;advapi32.lib;gdi32.lib</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>false</OptimizeReferences>
+    </Link>
+    <PreBuildEvent>
+      <Command>..\..\utilities\bin\structparser X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)</Command>
+    </PreBuildEvent>
+    <PreLinkEvent>
+      <Command>
+      </Command>
+    </PreLinkEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../libs/WorldLib;../../libs/WorldLib/StaticWorld;../../libs/WorldLib/pub;../../libs/InputLib/pub;../../libs/AILib/pub;../../libs/UILib/pub;../../libs/ServerLib/pub;../../libs/PatchClientLib;../../libs/ContentLib/pub;../../libs/Common;../Common;../../CrossRoads/Common;../../CrossRoads/Common/entity;../../CrossRoads/Common/Mission;../../CrossRoads/Common/item;../../CrossRoads/Common/Combat;../../libs/HttpLib;../ChatServerLib;../Controller/Pub;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRTDBG_MAP_ALLOC=1;EDITLIB=1;CHATSERVER=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/fixed:no %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>psapi.lib;kernel32.lib;user32.lib;uuid.lib;shell32.lib;advapi32.lib;gdi32.lib</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>false</OptimizeReferences>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <PreBuildEvent>
+      <Command>..\..\utilities\bin\structparser X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)</Command>
+    </PreBuildEvent>
+    <PreLinkEvent>
+      <Command>
+      </Command>
+    </PreLinkEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/we4047 /we4133 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>../../libs/WorldLib;../../libs/WorldLib/StaticWorld;../../libs/WorldLib/pub;../../libs/InputLib/pub;../../libs/AILib/pub;../../libs/UILib/pub;../../libs/ServerLib/pub;../../libs/PatchClientLib;../../libs/ContentLib/pub;../../libs/Common;../Common;../../CrossRoads/Common;../../CrossRoads/Common/entity;../../CrossRoads/Common/Mission;../../CrossRoads/Common/item;../../CrossRoads/Common/Combat;../../libs/HttpLib;../ChatServerLib;../Controller/Pub;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_FULLDEBUG;_WINDOWS;_CRTDBG_MAP_ALLOC=1;EDITLIB=1;CHATSERVER=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/MACHINE:I386 /FIXED:NO /LARGEADDRESSAWARE %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>ws2_32.lib;kernel32.lib;Imm32.lib;Msacm32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>false</OptimizeReferences>
+    </Link>
+    <PreBuildEvent>
+      <Command>..\..\utilities\bin\structparser X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)</Command>
+    </PreBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions>/we4047 /we4133 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>../../libs/WorldLib;../../libs/WorldLib/StaticWorld;../../libs/WorldLib/pub;../../libs/InputLib/pub;../../libs/AILib/pub;../../libs/UILib/pub;../../libs/ServerLib/pub;../../libs/PatchClientLib;../../libs/ContentLib/pub;../../libs/Common;../Common;../../CrossRoads/Common;../../CrossRoads/Common/entity;../../CrossRoads/Common/Mission;../../CrossRoads/Common/item;../../CrossRoads/Common/Combat;../../libs/HttpLib;../ChatServerLib;../Controller/Pub;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_FULLDEBUG;_WINDOWS;_CRTDBG_MAP_ALLOC=1;EDITLIB=1;CHATSERVER=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/FIXED:NO /LARGEADDRESSAWARE %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>ws2_32.lib;kernel32.lib;Imm32.lib;Msacm32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>false</OptimizeReferences>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <PreBuildEvent>
+      <Command>..\..\utilities\bin\structparser X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)</Command>
+    </PreBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\CrossRoads\Common\AutoGen\AppServerLib_autogen_RemoteFuncs.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\AutoGen\ChatRelay_autogen_RemoteFuncs.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\AutoGen\GameServerLib_autogen_RemoteFuncs.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\chatCommon.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\GameAccountData\GameAccountData.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\guildCommonStructs.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\microtransactions_common.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\PvPGameCommon.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\queue_common_structs.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\TextFilterCommon.c" />
+    <ClCompile Include="..\Common\AutoGen\ChatServer_autogen_RemoteFuncs.c" />
+    <ClCompile Include="..\Common\AutoGen\ChatServer_autotransactions_autogen_wrappers.c" />
+    <ClCompile Include="..\Common\chatdb.c" />
+    <ClCompile Include="..\Common\ChatServer\chatBlacklist.c" />
+    <ClCompile Include="..\Common\ChatServer\chatShard_Shared.c" />
+    <ClCompile Include="..\Common\ChatServer\chatShared.c" />
+    <ClCompile Include="aslChatServer.c" />
+    <ClCompile Include="aslChatServerInit.c" />
+    <ClCompile Include="AutoGen\ChatServer_AutoGen_1.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="AutoGen\ChatServer_AutoGen_2.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="channels.c" />
+    <ClCompile Include="chatGlobal.c" />
+    <ClCompile Include="chatGuild.c" />
+    <ClCompile Include="chatLocal.c" />
+    <ClCompile Include="chatMail.c" />
+    <ClCompile Include="chatRelay\chatRelayManager.c" />
+    <ClCompile Include="ChatServer.c" />
+    <ClCompile Include="chatShardConfig.c" />
+    <ClCompile Include="chatStringFormat.c" />
+    <ClCompile Include="chatUtilities.c" />
+    <ClCompile Include="chatVoice.c" />
+    <ClCompile Include="csr.c" />
+    <ClCompile Include="friendsIgnore.c" />
+    <ClCompile Include="loadsave.c" />
+    <ClCompile Include="msgsend.c" />
+    <ClCompile Include="shardnet.c" />
+    <ClCompile Include="users.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\CrossRoads\Common\AutoGen\ChatRelay_autogen_RemoteFuncs.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\chatCommon.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\chatCommonStructs.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\GameAccountData\GameAccountData.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\guildCommonStructs.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\microtransactions_common.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\PvPGameCommon.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\queue_common_structs.h" />
+    <ClInclude Include="..\..\libs\ServerLib\pub\ShardCluster.h" />
+    <ClInclude Include="..\Common\chatdb.h" />
+    <ClInclude Include="..\Common\ChatServer\chatBlacklist.h" />
+    <ClInclude Include="..\Common\ChatServer\chatShard_Shared.h" />
+    <ClInclude Include="..\Common\ChatServer\chatShared.h" />
+    <ClInclude Include="aslChatServer.h" />
+    <ClInclude Include="aslChatServerInit.h" />
+    <ClInclude Include="channels.h" />
+    <ClInclude Include="chatCommandStrings.h" />
+    <ClInclude Include="chatGlobal.h" />
+    <ClInclude Include="chatLocal.h" />
+    <ClInclude Include="chatMail.h" />
+    <ClInclude Include="chatRelay\chatRelayManager.h" />
+    <ClInclude Include="ChatServer.h" />
+    <ClInclude Include="chatShardConfig.h" />
+    <ClInclude Include="chatStringFormat.h" />
+    <ClInclude Include="chatUtilities.h" />
+    <ClInclude Include="chatVoice.h" />
+    <ClInclude Include="csr.h" />
+    <ClInclude Include="friendsIgnore.h" />
+    <ClInclude Include="loadsave.h" />
+    <ClInclude Include="msgsend.h" />
+    <ClInclude Include="shardnet.h" />
+    <ClInclude Include="users.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\libs\ContentLib\ContentLib.vcxproj">
+      <Project>{869105e2-8af2-4e48-a4d3-7b3e31441777}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\libs\HttpLib\HttpLib.vcxproj">
+      <Project>{2acc94ec-3e38-48bd-b97f-5b46328a4aef}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\libs\PatchClientLib\PatchClientLib.vcxproj">
+      <Project>{487db8d6-6faf-4e86-9800-75088911a703}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\libs\ServerLib\ServerLib.vcxproj">
+      <Project>{dd475a7c-b1d4-43c4-acb7-d73c24be1eb7}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\libs\StructParserStub\StructParserStub.vcxproj">
+      <Project>{1d29e421-93b2-4e32-9186-7fafc3971c5b}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\libs\UtilitiesLib\UtilitiesLib.vcxproj">
+      <Project>{a6741f6e-5476-4f9f-9d65-62b54aaf1d08}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

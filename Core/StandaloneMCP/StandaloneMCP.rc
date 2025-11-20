@@ -1,0 +1,164 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource_standaloneMCP.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource_standaloneMCP.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ACCOUNTINFO DIALOGEX 0, 0, 231, 162
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Account Info"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,104,50,14,WS_DISABLED
+    EDITTEXT        IDC_USERNAME,43,23,165,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PASSWORD,43,42,166,16,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "Username",IDC_STATIC,7,22,33,12
+    LTEXT           "Password",IDC_STATIC,7,42,32,12
+    LTEXT           "Static",IDC_ACCOUNT_INFO_MESSAGE,7,65,201,32
+    LTEXT           "Static",IDC_APPSERVER_STATUS,7,135,201,21
+    PUSHBUTTON      "Proceed Without Authentication",IDC_PROCEED_WITHOUT_AUTH,65,104,143,15,NOT WS_VISIBLE
+END
+
+IDD_EDITCOMMANDLINE DIALOGEX 0, 0, 628, 334
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,567,7,50,14
+    EDITTEXT        IDC_EDITCOMMANDLINE,7,22,610,301,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN
+    LTEXT           "Specify command line parameters. Only the first line of text is used, so you can store alternatives in other lines",IDC_EDITCOMMANDLINE_CAPTION,7,7,524,11
+END
+
+IDD_MCP_START_STANDALONE DIALOGEX 0, 0, 207, 158
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Cryptic Shards"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_CHOOSESERVER,14,49,149,60,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Choose an existing server...",IDC_STATIC_CHOOSE_EXISTING,23,36,92,8
+    PUSHBUTTON      "Refresh",IDC_REFRESH_SERVER_LIST,163,51,37,10
+    PUSHBUTTON      "Patch and launch PC client",IDC_PATCHPC,33,85,125,19,NOT WS_VISIBLE
+    PUSHBUTTON      "...",IDC_PATCHPC_COMMANDLINE,18,90,13,10,NOT WS_VISIBLE
+    PUSHBUTTON      "...",IDC_LAUNCHCLIENT_COMMANDLINE,17,90,13,10,NOT WS_VISIBLE
+    LTEXT           "",IDC_MESSAGE,15,67,149,44
+    PUSHBUTTON      "Patch and launch XBOX",IDC_PATCHXBOX,31,117,125,19,NOT WS_VISIBLE
+    PUSHBUTTON      "...",IDC_PATCHXBOX_COMMANDLINE,17,122,13,10,NOT WS_VISIBLE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ACCOUNTINFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 224
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 155
+    END
+
+    IDD_EDITCOMMANDLINE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 621
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 327
+    END
+
+    IDD_MCP_START_STANDALONE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 200
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 151
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// EXE
+//
+
+#ifdef _FULLDEBUG
+PATCHCLIENT_EXE         EXE                     "..\\..\\utilities\\bin\\PatchClientFD.exe"
+#else
+PATCHCLIENT_EXE         EXE                     "..\\..\\utilities\\bin\\PatchClient.exe"
+#endif
+PATCHCLIENTXBOX_EXE     EXE                     "C:\\Cryptic\\tools\\bin\\PatchClientXBOX.exe"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// TXT
+//
+
+MCP_SERVER_SETUP_TXT    TXT                     "..\\..\\data\\server\\MCPServerSetup.txt"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

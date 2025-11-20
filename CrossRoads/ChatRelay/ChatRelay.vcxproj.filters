@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\Core\Common\AutoGen\ChatServer_autogen_RemoteFuncs.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\Common\AutoGen\ObjectDB_autogen_RemoteFuncs.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\Common\chatdb.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\Common\ChatServer\chatBlacklist.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\AutoGen\ChatRelay_autotransactions_autogen_wrappers.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\AutoGen\GameClientLib_autogen_GenericClientCmdWrappers.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\AutoGen\GameServerLib_autogen_RemoteFuncs.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\chatCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\GameAccountData\GameAccountData.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\microtransactions_common.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\TextFilterCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoGen\ChatRelay_AutoGen_1.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoGen\ChatRelay_AutoGen_2.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="chatRelay.c" />
+    <ClCompile Include="chatRelayClient.c" />
+    <ClCompile Include="chatRelayComm.c" />
+    <ClCompile Include="chatRelayCommandParse.c" />
+    <ClCompile Include="chatRelayConfigCmds.c" />
+    <ClCompile Include="chatRelayMain.c" />
+    <ClCompile Include="chatRelayResponses.c" />
+    <ClCompile Include="chatRelayTransactions.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Core\Common\AutoGen\ChatServer_autogen_RemoteFuncs.h">
+      <Filter>AutoGen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\Common\chatdb.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\Common\ChatServer\chatBlacklist.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\AutoGen\GameClientLib_autogen_GenericClientCmdWrappers.h">
+      <Filter>AutoGen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\chatCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\chatCommonStructs.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\GameAccountData\GameAccountData.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\microtransactions_common.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\NotifyEnum.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="chatRelay.h" />
+    <ClInclude Include="chatRelayClient.h" />
+    <ClInclude Include="chatRelayComm.h" />
+    <ClInclude Include="chatRelayCommandParse.h" />
+    <ClInclude Include="chatRelayTransactions.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="AutoGen">
+      <UniqueIdentifier>{50ed8ad0-2f14-424d-a6f5-d92c06f4cf56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{f6ca8974-d627-4acc-a32d-961806c1c690}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

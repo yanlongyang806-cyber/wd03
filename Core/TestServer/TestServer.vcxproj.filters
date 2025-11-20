@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\CrossRoads\Common\TestClientCommon.c">
+      <Filter>extern</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoGen\TestServer_AutoGen_1.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoGen\TestServer_AutoGen_2.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="lxplib.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="TestServer.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="TestServerExpression.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="TestServerExternal.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="TestServerGlobal.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="TestServerHttp.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="TestServerLua.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="TestServerMetric.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="TestServerReport.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="TestServerSchedule.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="TestServerSharded.c">
+      <Filter>source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\CrossRoads\Common\TestClientCommon.h">
+      <Filter>extern</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\PythonLib\resource_pylib.h">
+      <Filter>resources</Filter>
+    </ClInclude>
+    <ClInclude Include="lxplib.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="TestServerExpression.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="TestServerExternal.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="TestServerGlobal.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="TestServerHttp.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="TestServerLua.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="TestServerMetric.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="TestServerReport.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="TestServerSchedule.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="TestServerSharded.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="AutoGen">
+      <UniqueIdentifier>{ddcdc411-924d-4c1c-a341-1a05ada5ab6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="extern">
+      <UniqueIdentifier>{89bd3a8c-72f7-4594-b0c0-52e22d366608}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="headers">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="resources">
+      <UniqueIdentifier>{938a58d5-6a94-4169-80ab-44e40486c372}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\libs\PythonLib\import.py">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="..\..\libs\PythonLib\profile.py">
+      <Filter>resources</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\libs\PythonLib\PythonLib.rc">
+      <Filter>resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

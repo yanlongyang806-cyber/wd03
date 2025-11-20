@@ -1,0 +1,3684 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\libs\Common\MapDescription.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs\Common\UGCProjectCommon.c">
+      <Filter>UGC\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\accountCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\AccountDataCache.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ActivityCalendar.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ActivityCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ActivityLogCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\aiStructCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\AnimList_Common.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ArmamentSwapCommon.c" />
+    <ClCompile Include="..\Common\AuctionBrokerCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\AutoGen\ChatRelay_autogen_GenericServerCmdWrappers.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\autoPlacementCommon.c">
+      <Filter>editors\AutoPlacement\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\chatCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\AbilityScores_DD.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\AttribCurve.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\AttribCurveImp.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\AttribMod.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\AttribModFragility.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\Character.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\Character_combat.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\Character_mods.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\Character_target.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\Character_tick.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\CharacterAttribs.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\CharacterAttribute.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\CharacterClass.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\Combat_DD.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\combatAdvantage.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\CombatCallbacks.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\CombatConfig.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\CombatDebug.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\CombatEval.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\CombatEvents.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\CombatPool.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\CombatPowerStateSwitching.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\CombatReactivePower.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\CombatSensitivity.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\ComboTracker.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\DamageTracker.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\PowerActivation.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\PowerAnimFX.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\PowerApplication.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\PowerEnhancements.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\PowerHelpers.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\PowerModes.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\PowerReplace.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\Powers.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\PowersAEDebug.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\PowersAutoDesc.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\PowerSlots.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\PowersMovement.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\PowerSubtarget.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\PowerTree.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\PowerTreeEval.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\PowerTreeHelpers.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\PowerVars.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\Skills_DD.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\StatPoints.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ControlScheme.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\CSVExport.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\CurrencyExchangeCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\DiaryCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\DiaryDisplay.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\DiscountShared.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\DoorTransitionCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\EntDebugMenu.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\allegiance.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\AuctionLot.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\AuctionLot_Transact.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\BeaconMovement.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\CombatMods.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\CostumeCommonEntity.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\CostumeCommonGenerate.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\CostumeCommonLoad.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\CostumeCommonRandom.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\CostumeCommonTailor.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\entCritter.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\Entity.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityBuild.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityDataQuery.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityExprFunc.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityInteraction.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityIterator.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityLib.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementAttachment.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementAuto.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementDead.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementDefault.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementDisableMovement.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementDoor.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementDragon.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementEmote.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementFlight.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementFx.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementGrab.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementInteraction.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementManager.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementManagerBG.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementManagerLog.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementManagerNet.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementManagerNetPrepare.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementManagerNetReceive.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementManagerNetSend.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementManagerResource.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementManagerResourceBG.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementPlatform.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementProjectile.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementPush.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementRequesterDefs.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementSwing.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementTactical.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementTargetedRotation.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementTemplate.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementTest.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityNet.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityPlayerTypeConversion.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityResolver.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntitySystem.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\GameAccountDataCommon.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\GameSession.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\grid\EntityGrid.c">
+      <Filter>entity\common\grid</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\grid\EntityGridDebug.c">
+      <Filter>entity\common\grid</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\grid\EntityGridInterface.c">
+      <Filter>entity\common\grid</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\Guild.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\InteriorCommon.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\Leaderboard.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\OfficerCommon.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\PlayerDifficultyCommon.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\ProjectileEntity.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\RegionRules.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\SavedPetCommon.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\SharedBankCommon.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\SkelInfoFixup.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\Team.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\Tray.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\XboxStructs.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\GameAccountData\GameAccountData.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\GameBranch.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\GameEvent.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\GamePermissionsCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\GameStringFormat.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Genesis\Genesis.c">
+      <Filter>genesis\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Genesis\GenesisMissions.c">
+      <Filter>genesis\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\GlobalExpressions.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\GroupProjectCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\GroupProjectCommon_eval.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\guildCommonStructs.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\HUDOptionsCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\interaction_common.c">
+      <Filter>mission\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\interactionManager_common.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\item\AlgoItemCommon.c">
+      <Filter>item\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\item\AlgoPet.c">
+      <Filter>item\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\item\inventoryCommon.c">
+      <Filter>item\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\item\itemArt.c">
+      <Filter>item\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\item\ItemAssignmentEval.c">
+      <Filter>item\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\item\itemAssignments.c">
+      <Filter>item\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\item\ItemAssignmentsUICommon.c">
+      <Filter>item\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\item\itemCommon.c">
+      <Filter>item\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\item\itemDescCommon.c">
+      <Filter>item\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\item\itemEval.c">
+      <Filter>item\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\item\itemGenCommon.c">
+      <Filter>item\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\item\itemupgrade.c">
+      <Filter>item\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\item\rewardCommon.c">
+      <Filter>item\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\item\RewardTable.c">
+      <Filter>item\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\item\RewardValTable.c">
+      <Filter>item\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\item\SuperCritterPet.c">
+      <Filter>item\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\item\tradeCommon.c">
+      <Filter>item\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\LoadScreen\LoadScreen_Common.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\LobbyCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Login2CharacterDetail.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Login2Common.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\LoginCharTypeFlags.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\LoginCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\MailCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\MapNotificationsCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\MapRevealCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\MapTransferCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\mechanics_common.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\MicroTransactions.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\microtransactions_common.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\MinigameCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Mission\contact_common.c">
+      <Filter>mission\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Mission\cutscene_common.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Mission\encounter_common.c">
+      <Filter>mission\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Mission\gameaction_common.c">
+      <Filter>mission\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Mission\gametimer_common.c">
+      <Filter>mission\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Mission\mapstate_common.c">
+      <Filter>mission\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Mission\mapstate_common_cmd.c">
+      <Filter>mission\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Mission\mapstate_common_eval.c">
+      <Filter>mission\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Mission\mission_common.c">
+      <Filter>mission\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Mission\mission_templates.c">
+      <Filter>mission\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Mission\missionset_common.c">
+      <Filter>item\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Mission\nemesis_common.c">
+      <Filter>mission\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Mission\oldencounter_common.c">
+      <Filter>mission\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Mission\playerMatchStats_common.c">
+      <Filter>mission\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Mission\playerstats_common.c">
+      <Filter>mission\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Mission\progression_common.c">
+      <Filter>progression\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Mission\progression_transact.c">
+      <Filter>progression\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\NameGen.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\NotifyCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\NotifyCommon_eval.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\NumericConversionCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\powerStoreCommon.c">
+      <Filter>entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\pvp_common.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\PvPGameCommon.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\queue_common.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\queue_common_structs.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\queue_smartGroup.c" />
+    <ClCompile Include="..\Common\ShardCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ShardEventTimingCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ShardVariableCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\SocialCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Sound\Sound_common.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\species_common.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\SteamCommon.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\storeCommon.c">
+      <Filter>item\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\StoredCredentialsCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\SuggestedContentCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\TeamPetsCommonStructs.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\TeamUpCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\TestClientCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\TextFilterCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\TransformationCommon.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\UGC\UGCAchievements.c">
+      <Filter>UGC\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\UGC\UGCCommon.c">
+      <Filter>UGC\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\UGC\UGCError.c">
+      <Filter>UGC\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\UGC\UGCInteriorCommon.c">
+      <Filter>UGC\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\UGC\UGCSearchCache.c">
+      <Filter>UGC\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\UGC\UGCTipsCommon.c">
+      <Filter>UGC\common</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoGen\GameClientLib_AutoGen_1.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoGen\GameClientLib_AutoGen_2.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="BuildSelectionUI.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="CharacterPathUI.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="chat\gclChatLog.c">
+      <Filter>chat</Filter>
+    </ClCompile>
+    <ClCompile Include="chat\gclChatLogFormat.c">
+      <Filter>chat</Filter>
+    </ClCompile>
+    <ClCompile Include="chat\gclClientChat.c">
+      <Filter>chat</Filter>
+    </ClCompile>
+    <ClCompile Include="cmdClient.c">
+      <Filter>cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="cmdClientEditor.c">
+      <Filter>cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="cmdClientReport.c">
+      <Filter>cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="cmdXBox.c">
+      <Filter>cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="Combat\ClientTargeting.c">
+      <Filter>combat</Filter>
+    </ClCompile>
+    <ClCompile Include="Combat\ClienttargetingCMD.c">
+      <Filter>combat</Filter>
+    </ClCompile>
+    <ClCompile Include="Combat\CombatDebugViewer.c">
+      <Filter>combat</Filter>
+    </ClCompile>
+    <ClCompile Include="Combat\gclCombatAdvantage.c">
+      <Filter>combat</Filter>
+    </ClCompile>
+    <ClCompile Include="Combat\gclCombatDeathPrediction.c">
+      <Filter>combat</Filter>
+    </ClCompile>
+    <ClCompile Include="Combat\gclCombatPowerStateSwitching.c">
+      <Filter>combat</Filter>
+    </ClCompile>
+    <ClCompile Include="Combat\gclCombatReactivePower.c">
+      <Filter>combat</Filter>
+    </ClCompile>
+    <ClCompile Include="Combat\gclPowersAEDebug.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="Combat\gclReticle.c">
+      <Filter>combat</Filter>
+    </ClCompile>
+    <ClCompile Include="Combat\PowersGrantDebug.c">
+      <Filter>combat</Filter>
+    </ClCompile>
+    <ClCompile Include="CraftingUI.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\aijobeditor.c">
+      <Filter>editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\AlgoPetEditor.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\AlgoPetEditorEM.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\AnimChartEditor.c">
+      <Filter>editors\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\AnimChartEM.c">
+      <Filter>editors\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\AnimEditorCommon.c">
+      <Filter>editors\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\AnimGraphEditor.c">
+      <Filter>editors\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\AnimGraphEM.c">
+      <Filter>editors\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\AnimTemplateEditor.c">
+      <Filter>editors\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\AnimTemplateEM.c">
+      <Filter>editors\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\AssetViewer.c">
+      <Filter>editors\Misc Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\AudioEventEditor.c">
+      <Filter>editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\AudioEventEditorEM.c">
+      <Filter>editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\autoPlacement.c">
+      <Filter>editors\AutoPlacement</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\ChoiceTableEditor.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\ChoiceTableEditor_cmd.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\ChoiceTableEditorEM.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\contacteditor.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\contacteditorCmd.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\contacteditorEM.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\CostumeDefEditor.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\CostumeEditor.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\CostumeEditorCmd.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\CostumeEditorEM.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\CritterEditor.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\CritterEditorEM.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\CritterGroupEditor.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\CritterGroupEditorEM.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\CritterOverrideEditor.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\CritterOverrideEditorEM.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\CurveDefEditor.c">
+      <Filter>editors\CurveEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\CurveEditorPanels.c">
+      <Filter>editors\CurveEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\CurveEditorUI.c">
+      <Filter>editors\CurveEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\CutsceneDemoPlayEditor.c">
+      <Filter>editors\CutsceneEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\CutsceneEditor.c">
+      <Filter>editors\CutsceneEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\CutsceneEditorCommon.c">
+      <Filter>editors\CutsceneEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\CutsceneEditorGlue.c">
+      <Filter>editors\CutsceneEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\DonationTaskEditor.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\DonationTaskEditorEM.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\EditLib.c">
+      <Filter>editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\EditLibAsyncOp.c">
+      <Filter>editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\EditLibBudgets.c">
+      <Filter>editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\EditLibClipboard.c">
+      <Filter>editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\EditLibGizmos.c">
+      <Filter>editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\EditLibGizmosToolbar.c">
+      <Filter>editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\EditLibTimingLog.c">
+      <Filter>editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\EditLibUIUtil.c">
+      <Filter>editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\EditLibUndo.c">
+      <Filter>editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\EditorManager.c">
+      <Filter>editors\EditorManager</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\EditorManagerOptions.c">
+      <Filter>editors\EditorManager</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\EditorManagerSearch.c">
+      <Filter>editors\EditorManager</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\EditorManagerTest.c">
+      <Filter>editors\EditorManager</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\EditorManagerUI.c">
+      <Filter>editors\EditorManager</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\EditorManagerUIInfoWin.c">
+      <Filter>editors\EditorManager</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\EditorManagerUIMenus.c">
+      <Filter>editors\EditorManager</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\EditorManagerUIMotD.c">
+      <Filter>editors\EditorManager</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\EditorManagerUIPanels.c">
+      <Filter>editors\EditorManager</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\EditorManagerUIPickers.c">
+      <Filter>editors\EditorManager</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\EditorManagerUIPrompts.c">
+      <Filter>editors\EditorManager</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\EditorManagerUIToolbars.c">
+      <Filter>editors\EditorManager</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\EditorManagerUtils.c">
+      <Filter>editors\EditorManager</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\EditorObject.c">
+      <Filter>editors\EditorObject</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\EditorObjectMenus.c">
+      <Filter>editors\EditorObject</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\EditorPrefs.c">
+      <Filter>editors\EditorManager</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\EditorPreviewWindow.c">
+      <Filter>editors\Misc Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\EditorSearchWindow.c">
+      <Filter>editors\Misc Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\elAuxDevices.c">
+      <Filter>editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\enclayereditor.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\enclayereditorCmd.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\enclayereditorEM.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\encountereditor.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\encountereditorCmd.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\encountereditorEM.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\EncounterTemplateEditor.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\EncounterTemplateEditorEM.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\eventeditor.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\eventlogviewer.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\ExpressionEditor.c">
+      <Filter>editors\Misc Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\FSMEditorMain.c">
+      <Filter>editors\FSM Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\FXBrowser.c">
+      <Filter>editors\FXEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\FXParticleEditor.c">
+      <Filter>editors\FXEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\FXTracker.c">
+      <Filter>editors\FXEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\GameActionEditor.c">
+      <Filter>editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\gameeditorshared.c">
+      <Filter>editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\gameeditorsharedEM.c">
+      <Filter>editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\GameEventDebugger.c">
+      <Filter>editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\gclCostumeView.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\GenericGraphEditor.c">
+      <Filter>editors\Misc Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\GenesisEpisodeEditor.c">
+      <Filter>editors\Genesis Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\GenesisEpisodeEditorEM.c">
+      <Filter>editors\Genesis Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\GenesisMapDescriptionEditor.c">
+      <Filter>editors\Genesis Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\GenesisMapDescriptionEditorEM.c">
+      <Filter>editors\Genesis Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\GroupDefEditor.c">
+      <Filter>editors\Misc Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\GroupProjectEditor.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\GroupProjectEditorEM.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\GroupProjectNumericEditor.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\GroupProjectNumericEditorEM.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\GroupProjectUnlockEditor.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\GroupProjectUnlockEditorEM.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\InteractionEditor.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\InteractionEditorEM.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\ItemAssignmentEditor.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\ItemAssignmentEditorEM.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\ItemEditor.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\ItemEditorEM.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\ItemGenEditor.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\ItemGenEditorEM.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\ItemPowerEditor.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\ItemPowerEditorEM.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\LodEditor.c">
+      <Filter>editors\Misc Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\MapSnapEditor.c">
+      <Filter>editors\Misc Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\MaterialEditor2EM.c">
+      <Filter>editors\MaterialEditor2EM</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\MaterialEditor2EMInput.c">
+      <Filter>editors\MaterialEditor2EM</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\MaterialEditor2EMNode.c">
+      <Filter>editors\MaterialEditor2EM</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\MeshDebugger.c">
+      <Filter>editors\Misc Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\MessageEditor.c">
+      <Filter>editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\MessageStoreEditor.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\MessageStoreEditorEM.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\MicroTransactionEditor.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\MicroTransactionEditorEM.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\missioneditor.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\missioneditorCmd.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\missioneditorEM.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\MissionSetEditor.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\MissionSetEditorEM.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\MissionVarTableEditor.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\MissionVarTableEditorEM.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\MoveEditor.c">
+      <Filter>editors\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\MoveEditorEM.c">
+      <Filter>editors\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\MoveMultiEditor.c">
+      <Filter>editors\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\MoveMultiEditorEM.c">
+      <Filter>editors\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\MoveTransitionEditor.c">
+      <Filter>editors\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\MoveTransitionEM.c">
+      <Filter>editors\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\MultiEditField.c">
+      <Filter>editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\MultiEditFieldContext.c">
+      <Filter>editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\MultiEditPanel.c">
+      <Filter>editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\MultiEditTable.c">
+      <Filter>editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\MultiEditWindow.c">
+      <Filter>editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\PlayerStatsEditor.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\PlayerStatsEditorEM.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\PowersEditor.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\PowersEditorEM.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\PowerStoreEditor.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\PowerStoreEditorEM.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\PowerTreeEditor.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\PowerTreeEditorEM.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\ProgressOverlay.c">
+      <Filter>editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\QueueEditor.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\QueueEditorEM.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\ResourceManagerUI.c">
+      <Filter>editors\Misc Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\RewardTableEditor.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\RewardTableEditorEM.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\RoadEditor.c">
+      <Filter>editors\CurveEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\Shared\EditorShared.c">
+      <Filter>editors\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\SkyEditor2.c">
+      <Filter>editors\SkyEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\SkyEditor2EM.c">
+      <Filter>editors\SkyEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\SMFEditor.c">
+      <Filter>editors\UIEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\SplineEditUI.c">
+      <Filter>editors\CurveEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\StoreEditor.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\StoreEditorEM.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\StoryArcEditor.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\StoryArcEditorEM.c">
+      <Filter>editors\Design Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\TerrainEditor.c">
+      <Filter>editors\TerrainEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\TerrainEditorBrushUI.c">
+      <Filter>editors\TerrainEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\TerrainEditorInterface.c">
+      <Filter>editors\TerrainEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\TerrainEditorLayer.c">
+      <Filter>editors\TerrainEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\TerrainEditorRegression.c">
+      <Filter>editors\TerrainEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\TerrainEditorRiver.c">
+      <Filter>editors\TerrainEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\TerrainEditorSelect.c">
+      <Filter>editors\TerrainEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\TexOptEditor.c">
+      <Filter>editors\TextureEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\TexWordsEditor.c">
+      <Filter>editors\TextureEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\UIChat.c" />
+    <ClCompile Include="editors\UIEditor\UIFXButton.c">
+      <Filter>editors\UIEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\UIGimmeButton.c">
+      <Filter>editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\ValidationWindow.c">
+      <Filter>editors\Misc Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\WorldEditorActorAttributes.c">
+      <Filter>editors\WorldEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\WorldEditorAmbientJob.c">
+      <Filter>editors\WorldEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\WorldEditorAppearanceAttributes.c">
+      <Filter>editors\WorldEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\WorldEditorAttributes.c">
+      <Filter>editors\WorldEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\WorldEditorAttributesHelpers.c">
+      <Filter>editors\WorldEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\WorldEditorAutoPlacementAttributes.c">
+      <Filter>editors\WorldEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\WorldEditorBuildingGen.c">
+      <Filter>editors\WorldEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\WorldEditorChildren.c">
+      <Filter>editors\WorldEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\WorldEditorClientMain.c">
+      <Filter>editors\WorldEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\WorldEditorCurveAttributes.c">
+      <Filter>editors\WorldEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\WorldEditorDebrisFieldGen.c">
+      <Filter>editors\WorldEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\WorldEditorDebug.c">
+      <Filter>editors\WorldEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\WorldEditorEncounterAttributes.c">
+      <Filter>editors\WorldEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\WorldEditorEncounterHackAttributes.c">
+      <Filter>editors\WorldEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\WorldEditorExporter.c">
+      <Filter>editors\WorldEditor\WorldEditorExporter</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\WorldEditorGizmos.c">
+      <Filter>editors\WorldEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\WorldEditorInteractionProp.c">
+      <Filter>editors\WorldEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\WorldEditorLayerFSMAttributes.c">
+      <Filter>editors\WorldEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\WorldEditorLightAttributes.c">
+      <Filter>editors\WorldEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\WorldEditorLogicalGroupAttributes.c">
+      <Filter>editors\WorldEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\WorldEditorMenus.c">
+      <Filter>editors\WorldEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\WorldEditorMiscProp.c">
+      <Filter>editors\WorldEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\WorldEditorNameAttributes.c">
+      <Filter>editors\WorldEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\WorldEditorNebulaGen.c">
+      <Filter>editors\WorldEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\WorldEditorNotes.c">
+      <Filter>editors\WorldEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\WorldEditorOperations.c">
+      <Filter>editors\WorldEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\WorldEditorOptions.c">
+      <Filter>editors\WorldEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\WorldEditorPatrolAttributes.c">
+      <Filter>editors\WorldEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\WorldEditorPlacementAttributes.c">
+      <Filter>editors\WorldEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\WorldEditorPlanetGen.c">
+      <Filter>editors\WorldEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\WorldEditorSolarSystem.c">
+      <Filter>editors\WorldEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\WorldEditorSoundAttributes.c">
+      <Filter>editors\WorldEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\WorldEditorSpawnPointAttributes.c">
+      <Filter>editors\WorldEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\WorldEditorTerrainProp.c">
+      <Filter>editors\WorldEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\WorldEditorTriggerConditionAttributes.c">
+      <Filter>editors\WorldEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\WorldEditorUI.c">
+      <Filter>editors\WorldEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\WorldEditorUtil.c">
+      <Filter>editors\WorldEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\WorldEditorVolumeAttributes.c">
+      <Filter>editors\WorldEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\WorldEditorWind.c">
+      <Filter>editors\WorldEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="entity\EntityChatBubble.c">
+      <Filter>entity</Filter>
+    </ClCompile>
+    <ClCompile Include="entity\EntityClient.c">
+      <Filter>entity</Filter>
+    </ClCompile>
+    <ClCompile Include="entity\gclProjectileEntity.c">
+      <Filter>entity</Filter>
+    </ClCompile>
+    <ClCompile Include="ExperimentUI.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="GameClientHandleMsg.c">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="GameClientLib.c" />
+    <ClCompile Include="GameClientMain.c" />
+    <ClCompile Include="gclAccountProxy.c" />
+    <ClCompile Include="gclAccountProxy_cmds.c" />
+    <ClCompile Include="gclActivity.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="gclActivityLog.c" />
+    <ClCompile Include="gclAIDebugUIDontRecompileEverything.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="gclArmamentSwap.c" />
+    <ClCompile Include="gclBaseStates.c" />
+    <ClCompile Include="gclBasicOptions.c" />
+    <ClCompile Include="gclBugCustomData.c" />
+    <ClCompile Include="gclBugReport.c" />
+    <ClCompile Include="gclCamera.c" />
+    <ClCompile Include="gclChat.c" />
+    <ClCompile Include="gclChat_eval.c" />
+    <ClCompile Include="gclChatAutoComplete.c" />
+    <ClCompile Include="gclChatConfig.c" />
+    <ClCompile Include="gclChatOptions.c" />
+    <ClCompile Include="gclCivilian.c" />
+    <ClCompile Include="gclClickToMove.c" />
+    <ClCompile Include="gclCmdRemote.c" />
+    <ClCompile Include="gclCombatCallbacks.c">
+      <Filter>entity</Filter>
+    </ClCompile>
+    <ClCompile Include="gclCommandAlias.c">
+      <Filter>cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="gclCommandDebug.c" />
+    <ClCompile Include="gclCommandParse.c">
+      <Filter>cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="gclControlScheme.c" />
+    <ClCompile Include="gclCostumeOnly.c" />
+    <ClCompile Include="gclCostumeTailorUI.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="gclCostumeUtil.c" />
+    <ClCompile Include="gclCurrencyExchange.c" />
+    <ClCompile Include="gclCursorMode.c" />
+    <ClCompile Include="gclCursorModePetRally.c" />
+    <ClCompile Include="gclCursorModePowerLocationTargeting.c" />
+    <ClCompile Include="gclCursorModePowerTargeting.c" />
+    <ClCompile Include="gclCutscene.c">
+      <Filter>camera</Filter>
+    </ClCompile>
+    <ClCompile Include="gclCutscene_eval.c">
+      <Filter>camera</Filter>
+    </ClCompile>
+    <ClCompile Include="gclDataQuery.c" />
+    <ClCompile Include="gclDeadBodies.c" />
+    <ClCompile Include="gclDebugDrawPrimitives.c" />
+    <ClCompile Include="gclDemo.c" />
+    <ClCompile Include="gclDiary.c" />
+    <ClCompile Include="gclDirectionalIndicatorFX.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="gclDumpSending.c" />
+    <ClCompile Include="gclDynamicsDebugUI.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="gclEmote.c" />
+    <ClCompile Include="gclEntDebugMenu.c" />
+    <ClCompile Include="gclEntity.c">
+      <Filter>entity</Filter>
+    </ClCompile>
+    <ClCompile Include="gclEntityDebug.c">
+      <Filter>entity</Filter>
+    </ClCompile>
+    <ClCompile Include="gclEntityNet.c">
+      <Filter>entity</Filter>
+    </ClCompile>
+    <ClCompile Include="gclFacebook.c" />
+    <ClCompile Include="gclFlickr.c" />
+    <ClCompile Include="gclFriendsIgnore.c" />
+    <ClCompile Include="gclGameContentNodeRewards.c" />
+    <ClCompile Include="gclGamePermissionsUI.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="gclGammaCalibration.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="gclGoldenPath.c" />
+    <ClCompile Include="gclGraphicsOptions.c" />
+    <ClCompile Include="gclGroupProject.c" />
+    <ClCompile Include="gclGroupProject_cmds.c" />
+    <ClCompile Include="gclHandleMsg.c">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="gclHomePageContent.c" />
+    <ClCompile Include="gclHUDOptions.c" />
+    <ClCompile Include="gclInterior.c" />
+    <ClCompile Include="gclItemGen.c" />
+    <ClCompile Include="gclJoystick.c" />
+    <ClCompile Include="gclKeyBind.c" />
+    <ClCompile Include="gclLang.c" />
+    <ClCompile Include="gclLoading.c" />
+    <ClCompile Include="gclLogin.c" />
+    <ClCompile Include="gclLogin2.c" />
+    <ClCompile Include="gclMail.c" />
+    <ClCompile Include="gclMail_old.c" />
+    <ClCompile Include="gclMapChange.c" />
+    <ClCompile Include="gclMapTransfer.c" />
+    <ClCompile Include="gclMediaControl.c" />
+    <ClCompile Include="gclMediaControliTunes.c" />
+    <ClCompile Include="gclMediaControlMP3.c" />
+    <ClCompile Include="gclMediaControlWinamp.c" />
+    <ClCompile Include="gclMediaControlWMP.c" />
+    <ClCompile Include="gclMicroTransactions.c" />
+    <ClCompile Include="gclNotify.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="gclNumericConversion.c" />
+    <ClCompile Include="gclOptions.c" />
+    <ClCompile Include="gclPatching.c" />
+    <ClCompile Include="gclPatchStreaming.c" />
+    <ClCompile Include="gclPlayerControl.c" />
+    <ClCompile Include="gclPlayVideo.c" />
+    <ClCompile Include="gclPromoGameCurrency.c" />
+    <ClCompile Include="gclPVP.c" />
+    <ClCompile Include="gclPVP_eval.c" />
+    <ClCompile Include="gclQuickPlay.c" />
+    <ClCompile Include="gclResourceSnap.c" />
+    <ClCompile Include="gclSendToServer.c">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="gclSimpleCpuUsage.c" />
+    <ClCompile Include="gclSmartAd.c" />
+    <ClCompile Include="gclSocial.c" />
+    <ClCompile Include="gclSocialLivejournal.c" />
+    <ClCompile Include="gclSoundOptions.c" />
+    <ClCompile Include="gclSpectator.c" />
+    <ClCompile Include="gclSteam.c" />
+    <ClCompile Include="gclSteam.cpp" />
+    <ClCompile Include="gclStoredCredentials.c" />
+    <ClCompile Include="gclSuggestedContent.c" />
+    <ClCompile Include="gclSuperCritterPet.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="gclSurvey.c" />
+    <ClCompile Include="gclTeamUp_cmd.c" />
+    <ClCompile Include="gclTeamUp_eval.c" />
+    <ClCompile Include="gclTestClient.c" />
+    <ClCompile Include="gclTestCollision.c" />
+    <ClCompile Include="gclTicketStatus.c" />
+    <ClCompile Include="gclTrade.c" />
+    <ClCompile Include="gclTransformation.c" />
+    <ClCompile Include="gclTwitter.c" />
+    <ClCompile Include="gclUIGenMapExpr.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="gclUtils.c" />
+    <ClCompile Include="gclVisionModeEffects.c" />
+    <ClCompile Include="gclVoice_eval.c" />
+    <ClCompile Include="gclVoiceChatOptions.c" />
+    <ClCompile Include="gclWarp.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="gclWorldDebug.c" />
+    <ClCompile Include="Genesis\gclGenesis_cmd.c">
+      <Filter>genesis</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicsDebugUI.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="interaction\interactionClient.c">
+      <Filter>interaction</Filter>
+    </ClCompile>
+    <ClCompile Include="InteractionUI.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginComm.c">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="map\gclMapNotifications.c">
+      <Filter>map</Filter>
+    </ClCompile>
+    <ClCompile Include="mission\contactui_eval.c">
+      <Filter>mission</Filter>
+    </ClCompile>
+    <ClCompile Include="mission\gametimer_client.c">
+      <Filter>mission</Filter>
+    </ClCompile>
+    <ClCompile Include="mission\gclMapState.c">
+      <Filter>mission</Filter>
+    </ClCompile>
+    <ClCompile Include="mission\gclMapState_eval.c">
+      <Filter>mission</Filter>
+    </ClCompile>
+    <ClCompile Include="mission\gclPlayerMatchStats.c">
+      <Filter>mission</Filter>
+    </ClCompile>
+    <ClCompile Include="mission\missionui_eval.c">
+      <Filter>mission</Filter>
+    </ClCompile>
+    <ClCompile Include="mission\uiMission.c">
+      <Filter>mission</Filter>
+    </ClCompile>
+    <ClCompile Include="mission\UIPlayerStats.c">
+      <Filter>mission</Filter>
+    </ClCompile>
+    <ClCompile Include="nettest.c" />
+    <ClCompile Include="PowersUI.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="progression\gclProgression.c">
+      <Filter>progression</Filter>
+    </ClCompile>
+    <ClCompile Include="progression\progressionui_eval.c">
+      <Filter>progression</Filter>
+    </ClCompile>
+    <ClCompile Include="script\gclScript.c">
+      <Filter>script</Filter>
+    </ClCompile>
+    <ClCompile Include="script\gclScriptEntity.c">
+      <Filter>script</Filter>
+    </ClCompile>
+    <ClCompile Include="StoreUI.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="UGC\editor\UGCEditorMain.c">
+      <Filter>UGC\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="UGC\editor\UGCProductViewer.c">
+      <Filter>UGC\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="UGC\gclUGC.c">
+      <Filter>UGC</Filter>
+    </ClCompile>
+    <ClCompile Include="UGC\gclUGC_FeaturingUI.c">
+      <Filter>UGC</Filter>
+    </ClCompile>
+    <ClCompile Include="UGC\gclUGCTips.c">
+      <Filter>UGC</Filter>
+    </ClCompile>
+    <ClCompile Include="UGC\UGCAchievementsDebugger.c">
+      <Filter>UGC</Filter>
+    </ClCompile>
+    <ClCompile Include="UGC\UGCBugReport.c">
+      <Filter>UGC</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\AttribsUI.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\AuctionUI.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\BulletinUI.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\CharacterCreationUI.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\CharacterSelection.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\CharacterStatus.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\ChatBubbles.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\ComboTrackerUI.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\DamageFloaters.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\DestructibleUI.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\EntityUI.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\FCGemSlotUI.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\FCInventoryUI.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\FCItemUpgradeUI.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\FCSpecTreeUI.c" />
+    <ClCompile Include="ui\gclAccountProxyUI.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\gclAIDebugUI.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\gclCalendarUI.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\gclChatChannelUI.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\gclClass.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\gclCombatDebug.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\gclCostumeCameraUI.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\gclCostumeEditListUI.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\gclCostumeLineUI.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\gclCostumeUI.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\gclCostumeUnlockUI.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\gclDialogBox.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\gclDynDebug.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\gclGameAccountData.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\gclGroupProjectUI.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\gclLightDebugger.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\gclLoadingUI.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\gclMovementLogViewer.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\gclNemesisEditorUI.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\gclPetUI.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\gclPlayerDifficultyUI.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\gclUIGen.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\gclUIGenMap.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\gclUIGenPaperdoll.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\gclUIGenPaperdollExpr.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\GuildUI.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\Inventory_uiexpr.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\ItemAssignmentsUI.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\LeaderboardUI.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\LootUI.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\MicroTransactionUI.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\OfficerUI.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\OptionalActionsUI.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\PowerGrid.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\PowerList.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\PVPScoreboardUI.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\QueueUI.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\ServerSelection.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\StatPointsUI.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\TeamUI.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\TradeUI.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\UICommands.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\UIGenChatLog.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\UIGenCompass.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\UITests.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\UITray.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\VanityPetUI.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\WaypointFX.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\WaypointUI.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="voice.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="voiceCmds.c">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="WeaponStance.c">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldEditorAppearanceSwaps.c">
+      <Filter>editors\WorldEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="xbox\XCommon.c">
+      <Filter>xbox</Filter>
+    </ClCompile>
+    <ClCompile Include="xbox\XSession.c">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="xbox\XStore.c">
+      <Filter>xbox</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Core\NewControllerTracker\pub\NewControllerTracker_Pub.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\Common\GlobalComm.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\Common\GlobalEnums.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\Common\MapDescription.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\Common\ResourceDBUtils.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\Common\testclient_comm.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\Common\ugcprojectcommon.h">
+      <Filter>UGC\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\GraphicsLib\pub\GfxTexOpts.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\GraphicsLib\pub\GfxTexturesPublic.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\UI2Lib\pub\UICore.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\UI2Lib\pub\UIGen.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\UI2Lib\pub\UIGenList.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\UI2Lib\pub\UIGenScrollbar.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\UtilitiesLib\components\ExpressionFunc.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\UtilitiesLib\components\GlobalTypeEnum.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\UtilitiesLib\components\GlobalTypes.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\UtilitiesLib\components\WorldVariable.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\UtilitiesLib\net\accountnet.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\UtilitiesLib\utils\Capsule.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\UtilitiesLib\utils\cmdparse.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\UtilitiesLib\utils\Money.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\UtilitiesLib\utils\ResourceSearch.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\UtilitiesLib\utils\structInternals.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\UtilitiesLib\utils\ticketenums.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\UtilitiesLib\utils\UIColor.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\UtilitiesLib\utils\url.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\UtilitiesLib\utils\UtilitiesLibEnums.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\WorldLib\pub\wlCostume.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\WorldLib\pub\wlCurve.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\WorldLib\pub\wlGenesisMissions.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\WorldLib\pub\wlGenesisMissionsGameStructs.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\WorldLib\pub\wlGroupPropertyStructs.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\WorldLib\pub\wlSky.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\WorldLib\pub\wlUGC.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\WorldLib\pub\WorldGrid.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\WorldLib\pub\WorldLibEnums.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\WorldLib\pub\WorldLibStructs.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\accountCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\AccountDataCache.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ActivityCalendar.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ActivityCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ActivityLogCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\aiStructCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\AnimList_Common.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ArmamentSwapCommon.h" />
+    <ClInclude Include="..\Common\AuctionBrokerCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\AutoGen\ChatRelay_autogen_GenericServerCmdWrappers.h">
+      <Filter>AutoGen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\autoPlacementCommon.h">
+      <Filter>editors\AutoPlacement\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\chatCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\chatCommonStructs.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\cmdClientReport.h">
+      <Filter>cmd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\AbilityScores_DD.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\AttribCurve.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\AttribCurveImp.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\AttribMod.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\AttribModFragility.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\Character.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\Character_combat.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\Character_mods.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\Character_target.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\Character_tick.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\CharacterAttribs.h">
+      <Filter>combat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\CharacterAttribsMinimal.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\CharacterAttribute.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\CharacterClass.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\Combat_DD.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\combatAdvantage.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\CombatCallbacks.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\CombatConfig.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\CombatDebug.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\CombatEnums.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\CombatEval.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\CombatEvents.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\CombatMods.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\CombatPool.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\CombatPowerStateSwitching.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\CombatReactivePower.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\CombatSensitivity.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\ComboTracker.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\DamageTracker.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\PowerActivation.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\PowerAnimFX.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\PowerApplication.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\PowerEnhancements.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\PowerHelpers.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\PowerModes.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\PowerReplace.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\Powers.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\PowersAEDebug.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\PowersAutoDesc.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\PowersEnums.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\PowerSlots.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\PowersMovement.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\PowerSubtarget.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\PowerTree.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\PowerTreeEval.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\PowerTreeHelpers.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\PowerVars.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\Skills_DD.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\StatPoints.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ControlScheme.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\CostumeCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\CostumeCommonEnums.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\CSVExport.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\CurrencyExchangeCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\DiaryCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\DiaryDisplay.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\DiaryEnums.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\DiscountShared.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\DoorTransitionCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\EmoteCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\EntDebugMenu.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\aiDebugShared.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\allegiance.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\AuctionLot.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\AuctionLot_Transact.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\AuctionLotEnums.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\BeaconMovement.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\CostumeCommonEntity.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\CostumeCommonGenerate.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\CostumeCommonLoad.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\CostumeCommonRandom.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\CostumeCommonTailor.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\entCritter.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\entEnums.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\Entity.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityAttach.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityBuild.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityDataQuery.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityExtern.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityGrid.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityInteraction.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityIterator.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityLib.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityMovementAttachment.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityMovementDead.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityMovementDefault.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityMovementDisableMovement.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityMovementDoor.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityMovementDragon.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityMovementEmote.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityMovementFlight.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityMovementFx.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityMovementGrab.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityMovementInteraction.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityMovementManager.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityMovementManagerDemo.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityMovementManagerPrivate.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityMovementPlatform.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityMovementProjectile.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityMovementPush.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityMovementRequesterDefs.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityMovementSwing.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityMovementTactical.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityMovementTargetedRotation.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityMovementTemplate.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityMovementTest.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityNet.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityPlayerTypeConversion.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityResolver.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntitySavedData.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntitySystemInternal.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\GameAccountDataCommon.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\GameSession.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\grid\EntityGridPrivate.h">
+      <Filter>entity\common\grid</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\Guild.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\InteriorCommon.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\Leaderboard.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\OfficerCommon.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\Player.h" />
+    <ClInclude Include="..\Common\Entity\PlayerDifficultyCommon.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\ProjectileEntity.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\RegionRules.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\SavedPetCommon.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\SharedBankCommon.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\Team.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\Tray.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\XBoxStructs.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\GameAccountData\GameAccountData.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\GameBranch.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\GameEvent.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\GamePermissionsCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\GameStringFormat.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Genesis\Genesis.h">
+      <Filter>genesis\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Genesis\GenesisMissions.h">
+      <Filter>genesis\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\GlobalExpressions.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\GroupProjectCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\guildCommonStructs.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\HUDOptionsCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\interaction_common.h">
+      <Filter>mission\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\interactionManager_common.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\item\AlgoItemCommon.h">
+      <Filter>item\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\item\AlgoPet.h">
+      <Filter>item\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\item\inventoryCommon.h">
+      <Filter>item\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\item\itemArt.h">
+      <Filter>item\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\item\itemAssignments.h">
+      <Filter>item\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\item\ItemAssignmentsUICommon.h">
+      <Filter>item\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\item\itemCommon.h">
+      <Filter>item\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\item\itemDescCommon.h">
+      <Filter>item\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\item\itemEnums.h">
+      <Filter>item\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\item\itemGenCommon.h">
+      <Filter>item\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\item\itemupgrade.h">
+      <Filter>item\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\item\rewardCommon.h">
+      <Filter>item\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\item\SuperCritterPet.h">
+      <Filter>item\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\item\tradeCommon.h">
+      <Filter>item\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LoadScreen\LoadScreen_Common.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LobbyCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Login2CharacterDetail.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Login2Common.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LoginCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\MailCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\MapNotificationsCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\MapRevealCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\MapTransferCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\mechanics_common.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\MicroTransactions.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\microtransactions_common.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\MinigameCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Mission\contact_common.h">
+      <Filter>mission\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Mission\contact_enums.h">
+      <Filter>mission\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Mission\cutscene_common.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Mission\encounter_common.h">
+      <Filter>mission\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Mission\Encounter_enums.h">
+      <Filter>mission\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Mission\gameaction_common.h">
+      <Filter>mission\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Mission\gametimer_common.h">
+      <Filter>mission\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Mission\mapstate_common.h">
+      <Filter>mission\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Mission\mission_common.h">
+      <Filter>mission\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Mission\mission_enums.h">
+      <Filter>mission\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Mission\missionset_common.h">
+      <Filter>item\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Mission\nemesis_common.h">
+      <Filter>mission\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Mission\oldencounter_common.h">
+      <Filter>mission\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Mission\playerMatchStats_common.h">
+      <Filter>mission\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Mission\playerstats_common.h">
+      <Filter>mission\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Mission\progression_common.h">
+      <Filter>progression\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Mission\progression_transact.h">
+      <Filter>progression\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\NameGen.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\NotifyCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\NotifyEnum.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\NumericConversionCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\powerStoreCommon.h">
+      <Filter>entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\pvp_common.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\PvPGameCommon.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\queue_common.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\queue_common_structs.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\queue_smartGroup.h" />
+    <ClInclude Include="..\Common\ShardCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ShardEventTimingCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ShardVariableCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\SocialCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Sound\Sound_common.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\species_common.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\SteamCommon.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\storeCommon.h">
+      <Filter>item\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\StoredCredentialsCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\SuggestedContentCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Survey.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\TeamPetsCommonStructs.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\TeamUpCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\TestClientCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\TransformationCommon.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\UGC\UGCAchievements.h">
+      <Filter>UGC\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\UGC\UGCCommon.h">
+      <Filter>UGC\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\UGC\UGCError.h">
+      <Filter>UGC\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\UGC\UGCInteriorCommon.h">
+      <Filter>UGC\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\UGC\UGCSearchCache.h">
+      <Filter>UGC\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\UGC\UGCTipsCommon.h">
+      <Filter>UGC\common</Filter>
+    </ClInclude>
+    <ClInclude Include="chat\gclChatLog.h">
+      <Filter>chat</Filter>
+    </ClInclude>
+    <ClInclude Include="chat\gclClientChat.h">
+      <Filter>chat</Filter>
+    </ClInclude>
+    <ClInclude Include="cmdClient.h">
+      <Filter>cmd</Filter>
+    </ClInclude>
+    <ClInclude Include="cmdXBox.h">
+      <Filter>cmd</Filter>
+    </ClInclude>
+    <ClInclude Include="Combat\ClientTargeting.h">
+      <Filter>combat</Filter>
+    </ClInclude>
+    <ClInclude Include="Combat\CombatDebugViewer.h">
+      <Filter>combat</Filter>
+    </ClInclude>
+    <ClInclude Include="Combat\gclCombatAdvantage.h">
+      <Filter>combat</Filter>
+    </ClInclude>
+    <ClInclude Include="Combat\gclCombatDeathPrediction.h">
+      <Filter>combat</Filter>
+    </ClInclude>
+    <ClInclude Include="Combat\gclCombatPowerStateSwitching.h">
+      <Filter>combat</Filter>
+    </ClInclude>
+    <ClInclude Include="Combat\gclCombatReactivePower.h">
+      <Filter>combat</Filter>
+    </ClInclude>
+    <ClInclude Include="Combat\gclPowersAEDebug.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="Combat\gclReticle.h">
+      <Filter>combat</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\aijobeditor.h">
+      <Filter>editors</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\AlgoPetEditor.h">
+      <Filter>editors\Design Editors</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\AnimChartEditor.h">
+      <Filter>editors\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\AnimEditorCommon.h">
+      <Filter>editors\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\AnimGraphEditor.h">
+      <Filter>editors\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\AnimTemplateEditor.h">
+      <Filter>editors\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\AudioEventEditor.h">
+      <Filter>editors</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\ChoiceTableEditor.h">
+      <Filter>editors\Design Editors</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\contacteditor.h">
+      <Filter>editors\Design Editors</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\CostumeDefEditor.h">
+      <Filter>editors\Design Editors</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\CostumeEditor.h">
+      <Filter>editors\Design Editors</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\CritterEditor.h">
+      <Filter>editors\Design Editors</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\CritterGroupEditor.h">
+      <Filter>editors\Design Editors</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\CritterOverrideEditor.h">
+      <Filter>editors\Design Editors</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\CurveDefEditor.h">
+      <Filter>editors\CurveEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\CurveEditor.h">
+      <Filter>editors\CurveEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\CutsceneDemoPlayEditor.h">
+      <Filter>editors\CutsceneEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\CutsceneEditor.h">
+      <Filter>editors\CutsceneEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\CutsceneEditorCommon.h">
+      <Filter>editors\CutsceneEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\CutsceneEditorGlue.h">
+      <Filter>editors\CutsceneEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\DonationTaskEditor.h">
+      <Filter>editors\Design Editors</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\EditLibBudgets.h">
+      <Filter>editors</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\EditLibGizmosToolbar.h">
+      <Filter>editors</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\EditLibTimingLog.h">
+      <Filter>editors</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\EditLibUIUtil.h">
+      <Filter>editors</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\EditorManagerOptions.h">
+      <Filter>editors\EditorManager</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\EditorManagerPrivate.h">
+      <Filter>editors\EditorManager</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\EditorManagerSearch.h">
+      <Filter>editors\EditorManager</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\EditorManagerUI.h">
+      <Filter>editors\EditorManager</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\EditorManagerUIInfoWin.h">
+      <Filter>editors\EditorManager</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\EditorManagerUIMenus.h">
+      <Filter>editors\EditorManager</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\EditorManagerUIMotD.h">
+      <Filter>editors\EditorManager</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\EditorManagerUIPanels.h">
+      <Filter>editors\EditorManager</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\EditorManagerUIPickers.h">
+      <Filter>editors\EditorManager</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\EditorManagerUIPrompts.h">
+      <Filter>editors\EditorManager</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\EditorManagerUIToolbars.h">
+      <Filter>editors\EditorManager</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\EditorManagerUtils.h">
+      <Filter>editors\EditorManager</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\EditorObject.h">
+      <Filter>editors\EditorObject</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\EditorObjectMenus.h">
+      <Filter>editors\EditorObject</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\EditorPreviewWindow.h">
+      <Filter>editors\Misc Editors</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\EditorSearchWindow.h">
+      <Filter>editors\Misc Editors</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\enclayereditor.h">
+      <Filter>editors\Design Editors</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\encountereditor.h">
+      <Filter>editors\Design Editors</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\EncounterTemplateEditor.h">
+      <Filter>editors\Design Editors</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\eventeditor.h">
+      <Filter>editors\Design Editors</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\eventlogviewer.h">
+      <Filter>editors\Design Editors</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\FXParticleEditor.h">
+      <Filter>editors\FXEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\GameActionEditor.h">
+      <Filter>editors</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\gameeditorshared.h">
+      <Filter>editors</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\GameEventDebugger.h">
+      <Filter>editors</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\gclCostumeView.h">
+      <Filter>editors\Design Editors</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\GenericGraphEditor.h">
+      <Filter>editors\Misc Editors</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\GenesisEpisodeEditor.h">
+      <Filter>editors\Genesis Editors</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\GenesisMapDescriptionEditor.h">
+      <Filter>editors\Genesis Editors</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\GroupProjectEditor.h">
+      <Filter>editors\Design Editors</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\GroupProjectNumericEditor.h">
+      <Filter>editors\Design Editors</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\GroupProjectUnlockEditor.h">
+      <Filter>editors\Design Editors</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\InteractionEditor.h">
+      <Filter>editors\Design Editors</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\ItemAssignmentEditor.h">
+      <Filter>editors\Design Editors</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\ItemEditor.h">
+      <Filter>editors\Design Editors</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\ItemGenEditor.h">
+      <Filter>editors\Design Editors</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\ItemPowerEditor.h">
+      <Filter>editors\Design Editors</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\MapSnapEditor.h">
+      <Filter>editors\Misc Editors</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\MaterialEditor2EM.h">
+      <Filter>editors\MaterialEditor2EM</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\MaterialEditor2EMInput.h">
+      <Filter>editors\MaterialEditor2EM</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\MaterialEditor2EMNode.h">
+      <Filter>editors\MaterialEditor2EM</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\MessageStoreEditor.h">
+      <Filter>editors\Design Editors</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\MicroTransactionEditor.h">
+      <Filter>editors\Design Editors</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\missioneditor.h">
+      <Filter>editors\Design Editors</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\MissionSetEditor.h">
+      <Filter>editors\Design Editors</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\MissionVarTableEditor.h">
+      <Filter>editors\Design Editors</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\MoveMultiEditor.h">
+      <Filter>editors\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\MoveTransitionEditor.h">
+      <Filter>editors\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\MultiEditCommon.h">
+      <Filter>editors</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\MultiEditField.h">
+      <Filter>editors</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\MultiEditFieldContext.h">
+      <Filter>editors</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\MultiEditPanel.h">
+      <Filter>editors</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\MultiEditTable.h">
+      <Filter>editors</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\MultiEditWindow.h">
+      <Filter>editors</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\PlayerStatsEditor.h">
+      <Filter>editors\Design Editors</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\PowersEditor.h">
+      <Filter>editors\Design Editors</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\PowerStoreEditor.h">
+      <Filter>editors\Design Editors</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\PowerTreeEditor.h">
+      <Filter>editors\Design Editors</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\ProgressOverlay.h">
+      <Filter>editors</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\QueueEditor.h">
+      <Filter>editors\Design Editors</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\ResourceManagerUI.h">
+      <Filter>editors\Misc Editors</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\RewardTableEditor.h">
+      <Filter>editors\Design Editors</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\RoadEditor.h">
+      <Filter>editors\CurveEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\Shared\EditorShared.h">
+      <Filter>editors\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\SkyEditor2.h">
+      <Filter>editors\SkyEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\SplineEditUI.h">
+      <Filter>editors\CurveEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\StoreEditor.h">
+      <Filter>editors\Design Editors</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\StoryArcEditor.h">
+      <Filter>editors\Design Editors</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\TerrainEditorInterface.h">
+      <Filter>editors\TerrainEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\TerrainEditorPrivate.h">
+      <Filter>editors\TerrainEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\TerrainEditorState.h">
+      <Filter>editors\TerrainEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\TexOptEditor.h">
+      <Filter>editors\TextureEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\TexWordsEditor.h">
+      <Filter>editors\TextureEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\UIChat.h" />
+    <ClInclude Include="editors\UIEditor\UIFXButton.h">
+      <Filter>editors\UIEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\ValidationWindow.h">
+      <Filter>editors\Misc Editors</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\WorldEditorActorAttributes.h">
+      <Filter>editors\WorldEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\WorldEditorAmbientJob.h">
+      <Filter>editors\WorldEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\WorldEditorAppearanceAttributes.h">
+      <Filter>editors\WorldEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\WorldEditorAttributes.h">
+      <Filter>editors\WorldEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\WorldEditorAttributesHelpers.h">
+      <Filter>editors\WorldEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\WorldEditorAttributesPrivate.h">
+      <Filter>editors\WorldEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\WorldEditorAutoPlacementAttributes.h">
+      <Filter>editors\WorldEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\WorldEditorBuildingGen.h">
+      <Filter>editors\WorldEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\WorldEditorChildren.h">
+      <Filter>editors\WorldEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\WorldEditorClientMain.h">
+      <Filter>editors\WorldEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\WorldEditorCurveAttributes.h">
+      <Filter>editors\WorldEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\WorldEditorDebrisFieldGen.h">
+      <Filter>editors\WorldEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\WorldEditorEncounterAttributes.h">
+      <Filter>editors\WorldEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\WorldEditorEncounterHackAttributes.h">
+      <Filter>editors\WorldEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\WorldEditorExporter.h">
+      <Filter>editors\WorldEditor\WorldEditorExporter</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\WorldEditorGizmos.h">
+      <Filter>editors\WorldEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\WorldEditorInteractionProp.h">
+      <Filter>editors\WorldEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\WorldEditorLayerFSMAttributes.h">
+      <Filter>editors\WorldEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\WorldEditorLightAttributes.h">
+      <Filter>editors\WorldEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\WorldEditorLogicalGroupAttributes.h">
+      <Filter>editors\WorldEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\WorldEditorMenus.h">
+      <Filter>editors\WorldEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\WorldEditorMiscProp.h">
+      <Filter>editors\WorldEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\WorldEditorNameAttributes.h">
+      <Filter>editors\WorldEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\WorldEditorNebulaGen.h">
+      <Filter>editors\WorldEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\WorldEditorNotes.h">
+      <Filter>editors\WorldEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\WorldEditorOperations.h">
+      <Filter>editors\WorldEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\WorldEditorOptions.h">
+      <Filter>editors\WorldEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\WorldEditorPatrolAttributes.h">
+      <Filter>editors\WorldEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\WorldEditorPlacementAttributes.h">
+      <Filter>editors\WorldEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\WorldEditorPlanetGen.h">
+      <Filter>editors\WorldEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\WorldEditorPrivate.h">
+      <Filter>editors\WorldEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\WorldEditorSolarSystem.h">
+      <Filter>editors\WorldEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\WorldEditorSoundAttributes.h">
+      <Filter>editors\WorldEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\WorldEditorSpawnPointAttributes.h">
+      <Filter>editors\WorldEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\WorldEditorTerrainProp.h">
+      <Filter>editors\WorldEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\WorldEditorTriggerConditionAttributes.h">
+      <Filter>editors\WorldEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\WorldEditorUI.h">
+      <Filter>editors\WorldEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\WorldEditorUtil.h">
+      <Filter>editors\WorldEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\WorldEditorVolumeAttributes.h">
+      <Filter>editors\WorldEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\WorldEditorWind.h">
+      <Filter>editors\WorldEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="entity\EntityClient.h">
+      <Filter>entity</Filter>
+    </ClInclude>
+    <ClInclude Include="entity\gclProjectileEntity.h">
+      <Filter>entity</Filter>
+    </ClInclude>
+    <ClInclude Include="ExperimentUI.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="FCItemUpgradeUI.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="GameClientHandleMsg.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="GameClientLib_AnonAutoRunIncludes.h" />
+    <ClInclude Include="gclActivity.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="gclActivityLog.h" />
+    <ClInclude Include="gclBasicOptions.h" />
+    <ClInclude Include="gclBugReport.h" />
+    <ClInclude Include="gclChatConfig.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="gclChatOptions.h" />
+    <ClInclude Include="gclCivilian.h" />
+    <ClInclude Include="gclClickToMove.h" />
+    <ClInclude Include="gclCombatCallbacks.h">
+      <Filter>entity</Filter>
+    </ClInclude>
+    <ClInclude Include="gclCommandAlias.h">
+      <Filter>cmd</Filter>
+    </ClInclude>
+    <ClInclude Include="gclCostumeOnly.h" />
+    <ClInclude Include="gclCostumeUtil.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="gclCurrencyExchange.h" />
+    <ClInclude Include="gclCursorMode.h" />
+    <ClInclude Include="gclCursorModePowerLocationTargeting.h" />
+    <ClInclude Include="gclCursorModePowerTargeting.h" />
+    <ClInclude Include="gclCutscene.h">
+      <Filter>camera</Filter>
+    </ClInclude>
+    <ClInclude Include="gclDeadBodies.h" />
+    <ClInclude Include="gclDebugDrawPrimitives.h" />
+    <ClInclude Include="gclDemo.h" />
+    <ClInclude Include="gclDiary.h" />
+    <ClInclude Include="gclDirectionalIndicatorFX.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="gclDumpSending.h" />
+    <ClInclude Include="gclDynamicsDebugUI.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="gclEntityNet.h">
+      <Filter>entity</Filter>
+    </ClInclude>
+    <ClInclude Include="gclFriendsIgnore.h" />
+    <ClInclude Include="gclGoldenPath.h" />
+    <ClInclude Include="gclGroupProject.h" />
+    <ClInclude Include="gclHandleMsg.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="gclHUDOptions.h" />
+    <ClInclude Include="gclInterior.h" />
+    <ClInclude Include="gclKeyBind.h" />
+    <ClInclude Include="gclLogin2.h" />
+    <ClInclude Include="gclMapTransfer.h" />
+    <ClInclude Include="gclMediaControl.h" />
+    <ClInclude Include="gclMicroTransactions.h" />
+    <ClInclude Include="gclNotify.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="gclPatching.h" />
+    <ClInclude Include="gclPatchStreaming.h" />
+    <ClInclude Include="gclPlayerControl.h" />
+    <ClInclude Include="gclPlayVideo.h" />
+    <ClInclude Include="gclPVP.h" />
+    <ClInclude Include="gclResourceSnap.h" />
+    <ClInclude Include="gclSimpleCpuUsage.h" />
+    <ClInclude Include="gclSmartAd.h" />
+    <ClInclude Include="gclSocial.h" />
+    <ClInclude Include="gclSpectator.h" />
+    <ClInclude Include="gclSteam.h" />
+    <ClInclude Include="gclStoredCredentials.h" />
+    <ClInclude Include="gclSuperCritterPet.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="gclTestClient.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="gclTestCollision.h" />
+    <ClInclude Include="gclTransformation.h" />
+    <ClInclude Include="gclUIGenMapExpr.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="gclUtils.h" />
+    <ClInclude Include="gclVisionModeEffects.h" />
+    <ClInclude Include="gclVoiceChatOptions.h" />
+    <ClInclude Include="gclWarp.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="gclWorldDebug.h" />
+    <ClInclude Include="GraphicsDebugUI.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="interaction\interactionClient.h">
+      <Filter>interaction</Filter>
+    </ClInclude>
+    <ClInclude Include="InteractionUI.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginComm.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="LootUI.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="map\gclMapNotifications.h">
+      <Filter>map</Filter>
+    </ClInclude>
+    <ClInclude Include="mission\contactui_eval.h">
+      <Filter>mission\common</Filter>
+    </ClInclude>
+    <ClInclude Include="mission\gclMapState.h">
+      <Filter>mission</Filter>
+    </ClInclude>
+    <ClInclude Include="mission\missionui_eval.h">
+      <Filter>mission</Filter>
+    </ClInclude>
+    <ClInclude Include="mission\uiMission.h">
+      <Filter>mission</Filter>
+    </ClInclude>
+    <ClInclude Include="PowersUI.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="progression\progressionui_eval.h">
+      <Filter>progression</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\EditLib.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\EditLibClipboard.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\EditLibEnums.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\EditLibGizmos.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\EditLibState.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\EditLibUndo.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\EditorManager.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\EditorPrefs.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\ExpressionEditor.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\FSMEditorMain.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\GameClientLib.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\GameClientLibResource.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\gclAccountProxy.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\gclBaseStates.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\gclCamera.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\gclChat.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\gclChatAutoComplete.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\gclCommandParse.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\gclControlScheme.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\gclDataQuery.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\gclDialogBox.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\gclEntity.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\gclExtern.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\gclGraphicsOptions.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\gclLoading.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\gclLogin.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\gclOptions.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\gclQuickPlay.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\gclSendToServer.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\gclTrade.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\MaterialEditor.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\MessageEditor.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\SMFEditor.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\TerrainEditor.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UIGimmeButton.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\WorldEditor.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\WorldEditorCommandParse.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="script\gclScript.h">
+      <Filter>script</Filter>
+    </ClInclude>
+    <ClInclude Include="script\gclScriptAPI.h">
+      <Filter>script</Filter>
+    </ClInclude>
+    <ClInclude Include="TeamUI.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="UGC\editor\UGCEditorMain.h">
+      <Filter>UGC\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="UGC\editor\UGCProductViewer.h">
+      <Filter>UGC\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="UGC\editor\UGCProjectChooser.h">
+      <Filter>UGC\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="UGC\editor\UGCSeriesEditor.h">
+      <Filter>UGC\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="UGC\gclUGC.h">
+      <Filter>UGC</Filter>
+    </ClInclude>
+    <ClInclude Include="UGC\UGCBugReport.h">
+      <Filter>UGC</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\AttribsUI.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\AuctionUI.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\BulletinUI.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\CharacterCreationUI.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\CharacterSelection.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\CharacterStatus.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\ChatBubbles.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\ComboTrackerUI.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\DamageFloaters.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\FCInventoryUI.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\gclAIDebugUI.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\gclChatChannelUI.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\gclClass.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\gclCostumeCameraUI.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\gclCostumeLineUI.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\gclCostumeUI.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\gclCostumeUIState.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\gclCostumeUnlockUI.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\gclDynDebug.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\gclGroupProjectUI.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\gclLightDebugger.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\gclPetUI.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\gclUIGen.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\gclUIGenMap.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\gclUIGenPaperdoll.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\gclUIGenPaperdollExpr.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\GuildUI.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\Inventory_uiexpr.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\ItemAssignmentsUI.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\LeaderboardUI.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\MicroTransactionUI.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\PowerGrid.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\PVPScoreboardUI.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\UIGenChatLog.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\UIGenCompass.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\UITray.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="UIEnums.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="voice.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="WeaponStance.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldEditorAppearanceSwaps.h">
+      <Filter>editors\WorldEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="xbox\XCommon.h">
+      <Filter>xbox</Filter>
+    </ClInclude>
+    <ClInclude Include="xbox\XSession.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="xbox\XStore.h">
+      <Filter>xbox</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuildStep Include="editors\MoveEditor.h">
+      <Filter>editors\Animation</Filter>
+    </CustomBuildStep>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="AutoGen">
+      <UniqueIdentifier>{9f82eae2-d1d5-4fe9-996c-61d45ebbdb13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="camera">
+      <UniqueIdentifier>{20fbba6e-a98a-40d6-8f14-053254c09188}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="chat">
+      <UniqueIdentifier>{e6ee55d1-4883-493e-b556-fcbca52c03af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cmd">
+      <UniqueIdentifier>{221772d1-3711-4c98-99fb-40e311879266}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="combat">
+      <UniqueIdentifier>{98aceabf-77e3-44e0-9d86-1dd5936a03b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="combat\common">
+      <UniqueIdentifier>{13710dc1-b4fe-4016-a350-0e86f7afdbb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{4786261a-6cee-4364-ab62-4477ab744654}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="editors">
+      <UniqueIdentifier>{624a9cd1-b183-4583-827f-edbf2c6f6d5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="editors\Animation">
+      <UniqueIdentifier>{a0c48e5a-2d86-43c3-81b6-aa2ef01bc8ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="editors\AutoPlacement">
+      <UniqueIdentifier>{31d758b7-7112-498d-afed-03fa3b7254b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="editors\AutoPlacement\common">
+      <UniqueIdentifier>{5eb2b17d-5591-445c-a748-f0d7e1f7d6ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="editors\CurveEditor">
+      <UniqueIdentifier>{bad8f413-8307-4b80-9a5f-24387172f753}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="editors\CutsceneEditor">
+      <UniqueIdentifier>{1f8a4a70-dffc-48dc-8db9-95b57b20ec80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="editors\Design Editors">
+      <UniqueIdentifier>{7ae4e692-32ea-448b-8c65-f59a295d0371}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="editors\EditorManager">
+      <UniqueIdentifier>{917a2666-7ac2-4c1d-a910-b911d2b692ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="editors\EditorObject">
+      <UniqueIdentifier>{ffd9e273-56cd-4f78-807b-d32500e87cdf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="editors\FSM Editor">
+      <UniqueIdentifier>{531012ad-5615-452a-b641-2952e5864696}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="editors\FXEditor">
+      <UniqueIdentifier>{bf94dc2a-7369-4232-b79d-bd3b459a30c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="editors\Genesis Editors">
+      <UniqueIdentifier>{5845fc49-3e9e-4fea-873e-afd9143f8454}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="editors\MaterialEditor2EM">
+      <UniqueIdentifier>{bc5dbfb3-b3db-4f7e-8191-c84d344779c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="editors\Misc Editors">
+      <UniqueIdentifier>{93326b63-b2ca-4cf7-8a9f-dbe974962183}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="editors\Shared">
+      <UniqueIdentifier>{c84f7e71-5a90-43f8-89ac-322eea15654e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="editors\SkyEditor">
+      <UniqueIdentifier>{20e085cc-9e44-4365-b847-43b97989b5c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="editors\TerrainEditor">
+      <UniqueIdentifier>{16721c7e-beac-471e-aa9a-c34b7ddd528f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="editors\TextureEditor">
+      <UniqueIdentifier>{ffec58e2-2881-42fd-8acd-ce81e6dc8ca3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="editors\UIEditor">
+      <UniqueIdentifier>{fa6f49eb-fa58-4359-baa0-2a22c246b079}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="editors\WorldEditor">
+      <UniqueIdentifier>{a6c224c9-e8cc-4968-901f-6beebe988a80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="editors\WorldEditor\WorldEditorExporter">
+      <UniqueIdentifier>{0ae13777-54cb-445d-85ee-dbbba82255df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="entity">
+      <UniqueIdentifier>{af26a4b4-91a8-4127-8ae8-283770454006}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="entity\common">
+      <UniqueIdentifier>{38e5d177-6866-4043-b083-b2c024bd5530}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="entity\common\grid">
+      <UniqueIdentifier>{35cb80d2-bce3-4760-8187-4572b6d14c8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExternHeaders">
+      <UniqueIdentifier>{2c827e3a-10dd-4f14-9418-296a942c1998}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="genesis">
+      <UniqueIdentifier>{5fbb6f7a-ab84-4837-b06f-78934a83a5c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="genesis\common">
+      <UniqueIdentifier>{64a3b27d-0f5e-4a34-93a2-1442756e5ec9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="interaction">
+      <UniqueIdentifier>{bd885051-ee93-4da5-8d70-27fb3bbd1da1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="item">
+      <UniqueIdentifier>{c99b7da5-839b-4887-a1c7-b8e3a6414ea1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="item\common">
+      <UniqueIdentifier>{b32d7a62-87ac-4481-868f-3bcb103ad207}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="map">
+      <UniqueIdentifier>{4fbbcfc6-adb4-4c76-bd96-d346d862a2ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mission">
+      <UniqueIdentifier>{d3d9c8cb-4087-48de-aaa0-53047141673b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mission\common">
+      <UniqueIdentifier>{54b273ec-e9c2-484c-a192-a591ba4005c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net">
+      <UniqueIdentifier>{929ba8c9-3dce-41ec-a47f-c2fa2f3544c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="progression">
+      <UniqueIdentifier>{5370891d-c87c-4bd2-8c3e-57ba887de21b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="progression\common">
+      <UniqueIdentifier>{e3bb80a1-5422-4094-bd1f-81d22c7fed68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pub">
+      <UniqueIdentifier>{11575419-eed5-4e51-8228-07fa3ae5cd3a}</UniqueIdentifier>
+      <Extensions>pub\*</Extensions>
+    </Filter>
+    <Filter Include="script">
+      <UniqueIdentifier>{a7dd1261-bd5f-41e3-b49b-223216c80b1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UGC">
+      <UniqueIdentifier>{053849f4-242d-4e06-a049-e951bfef8207}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UGC\common">
+      <UniqueIdentifier>{1df9f667-4923-49fe-bccd-d15cdf343b03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UGC\editor">
+      <UniqueIdentifier>{54ca311f-02a3-42f1-bc49-7a247f08eeeb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui">
+      <UniqueIdentifier>{6144dabc-9c34-44c6-be98-2b788431e99c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xbox">
+      <UniqueIdentifier>{d387d3bb-43fa-463e-8034-0150f6c01da9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

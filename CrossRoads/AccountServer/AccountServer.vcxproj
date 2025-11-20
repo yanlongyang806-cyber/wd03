@@ -1,0 +1,470 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Code Coverage|Win32">
+      <Configuration>Code Coverage</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Code Coverage|x64">
+      <Configuration>Code Coverage</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Full Debug|Win32">
+      <Configuration>Full Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Full Debug|x64">
+      <Configuration>Full Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{04792CF5-2B2F-4583-8F92-4BE126E31373}</ProjectGuid>
+    <RootNamespace>AccountServer</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Code Coverage|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Code Coverage|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Code Coverage|Win32'" Label="PropertySheets">
+    <Import Project="..\..\PropertySheets\GeneralSettings.props" />
+    <Import Project="..\..\PropertySheets\WarningLevel4.props" />
+    <Import Project="..\..\PropertySheets\CrypticApplication.props" />
+    <Import Project="..\..\PropertySheets\LinkerOptimizations.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Code Coverage|x64'" Label="PropertySheets">
+    <Import Project="..\..\PropertySheets\GeneralSettings.props" />
+    <Import Project="..\..\PropertySheets\WarningLevel4.props" />
+    <Import Project="..\..\PropertySheets\CrypticApplication.props" />
+    <Import Project="..\..\PropertySheets\LinkerOptimizations.props" />
+    <Import Project="..\..\PropertySheets\x64.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="..\..\PropertySheets\GeneralSettings.props" />
+    <Import Project="..\..\PropertySheets\WarningLevel4.props" />
+    <Import Project="..\..\PropertySheets\CrypticApplication.props" />
+    <Import Project="..\..\PropertySheets\LinkerOptimizations.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="..\..\PropertySheets\GeneralSettings.props" />
+    <Import Project="..\..\PropertySheets\WarningLevel4.props" />
+    <Import Project="..\..\PropertySheets\CrypticApplication.props" />
+    <Import Project="..\..\PropertySheets\LinkerOptimizations.props" />
+    <Import Project="..\..\PropertySheets\x64.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'" Label="PropertySheets">
+    <Import Project="..\..\PropertySheets\GeneralSettings.props" />
+    <Import Project="..\..\PropertySheets\WarningLevel4.props" />
+    <Import Project="..\..\PropertySheets\CrypticApplication.props" />
+    <Import Project="..\..\PropertySheets\LinkerOptimizations.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|x64'" Label="PropertySheets">
+    <Import Project="..\..\PropertySheets\GeneralSettings.props" />
+    <Import Project="..\..\PropertySheets\WarningLevel4.props" />
+    <Import Project="..\..\PropertySheets\CrypticApplication.props" />
+    <Import Project="..\..\PropertySheets\LinkerOptimizations.props" />
+    <Import Project="..\..\PropertySheets\x64.props" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Code Coverage|Win32'">../../Core/bin/</OutDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Code Coverage|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Code Coverage|x64'">../../Core/bin/</OutDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Code Coverage|x64'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Core/bin/</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../../Core/bin/</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">../../Core/bin/</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Full Debug|x64'">../../Core/bin/</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Code Coverage|Win32'">$(ProjectName)CC</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Code Coverage|x64'">$(ProjectName)X64CC</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectName)X64</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">$(ProjectName)FD</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Full Debug|x64'">$(ProjectName)X64FD</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Code Coverage|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/we4047 /we4133 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>Billing;../../libs/ServerLib/objects;../../libs/InputLib/pub;../../libs/UILib/pub;../../libs/ServerLib/pub;../../libs/Common;../../Core/Common;../Common;../../libs/HttpLib;WebInterface;Vindicia;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRTDBG_MAP_ALLOC=1;USEZLIB=1;AUX_SERVER_DEFINE;_CODE_COVERAGE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+      <ForcedIncludeFiles>%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/MACHINE:I386 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>ws2_32.lib;kernel32.lib;Imm32.lib;Msacm32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>
+      </OptimizeReferences>
+      <Profile>true</Profile>
+    </Link>
+    <PostBuildEvent>
+      <Command>"$(VSInstallDir)\Team Tools\Performance Tools\vsinstr.exe" /COVERAGE "$(TargetDir)$(TargetFileName)"</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>..\..\utilities\bin\structparser X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Code Coverage|x64'">
+    <ClCompile>
+      <AdditionalOptions>/we4047 /we4133 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>Billing;../../libs/ServerLib/objects;../../libs/InputLib/pub;../../libs/UILib/pub;../../libs/ServerLib/pub;../../libs/Common;../../Core/Common;../Common;../../libs/HttpLib;WebInterface;Vindicia;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRTDBG_MAP_ALLOC=1;USEZLIB=1;AUX_SERVER_DEFINE;_CODE_COVERAGE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+      <ForcedIncludeFiles>%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;kernel32.lib;Imm32.lib;Msacm32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>
+      </OptimizeReferences>
+      <TargetMachine>MachineX64</TargetMachine>
+      <Profile>true</Profile>
+    </Link>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <PostBuildEvent>
+      <Command>"$(VSInstallDir)\Team Tools\Performance Tools\x64\vsinstr.exe" /COVERAGE "$(TargetDir)$(TargetFileName)"</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>..\..\utilities\bin\structparser X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/we4047 /we4133 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>../../libs/ServerLib/objects;../../libs/InputLib/pub;../../libs/UILib/pub;../../libs/ServerLib/pub;../../libs/Common;../../Core/Common;../Common;../../libs/HttpLib;WebInterface;Billing;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRTDBG_MAP_ALLOC=1;USEZLIB=1;AUX_SERVER_DEFINE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CompileAs>Default</CompileAs>
+      <ForcedIncludeFiles>%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/MACHINE:I386 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>ws2_32.lib;kernel32.lib;Imm32.lib;Msacm32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>
+      </OptimizeReferences>
+    </Link>
+    <PreBuildEvent>
+      <Command>..\..\utilities\bin\structparser X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions>/we4047 /we4133 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>../../libs/ServerLib/objects;../../libs/InputLib/pub;../../libs/UILib/pub;../../libs/ServerLib/pub;../../libs/Common;../../Core/Common;../Common;../../libs/HttpLib;WebInterface;Billing;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRTDBG_MAP_ALLOC=1;USEZLIB=1;AUX_SERVER_DEFINE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+      <ForcedIncludeFiles>%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;kernel32.lib;Imm32.lib;Msacm32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>
+      </OptimizeReferences>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <PreBuildEvent>
+      <Command>..\..\utilities\bin\structparser X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/we4047 /we4133 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>../../libs/ServerLib/objects;../../libs/InputLib/pub;../../libs/UILib/pub;../../libs/ServerLib/pub;../../libs/PatchClientLib;../../libs/Common;../../Core/Common;../Common;../../libs/HttpLib;WebInterface;Billing;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_FULLDEBUG;_LIB;_WINDOWS;_CRTDBG_MAP_ALLOC=1;USEZLIB=1;EDITLIB=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ForcedIncludeFiles>%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/MACHINE:I386 /fixed:no %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>ws2_32.lib;kernel32.lib;Imm32.lib;Msacm32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>false</OptimizeReferences>
+    </Link>
+    <PreBuildEvent>
+      <Command>..\..\utilities\bin\structparser X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)</Command>
+    </PreBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions>/we4047 /we4133 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>../../libs/ServerLib/objects;../../libs/InputLib/pub;../../libs/UILib/pub;../../libs/ServerLib/pub;../../libs/PatchClientLib;../../libs/Common;../../Core/Common;../Common;../../libs/HttpLib;WebInterface;Billing;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_FULLDEBUG;_LIB;_WINDOWS;_CRTDBG_MAP_ALLOC=1;USEZLIB=1;EDITLIB=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ForcedIncludeFiles>%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/fixed:no %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>ws2_32.lib;kernel32.lib;Imm32.lib;Msacm32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>false</OptimizeReferences>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <PreBuildEvent>
+      <Command>..\..\utilities\bin\structparser X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)</Command>
+    </PreBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Common\accountCommon.c" />
+    <ClCompile Include="..\Common\AccountDataCache.c" />
+    <ClCompile Include="..\Common\AutoGen\AccountServer_autogen_RemoteFuncs.c" />
+    <ClCompile Include="..\Common\AutoGen\AccountServer_autogen_SlowFuncs.c" />
+    <ClCompile Include="..\Common\AutoGen\AccountServer_autotransactions_autogen_wrappers.c" />
+    <ClCompile Include="..\Common\DiscountShared.c" />
+    <ClCompile Include="..\Common\TextFilterCommon.c" />
+    <ClCompile Include="AccountEncryption.c" />
+    <ClCompile Include="AccountIntegration.c" />
+    <ClCompile Include="AccountLog.c" />
+    <ClCompile Include="AccountLoginDecrypt.c" />
+    <ClCompile Include="accountMain.c" />
+    <ClCompile Include="AccountManagement.c" />
+    <ClCompile Include="AccountReporting.c" />
+    <ClCompile Include="AccountServer.c" />
+    <ClCompile Include="AccountServerConfig.c" />
+    <ClCompile Include="AccountTransactionLog.c" />
+    <ClCompile Include="AutoGen\AccountServer_AutoGen_1.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Code Coverage|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Code Coverage|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Code Coverage|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Code Coverage|Win32'">ProgramDatabase</DebugInformationFormat>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Code Coverage|x64'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Code Coverage|x64'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Code Coverage|x64'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Code Coverage|x64'">ProgramDatabase</DebugInformationFormat>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="AutoGen\AccountServer_AutoGen_2.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Code Coverage|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Code Coverage|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Code Coverage|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Code Coverage|Win32'">ProgramDatabase</DebugInformationFormat>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Code Coverage|x64'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Code Coverage|x64'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Code Coverage|x64'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Code Coverage|x64'">ProgramDatabase</DebugInformationFormat>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="Billing\Account\billingAccount.c" />
+    <ClCompile Include="Billing\Activity\billingActivity.c" />
+    <ClCompile Include="Billing\AutoBill\ActivateSubscription.c" />
+    <ClCompile Include="Billing\AutoBill\CancelSubscription.c" />
+    <ClCompile Include="Billing\AutoBill\FetchChangedAutoBills.c" />
+    <ClCompile Include="Billing\AutoBill\GrantExtraDays.c" />
+    <ClCompile Include="Billing\AutoBill\UpdateActiveSubscriptions.c" />
+    <ClCompile Include="Billing\billing.c" />
+    <ClCompile Include="Billing\Product\billingProduct.c" />
+    <ClCompile Include="Billing\redact.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MaxSpeed</Optimization>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </DebugInformationFormat>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </DebugInformationFormat>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Default</BasicRuntimeChecks>
+    </ClCompile>
+    <ClCompile Include="Billing\Refund\billingRefund.c" />
+    <ClCompile Include="Billing\SOAPInterface\stdsoap2.c" />
+    <ClCompile Include="Billing\SOAPInterface\VindiciaStructsC.c" />
+    <ClCompile Include="Billing\SOAPInterface\VindiciaStructsClient.c" />
+    <ClCompile Include="Billing\Steam.c" />
+    <ClCompile Include="Billing\Subscription\billingSubscription.c" />
+    <ClCompile Include="Billing\Transaction\billingTransaction.c" />
+    <ClCompile Include="Billing\Transaction\transactionCancel.c" />
+    <ClCompile Include="Billing\Transaction\transactionQuery.c" />
+    <ClCompile Include="Billing\vindicia.c" />
+    <ClCompile Include="Discount.c" />
+    <ClCompile Include="GcsInterface.c" />
+    <ClCompile Include="GlobalData.c" />
+    <ClCompile Include="ImportExport.c" />
+    <ClCompile Include="InternalSubs.c" />
+    <ClCompile Include="KeyValues\KeyValueChain.c" />
+    <ClCompile Include="KeyValues\KeyValues.c" />
+    <ClCompile Include="KeyValues\KeyValueTest.c" />
+    <ClCompile Include="KeyValues\VirtualCurrency.c" />
+    <ClCompile Include="MachineID.c" />
+    <ClCompile Include="MaintenanceCommands.c" />
+    <ClCompile Include="Product.c" />
+    <ClCompile Include="ProductKey.c" />
+    <ClCompile Include="ProxyInterface\AccountProxy.c" />
+    <ClCompile Include="ProxyInterface\Proxy.c" />
+    <ClCompile Include="PurchaseProduct.c" />
+    <ClCompile Include="rpn.c" />
+    <ClCompile Include="SubCreate.c" />
+    <ClCompile Include="Subscription.c" />
+    <ClCompile Include="SubscriptionHistory.c" />
+    <ClCompile Include="UpdatePaymentMethod.c" />
+    <ClCompile Include="ValueLockList.c" />
+    <ClCompile Include="WebInterface\AccountSearch.c" />
+    <ClCompile Include="WebInterface\WebInterface.c" />
+    <ClCompile Include="WebInterface\wiAccounts.c" />
+    <ClCompile Include="WebInterface\wiAdmin.c" />
+    <ClCompile Include="WebInterface\wiCommon.c" />
+    <ClCompile Include="WebInterface\WikiToHTML.c" />
+    <ClCompile Include="WebInterface\wiProductKeys.c" />
+    <ClCompile Include="WebInterface\wiProducts.c" />
+    <ClCompile Include="WebInterface\wiSubscriptions.c" />
+    <ClCompile Include="WebInterface\XMLInterface.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\libs\Common\GlobalComm.h" />
+    <ClInclude Include="..\..\libs\UtilitiesLib\net\accountnet.h" />
+    <ClInclude Include="..\..\libs\UtilitiesLib\utils\HttpClient.h" />
+    <ClInclude Include="..\..\libs\UtilitiesLib\utils\Money.h" />
+    <ClInclude Include="..\Common\accountCommon.h" />
+    <ClInclude Include="..\Common\AccountDataCache.h" />
+    <ClInclude Include="..\Common\DiscountShared.h" />
+    <ClInclude Include="AccountEncryption.h" />
+    <ClInclude Include="AccountIntegration.h" />
+    <ClInclude Include="AccountLog.h" />
+    <ClInclude Include="AccountLoginDecrypt.h" />
+    <ClInclude Include="AccountManagement.h" />
+    <ClInclude Include="AccountReporting.h" />
+    <ClInclude Include="AccountServer.h" />
+    <ClInclude Include="AccountServerConfig.h" />
+    <ClInclude Include="AccountTransactionLog.h" />
+    <ClInclude Include="Billing\Account\billingAccount.h" />
+    <ClInclude Include="Billing\Activity\billingActivity.h" />
+    <ClInclude Include="Billing\AutoBill\ActivateSubscription.h" />
+    <ClInclude Include="Billing\AutoBill\CancelSubscription.h" />
+    <ClInclude Include="Billing\AutoBill\FetchChangedAutoBills.h" />
+    <ClInclude Include="Billing\AutoBill\GrantExtraDays.h" />
+    <ClInclude Include="Billing\AutoBill\UpdateActiveSubscriptions.h" />
+    <ClInclude Include="Billing\billing.h" />
+    <ClInclude Include="Billing\Product\billingProduct.h" />
+    <ClInclude Include="Billing\redact.h" />
+    <ClInclude Include="Billing\Refund\billingRefund.h" />
+    <ClInclude Include="Billing\SOAPInterface\stdsoap2.h" />
+    <ClInclude Include="Billing\SOAPInterface\VindiciaStructsH.h" />
+    <ClInclude Include="Billing\SOAPInterface\VindiciaStructsStub.h" />
+    <ClInclude Include="Billing\Steam.h" />
+    <ClInclude Include="Billing\Subscription\billingSubscription.h" />
+    <ClInclude Include="Billing\Transaction\billingTransaction.h" />
+    <ClInclude Include="Billing\Transaction\transactionCancel.h" />
+    <ClInclude Include="Billing\Transaction\transactionQuery.h" />
+    <ClInclude Include="Billing\vindicia.h" />
+    <ClInclude Include="Discount.h" />
+    <ClInclude Include="ErrorStrings.h" />
+    <ClInclude Include="GcsInterface.h" />
+    <ClInclude Include="GlobalData.h" />
+    <ClInclude Include="ImportExport.h" />
+    <ClInclude Include="InternalSubs.h" />
+    <ClInclude Include="KeyValues\KeyValueChain.h" />
+    <ClInclude Include="KeyValues\KeyValues.h" />
+    <ClInclude Include="KeyValues\VirtualCurrency.h" />
+    <ClInclude Include="MachineID.h" />
+    <ClInclude Include="Product.h" />
+    <ClInclude Include="ProductKey.h" />
+    <ClInclude Include="ProxyInterface\AccountProxy.h" />
+    <ClInclude Include="ProxyInterface\Proxy.h" />
+    <ClInclude Include="PurchaseProduct.h" />
+    <ClInclude Include="rpn.h" />
+    <ClInclude Include="SubCreate.h" />
+    <ClInclude Include="Subscription.h" />
+    <ClInclude Include="SubscriptionHistory.h" />
+    <ClInclude Include="UpdatePaymentMethod.h" />
+    <ClInclude Include="ValueLockList.h" />
+    <ClInclude Include="WebInterface\AccountSearch.h" />
+    <ClInclude Include="WebInterface\WebInterface.h" />
+    <ClInclude Include="WebInterface\wiAccounts.h" />
+    <ClInclude Include="WebInterface\wiAdmin.h" />
+    <ClInclude Include="WebInterface\wiCommon.h" />
+    <ClInclude Include="WebInterface\WikiToHTML.h" />
+    <ClInclude Include="WebInterface\wiProductKeys.h" />
+    <ClInclude Include="WebInterface\wiProducts.h" />
+    <ClInclude Include="WebInterface\wiSubscriptions.h" />
+    <ClInclude Include="WebInterface\XMLInterface.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\libs\HttpLib\HttpLib.vcxproj">
+      <Project>{2acc94ec-3e38-48bd-b97f-5b46328a4aef}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\libs\PatchClientLib\PatchClientLib.vcxproj">
+      <Project>{487db8d6-6faf-4e86-9800-75088911a703}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\libs\ServerLib\ServerLib.vcxproj">
+      <Project>{dd475a7c-b1d4-43c4-acb7-d73c24be1eb7}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\libs\StructParserStub\StructParserStub.vcxproj">
+      <Project>{1d29e421-93b2-4e32-9186-7fafc3971c5b}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\libs\UtilitiesLib\UtilitiesLib.vcxproj">
+      <Project>{a6741f6e-5476-4f9f-9d65-62b54aaf1d08}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

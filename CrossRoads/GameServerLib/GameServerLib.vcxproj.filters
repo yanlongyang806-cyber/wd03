@@ -1,0 +1,2699 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\Core\Common\AutoGen\ChatServer_autogen_RemoteFuncs.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\Common\AutoGen\HeadshotServer_autogen_RemoteFuncs.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\Common\AutoGen\ObjectDB_autogen_RemoteFuncs.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\Common\AutoGen\TestServer_autogen_RemoteFuncs.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs\Common\MapDescription.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs\Common\UGCProjectCommon.c">
+      <Filter>UGC\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs\Common\VirtualShard.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\accountCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\AccountDataCache.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\AccountProxyCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ActivityCalendar.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ActivityCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ActivityLog_Trans.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ActivityLogCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\aiStructCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\AnimList_Common.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ArmamentSwapCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\AuctionBrokerCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\AuctionCommon.c" />
+    <ClCompile Include="..\Common\AutoGen\AppServerLib_autogen_RemoteFuncs.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\AutoGen\GameServerLib_autogen_RemoteFuncs.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\AutoGen\GameServerLib_autotransactions_autogen_wrappers.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\autoPlacementCommon.c">
+      <Filter>editors\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\chatCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\AbilityScores_DD.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\AttribCurve.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\AttribCurveImp.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\AttribMod.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\AttribModFragility.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\Character.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\Character_combat.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\Character_mods.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\Character_target.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\Character_tick.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\CharacterAttribs.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\CharacterAttribute.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\CharacterClass.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\Combat_DD.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\combatAdvantage.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\CombatCallbacks.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\CombatConfig.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\CombatDebug.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\CombatEval.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\CombatEvents.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\CombatPool.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\CombatPowerStateSwitching.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\CombatReactivePower.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\CombatSensitivity.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\ComboTracker.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\DamageTracker.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\PowerActivation.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\PowerAnimFX.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\PowerApplication.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\PowerEnhancements.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\PowerHelpers.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\PowerModes.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\PowerReplace.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\Powers.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\PowersAEDebug.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\PowersAutoDesc.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\PowerSlots.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\PowersMovement.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\PowerSubtarget.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\PowerTree.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\PowerTreeEval.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\PowerTreeHelpers.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\PowerVars.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\Skills_DD.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combat\StatPoints.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ControlScheme.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\CSVExport.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\CurrencyExchangeCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\CurrencyExchangeCommon_trans.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\DiaryCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\DiaryDisplay.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\DiscountShared.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\DoorTransitionCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\EntDebugMenu.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\AccountProxyServerLocks.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\allegiance.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\AuctionLot.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\AuctionLot_Transact.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\BeaconMovement.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\CombatMods.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\CostumeCommonEntity.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\CostumeCommonGenerate.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\CostumeCommonLoad.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\CostumeCommonRandom.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\CostumeCommonTailor.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\entCritter.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\Entity.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityBuild.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityCritterEval.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityDataQuery.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityExprFunc.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityInteraction.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityIterator.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityLib.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMailCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementAttachment.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementAuto.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementDead.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementDefault.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementDisableMovement.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementDoor.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementDragon.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementEmote.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementFlight.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementFx.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementGrab.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementInteraction.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementManager.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementManagerBG.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementManagerLog.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementManagerNet.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementManagerNetPrepare.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementManagerNetReceive.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementManagerNetSend.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementManagerResource.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementManagerResourceBG.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementPlatform.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementProjectile.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementProjectileEntity.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementPush.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementRequesterDefs.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementSwing.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementTactical.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementTargetedRotation.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementTemplate.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityMovementTest.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityNet.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityPlayerTypeConversion.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntityResolver.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\EntitySystem.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\GameAccountDataCommon.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\grid\EntityGrid.c">
+      <Filter>entity\common\grid</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\grid\EntityGridDebug.c">
+      <Filter>entity\common\grid</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\grid\EntityGridInterface.c">
+      <Filter>entity\common\grid</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\Guild.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\InteriorCommon.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\Leaderboard.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\OfficerCommon.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\PlayerDifficultyCommon.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\ProjectileEntity.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\RegionRules.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\SavedPetCommon.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\SavedPetTransactions.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\SharedBankCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\SkelInfoFixup.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\Team.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\Tray.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Entity\XboxStructs.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\GameAccountData\GameAccountData.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\GameBranch.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\GameEvent.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\GamePermissionsCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\GamePermissionsLoad.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\GamePermissionTransactions.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\GameStringFormat.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Genesis\Genesis.c">
+      <Filter>genesis\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Genesis\GenesisMissions.c">
+      <Filter>genesis\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\GlobalExpressions.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\GroupProjectCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\GroupProjectCommon_eval.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\GroupProjectCommon_trans.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\guildCommonStructs.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\HUDOptionsCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\interaction_common.c">
+      <Filter>mission\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\interactionManager_common.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\item\AlgoItemCommon.c">
+      <Filter>item\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\item\AlgoPet.c">
+      <Filter>item\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\item\containerTrade.c">
+      <Filter>item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\item\inventoryCommon.c">
+      <Filter>item\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\item\inventoryTransactions.c">
+      <Filter>item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\item\itemArt.c">
+      <Filter>item\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\item\ItemAssignmentEval.c">
+      <Filter>item\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\item\itemAssignments.c">
+      <Filter>item\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Item\ItemAssignmentsUICommon.c">
+      <Filter>item\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\item\itemCommon.c">
+      <Filter>item\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\item\itemDescCommon.c">
+      <Filter>item\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\item\itemEval.c">
+      <Filter>item\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\item\itemGenCommon.c">
+      <Filter>item\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\item\itemupgrade.c">
+      <Filter>item\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\item\rewardCommon.c">
+      <Filter>item\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\item\RewardTable.c">
+      <Filter>item\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\item\RewardValTable.c">
+      <Filter>item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\item\SuperCritterPet.c">
+      <Filter>item\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\item\tradeCommon.c">
+      <Filter>item\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\LobbyCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\LoggedTransactions.c" />
+    <ClCompile Include="..\Common\Login2Common.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\LoginCharTypeFlags.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\LoginCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\MailCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\MapNotificationsCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\MapRevealCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\MapTransferCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\mechanics_common.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\MicroTransactions.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\microtransactions_common.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Microtransactions_Transact.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\MinigameCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Mission\contact_common.c">
+      <Filter>mission\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Mission\cutscene_common.c">
+      <Filter>mission\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Mission\encounter_common.c">
+      <Filter>mission\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Mission\gameaction_common.c">
+      <Filter>mission\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Mission\gametimer_common.c">
+      <Filter>mission\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Mission\mapstate_common.c">
+      <Filter>mission\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Mission\mapstate_common_cmd.c">
+      <Filter>mission\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Mission\mapstate_common_eval.c">
+      <Filter>mission\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Mission\mission_common.c">
+      <Filter>mission\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Mission\mission_templates.c">
+      <Filter>mission\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Mission\missionset_common.c">
+      <Filter>mission\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Mission\nemesis_common.c">
+      <Filter>mission\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Mission\oldencounter_common.c">
+      <Filter>mission\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Mission\playerMatchStats_common.c">
+      <Filter>mission\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Mission\playerstats_common.c">
+      <Filter>mission\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\mission\progression_common.c">
+      <Filter>mission\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Mission\progression_transact.c">
+      <Filter>mission\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\NameGen.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\NotifyCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\NotifyCommon_eval.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\NumericConversionCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\powerStoreCommon.c">
+      <Filter>item\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\pvp_common.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\PvPGameCommon.c" />
+    <ClCompile Include="..\Common\queue_common.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\queue_common_structs.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ShardEventTimingCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ShardVariable_Transact.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ShardVariableCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\SocialCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Sound\Sound_common.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\species_common.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\SteamCommon.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\SteamCommonServer.c">
+      <Filter>combat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\storeCommon.c">
+      <Filter>item\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\StoredCredentialsCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\SuggestedContentCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\TeamPetsCommonStructs.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\TeamUpCommon.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\TextFilterCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\TransformationCommon.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\UGC\UGCAchievements.c">
+      <Filter>UGC\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\UGC\UGCCommon.c">
+      <Filter>UGC\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\UGC\UGCError.c">
+      <Filter>UGC\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\UGC\UGCInteriorCommon.c">
+      <Filter>UGC\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\UGC\UGCSearchCache.c">
+      <Filter>UGC\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\UGC\UGCTipsCommon.c">
+      <Filter>UGC\common</Filter>
+    </ClCompile>
+    <ClCompile Include="ai\aiFCExprFunc.c">
+      <Filter>ai</Filter>
+    </ClCompile>
+    <ClCompile Include="ai\aiFCInstance.c">
+      <Filter>ai</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoGen\gameserverlib_AutoGen_1.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoGen\GameServerLib_AutoGen_2.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="chat\gslChat.c">
+      <Filter>chat</Filter>
+    </ClCompile>
+    <ClCompile Include="chat\gslChat_eval.c">
+      <Filter>chat</Filter>
+    </ClCompile>
+    <ClCompile Include="chat\gslChatConfig.c">
+      <Filter>chat</Filter>
+    </ClCompile>
+    <ClCompile Include="chat\gslChatConfig_eval.c">
+      <Filter>chat</Filter>
+    </ClCompile>
+    <ClCompile Include="cmdDataFixup.c">
+      <Filter>cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="cmdparse\cmdServerCombat.c">
+      <Filter>cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="cmdServer.c">
+      <Filter>cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="cmdServerCharacter.c">
+      <Filter>cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="cmdServerEditor.c">
+      <Filter>cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="cmdServerReport.c">
+      <Filter>cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="cmdServerSyntheticLogs.c">
+      <Filter>cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="Combat\CharacterRespecServer.c">
+      <Filter>combat</Filter>
+    </ClCompile>
+    <ClCompile Include="Combat\CombatGlobal.c">
+      <Filter>combat</Filter>
+    </ClCompile>
+    <ClCompile Include="Combat\CoreServerCombatCallbacks.c">
+      <Filter>combat</Filter>
+    </ClCompile>
+    <ClCompile Include="Combat\gslCombatAdvantage.c">
+      <Filter>combat</Filter>
+    </ClCompile>
+    <ClCompile Include="Combat\gslCombatDeathPrediction.c">
+      <Filter>combat</Filter>
+    </ClCompile>
+    <ClCompile Include="Combat\gslCombatReactivePower.c">
+      <Filter>combat</Filter>
+    </ClCompile>
+    <ClCompile Include="Combat\gslPowerCart.c">
+      <Filter>combat</Filter>
+    </ClCompile>
+    <ClCompile Include="Combat\gslPowersAEDebug.c">
+      <Filter>combat</Filter>
+    </ClCompile>
+    <ClCompile Include="Combat\PowerTreeTransactions.c">
+      <Filter>combat</Filter>
+    </ClCompile>
+    <ClCompile Include="ControllerMirror.c">
+      <Filter>WebRequestServer</Filter>
+    </ClCompile>
+    <ClCompile Include="CSRChatCommands.c" />
+    <ClCompile Include="CSRDebugMenu.c" />
+    <ClCompile Include="editors\ExprEditorCommands.c">
+      <Filter>editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\gslEditor.c">
+      <Filter>editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\gslEditor_cmd.c">
+      <Filter>editors</Filter>
+    </ClCompile>
+    <ClCompile Include="editors\speciesGen.c">
+      <Filter>editors</Filter>
+    </ClCompile>
+    <ClCompile Include="entity\EntityServer.c">
+      <Filter>entity</Filter>
+    </ClCompile>
+    <ClCompile Include="entity\gslCostume.c">
+      <Filter>entity</Filter>
+    </ClCompile>
+    <ClCompile Include="entity\gslCostume_cmd.c">
+      <Filter>entity</Filter>
+    </ClCompile>
+    <ClCompile Include="entity\gslCostume_eval.c">
+      <Filter>entity</Filter>
+    </ClCompile>
+    <ClCompile Include="entity\gslCostume_Transact.c">
+      <Filter>entity</Filter>
+    </ClCompile>
+    <ClCompile Include="entity\gslLeaderboard.c">
+      <Filter>entity</Filter>
+    </ClCompile>
+    <ClCompile Include="entity\gslOfficerTransactions.c">
+      <Filter>entity</Filter>
+    </ClCompile>
+    <ClCompile Include="entity\gslPetCommand.c">
+      <Filter>entity</Filter>
+    </ClCompile>
+    <ClCompile Include="entity\gslProjectileEntity.c">
+      <Filter>entity</Filter>
+    </ClCompile>
+    <ClCompile Include="entity\gslSavedPetTransactions.c">
+      <Filter>entity</Filter>
+    </ClCompile>
+    <ClCompile Include="entity\gslSharedBank.c">
+      <Filter>entity</Filter>
+    </ClCompile>
+    <ClCompile Include="entity\gslSharedBank_cmd.c">
+      <Filter>entity</Filter>
+    </ClCompile>
+    <ClCompile Include="entity\gslTray.c">
+      <Filter>entity</Filter>
+    </ClCompile>
+    <ClCompile Include="entity\gslUserExperience.c">
+      <Filter>entity</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEvent_log.c" />
+    <ClCompile Include="GameServer_Http.c" />
+    <ClCompile Include="GameServerHandleMsg.c">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="GameServerLib.c" />
+    <ClCompile Include="GameServerMain.c" />
+    <ClCompile Include="gametimer.c">
+      <Filter>mission</Filter>
+    </ClCompile>
+    <ClCompile Include="gateway\gslGateway_Auction_cmd.c" />
+    <ClCompile Include="gateway\gslGateway_cmd.c">
+      <Filter>Gateway</Filter>
+    </ClCompile>
+    <ClCompile Include="gateway\gslGateway_ItemAssignments_cmd.c" />
+    <ClCompile Include="gateway\gslGateway_trans.c">
+      <Filter>Gateway</Filter>
+    </ClCompile>
+    <ClCompile Include="gateway\gslGatewayAuction.c">
+      <Filter>Gateway</Filter>
+    </ClCompile>
+    <ClCompile Include="gateway\gslGatewayContainerMapping.c">
+      <Filter>Gateway</Filter>
+    </ClCompile>
+    <ClCompile Include="gateway\gslGatewayMappedEntity.c">
+      <Filter>Gateway</Filter>
+    </ClCompile>
+    <ClCompile Include="gateway\gslGatewayMappedLoginEntity.c">
+      <Filter>Gateway</Filter>
+    </ClCompile>
+    <ClCompile Include="gateway\gslGatewayMessages.c">
+      <Filter>Gateway</Filter>
+    </ClCompile>
+    <ClCompile Include="gateway\gslGatewayServer.c">
+      <Filter>Gateway</Filter>
+    </ClCompile>
+    <ClCompile Include="gateway\gslGatewaySession.c">
+      <Filter>Gateway</Filter>
+    </ClCompile>
+    <ClCompile Include="gateway\gslGatewayStructMapping.c">
+      <Filter>Gateway</Filter>
+    </ClCompile>
+    <ClCompile Include="Genesis\gslGenesis_cmd.c">
+      <Filter>genesis</Filter>
+    </ClCompile>
+    <ClCompile Include="gslAccountProxy.c" />
+    <ClCompile Include="gslAccountProxy_cmds.c" />
+    <ClCompile Include="gslActivity.c" />
+    <ClCompile Include="gslActivityLog.c" />
+    <ClCompile Include="gslArmamentSwap.c" />
+    <ClCompile Include="gslAuction.c" />
+    <ClCompile Include="gslAutoPlacement.c">
+      <Filter>editors</Filter>
+    </ClCompile>
+    <ClCompile Include="gslAway.c" />
+    <ClCompile Include="GSLBaseStates.c" />
+    <ClCompile Include="gslBeaconInterface.c" />
+    <ClCompile Include="gslBugReport.c" />
+    <ClCompile Include="gslBulletins.c" />
+    <ClCompile Include="gslChoiceTable_cmd.c" />
+    <ClCompile Include="gslCluster.c" />
+    <ClCompile Include="gslCombatCallbacks.c">
+      <Filter>entity</Filter>
+    </ClCompile>
+    <ClCompile Include="gslCommandParse.c">
+      <Filter>cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="gslControlScheme.c" />
+    <ClCompile Include="gslCritter.c">
+      <Filter>entity</Filter>
+    </ClCompile>
+    <ClCompile Include="gslCurrencyExchange.c" />
+    <ClCompile Include="gslDataDump.c" />
+    <ClCompile Include="gslDataFixupUtils.c" />
+    <ClCompile Include="gslDiary.c" />
+    <ClCompile Include="gslDiary_Cmds.c" />
+    <ClCompile Include="gslDiary_Trans.c" />
+    <ClCompile Include="gslDiaryBucketManager.c" />
+    <ClCompile Include="gslDiaryWebRequest.c" />
+    <ClCompile Include="gslDoorTransition.c" />
+    <ClCompile Include="gslEmote.c" />
+    <ClCompile Include="gslEncounterLog.c" />
+    <ClCompile Include="gslEntDebugMenu.c" />
+    <ClCompile Include="gslEntity.c">
+      <Filter>entity</Filter>
+    </ClCompile>
+    <ClCompile Include="gslEntity_cmd.c">
+      <Filter>entity</Filter>
+    </ClCompile>
+    <ClCompile Include="gslEntity_eval.c">
+      <Filter>entity</Filter>
+    </ClCompile>
+    <ClCompile Include="gslEntityDebug.c">
+      <Filter>entity</Filter>
+    </ClCompile>
+    <ClCompile Include="gslEntityNet.c">
+      <Filter>entity</Filter>
+    </ClCompile>
+    <ClCompile Include="gslEntityPresence.c">
+      <Filter>entity</Filter>
+    </ClCompile>
+    <ClCompile Include="gslExprFunc.c" />
+    <ClCompile Include="gslFriendsIgnore.c" />
+    <ClCompile Include="gslGameAccountData.c">
+      <Filter>entity</Filter>
+    </ClCompile>
+    <ClCompile Include="gslGamePermissions.c" />
+    <ClCompile Include="gslGroupProject.c" />
+    <ClCompile Include="gslGroupProject_cmds.c" />
+    <ClCompile Include="gslGroupProject_eval.c" />
+    <ClCompile Include="gslGroupProject_trans.c" />
+    <ClCompile Include="gslGuild.c" />
+    <ClCompile Include="gslGuild_eval.c" />
+    <ClCompile Include="gslHandleMsg.c">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="gslHeatMaps.c" />
+    <ClCompile Include="gslHttpAsync.c" />
+    <ClCompile Include="gslHUDOptions.c" />
+    <ClCompile Include="gslInteractionManager.c" />
+    <ClCompile Include="gslInteractionManager_cmd.c" />
+    <ClCompile Include="gslInteractionManager_eval.c" />
+    <ClCompile Include="gslInterior.c">
+      <Filter>entity</Filter>
+    </ClCompile>
+    <ClCompile Include="gslInterior_Cmds.c">
+      <Filter>entity</Filter>
+    </ClCompile>
+    <ClCompile Include="gslInterior_Expr.c">
+      <Filter>entity</Filter>
+    </ClCompile>
+    <ClCompile Include="gslInterior_Trans.c">
+      <Filter>entity</Filter>
+    </ClCompile>
+    <ClCompile Include="gslLobby.c" />
+    <ClCompile Include="gslLobbyCommands.c" />
+    <ClCompile Include="gslLogSettings.c" />
+    <ClCompile Include="gslMail.c" />
+    <ClCompile Include="gslMail_Old.c" />
+    <ClCompile Include="gslMailNPC.c" />
+    <ClCompile Include="gslMapChange.c" />
+    <ClCompile Include="gslMapPopulationCache.c" />
+    <ClCompile Include="gslMapTransfer.c">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="gslMessageFixup.c" />
+    <ClCompile Include="gslMicroTransactions.c" />
+    <ClCompile Include="gslNotify.c" />
+    <ClCompile Include="gslNotify_cmd.c" />
+    <ClCompile Include="gslNumericConversion.c" />
+    <ClCompile Include="gslPartition.c" />
+    <ClCompile Include="gslPartition_cmd.c" />
+    <ClCompile Include="gslPatching.c" />
+    <ClCompile Include="gslPlayerDifficulty.c" />
+    <ClCompile Include="gslPlayerDifficulty_cmd.c" />
+    <ClCompile Include="gslPlayerFSM.c" />
+    <ClCompile Include="gslPowerStore.c">
+      <Filter>entity</Filter>
+    </ClCompile>
+    <ClCompile Include="gslPowerTransactions.c">
+      <Filter>entity</Filter>
+    </ClCompile>
+    <ClCompile Include="gslPromoGameCurrency.c" />
+    <ClCompile Include="gslPVP.c" />
+    <ClCompile Include="gslPVP_eval.c" />
+    <ClCompile Include="gslPvPGame.c" />
+    <ClCompile Include="gslPvPGameEval.c" />
+    <ClCompile Include="gslQueue.c" />
+    <ClCompile Include="gslQueue_cmd.c" />
+    <ClCompile Include="gslQueue_eval.c" />
+    <ClCompile Include="gslResourceDBSupport.c" />
+    <ClCompile Include="gslSavedPet.c">
+      <Filter>entity</Filter>
+    </ClCompile>
+    <ClCompile Include="gslScoreboard.c" />
+    <ClCompile Include="gslSendToClient.c">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="gslSimpleCpuUsage.c" />
+    <ClCompile Include="gslSound.c" />
+    <ClCompile Include="gslSteam.c" />
+    <ClCompile Include="gslStoredCredentials.c" />
+    <ClCompile Include="gslSuggestedContent.c" />
+    <ClCompile Include="gslSurvey.c" />
+    <ClCompile Include="gslTeamUp.c" />
+    <ClCompile Include="gslTeamUp_cmd.c" />
+    <ClCompile Include="gslTestClient.c" />
+    <ClCompile Include="gslTicketInfo.c" />
+    <ClCompile Include="gslTimeControl.c" />
+    <ClCompile Include="gslTrade.c" />
+    <ClCompile Include="gslTransactions.c">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="gslTransactionTests.c" />
+    <ClCompile Include="gslUGCAchievements.c">
+      <Filter>UGC</Filter>
+    </ClCompile>
+    <ClCompile Include="gslUGCAchievements_cmd.c">
+      <Filter>UGC</Filter>
+    </ClCompile>
+    <ClCompile Include="gslUtils.c" />
+    <ClCompile Include="gslWarp.c" />
+    <ClCompile Include="gslWorldDebug.c" />
+    <ClCompile Include="gslWorldVariable.c" />
+    <ClCompile Include="gslXBoxTransactions.c" />
+    <ClCompile Include="guild\GuildCommands.c" />
+    <ClCompile Include="item\gslInventory_eval.c">
+      <Filter>item</Filter>
+    </ClCompile>
+    <ClCompile Include="item\gslItemAssignments.c">
+      <Filter>item</Filter>
+    </ClCompile>
+    <ClCompile Include="item\gslItemUpgrade.c">
+      <Filter>item</Filter>
+    </ClCompile>
+    <ClCompile Include="item\gslSuperCritterPet.c">
+      <Filter>item</Filter>
+    </ClCompile>
+    <ClCompile Include="item\item_gen\itemGen.c">
+      <Filter>item</Filter>
+    </ClCompile>
+    <ClCompile Include="item\itemServer.c">
+      <Filter>item</Filter>
+    </ClCompile>
+    <ClCompile Include="item\itemTransaction.c">
+      <Filter>item</Filter>
+    </ClCompile>
+    <ClCompile Include="item\Store.c">
+      <Filter>item</Filter>
+    </ClCompile>
+    <ClCompile Include="map\gslMapNotifications.c">
+      <Filter>map</Filter>
+    </ClCompile>
+    <ClCompile Include="mission\cutscene.c">
+      <Filter>mission</Filter>
+    </ClCompile>
+    <ClCompile Include="mission\cutscene_eval.c">
+      <Filter>mission</Filter>
+    </ClCompile>
+    <ClCompile Include="mission\gslCallout.c">
+      <Filter>mission</Filter>
+    </ClCompile>
+    <ClCompile Include="mission\gslContact.c">
+      <Filter>mission</Filter>
+    </ClCompile>
+    <ClCompile Include="mission\gslContact_cmd.c">
+      <Filter>mission</Filter>
+    </ClCompile>
+    <ClCompile Include="mission\gslContact_eval.c">
+      <Filter>mission</Filter>
+    </ClCompile>
+    <ClCompile Include="mission\gslEventSend.c">
+      <Filter>mission</Filter>
+    </ClCompile>
+    <ClCompile Include="mission\gslEventSend_cmd.c">
+      <Filter>mission</Filter>
+    </ClCompile>
+    <ClCompile Include="mission\gslEventTracker.c">
+      <Filter>mission</Filter>
+    </ClCompile>
+    <ClCompile Include="mission\gslEventTracker_cmd.c">
+      <Filter>mission</Filter>
+    </ClCompile>
+    <ClCompile Include="mission\gslGameAction.c">
+      <Filter>mission</Filter>
+    </ClCompile>
+    <ClCompile Include="mission\gslMapState.c">
+      <Filter>mission</Filter>
+    </ClCompile>
+    <ClCompile Include="mission\gslMapState_cmd.c">
+      <Filter>mission</Filter>
+    </ClCompile>
+    <ClCompile Include="mission\gslMapState_eval.c">
+      <Filter>mission</Filter>
+    </ClCompile>
+    <ClCompile Include="mission\gslMission.c">
+      <Filter>mission</Filter>
+    </ClCompile>
+    <ClCompile Include="mission\gslMission_cmd.c">
+      <Filter>mission</Filter>
+    </ClCompile>
+    <ClCompile Include="mission\gslMission_eval.c">
+      <Filter>mission</Filter>
+    </ClCompile>
+    <ClCompile Include="mission\gslMission_transact.c">
+      <Filter>mission</Filter>
+    </ClCompile>
+    <ClCompile Include="mission\gslMissionDebug.c">
+      <Filter>mission</Filter>
+    </ClCompile>
+    <ClCompile Include="mission\gslMissionDebug_cmd.c">
+      <Filter>mission</Filter>
+    </ClCompile>
+    <ClCompile Include="mission\gslMissionDrop.c">
+      <Filter>mission</Filter>
+    </ClCompile>
+    <ClCompile Include="mission\gslMissionEvents.c">
+      <Filter>mission</Filter>
+    </ClCompile>
+    <ClCompile Include="mission\gslMissionLockout.c">
+      <Filter>mission</Filter>
+    </ClCompile>
+    <ClCompile Include="mission\gslMissionLockout_eval.c">
+      <Filter>mission</Filter>
+    </ClCompile>
+    <ClCompile Include="mission\gslMissionRequest.c">
+      <Filter>mission</Filter>
+    </ClCompile>
+    <ClCompile Include="mission\gslMissionRequest_eval.c">
+      <Filter>mission</Filter>
+    </ClCompile>
+    <ClCompile Include="mission\gslMissionSet.c">
+      <Filter>mission</Filter>
+    </ClCompile>
+    <ClCompile Include="mission\gslMissionTemplate.c">
+      <Filter>mission</Filter>
+    </ClCompile>
+    <ClCompile Include="mission\gslMissionTemplate_eval.c">
+      <Filter>mission</Filter>
+    </ClCompile>
+    <ClCompile Include="mission\gslOldEncounter.c">
+      <Filter>mission</Filter>
+    </ClCompile>
+    <ClCompile Include="mission\gslOldEncounter_cmd.c">
+      <Filter>mission</Filter>
+    </ClCompile>
+    <ClCompile Include="mission\gslOldEncounter_events.c">
+      <Filter>mission</Filter>
+    </ClCompile>
+    <ClCompile Include="mission\gslOpenMission.c">
+      <Filter>mission</Filter>
+    </ClCompile>
+    <ClCompile Include="mission\gslOpenMission_cmd.c">
+      <Filter>mission</Filter>
+    </ClCompile>
+    <ClCompile Include="mission\gslOpenMission_eval.c">
+      <Filter>mission</Filter>
+    </ClCompile>
+    <ClCompile Include="mission\gslPlayerMatchStats.c">
+      <Filter>mission</Filter>
+    </ClCompile>
+    <ClCompile Include="mission\gslPlayerStats.c">
+      <Filter>mission</Filter>
+    </ClCompile>
+    <ClCompile Include="mission\gslPlayerStats_cmd.c">
+      <Filter>mission</Filter>
+    </ClCompile>
+    <ClCompile Include="mission\gslPlayerStats_eval.c">
+      <Filter>mission</Filter>
+    </ClCompile>
+    <ClCompile Include="mission\gslWaypoint.c">
+      <Filter>mission</Filter>
+    </ClCompile>
+    <ClCompile Include="mission\gslWaypoint_cmd.c">
+      <Filter>mission</Filter>
+    </ClCompile>
+    <ClCompile Include="mission\nemesis.c">
+      <Filter>mission</Filter>
+    </ClCompile>
+    <ClCompile Include="mission\nemesis_eval.c">
+      <Filter>mission</Filter>
+    </ClCompile>
+    <ClCompile Include="mission\timedeventqueue.c">
+      <Filter>mission</Filter>
+    </ClCompile>
+    <ClCompile Include="progression\gslProgression.c">
+      <Filter>progression</Filter>
+    </ClCompile>
+    <ClCompile Include="progression\gslProgression_eval.c">
+      <Filter>progression</Filter>
+    </ClCompile>
+    <ClCompile Include="reward\AlgoItem.c">
+      <Filter>item</Filter>
+    </ClCompile>
+    <ClCompile Include="reward\Reward.c">
+      <Filter>item</Filter>
+    </ClCompile>
+    <ClCompile Include="reward\RewardCmdSlow.c">
+      <Filter>item</Filter>
+    </ClCompile>
+    <ClCompile Include="social\gslSocial.c">
+      <Filter>social</Filter>
+    </ClCompile>
+    <ClCompile Include="social\gslSocial_cmds.c">
+      <Filter>social</Filter>
+    </ClCompile>
+    <ClCompile Include="social\gslSocialCryptic.c">
+      <Filter>social</Filter>
+    </ClCompile>
+    <ClCompile Include="social\gslSocialFacebook.c">
+      <Filter>social</Filter>
+    </ClCompile>
+    <ClCompile Include="social\gslSocialFlickr.c">
+      <Filter>social</Filter>
+    </ClCompile>
+    <ClCompile Include="social\gslSocialLivejournal.c">
+      <Filter>social</Filter>
+    </ClCompile>
+    <ClCompile Include="social\gslSocialRaptr.c">
+      <Filter>social</Filter>
+    </ClCompile>
+    <ClCompile Include="social\gslSocialTwitter.c">
+      <Filter>social</Filter>
+    </ClCompile>
+    <ClCompile Include="social\gslSocialUtils.c">
+      <Filter>social</Filter>
+    </ClCompile>
+    <ClCompile Include="social\gslSocialWebhook.c">
+      <Filter>social</Filter>
+    </ClCompile>
+    <ClCompile Include="team\gslTeam.c" />
+    <ClCompile Include="team\gslTeamCorral.c" />
+    <ClCompile Include="team\TeamCommands.c" />
+    <ClCompile Include="UGC\gslUGC.c">
+      <Filter>UGC</Filter>
+    </ClCompile>
+    <ClCompile Include="UGC\gslUGC_cmd.c">
+      <Filter>UGC</Filter>
+    </ClCompile>
+    <ClCompile Include="UGC\gslUGC_eval.c">
+      <Filter>UGC</Filter>
+    </ClCompile>
+    <ClCompile Include="UGC\gslUGC_ExportImport_WebRequest.c">
+      <Filter>UGC</Filter>
+    </ClCompile>
+    <ClCompile Include="UGC\gslUGCTips.c">
+      <Filter>UGC</Filter>
+    </ClCompile>
+    <ClCompile Include="UGC\gslUGCTransactions.c">
+      <Filter>UGC</Filter>
+    </ClCompile>
+    <ClCompile Include="WebRequests.c">
+      <Filter>WebRequestServer</Filter>
+    </ClCompile>
+    <ClCompile Include="WebRequestServer\wrContainerSubs.c">
+      <Filter>WebRequestServer</Filter>
+    </ClCompile>
+    <ClCompile Include="world\gslEncounter.c">
+      <Filter>world</Filter>
+    </ClCompile>
+    <ClCompile Include="world\gslEncounter_cmd.c">
+      <Filter>world</Filter>
+    </ClCompile>
+    <ClCompile Include="world\gslEncounter_eval.c">
+      <Filter>world</Filter>
+    </ClCompile>
+    <ClCompile Include="world\gslEncounterDebug.c">
+      <Filter>world</Filter>
+    </ClCompile>
+    <ClCompile Include="world\gslInteractable.c">
+      <Filter>world</Filter>
+    </ClCompile>
+    <ClCompile Include="world\gslInteractable_cmd.c">
+      <Filter>world</Filter>
+    </ClCompile>
+    <ClCompile Include="world\gslInteractable_eval.c">
+      <Filter>world</Filter>
+    </ClCompile>
+    <ClCompile Include="world\gslInteraction.c">
+      <Filter>world</Filter>
+    </ClCompile>
+    <ClCompile Include="world\gslInteraction_cmd.c">
+      <Filter>world</Filter>
+    </ClCompile>
+    <ClCompile Include="world\gslInteractLoot.c">
+      <Filter>world</Filter>
+    </ClCompile>
+    <ClCompile Include="world\gslInteractLoot_cmd.c">
+      <Filter>world</Filter>
+    </ClCompile>
+    <ClCompile Include="world\gslLandmark.c">
+      <Filter>world</Filter>
+    </ClCompile>
+    <ClCompile Include="world\gslLayerFSM.c">
+      <Filter>world</Filter>
+    </ClCompile>
+    <ClCompile Include="world\gslLayerFSM_eval.c">
+      <Filter>world</Filter>
+    </ClCompile>
+    <ClCompile Include="world\gslMapReveal.c">
+      <Filter>world</Filter>
+    </ClCompile>
+    <ClCompile Include="world\gslMapVariable.c">
+      <Filter>world</Filter>
+    </ClCompile>
+    <ClCompile Include="world\gslMapVariable_cmd.c">
+      <Filter>world</Filter>
+    </ClCompile>
+    <ClCompile Include="world\gslMapVariable_eval.c">
+      <Filter>world</Filter>
+    </ClCompile>
+    <ClCompile Include="world\gslMechanics.c">
+      <Filter>world</Filter>
+    </ClCompile>
+    <ClCompile Include="world\gslMechanics_cmd.c">
+      <Filter>world</Filter>
+    </ClCompile>
+    <ClCompile Include="world\gslMechanics_eval.c">
+      <Filter>world</Filter>
+    </ClCompile>
+    <ClCompile Include="world\gslNamedPoint.c">
+      <Filter>world</Filter>
+    </ClCompile>
+    <ClCompile Include="world\gslNeighborhood.c">
+      <Filter>world</Filter>
+    </ClCompile>
+    <ClCompile Include="world\gslPatrolRoute.c">
+      <Filter>world</Filter>
+    </ClCompile>
+    <ClCompile Include="world\gslShardVariable.c">
+      <Filter>world</Filter>
+    </ClCompile>
+    <ClCompile Include="world\gslShardVariable_cmd.c">
+      <Filter>world</Filter>
+    </ClCompile>
+    <ClCompile Include="world\gslShardVariable_eval.c">
+      <Filter>world</Filter>
+    </ClCompile>
+    <ClCompile Include="world\gslSpawnPoint.c">
+      <Filter>world</Filter>
+    </ClCompile>
+    <ClCompile Include="world\gslSpawnPoint_cmd.c">
+      <Filter>world</Filter>
+    </ClCompile>
+    <ClCompile Include="world\gslTriggerCondition.c">
+      <Filter>world</Filter>
+    </ClCompile>
+    <ClCompile Include="world\gslTriggerCondition_eval.c">
+      <Filter>world</Filter>
+    </ClCompile>
+    <ClCompile Include="world\gslVolume.c">
+      <Filter>world</Filter>
+    </ClCompile>
+    <ClCompile Include="world\gslVolume_eval.c">
+      <Filter>world</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Core\Controller\Pub\ControllerPub.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\AILib\pub\aiJobs.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\Common\GlobalComm.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\Common\GlobalEnums.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\Common\MapDescription.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\Common\ResourceDBUtils.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\Common\testclient_comm.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\Common\ugcprojectcommon.h">
+      <Filter>UGC\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\Common\VirtualShard.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\ServerLib\pub\svrGlobalInfo.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\UtilitiesLib\components\Expression.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\UtilitiesLib\components\GlobalTypeEnum.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\UtilitiesLib\components\GlobalTypes.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\UtilitiesLib\components\WorldVariable.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\UtilitiesLib\net\accountnet.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\UtilitiesLib\utils\Capsule.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\UtilitiesLib\utils\Money.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\UtilitiesLib\utils\UtilitiesLibEnums.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\WorldLib\pub\beacon.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\WorldLib\pub\dynNode.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\WorldLib\pub\wlCostume.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\WorldLib\pub\wlGenesisMissions.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\WorldLib\pub\wlGenesisMissionsGameStructs.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\WorldLib\pub\wlGroupPropertyStructs.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\WorldLib\pub\wlSky.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\WorldLib\pub\wlUGC.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\WorldLib\pub\WorldGrid.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\WorldLib\pub\WorldLibEnums.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\WorldLib\pub\WorldLibStructs.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\WorldLib\StaticWorld\group.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AppServerLib\pub\aslJobManagerPub.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\accountCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\AccountDataCache.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\AccountProxyCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ActivityCalendar.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ActivityCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ActivityLogCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\aiStructCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\AnimList_Common.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ArmamentSwapCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\AuctionBrokerCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\AuctionCommon.h" />
+    <ClInclude Include="..\Common\autoPlacementCommon.h">
+      <Filter>editors\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\chatCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\chatCommonStructs.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\cmdClientReport.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\AbilityScores_DD.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\AttribCurve.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\AttribCurveImp.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\AttribMod.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\AttribModFragility.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\Character.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\Character_combat.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\Character_mods.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\Character_target.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\Character_tick.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\CharacterAttribs.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\CharacterAttribsMinimal.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\CharacterAttribute.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\CharacterClass.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\Combat_DD.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\combatAdvantage.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\CombatCallbacks.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\CombatConfig.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\CombatDebug.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\CombatEnums.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\CombatEval.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\CombatEvents.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\CombatMods.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\CombatPool.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\CombatPowerStateSwitching.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\CombatReactivePower.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\CombatSensitivity.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\ComboTracker.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\DamageTracker.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\PowerActivation.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\PowerAnimFX.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\PowerApplication.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\PowerEnhancements.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\PowerHelpers.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\PowerModes.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\PowerReplace.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\Powers.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\PowersAEDebug.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\PowersAutoDesc.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\PowersEnums.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\PowerSlots.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\PowersMovement.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\PowerSubtarget.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\PowerTree.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\PowerTreeEval.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\PowerTreeHelpers.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\PowerVars.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\Skills_DD.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combat\StatPoints.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ControlScheme.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\CostumeCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\CostumeCommonEnums.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\CSVExport.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\CurrencyExchangeCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\DiaryCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\DiaryDisplay.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\DiaryEnums.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\DiscountShared.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\DoorTransitionCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\EmoteCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\EntDebugMenu.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\aiDebugShared.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\allegiance.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\AuctionLot.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\AuctionLot_Transact.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\AuctionLotEnums.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\BeaconMovement.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\CostumeCommonEntity.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\CostumeCommonGenerate.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\CostumeCommonLoad.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\CostumeCommonRandom.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\CostumeCommonTailor.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\entCritter.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\entEnums.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\Entity.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityAttach.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityBuild.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityDataQuery.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityExtern.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityGrid.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityInteraction.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityIterator.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityLib.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityMailCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityMovementAttachment.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityMovementDead.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityMovementDefault.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityMovementDisableMovement.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityMovementDoor.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityMovementDragon.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityMovementEmote.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityMovementFlight.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityMovementFx.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityMovementGrab.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityMovementInteraction.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityMovementManager.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityMovementManagerDemo.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityMovementManagerPrivate.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityMovementPlatform.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityMovementProjectile.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityMovementProjectileEntity.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityMovementPush.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityMovementRequesterDefs.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityMovementSwing.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityMovementTactical.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityMovementTargetedRotation.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityMovementTemplate.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityMovementTest.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityNet.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityPlayerTypeConversion.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntityResolver.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntitySavedData.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\EntitySystemInternal.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\GameAccountDataCommon.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\grid\EntityGridPrivate.h">
+      <Filter>entity\common\grid</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\Guild.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\InteriorCommon.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\Leaderboard.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\OfficerCommon.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\Player.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\PlayerDifficultyCommon.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\ProjectileEntity.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\RegionRules.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\SavedPetCommon.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\SavedPetTransactions.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\SharedBankCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\Team.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\Tray.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Entity\XBoxStructs.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\GameAccountData\GameAccountData.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\GameBranch.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\GameEvent.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\GamePermissionsCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\GameStringFormat.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Genesis\Genesis.h">
+      <Filter>genesis\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Genesis\GenesisMissions.h">
+      <Filter>genesis\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\GlobalExpressions.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\GroupProjectCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\GroupProjectCommon_trans.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\guildCommonStructs.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\HUDOptionsCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\interaction_common.h">
+      <Filter>mission\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\interactionManager_common.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\item\AlgoItemCommon.h">
+      <Filter>item\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\item\AlgoPet.h">
+      <Filter>item\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\item\containerTrade.h">
+      <Filter>item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\item\inventoryCommon.h">
+      <Filter>item\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\item\inventoryTransactions.h">
+      <Filter>item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\item\itemArt.h">
+      <Filter>item\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\item\itemAssignments.h">
+      <Filter>item\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Item\ItemAssignmentsUICommon.h">
+      <Filter>item\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\item\itemCommon.h">
+      <Filter>item\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\item\itemDescCommon.h">
+      <Filter>item\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\item\itemEnums.h">
+      <Filter>item\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\item\itemGenCommon.h">
+      <Filter>item\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\item\itemupgrade.h">
+      <Filter>item\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\item\rewardCommon.h">
+      <Filter>item\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\item\SuperCritterPet.h">
+      <Filter>item\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\item\tradeCommon.h">
+      <Filter>item\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LobbyCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LoggedTransactions.h" />
+    <ClInclude Include="..\Common\Login2Common.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LoginCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\MailCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\MapNotificationsCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\MapRevealCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\MapTransferCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\mechanics_common.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\MicroTransactions.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\microtransactions_common.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Microtransactions_Transact.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\MinigameCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Mission\contact_common.h">
+      <Filter>mission\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Mission\contact_enums.h">
+      <Filter>mission\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Mission\cutscene_common.h">
+      <Filter>mission\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Mission\encounter_common.h">
+      <Filter>mission\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Mission\Encounter_enums.h">
+      <Filter>mission\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Mission\gameaction_common.h">
+      <Filter>mission\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Mission\gametimer_common.h">
+      <Filter>mission\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Mission\mapstate_common.h">
+      <Filter>mission\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Mission\mission_common.h">
+      <Filter>mission\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Mission\mission_enums.h">
+      <Filter>mission\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Mission\missionset_common.h">
+      <Filter>mission\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Mission\nemesis_common.h">
+      <Filter>mission\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Mission\oldencounter_common.h">
+      <Filter>mission\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Mission\playerMatchStats_common.h">
+      <Filter>mission\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Mission\playerstats_common.h">
+      <Filter>mission\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\mission\progression_common.h">
+      <Filter>mission\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Mission\progression_transact.h">
+      <Filter>mission\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\NameGen.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\NotifyCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\NotifyEnum.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\NumericConversionCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\powerStoreCommon.h">
+      <Filter>item\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\pvp_common.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\PvPGameCommon.h" />
+    <ClInclude Include="..\Common\queue_common.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\queue_common_structs.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ShardEventTimingCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ShardVariable_Transact.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ShardVariableCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\SocialCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Sound\Sound_common.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\species_common.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\SteamCommon.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\SteamCommonServer.h">
+      <Filter>combat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\storeCommon.h">
+      <Filter>item\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\StoredCredentialsCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\SuggestedContentCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Survey.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\TeamPetsCommonStructs.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\TeamUpCommon.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\TestClientCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\TransformationCommon.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\UGC\UGCAchievements.h">
+      <Filter>UGC\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\UGC\UGCCommon.h">
+      <Filter>UGC\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\UGC\UGCError.h">
+      <Filter>UGC\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\UGC\UGCInteriorCommon.h">
+      <Filter>UGC\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\UGC\UGCSearchCache.h">
+      <Filter>UGC\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\UGC\UGCTipsCommon.h">
+      <Filter>UGC\common</Filter>
+    </ClInclude>
+    <ClInclude Include="ai\aiFCExprFunc.h">
+      <Filter>ai</Filter>
+    </ClInclude>
+    <ClInclude Include="ai\aiFCStruct.h">
+      <Filter>ai</Filter>
+    </ClInclude>
+    <ClInclude Include="cmdparse\cmdServerCombat.h">
+      <Filter>cmd</Filter>
+    </ClInclude>
+    <ClInclude Include="cmdServer.h">
+      <Filter>cmd</Filter>
+    </ClInclude>
+    <ClInclude Include="cmdServerCharacter.h">
+      <Filter>cmd</Filter>
+    </ClInclude>
+    <ClInclude Include="Combat\CharacterRespecServer.h">
+      <Filter>combat</Filter>
+    </ClInclude>
+    <ClInclude Include="Combat\CombatGlobal.h">
+      <Filter>combat</Filter>
+    </ClInclude>
+    <ClInclude Include="Combat\CoreServerCombatCallbacks.h">
+      <Filter>combat</Filter>
+    </ClInclude>
+    <ClInclude Include="Combat\gslCombatAdvantage.h">
+      <Filter>combat</Filter>
+    </ClInclude>
+    <ClInclude Include="Combat\gslCombatDeathPrediction.h">
+      <Filter>combat</Filter>
+    </ClInclude>
+    <ClInclude Include="Combat\gslCombatReactivePower.h">
+      <Filter>combat</Filter>
+    </ClInclude>
+    <ClInclude Include="Combat\gslPowersAEDebug.h">
+      <Filter>combat</Filter>
+    </ClInclude>
+    <ClInclude Include="Combat\PowerTreeTransactions.h">
+      <Filter>combat</Filter>
+    </ClInclude>
+    <ClInclude Include="ControllerMirror.h">
+      <Filter>WebRequestServer</Filter>
+    </ClInclude>
+    <ClInclude Include="editors\gslEditor.h">
+      <Filter>editors</Filter>
+    </ClInclude>
+    <ClInclude Include="entity\EntityServer.h">
+      <Filter>entity</Filter>
+    </ClInclude>
+    <ClInclude Include="entity\gslCostume.h">
+      <Filter>entity</Filter>
+    </ClInclude>
+    <ClInclude Include="entity\gslProjectileEntity.h">
+      <Filter>entity</Filter>
+    </ClInclude>
+    <ClInclude Include="entity\gslSharedBank.h">
+      <Filter>entity</Filter>
+    </ClInclude>
+    <ClInclude Include="entity\gslTray.h">
+      <Filter>entity</Filter>
+    </ClInclude>
+    <ClInclude Include="entity\gslUserExperience.h">
+      <Filter>entity</Filter>
+    </ClInclude>
+    <ClInclude Include="GameServerHandleMsg.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="GameServerLib_AnonAutoRunIncludes.h" />
+    <ClInclude Include="gametimer.h">
+      <Filter>mission</Filter>
+    </ClInclude>
+    <ClInclude Include="gateway\gslGatewayAuction.h">
+      <Filter>Gateway</Filter>
+    </ClInclude>
+    <ClInclude Include="gateway\gslGatewayContainerMapping.h">
+      <Filter>Gateway</Filter>
+    </ClInclude>
+    <ClInclude Include="gateway\gslGatewayMappedEntity.h">
+      <Filter>Gateway</Filter>
+    </ClInclude>
+    <ClInclude Include="gateway\gslGatewayMessages.h">
+      <Filter>Gateway</Filter>
+    </ClInclude>
+    <ClInclude Include="gateway\gslGatewayServer.h">
+      <Filter>Gateway</Filter>
+    </ClInclude>
+    <ClInclude Include="gateway\gslGatewaySession.h">
+      <Filter>Gateway</Filter>
+    </ClInclude>
+    <ClInclude Include="gateway\gslGatewayStructMapping.h">
+      <Filter>Gateway</Filter>
+    </ClInclude>
+    <ClInclude Include="gslActivity.h" />
+    <ClInclude Include="gslActivityLog.h" />
+    <ClInclude Include="gslArmamentSwap.h" />
+    <ClInclude Include="gslAuction.h" />
+    <ClInclude Include="gslBeaconInterface.h" />
+    <ClInclude Include="gslBulletins.h" />
+    <ClInclude Include="gslCombatCallbacks.h">
+      <Filter>entity</Filter>
+    </ClInclude>
+    <ClInclude Include="gslControlScheme.h" />
+    <ClInclude Include="gslCurrencyExchange.h" />
+    <ClInclude Include="gslDataDump.h" />
+    <ClInclude Include="gslDataFixupUtils.h" />
+    <ClInclude Include="gslDiary.h" />
+    <ClInclude Include="gslDiaryBucketManager.h" />
+    <ClInclude Include="gslDiaryWebRequest.h" />
+    <ClInclude Include="gslDoorTransition.h" />
+    <ClInclude Include="gslEntityNet.h">
+      <Filter>entity</Filter>
+    </ClInclude>
+    <ClInclude Include="gslEntityPresence.h">
+      <Filter>entity</Filter>
+    </ClInclude>
+    <ClInclude Include="gslGameAccountData.h">
+      <Filter>entity</Filter>
+    </ClInclude>
+    <ClInclude Include="gslGamePermissions.h" />
+    <ClInclude Include="gslGroupProject.h" />
+    <ClInclude Include="gslGuild.h" />
+    <ClInclude Include="gslHandleMsg.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="gslHttpAsync.h" />
+    <ClInclude Include="gslHUDOptions.h" />
+    <ClInclude Include="gslInterior.h">
+      <Filter>entity</Filter>
+    </ClInclude>
+    <ClInclude Include="gslLobby.h" />
+    <ClInclude Include="gslLogSettings.h" />
+    <ClInclude Include="gslMail.h" />
+    <ClInclude Include="gslMail_Old.h" />
+    <ClInclude Include="gslMailNPC.h" />
+    <ClInclude Include="gslMapPopulationCache.h" />
+    <ClInclude Include="gslMessageFixup.h" />
+    <ClInclude Include="gslMicroTransactions.h" />
+    <ClInclude Include="gslNotify.h" />
+    <ClInclude Include="gslNumericConversion.h" />
+    <ClInclude Include="gslPartition.h" />
+    <ClInclude Include="gslPatching.h" />
+    <ClInclude Include="gslPlayerDifficulty.h" />
+    <ClInclude Include="gslPlayerFSM.h" />
+    <ClInclude Include="gslPowerStore.h">
+      <Filter>entity</Filter>
+    </ClInclude>
+    <ClInclude Include="gslPromoGameCurrency.h" />
+    <ClInclude Include="gslPVP.h" />
+    <ClInclude Include="gslPvPGame.h" />
+    <ClInclude Include="gslQueue.h" />
+    <ClInclude Include="gslResourceDBSupport.h" />
+    <ClInclude Include="gslSavedPet.h">
+      <Filter>entity</Filter>
+    </ClInclude>
+    <ClInclude Include="gslScoreboard.h" />
+    <ClInclude Include="gslSimpleCpuUsage.h" />
+    <ClInclude Include="gslSound.h" />
+    <ClInclude Include="gslSteam.h" />
+    <ClInclude Include="gslStoredCredentials.h" />
+    <ClInclude Include="gslTeamUp.h" />
+    <ClInclude Include="gslTicketInfo.h" />
+    <ClInclude Include="gslTimeControl.h" />
+    <ClInclude Include="GslUtils.h" />
+    <ClInclude Include="gslWarp.h" />
+    <ClInclude Include="gslWorldDebug.h" />
+    <ClInclude Include="gslWorldVariable.h" />
+    <ClInclude Include="item\gslItemAssignments.h">
+      <Filter>item</Filter>
+    </ClInclude>
+    <ClInclude Include="item\gslItemUpgrade.h">
+      <Filter>item</Filter>
+    </ClInclude>
+    <ClInclude Include="item\gslSuperCritterPet.h">
+      <Filter>item</Filter>
+    </ClInclude>
+    <ClInclude Include="item\itemServer.h">
+      <Filter>item</Filter>
+    </ClInclude>
+    <ClInclude Include="item\itemTransaction.h">
+      <Filter>item</Filter>
+    </ClInclude>
+    <ClInclude Include="item\Store.h">
+      <Filter>item</Filter>
+    </ClInclude>
+    <ClInclude Include="mission\cutscene.h">
+      <Filter>mission</Filter>
+    </ClInclude>
+    <ClInclude Include="mission\gslCallout.h">
+      <Filter>mission</Filter>
+    </ClInclude>
+    <ClInclude Include="mission\gslContact.h">
+      <Filter>mission</Filter>
+    </ClInclude>
+    <ClInclude Include="mission\gslEventSend.h">
+      <Filter>mission</Filter>
+    </ClInclude>
+    <ClInclude Include="mission\gslEventTracker.h">
+      <Filter>mission</Filter>
+    </ClInclude>
+    <ClInclude Include="mission\gslGameAction.h">
+      <Filter>mission</Filter>
+    </ClInclude>
+    <ClInclude Include="mission\gslMapState.h">
+      <Filter>mission</Filter>
+    </ClInclude>
+    <ClInclude Include="mission\gslMission.h">
+      <Filter>mission</Filter>
+    </ClInclude>
+    <ClInclude Include="mission\gslMission_transact.h">
+      <Filter>mission</Filter>
+    </ClInclude>
+    <ClInclude Include="mission\gslMissionDebug.h">
+      <Filter>mission</Filter>
+    </ClInclude>
+    <ClInclude Include="mission\gslMissionDrop.h">
+      <Filter>mission</Filter>
+    </ClInclude>
+    <ClInclude Include="mission\gslMissionEvents.h">
+      <Filter>mission</Filter>
+    </ClInclude>
+    <ClInclude Include="mission\gslMissionLockout.h">
+      <Filter>mission</Filter>
+    </ClInclude>
+    <ClInclude Include="mission\gslMissionRequest.h">
+      <Filter>mission</Filter>
+    </ClInclude>
+    <ClInclude Include="mission\gslMissionSet.h">
+      <Filter>mission</Filter>
+    </ClInclude>
+    <ClInclude Include="mission\gslMissionTemplate.h">
+      <Filter>mission</Filter>
+    </ClInclude>
+    <ClInclude Include="mission\gslOldEncounter.h">
+      <Filter>mission</Filter>
+    </ClInclude>
+    <ClInclude Include="mission\gslOldEncounter_events.h">
+      <Filter>mission</Filter>
+    </ClInclude>
+    <ClInclude Include="mission\gslOpenMission.h">
+      <Filter>mission</Filter>
+    </ClInclude>
+    <ClInclude Include="mission\gslPlayerMatchStats.h">
+      <Filter>mission</Filter>
+    </ClInclude>
+    <ClInclude Include="mission\gslPlayerStats.h">
+      <Filter>mission</Filter>
+    </ClInclude>
+    <ClInclude Include="mission\gslWaypoint.h">
+      <Filter>mission</Filter>
+    </ClInclude>
+    <ClInclude Include="mission\nemesis.h">
+      <Filter>mission</Filter>
+    </ClInclude>
+    <ClInclude Include="mission\timedeventqueue.h">
+      <Filter>mission</Filter>
+    </ClInclude>
+    <ClInclude Include="progression\gslProgression.h">
+      <Filter>progression</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\GameServerLib.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\gslAccountProxy.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\gslBaseStates.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\gslBugReport.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\gslChat.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\gslChatConfig.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\gslCommandParse.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\gslCritter.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\gslEncounterLog.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\gslEntity.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\gslExtern.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\gslFriendsIgnore.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\gslHeatMaps.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\gslInteractionManager.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\gslMapTransfer.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\gslPetCommand.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\gslPowerTransactions.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\gslSendToClient.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\gslTrade.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\gslTransactions.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="reward\AlgoItem.h">
+      <Filter>item</Filter>
+    </ClInclude>
+    <ClInclude Include="reward\Reward.h">
+      <Filter>item</Filter>
+    </ClInclude>
+    <ClInclude Include="social\gslSocial.h">
+      <Filter>social</Filter>
+    </ClInclude>
+    <ClInclude Include="social\gslSocialUtils.h">
+      <Filter>social</Filter>
+    </ClInclude>
+    <ClInclude Include="team\gslTeam.h" />
+    <ClInclude Include="team\gslTeamCorral.h" />
+    <ClInclude Include="team\TeamCommands.h" />
+    <ClInclude Include="UGC\gslUGC.h">
+      <Filter>UGC</Filter>
+    </ClInclude>
+    <ClInclude Include="UGC\gslUGC_cmd.h">
+      <Filter>UGC</Filter>
+    </ClInclude>
+    <ClInclude Include="UGC\gslUGCTips.h">
+      <Filter>UGC</Filter>
+    </ClInclude>
+    <ClInclude Include="UGC\gslUGCTransactions.h">
+      <Filter>UGC</Filter>
+    </ClInclude>
+    <ClInclude Include="WebRequests.h">
+      <Filter>WebRequestServer</Filter>
+    </ClInclude>
+    <ClInclude Include="WebRequestServer\wrContainerSubs.h">
+      <Filter>WebRequestServer</Filter>
+    </ClInclude>
+    <ClInclude Include="world\gslEncounter.h">
+      <Filter>world</Filter>
+    </ClInclude>
+    <ClInclude Include="world\gslEncounterDebug.h">
+      <Filter>world</Filter>
+    </ClInclude>
+    <ClInclude Include="world\gslInteractable.h">
+      <Filter>world</Filter>
+    </ClInclude>
+    <ClInclude Include="world\gslInteraction.h">
+      <Filter>world</Filter>
+    </ClInclude>
+    <ClInclude Include="world\gslInteractLoot.h">
+      <Filter>world</Filter>
+    </ClInclude>
+    <ClInclude Include="world\gslLandmark.h">
+      <Filter>world</Filter>
+    </ClInclude>
+    <ClInclude Include="world\gslLayerFSM.h">
+      <Filter>world</Filter>
+    </ClInclude>
+    <ClInclude Include="world\gslMapReveal.h">
+      <Filter>world</Filter>
+    </ClInclude>
+    <ClInclude Include="world\gslMapVariable.h">
+      <Filter>world</Filter>
+    </ClInclude>
+    <ClInclude Include="world\gslMechanics.h">
+      <Filter>world</Filter>
+    </ClInclude>
+    <ClInclude Include="world\gslNamedPoint.h">
+      <Filter>world</Filter>
+    </ClInclude>
+    <ClInclude Include="world\gslNeighborhood.h">
+      <Filter>world</Filter>
+    </ClInclude>
+    <ClInclude Include="world\gslPatrolRoute.h">
+      <Filter>world</Filter>
+    </ClInclude>
+    <ClInclude Include="world\gslShardVariable.h">
+      <Filter>world</Filter>
+    </ClInclude>
+    <ClInclude Include="world\gslSpawnPoint.h">
+      <Filter>world</Filter>
+    </ClInclude>
+    <ClInclude Include="world\gslTriggerCondition.h">
+      <Filter>world</Filter>
+    </ClInclude>
+    <ClInclude Include="world\gslVolume.h">
+      <Filter>world</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="ai">
+      <UniqueIdentifier>{97cf0bf9-4e55-44bf-9a9f-f9d34901ac97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AutoGen">
+      <UniqueIdentifier>{90aada03-3a0a-4a67-8f4b-530524ff0a2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="chat">
+      <UniqueIdentifier>{606b2546-9453-4f76-a3e2-060f490c1d33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cmd">
+      <UniqueIdentifier>{90ca2d01-c8e2-45f1-a16c-9c086a7422a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="combat">
+      <UniqueIdentifier>{8f877ff4-9de4-4684-be65-095760af2087}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="combat\common">
+      <UniqueIdentifier>{4b6cf291-cf17-4ffb-ab4c-98e9fd92b1f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{8acd0dcb-215d-4d10-a9cc-c4747612563e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="editors">
+      <UniqueIdentifier>{e27e3a54-5a7d-46ab-af0f-233fc75619b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="editors\common">
+      <UniqueIdentifier>{b67623e2-7aa8-44c7-bb9a-b6c358e5ca52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="entity">
+      <UniqueIdentifier>{1f7d688f-d14b-4817-941c-f7fbd8271bd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="entity\common">
+      <UniqueIdentifier>{78ab49b5-210d-4196-8b79-db8c43827ea0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="entity\common\grid">
+      <UniqueIdentifier>{d16d5ed9-08b1-44d9-b915-92274261cfab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExternHeaders">
+      <UniqueIdentifier>{e229dc72-01b9-4ea0-ae48-92280c657af2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Gateway">
+      <UniqueIdentifier>{1fb2df5c-56e9-4f24-be13-e49bf7a363b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="genesis">
+      <UniqueIdentifier>{38541268-16e8-4fa0-9e8a-cc2f2bc41d4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="genesis\common">
+      <UniqueIdentifier>{cb7ec66a-05d1-43b6-87fd-bf5a9e539023}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="item">
+      <UniqueIdentifier>{0402e6ea-359a-4213-8f47-072b2137993c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="item\common">
+      <UniqueIdentifier>{18f09a9b-0d4b-4e48-afff-9aeefa981a0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="map">
+      <UniqueIdentifier>{21ce2c76-683f-4290-8c03-09e664e2baf6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mission">
+      <UniqueIdentifier>{2b1621c8-2544-42ed-b5ba-564482e87525}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mission\common">
+      <UniqueIdentifier>{4a49b7ff-2376-4e27-8445-107b881e11a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net">
+      <UniqueIdentifier>{318e4e63-1baf-4212-9069-2ce03869acc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="progression">
+      <UniqueIdentifier>{0e8efe8b-defc-499d-88f9-1bde3276af4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pub">
+      <UniqueIdentifier>{b3cfd8ec-9cd2-4ed2-8261-caceb3586c6b}</UniqueIdentifier>
+      <Extensions>pub\*</Extensions>
+    </Filter>
+    <Filter Include="social">
+      <UniqueIdentifier>{45a77a84-42b2-4f8b-aa95-c2de8103bd14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UGC">
+      <UniqueIdentifier>{6f4c213a-ca45-4dbf-8a8b-16e2b5da16f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UGC\common">
+      <UniqueIdentifier>{dad5ab26-e712-4612-935a-d2bc25a7cae1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WebRequestServer">
+      <UniqueIdentifier>{73cdcf5d-4103-47d6-9263-c58076f4cd64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="world">
+      <UniqueIdentifier>{d4f1c56f-cf63-4f89-ab92-7dda91d0923e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

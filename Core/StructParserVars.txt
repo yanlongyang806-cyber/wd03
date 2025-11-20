@@ -1,0 +1,55 @@
+//legal names for lvals in "AST(FORMATSTRING(varName = int))" 
+FormatString_Ints = HTML, collapsed, showcolumn, command, HTML_BYTES, HTML_KBYTES, HTML_PERCENT, HTML_SECS, HTML_SECS_AGO, 
+	HTML_TABLE, HTML_SKIP, HTML_NO_HEADER, HTML_COMMAND_IN_NEW_WINDOW, HTML_SECS_DURATION, HTML_IP, accessLevel, 
+	HTML_LINKOVERRIDE, HTML_UNDESCRIPTIVENAME, HTML_NO_DEFAULT_SORT, HTML_SECS_DURATION_SHORT, HTML_SECS_AGO_SHORT, 
+	HTML_DONTUSENAME, HTML_NO_DIV, HTML_SKIP_IN_TABLE, HTML_WRITE_UNOWNED, HTML_SVR_PARAM, XML_UNWRAP_ARRAY, XML_DECODE_KEY, 
+	XML_ENCODE_BASE64, XML_INLINE_BLOB, DEPENDENT_CONTAINER_REF, FIXUP_CONTAINER_REF, EXPORT_CONTAINER_REF, HTML_PREFORMATTED, 
+	EDITABLE, HTML_REVERSE_ARRAY, HTML_NOTES_AUTO, MAX_ARRAY_SIZE, DEFAULT_FIELD, HIGH_PREC_FLOAT, HTML_FLOAT_PREC, JSON_SECS_TO_RFC822;
+
+//legal names for lvals in "AST(FORMATSTRING(varName = string))"
+FormatString_Strings = DEMO_NO_IGNORE_FIELDS, commandExpr, HTML_CLASS, HTML_SPRINTF, TEST_FILTER, HTML_DEF_FIELDS_TO_SHOW, HTML_CLASS_IFEXPR, HTTP_HEADER_COMMAND, HTML_LINKOVERRIDE_SUFFIX, DEPENDENT_CONTAINER_TYPE, EXPORT_CONTAINER_TYPE, FIXUP_CONTAINER_TYPE, UI_NAME, UI_TOOLTIP, UI_PROP_MIN, UI_PROP_MAX, UI_PROP_STEP, UI_PROP_ENUM, UI_PROP_DEFAULT, UI_INHERIT_TEXT, UI_FILTER, UI_WIDTH, HTML_CONVERT_OPT_STRUCT_TO_KEY_STRING, HTML_PRE_DIV_CLOSE, HTML_NOTES;
+
+//these symbols are tracked by structparser in #ifs and #ifdefs and so forth, and used to add/remove things like autocommands, etc.
+Relevant_Ifdefs = _XBOX, _PS3, NO_EDITORS, USE_MEMTRACK, PLATFORM_CONSOLE, USE_CHATRELAY;
+
+//any project ending with one of these suffixes will be ignored by structparser entirely
+ProjectsToIgnoreCompletelySuffixes = Job, Task;
+
+//functions that are always OK to include in an AUTO_TRANSACTION, and which we are 100% certain will never ever ever ever
+//not be OK under any circumstances (ie, super-duper low-level things)
+AutoTransSuperWhiteList = NOCONST, atoi, return, MAX, for, while, GET_REF, IS_HANDLE_ACTIVE, PERFINFO_AUTO_START, 
+	PERFINFO_AUTO_START_FUNC, PERFINFO_AUTO_STOP, min, stricmp, TRANSACTION_RETURN_LOG_SUCCESS, TRANSACTION_RETURN_LOG_FAILURE,
+	DEG, strdup, EARRAY_INT_CONST_FOREACH_BEGIN, strStartsWith, REMOVE_HANDLE, INRANGE, assert, SAFESTR, TRANSACTION_APPEND_LOG_FAILURE,
+	snprintf, assertmsg, MAX1, devassertmsg, verify, TRANSACTION_RETURN_FAILURE, sizeof, MIN1, SET_HANDLE_FROM_REFERENT,
+	RefSystem_GetNextReferentFromIterator, strcpy_s, randomInt, calloc, CLAMP, TRANSACTION_RETURN_SUCCESS,
+	MIN, REF_STRING_FROM_HANDLE, devassertmsgf, round, RefSystem_StringFromReferent, max, switch, REF_COMPARE_HANDLES,
+	TRANSACTION_APPEND_LOG_SUCCESS, COPY_HANDLE, strcpy, Alertf, uuidGenerateV4, assertmsgf, RefSystem_ReferentFromString,
+	StructClone, StructCreate, allocAddString, eaPush, eaRemoveFast, StructDestroy, eaGet,
+	StructAllocString, autoSecsSince2k, timeSecondsSince2000, eaiDestroy, eaDestroyStruct, timeServerSecondsSince2000,
+	StaticDefineIntRevLookup, estrCreateFromStr, estrClear, eapop, ea32FindAndRemove, ea32Remove, GlobalTypeToCopyDictionaryName,
+	ContainerIDToString, estrConcatf, eaClearStruct, StructFreeStringSafe, ea32Size, eaiSize, eaiFind, eaiGet, StructCopyFields,
+	ea32Swap, eaRemoveTailEx, eaPop, FOR_EACH_IN_EARRAY, ea32Get, resExtractNameSpace, EARRAY_OF, FOR_EACH_IN_EARRAY_FORWARDS,
+	eaPushUnique, SSSTree_InternalizeString, StructDestroySafe, eaInsert, ea32ClearFast, estrDup, estrStackCreateFromStr,
+	hashString, ea32Copy, eaCreate, GlobalTypeToName, stashFindPointerConst, estrAppend2, MultiValGetInt, eaIndexedGetUsingInt,
+	estrPrintf, StructCopy, estrCopy2, StringToContainerID, eaiCreate, StructCopyAll, estrDestroy, eaQSort, ea32Find,
+	eaFindString, estrStackCreate, SET_HANDLE_FROM_STRING, RefSystem_InitRefDictIterator, sprintf, EARRAY_CONST_FOREACH_BEGIN,
+	eafPush, uuidStringShort, eaiPush, estrReplaceOccurrences, eaRemoveRange, eaUSize, ANALYSIS_ASSUME, eaiSetSize,
+	F32PTR_OF_ATTRIB, nullStr, Errorf, ea32Push, eaDestroy, ea32PushUnique, StringArrayFind, eaIndexedEnable,
+	FOR_EACH_IDX, free, strncpy, ea32Set, eaFind, eaTail, eaIndexedFindUsingInt, eaIndexedGetUsingString, SAFE_FREE,
+	randomPositiveF32Seeded, sprintf_s, strncmp, strlen, StructDup, eaClear, ea32Destroy, StructCopyString, printf,
+	StructFreeString, SET_HANDLE_FROM_REFDATA, devassert, ErrorDetailsf, eaCopyStructs, StaticDefineIntGetInt,
+	StructAlloc, EMPTY_TO_NULL, strcat, eafSize, strcmp, ea32QSort, eaIndexedFindUsingString, TEAM_TRANSACTION_RETURN_FAILURE,
+	TEAM_TRANSACTION_RETURN_SUCCESS, StructDeInit, DAYS, MINUTES, rand, strtol, ea32RemoveFast, log_printf, ea32Clear,
+	UGCIDString_IntToString, randomIntRange, estrBase64Encode, StringToUint, eaClearEx, strnicmp,
+	DivideString, triviaOverviewFindKey, triviaOverviewFindValue,
+	CONTAINER_NOCONST, CONTAINER_NOCONST2, CONTAINER_NOCONST3,
+	CONTAINER_RECONST;
+
+//functions that are always OK to include in an AUTO_TRANSACTION
+AutoTransWhiteList = _FakeWhiteList1;
+
+//functions that are NEVER OK to include in an AUTO_TRANSACTION
+AutoTransBlackList = exprEvaluate;
+
+//legal product names for ACMD_PRODUCTS;
+Products = StarTrek, FightClub, Night, Bronze;

@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\crossroads\common\autogen\AppServerLib_autogen_RemoteFuncs.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\crossroads\common\autogen\GameServerLib_autogen_RemoteFuncs.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\chatCommonStructs.c">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\guildCommonStructs.c">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\PvPGameCommon.c">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\queue_common_structs.c">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\ShardVariableCommon.c">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs\HostIOLib\xboxHostIO.c" />
+    <ClCompile Include="..\Common\AutoGen\ChatServer_autogen_RemoteFuncs.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\AutoGen\ObjectDB_autogen_RemoteFuncs.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoGen\Controller_AutoGen_1.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoGen\Controller_AutoGen_2.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="Controller.c" />
+    <ClCompile Include="Controller_Alerts.c" />
+    <ClCompile Include="Controller_AutoSettings.c" />
+    <ClCompile Include="Controller_ClusterController.c" />
+    <ClCompile Include="Controller_ControllerTracker.c" />
+    <ClCompile Include="Controller_DynHoggPruning.c" />
+    <ClCompile Include="Controller_Http.c" />
+    <ClCompile Include="Controller_InterShardComm.c" />
+    <ClCompile Include="Controller_linksupport.c" />
+    <ClCompile Include="Controller_MachineGroups.c" />
+    <ClCompile Include="Controller_net.c" />
+    <ClCompile Include="Controller_PCLStatusMonitoring.c" />
+    <ClCompile Include="Controller_RemoteCommands.c" />
+    <ClCompile Include="Controller_Resources.c" />
+    <ClCompile Include="Controller_Scripting_Internal.c" />
+    <ClCompile Include="Controller_ShardCluster.c" />
+    <ClCompile Include="Controller_Startup.c" />
+    <ClCompile Include="controller_utils.c" />
+    <ClCompile Include="Controller_VersionHistory.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\CrossRoads\Common\chatCommon.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\chatCommonStructs.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\CostumeCommon.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\guildCommonStructs.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\PvPGameCommon.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\queue_common_structs.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\ShardVariableCommon.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\HostIOLib\xboxHostIO.h" />
+    <ClInclude Include="..\..\libs\PatchClientLib\PatchClientLibStatusMonitoring.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\ServerLib\AutoSettings.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\ServerLib\pub\RemoteCommandGroup.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\ServerLib\pub\ShardCluster.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\ServerLib\pub\svrGlobalInfo.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\UtilitiesLib\components\Alerts.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\UtilitiesLib\components\GlobalTypeEnum.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\UtilitiesLib\components\GlobalTypes.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\UtilitiesLib\components\NotesServerComm.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\UtilitiesLib\components\WorldVariable.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\UtilitiesLib\utils\systemspecs.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\UtilitiesLib\utils\UtilitiesLibEnums.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Utilities\NotesServer\NotesServer_pub.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Utilities\SentryServer\sentrypub.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\launcher\performance.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NewControllerTracker\pub\NewControllerTracker_Pub.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Controller.h" />
+    <ClInclude Include="Controller_Alerts.h" />
+    <ClInclude Include="Controller_AutoSettings.h" />
+    <ClInclude Include="Controller_ClusterController.h" />
+    <ClInclude Include="Controller_DynHoggPruning.h" />
+    <ClInclude Include="Controller_InterShardComm.h" />
+    <ClInclude Include="Controller_MachineGroups.h" />
+    <ClInclude Include="Controller_PCLStatusMonitoring.h" />
+    <ClInclude Include="Controller_Scripting.h" />
+    <ClInclude Include="Controller_ShardCluster.h" />
+    <ClInclude Include="Controller_Startup.h" />
+    <ClInclude Include="Controller_Utils.h" />
+    <ClInclude Include="Pub\ControllerPub.h">
+      <Filter>Pub</Filter>
+    </ClInclude>
+    <ClInclude Include="resource_controller.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="AutoGen">
+      <UniqueIdentifier>{bd28fde1-a5f5-434a-9736-2c4a95ead01f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{e9457e61-bc46-44cf-b1a8-65287e6e0295}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExternHeaders">
+      <UniqueIdentifier>{3f114be9-4483-4c62-b84c-163711a722c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pub">
+      <UniqueIdentifier>{61d73626-a2b8-4776-ad06-f194d41783b8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\data\server\ControllerServerSetup.txt" />
+    <None Include="copycontroller.bat" />
+    <None Include="txt1.bin" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Controller1.rc" />
+  </ItemGroup>
+</Project>

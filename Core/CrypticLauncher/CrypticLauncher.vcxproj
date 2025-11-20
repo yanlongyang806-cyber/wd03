@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Full Debug|Win32">
+      <Configuration>Full Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{39653FC0-D40A-45DF-87F0-D8AF3A0AA606}</ProjectGuid>
+    <RootNamespace>CrypticLauncher</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="..\..\PropertySheets\GeneralSettings.props" />
+    <Import Project="..\..\PropertySheets\CrypticApplication.props" />
+    <Import Project="..\..\PropertySheets\LinkerOptimizations.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'" Label="PropertySheets">
+    <Import Project="..\..\PropertySheets\GeneralSettings.props" />
+    <Import Project="..\..\PropertySheets\CrypticApplication.props" />
+    <Import Project="..\..\PropertySheets\LinkerOptimizations.props" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkIncremental>
+    <PostBuildEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</PostBuildEventUseInBuild>
+    <PostBuildEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">true</PostBuildEventUseInBuild>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">$(ProjectName)FD</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../Core/MasterControlProgram;../../Core/NewControllerTracker/pub;../../libs/PatchClientLib;../../libs/editlib/pub;../../libs/inputlib/pub;../../libs/ui2lib/pub;../../libs/ServerLib\pub;../../3rdparty/zlib;../../3rdparty/xdk/win32;../common/utils;../common/components;../common/network;../common;../../libs/Common;../../libs/renderers/pub;../../libs/worldlib/pub;../../libs/graphicslib/pub;../../CrossRoads/Common;../../libs/HttpLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRTDBG_MAP_ALLOC=1;STANDALONE=2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <DelayLoadDLLs>d3d11.dll</DelayLoadDLLs>
+    </Link>
+    <PostBuildEvent>
+      <Command>C:\Cryptic\tools\bin\ReplaceVistaIcon.exe $(TargetPath) crypticBig.ico 114
+C:\Cryptic\tools\Python25\python .\games\create_games.py
+$(ProjectDir)..\..\3rdparty\authenticode\signtool.exe sign /f "..\..\3rdparty\authenticode\cryptic.pfx" /p "cryptic" /d "Cryptic Launcher" /du "http://www.crypticstudios.com/" /t http://timestamp.verisign.com/scripts/timstamp.dll $(TargetPath)
+</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>..\..\utilities\bin\structparser X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)
+call .\GenerateVersion.bat
+C:\Cryptic\tools\Python25\python .\GenerateBundledModtimes.py
+C:\Cryptic\tools\Python25\python .\cgettext.py $(InputDir)
+</Command>
+    </PreBuildEvent>
+    <PreLinkEvent>
+      <Command>
+      </Command>
+    </PreLinkEvent>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>..\..\3rdparty\DirectX\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../Core/MasterControlProgram;../../Core/NewControllerTracker/pub;../../libs/PatchClientLib;../../libs/editlib/pub;../../libs/inputlib/pub;../../libs/ui2lib/pub;../../libs/ServerLib\pub;../../3rdparty/zlib;../../3rdparty/xdk/win32;../common/utils;../common/components;../common/network;../common;../../libs/Common;../../libs/renderers/pub;../../libs/worldlib/pub;../../libs/graphicslib/pub;../../CrossRoads/Common;../../libs/HttpLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRTDBG_MAP_ALLOC=1;STANDALONE=2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <DelayLoadDLLs>d3d11.dll</DelayLoadDLLs>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>..\..\utilities\bin\structparser X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)
+call .\GenerateVersion.bat
+C:\Cryptic\tools\Python25\python .\GenerateBundledModtimes.py
+C:\Cryptic\tools\Python25\python .\cgettext.py $(InputDir)
+</Command>
+    </PreBuildEvent>
+    <PreLinkEvent>
+      <Command>
+      </Command>
+    </PreLinkEvent>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>..\..\3rdparty\DirectX\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\libs\XRenderLib\pub\DXVersionCheck.c" />
+    <ClCompile Include="..\MasterControlProgram\CommandLineScreen.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\MasterControlProgram\MCP_ControllerTracker.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\MasterControlProgram\mcp_win_init.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="AutoGen\CrypticLauncher_AutoGen_1.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="AutoGen\CrypticLauncher_AutoGen_2.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="embedbrowser.c" />
+    <ClCompile Include="GameDetails.c" />
+    <ClCompile Include="launcherUtils.c" />
+    <ClCompile Include="MasterControlProgram.c" />
+    <ClCompile Include="options.c" />
+    <ClCompile Include="patcher.c" />
+    <ClCompile Include="registry.c" />
+    <ClCompile Include="StartingScreen.c" />
+    <ClCompile Include="systemtray.c" />
+    <ClCompile Include="xfers_dialog.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\libs\XRenderLib\pub\DXVersionCheck.h" />
+    <ClInclude Include="..\NewControllerTracker\pub\NewControllerTracker_Pub.h" />
+    <ClInclude Include="CrypticLauncher.h" />
+    <ClInclude Include="embedbrowser.h" />
+    <ClInclude Include="GameDetails.h" />
+    <ClInclude Include="launcherUtils.h" />
+    <ClInclude Include="MasterControlProgram.h" />
+    <ClInclude Include="options.h" />
+    <ClInclude Include="patcher.h" />
+    <ClInclude Include="registry.h" />
+    <ClInclude Include="resource_CrypticLauncher.h" />
+    <ClInclude Include="systemtray.h" />
+    <ClInclude Include="xfers_dialog.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\Cryptic\tools\bin\CrypticError.exe" />
+    <None Include="..\..\..\Cryptic\tools\bin\dbghelp.dll" />
+    <None Include="Champions.ico" />
+    <None Include="cryptic.ico" />
+    <None Include="CrypticLauncher.gdf.xml" />
+    <None Include="CrypticLauncher.xml" />
+    <None Include="flags\cn.bmp" />
+    <None Include="flags\de.bmp" />
+    <None Include="flags\es.bmp" />
+    <None Include="flags\fr.bmp" />
+    <None Include="flags\jp.bmp" />
+    <None Include="flags\kr.bmp" />
+    <None Include="flags\us.bmp" />
+    <None Include="GDF\DEU\Champions Online.gdf.xml" />
+    <None Include="GDF\ENU\Champions Online.gdf.xml" />
+    <None Include="GDF\FRA\Champions Online.gdf.xml" />
+    <None Include="GDF\NEU\Champions Online.gdf.xml" />
+    <None Include="manualstrings.txt" />
+    <None Include="messages\de.dat" />
+    <None Include="messages\en.dat" />
+    <None Include="messages\fr.dat" />
+    <None Include="version.info" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\libs\HttpLib\HttpLib.vcxproj">
+      <Project>{2acc94ec-3e38-48bd-b97f-5b46328a4aef}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\libs\PatchClientLib\PatchClientLib.vcxproj">
+      <Project>{487db8d6-6faf-4e86-9800-75088911a703}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\libs\StructParserStub\StructParserStub.vcxproj">
+      <Project>{1d29e421-93b2-4e32-9186-7fafc3971c5b}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\libs\UtilitiesLib\UtilitiesLib.vcxproj">
+      <Project>{a6741f6e-5476-4f9f-9d65-62b54aaf1d08}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CrypticLauncher.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

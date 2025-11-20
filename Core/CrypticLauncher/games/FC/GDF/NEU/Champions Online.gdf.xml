@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameDefinitionFile xmlns:baseTypes="urn:schemas-microsoft-com:GamesExplorerBaseTypes.v1" xmlns="urn:schemas-microsoft-com:GameDescription.v1">
+    <GameDefinition gameID="{A8DA2119-F9C8-40E5-9003-755C5D60813E}">
+        <Name>Champions Online</Name>
+        <Description></Description>
+        <ReleaseDate>2009-09-01</ReleaseDate>
+        <Genres>
+            <Genre>MMORPG</Genre>
+            <Genre>Action</Genre>
+        </Genres>
+        <Version>
+            <VersionFile path="Champions Online.exe" />
+        </Version>
+        <WindowsSystemPerformanceRating minimum="4.1" recommended="5.6" />
+        <Developers>
+            <Developer URI="http://www.crypticstudios.com/">Cryptic Studios</Developer>
+        </Developers>
+        <Publishers>
+            <Publisher URI="http://www.perfectworld.com/">Perfect World</Publisher>
+        </Publishers>
+        <GameExecutables>
+            <GameExecutable path="Champions Online.exe" />
+            <GameExecutable path="Champions Online\Playtest\GameClient.exe" />
+            <GameExecutable path="Champions Online\Tip\GameClient.exe" />
+            <GameExecutable path="Champions Online\Live\GameClient.exe" />
+            <GameExecutable path="Champions Online\Avatar\GameClient.exe" />
+        </GameExecutables>
+        <Ratings>
+            <Rating ratingSystemID="{768BD93D-63BE-46A9-8994-0B53C4B5248F}" ratingID="{18CD34B7-7AA3-42b9-A303-5A729B2FF228}">
+                <Descriptor descriptorID="{0CFCF432-3544-4f78-9426-07A36843E6BA}" />
+                <Descriptor descriptorID="{9BE7B916-F237-4328-8157-24282DA66151}" />
+                <Descriptor descriptorID="{E04AAEE8-950C-43c4-B75C-D87736A7FAFD}" />
+                <Descriptor descriptorID="{B54162A2-F67F-46dc-9ED5-F6067520EC94}" />
+            </Rating>
+            <Rating ratingSystemID="{C705DCF4-6AFE-4f4f-BC51-21807E4E5CFB}" ratingID="{B3F8E60B-DF77-4104-88AC-F5919C64649A}" />
+            <Rating ratingSystemID="{36798944-B235-48ac-BF21-E25671F597EE}" ratingID="{CEC5DB5A-B4C9-4809-96C6-39CE715E4790}">
+                <Descriptor descriptorID="{F110F831-9412-40c9-860A-B489407ED374}" />
+            </Rating>
+        </Ratings>
+    </GameDefinition>
+</GameDefinitionFile>

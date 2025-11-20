@@ -1,0 +1,81 @@
+# PCL error strings
+Success
+Current transfer queue is full
+File not found
+Unexpected response from server
+Attempted view is invalid
+The filespec is not loaded
+The manifest is not loaded
+A file did not match any filespec
+A hogg in the filespec is null
+The attempt to name a view has failed
+The attempt to set an author has failed
+The checkin attempt has failed
+The attempt to lock a file has failed
+The connection to the server was lost
+The client is currently working on another command
+The connection was idle for too long
+No file was found that could indicate the current view
+Patch DLL not loaded
+No file that contains connection parameters was found
+A dialog box was passed a bad message
+The stored header for the file is not up to date
+The header hogg is not loaded
+The requested file was not in the specified root folder
+The client pointer passed in for the patcher was null
+No error string was found for some other error, and you looked up this one too.
+Some parameter passed into a patchclientlib function was NULL
+The buffer provided for a string was too small
+The specific function called was not loaded from the Patch DLL
+The net comm was not able to create a link for the patcher
+The patch client has an empty manifest
+A hog returned an error while trying to read
+A locked file could not start its transfer
+The patchclient got a message while it was in a state with no response function.
+Some parameter passed into a patchclientlib function was found to be invalid.
+The programmer screwed up somewhere, and something that shouldn't happen did.
+A file was locked that could not be open for writing.
+The client was not waiting for notification from the server.
+No error string was found for the specified error
+
+# Options dialog
+@Options
+@Fullscreen
+@Fast launch
+@Safe mode
+@Force verify
+@Show all games
+@Language
+@Proxy
+@Patch via proxy
+@Show tray icon
+@Minimize to tray
+@Disable on-demand patching
+@Advanced command line
+@OK
+@Cancel
+
+# Autopatch dialog
+@Cryptic Launcher Autoupdate
+@Trying to update the launcher. Please be patient.
+Tried connecting 1 time.
+Tried connecting {n} times.
+
+# GDF strings
+@MMORPG
+@Action
+
+# Controller Tracker error messages
+Ticket parsing failed
+Account server connection failed
+User authentication failed
+Unknown error
+No shards were found
+
+# accountnet error messages
+Invalid username or password.
+Too many attempts; please try again later.
+This account has been disabled.
+No Cryptic account linked to Perfect World credentials.
+Please log in using your Perfect World account name.
+This account has been banned.

@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\libs\XRenderLib\pub\DXVersionCheck.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MasterControlProgram\CommandLineScreen.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MasterControlProgram\MCP_ControllerTracker.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MasterControlProgram\mcp_win_init.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoGen\CrypticLauncher_AutoGen_1.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoGen\CrypticLauncher_AutoGen_2.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="embedbrowser.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameDetails.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="launcherUtils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MasterControlProgram.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="options.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="patcher.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="registry.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StartingScreen.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="systemtray.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="xfers_dialog.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\libs\XRenderLib\pub\DXVersionCheck.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NewControllerTracker\pub\NewControllerTracker_Pub.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="CrypticLauncher.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="embedbrowser.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameDetails.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="launcherUtils.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MasterControlProgram.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="options.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="patcher.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="registry.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource_CrypticLauncher.h" />
+    <ClInclude Include="systemtray.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="xfers_dialog.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="AutoGen">
+      <UniqueIdentifier>{acdb95d7-d788-494c-8009-488892bc576d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExternHeaders">
+      <UniqueIdentifier>{104fafb0-94c7-45d0-a721-e2b129374962}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GDFs">
+      <UniqueIdentifier>{a4b6b1c6-8aca-433f-8091-fe8196af7890}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Images">
+      <UniqueIdentifier>{6f22dd1c-9933-4ce7-a95d-631f3af997c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Messages">
+      <UniqueIdentifier>{8d730db0-b151-4810-84d0-0a4a05ef96ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\Cryptic\tools\bin\CrypticError.exe" />
+    <None Include="..\..\..\Cryptic\tools\bin\dbghelp.dll" />
+    <None Include="Champions.ico">
+      <Filter>Images</Filter>
+    </None>
+    <None Include="cryptic.ico">
+      <Filter>Images</Filter>
+    </None>
+    <None Include="CrypticLauncher.gdf.xml" />
+    <None Include="CrypticLauncher.xml" />
+    <None Include="flags\cn.bmp">
+      <Filter>Images</Filter>
+    </None>
+    <None Include="flags\de.bmp">
+      <Filter>Images</Filter>
+    </None>
+    <None Include="flags\es.bmp">
+      <Filter>Images</Filter>
+    </None>
+    <None Include="flags\fr.bmp">
+      <Filter>Images</Filter>
+    </None>
+    <None Include="flags\jp.bmp">
+      <Filter>Images</Filter>
+    </None>
+    <None Include="flags\kr.bmp">
+      <Filter>Images</Filter>
+    </None>
+    <None Include="flags\us.bmp">
+      <Filter>Images</Filter>
+    </None>
+    <None Include="GDF\DEU\Champions Online.gdf.xml">
+      <Filter>GDFs</Filter>
+    </None>
+    <None Include="GDF\ENU\Champions Online.gdf.xml">
+      <Filter>GDFs</Filter>
+    </None>
+    <None Include="GDF\FRA\Champions Online.gdf.xml">
+      <Filter>GDFs</Filter>
+    </None>
+    <None Include="GDF\NEU\Champions Online.gdf.xml">
+      <Filter>GDFs</Filter>
+    </None>
+    <None Include="manualstrings.txt" />
+    <None Include="messages\de.dat">
+      <Filter>Messages</Filter>
+    </None>
+    <None Include="messages\en.dat">
+      <Filter>Messages</Filter>
+    </None>
+    <None Include="messages\fr.dat">
+      <Filter>Messages</Filter>
+    </None>
+    <None Include="version.info" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CrypticLauncher.rc" />
+  </ItemGroup>
+</Project>

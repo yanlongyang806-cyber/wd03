@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Full Debug|Win32">
+      <Configuration>Full Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Full Debug|x64">
+      <Configuration>Full Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{581FBCF3-270A-4CE6-A071-94740181489A}</ProjectGuid>
+    <RootNamespace>ObjectDB</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="..\..\PropertySheets\GeneralSettings.props" />
+    <Import Project="..\..\PropertySheets\CrypticApplication.props" />
+    <Import Project="..\..\PropertySheets\LinkerOptimizations.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="..\..\PropertySheets\GeneralSettings.props" />
+    <Import Project="..\..\PropertySheets\CrypticApplication.props" />
+    <Import Project="..\..\PropertySheets\LinkerOptimizations.props" />
+    <Import Project="..\..\PropertySheets\x64.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'" Label="PropertySheets">
+    <Import Project="..\..\PropertySheets\GeneralSettings.props" />
+    <Import Project="..\..\PropertySheets\CrypticApplication.props" />
+    <Import Project="..\..\PropertySheets\LinkerOptimizations.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|x64'" Label="PropertySheets">
+    <Import Project="..\..\PropertySheets\GeneralSettings.props" />
+    <Import Project="..\..\PropertySheets\CrypticApplication.props" />
+    <Import Project="..\..\PropertySheets\LinkerOptimizations.props" />
+    <Import Project="..\..\PropertySheets\x64.props" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectName)X64</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">$(ProjectName)FD</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Full Debug|x64'">$(ProjectName)X64FD</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/we4047 /we4133 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories>../../libs/ServerLib/pub;../../libs/ObjectDB/pub;../../3rdparty/zlib;../common/utils;../common/components;../common/network;../common;../dbserver;../Mapserver/dbcomm;../../libs/Common;../../libs/ServerLib/objects;../../CrossRoads/Common;../../CrossRoads/Common/Entity;../../CrossRoads/Common/Mission;../../libs/HttpLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>OBJECTDB=1;WIN32;_DEBUG;_CONSOLE;USEZLIB=1;_CRTDBG_MAP_ALLOC=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/FIXED:NO /LARGEADDRESSAWARE %(AdditionalOptions)</AdditionalOptions>
+      <StripPrivateSymbols>
+      </StripPrivateSymbols>
+      <SubSystem>Console</SubSystem>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <PreBuildEvent>
+      <Command>..\..\utilities\bin\structparser X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)</Command>
+    </PreBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions>/we4047 /we4133 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories>../../libs/ServerLib/pub;../../libs/ObjectDB/pub;../../3rdparty/zlib;../common/utils;../common/components;../common/network;../common;../dbserver;../Mapserver/dbcomm;../../libs/Common;../../libs/ServerLib/objects;../../CrossRoads/Common;../../CrossRoads/Common/Entity;../../CrossRoads/Common/Mission;../../libs/HttpLib;../../3rdparty/xdk/win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>OBJECTDB=1;WIN32;_DEBUG;_CONSOLE;USEZLIB=1;_CRTDBG_MAP_ALLOC=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/FIXED:NO /LARGEADDRESSAWARE %(AdditionalOptions)</AdditionalOptions>
+      <StripPrivateSymbols>
+      </StripPrivateSymbols>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <PreBuildEvent>
+      <Command>..\..\utilities\bin\structparser X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)</Command>
+    </PreBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/we4047 /we4133 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>../../libs/ServerLib/pub;../../libs/ObjectDB/pub;../../3rdparty/zlib;../common/utils;../common/components;../common/network;../common;../dbserver;../Mapserver/dbcomm;../../libs/Common;../../libs/ServerLib/objects;../../CrossRoads/Common;../../CrossRoads/Common/Entity;../../CrossRoads/Common/Mission;../../libs/HttpLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>OBJECTDB=1;WIN32;_DEBUG;_CONSOLE;USEZLIB=1;_CRTDBG_MAP_ALLOC=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/MACHINE:I386 /FIXED:NO /LARGEADDRESSAWARE %(AdditionalOptions)</AdditionalOptions>
+      <StripPrivateSymbols>
+      </StripPrivateSymbols>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <PreBuildEvent>
+      <Command>..\..\utilities\bin\structparser X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)</Command>
+    </PreBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions>/we4047 /we4133 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>../../libs/ServerLib/pub;../../libs/ObjectDB/pub;../../3rdparty/zlib;../common/utils;../common/components;../common/network;../common;../dbserver;../Mapserver/dbcomm;../../libs/Common;../../libs/ServerLib/objects;../../CrossRoads/Common;../../CrossRoads/Common/Entity;../../CrossRoads/Common/Mission;../../libs/HttpLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN64;OBJECTDB=1;WIN32;_DEBUG;_CONSOLE;USEZLIB=1;_CRTDBG_MAP_ALLOC=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/FIXED:NO /LARGEADDRESSAWARE %(AdditionalOptions)</AdditionalOptions>
+      <StripPrivateSymbols>
+      </StripPrivateSymbols>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <PreBuildEvent>
+      <Command>..\..\utilities\bin\structparser X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)</Command>
+    </PreBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\CrossRoads\Common\AutoGen\AppServerLib_autogen_RemoteFuncs.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\AutoGen\ChatRelay_autogen_RemoteFuncs.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\AutoGen\GameServerLib_autogen_RemoteFuncs.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\chatCommonStructs.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\GameAccountData\GameAccountData.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\guildCommonStructs.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Login2Common.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\Login2ServerCommon.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\LoginCommon.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\microtransactions_common.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\PvPGameCommon.c" />
+    <ClCompile Include="..\..\CrossRoads\Common\queue_common_structs.c" />
+    <ClCompile Include="..\Common\AutoGen\ChatServer_autogen_RemoteFuncs.c" />
+    <ClCompile Include="..\Common\AutoGen\HeadshotServer_autogen_RemoteFuncs.c" />
+    <ClCompile Include="..\Common\AutoGen\ObjectDB_autogen_RemoteFuncs.c" />
+    <ClCompile Include="..\Common\AutoGen\ObjectDB_autotransactions_autogen_wrappers.c" />
+    <ClCompile Include="AutoGen\ObjectDB_AutoGen_1.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="AutoGen\ObjectDB_AutoGen_2.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="DatabaseTest\DatabaseTest.c" />
+    <ClCompile Include="DatabaseTest\DatabaseTransactionTests.c" />
+    <ClCompile Include="DatabaseTest\FakeGameServer.c" />
+    <ClCompile Include="DatabaseTest\TestTransClient.c" />
+    <ClCompile Include="DatabaseTest\TestTransHarness.c" />
+    <ClCompile Include="dbCharacterChoice.c" />
+    <ClCompile Include="dbClone.c" />
+    <ClCompile Include="dbContainerRestore.c" />
+    <ClCompile Include="dbGenericDatabaseThreads.c" />
+    <ClCompile Include="dbLocalTransactionManager.c" />
+    <ClCompile Include="dbLogin2.c" />
+    <ClCompile Include="dbOfflining.c" />
+    <ClCompile Include="dbQuery.c">
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+    </ClCompile>
+    <ClCompile Include="dbQueryParser.c" />
+    <ClCompile Include="dbRemoteCommands.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AnySuitable</InlineFunctionExpansion>
+    </ClCompile>
+    <ClCompile Include="dbReplication.c">
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+    </ClCompile>
+    <ClCompile Include="dbSubscribe.c" />
+    <ClCompile Include="dbXMLRPC.c" />
+    <ClCompile Include="ObjectDB.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+    </ClCompile>
+    <ClCompile Include="ObjectDBMain.c">
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\CrossRoads\Common\chatCommon.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\chatCommonStructs.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\CostumeCommon.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\AuctionLotEnums.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\GameAccountData\GameAccountData.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\guildCommonStructs.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Login2Common.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Login2ServerCommon.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\LoginCommon.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\microtransactions_common.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\PvPGameCommon.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\queue_common_structs.h" />
+    <ClInclude Include="..\..\libs\ServerLib\pub\PlayerBooter.h" />
+    <ClInclude Include="..\..\libs\ServerLib\pub\svrGlobalInfo.h" />
+    <ClInclude Include="..\..\libs\UtilitiesLib\components\GlobalTypes.h" />
+    <ClInclude Include="..\..\libs\UtilitiesLib\utils\StringUtil.h" />
+    <ClInclude Include="..\Controller\Pub\ControllerPub.h" />
+    <ClInclude Include="DatabaseTest\DatabaseTest.h" />
+    <ClInclude Include="DatabaseTest\DatabaseTransactionTests.h" />
+    <ClInclude Include="DatabaseTest\FakeGameServer.h" />
+    <ClInclude Include="DatabaseTest\TestTransClient.h" />
+    <ClInclude Include="DatabaseTest\TestTransHarness.h" />
+    <ClInclude Include="dbCharacterChoice.h" />
+    <ClInclude Include="dbContainerRestore.h" />
+    <ClInclude Include="dbGenericDatabaseThreads.h" />
+    <ClInclude Include="dbLocalTransactionManager.h" />
+    <ClInclude Include="dbLogin2.h" />
+    <ClInclude Include="dbOfflining.h" />
+    <ClInclude Include="dbSubscribe.h" />
+    <ClInclude Include="ObjectDB_AnonAutoRunIncludes.h" />
+    <ClInclude Include="pub\dbClone.h" />
+    <ClInclude Include="pub\dbQuery.h" />
+    <ClInclude Include="pub\dbQueryParser.h" />
+    <ClInclude Include="pub\dbReplication.h" />
+    <ClInclude Include="pub\ObjectDB.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\libs\HttpLib\HttpLib.vcxproj">
+      <Project>{2acc94ec-3e38-48bd-b97f-5b46328a4aef}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\libs\PatchClientLib\PatchClientLib.vcxproj">
+      <Project>{487db8d6-6faf-4e86-9800-75088911a703}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\libs\ServerLib\ServerLib.vcxproj">
+      <Project>{dd475a7c-b1d4-43c4-acb7-d73c24be1eb7}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\libs\StructParserStub\StructParserStub.vcxproj">
+      <Project>{1d29e421-93b2-4e32-9186-7fafc3971c5b}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\libs\UtilitiesLib\UtilitiesLib.vcxproj">
+      <Project>{a6741f6e-5476-4f9f-9d65-62b54aaf1d08}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

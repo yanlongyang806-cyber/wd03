@@ -1,0 +1,366 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\Common\accountCommon.c">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\AccountDataCache.c">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\AutoGen\AccountServer_autogen_RemoteFuncs.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\AutoGen\AccountServer_autogen_SlowFuncs.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\AutoGen\AccountServer_autotransactions_autogen_wrappers.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\DiscountShared.c">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\TextFilterCommon.c">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="AccountEncryption.c" />
+    <ClCompile Include="AccountIntegration.c" />
+    <ClCompile Include="AccountLog.c" />
+    <ClCompile Include="AccountLoginDecrypt.c" />
+    <ClCompile Include="accountMain.c" />
+    <ClCompile Include="AccountManagement.c" />
+    <ClCompile Include="AccountReporting.c" />
+    <ClCompile Include="AccountServer.c" />
+    <ClCompile Include="AccountServerConfig.c" />
+    <ClCompile Include="AccountTransactionLog.c" />
+    <ClCompile Include="AutoGen\AccountServer_AutoGen_1.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoGen\AccountServer_AutoGen_2.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="Billing\Account\billingAccount.c">
+      <Filter>Billing\Account</Filter>
+    </ClCompile>
+    <ClCompile Include="Billing\Activity\billingActivity.c">
+      <Filter>Billing\Activity</Filter>
+    </ClCompile>
+    <ClCompile Include="Billing\AutoBill\ActivateSubscription.c">
+      <Filter>Billing\AutoBill</Filter>
+    </ClCompile>
+    <ClCompile Include="Billing\AutoBill\CancelSubscription.c">
+      <Filter>Billing\AutoBill</Filter>
+    </ClCompile>
+    <ClCompile Include="Billing\AutoBill\FetchChangedAutoBills.c">
+      <Filter>Billing\AutoBill</Filter>
+    </ClCompile>
+    <ClCompile Include="Billing\AutoBill\GrantExtraDays.c">
+      <Filter>Billing\AutoBill</Filter>
+    </ClCompile>
+    <ClCompile Include="Billing\AutoBill\UpdateActiveSubscriptions.c">
+      <Filter>Billing\AutoBill</Filter>
+    </ClCompile>
+    <ClCompile Include="Billing\billing.c">
+      <Filter>Billing</Filter>
+    </ClCompile>
+    <ClCompile Include="Billing\Product\billingProduct.c">
+      <Filter>Billing\Product</Filter>
+    </ClCompile>
+    <ClCompile Include="Billing\redact.c">
+      <Filter>Billing</Filter>
+    </ClCompile>
+    <ClCompile Include="Billing\Refund\billingRefund.c">
+      <Filter>Billing\Refund</Filter>
+    </ClCompile>
+    <ClCompile Include="Billing\SOAPInterface\stdsoap2.c">
+      <Filter>Billing\SOAPInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="Billing\SOAPInterface\VindiciaStructsC.c">
+      <Filter>Billing\SOAPInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="Billing\SOAPInterface\VindiciaStructsClient.c">
+      <Filter>Billing\SOAPInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="Billing\Steam.c">
+      <Filter>Billing</Filter>
+    </ClCompile>
+    <ClCompile Include="Billing\Subscription\billingSubscription.c">
+      <Filter>Billing\Subscription</Filter>
+    </ClCompile>
+    <ClCompile Include="Billing\Transaction\billingTransaction.c">
+      <Filter>Billing\Transaction</Filter>
+    </ClCompile>
+    <ClCompile Include="Billing\Transaction\transactionCancel.c">
+      <Filter>Billing\Transaction</Filter>
+    </ClCompile>
+    <ClCompile Include="Billing\Transaction\transactionQuery.c">
+      <Filter>Billing\Transaction</Filter>
+    </ClCompile>
+    <ClCompile Include="Billing\vindicia.c">
+      <Filter>Billing</Filter>
+    </ClCompile>
+    <ClCompile Include="Discount.c" />
+    <ClCompile Include="GcsInterface.c" />
+    <ClCompile Include="GlobalData.c" />
+    <ClCompile Include="ImportExport.c" />
+    <ClCompile Include="InternalSubs.c" />
+    <ClCompile Include="KeyValues\KeyValueChain.c">
+      <Filter>KeyValues</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyValues\KeyValues.c">
+      <Filter>KeyValues</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyValues\KeyValueTest.c">
+      <Filter>KeyValues</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyValues\VirtualCurrency.c">
+      <Filter>KeyValues</Filter>
+    </ClCompile>
+    <ClCompile Include="MachineID.c" />
+    <ClCompile Include="MaintenanceCommands.c" />
+    <ClCompile Include="Product.c" />
+    <ClCompile Include="ProductKey.c" />
+    <ClCompile Include="ProxyInterface\AccountProxy.c">
+      <Filter>ProxyInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="ProxyInterface\Proxy.c">
+      <Filter>ProxyInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="PurchaseProduct.c" />
+    <ClCompile Include="rpn.c" />
+    <ClCompile Include="SubCreate.c" />
+    <ClCompile Include="Subscription.c" />
+    <ClCompile Include="SubscriptionHistory.c" />
+    <ClCompile Include="UpdatePaymentMethod.c" />
+    <ClCompile Include="ValueLockList.c" />
+    <ClCompile Include="WebInterface\AccountSearch.c">
+      <Filter>WebInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="WebInterface\WebInterface.c">
+      <Filter>WebInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="WebInterface\wiAccounts.c">
+      <Filter>WebInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="WebInterface\wiAdmin.c">
+      <Filter>WebInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="WebInterface\wiCommon.c">
+      <Filter>WebInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="WebInterface\WikiToHTML.c">
+      <Filter>WebInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="WebInterface\wiProductKeys.c">
+      <Filter>WebInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="WebInterface\wiProducts.c">
+      <Filter>WebInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="WebInterface\wiSubscriptions.c">
+      <Filter>WebInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="WebInterface\XMLInterface.c">
+      <Filter>WebInterface</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\libs\Common\GlobalComm.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\UtilitiesLib\net\accountnet.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\UtilitiesLib\utils\HttpClient.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\UtilitiesLib\utils\Money.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\accountCommon.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\AccountDataCache.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\DiscountShared.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="AccountEncryption.h" />
+    <ClInclude Include="AccountIntegration.h" />
+    <ClInclude Include="AccountLog.h" />
+    <ClInclude Include="AccountLoginDecrypt.h" />
+    <ClInclude Include="AccountManagement.h" />
+    <ClInclude Include="AccountReporting.h" />
+    <ClInclude Include="AccountServer.h" />
+    <ClInclude Include="AccountServerConfig.h" />
+    <ClInclude Include="AccountTransactionLog.h" />
+    <ClInclude Include="Billing\Account\billingAccount.h">
+      <Filter>Billing\Account</Filter>
+    </ClInclude>
+    <ClInclude Include="Billing\Activity\billingActivity.h">
+      <Filter>Billing\Activity</Filter>
+    </ClInclude>
+    <ClInclude Include="Billing\AutoBill\ActivateSubscription.h">
+      <Filter>Billing\AutoBill</Filter>
+    </ClInclude>
+    <ClInclude Include="Billing\AutoBill\CancelSubscription.h">
+      <Filter>Billing\AutoBill</Filter>
+    </ClInclude>
+    <ClInclude Include="Billing\AutoBill\FetchChangedAutoBills.h">
+      <Filter>Billing\AutoBill</Filter>
+    </ClInclude>
+    <ClInclude Include="Billing\AutoBill\GrantExtraDays.h">
+      <Filter>Billing\AutoBill</Filter>
+    </ClInclude>
+    <ClInclude Include="Billing\AutoBill\UpdateActiveSubscriptions.h">
+      <Filter>Billing\AutoBill</Filter>
+    </ClInclude>
+    <ClInclude Include="Billing\billing.h">
+      <Filter>Billing</Filter>
+    </ClInclude>
+    <ClInclude Include="Billing\Product\billingProduct.h">
+      <Filter>Billing\Product</Filter>
+    </ClInclude>
+    <ClInclude Include="Billing\redact.h">
+      <Filter>Billing</Filter>
+    </ClInclude>
+    <ClInclude Include="Billing\Refund\billingRefund.h">
+      <Filter>Billing\Refund</Filter>
+    </ClInclude>
+    <ClInclude Include="Billing\SOAPInterface\stdsoap2.h">
+      <Filter>Billing\SOAPInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="Billing\SOAPInterface\VindiciaStructsH.h">
+      <Filter>Billing\SOAPInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="Billing\SOAPInterface\VindiciaStructsStub.h">
+      <Filter>Billing\SOAPInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="Billing\Steam.h">
+      <Filter>Billing</Filter>
+    </ClInclude>
+    <ClInclude Include="Billing\Subscription\billingSubscription.h">
+      <Filter>Billing\Subscription</Filter>
+    </ClInclude>
+    <ClInclude Include="Billing\Transaction\billingTransaction.h">
+      <Filter>Billing\Transaction</Filter>
+    </ClInclude>
+    <ClInclude Include="Billing\Transaction\transactionCancel.h">
+      <Filter>Billing\Transaction</Filter>
+    </ClInclude>
+    <ClInclude Include="Billing\Transaction\transactionQuery.h">
+      <Filter>Billing\Transaction</Filter>
+    </ClInclude>
+    <ClInclude Include="Billing\vindicia.h">
+      <Filter>Billing</Filter>
+    </ClInclude>
+    <ClInclude Include="Discount.h" />
+    <ClInclude Include="ErrorStrings.h" />
+    <ClInclude Include="GcsInterface.h" />
+    <ClInclude Include="GlobalData.h" />
+    <ClInclude Include="ImportExport.h" />
+    <ClInclude Include="InternalSubs.h" />
+    <ClInclude Include="KeyValues\KeyValueChain.h">
+      <Filter>KeyValues</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyValues\KeyValues.h">
+      <Filter>KeyValues</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyValues\VirtualCurrency.h">
+      <Filter>KeyValues</Filter>
+    </ClInclude>
+    <ClInclude Include="MachineID.h" />
+    <ClInclude Include="Product.h" />
+    <ClInclude Include="ProductKey.h" />
+    <ClInclude Include="ProxyInterface\AccountProxy.h">
+      <Filter>ProxyInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="ProxyInterface\Proxy.h">
+      <Filter>ProxyInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="PurchaseProduct.h" />
+    <ClInclude Include="rpn.h" />
+    <ClInclude Include="SubCreate.h" />
+    <ClInclude Include="Subscription.h" />
+    <ClInclude Include="SubscriptionHistory.h" />
+    <ClInclude Include="UpdatePaymentMethod.h" />
+    <ClInclude Include="ValueLockList.h" />
+    <ClInclude Include="WebInterface\AccountSearch.h">
+      <Filter>WebInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="WebInterface\WebInterface.h">
+      <Filter>WebInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="WebInterface\wiAccounts.h">
+      <Filter>WebInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="WebInterface\wiAdmin.h">
+      <Filter>WebInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="WebInterface\wiCommon.h">
+      <Filter>WebInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="WebInterface\WikiToHTML.h">
+      <Filter>WebInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="WebInterface\wiProductKeys.h">
+      <Filter>WebInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="WebInterface\wiProducts.h">
+      <Filter>WebInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="WebInterface\wiSubscriptions.h">
+      <Filter>WebInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="WebInterface\XMLInterface.h">
+      <Filter>WebInterface</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="AutoGen">
+      <UniqueIdentifier>{9ca497ed-09df-4645-97a9-c3606a151ff3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Billing">
+      <UniqueIdentifier>{33169a6f-514e-436b-ba6b-097ce34be1aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Billing\Account">
+      <UniqueIdentifier>{b56ab7b8-d3c9-4263-84c4-0c39c053a0db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Billing\Activity">
+      <UniqueIdentifier>{83c3b8c8-196a-4f22-b1aa-6d099c8d0f20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Billing\AutoBill">
+      <UniqueIdentifier>{ebae678b-72de-4bc0-a09d-9144e1b09368}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Billing\Product">
+      <UniqueIdentifier>{0eff44ca-09c3-4bee-8b7b-d1f9071e96c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Billing\Refund">
+      <UniqueIdentifier>{df5ce042-f13f-40ba-9a4f-677ee73dd533}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Billing\SOAPInterface">
+      <UniqueIdentifier>{b64f7379-0021-4280-9d4a-f12a6b56f5a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Billing\Subscription">
+      <UniqueIdentifier>{a4b51ec3-6935-4cda-84ed-421856f50490}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Billing\Transaction">
+      <UniqueIdentifier>{08212a8c-44a9-4dc4-8463-6d7bfc8d56a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{478c7b0f-c3e7-44d5-9b1d-c64f4d21d521}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExternHeaders">
+      <UniqueIdentifier>{beeb1f69-3905-47ff-91da-4b6a826a412f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="KeyValues">
+      <UniqueIdentifier>{7893c30c-fc46-44f0-b44f-86987db0f189}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ProxyInterface">
+      <UniqueIdentifier>{4cb4fdf4-47ac-4e6e-b225-d05578f0371c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WebInterface">
+      <UniqueIdentifier>{c357ea16-df17-4851-9c07-c56003e5536d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

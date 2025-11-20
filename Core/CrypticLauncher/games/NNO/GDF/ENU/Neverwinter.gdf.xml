@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameDefinitionFile xmlns:baseTypes="urn:schemas-microsoft-com:GamesExplorerBaseTypes.v1" xmlns="urn:schemas-microsoft-com:GameDescription.v1">
+    <GameDefinition gameID="{209D3020-5322-4827-859D-1EF94D197187}">
+        <Name>Neverwinter</Name>
+        <Description>Neverwinter</Description>
+        <ReleaseDate>2010-01-01</ReleaseDate>
+        <Genres>
+            <Genre>MMORPG</Genre>
+            <Genre>Action</Genre>
+        </Genres>
+        <Version>
+            <VersionFile path="Neverwinter.exe" />
+        </Version>
+        <WindowsSystemPerformanceRating minimum="1" recommended="1" />
+        <Developers>
+            <Developer URI="http://www.crypticstudios.com/">Cryptic Studios</Developer>
+        </Developers>
+        <Publishers>
+            <Publisher URI="http://www.perfectworld.com/">Perfect World</Publisher>
+        </Publishers>
+        <GameExecutables>
+            <GameExecutable path="Neverwinter.exe" />
+            <GameExecutable path="Neverwinter\Live\GameClient.exe" />
+            <GameExecutable path="Neverwinter\Playtest\GameClient.exe" />
+            <GameExecutable path="Neverwinter\Tip\GameClient.exe" />
+        </GameExecutables>
+    </GameDefinition>
+</GameDefinitionFile>

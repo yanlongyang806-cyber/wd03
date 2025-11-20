@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Full Debug|Win32">
+      <Configuration>Full Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{307EAEBE-2400-4E95-8C8B-A335D034868B}</ProjectGuid>
+    <RootNamespace>MasterControlProgram</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="..\..\PropertySheets\GeneralSettings.props" />
+    <Import Project="..\..\PropertySheets\CrypticApplication.props" />
+    <Import Project="..\..\PropertySheets\LinkerOptimizations.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'" Label="PropertySheets">
+    <Import Project="..\..\PropertySheets\GeneralSettings.props" />
+    <Import Project="..\..\PropertySheets\CrypticApplication.props" />
+    <Import Project="..\..\PropertySheets\LinkerOptimizations.props" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">$(ProjectName)FD</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../3rdparty/xdk/win32;../../libs/HostIOLib;../../libs/editlib/pub;../../libs/inputlib/pub;../../libs/ui2lib/pub;../../libs/ServerLib\pub;../../3rdparty/zlib;../common/utils;../common/components;../common/network;../common;../../libs/Common;../../libs/renderers/pub;../../libs/worldlib/pub;../../libs/graphicslib/pub;../../libs/HttpLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRTDBG_MAP_ALLOC=1;STANDALONE=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>psapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../../3rdparty/xdk/win32lib;..\..\3rdparty\bin;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>..\..\utilities\bin\structparser X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)</Command>
+    </PreBuildEvent>
+    <PreLinkEvent>
+      <Command>CopyMCP $(TargetPath) $(TargetFileName)</Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../3rdparty/xdk/win32;../../libs/HostIOLib;../../libs/editlib/pub;../../libs/inputlib/pub;../../libs/ui2lib/pub;../../libs/ServerLib\pub;../../3rdparty/zlib;../common/utils;../common/components;../common/network;../common;../../libs/Common;../../libs/renderers/pub;../../libs/worldlib/pub;../../libs/graphicslib/pub;../../libs/HttpLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRTDBG_MAP_ALLOC=1;STANDALONE=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>psapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../../3rdparty/xdk/win32lib;..\..\3rdparty\bin;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>..\..\utilities\bin\structparser X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)</Command>
+    </PreBuildEvent>
+    <PreLinkEvent>
+      <Command>CopyMCP $(TargetPath) $(TargetFileName)</Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\libs\HostIOLib\xboxHostIO.c" />
+    <ClCompile Include="accountinfo.c" />
+    <ClCompile Include="ArtistSetup.c" />
+    <ClCompile Include="ArtistTools.c" />
+    <ClCompile Include="AutoGen\MasterControlProgram_AutoGen_1.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="AutoGen\MasterControlProgram_AutoGen_2.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="CommandLineScreen.c" />
+    <ClCompile Include="ControllerScriptScreen.c" />
+    <ClCompile Include="genericmessage.c" />
+    <ClCompile Include="MainScreen.c" />
+    <ClCompile Include="MasterControlProgram.c" />
+    <ClCompile Include="MCP_ControllerTracker.c" />
+    <ClCompile Include="MCP_TestBed.c" />
+    <ClCompile Include="mcp_win_init.c" />
+    <ClCompile Include="MCPConfig.c" />
+    <ClCompile Include="MCPErrors.c" />
+    <ClCompile Include="MCPGimmeCheckins.c" />
+    <ClCompile Include="MCPHttp.c" />
+    <ClCompile Include="MCPMemLeakFinder.c" />
+    <ClCompile Include="MCPPurgeLogFiles.c" />
+    <ClCompile Include="MCPSVNCheckins.c" />
+    <ClCompile Include="MCPUtilities.c" />
+    <ClCompile Include="MCPXboxCP.c" />
+    <ClCompile Include="OtherOptions.c" />
+    <ClCompile Include="quitmessage.c" />
+    <ClCompile Include="SentryServerTestScreen.c" />
+    <ClCompile Include="ServerList.c" />
+    <ClCompile Include="ServerMonitorControlScreen.c" />
+    <ClCompile Include="StartingScreen.c" />
+    <ClCompile Include="SuperEscaperScreen.c" />
+    <ClCompile Include="TimingConversionScreen.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\libs\Common\ugcprojectcommon.h" />
+    <ClInclude Include="..\..\libs\HostIOLib\xboxHostIO.h" />
+    <ClInclude Include="..\..\libs\UtilitiesLib\net\accountnet.h" />
+    <ClInclude Include="..\NewControllerTracker\pub\NewControllerTracker_Pub.h" />
+    <ClInclude Include="accountinfo.h" />
+    <ClInclude Include="ArtistTools.h" />
+    <ClInclude Include="ControllerScriptScreen.h" />
+    <ClInclude Include="genericmessage.h" />
+    <ClInclude Include="MasterControlProgram.h" />
+    <ClInclude Include="MCPConfig.h" />
+    <ClInclude Include="MCPErrors.h" />
+    <ClInclude Include="MCPGimmeCheckins.h" />
+    <ClInclude Include="MCPHttp.h" />
+    <ClInclude Include="MCPMemLeakFinder.h" />
+    <ClInclude Include="MCPPurgeLogFiles.h" />
+    <ClInclude Include="MCPSVNCheckins.h" />
+    <ClInclude Include="MCPUtilities.h" />
+    <ClInclude Include="MCPXboxCP.h" />
+    <ClInclude Include="OtherOptions.h" />
+    <ClInclude Include="quitmessage.h" />
+    <ClInclude Include="resource_mastercontrolprogram.h" />
+    <ClInclude Include="ServerList.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\data\server\MCPServerSetup.txt" />
+    <None Include="..\..\data\server\MemLeakCategories.txt" />
+    <None Include="arrow.bmp" />
+    <None Include="BGBdn.bmp" />
+    <None Include="BGBLoading.bmp" />
+    <None Include="BGBup.bmp" />
+    <None Include="bitmap2.bmp" />
+    <None Include="bitmap5.bmp" />
+    <None Include="black.bmp" />
+    <None Include="copymcp.bat" />
+    <None Include="exclamation point.bmp" />
+    <None Include="icon1.ico" />
+    <None Include="ReadMe.txt" />
+    <None Include="ScriptCompleteWErrors.bmp" />
+    <None Include="ScriptFailed.bmp" />
+    <None Include="ScriptSucceeded.bmp" />
+    <None Include="small exclamation point.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\libs\HttpLib\HttpLib.vcxproj">
+      <Project>{2acc94ec-3e38-48bd-b97f-5b46328a4aef}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\libs\PatchClientLib\PatchClientLib.vcxproj">
+      <Project>{487db8d6-6faf-4e86-9800-75088911a703}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\libs\ServerLib\ServerLib.vcxproj">
+      <Project>{dd475a7c-b1d4-43c4-acb7-d73c24be1eb7}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\libs\StructParserStub\StructParserStub.vcxproj">
+      <Project>{1d29e421-93b2-4e32-9186-7fafc3971c5b}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\libs\UtilitiesLib\UtilitiesLib.vcxproj">
+      <Project>{a6741f6e-5476-4f9f-9d65-62b54aaf1d08}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MasterControlProgram1.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\CrossRoads\Common\AutoGen\AppServerLib_autogen_RemoteFuncs.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\AutoGen\ChatRelay_autogen_RemoteFuncs.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\AutoGen\GameServerLib_autogen_RemoteFuncs.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\chatCommonStructs.c">
+      <Filter>pub</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\GameAccountData\GameAccountData.c">
+      <Filter>ExternHeaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\guildCommonStructs.c">
+      <Filter>pub</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Login2Common.c">
+      <Filter>ExternHeaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\Login2ServerCommon.c">
+      <Filter>ExternHeaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\LoginCommon.c">
+      <Filter>ExternHeaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\microtransactions_common.c">
+      <Filter>ExternHeaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\PvPGameCommon.c">
+      <Filter>pub</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\queue_common_structs.c">
+      <Filter>pub</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\AutoGen\ChatServer_autogen_RemoteFuncs.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\AutoGen\HeadshotServer_autogen_RemoteFuncs.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\AutoGen\ObjectDB_autogen_RemoteFuncs.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\AutoGen\ObjectDB_autotransactions_autogen_wrappers.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoGen\ObjectDB_AutoGen_1.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoGen\ObjectDB_AutoGen_2.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="DatabaseTest\DatabaseTest.c">
+      <Filter>DatabaseTest</Filter>
+    </ClCompile>
+    <ClCompile Include="DatabaseTest\DatabaseTransactionTests.c">
+      <Filter>DatabaseTest</Filter>
+    </ClCompile>
+    <ClCompile Include="DatabaseTest\FakeGameServer.c">
+      <Filter>DatabaseTest</Filter>
+    </ClCompile>
+    <ClCompile Include="DatabaseTest\TestTransClient.c">
+      <Filter>DatabaseTest</Filter>
+    </ClCompile>
+    <ClCompile Include="DatabaseTest\TestTransHarness.c">
+      <Filter>DatabaseTest</Filter>
+    </ClCompile>
+    <ClCompile Include="dbCharacterChoice.c" />
+    <ClCompile Include="dbClone.c" />
+    <ClCompile Include="dbContainerRestore.c" />
+    <ClCompile Include="dbGenericDatabaseThreads.c" />
+    <ClCompile Include="dbLocalTransactionManager.c" />
+    <ClCompile Include="dbLogin2.c" />
+    <ClCompile Include="dbOfflining.c" />
+    <ClCompile Include="dbQuery.c" />
+    <ClCompile Include="dbQueryParser.c" />
+    <ClCompile Include="dbRemoteCommands.c" />
+    <ClCompile Include="dbReplication.c" />
+    <ClCompile Include="dbSubscribe.c" />
+    <ClCompile Include="dbXMLRPC.c" />
+    <ClCompile Include="ObjectDB.c" />
+    <ClCompile Include="ObjectDBMain.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\CrossRoads\Common\chatCommon.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\chatCommonStructs.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\CostumeCommon.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\AuctionLotEnums.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\GameAccountData\GameAccountData.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\guildCommonStructs.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Login2Common.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Login2ServerCommon.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\LoginCommon.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\microtransactions_common.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\PvPGameCommon.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\queue_common_structs.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\ServerLib\pub\PlayerBooter.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\ServerLib\pub\svrGlobalInfo.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\UtilitiesLib\components\GlobalTypes.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\UtilitiesLib\utils\StringUtil.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controller\Pub\ControllerPub.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="DatabaseTest\DatabaseTest.h">
+      <Filter>DatabaseTest</Filter>
+    </ClInclude>
+    <ClInclude Include="DatabaseTest\DatabaseTransactionTests.h">
+      <Filter>DatabaseTest</Filter>
+    </ClInclude>
+    <ClInclude Include="DatabaseTest\FakeGameServer.h">
+      <Filter>DatabaseTest</Filter>
+    </ClInclude>
+    <ClInclude Include="DatabaseTest\TestTransClient.h">
+      <Filter>DatabaseTest</Filter>
+    </ClInclude>
+    <ClInclude Include="DatabaseTest\TestTransHarness.h">
+      <Filter>DatabaseTest</Filter>
+    </ClInclude>
+    <ClInclude Include="dbCharacterChoice.h" />
+    <ClInclude Include="dbContainerRestore.h" />
+    <ClInclude Include="dbGenericDatabaseThreads.h" />
+    <ClInclude Include="dbLocalTransactionManager.h" />
+    <ClInclude Include="dbLogin2.h" />
+    <ClInclude Include="dbOfflining.h" />
+    <ClInclude Include="dbSubscribe.h" />
+    <ClInclude Include="ObjectDB_AnonAutoRunIncludes.h" />
+    <ClInclude Include="pub\dbClone.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\dbQuery.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\dbQueryParser.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\dbReplication.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\ObjectDB.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="AutoGen">
+      <UniqueIdentifier>{1526cd62-2e89-4b70-90e8-361201947392}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DatabaseTest">
+      <UniqueIdentifier>{361e9579-aaf3-441d-ae2c-dcd10de7d129}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExternHeaders">
+      <UniqueIdentifier>{0500b3dd-2eb1-44fe-9cd1-f401394e3dee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pub">
+      <UniqueIdentifier>{89580c58-7ded-4552-95bf-8e5e5bff4751}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

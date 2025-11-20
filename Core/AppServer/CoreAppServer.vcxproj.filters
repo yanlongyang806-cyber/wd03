@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\libs\Common\NoUGCInThisProject.c" />
+    <ClCompile Include="..\Common\CoreCommon.c" />
+    <ClCompile Include="AutoGen\coreappserver_AutoGen_1.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoGen\CoreAppServer_AutoGen_2.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Common\CoreCommon.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="AutoGen">
+      <UniqueIdentifier>{7e3b9457-e785-481c-b5b5-4a02eec43f31}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
