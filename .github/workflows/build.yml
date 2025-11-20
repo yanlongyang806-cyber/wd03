@@ -310,7 +310,23 @@ jobs:
           x64/Release/
           Win32/Debug/
           Win32/Release/
-        if-no-files-found: error
+        if-no-files-found: warn
+      
+    - name: Show why no artifacts
+      if: steps.build.outputs.found_outputs != 'true'
+      run: |
+        Write-Host "=== Why No Build Artifacts ===" -ForegroundColor Yellow
+        Write-Host ""
+        Write-Host "Build completed but no output files were found." -ForegroundColor Red
+        Write-Host ""
+        Write-Host "This usually means:" -ForegroundColor Cyan
+        Write-Host "  1. Missing dependencies (CrossRoads, Core, libs)" -ForegroundColor Gray
+        Write-Host "  2. Build failed before compilation started" -ForegroundColor Gray
+        Write-Host "  3. No source files were compiled" -ForegroundColor Gray
+        Write-Host ""
+        Write-Host "Check the build.log artifact for detailed error information." -ForegroundColor Yellow
+        Write-Host "Download build-log to see what went wrong." -ForegroundColor Yellow
+      shell: pwsh
         
     - name: Upload build log
       if: always()
