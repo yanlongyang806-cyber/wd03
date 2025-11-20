@@ -56,49 +56,157 @@ jobs:
       shell: pwsh
       continue-on-error: true
       
+    - name: Check Git Submodules
+      run: |
+        Write-Host "=== Checking Git Submodules ===" -ForegroundColor Cyan
+        if (Test-Path ".gitmodules") {
+          Write-Host "OK: .gitmodules file found" -ForegroundColor Green
+          Get-Content .gitmodules | Write-Host
+          Write-Host "`nInitializing submodules..." -ForegroundColor Yellow
+          git submodule update --init --recursive
+          if ($LASTEXITCODE -eq 0) {
+            Write-Host "OK: Submodules initialized successfully" -ForegroundColor Green
+          } else {
+            Write-Host "WARNING: Submodule initialization failed" -ForegroundColor Yellow
+          }
+        } else {
+          Write-Host "INFO: No .gitmodules file found" -ForegroundColor Gray
+        }
+      shell: pwsh
+      continue-on-error: true
+      
     - name: Check dependencies
       id: check-deps
       run: |
-        Write-Host "=== Dependency Check ===" -ForegroundColor Cyan
+        Write-Host "=== Comprehensive Dependency Check ===" -ForegroundColor Cyan
         $deps = @{}
         $missingDeps = @()
+        $warnings = @()
         
         # Check for CrossRoads
+        Write-Host "`nChecking CrossRoads..." -ForegroundColor Yellow
         $crossRoadsPaths = @(
           "..\Cryptic\CrossRoads",
           "..\CrossRoads",
           "Cryptic\CrossRoads",
           "CrossRoads"
         )
+        $foundCrossRoads = $false
         foreach ($path in $crossRoadsPaths) {
           if (Test-Path $path) {
             $deps["CrossRoads"] = $path
             Write-Host "OK: CrossRoads found at: $path" -ForegroundColor Green
+            # Check for key files
+            $keyFiles = @(
+              "$path\GameServerLib\GameServerLib.vcxproj",
+              "$path\Common\pvp_common.c"
+            )
+            foreach ($file in $keyFiles) {
+              if (Test-Path $file) {
+                Write-Host "  OK: Key file exists: $file" -ForegroundColor Gray
+              } else {
+                Write-Host "  WARNING: Key file missing: $file" -ForegroundColor Yellow
+                $warnings += "CrossRoads key file missing: $file"
+              }
+            }
+            $foundCrossRoads = $true
             break
           }
         }
-        if (-not $deps["CrossRoads"]) {
-          Write-Host "ERROR: CrossRoads not found" -ForegroundColor Red
+        if (-not $foundCrossRoads) {
+          Write-Host "ERROR: CrossRoads not found in any expected location" -ForegroundColor Red
           $missingDeps += "CrossRoads"
         }
         
         # Check for Core
+        Write-Host "`nChecking Core..." -ForegroundColor Yellow
         $corePaths = @(
           "..\Cryptic\Core",
           "..\core",
           "Cryptic\Core",
           "core"
         )
+        $foundCore = $false
         foreach ($path in $corePaths) {
           if (Test-Path $path) {
             $deps["Core"] = $path
             Write-Host "OK: Core found at: $path" -ForegroundColor Green
+            $foundCore = $true
             break
           }
         }
-        if (-not $deps["Core"]) {
-          Write-Host "ERROR: Core not found" -ForegroundColor Red
+        if (-not $foundCore) {
+          Write-Host "ERROR: Core not found in any expected location" -ForegroundColor Red
           $missingDeps += "Core"
+        }
+        
+        # Check for libs
+        Write-Host "`nChecking libs..." -ForegroundColor Yellow
+        $libsPaths = @(
+          "..\libs",
+          "libs"
+        )
+        $foundLibs = $false
+        foreach ($path in $libsPaths) {
+          if (Test-Path $path) {
+            $deps["libs"] = $path
+            Write-Host "OK: libs found at: $path" -ForegroundColor Green
+            # Check for required lib projects
+            $requiredLibs = @("AILib", "ContentLib", "HttpLib", "ServerLib", "WorldLib", "UtilitiesLib")
+            foreach ($lib in $requiredLibs) {
+              $libPath = "$path\$lib\$lib.vcxproj"
+              if (Test-Path $libPath) {
+                Write-Host "  OK: $lib project found" -ForegroundColor Gray
+              } else {
+                Write-Host "  WARNING: $lib project not found" -ForegroundColor Yellow
+                $warnings += "$lib project missing"
+              }
+            }
+            $foundLibs = $true
+            break
+          }
+        }
+        if (-not $foundLibs) {
+          Write-Host "WARNING: libs directory not found" -ForegroundColor Yellow
+          $warnings += "libs directory missing"
+        }
+        
+        # Check for utilities/structparser
+        Write-Host "`nChecking utilities/structparser..." -ForegroundColor Yellow
+        $structparserPaths = @(
+          "..\utilities\bin\structparser.exe",
+          "utilities\bin\structparser.exe"
+        )
+        $foundStructparser = $false
+        foreach ($path in $structparserPaths) {
+          if (Test-Path $path) {
+            Write-Host "OK: structparser.exe found at: $path" -ForegroundColor Green
+            $foundStructparser = $true
+            break
+          }
+        }
+        if (-not $foundStructparser) {
+          Write-Host "WARNING: structparser.exe not found (pre-build may fail)" -ForegroundColor Yellow
+          $warnings += "structparser.exe missing"
+        }
+        
+        # Check project references
+        Write-Host "`nChecking project references..." -ForegroundColor Yellow
+        if (Test-Path "NNOGameServer.vcxproj") {
+          $projContent = Get-Content "NNOGameServer.vcxproj" -Raw
+          $refMatches = [regex]::Matches($projContent, '<ProjectReference Include="([^"]+)"')
+          Write-Host "Found $($refMatches.Count) project references" -ForegroundColor Gray
+          foreach ($match in $refMatches) {
+            $refPath = $match.Groups[1].Value
+            # Normalize path
+            $refPath = $refPath -replace '\\', '\'
+            if (Test-Path $refPath) {
+              Write-Host "  OK: $refPath" -ForegroundColor Gray
+            } else {
+              Write-Host "  ERROR: $refPath (not found)" -ForegroundColor Red
+              $warnings += "Project reference missing: $refPath"
+            }
+          }
         }
         
         # Output for next steps
@@ -107,12 +215,24 @@ jobs:
         Write-Host "Required dependencies available: $hasRequired" -ForegroundColor $(if ($hasRequired) { "Green" } else { "Red" })
         
         if ($missingDeps.Count -gt 0) {
-          Write-Host "`nMissing dependencies:" -ForegroundColor Red
+          Write-Host "`nCRITICAL: Missing required dependencies:" -ForegroundColor Red
           $missingDeps | ForEach-Object { Write-Host "  - $_" -ForegroundColor Red }
+          Write-Host "`nSee ADD_DEPENDENCIES.md for instructions on adding dependencies." -ForegroundColor Yellow
+        }
+        
+        if ($warnings.Count -gt 0) {
+          Write-Host "`nWARNINGS:" -ForegroundColor Yellow
+          $warnings | ForEach-Object { Write-Host "  - $_" -ForegroundColor Yellow }
+        }
+        
+        if (-not $hasRequired) {
+          Write-Host "`n❌ BUILD WILL FAIL: Required dependencies are missing!" -ForegroundColor Red
+          Write-Host "Please add dependencies before building. See ADD_DEPENDENCIES.md" -ForegroundColor Yellow
         }
         
         echo "has_required=$hasRequired" >> $env:GITHUB_OUTPUT
         echo "missing_deps=$($missingDeps -join ',')" >> $env:GITHUB_OUTPUT
+        echo "warnings=$($warnings.Count)" >> $env:GITHUB_OUTPUT
       shell: pwsh
       continue-on-error: true
       
