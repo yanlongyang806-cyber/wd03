@@ -1,0 +1,351 @@
+name: Build GameServer
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+env:
+  BUILD_CONFIGURATION: Debug
+  BUILD_PLATFORM: Win32
+
+jobs:
+  build:
+    runs-on: windows-latest
+    timeout-minutes: 30
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+        
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v1.1
+      
+    - name: Display environment
+      run: |
+        Write-Host "=== Build Environment ===" -ForegroundColor Cyan
+        Write-Host "Runner OS: $env:RUNNER_OS" -ForegroundColor Gray
+        Write-Host "Workspace: $env:GITHUB_WORKSPACE" -ForegroundColor Gray
+        Write-Host "Build Configuration: $env:BUILD_CONFIGURATION" -ForegroundColor Gray
+        Write-Host "Build Platform: $env:BUILD_PLATFORM" -ForegroundColor Gray
+      shell: pwsh
+      
+    - name: Setup PropertySheets
+      run: |
+        Write-Host "=== Setting up PropertySheets ===" -ForegroundColor Cyan
+        
+        # Project file expects PropertySheets at ..\..\PropertySheets\ relative to project
+        # In GitHub Actions, we're at D:\a\wd02\wd02, so we need PropertySheets at D:\a\wd02\PropertySheets
+        $targetPropsDir = "..\PropertySheets"
+        
+        if (-not (Test-Path $targetPropsDir)) {
+            New-Item -ItemType Directory -Path $targetPropsDir -Force | Out-Null
+            Write-Host "Created PropertySheets directory at: $targetPropsDir" -ForegroundColor Green
+        }
+        
+        # Copy PropertySheets from repository if they exist
+        if (Test-Path "PropertySheets") {
+            Write-Host "Copying PropertySheets from repository..." -ForegroundColor Cyan
+            Copy-Item -Path "PropertySheets\*" -Destination $targetPropsDir -Recurse -Force
+            Write-Host "Copied PropertySheets to: $targetPropsDir" -ForegroundColor Green
+        }
+      shell: pwsh
+      continue-on-error: true
+      
+    - name: Check dependencies
+      id: check-deps
+      run: |
+        Write-Host "=== Dependency Check ===" -ForegroundColor Cyan
+        $deps = @{}
+        $missingDeps = @()
+        
+        # Check for CrossRoads
+        $crossRoadsPaths = @(
+          "..\Cryptic\CrossRoads",
+          "..\CrossRoads",
+          "Cryptic\CrossRoads",
+          "CrossRoads"
+        )
+        foreach ($path in $crossRoadsPaths) {
+          if (Test-Path $path) {
+            $deps["CrossRoads"] = $path
+            Write-Host "OK: CrossRoads found at: $path" -ForegroundColor Green
+            break
+          }
+        }
+        if (-not $deps["CrossRoads"]) {
+          Write-Host "ERROR: CrossRoads not found" -ForegroundColor Red
+          $missingDeps += "CrossRoads"
+        }
+        
+        # Check for Core
+        $corePaths = @(
+          "..\Cryptic\Core",
+          "..\core",
+          "Cryptic\Core",
+          "core"
+        )
+        foreach ($path in $corePaths) {
+          if (Test-Path $path) {
+            $deps["Core"] = $path
+            Write-Host "OK: Core found at: $path" -ForegroundColor Green
+            break
+          }
+        }
+        if (-not $deps["Core"]) {
+          Write-Host "ERROR: Core not found" -ForegroundColor Red
+          $missingDeps += "Core"
+        }
+        
+        # Output for next steps
+        $hasRequired = ($deps["CrossRoads"] -and $deps["Core"])
+        Write-Host "`n=== Dependency Summary ===" -ForegroundColor Cyan
+        Write-Host "Required dependencies available: $hasRequired" -ForegroundColor $(if ($hasRequired) { "Green" } else { "Red" })
+        
+        if ($missingDeps.Count -gt 0) {
+          Write-Host "`nMissing dependencies:" -ForegroundColor Red
+          $missingDeps | ForEach-Object { Write-Host "  - $_" -ForegroundColor Red }
+        }
+        
+        echo "has_required=$hasRequired" >> $env:GITHUB_OUTPUT
+        echo "missing_deps=$($missingDeps -join ',')" >> $env:GITHUB_OUTPUT
+      shell: pwsh
+      continue-on-error: true
+      
+    - name: Validate project file
+      run: |
+        Write-Host "=== Validating Project File ===" -ForegroundColor Cyan
+        $projectPath = "NNOGameServer.vcxproj"
+        
+        if (-not (Test-Path $projectPath)) {
+          Write-Host "ERROR: Project file not found: $projectPath" -ForegroundColor Red
+          exit 1
+        }
+        
+        Write-Host "OK: Project file found: $projectPath" -ForegroundColor Green
+      shell: pwsh
+      
+    - name: Build GameServer
+      id: build
+      run: |
+        Write-Host "=== Building GameServer ===" -ForegroundColor Cyan
+        $projectPath = "NNOGameServer.vcxproj"
+        $buildLog = "build.log"
+        
+        Write-Host "Project: $projectPath" -ForegroundColor Gray
+        Write-Host "Configuration: $env:BUILD_CONFIGURATION" -ForegroundColor Gray
+        Write-Host "Platform: $env:BUILD_PLATFORM" -ForegroundColor Gray
+        Write-Host ""
+        
+        # Check dependencies before building
+        if ("${{ steps.check-deps.outputs.has_required }}" -ne "true") {
+          Write-Host "WARNING: Required dependencies are missing!" -ForegroundColor Yellow
+          Write-Host "Build will likely fail due to missing dependencies:" -ForegroundColor Yellow
+          Write-Host "${{ steps.check-deps.outputs.missing_deps }}" -ForegroundColor Red
+          Write-Host ""
+          Write-Host "Attempting build anyway to capture error details..." -ForegroundColor Cyan
+        }
+        
+        # Build with detailed logging
+        $buildOutput = ""
+        try {
+          msbuild $projectPath `
+            /p:Configuration=$env:BUILD_CONFIGURATION `
+            /p:Platform=$env:BUILD_PLATFORM `
+            /t:Build `
+            /v:detailed `
+            /nologo `
+            /fl `
+            /flp:logfile=$buildLog;verbosity=detailed `
+            2>&1 | Tee-Object -Variable buildOutput
+        
+          $buildExitCode = $LASTEXITCODE
+        } catch {
+          Write-Host "Build command failed: $_" -ForegroundColor Red
+          $buildExitCode = 1
+        }
+        
+        # Analyze build output
+        Write-Host "`n=== Build Analysis ===" -ForegroundColor Cyan
+        
+        if (Test-Path $buildLog) {
+          $errorCount = 0
+          
+          # Count errors - check for various error patterns
+          $errorPatterns = @(
+            "error\s+(CS|C\d{4}|LNK|MSB)",
+            "error MSB",
+            "error C",
+            "error LNK",
+            "fatal error",
+            "cannot open",
+            "unresolved external",
+            "not found"
+          )
+          
+          $allErrors = @()
+          foreach ($pattern in $errorPatterns) {
+            $matches = Select-String -Path $buildLog -Pattern $pattern -CaseSensitive:$false
+            if ($matches) {
+              $allErrors += $matches
+            }
+          }
+          
+          if ($allErrors) {
+            $errorCount = ($allErrors | Select-Object -Unique Line).Count
+            Write-Host "ERROR: Found $errorCount unique error(s)" -ForegroundColor Red
+            Write-Host "`nFirst 20 errors:" -ForegroundColor Yellow
+            $allErrors | Select-Object -First 20 -Unique Line | ForEach-Object {
+              Write-Host "  $($_.Line.Trim())" -ForegroundColor Red
+            }
+          } else {
+            Write-Host "OK: No compilation errors found in log" -ForegroundColor Green
+          }
+          
+          # Check if build actually compiled anything
+          $compiledFiles = Select-String -Path $buildLog -Pattern "Compiling|Linking|\.obj|\.exe" -CaseSensitive:$false
+          if (-not $compiledFiles) {
+            Write-Host "WARNING: No compilation or linking activity found in log!" -ForegroundColor Yellow
+            Write-Host "  This suggests the build may have failed before compilation started." -ForegroundColor Yellow
+          } else {
+            Write-Host "OK: Build log shows compilation activity" -ForegroundColor Green
+          }
+        } else {
+          Write-Host "WARNING: Build log file not found" -ForegroundColor Yellow
+        }
+        
+        # Check for output files - search more thoroughly
+        Write-Host "`n=== Checking for Build Outputs ===" -ForegroundColor Cyan
+        
+        $searchPaths = @(
+          "Debug",
+          "Release",
+          "bin",
+          "x64\Debug",
+          "x64\Release",
+          "Win32\Debug",
+          "Win32\Release"
+        )
+        
+        Write-Host "Searching for output files in:" -ForegroundColor Gray
+        $searchPaths | ForEach-Object { Write-Host "  - $_" -ForegroundColor Gray }
+        Write-Host ""
+        
+        $foundOutputs = $false
+        $allFoundFiles = @()
+        
+        foreach ($searchPath in $searchPaths) {
+          if (Test-Path $searchPath) {
+            $item = Get-Item $searchPath
+            if ($item -is [System.IO.DirectoryInfo]) {
+              $files = Get-ChildItem $searchPath -Recurse -File -ErrorAction SilentlyContinue
+              if ($files) {
+                Write-Host "OK: Found output directory: $searchPath ($($files.Count) files)" -ForegroundColor Green
+                $exeFiles = $files | Where-Object { $_.Extension -match '\.(exe|dll|lib|obj)$' }
+                if ($exeFiles) {
+                  Write-Host "  Executable/Library files:" -ForegroundColor Cyan
+                  $exeFiles | Select-Object -First 10 Name, @{Name="Size(KB)";Expression={[math]::Round($_.Length/1KB,2)}} | Format-Table -AutoSize
+                  $allFoundFiles += $exeFiles
+                  $foundOutputs = $true
+                }
+              }
+            } elseif ($item -is [System.IO.FileInfo]) {
+              Write-Host "OK: Found output file: $searchPath" -ForegroundColor Green
+              $allFoundFiles += $item
+              $foundOutputs = $true
+            }
+          }
+        }
+        
+        # Also search for .exe files directly
+        if (-not $foundOutputs) {
+          Write-Host "Searching for .exe files in current directory..." -ForegroundColor Yellow
+          $exeFiles = Get-ChildItem "." -Recurse -Filter "*.exe" -ErrorAction SilentlyContinue
+          if ($exeFiles) {
+            Write-Host "OK: Found .exe files:" -ForegroundColor Green
+            $exeFiles | Select-Object FullName, @{Name="Size(KB)";Expression={[math]::Round($_.Length/1KB,2)}} | Format-Table -AutoSize
+            $foundOutputs = $true
+            $allFoundFiles += $exeFiles
+          }
+        }
+        
+        if (-not $foundOutputs) {
+          Write-Host "ERROR: No build output files found!" -ForegroundColor Red
+          Write-Host "This indicates the build did not produce any executables." -ForegroundColor Yellow
+        } else {
+          Write-Host "`nOK: Total output files found: $($allFoundFiles.Count)" -ForegroundColor Green
+        }
+        
+        echo "exit_code=$buildExitCode" >> $env:GITHUB_OUTPUT
+        echo "found_outputs=$foundOutputs" >> $env:GITHUB_OUTPUT
+        echo "error_count=$errorCount" >> $env:GITHUB_OUTPUT
+        
+        # Exit with error if build failed
+        if ($buildExitCode -ne 0) {
+          Write-Host "`nERROR: Build failed with exit code: $buildExitCode" -ForegroundColor Red
+          exit $buildExitCode
+        }
+        
+        if (-not $foundOutputs) {
+          Write-Host "`nERROR: Build completed but no output files found!" -ForegroundColor Red
+          exit 1
+        }
+      shell: pwsh
+      continue-on-error: true
+      
+    - name: Upload build artifacts
+      if: steps.build.outputs.found_outputs == 'true'
+      uses: actions/upload-artifact@v4
+      with:
+        name: build-outputs
+        path: |
+          Debug/
+          Release/
+          bin/
+          x64/Debug/
+          x64/Release/
+          Win32/Debug/
+          Win32/Release/
+        if-no-files-found: error
+        
+    - name: Upload build log
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: build-log
+        path: build.log
+        if-no-files-found: ignore
+        retention-days: 30
+        
+    - name: Build summary
+      if: always()
+      run: |
+        Write-Host "`n=== Build Summary ===" -ForegroundColor Cyan
+        
+        $exitCode = "${{ steps.build.outputs.exit_code }}"
+        $foundOutputs = "${{ steps.build.outputs.found_outputs }}"
+        $errorCount = "${{ steps.build.outputs.error_count }}"
+        
+        Write-Host "Exit Code: $exitCode" -ForegroundColor $(if ($exitCode -eq "0") { "Green" } else { "Red" })
+        Write-Host "Outputs Found: $foundOutputs" -ForegroundColor $(if ($foundOutputs -eq "true") { "Green" } else { "Red" })
+        Write-Host "Error Count: $errorCount" -ForegroundColor $(if ($errorCount -eq "0") { "Green" } else { "Red" })
+        
+        if ($exitCode -eq "0" -and $foundOutputs -eq "true") {
+          Write-Host "`nOK: Build completed successfully!" -ForegroundColor Green
+          Write-Host "Check artifacts for build outputs." -ForegroundColor Gray
+        } else {
+          Write-Host "`nERROR: Build failed or no outputs generated" -ForegroundColor Red
+          Write-Host "`nCommon reasons:" -ForegroundColor Yellow
+          Write-Host "  1. Missing dependencies (CrossRoads, Core, libs)" -ForegroundColor Gray
+          Write-Host "  2. Missing PropertySheets configuration files" -ForegroundColor Gray
+          Write-Host "  3. Missing structparser.exe pre-build tool" -ForegroundColor Gray
+          Write-Host "  4. Missing required header files or libraries" -ForegroundColor Gray
+          Write-Host "  5. Compilation errors in source code" -ForegroundColor Gray
+          Write-Host "`nCheck build.log artifact for detailed error information." -ForegroundColor Cyan
+        }
+      shell: pwsh
+

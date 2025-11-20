@@ -1,0 +1,14 @@
+//This is a list of all files scanned by StructParser at a given date/time, used for dependency purposes
+1/12/2015 10:42:49:814
+VERSION "Mar 20 201216:26:43"
+"..\..\obj100\NNOGameServer\Full Debug Win32\"
+"C:\src\Night\GameServer\..\Common\NNOCommon.c"
+0
+0
+"C:\src\Night\GameServer\NNOLogging.c"
+0
+0
+"C:\src\Night\GameServer\..\Common\NNOCommon.h"
+0
+0
+END_OF_FILE
