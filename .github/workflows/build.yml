@@ -21,6 +21,8 @@ jobs:
       uses: actions/checkout@v4
       with:
         fetch-depth: 0
+        submodules: recursive
+        token: ${{ secrets.GITHUB_TOKEN }}
         
     - name: Setup MSBuild
       uses: microsoft/setup-msbuild@v1.1
@@ -59,18 +61,44 @@ jobs:
     - name: Check Git Submodules
       run: |
         Write-Host "=== Checking Git Submodules ===" -ForegroundColor Cyan
+        
+        # Check if .gitmodules exists
         if (Test-Path ".gitmodules") {
           Write-Host "OK: .gitmodules file found" -ForegroundColor Green
+          Write-Host "`nSubmodule configuration:" -ForegroundColor Cyan
           Get-Content .gitmodules | Write-Host
-          Write-Host "`nInitializing submodules..." -ForegroundColor Yellow
-          git submodule update --init --recursive
-          if ($LASTEXITCODE -eq 0) {
-            Write-Host "OK: Submodules initialized successfully" -ForegroundColor Green
+          
+          # Check submodule status
+          Write-Host "`nChecking submodule status..." -ForegroundColor Yellow
+          $submoduleStatus = git submodule status
+          if ($submoduleStatus) {
+            Write-Host "Submodule status:" -ForegroundColor Cyan
+            $submoduleStatus | Write-Host
+            
+            # Check if any are not initialized (lines starting with -)
+            $uninitialized = $submoduleStatus | Where-Object { $_ -match '^-\s' }
+            if ($uninitialized) {
+              Write-Host "`nWARNING: Some submodules are not initialized!" -ForegroundColor Yellow
+              $uninitialized | ForEach-Object {
+                Write-Host "  $_" -ForegroundColor Yellow
+              }
+              Write-Host "`nInitializing submodules..." -ForegroundColor Yellow
+              git submodule update --init --recursive
+              if ($LASTEXITCODE -eq 0) {
+                Write-Host "OK: Submodules initialized successfully" -ForegroundColor Green
+              } else {
+                Write-Host "ERROR: Submodule initialization failed" -ForegroundColor Red
+                Write-Host "This may require authentication or the submodule URLs may be incorrect." -ForegroundColor Yellow
+              }
+            } else {
+              Write-Host "OK: All submodules are initialized" -ForegroundColor Green
+            }
           } else {
-            Write-Host "WARNING: Submodule initialization failed" -ForegroundColor Yellow
+            Write-Host "INFO: No submodules found in status" -ForegroundColor Gray
           }
         } else {
           Write-Host "INFO: No .gitmodules file found" -ForegroundColor Gray
+          Write-Host "Dependencies may need to be added manually. See ADD_DEPENDENCIES.md" -ForegroundColor Yellow
         }
       shell: pwsh
       continue-on-error: true
