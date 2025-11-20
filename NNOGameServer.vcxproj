@@ -46,7 +46,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <AdditionalOptions>/we4047 /we4133 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>../../Crossroads/Common/Combat;../../core/common/autogen;../../Crossroads/Common/item;../../libs/WorldLib/StaticWorld;./ai;./cmdparse;./missionSys/;../common;../../libs/serverlib/pub;../../libs/WorldLib/pub;../../libs/InputLib/pub;../../libs/EntityLib/pub;../../Crossroads/GameServerLib/reward;../../Crossroads/GameServerLib/world;../../Crossroads/GameServerLib/pub;../../Crossroads/GameServerLib/AutoGen;../../libs/Common/AutoGen;../../libs/Common;../../libs/AILib/pub;../../Crossroads/common/entity;../../core/combat;../../core/combat/server;../common/AutoGen;../../Crossroads/common/Mission;./entity;./rewardSys;../../libs/EntityLib/Combat;../../libs/EntityLib/MissionSys;../../libs/GameServerLib/MissionSys;./item/;./chat;../../Crossroads/GameServerLib;../../Crossroads/Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../CrossRoads/Common/Combat;../core/common/autogen;../CrossRoads/Common/item;../libs/WorldLib/StaticWorld;./ai;./cmdparse;./missionSys/;../common;../libs/serverlib/pub;../libs/WorldLib/pub;../libs/InputLib/pub;../libs/EntityLib/pub;../CrossRoads/GameServerLib/reward;../CrossRoads/GameServerLib/world;../CrossRoads/GameServerLib/pub;../CrossRoads/GameServerLib/AutoGen;../libs/Common/AutoGen;../libs/Common;../libs/AILib/pub;../CrossRoads/common/entity;../core/combat;../core/combat/server;../common/AutoGen;../CrossRoads/common/Mission;./entity;./rewardSys;../libs/EntityLib/Combat;../libs/EntityLib/MissionSys;../libs/GameServerLib/MissionSys;./item/;./chat;../CrossRoads/GameServerLib;../CrossRoads/Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;GAMESERVER=1;USEZLIB=1;_CRTDBG_MAP_ALLOC=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
@@ -63,7 +63,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">
     <ClCompile>
       <AdditionalOptions>/we4047 /we4133 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>../../Crossroads/Common/Combat;../../core/common/autogen;../../Crossroads/Common/item;../../libs/WorldLib/StaticWorld;./ai;./cmdparse;./missionSys/;../common;../../libs/serverlib/pub;../../libs/WorldLib/pub;../../libs/InputLib/pub;../../libs/EntityLib/pub;../../Crossroads/GameServerLib/reward;../../Crossroads/GameServerLib/world;../../Crossroads/GameServerLib/pub;../../Crossroads/GameServerLib/AutoGen;../../libs/Common/AutoGen;../../libs/Common;../../libs/AILib/pub;../../Crossroads/common/entity;../../core/combat;../../core/combat/server;../common/AutoGen;../../Crossroads/common/Mission;./entity;./rewardSys;../../libs/EntityLib/Combat;../../libs/EntityLib/MissionSys;../../libs/GameServerLib/MissionSys;./item/;./chat;../../Crossroads/GameServerLib;../../Crossroads/Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../CrossRoads/Common/Combat;../core/common/autogen;../CrossRoads/Common/item;../libs/WorldLib/StaticWorld;./ai;./cmdparse;./missionSys/;../common;../libs/serverlib/pub;../libs/WorldLib/pub;../libs/InputLib/pub;../libs/EntityLib/pub;../CrossRoads/GameServerLib/reward;../CrossRoads/GameServerLib/world;../CrossRoads/GameServerLib/pub;../CrossRoads/GameServerLib/AutoGen;../libs/Common/AutoGen;../libs/Common;../libs/AILib/pub;../CrossRoads/common/entity;../core/combat;../core/combat/server;../common/AutoGen;../CrossRoads/common/Mission;./entity;./rewardSys;../libs/EntityLib/Combat;../libs/EntityLib/MissionSys;../libs/GameServerLib/MissionSys;./item/;./chat;../CrossRoads/GameServerLib;../CrossRoads/Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_FULLDEBUG;_WINDOWS;GAMESERVER=1;USEZLIB=1;_CRTDBG_MAP_ALLOC=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
@@ -102,39 +102,39 @@
     <ClInclude Include="..\Common\NNOCommon.h" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\CrossRoads\GameServerLib\GameServerLib.vcxproj">
+    <ProjectReference Include="..\CrossRoads\GameServerLib\GameServerLib.vcxproj">
       <Project>{99999999-9ad9-4149-9cbd-07ba24320884}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
-    <ProjectReference Include="..\..\libs\AILib\AILib.vcxproj">
+    <ProjectReference Include="..\libs\AILib\AILib.vcxproj">
       <Project>{10980900-d4e8-420b-ade5-06afddd419bf}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
-    <ProjectReference Include="..\..\libs\ContentLib\ContentLib.vcxproj">
+    <ProjectReference Include="..\libs\ContentLib\ContentLib.vcxproj">
       <Project>{869105e2-8af2-4e48-a4d3-7b3e31441777}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
-    <ProjectReference Include="..\..\libs\HttpLib\HttpLib.vcxproj">
+    <ProjectReference Include="..\libs\HttpLib\HttpLib.vcxproj">
       <Project>{2acc94ec-3e38-48bd-b97f-5b46328a4aef}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
-    <ProjectReference Include="..\..\libs\PatchClientLib\PatchClientLib.vcxproj">
+    <ProjectReference Include="..\libs\PatchClientLib\PatchClientLib.vcxproj">
       <Project>{487db8d6-6faf-4e86-9800-75088911a703}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
-    <ProjectReference Include="..\..\libs\ServerLib\ServerLib.vcxproj">
+    <ProjectReference Include="..\libs\ServerLib\ServerLib.vcxproj">
       <Project>{dd475a7c-b1d4-43c4-acb7-d73c24be1eb7}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
-    <ProjectReference Include="..\..\libs\StructParserStub\StructParserStub.vcxproj">
+    <ProjectReference Include="..\libs\StructParserStub\StructParserStub.vcxproj">
       <Project>{1d29e421-93b2-4e32-9186-7fafc3971c5b}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
-    <ProjectReference Include="..\..\libs\UtilitiesLib\UtilitiesLib.vcxproj">
+    <ProjectReference Include="..\libs\UtilitiesLib\UtilitiesLib.vcxproj">
       <Project>{a6741f6e-5476-4f9f-9d65-62b54aaf1d08}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
-    <ProjectReference Include="..\..\libs\WorldLib\WorldLib.vcxproj">
+    <ProjectReference Include="..\libs\WorldLib\WorldLib.vcxproj">
       <Project>{e9aeb79e-085b-4392-a53f-8a9c609e8385}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
