@@ -223,15 +223,98 @@ jobs:
           }
           
           # Check if build actually compiled anything
-          $compiledFiles = Select-String -Path $buildLog -Pattern "Compiling|Linking|\.obj|\.exe" -CaseSensitive:$false
-          if (-not $compiledFiles) {
-            Write-Host "WARNING: No compilation or linking activity found in log!" -ForegroundColor Yellow
-            Write-Host "  This suggests the build may have failed before compilation started." -ForegroundColor Yellow
+          Write-Host "`n=== Build Activity Analysis ===" -ForegroundColor Cyan
+          
+          # Check for compilation
+          $compiling = Select-String -Path $buildLog -Pattern "Compiling|cl\.exe|\.c.*->.*\.obj" -CaseSensitive:$false
+          if ($compiling) {
+            Write-Host "OK: Found compilation activity ($($compiling.Count) instances)" -ForegroundColor Green
+            $compiling | Select-Object -First 5 | ForEach-Object {
+              Write-Host "  $($_.Line.Trim())" -ForegroundColor Gray
+            }
           } else {
-            Write-Host "OK: Build log shows compilation activity" -ForegroundColor Green
+            Write-Host "WARNING: No compilation activity found!" -ForegroundColor Yellow
+          }
+          
+          # Check for linking
+          $linking = Select-String -Path $buildLog -Pattern "Linking|link\.exe|\.exe.*created|\.dll.*created" -CaseSensitive:$false
+          if ($linking) {
+            Write-Host "OK: Found linking activity ($($linking.Count) instances)" -ForegroundColor Green
+            $linking | Select-Object -First 5 | ForEach-Object {
+              Write-Host "  $($_.Line.Trim())" -ForegroundColor Gray
+            }
+          } else {
+            Write-Host "WARNING: No linking activity found!" -ForegroundColor Yellow
+            Write-Host "  This means no executable was created." -ForegroundColor Yellow
+          }
+          
+          # Check for target completion
+          $targets = Select-String -Path $buildLog -Pattern "Done building target|Done executing task|Build succeeded|Build FAILED" -CaseSensitive:$false
+          if ($targets) {
+            Write-Host "`nBuild target status:" -ForegroundColor Cyan
+            $targets | Select-Object -Last 10 | ForEach-Object {
+              Write-Host "  $($_.Line.Trim())" -ForegroundColor Gray
+            }
+          }
+          
+          # Check for project references that failed
+          $refErrors = Select-String -Path $buildLog -Pattern "Project.*not found|unable to find|cannot open project" -CaseSensitive:$false
+          if ($refErrors) {
+            Write-Host "`nWARNING: Project reference errors found:" -ForegroundColor Yellow
+            $refErrors | Select-Object -First 10 | ForEach-Object {
+              Write-Host "  $($_.Line.Trim())" -ForegroundColor Yellow
+            }
+          }
+          
+          # Check for include file errors
+          $includeErrors = Select-String -Path $buildLog -Pattern "cannot open include file|fatal error.*\.h" -CaseSensitive:$false
+          if ($includeErrors) {
+            Write-Host "`nERROR: Include file errors found:" -ForegroundColor Red
+            $includeErrors | Select-Object -First 10 | ForEach-Object {
+              Write-Host "  $($_.Line.Trim())" -ForegroundColor Red
+            }
+          }
+          
+          # Summary
+          if (-not $compiling -and -not $linking) {
+            Write-Host "`nCRITICAL: No compilation or linking activity detected!" -ForegroundColor Red
+            Write-Host "  The build likely failed before any source files were compiled." -ForegroundColor Red
+            Write-Host "  Common causes:" -ForegroundColor Yellow
+            Write-Host "    1. Missing dependencies (CrossRoads, Core, libs)" -ForegroundColor Gray
+            Write-Host "    2. Missing project references" -ForegroundColor Gray
+            Write-Host "    3. Pre-build events failed" -ForegroundColor Gray
+            Write-Host "    4. PropertySheets errors" -ForegroundColor Gray
+          } elseif ($compiling -and -not $linking) {
+            Write-Host "`nWARNING: Files were compiled but not linked!" -ForegroundColor Yellow
+            Write-Host "  This suggests linking step failed or was skipped." -ForegroundColor Yellow
+          } elseif ($compiling -and $linking) {
+            Write-Host "`nOK: Build shows both compilation and linking activity" -ForegroundColor Green
           }
         } else {
           Write-Host "WARNING: Build log file not found" -ForegroundColor Yellow
+          Write-Host "  Build may have failed before logging started." -ForegroundColor Yellow
+        }
+        
+        # Also check build output for key indicators
+        if ($buildOutput) {
+          Write-Host "`n=== Build Output Summary ===" -ForegroundColor Cyan
+          $outputLines = $buildOutput -split "`n"
+          $successIndicators = $outputLines | Where-Object { $_ -match "succeeded|Build succeeded|0 Error" }
+          $failureIndicators = $outputLines | Where-Object { $_ -match "failed|Build FAILED|Error\(s\)" }
+          
+          if ($successIndicators) {
+            Write-Host "Build output shows success indicators:" -ForegroundColor Green
+            $successIndicators | Select-Object -First 3 | ForEach-Object {
+              Write-Host "  $_" -ForegroundColor Gray
+            }
+          }
+          
+          if ($failureIndicators) {
+            Write-Host "Build output shows failure indicators:" -ForegroundColor Red
+            $failureIndicators | Select-Object -First 3 | ForEach-Object {
+              Write-Host "  $_" -ForegroundColor Red
+            }
+          }
         }
         
         # Check for output files - search more thoroughly
