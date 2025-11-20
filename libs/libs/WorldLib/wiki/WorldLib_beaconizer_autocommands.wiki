@@ -1,8 +1,0 @@
-h4.bcnReqProcessProject (AccessLevel 9) [Notes|Command_bcnReqProcessProject_WorldLib]
-*Parameter 1: projectName (string)*
-No comment provided
-
-h4.beaconLF (AccessLevel 9) [Notes|Command_beaconLF_WorldLib]
-*Parameter 1: d (int)*
-No comment provided
-

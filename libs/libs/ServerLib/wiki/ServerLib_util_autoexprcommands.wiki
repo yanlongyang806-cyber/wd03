@@ -1,9 +1,0 @@
-h4.GetDailyTableRandomValue (AccessLevel 9) [Notes|Command_GetDailyTableRandomValue_ServerLib]
-*Returns: int*
-*Parameter 1: iRandomRange (int)*
-*Parameter 2: iDailyIndex (int)*
-*Parameter 3: iValuesPerDay (int)*
-*Parameter 4: iDays (int)*
-Return a number from 0 to iRandomRange -1, with an unique number iValuesPerDay not repeating for iDays
-
-

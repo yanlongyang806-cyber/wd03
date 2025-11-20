@@ -1,5 +1,0 @@
-h4.SupportedLanguages (string) - (AccessLevel 9) [Notes|Command_SupportedLanguages_ServerLib]
-This setting is a comma separated list of short (2 character) language codes that are supported by this shard. We reject logins at the LoginServer and GameServer from clients (AL < 4)
-with a language not in this list. If empty, we support all incoming languages.
-
-

@@ -1,9 +1,0 @@
-h4.StartGeneratingNeverReturnTransactions (AccessLevel 9) [Notes|Command_StartGeneratingNeverReturnTransactions_ServerLib]
-*Parameter 1: iCount (int)*
-No comment provided
-
-h4.TestLogAndDie (AccessLevel 9) [Notes|Command_TestLogAndDie_ServerLib]
-*Parameter 1: iDie (int)*
-test command to see if logging gets through before servers die
-
-
