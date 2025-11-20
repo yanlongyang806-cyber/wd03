@@ -1,0 +1,10 @@
+h4.BooterFailAttempts (int) - (AccessLevel 9) [Notes|Command_BooterFailAttempts_ServerLib]
+__CATEGORY Stuff relating to player booters
+After this many failed attempts to boot a player, give up and alert
+
+
+h4.BooterInitialDelay (int) - (AccessLevel 9) [Notes|Command_BooterInitialDelay_ServerLib]
+wait this many seconds after the first booting attempt, then twice this long after the second one, three times after
+the third, etc.
+
+

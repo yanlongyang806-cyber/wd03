@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\Common\AutoGen\TicketTrackerLib_autotransactions_autogen_wrappers.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\EntityDescriptor.c">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Authentication.c" />
+    <ClCompile Include="AutoGen\TicketTrackerLib_AutoGen_1.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoGen\TicketTrackerLib_AutoGen_2.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="ManageTickets.c" />
+    <ClCompile Include="ProductNames.c" />
+    <ClCompile Include="RightNowIntegration.c" />
+    <ClCompile Include="Search.c" />
+    <ClCompile Include="TicketAPI.c" />
+    <ClCompile Include="TicketAssignment.c" />
+    <ClCompile Include="TicketEntry.c" />
+    <ClCompile Include="TicketLocation.c" />
+    <ClCompile Include="TicketTracker.c" />
+    <ClCompile Include="TicketTrackerConfig.c" />
+    <ClCompile Include="TicketTrackerDB.c" />
+    <ClCompile Include="WebInterface.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Common\EntityDescriptor.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HttpLib\jira.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UtilitiesLib\utils\HttpClient.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UtilitiesLib\utils\ticketenums.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Authentication.h" />
+    <ClInclude Include="ManageTickets.h" />
+    <ClInclude Include="ProductNames.h" />
+    <ClInclude Include="RightNowIntegration.h" />
+    <ClInclude Include="Search.h" />
+    <ClInclude Include="TicketAPI.h" />
+    <ClInclude Include="TicketAssignment.h" />
+    <ClInclude Include="TicketEntry.h" />
+    <ClInclude Include="TicketLocation.h" />
+    <ClInclude Include="TicketTracker.h" />
+    <ClInclude Include="TicketTrackerConfig.h" />
+    <ClInclude Include="TicketTrackerDB.h" />
+    <ClInclude Include="WebInterface.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="AutoGen">
+      <UniqueIdentifier>{bdc98d2c-02c0-46bf-9f1b-04e68965232f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{3db96959-35db-4d23-88c2-f16c4d45f951}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExternHeaders">
+      <UniqueIdentifier>{9837896a-1b76-4682-8748-190501128359}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

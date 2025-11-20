@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="autogen\LuaScriptLib_AutoGen_1.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoGen\LuaScriptLib_AutoGen_2.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="luaLibIntrinsics.c" />
+    <ClCompile Include="luaScriptLib.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="luaInternals.h" />
+    <ClInclude Include="luaLibIntrinsics.h" />
+    <ClInclude Include="luaScriptLib.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="AutoGen">
+      <UniqueIdentifier>{3d590692-925f-4734-a592-1e782fa419b7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

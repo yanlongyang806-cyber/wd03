@@ -1,0 +1,25 @@
+h4.worldCellRebuildBinsWithErrors (AccessLevel 9) [Notes|Command_worldCellRebuildBinsWithErrors_WorldLib]
+*Parameter 1: iSet (int)*
+forces world cell bins that had errors in them to get rebuilt
+
+
+h4.terrainForceAtlasProcess (int) - (AccessLevel 9) [Notes|Command_terrainForceAtlasProcess_WorldLib]
+forces the terrain atlases to get processed
+
+
+h4.worldCellForceRebin (int) - (AccessLevel 9) [Notes|Command_worldCellForceRebin_WorldLib]
+forces the world bins to get rebuilt
+
+
+h4.worldForceBinGimmeTimestamps (int) - (AccessLevel 9) [Notes|Command_worldForceBinGimmeTimestamps_WorldLib]
+deprecated, does nothing
+
+
+h4.worldForceWriteEncounterInfo (int) - (AccessLevel 9) [Notes|Command_worldForceWriteEncounterInfo_WorldLib]
+force encounter info to rebuild even if it exists
+
+
+h4.worldWriteEncounterInfo (int) - (AccessLevel 9) [Notes|Command_worldWriteEncounterInfo_WorldLib]
+write encounter info if we are binning or it doesn't exist
+
+

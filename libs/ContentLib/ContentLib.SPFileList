@@ -1,0 +1,18 @@
+//This is a list of all files scanned by StructParser at a given date/time, used for dependency purposes
+11/20/2025 17:7:46:668
+VERSION "Dec 31 201421:03:40"
+SVNBRANCH "(Unknown)"
+"..\..\obj100\ContentLib\Full Debug Win32\"
+"I:\Night\Night\src\libs\ContentLib\ResourceCommands.c"
+2
+0
+"I:\Night\Night\src\libs\ContentLib\ResourceDataBackend.c"
+0
+0
+"I:\Night\Night\src\libs\ContentLib\pub\ResourceCommands.h"
+0
+0
+"I:\Night\Night\src\libs\ContentLib\ResourceDataBackend.h"
+0
+0
+END_OF_FILE

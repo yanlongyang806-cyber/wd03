@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="autogen\PatchClientLib_AutoGen_1.c">
+      <Filter>Autogen</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoGen\PatchClientLib_AutoGen_2.c">
+      <Filter>Autogen</Filter>
+    </ClCompile>
+    <ClCompile Include="PatchClientLibStatusMonitoring.c" />
+    <ClCompile Include="patchcommonutils.c" />
+    <ClCompile Include="patchdb.c" />
+    <ClCompile Include="patchdb_opt.c" />
+    <ClCompile Include="patchdialogs.c" />
+    <ClCompile Include="patchfeatures.c" />
+    <ClCompile Include="patchfilespec.c" />
+    <ClCompile Include="patchtrivia.c" />
+    <ClCompile Include="patchxfer.c" />
+    <ClCompile Include="patchxferhttp.c" />
+    <ClCompile Include="patchxferhttp_opt.c" />
+    <ClCompile Include="pcl_client.c" />
+    <ClCompile Include="pcl_client_opt.c" />
+    <ClCompile Include="pcl_client_wt.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PatchClientLib_AnonAutoRunIncludes.h" />
+    <ClInclude Include="PatchClientLibStatusMonitoring.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="patchcommonutils.h" />
+    <ClInclude Include="patchdb.h" />
+    <ClInclude Include="patchdb_opt.h" />
+    <ClInclude Include="patcher_comm.h" />
+    <ClInclude Include="patchfilespec.h" />
+    <ClInclude Include="patchtrivia.h" />
+    <ClInclude Include="patchxfer.h" />
+    <ClInclude Include="patchxferhttp.h" />
+    <ClInclude Include="patchxferhttp_opt.h" />
+    <ClInclude Include="pcl_client.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pcl_client_internal.h" />
+    <ClInclude Include="pcl_client_struct.h" />
+    <ClInclude Include="pcl_client_wt.h" />
+    <ClInclude Include="pcl_typedefs.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Autogen">
+      <UniqueIdentifier>{3a5c1406-013d-41be-9abd-eb55bc6fe888}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pub">
+      <UniqueIdentifier>{203cf07d-318a-4509-9727-7a1beee4889a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{85a7296c-c0a6-43e9-a286-2e47aa20387f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

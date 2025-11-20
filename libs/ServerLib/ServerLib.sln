@@ -1,0 +1,59 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ServerLib", "ServerLib.vcproj", "{DD475A7C-B1D4-43C4-ACB7-D73C24BE1EB7}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UtilitiesLib", "..\UtilitiesLib\UtilitiesLib.vcproj", "{A6741F6E-5476-4F9F-9D65-62B54AAF1D08}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug Win32 = Debug Win32
+		Debug Xenon = Debug Xenon
+		Full Debug Win32 = Full Debug Win32
+		Full Debug Xenon = Full Debug Xenon
+		Profile Win32 = Profile Win32
+		Profile Xenon = Profile Xenon
+		Release Win32 = Release Win32
+		Release Xenon = Release Xenon
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{DD475A7C-B1D4-43C4-ACB7-D73C24BE1EB7}.Debug Win32.ActiveCfg = Debug|Win32
+		{DD475A7C-B1D4-43C4-ACB7-D73C24BE1EB7}.Debug Win32.Build.0 = Debug|Win32
+		{DD475A7C-B1D4-43C4-ACB7-D73C24BE1EB7}.Debug Xenon.ActiveCfg = Debug|Win32
+		{DD475A7C-B1D4-43C4-ACB7-D73C24BE1EB7}.Debug Xenon.Build.0 = Debug|Win32
+		{DD475A7C-B1D4-43C4-ACB7-D73C24BE1EB7}.Full Debug Win32.ActiveCfg = Full Debug|Win32
+		{DD475A7C-B1D4-43C4-ACB7-D73C24BE1EB7}.Full Debug Win32.Build.0 = Full Debug|Win32
+		{DD475A7C-B1D4-43C4-ACB7-D73C24BE1EB7}.Full Debug Xenon.ActiveCfg = Full Debug|Win32
+		{DD475A7C-B1D4-43C4-ACB7-D73C24BE1EB7}.Full Debug Xenon.Build.0 = Full Debug|Win32
+		{DD475A7C-B1D4-43C4-ACB7-D73C24BE1EB7}.Profile Win32.ActiveCfg = Full Debug|Win32
+		{DD475A7C-B1D4-43C4-ACB7-D73C24BE1EB7}.Profile Win32.Build.0 = Full Debug|Win32
+		{DD475A7C-B1D4-43C4-ACB7-D73C24BE1EB7}.Profile Xenon.ActiveCfg = Full Debug|Win32
+		{DD475A7C-B1D4-43C4-ACB7-D73C24BE1EB7}.Profile Xenon.Build.0 = Full Debug|Win32
+		{DD475A7C-B1D4-43C4-ACB7-D73C24BE1EB7}.Release Win32.ActiveCfg = Full Debug|Win32
+		{DD475A7C-B1D4-43C4-ACB7-D73C24BE1EB7}.Release Win32.Build.0 = Full Debug|Win32
+		{DD475A7C-B1D4-43C4-ACB7-D73C24BE1EB7}.Release Xenon.ActiveCfg = Full Debug|Win32
+		{DD475A7C-B1D4-43C4-ACB7-D73C24BE1EB7}.Release Xenon.Build.0 = Full Debug|Win32
+		{A6741F6E-5476-4F9F-9D65-62B54AAF1D08}.Debug Win32.ActiveCfg = Debug|Win32
+		{A6741F6E-5476-4F9F-9D65-62B54AAF1D08}.Debug Win32.Build.0 = Debug|Win32
+		{A6741F6E-5476-4F9F-9D65-62B54AAF1D08}.Debug Xenon.ActiveCfg = Debug|Xenon
+		{A6741F6E-5476-4F9F-9D65-62B54AAF1D08}.Debug Xenon.Build.0 = Debug|Xenon
+		{A6741F6E-5476-4F9F-9D65-62B54AAF1D08}.Full Debug Win32.ActiveCfg = Full Debug|Win32
+		{A6741F6E-5476-4F9F-9D65-62B54AAF1D08}.Full Debug Win32.Build.0 = Full Debug|Win32
+		{A6741F6E-5476-4F9F-9D65-62B54AAF1D08}.Full Debug Xenon.ActiveCfg = Full Debug|Xenon
+		{A6741F6E-5476-4F9F-9D65-62B54AAF1D08}.Full Debug Xenon.Build.0 = Full Debug|Xenon
+		{A6741F6E-5476-4F9F-9D65-62B54AAF1D08}.Profile Win32.ActiveCfg = Profile|Win32
+		{A6741F6E-5476-4F9F-9D65-62B54AAF1D08}.Profile Win32.Build.0 = Profile|Win32
+		{A6741F6E-5476-4F9F-9D65-62B54AAF1D08}.Profile Xenon.ActiveCfg = Profile|Xenon
+		{A6741F6E-5476-4F9F-9D65-62B54AAF1D08}.Profile Xenon.Build.0 = Profile|Xenon
+		{A6741F6E-5476-4F9F-9D65-62B54AAF1D08}.Release Win32.ActiveCfg = Release|Win32
+		{A6741F6E-5476-4F9F-9D65-62B54AAF1D08}.Release Win32.Build.0 = Release|Win32
+		{A6741F6E-5476-4F9F-9D65-62B54AAF1D08}.Release Xenon.ActiveCfg = Release|Xenon
+		{A6741F6E-5476-4F9F-9D65-62B54AAF1D08}.Release Xenon.Build.0 = Release|Xenon
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

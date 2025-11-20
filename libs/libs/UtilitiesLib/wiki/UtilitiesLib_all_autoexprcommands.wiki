@@ -1,0 +1,919 @@
+h4.FILE_EXISTS (AccessLevel 9) [Notes|Command_FILE_EXISTS_UtilitiesLib]
+*Returns: bool*
+*Parameter 1: pFileName (string)*
+No comment provided
+
+h4.FILE_SIZE (AccessLevel 9) [Notes|Command_FILE_SIZE_UtilitiesLib]
+*Returns: int*
+*Parameter 1: pFileName (string)*
+No comment provided
+
+h4.LASTRUN_VARIABLE (AccessLevel 9) [Notes|Command_LASTRUN_VARIABLE_UtilitiesLib]
+*Returns: string*
+*Parameter 1: pVarName (string)*
+No comment provided
+
+h4.HOUR_OF_DAY (AccessLevel 9) [Notes|Command_HOUR_OF_DAY_UtilitiesLib]
+*Returns: int*
+No comment provided
+
+h4.XBOX_FILE_SIZE (AccessLevel 9) [Notes|Command_XBOX_FILE_SIZE_UtilitiesLib]
+*Returns: int*
+*Parameter 1: pFileName (string)*
+No comment provided
+
+h4.EXE_WAS_BUILT_THIS_RUN (AccessLevel 9) [Notes|Command_EXE_WAS_BUILT_THIS_RUN_UtilitiesLib]
+*Returns: bool*
+*Parameter 1: pExeName (string)*
+returns true if the named file exists, and has a modification time more recent than the
+beginning of the current scripting run
+
+Note that this actually works on any file, not just .exes
+
+
+h4.GIMME_TIME_MINUTES_OLD (AccessLevel 9) [Notes|Command_GIMME_TIME_MINUTES_OLD_UtilitiesLib]
+*Returns: int*
+*Parameter 1: pGimmeTimeString (string)*
+No comment provided
+
+h4.STRING_IS_EMPTY (AccessLevel 9) [Notes|Command_STRING_IS_EMPTY_UtilitiesLib]
+*Returns: bool*
+*Parameter 1: pStr (string)*
+No comment provided
+
+h4.SVN_MERGE_OUTPUT_HAS_ERRORS (AccessLevel 9) [Notes|Command_SVN_MERGE_OUTPUT_HAS_ERRORS_UtilitiesLib]
+*Returns: bool*
+*Parameter 1: pFileName (string)*
+No comment provided
+
+h4.XBOX_IS_READY (AccessLevel 9) [Notes|Command_XBOX_IS_READY_UtilitiesLib]
+*Returns: bool*
+No comment provided
+
+h4.XBOX_IS_RUNNING_EXE (AccessLevel 9) [Notes|Command_XBOX_IS_RUNNING_EXE_UtilitiesLib]
+*Returns: bool*
+*Parameter 1: pName (string)*
+No comment provided
+
+h4.Debug_BreakPoint (AccessLevel 9) [Notes|Command_Debug_BreakPoint_UtilitiesLib]
+*No Return*
+*Parameter 1: i (int)*
+No comment provided
+
+h4.DEFINED (AccessLevel 9) [Notes|Command_DEFINED_UtilitiesLib]
+*Returns: bool*
+*Parameter 1: pVarName (string)*
+No comment provided
+
+h4.DEFINED_AND_TRUE (AccessLevel 9) [Notes|Command_DEFINED_AND_TRUE_UtilitiesLib]
+*Returns: bool*
+*Parameter 1: pVarName (string)*
+No comment provided
+
+h4.ExprFuncTableIncludesExpr (AccessLevel 9) [Notes|Command_ExprFuncTableIncludesExpr_UtilitiesLib]
+*Returns: bool*
+*Parameter 1: pTableName (string)*
+*Parameter 2: pExprName (string)*
+there are about 8 levels of meta going on here, but basically this expression takes in a func table
+name (specified in exprContextCreateFunctionTable()) and a func name, and returns true if that 
+func is in that func table
+
+
+h4.GSM_StateContains (AccessLevel 9) [Notes|Command_GSM_StateContains_UtilitiesLib]
+*Returns: bool*
+*Parameter 1: pState (string)*
+No comment provided
+
+h4.GetProductName (AccessLevel 9) [Notes|Command_GetProductName_UtilitiesLib]
+*Returns: string*
+Get the product logical name, e.g. "FightClub", "StarTrek".
+
+
+h4.GetShortProductName (AccessLevel 9) [Notes|Command_GetShortProductName_UtilitiesLib]
+*Returns: string*
+Get the short product logical name, e.g. "FC", "STO".
+
+
+h4.RegexExtract (AccessLevel 9) [Notes|Command_RegexExtract_UtilitiesLib]
+*Returns: string*
+*Parameter 1: regex (string)*
+*Parameter 2: input (string)*
+*Parameter 3: defaultOutput (string)*
+No comment provided
+
+h4.ChooseFloat (AccessLevel 9) [Notes|Command_ChooseFloat_UtilitiesLib]
+*Returns: F64*
+*Parameter 1: which (int)*
+*Parameter 2: a (F64)*
+*Parameter 3: b (F64)*
+No comment provided
+
+h4.ChooseInt (AccessLevel 9) [Notes|Command_ChooseInt_UtilitiesLib]
+*Returns: int*
+*Parameter 1: which (int)*
+*Parameter 2: a (int)*
+*Parameter 3: b (int)*
+No comment provided
+
+h4.ChooseInt64 (AccessLevel 9) [Notes|Command_ChooseInt64_UtilitiesLib]
+*Returns: S64*
+*Parameter 1: which (int)*
+*Parameter 2: a (S64)*
+*Parameter 3: b (S64)*
+No comment provided
+
+h4.ChooseString (AccessLevel 9) [Notes|Command_ChooseString_UtilitiesLib]
+*Returns: string*
+*Parameter 1: which (int)*
+*Parameter 2: a (string)*
+*Parameter 3: b (string)*
+No comment provided
+
+h4.Color (AccessLevel 9) [Notes|Command_Color_UtilitiesLib]
+*Parameter 1: pchName (string)*
+Get the color value for the given name. If the named color is missing it will return white.
+
+
+h4.exprDebugIncrement (AccessLevel 9) [Notes|Command_exprDebugIncrement_UtilitiesLib]
+*Returns: int*
+*Parameter 1: i (int)*
+No comment provided
+
+h4.exprDebugTestPartition (AccessLevel 9) [Notes|Command_exprDebugTestPartition_UtilitiesLib]
+*Returns: int*
+No comment provided
+
+h4.DeclareType (AccessLevel 9) [Notes|Command_DeclareType_UtilitiesLib]
+*Parameter 1: pchVar (string)*
+*Parameter 2: pchType (string)*
+Declare the type of a variable. Only useful when a variable can be one of several types;
+this usually only happens in UI expressions.
+
+
+h4.GenDeclareVar (AccessLevel 9) [Notes|Command_GenDeclareVar_UtilitiesLib]
+*Parameter 1: pchVar (string)*
+*Parameter 2: pchType (string)*
+Deprecated equivalent to DeclareType.
+
+
+h4.FloatToString (AccessLevel 9) [Notes|Command_FloatToString_UtilitiesLib]
+*Returns: string*
+*Parameter 1: value (float)*
+Convert a floating point value to its string representation, with two
+digits after the decimal point.
+
+
+h4.Abs (AccessLevel 9) [Notes|Command_Abs_UtilitiesLib]
+*Returns: float*
+*Parameter 1: v (float)*
+Returns the absolute value of the number <v>
+
+
+h4.ArcTan (AccessLevel 9) [Notes|Command_ArcTan_UtilitiesLib]
+*Returns: float*
+*Parameter 1: slope (float)*
+Returns the angle of <slope> in degrees
+
+
+h4.ArcTan2 (AccessLevel 9) [Notes|Command_ArcTan2_UtilitiesLib]
+*Returns: float*
+*Parameter 1: y (float)*
+*Parameter 2: x (float)*
+Returns the angle of <y> / <x> in degrees
+
+
+h4.Bit (AccessLevel 9) [Notes|Command_Bit_UtilitiesLib]
+*Returns: int*
+*Parameter 1: iBit (int)*
+Returns an integer value with the specified bit set
+
+
+h4.CRC32 (AccessLevel 9) [Notes|Command_CRC32_UtilitiesLib]
+*Returns: int*
+*Parameter 1: pch (string)*
+Return a 32 bit CRC of the given string.
+
+
+h4.Ceil (AccessLevel 9) [Notes|Command_Ceil_UtilitiesLib]
+*Returns: float*
+*Parameter 1: v (float)*
+Returns the ceiling of the number <v>
+
+
+h4.Clamp (AccessLevel 9) [Notes|Command_Clamp_UtilitiesLib]
+*Returns: float*
+*Parameter 1: v (float)*
+*Parameter 2: min (float)*
+*Parameter 3: max (float)*
+Clamps the number <v> between <min> and <max>
+
+
+h4.ConsolePrint (AccessLevel 9) [Notes|Command_ConsolePrint_UtilitiesLib]
+*No Return*
+*Parameter 1: str (string)*
+DEBUGGING: prints the passed in string to the server console
+
+
+h4.Cosine (AccessLevel 9) [Notes|Command_Cosine_UtilitiesLib]
+*Returns: float*
+*Parameter 1: degAngle (float)*
+Returns the cosine of <angle> degrees
+
+
+h4.DaysSince2000 (AccessLevel 9) [Notes|Command_DaysSince2000_UtilitiesLib]
+*Returns: int*
+No comment provided
+
+h4.TimeDaysSince2000 (AccessLevel 9) [Notes|Command_TimeDaysSince2000_UtilitiesLib]
+*Returns: int*
+Returns the number of days since January 1st, 2000.
+
+
+h4.EntArrayIntersect (AccessLevel 9) [Notes|Command_EntArrayIntersect_UtilitiesLib]
+*No Return*
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: entsIn2 (Entity Array)*
+No comment provided
+
+h4.EntArrayUnion (AccessLevel 9) [Notes|Command_EntArrayUnion_UtilitiesLib]
+*No Return*
+*Parameter 1: entsIn1 (Entity Array (modified))*
+*Parameter 2: entsIn2 (Entity Array)*
+No comment provided
+
+h4.EntCount (AccessLevel 9) [Notes|Command_EntCount_UtilitiesLib]
+*Returns: int*
+*Parameter 1: entsIn (Entity Array)*
+Returns the number of entities in an ent array
+
+
+h4.Floor (AccessLevel 9) [Notes|Command_Floor_UtilitiesLib]
+*Returns: float*
+*Parameter 1: v (float)*
+Returns the floor of the number <v>
+
+
+h4.GetCurTimeStamp (AccessLevel 9) [Notes|Command_GetCurTimeStamp_UtilitiesLib]
+*Returns: S64*
+Returns the current timestamp. Use this with TimeSince() to get useful times, the numbers
+by themselves mean nothing
+
+
+h4.GetEntArrayVar (AccessLevel 9) [Notes|Command_GetEntArrayVar_UtilitiesLib]
+*Parameter 1: varName (string)*
+Returns a new ent array filled with the contents of one stored previously. All dead/untargetable/
+unselectable/invisible entities are automatically filtered out
+
+
+h4.GetEntArrayVarAll (AccessLevel 9) [Notes|Command_GetEntArrayVarAll_UtilitiesLib]
+*Parameter 1: varName (string)*
+Returns a new ent array filled with the contents of one stored previously. All dead entities
+are automatically filtered out, but untargetable/unselectable/invisible ones are left in
+
+
+h4.GetEntArrayVarDeadAll (AccessLevel 9) [Notes|Command_GetEntArrayVarDeadAll_UtilitiesLib]
+*Parameter 1: varName (string)*
+Returns a new ent array filled with the contents of one stored previously. Returns all
+entities even dead ones
+
+
+h4.GetExternFloatVar (AccessLevel 9) [Notes|Command_GetExternFloatVar_UtilitiesLib]
+*Parameter 1: category (string)*
+*Parameter 2: name (string)*
+Looks up float specified by <name> in registered category <category>. Usually used with
+encounters to specify things like AnimLists or powers
+
+
+h4.GetExternIntVar (AccessLevel 9) [Notes|Command_GetExternIntVar_UtilitiesLib]
+*Parameter 1: category (string)*
+*Parameter 2: name (string)*
+Looks up int specified by <name> in registered category <category>. Usually used with
+encounters to specify things like AnimLists or powers
+
+
+h4.GetExternPointVar (AccessLevel 9) [Notes|Command_GetExternPointVar_UtilitiesLib]
+*Parameter 1: category (string)*
+*Parameter 2: name (string)*
+Looks up <name> in registered category <category> for the point specified. Usually used in
+encounters. Note that you still need the point tag inside the string in your encounter.
+E.g. you need to type "namedpoint:MyPoint" rather then "MyPoint"
+
+
+h4.GetExternStringVar (AccessLevel 9) [Notes|Command_GetExternStringVar_UtilitiesLib]
+*Parameter 1: category (string)*
+*Parameter 2: name (string)*
+Looks up string specified by <name> in registered category <category>. Usually used with
+encounters to specify things like AnimLists or powers
+
+
+h4.GetFloatVar (AccessLevel 9) [Notes|Command_GetFloatVar_UtilitiesLib]
+*Returns: float*
+*Parameter 1: varName (string)*
+Returns the value of a float variable, returns 0 if not found
+
+
+h4.GetIntVar (AccessLevel 9) [Notes|Command_GetIntVar_UtilitiesLib]
+*Returns: int*
+*Parameter 1: varName (string)*
+Returns the value of an integer variable, returns 0 if not found
+
+
+h4.GetPointVar (AccessLevel 9) [Notes|Command_GetPointVar_UtilitiesLib]
+*Parameter 1: varName (string)*
+Returns the point referenced by a point variable, errors if not found
+
+
+h4.GetStringVar (AccessLevel 9) [Notes|Command_GetStringVar_UtilitiesLib]
+*Returns: string*
+*Parameter 1: varName (string)*
+Returns the value of a string variable, returns "" if not found
+
+
+h4.TimeHoursSince2000 (AccessLevel 9) [Notes|Command_TimeHoursSince2000_UtilitiesLib]
+*Returns: int*
+Returns the number of hours since January 1st, 2000.
+
+
+h4.HoursSince2000 (AccessLevel 9) [Notes|Command_HoursSince2000_UtilitiesLib]
+*Returns: int*
+No comment provided
+
+h4.Int (AccessLevel 9) [Notes|Command_Int_UtilitiesLib]
+*Returns: int*
+Returns the integer value of a variable, or 0 if the value cannot be coerced to an integer.
+
+
+h4.GenFloatToInt (AccessLevel 9) [Notes|Command_GenFloatToInt_UtilitiesLib]
+*Returns: int*
+Deprecated, use Int.
+
+
+h4.GenIntToString (AccessLevel 9) [Notes|Command_GenIntToString_UtilitiesLib]
+*Returns: string*
+*Parameter 1: a (S64)*
+Deprecated - use IntToString.
+
+
+h4.IntToString (AccessLevel 9) [Notes|Command_IntToString_UtilitiesLib]
+*Returns: string*
+*Parameter 1: a (S64)*
+Return a string printout of the given integer
+
+
+h4.GenS64ToString (AccessLevel 9) [Notes|Command_GenS64ToString_UtilitiesLib]
+*Returns: string*
+*Parameter 1: a (S64)*
+Deprecated - use IntToString.
+
+
+h4.IntToStringWithZeros (AccessLevel 9) [Notes|Command_IntToStringWithZeros_UtilitiesLib]
+*Returns: string*
+*Parameter 1: a (S64)*
+*Parameter 2: width (int)*
+Return a string printout of the given integer
+
+
+h4.IsNull (AccessLevel 9) [Notes|Command_IsNull_UtilitiesLib]
+*Returns: bool*
+*Parameter 1: path (string)*
+Checks to see if an object path is NULL.
+
+
+h4.Log (AccessLevel 9) [Notes|Command_Log_UtilitiesLib]
+*Returns: float*
+*Parameter 1: v (float)*
+Returns the natural log of the number <v>
+
+
+h4.Log2 (AccessLevel 9) [Notes|Command_Log2_UtilitiesLib]
+*Returns: float*
+*Parameter 1: v (float)*
+Returns the base 2 log of the number <v>
+
+
+h4.MakePointFromCoords (AccessLevel 9) [Notes|Command_MakePointFromCoords_UtilitiesLib]
+*No Return*
+*Parameter 1: x (float)*
+*Parameter 2: y (float)*
+*Parameter 3: z (float)*
+WARNING: Makes a point out of the passed in coordinates. You most likely want to be using
+normal expression "coord:x,y,z" type syntax in your expression rather than using this function
+
+
+h4.Max (AccessLevel 9) [Notes|Command_Max_UtilitiesLib]
+*Returns: float*
+*Parameter 1: a (float)*
+*Parameter 2: b (float)*
+Returns the bigger value of the two passed in numbers
+
+
+h4.Min (AccessLevel 9) [Notes|Command_Min_UtilitiesLib]
+*Returns: float*
+*Parameter 1: a (float)*
+*Parameter 2: b (float)*
+Returns the smaller value of the two passed in numbers
+
+
+h4.mod (AccessLevel 9) [Notes|Command_mod_UtilitiesLib]
+*Returns: S64*
+*Parameter 1: divident (int)*
+*Parameter 2: divisor (int)*
+Returns <divident> modulus <divisor>
+
+
+h4.modfloat (AccessLevel 9) [Notes|Command_modfloat_UtilitiesLib]
+*Returns: float*
+*Parameter 1: total (float)*
+*Parameter 2: piece (float)*
+Subtracts <piece> from <total> until <total> is less than <piece>.
+
+
+h4.OverrideExternFloatVar (AccessLevel 9) [Notes|Command_OverrideExternFloatVar_UtilitiesLib]
+*Parameter 1: category (string)*
+*Parameter 2: name (string)*
+*Parameter 3: value (float)*
+Overrides the variable to the given value in the given category
+
+
+h4.OverrideExternIntVar (AccessLevel 9) [Notes|Command_OverrideExternIntVar_UtilitiesLib]
+*Parameter 1: category (string)*
+*Parameter 2: name (string)*
+*Parameter 3: value (int)*
+Overrides the variable to the given value in the given category
+
+
+h4.OverrideExternStringVar (AccessLevel 9) [Notes|Command_OverrideExternStringVar_UtilitiesLib]
+*Parameter 1: category (string)*
+*Parameter 2: name (string)*
+*Parameter 3: value (string)*
+Overrides the variable to the given value in the given category
+
+
+h4.PointAddOffset (AccessLevel 9) [Notes|Command_PointAddOffset_UtilitiesLib]
+*No Return*
+*Parameter 1: pointIn (Location)*
+*Parameter 2: x (float)*
+*Parameter 3: y (float)*
+*Parameter 4: z (float)*
+Returns a point offset from the original point by the FULL distance.
+
+
+h4.PointAddRandomOffset (AccessLevel 9) [Notes|Command_PointAddRandomOffset_UtilitiesLib]
+*No Return*
+*Parameter 1: pointIn (Location)*
+*Parameter 2: x (float)*
+*Parameter 3: y (float)*
+*Parameter 4: z (float)*
+Returns a point offset from the original point by + or - up to the amount specified for each axis
+
+
+h4.PointFromString (AccessLevel 9) [Notes|Command_PointFromString_UtilitiesLib]
+*Parameter 1: str (string)*
+No comment provided
+
+h4.PointGetX (AccessLevel 9) [Notes|Command_PointGetX_UtilitiesLib]
+*Returns: float*
+*Parameter 1: pointIn (Location)*
+Returns a point's x-coord
+
+
+h4.PointGetY (AccessLevel 9) [Notes|Command_PointGetY_UtilitiesLib]
+*Returns: float*
+*Parameter 1: pointIn (Location)*
+Returns a point's x-coord
+
+
+h4.PointGetZ (AccessLevel 9) [Notes|Command_PointGetZ_UtilitiesLib]
+*Returns: float*
+*Parameter 1: pointIn (Location)*
+Returns a point's x-coord
+
+
+h4.RandomFloat (AccessLevel 9) [Notes|Command_RandomFloat_UtilitiesLib]
+*Returns: float*
+*Parameter 1: min (float)*
+*Parameter 2: max (float)*
+Returns a random float between <min> and <max> (actually [min, max), but close enough)
+
+
+h4.RandomInt (AccessLevel 9) [Notes|Command_RandomInt_UtilitiesLib]
+*Returns: int*
+*Parameter 1: min (int)*
+*Parameter 2: max (int)*
+Returns a random integer between <min> and <max> (inclusive)
+
+
+h4.RandomIntFullRange (AccessLevel 9) [Notes|Command_RandomIntFullRange_UtilitiesLib]
+*Returns: int*
+Returns a random integer
+
+
+h4.RandomIntSeeded (AccessLevel 9) [Notes|Command_RandomIntSeeded_UtilitiesLib]
+*Returns: int*
+*Parameter 1: min (int)*
+*Parameter 2: max (int)*
+*Parameter 3: seed (int)*
+Returns a random integer between <min> and <max> (inclusive), using the provided random seed
+
+
+h4.RandomIntString (AccessLevel 9) [Notes|Command_RandomIntString_UtilitiesLib]
+*Returns: string*
+*Parameter 1: pchNumbers (string)*
+Replaces each number n in the input string with n random numbers. Consecutive numbers
+are delimited by a space character
+Good for making random techy numbers in STO
+
+
+h4.RandomPoint (AccessLevel 9) [Notes|Command_RandomPoint_UtilitiesLib]
+*No Return*
+*Parameter 1: xMin (float)*
+*Parameter 2: xMax (float)*
+*Parameter 3: yMin (float)*
+*Parameter 4: yMax (float)*
+*Parameter 5: zMin (float)*
+*Parameter 6: zMax (float)*
+Returns a random point between the passed in min and max coords
+
+
+h4.RangeInEx (AccessLevel 9) [Notes|Command_RangeInEx_UtilitiesLib]
+*Returns: int*
+*Parameter 1: v (float)*
+*Parameter 2: min (float)*
+*Parameter 3: max (float)*
+Returns true if the number <v> is in the range [<min>..<max>).  Note that it's inclusive of min, and exclusive of max.
+
+
+h4.SetEntArrayVar (AccessLevel 9) [Notes|Command_SetEntArrayVar_UtilitiesLib]
+*No Return*
+*Parameter 1: entsIn (Entity Array)*
+*Parameter 2: varName (string)*
+Stores an ent array for future reference
+
+
+h4.SetFloatVar (AccessLevel 9) [Notes|Command_SetFloatVar_UtilitiesLib]
+*No Return*
+*Parameter 1: varName (string)*
+*Parameter 2: value (float)*
+Stores a float variable with the specified name
+
+
+h4.SetIntVar (AccessLevel 9) [Notes|Command_SetIntVar_UtilitiesLib]
+*No Return*
+*Parameter 1: varName (string)*
+*Parameter 2: value (int)*
+Stores an integer variable with the specified name
+
+
+h4.SetPointVar (AccessLevel 9) [Notes|Command_SetPointVar_UtilitiesLib]
+*No Return*
+*Parameter 1: varName (string)*
+*Parameter 2: matIn (Location)*
+Stores a point variable with the passed in name
+
+
+h4.SetStringVar (AccessLevel 9) [Notes|Command_SetStringVar_UtilitiesLib]
+*No Return*
+*Parameter 1: varName (string)*
+*Parameter 2: value (string)*
+Stores a string variable with the specified name
+
+
+h4.Sine (AccessLevel 9) [Notes|Command_Sine_UtilitiesLib]
+*Returns: float*
+*Parameter 1: degAngle (float)*
+Returns the sine of <angle> in degrees
+
+
+h4.SquareRoot (AccessLevel 9) [Notes|Command_SquareRoot_UtilitiesLib]
+*Returns: float*
+*Parameter 1: value (float)*
+Returns the square root of <value> or -1 if <value> is less than 0
+
+
+h4.StrContains (AccessLevel 9) [Notes|Command_StrContains_UtilitiesLib]
+*Returns: int*
+*Parameter 1: str1 (string)*
+*Parameter 2: str2 (string)*
+Returns whether <str1> contains the string <str2>
+
+
+h4.StrFind (AccessLevel 9) [Notes|Command_StrFind_UtilitiesLib]
+*Returns: S64*
+*Parameter 1: str1 (string)*
+*Parameter 2: str2 (string)*
+Find the index of the first occurrence of <str2> in <str1>, or a negative number if not found.
+
+
+h4.StrFindLast (AccessLevel 9) [Notes|Command_StrFindLast_UtilitiesLib]
+*Returns: S64*
+*Parameter 1: str1 (string)*
+*Parameter 2: str2 (string)*
+Find the index of the last occurrence of <str2> in <str1>, or a negative number if not found.
+
+
+h4.StrFindNext (AccessLevel 9) [Notes|Command_StrFindNext_UtilitiesLib]
+*Returns: S64*
+*Parameter 1: str1 (string)*
+*Parameter 2: str2 (string)*
+*Parameter 3: pos (S64)*
+Find the index of the next occurrence of <str2> in <str1> starting from <pos>, or a negative number if not found.
+
+
+h4.StrFindPrevious (AccessLevel 9) [Notes|Command_StrFindPrevious_UtilitiesLib]
+*Returns: S64*
+*Parameter 1: str1 (string)*
+*Parameter 2: str2 (string)*
+*Parameter 3: pos (S64)*
+Find the index of the preceding occurrence of <str2> in <str1> starting from <pos>, or a negative number if not found.
+
+
+h4.StrLength (AccessLevel 9) [Notes|Command_StrLength_UtilitiesLib]
+*Returns: S64*
+*Parameter 1: str (string)*
+Get the length of <str>
+
+
+h4.StrRepeat (AccessLevel 9) [Notes|Command_StrRepeat_UtilitiesLib]
+*Returns: string*
+*Parameter 1: str (string)*
+*Parameter 2: num (int)*
+Repeat the contents of <str> <num> times
+
+
+h4.StrReverse (AccessLevel 9) [Notes|Command_StrReverse_UtilitiesLib]
+*Returns: string*
+*Parameter 1: str (string)*
+Reverse the contents of <str>
+
+
+h4.StrSubPart (AccessLevel 9) [Notes|Command_StrSubPart_UtilitiesLib]
+*Returns: string*
+*Parameter 1: str (string)*
+*Parameter 2: begin (S64)*
+*Parameter 3: end (S64)*
+Get a substring of <str> starting from <begin> (inclusive) to <end> (exclusive). A negative number starts from the end of the string.
+
+
+h4.StrSubString (AccessLevel 9) [Notes|Command_StrSubString_UtilitiesLib]
+*Returns: string*
+*Parameter 1: str (string)*
+*Parameter 2: pos (S64)*
+Get a substring of <str> starting from <pos> until the end of the string. A negative number starts from the end of the string.
+
+
+h4.StrTrim (AccessLevel 9) [Notes|Command_StrTrim_UtilitiesLib]
+*Returns: string*
+*Parameter 1: str (string)*
+Removes whitespace from the beginning and the end of <str>
+
+
+h4.StrTrimHead (AccessLevel 9) [Notes|Command_StrTrimHead_UtilitiesLib]
+*Returns: string*
+*Parameter 1: str (string)*
+Removes whitespace from the beginning of <str>
+
+
+h4.StrTrimTail (AccessLevel 9) [Notes|Command_StrTrimTail_UtilitiesLib]
+*Returns: string*
+*Parameter 1: str (string)*
+Removes whitespace from the end of <str>
+
+
+h4.String (AccessLevel 9) [Notes|Command_String_UtilitiesLib]
+*Returns: string*
+Returns the string value of a variable, or "" if the value cannot be coerced to an integer.
+
+
+h4.StringConcat (AccessLevel 9) [Notes|Command_StringConcat_UtilitiesLib]
+*Returns: string*
+*Parameter 1: a (string)*
+*Parameter 2: b (string)*
+Return a new string that is the result of concatenating the two given strings.
+
+
+h4.StringLength (AccessLevel 9) [Notes|Command_StringLength_UtilitiesLib]
+*Returns: int*
+*Parameter 1: a (string)*
+Return the length of a string
+
+
+h4.StringToFloat (AccessLevel 9) [Notes|Command_StringToFloat_UtilitiesLib]
+*Returns: float*
+*Parameter 1: pchString (string)*
+Convert a string to a floating point number, or 0 if the string is not valid.
+
+
+h4.StringToInt (AccessLevel 9) [Notes|Command_StringToInt_UtilitiesLib]
+*Returns: int*
+*Parameter 1: pchInt (string)*
+Return a int from a given string
+
+
+h4.StringToInt64 (AccessLevel 9) [Notes|Command_StringToInt64_UtilitiesLib]
+*Returns: S64*
+*Parameter 1: pchInt (string)*
+Return a 64-bit int from a given string
+
+
+h4.TimeSince (AccessLevel 9) [Notes|Command_TimeSince_UtilitiesLib]
+*Returns: float*
+*Parameter 1: time (S64)*
+Returns the time (in seconds) that has passed since the timestamp passed in. Useful mostly
+with timestamps saved in variables or curStateTracker.lastEntryTime
+
+
+h4.TimeSinceSS2000 (AccessLevel 9) [Notes|Command_TimeSinceSS2000_UtilitiesLib]
+*Returns: int*
+*Parameter 1: iInTime (int)*
+same as the above, but input time is secsSince2000
+
+
+h4.ToLower (AccessLevel 9) [Notes|Command_ToLower_UtilitiesLib]
+*Returns: string*
+*Parameter 1: s (string)*
+Convert all uppercase characters to lowercase
+
+
+h4.ToUpper (AccessLevel 9) [Notes|Command_ToUpper_UtilitiesLib]
+*Returns: string*
+*Parameter 1: s (string)*
+Convert all lowercase characters to uppercase
+
+
+h4.Vec (AccessLevel 9) [Notes|Command_Vec_UtilitiesLib]
+*No Return*
+*Parameter 1: x (float)*
+*Parameter 2: y (float)*
+*Parameter 3: z (float)*
+No comment provided
+
+h4.Vec4 (AccessLevel 9) [Notes|Command_Vec4_UtilitiesLib]
+*No Return*
+*Parameter 1: x (float)*
+*Parameter 2: y (float)*
+*Parameter 3: z (float)*
+*Parameter 4: w (float)*
+No comment provided
+
+h4.GetHueFromRGB (AccessLevel 9) [Notes|Command_GetHueFromRGB_UtilitiesLib]
+*Returns: float*
+*Parameter 1: fR (float)*
+*Parameter 2: fG (float)*
+*Parameter 3: fB (float)*
+Return the distance that the mouse is from the gen's unpadded screen box.
+
+
+h4.GetSaturationFromRGB (AccessLevel 9) [Notes|Command_GetSaturationFromRGB_UtilitiesLib]
+*Returns: float*
+*Parameter 1: fR (float)*
+*Parameter 2: fG (float)*
+*Parameter 3: fB (float)*
+Return the distance that the mouse is from the gen's unpadded screen box.
+
+
+h4.GetValueFromRGB (AccessLevel 9) [Notes|Command_GetValueFromRGB_UtilitiesLib]
+*Returns: float*
+*Parameter 1: fR (float)*
+*Parameter 2: fG (float)*
+*Parameter 3: fB (float)*
+Return the distance that the mouse is from the gen's unpadded screen box.
+
+
+h4.IsProductionEditMode (AccessLevel 9) [Notes|Command_IsProductionEditMode_UtilitiesLib]
+*Returns: bool*
+No comment provided
+
+h4.IsReferenceLoaded (AccessLevel 9) [Notes|Command_IsReferenceLoaded_UtilitiesLib]
+*Returns: int*
+*Parameter 1: pchType (string)*
+*Parameter 2: pchReference (string)*
+Use this to check whether a handle is loaded by the ref system. ex: IsReferenceLoaded("ItemDef", pItem.hItemDef) . An invalid handle or type will yield 0.
+
+
+h4.LangTranslateDefault (AccessLevel 9) [Notes|Command_LangTranslateDefault_UtilitiesLib]
+*Parameter 1: langID (int)*
+*Parameter 2: pchKey (string)*
+*Parameter 3: pchDefault (string)*
+Translate a message key using the given language, in this expression context,
+with a default back-up message in case the first message isn't available.
+
+
+h4.LangTranslate (AccessLevel 9) [Notes|Command_LangTranslate_UtilitiesLib]
+*Parameter 1: uiLang (int)*
+*Parameter 2: pchKey (string)*
+Translate a message key using the given language, in this expression context.
+
+
+h4.LinearInterpolate (AccessLevel 9) [Notes|Command_LinearInterpolate_UtilitiesLib]
+*Returns: float*
+*Parameter 1: fFrom (float)*
+*Parameter 2: fTo (float)*
+*Parameter 3: fMod (float)*
+Interpolate a number From -> To. Where Mod controls the interpolation.
+
+
+h4.NextStringInList (AccessLevel 9) [Notes|Command_NextStringInList_UtilitiesLib]
+*Returns: string*
+*Parameter 1: pchString (string)*
+*Parameter 2: pchList (string)*
+Return the next string in the given list with cycling, e.g.
+NextStringInList("A", "A B C") -> "B"
+NextStringInList("C", "A B C") -> "A"
+
+
+h4.PreviousStringInList (AccessLevel 9) [Notes|Command_PreviousStringInList_UtilitiesLib]
+*Returns: string*
+*Parameter 1: pchString (string)*
+*Parameter 2: pchList (string)*
+Return the previous string in the given list with cycling, e.g.
+PreviousStringInList("C", "A B C") -> "B"
+PreviousStringInList("A", "A B C") -> "C"
+
+
+h4.RGBAIntSwapBytes (AccessLevel 9) [Notes|Command_RGBAIntSwapBytes_UtilitiesLib]
+*Returns: int*
+*Parameter 1: uRGBA (int)*
+Convert a color value from an int packed form to a byte packed form (i.e. endian swap if necessary)
+
+
+h4.RunCommand (AccessLevel 9) [Notes|Command_RunCommand_UtilitiesLib]
+*Returns: int*
+*Parameter 1: pchCommand (string)*
+Run a command.
+
+
+h4.StaticDefineIntGetInt (AccessLevel 9) [Notes|Command_StaticDefineIntGetInt_UtilitiesLib]
+*Parameter 1: pchName (string)*
+*Parameter 2: pchKey (string)*
+Convert a StaticDefineInt key into a value.
+
+
+h4.StaticDefineIntGetIntDefault (AccessLevel 9) [Notes|Command_StaticDefineIntGetIntDefault_UtilitiesLib]
+*Parameter 1: pchName (string)*
+*Parameter 2: pchKey (string)*
+*Parameter 3: iDefault (int)*
+Convert a StaticDefineInt key into a value.
+
+
+h4.StaticDefineIntGetKey (AccessLevel 9) [Notes|Command_StaticDefineIntGetKey_UtilitiesLib]
+*Parameter 1: pchName (string)*
+*Parameter 2: iValue (int)*
+Convert a StaticDefineInt value into a string key (untranslated).
+
+
+h4.StringStripFontTags (AccessLevel 9) [Notes|Command_StringStripFontTags_UtilitiesLib]
+*Returns: string*
+*Parameter 1: pchString (string)*
+No comment provided
+
+h4.StringStripTags (AccessLevel 9) [Notes|Command_StringStripTags_UtilitiesLib]
+*Returns: string*
+*Parameter 1: pchString (string)*
+*Parameter 2: bPrettyPrint (bool)*
+No comment provided
+
+h4.TimeLocalOffsetFromUTC (AccessLevel 9) [Notes|Command_TimeLocalOffsetFromUTC_UtilitiesLib]
+*Returns: S64*
+No comment provided
+
+h4.TimeSecondsSince2000 (AccessLevel 9) [Notes|Command_TimeSecondsSince2000_UtilitiesLib]
+*Returns: S64*
+*Parameter 1: time (string)*
+Return the time in seconds since 2000 given a date. Pass "now" for the current time. Pass "serverNow" for current server time.
+e.g. TimeSecondsSince2000("now") > TimeSecondsSince2000("2009-09-05")
+
+
+h4.TranslateDefault (AccessLevel 9) [Notes|Command_TranslateDefault_UtilitiesLib]
+*Parameter 1: pchKey (string)*
+*Parameter 2: pchDefault (string)*
+Translate a message key in the current locale, in this expression context,
+with a default back-up message in case the first message isn't available.
+
+
+h4.TranslateDisplayMessage (AccessLevel 9) [Notes|Command_TranslateDisplayMessage_UtilitiesLib]
+*Parameter 1: pDisplayMessage (DisplayMessage struct)*
+Translate a message key in the current locale, in this expression context.
+
+
+h4.Translate (AccessLevel 9) [Notes|Command_Translate_UtilitiesLib]
+*Parameter 1: pchKey (string)*
+Translate a message key in the current locale, in this expression context.
+
+
+h4.TranslateMessage (AccessLevel 9) [Notes|Command_TranslateMessage_UtilitiesLib]
+*Parameter 1: pMessage (Message struct)*
+Translate a message key in the current locale, in this expression context.
+
+
+h4.TranslateStaticDefineInt (AccessLevel 9) [Notes|Command_TranslateStaticDefineInt_UtilitiesLib]
+*Parameter 1: pchName (string)*
+*Parameter 2: iValue (int)*
+Translate a StaticDefineInt value.
+
+
+h4.TranslateStaticDefineIntKey (AccessLevel 9) [Notes|Command_TranslateStaticDefineIntKey_UtilitiesLib]
+*Parameter 1: pchName (string)*
+*Parameter 2: pchKey (string)*
+Translate a StaticDefineInt key.
+
+

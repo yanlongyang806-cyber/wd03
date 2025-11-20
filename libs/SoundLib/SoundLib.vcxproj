@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Full Debug|Win32">
+      <Configuration>Full Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FC433264-E0BC-42EA-8070-177A1EBADD67}</ProjectGuid>
+    <RootNamespace>SoundLib</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="..\..\PropertySheets\GeneralSettings.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'" Label="PropertySheets">
+    <Import Project="..\..\PropertySheets\GeneralSettings.props" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../3rdparty/vivox/include;../../3rdparty/fmod/inc;../GraphicsLib/pub;../UtilitiesLib/utils;../WorldLib/pub;../UI2Lib/pub;../Renderers/pub;../../Crossroads/Common;../../Crossroads/Common/Entity;../../Crossroads/Common/Mission;../../Crossroads/Common/Item;../InputLib/pub;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>CLIENTLIBMAKEWRAPPERS;WIN32;_DEBUG;_LIB;_WINDOWS;_CRTDBG_MAP_ALLOC=1;USEZLIB=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <TreatWarningAsError>false</TreatWarningAsError>
+    </ClCompile>
+    <Lib>
+    </Lib>
+    <PreBuildEvent>
+      <Command>..\..\utilities\bin\structparser X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../3rdparty/vivox/include;../../3rdparty/fmod/inc;../GraphicsLib/pub;../UtilitiesLib/utils;../WorldLib/pub;../UI2Lib/pub;../Renderers/pub;../../Crossroads/Common;../../Crossroads/Common/Entity;../../Crossroads/Common/Mission;../../Crossroads/Common/Item;../InputLib/pub;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>CLIENTLIBMAKEWRAPPERS;WIN32;_DEBUG;_FULLDEBUG;_LIB;_WINDOWS;_CRTDBG_MAP_ALLOC=1;USEZLIB=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Lib>
+    </Lib>
+    <PreBuildEvent>
+      <Command>..\..\utilities\bin\structparser X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="adebug.c" />
+    <ClCompile Include="AutoGen\SoundLib_AutoGen_1.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="AutoGen\SoundLib_AutoGen_2.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="event_sys.cpp" />
+    <ClCompile Include="gDebug.c" />
+    <ClCompile Include="sndAnim.c" />
+    <ClCompile Include="sndCluster.c" />
+    <ClCompile Include="sndCmdRemote.c" />
+    <ClCompile Include="sndCommandParse.c" />
+    <ClCompile Include="sndConn.c" />
+    <ClCompile Include="sndDebug2.c" />
+    <ClCompile Include="sndFade.c" />
+    <ClCompile Include="sndFx.c" />
+    <ClCompile Include="sndLOD.c" />
+    <ClCompile Include="sndMemory.c" />
+    <ClCompile Include="sndMission.c" />
+    <ClCompile Include="sndMixer.c" />
+    <ClCompile Include="sndMusic.c" />
+    <ClCompile Include="sndObject.c" />
+    <ClCompile Include="sndQueue.c" />
+    <ClCompile Include="sndSource.c" />
+    <ClCompile Include="sndSpace.c" />
+    <ClCompile Include="sndVoice.c" />
+    <ClCompile Include="sound.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="event_sys.h" />
+    <ClInclude Include="pub\adebug.h" />
+    <ClInclude Include="pub\gDebug.h" />
+    <ClInclude Include="pub\sndMemory.h" />
+    <ClInclude Include="pub\sndVoice.h" />
+    <ClInclude Include="pub\soundLib.h" />
+    <ClInclude Include="sndAnim.h" />
+    <ClInclude Include="sndCluster.h" />
+    <ClInclude Include="sndConn.h" />
+    <ClInclude Include="sndDebug2.h" />
+    <ClInclude Include="sndFade.h" />
+    <ClInclude Include="sndFx.h" />
+    <ClInclude Include="sndLibPrivate.h" />
+    <ClInclude Include="sndLOD.h" />
+    <ClInclude Include="sndMission.h" />
+    <ClInclude Include="sndMixer.h" />
+    <ClInclude Include="sndMusic.h" />
+    <ClInclude Include="sndObject.h" />
+    <ClInclude Include="sndQueue.h" />
+    <ClInclude Include="sndSource.h" />
+    <ClInclude Include="sndSpace.h" />
+    <ClInclude Include="SoundLib_AnonAutoRunIncludes.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\StructParserStub\StructParserStub.vcxproj">
+      <Project>{1d29e421-93b2-4e32-9186-7fafc3971c5b}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

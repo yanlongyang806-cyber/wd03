@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Full Debug|Win32">
+      <Configuration>Full Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DB3966D2-F96D-4F16-8187-7E7C5D0B9D8D}</ProjectGuid>
+    <RootNamespace>GraphicsLib</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="..\..\PropertySheets\GeneralSettings.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'" Label="PropertySheets">
+    <Import Project="..\..\PropertySheets\GeneralSettings.props" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>truetype;../Renderers/pub;../../3rdparty/jpgdlib/inc;../InputLib/pub;../WorldLib/pub;../../3rdparty/directx/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_WINDOWS;_CRTDBG_MAP_ALLOC=1;USEZLIB=1;GRAPHICSLIB=1;CLIENTLIBMAKEWRAPPERS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ForcedIncludeFiles>DebugState.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <TreatWarningAsError>false</TreatWarningAsError>
+    </ClCompile>
+    <Lib>
+    </Lib>
+    <PreBuildEvent>
+      <Command>..\..\utilities\bin\structparser X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>truetype;../Renderers/pub;../../3rdparty/jpgdlib/inc;../InputLib/pub;../WorldLib/pub;../../3rdparty/directx/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_FULLDEBUG;_LIB;_WINDOWS;_CRTDBG_MAP_ALLOC=1;USEZLIB=1;GRAPHICSLIB=1;CLIENTLIBMAKEWRAPPERS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ForcedIncludeFiles>DebugState.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <Lib>
+    </Lib>
+    <PreBuildEvent>
+      <Command>..\..\utilities\bin\structparser X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AutoGen\graphicslib_AutoGen_1.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="AutoGen\GraphicsLib_AutoGen_2.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="Clipper.c" />
+    <ClCompile Include="GfxAlien.c" />
+    <ClCompile Include="GfxAtmospherics.c" />
+    <ClCompile Include="GfxAuxDevice.c" />
+    <ClCompile Include="GfxCamera.c" />
+    <ClCompile Include="GfxCommandParse.c" />
+    <ClCompile Include="GfxCommonSnap.c" />
+    <ClCompile Include="GfxConsole.c" />
+    <ClCompile Include="GfxCursor.c" />
+    <ClCompile Include="GfxDebug.c" />
+    <ClCompile Include="GfxDeferredLighting.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="GfxDeferredShadows.c" />
+    <ClCompile Include="GfxDrawFrame.c" />
+    <ClCompile Include="GfxDumpToVrml.c" />
+    <ClCompile Include="GfxDXT.c" />
+    <ClCompile Include="GfxDynamics.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Full</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="GfxExpressions.c" />
+    <ClCompile Include="GfxFont.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="GfxGeo.c" />
+    <ClCompile Include="GfxHeadshot.c" />
+    <ClCompile Include="GfxHeadshot_util.c" />
+    <ClCompile Include="GfxImposter.c" />
+    <ClCompile Include="GfxLCD.c" />
+    <ClCompile Include="GfxLightCache.c" />
+    <ClCompile Include="GfxLightDebugger.c" />
+    <ClCompile Include="GfxLights.c">
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+    </ClCompile>
+    <ClCompile Include="GfxLoadScreens.c" />
+    <ClCompile Include="GfxMapSnap.c" />
+    <ClCompile Include="GfxMaterialAssembler.c" />
+    <ClCompile Include="GfxMaterialPreload.c" />
+    <ClCompile Include="GfxMaterialProfile.c" />
+    <ClCompile Include="GfxMaterials.c" />
+    <ClCompile Include="GfxMaterialsOpt.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="GfxMipMap.c" />
+    <ClCompile Include="GfxModel.c">
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+    </ClCompile>
+    <ClCompile Include="GfxModelCache.c" />
+    <ClCompile Include="GfxModelOpt.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="GfxModelUnload.c" />
+    <ClCompile Include="GfxNVPerf.c" />
+    <ClCompile Include="GfxOcclusion.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="GfxOcclusionClip.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="GfxOcclusionTestData.c" />
+    <ClCompile Include="GfxPerformance.c" />
+    <ClCompile Include="GfxPostprocess.c" />
+    <ClCompile Include="GfxPrimitive.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="GfxRecord.c" />
+    <ClCompile Include="GfxSettings.c" />
+    <ClCompile Include="GfxShader.c" />
+    <ClCompile Include="GfxShadows.c" />
+    <ClCompile Include="GfxShadowSearch.c" />
+    <ClCompile Include="GfxSky.c" />
+    <ClCompile Include="GfxSplat.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Full</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="GfxSprite.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="GfxSpriteList.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="GfxSpriteText.c" />
+    <ClCompile Include="GfxStarField.c" />
+    <ClCompile Include="GfxStaticLights.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Full</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+    </ClCompile>
+    <ClCompile Include="GfxSurface.c" />
+    <ClCompile Include="GfxTerrain.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="GfxTerrainVis.c" />
+    <ClCompile Include="GfxTexAtlas.c" />
+    <ClCompile Include="GfxTextures.c" />
+    <ClCompile Include="GfxTextureTools.c" />
+    <ClCompile Include="GfxUnload.c" />
+    <ClCompile Include="GfxWorld.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Full</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <AssemblerOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AssemblyAndSourceCode</AssemblerOutput>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="GraphicsLib.c" />
+    <ClCompile Include="rotoZoom.c" />
+    <ClCompile Include="tex_gen.c" />
+    <ClCompile Include="TexOpts.c" />
+    <ClCompile Include="texUnload.c" />
+    <ClCompile Include="texWords.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\WorldLib\pub\Materials.h" />
+    <ClInclude Include="..\WorldLib\pub\wlLight.h" />
+    <ClInclude Include="Clipper.h" />
+    <ClInclude Include="GfxAtmospherics.h" />
+    <ClInclude Include="GfxAuxDevice.h" />
+    <ClInclude Include="GfxDeferredLighting.h" />
+    <ClInclude Include="GfxDeferredShadows.h" />
+    <ClInclude Include="GfxDrawFrame.h" />
+    <ClInclude Include="GfxDXT.h" />
+    <ClInclude Include="GfxDynamics.h" />
+    <ClInclude Include="GfxEnums.h" />
+    <ClInclude Include="GfxFontPrivate.h" />
+    <ClInclude Include="GfxGeo.h" />
+    <ClInclude Include="GfxImposter.h" />
+    <ClInclude Include="GfxLightCache.h" />
+    <ClInclude Include="GfxLights.h" />
+    <ClInclude Include="GfxLightsPrivate.h" />
+    <ClInclude Include="GfxMaterialAssembler.h" />
+    <ClInclude Include="GfxMaterialPreload.h" />
+    <ClInclude Include="GfxMaterialProfile.h" />
+    <ClInclude Include="GfxMaterialsOpt.h" />
+    <ClInclude Include="GfxMipMap.h" />
+    <ClInclude Include="GfxModel.h" />
+    <ClInclude Include="GfxModelCache.h" />
+    <ClInclude Include="GfxModelInline.h" />
+    <ClInclude Include="GfxModelOpt.h" />
+    <ClInclude Include="GfxModelUnload.h" />
+    <ClInclude Include="GfxNVPerf.h" />
+    <ClInclude Include="GfxOcclusion.h" />
+    <ClInclude Include="GfxOcclusionClip.h" />
+    <ClInclude Include="GfxOcclusionDraw.h" />
+    <ClInclude Include="GfxOcclusionTypes.h" />
+    <ClInclude Include="GfxPerformance.h" />
+    <ClInclude Include="GfxPostprocess.h" />
+    <ClInclude Include="GfxPrimitivePrivate.h" />
+    <ClInclude Include="GfxShader.h" />
+    <ClInclude Include="GfxShadows.h" />
+    <ClInclude Include="GfxShadowSearch.h" />
+    <ClInclude Include="GfxSky.h" />
+    <ClInclude Include="GfxSplat.h" />
+    <ClInclude Include="GfxStarField.h" />
+    <ClInclude Include="GfxStaticLights.h" />
+    <ClInclude Include="GfxSurface.h" />
+    <ClInclude Include="GfxTerrainVis.h" />
+    <ClInclude Include="GfxTexAtlasInternal.h" />
+    <ClInclude Include="GfxTexAtlasPrivate.h" />
+    <ClInclude Include="GfxTextures.h" />
+    <ClInclude Include="GfxTexturesInline.h" />
+    <ClInclude Include="GfxUnload.h" />
+    <ClInclude Include="GfxWorld.h" />
+    <ClInclude Include="GraphicsLib_AnonAutoRunIncludes.h" />
+    <ClInclude Include="GraphicsLibPrivate.h" />
+    <ClInclude Include="pub\GfxAlien.h" />
+    <ClInclude Include="pub\GfxCamera.h" />
+    <ClInclude Include="pub\GfxClipper.h" />
+    <ClInclude Include="pub\GfxCommandParse.h" />
+    <ClInclude Include="pub\GfxCommonSnap.h" />
+    <ClInclude Include="pub\GfxConsole.h" />
+    <ClInclude Include="pub\GfxCursor.h" />
+    <ClInclude Include="pub\GfxDebug.h" />
+    <ClInclude Include="pub\GfxDumpToVrml.h" />
+    <ClInclude Include="pub\GfxEditorIncludes.h" />
+    <ClInclude Include="pub\GfxFont.h" />
+    <ClInclude Include="pub\GfxHeadshot.h" />
+    <ClInclude Include="pub\GfxLCD.h" />
+    <ClInclude Include="pub\GfxLightDebugger.h" />
+    <ClInclude Include="pub\GfxLightOptions.h" />
+    <ClInclude Include="pub\GfxLoadScreens.h" />
+    <ClInclude Include="pub\GfxMapSnap.h" />
+    <ClInclude Include="pub\GfxMaterials.h" />
+    <ClInclude Include="pub\GfxPrimitive.h" />
+    <ClInclude Include="pub\GfxRecord.h" />
+    <ClInclude Include="pub\GfxSettings.h" />
+    <ClInclude Include="pub\GfxSprite.h" />
+    <ClInclude Include="pub\GfxSprite.inl" />
+    <ClInclude Include="pub\GfxSpriteList.h" />
+    <ClInclude Include="pub\GfxSpriteText.h" />
+    <ClInclude Include="pub\GfxTerrain.h" />
+    <ClInclude Include="pub\GfxTesting.h" />
+    <ClInclude Include="pub\GfxTexAtlas.h" />
+    <ClInclude Include="pub\GfxTexOpts.h" />
+    <ClInclude Include="pub\GfxTextureEnums.h" />
+    <ClInclude Include="pub\GfxTexturesPublic.h" />
+    <ClInclude Include="pub\GfxTextureTools.h" />
+    <ClInclude Include="pub\GfxTexWords.h" />
+    <ClInclude Include="pub\GraphicsLib.h" />
+    <ClInclude Include="rotoZoom.h" />
+    <ClInclude Include="tex_gen.h" />
+    <ClInclude Include="TexOpts.h" />
+    <ClInclude Include="texUnload.h" />
+    <ClInclude Include="texWords.h" />
+    <ClInclude Include="texWordsPrivate.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\StructParserStub\StructParserStub.vcxproj">
+      <Project>{1d29e421-93b2-4e32-9186-7fafc3971c5b}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

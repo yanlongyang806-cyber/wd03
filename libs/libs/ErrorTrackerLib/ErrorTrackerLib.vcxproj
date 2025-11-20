@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Full Debug|Win32">
+      <Configuration>Full Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Full Debug|x64">
+      <Configuration>Full Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2ABB94EC-3E38-48BD-B97F-5B46328A4AEF}</ProjectGuid>
+    <RootNamespace>ErrorTrackerLib</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="..\..\PropertySheets\GeneralSettings.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="..\..\PropertySheets\GeneralSettings.props" />
+    <Import Project="..\..\PropertySheets\x64.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'" Label="PropertySheets">
+    <Import Project="..\..\PropertySheets\GeneralSettings.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|x64'" Label="PropertySheets">
+    <Import Project="..\..\PropertySheets\GeneralSettings.props" />
+    <Import Project="..\..\PropertySheets\x64.props" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>../../3rdparty/subversion-1.6.6/apr-util/include;../../3rdparty/subversion-1.6.6/apr/include;../../3rdparty/subversion-1.6.6/subversion/include;../../3rdparty/DirectX/Include;../Inputlib/pub;../Inputlib;../GraphicsLib;../Renderers/pub;../GraphicsLib/pub;../WorldLib/pub;../ServerLib/pub;../ServerLib/objects;../Common;../HttpLib;../../3rdparty/xdk/win32;$(VSINSTALLDIR)\DIA SDK\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_WINDOWS;_CRTDBG_MAP_ALLOC=1;USEZLIB=1;INPUTLIB=1;APR_DECLARE_STATIC;APU_DECLARE_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+    </ClCompile>
+    <Lib>
+    </Lib>
+    <PreBuildEvent>
+      <Command>..\..\utilities\bin\structparser X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>../../3rdparty/subversion-1.6.6/apr-util/include;../../3rdparty/subversion-1.6.6/apr/include;../../3rdparty/subversion-1.6.6/subversion/include;../../3rdparty/DirectX/Include;../Inputlib/pub;../Inputlib;../GraphicsLib;../Renderers/pub;../GraphicsLib/pub;../WorldLib/pub;../ServerLib/pub;../ServerLib/objects;../Common;../HttpLib;../../3rdparty/xdk/win32;$(VSINSTALLDIR)\DIA SDK\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_WINDOWS;_CRTDBG_MAP_ALLOC=1;USEZLIB=1;INPUTLIB=1;APR_DECLARE_STATIC;APU_DECLARE_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+    </Lib>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <PreBuildEvent>
+      <Command>..\..\utilities\bin\structparser X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../3rdparty/subversion-1.6.6/apr-util/include;../../3rdparty/subversion-1.6.6/apr/include;../../3rdparty/subversion-1.6.6/subversion/include;../../3rdparty/DirectX/Include;../Inputlib/pub;../Inputlib;../GraphicsLib;../Renderers/pub;../GraphicsLib/pub;../WorldLib/pub;../ServerLib/pub;../ServerLib/objects;../Common;../HttpLib;../../3rdparty/xdk/win32;$(VSINSTALLDIR)\DIA SDK\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_FULLDEBUG;_LIB;_WINDOWS;_CRTDBG_MAP_ALLOC=1;USEZLIB=1;INPUTLIB=1;APR_DECLARE_STATIC;APU_DECLARE_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Lib>
+    </Lib>
+    <PreBuildEvent>
+      <Command>..\..\utilities\bin\structparser X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../3rdparty/subversion-1.6.6/apr-util/include;../../3rdparty/subversion-1.6.6/apr/include;../../3rdparty/subversion-1.6.6/subversion/include;../../3rdparty/DirectX/Include;../Inputlib/pub;../Inputlib;../GraphicsLib;../Renderers/pub;../GraphicsLib/pub;../WorldLib/pub;../ServerLib/pub;../ServerLib/objects;../Common;../HttpLib;../../3rdparty/xdk/win32;$(VSINSTALLDIR)\DIA SDK\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_FULLDEBUG;_LIB;_WINDOWS;_CRTDBG_MAP_ALLOC=1;USEZLIB=1;INPUTLIB=1;APR_DECLARE_STATIC;APU_DECLARE_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+    </Lib>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <PreBuildEvent>
+      <Command>..\..\utilities\bin\structparser X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Common\AutoGen\ErrorTrackerLib_autotransactions_autogen_wrappers.c" />
+    <ClCompile Include="..\Common\ETCommon\ETCommonStructs.c" />
+    <ClCompile Include="..\Common\ETCommon\ETDumps.c" />
+    <ClCompile Include="..\Common\ETCommon\ETIncomingData.c" />
+    <ClCompile Include="..\Common\ETCommon\ETShared.c" />
+    <ClCompile Include="..\Common\ETCommon\ETShared_opt.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AnySuitable</InlineFunctionExpansion>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="..\Common\ETCommon\ETWebCommon.c" />
+    <ClCompile Include="..\Common\ETCommon\symstore.cpp" />
+    <ClCompile Include="autogen\ErrorTrackerLib_AutoGen_1.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="AutoGen\ErrorTrackerLib_AutoGen_2.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="Backlog.c" />
+    <ClCompile Include="blame.c" />
+    <ClCompile Include="email.c" />
+    <ClCompile Include="email_opt.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AnySuitable</InlineFunctionExpansion>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="ErrorEntry.c" />
+    <ClCompile Include="ErrorTracker.c" />
+    <ClCompile Include="ErrorTrackerDB.c" />
+    <ClCompile Include="ErrorTrackerHandlerInfo.c" />
+    <ClCompile Include="ErrorTrackerLib.c" />
+    <ClCompile Include="etTrivia.c" />
+    <ClCompile Include="Search.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MaxSpeed</Optimization>
+    </ClCompile>
+    <ClCompile Include="WebInterface.c" />
+    <ClCompile Include="WebReport.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Common\ETCommon\ETCommonStructs.h" />
+    <ClInclude Include="..\Common\ETCommon\ETDumps.h" />
+    <ClInclude Include="..\Common\ETCommon\ETIncomingData.h" />
+    <ClInclude Include="..\Common\ETCommon\ETShared.h" />
+    <ClInclude Include="..\Common\ETCommon\ETWebCommon.h" />
+    <ClInclude Include="..\Common\ETCommon\symstore.h" />
+    <ClInclude Include="..\UtilitiesLib\utils\HttpClient.h" />
+    <ClInclude Include="..\UtilitiesLib\utils\trivia.h" />
+    <ClInclude Include="Backlog.h" />
+    <ClInclude Include="blame.h" />
+    <ClInclude Include="email.h" />
+    <ClInclude Include="ErrorEntry.h" />
+    <ClInclude Include="ErrorTracker.h" />
+    <ClInclude Include="ErrorTrackerDB.h" />
+    <ClInclude Include="ErrorTrackerHandlerInfo.h" />
+    <ClInclude Include="ErrorTrackerLib.h" />
+    <ClInclude Include="errortrackerlibprivate.h" />
+    <ClInclude Include="etTrivia.h" />
+    <ClInclude Include="Search.h" />
+    <ClInclude Include="WebInterface.h" />
+    <ClInclude Include="WebReport.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\StructParserStub\StructParserStub.vcxproj">
+      <Project>{1d29e421-93b2-4e32-9186-7fafc3971c5b}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

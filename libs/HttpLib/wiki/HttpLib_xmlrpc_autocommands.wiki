@@ -1,0 +1,11 @@
+h4.TT_GetJiraProjectList (AccessLevel 9) [Notes|Command_TT_GetJiraProjectList_HttpLib]
+No comment provided
+
+h4.TT_GetJiraStatusList (AccessLevel 9) [Notes|Command_TT_GetJiraStatusList_HttpLib]
+No comment provided
+
+h4.system.methodIntrospection (AccessLevel 9) [Notes|Command_system.methodIntrospection_HttpLib]
+*Parameter 1: cmdname (string)*
+This AUTO_COMMAND will enumerate the return and parameter types for a named command.
+
+

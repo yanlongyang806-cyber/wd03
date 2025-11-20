@@ -1,0 +1,548 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="AutoGen\renderlib_AutoGen_1.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoGen\RenderLib_AutoGen_2.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="pub\RdrDrawList.c">
+      <Filter>pub</Filter>
+    </ClCompile>
+    <ClCompile Include="RdrCommandParse.c">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="RdrDevice.c">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="RdrFMV.c">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="RdrLightAssembly.c">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="RdrShader.c">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="RdrSurface.c">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="RdrTexture.c">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderLib.c">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_winutil.c">
+      <Filter>private</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pub\RdrCommandParse.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\RdrDevice.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\RdrDeviceTrace.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\RdrDrawable.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\RdrDrawList.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\RdrEnums.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\RdrFMV.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\RdrGeometry.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\RdrHistogram.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\RdrLightAssembly.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\RdrShader.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\RdrStandardDevice.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\RdrState.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\RdrSurface.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\RdrTexture.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\RdrTextureEnums.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\RenderLib.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\ShaderServerInterface.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="RdrDevicePrivate.h">
+      <Filter>private</Filter>
+    </ClInclude>
+    <ClInclude Include="RdrDrawListPrivate.h">
+      <Filter>private</Filter>
+    </ClInclude>
+    <ClInclude Include="RdrFMVPrivate.h">
+      <Filter>private</Filter>
+    </ClInclude>
+    <ClInclude Include="RdrShaderPrivate.h">
+      <Filter>private</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderLib_AnonAutoRunIncludes.h">
+      <Filter>private</Filter>
+    </ClInclude>
+    <ClInclude Include="rt_winutil.h">
+      <Filter>private</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="AutoGen">
+      <UniqueIdentifier>{0b31d7ec-bf46-41a8-8f9e-7f582560b4ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ops">
+      <UniqueIdentifier>{110bba69-8f79-4112-a49e-1c5dc9602969}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="private">
+      <UniqueIdentifier>{7cd2f4f0-215e-44c5-9977-f29079633892}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pub">
+      <UniqueIdentifier>{d68e6dff-028f-450d-8ccf-f20af857b067}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\data\shaders\operations\Add.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\AlphaPlaneFade.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\Assembler.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\AtmosphericScatter_Space.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\BuildingLights.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\BuildingLightsColored.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\CameraDist.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\CharacterBacklightColor.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\Clamp.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\Color0.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\ColorTint2b.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\ColorTint2b_IgnoreAlpha.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\ColorTint3b.op.unused">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\ColorTint3b_IgnoreAlpha.op.unused">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\ColorTint4.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\ColorTint4_IgnoreAlpha.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\ColorTint4b.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\ColorTint4b_IgnoreAlpha.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\ColorValue.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\Comparison.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\Comparison_LessThan.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\DepthColorSelect.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\DepthFade.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\DepthFadeVolumeBoundary.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\DepthFadeWeight.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\Dither_Pattern_4.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\Divide.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\DotProduct.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\DualColor.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\DualColor_IgnoreAlpha.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\Floor.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\ForceHDROutput.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\FresnelTerm.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\FresnelTerm_Advanced.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\Glow.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\GradientInterval.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\HeightmapBlend.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\HSV_to_RGB.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\Invert.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\Jiggle.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\Kill.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\LERP.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\LERP4.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\LERP_IgnoreAlpha.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\LightBleed.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\LightBleedTransform.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\LightmapHL2Basis.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\MaskCombine.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\Max.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\Min.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\Multiply.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\MultiplyAdd.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\NormalAdd.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\NormalCombine_2+.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\NormalCombine_3.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\NormalCombine_4.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\Normalize.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\NormalReconstitute.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\NormalTexture_2+.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\NormalTexture_3.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\NormalTexture_4.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\NormalTexture_5.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\NormalTexture_6.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\NormalTexture_7.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\NormalTexture_8.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\OffsetScroll.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\OldDualColor.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\Oscillator.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\OutlineEdgeDetect.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\OutlineTexture.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\Output.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\Overlay.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\ProjectSpecialParam.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\Rand.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\ReflectionVector.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\Refract.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\RefractAndFade.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\Saturate.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\ScreenABSTexCoord.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\ScreenColor.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\ScreenColorBlurred.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\ScreenTexCoord.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\Scroll.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\SkyClearColor.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\Slider.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\Specular.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\Specular_WithValue.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\SpecularExpRange.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\SphericalCoordsVS.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\SphericalCoordsWS.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\Step.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\Subtract.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\Subtract_IgnoreAlpha.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\TangentToCamNormal.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\Terrain_0Detail.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\Terrain_1Detail.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\Terrain_2Detail.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\Terrain_3Detail.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\Terrain_Debug.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\TerrainMaterial_Preview.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\TerrainNX_0Detail.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\TerrainNX_1Detail.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\TerrainNX_2Detail.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\TerrainNX_3Detail.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\TerrainNXMaterial_Preview.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\TexCellScroll.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\TexCoord0.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\TexCoord1.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\TexCoordWorld.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\TexRotate.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\TexScrollScale.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\Texture.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\Texture_2.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\Texture_3.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\Texture_4.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\Texture_5.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\Texture_6.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\Texture_7.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\Texture_8.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\Texture_RangeExpanded.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\TextureNormal.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\TextureNormalDXT5nm.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\TextureNormalDXT5nm_2+.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\TextureNormalDXT5nm_3.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\TextureNormalDXT5nm_4.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\TextureNormalDXT5nm_5.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\TextureNormalDXT5nm_6.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\TextureNormalDXT5nm_7.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\TextureNormalDXT5nm_8.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\TextureProjection.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\TextureProjectionWDepthmap.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\TextureRGBE.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\TextureWithKill.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\TexXfrm.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\TimeGradient.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\UniqueOffset.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\WaterDepthFade.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\WaterRefract.op">
+      <Filter>Ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\operations\WorldSpaceNormal.op">
+      <Filter>Ops</Filter>
+    </None>
+  </ItemGroup>
+</Project>

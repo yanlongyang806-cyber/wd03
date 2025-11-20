@@ -1,0 +1,526 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="AutoGen\graphicslib_AutoGen_1.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoGen\GraphicsLib_AutoGen_2.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="Clipper.c">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxAlien.c">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxAtmospherics.c">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxAuxDevice.c">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxCamera.c">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxCommandParse.c">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxCommonSnap.c">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxConsole.c">
+      <Filter>private\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxCursor.c">
+      <Filter>private\sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxDebug.c">
+      <Filter>private\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxDeferredLighting.c">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxDeferredShadows.c">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxDrawFrame.c">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxDumpToVrml.c">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxDXT.c">
+      <Filter>private\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxDynamics.c">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxExpressions.c">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxFont.c">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxGeo.c">
+      <Filter>private\geo</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxHeadshot.c">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxHeadshot_util.c">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxImposter.c">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxLCD.c">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxLightCache.c">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxLightDebugger.c">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxLights.c">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxLoadScreens.c">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxMapSnap.c">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxMaterialAssembler.c">
+      <Filter>private\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxMaterialPreload.c">
+      <Filter>private\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxMaterialProfile.c">
+      <Filter>private\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxMaterials.c">
+      <Filter>private\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxMaterialsOpt.c">
+      <Filter>private\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxMipMap.c">
+      <Filter>private\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxModel.c">
+      <Filter>private\geo</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxModelCache.c">
+      <Filter>private\geo</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxModelOpt.c">
+      <Filter>private\geo</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxModelUnload.c">
+      <Filter>private\geo</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxNVPerf.c">
+      <Filter>private\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxOcclusion.c">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxOcclusionClip.c">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxOcclusionTestData.c">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxPerformance.c">
+      <Filter>private\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxPostprocess.c">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxPrimitive.c">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxRecord.c">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxSettings.c">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxShader.c">
+      <Filter>private\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxShadows.c">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxShadowSearch.c">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxSky.c">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxSplat.c">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxSprite.c">
+      <Filter>private\sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxSpriteList.c">
+      <Filter>private\sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxSpriteText.c">
+      <Filter>private\sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxStarField.c">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxStaticLights.c">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxSurface.c">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxTerrain.c">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxTerrainVis.c">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxTexAtlas.c">
+      <Filter>private\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxTextures.c">
+      <Filter>private\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxTextureTools.c">
+      <Filter>private\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxUnload.c">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxWorld.c">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicsLib.c">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="rotoZoom.c">
+      <Filter>private\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="tex_gen.c">
+      <Filter>private\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="TexOpts.c">
+      <Filter>private\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="texUnload.c">
+      <Filter>private\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="texWords.c">
+      <Filter>private\Textures</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\WorldLib\pub\Materials.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WorldLib\pub\wlLight.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Clipper.h">
+      <Filter>private</Filter>
+    </ClInclude>
+    <ClInclude Include="GfxAtmospherics.h">
+      <Filter>private</Filter>
+    </ClInclude>
+    <ClInclude Include="GfxAuxDevice.h">
+      <Filter>private</Filter>
+    </ClInclude>
+    <ClInclude Include="GfxDeferredLighting.h">
+      <Filter>private</Filter>
+    </ClInclude>
+    <ClInclude Include="GfxDeferredShadows.h">
+      <Filter>private</Filter>
+    </ClInclude>
+    <ClInclude Include="GfxDrawFrame.h">
+      <Filter>private</Filter>
+    </ClInclude>
+    <ClInclude Include="GfxDXT.h">
+      <Filter>private\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="GfxDynamics.h">
+      <Filter>private</Filter>
+    </ClInclude>
+    <ClInclude Include="GfxEnums.h">
+      <Filter>private</Filter>
+    </ClInclude>
+    <ClInclude Include="GfxFontPrivate.h">
+      <Filter>private</Filter>
+    </ClInclude>
+    <ClInclude Include="GfxGeo.h">
+      <Filter>private\geo</Filter>
+    </ClInclude>
+    <ClInclude Include="GfxImposter.h">
+      <Filter>private</Filter>
+    </ClInclude>
+    <ClInclude Include="GfxLightCache.h">
+      <Filter>private</Filter>
+    </ClInclude>
+    <ClInclude Include="GfxLights.h">
+      <Filter>private</Filter>
+    </ClInclude>
+    <ClInclude Include="GfxLightsPrivate.h">
+      <Filter>private</Filter>
+    </ClInclude>
+    <ClInclude Include="GfxMaterialAssembler.h">
+      <Filter>private\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="GfxMaterialPreload.h">
+      <Filter>private\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="GfxMaterialProfile.h">
+      <Filter>private\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="GfxMaterialsOpt.h">
+      <Filter>private\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="GfxMipMap.h">
+      <Filter>private\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="GfxModel.h">
+      <Filter>private\geo</Filter>
+    </ClInclude>
+    <ClInclude Include="GfxModelCache.h">
+      <Filter>private\geo</Filter>
+    </ClInclude>
+    <ClInclude Include="GfxModelInline.h">
+      <Filter>private\geo</Filter>
+    </ClInclude>
+    <ClInclude Include="GfxModelOpt.h">
+      <Filter>private\geo</Filter>
+    </ClInclude>
+    <ClInclude Include="GfxModelUnload.h">
+      <Filter>private\geo</Filter>
+    </ClInclude>
+    <ClInclude Include="GfxNVPerf.h">
+      <Filter>private\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="GfxOcclusion.h">
+      <Filter>private</Filter>
+    </ClInclude>
+    <ClInclude Include="GfxOcclusionClip.h">
+      <Filter>private</Filter>
+    </ClInclude>
+    <ClInclude Include="GfxOcclusionDraw.h">
+      <Filter>private</Filter>
+    </ClInclude>
+    <ClInclude Include="GfxOcclusionTypes.h">
+      <Filter>private</Filter>
+    </ClInclude>
+    <ClInclude Include="GfxPerformance.h">
+      <Filter>private\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="GfxPostprocess.h">
+      <Filter>private</Filter>
+    </ClInclude>
+    <ClInclude Include="GfxPrimitivePrivate.h">
+      <Filter>private</Filter>
+    </ClInclude>
+    <ClInclude Include="GfxShader.h">
+      <Filter>private\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="GfxShadows.h">
+      <Filter>private</Filter>
+    </ClInclude>
+    <ClInclude Include="GfxShadowSearch.h">
+      <Filter>private</Filter>
+    </ClInclude>
+    <ClInclude Include="GfxSky.h">
+      <Filter>private</Filter>
+    </ClInclude>
+    <ClInclude Include="GfxSplat.h">
+      <Filter>private</Filter>
+    </ClInclude>
+    <ClInclude Include="GfxStarField.h">
+      <Filter>private</Filter>
+    </ClInclude>
+    <ClInclude Include="GfxStaticLights.h">
+      <Filter>private</Filter>
+    </ClInclude>
+    <ClInclude Include="GfxSurface.h">
+      <Filter>private</Filter>
+    </ClInclude>
+    <ClInclude Include="GfxTerrainVis.h">
+      <Filter>private</Filter>
+    </ClInclude>
+    <ClInclude Include="GfxTexAtlasInternal.h">
+      <Filter>private\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="GfxTexAtlasPrivate.h">
+      <Filter>private\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="GfxTextures.h">
+      <Filter>private\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="GfxTexturesInline.h">
+      <Filter>private\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="GfxUnload.h">
+      <Filter>private</Filter>
+    </ClInclude>
+    <ClInclude Include="GfxWorld.h">
+      <Filter>private</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsLib_AnonAutoRunIncludes.h" />
+    <ClInclude Include="GraphicsLibPrivate.h">
+      <Filter>private</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\GfxAlien.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\GfxCamera.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\GfxClipper.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\GfxCommandParse.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\GfxCommonSnap.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\GfxConsole.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\GfxCursor.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\GfxDebug.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\GfxDumpToVrml.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\GfxEditorIncludes.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\GfxFont.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\GfxHeadshot.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\GfxLCD.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\GfxLightDebugger.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\GfxLightOptions.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\GfxLoadScreens.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\GfxMapSnap.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\GfxMaterials.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\GfxPrimitive.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\GfxRecord.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\GfxSettings.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\GfxSprite.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\GfxSprite.inl">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\GfxSpriteList.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\GfxSpriteText.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\GfxTerrain.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\GfxTesting.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\GfxTexAtlas.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\GfxTexOpts.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\GfxTextureEnums.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\GfxTexturesPublic.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\GfxTextureTools.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\GfxTexWords.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\GraphicsLib.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="rotoZoom.h">
+      <Filter>private\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="tex_gen.h">
+      <Filter>private\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="TexOpts.h">
+      <Filter>private\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="texUnload.h">
+      <Filter>private\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="texWords.h">
+      <Filter>private\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="texWordsPrivate.h">
+      <Filter>private\Textures</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="AutoGen">
+      <UniqueIdentifier>{2f312634-7019-41d7-ba5d-dd33713a9767}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExternHeaders">
+      <UniqueIdentifier>{afb7732c-8b89-49c4-a76c-bc120fdea8c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="private">
+      <UniqueIdentifier>{c05720b5-8c79-49f0-8b86-556ee44dc6fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="private\debug">
+      <UniqueIdentifier>{9df5e7e6-159f-40d8-9f81-613733a1144a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="private\geo">
+      <UniqueIdentifier>{546ee53d-ce1c-444e-88ac-98ab845431ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="private\sprite">
+      <UniqueIdentifier>{3430d28b-deb4-4fab-92c2-84a843c9cdc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="private\Textures">
+      <UniqueIdentifier>{73f5d886-7b33-4d4d-836d-bdb5e7cd63af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pub">
+      <UniqueIdentifier>{ce662030-c5a5-4bd2-af1c-99a41ae289ea}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

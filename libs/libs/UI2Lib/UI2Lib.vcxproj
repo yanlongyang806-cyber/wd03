@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Full Debug|Win32">
+      <Configuration>Full Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CD28142B-9C65-4323-A2BC-B027089F69EE}</ProjectGuid>
+    <RootNamespace>UI2Lib</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="..\..\PropertySheets\GeneralSettings.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'" Label="PropertySheets">
+    <Import Project="..\..\PropertySheets\GeneralSettings.props" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../3rdparty/cef;../../3rdparty/DirectX/Include;../Inputlib/pub;../Inputlib;../GraphicsLib;../Renderers/pub;../GraphicsLib/pub;../WorldLib/pub;../UI2Lib/pub;../../CrossRoads/GameClientLib/pub;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_WINDOWS;_CRTDBG_MAP_ALLOC=1;USEZLIB=1;INPUTLIB=1;OS_WIN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <TreatWarningAsError>false</TreatWarningAsError>
+    </ClCompile>
+    <Lib>
+    </Lib>
+    <PreBuildEvent>
+      <Command>..\..\utilities\bin\structparser X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../3rdparty/cef;../../3rdparty/DirectX/Include;../Inputlib/pub;../Inputlib;../GraphicsLib;../Renderers/pub;../GraphicsLib/pub;../WorldLib/pub;../UI2Lib/pub;../../CrossRoads/GameClientLib/pub;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_FULLDEBUG;_LIB;_WINDOWS;_CRTDBG_MAP_ALLOC=1;USEZLIB=1;INPUTLIB=1;OS_WIN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Lib>
+    </Lib>
+    <PreBuildEvent>
+      <Command>..\..\utilities\bin\structparser X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AutoGen\UI2Lib_AutoGen_1.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="AutoGen\UI2Lib_AutoGen_2.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="gen\UIGen.c" />
+    <ClCompile Include="gen\UIGenBox.c" />
+    <ClCompile Include="gen\UIGenButton.c" />
+    <ClCompile Include="gen\UIGenCheckButton.c" />
+    <ClCompile Include="gen\UIGenColorChooser.c" />
+    <ClCompile Include="gen\UIGenCommands.c" />
+    <ClCompile Include="gen\UIGenDebug.c" />
+    <ClCompile Include="gen\UIGenDnD.c" />
+    <ClCompile Include="gen\UIGenExpressions.c" />
+    <ClCompile Include="gen\UIGenJail.c" />
+    <ClCompile Include="gen\UIGenLayers.c" />
+    <ClCompile Include="gen\UIGenLayoutBox.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Full</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="gen\UIGenList.c" />
+    <ClCompile Include="gen\UIGenLoading.c" />
+    <ClCompile Include="gen\UIGenMovableBox.c" />
+    <ClCompile Include="gen\UIGenOpt.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <BufferSecurityCheck Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</BufferSecurityCheck>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="gen\UIGenScrollbar.c" />
+    <ClCompile Include="gen\UIGenScrollView.c" />
+    <ClCompile Include="gen\UIGenSlider.c" />
+    <ClCompile Include="gen\UIGenSMF.c" />
+    <ClCompile Include="gen\UIGenSprite.c" />
+    <ClCompile Include="gen\UIGenStructs.c" />
+    <ClCompile Include="gen\UIGenTabGroup.c" />
+    <ClCompile Include="gen\UIGenText.c" />
+    <ClCompile Include="gen\UIGenTextArea.c" />
+    <ClCompile Include="gen\UIGenTextEntry.c" />
+    <ClCompile Include="gen\UIGenTooltips.c" />
+    <ClCompile Include="gen\UIGenTutorial.c" />
+    <ClCompile Include="gen\UIGenWebView.c" />
+    <ClCompile Include="gen\UIGenWidget.c" />
+    <ClCompile Include="gen\UIGenWindowManager.c" />
+    <ClCompile Include="HTMLViewer.c" />
+    <ClCompile Include="pub\UIFlowchart.c" />
+    <ClCompile Include="smf\smf_format.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="smf\smf_parse.c" />
+    <ClCompile Include="smf\smf_render.c" />
+    <ClCompile Include="UIAccordion.c" />
+    <ClCompile Include="UIAutoWidget.c" />
+    <ClCompile Include="UIAuxDevice.c" />
+    <ClCompile Include="UIBarGraph.c" />
+    <ClCompile Include="UIBoxSizer.c" />
+    <ClCompile Include="UIButton.c" />
+    <ClCompile Include="UIButtonCombo.c" />
+    <ClCompile Include="UICheckButton.c" />
+    <ClCompile Include="UIColorButton.c" />
+    <ClCompile Include="UIColorCombo.c" />
+    <ClCompile Include="UIColorSlider.c" />
+    <ClCompile Include="UIComboBox.c" />
+    <ClCompile Include="UICoordinate.c" />
+    <ClCompile Include="UICore.c" />
+    <ClCompile Include="UICursor.c" />
+    <ClCompile Include="UIDialog.c" />
+    <ClCompile Include="UIDictionaryEntry.c" />
+    <ClCompile Include="UIDnD.c" />
+    <ClCompile Include="UIDropSliderTextEntry.c" />
+    <ClCompile Include="UIEditable.c" />
+    <ClCompile Include="UIExpander.c" />
+    <ClCompile Include="UIExpressionEntry.c" />
+    <ClCompile Include="UIFileBrowser.c" />
+    <ClCompile Include="UIFileNameEntry.c" />
+    <ClCompile Include="UIFilteredList.c" />
+    <ClCompile Include="UIFocus.c" />
+    <ClCompile Include="UIGraph.c" />
+    <ClCompile Include="UIGraphNode.c" />
+    <ClCompile Include="UIGridSizer.c" />
+    <ClCompile Include="UILabel.c" />
+    <ClCompile Include="UIList.c" />
+    <ClCompile Include="UIMenu.c" />
+    <ClCompile Include="UIMessageEntry.c" />
+    <ClCompile Include="UIMinimap.c" />
+    <ClCompile Include="UIModalDialog.c" />
+    <ClCompile Include="UIPairedBox.c" />
+    <ClCompile Include="UIPane.c" />
+    <ClCompile Include="UIProgressBar.c" />
+    <ClCompile Include="UIRadioButton.c" />
+    <ClCompile Include="UIRectangularSelection.c" />
+    <ClCompile Include="UIScrollbar.c" />
+    <ClCompile Include="UISeparator.c" />
+    <ClCompile Include="UISerialize.c" />
+    <ClCompile Include="UISizer.c" />
+    <ClCompile Include="UISkin.c" />
+    <ClCompile Include="UISlider.c" />
+    <ClCompile Include="UISliderTextEntry.c" />
+    <ClCompile Include="UISMFView.c" />
+    <ClCompile Include="UISpinner.c" />
+    <ClCompile Include="UISpinnerEntry.c" />
+    <ClCompile Include="UISprite.c" />
+    <ClCompile Include="UIStatusWindow.c" />
+    <ClCompile Include="UIStyle.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Full</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="UITabs.c" />
+    <ClCompile Include="UITexSplit.c" />
+    <ClCompile Include="UITextArea.c" />
+    <ClCompile Include="UITextEntry.c" />
+    <ClCompile Include="UITextureAssembly.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Full</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="UITextureEntry.c" />
+    <ClCompile Include="UITimeline.c" />
+    <ClCompile Include="UITooltips.c" />
+    <ClCompile Include="UITree.c" />
+    <ClCompile Include="UITreechart.c" />
+    <ClCompile Include="UIWebView.c" />
+    <ClCompile Include="UIWidgetTree.c" />
+    <ClCompile Include="UIWindow.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\UtilitiesLib\language\Message.h" />
+    <ClInclude Include="..\UtilitiesLib\utils\structInternals.h" />
+    <ClInclude Include="gen\UIGenBox.h" />
+    <ClInclude Include="gen\UIGenButton.h" />
+    <ClInclude Include="gen\UIGenCheckButton.h" />
+    <ClInclude Include="gen\UIGenDnD.h" />
+    <ClInclude Include="gen\UIGenLayoutBox.h" />
+    <ClInclude Include="gen\UIGenMovableBox.h" />
+    <ClInclude Include="gen\UIGenPrivate.h" />
+    <ClInclude Include="gen\UIGenScrollView.h" />
+    <ClInclude Include="gen\UIGenSlider.h" />
+    <ClInclude Include="gen\UIGenSMF.h" />
+    <ClInclude Include="gen\UIGenTabGroup.h" />
+    <ClInclude Include="gen\UIGenTextArea.h" />
+    <ClInclude Include="gen\UIGenWebView.h" />
+    <ClInclude Include="gen\UIGenWindowManager.h" />
+    <ClInclude Include="pub\HTMLViewer.h" />
+    <ClInclude Include="pub\smf_render.h" />
+    <ClInclude Include="pub\UIAccordion.h" />
+    <ClInclude Include="pub\UIAutoWidget.h" />
+    <ClInclude Include="pub\UIAuxDevice.h" />
+    <ClInclude Include="pub\UIBarGraph.h" />
+    <ClInclude Include="pub\UIBoxSizer.h" />
+    <ClInclude Include="pub\UIButton.h" />
+    <ClInclude Include="pub\UIButtonCombo.h" />
+    <ClInclude Include="pub\UICheckButton.h" />
+    <ClInclude Include="pub\UIColorButton.h" />
+    <ClInclude Include="pub\UIColorCombo.h" />
+    <ClInclude Include="pub\UIColorSlider.h" />
+    <ClInclude Include="pub\UIComboBox.h" />
+    <ClInclude Include="pub\UICoordinate.h" />
+    <ClInclude Include="pub\UICore.h" />
+    <ClInclude Include="pub\UIDialog.h" />
+    <ClInclude Include="pub\UIDictionaryEntry.h" />
+    <ClInclude Include="pub\UIDnD.h" />
+    <ClInclude Include="pub\UIDropSliderTextEntry.h" />
+    <ClInclude Include="pub\UIEditable.h" />
+    <ClInclude Include="pub\UIExpander.h" />
+    <ClInclude Include="pub\UIExpressionEntry.h" />
+    <ClInclude Include="pub\UIFileBrowser.h" />
+    <ClInclude Include="pub\UIFileNameEntry.h" />
+    <ClInclude Include="pub\UIFilteredList.h" />
+    <ClInclude Include="pub\UIFlowchart.h" />
+    <ClInclude Include="pub\UIFocus.h" />
+    <ClInclude Include="pub\UIGen.h" />
+    <ClInclude Include="pub\UIGenColorChooser.h" />
+    <ClInclude Include="pub\UIGenJail.h" />
+    <ClInclude Include="pub\UIGenList.h" />
+    <ClInclude Include="pub\UIGenScrollbar.h" />
+    <ClInclude Include="pub\UIGenSprite.h" />
+    <ClInclude Include="pub\UIGenText.h" />
+    <ClInclude Include="pub\UIGenTextEntry.h" />
+    <ClInclude Include="pub\UIGenTutorial.h" />
+    <ClInclude Include="pub\UIGenWidget.h" />
+    <ClInclude Include="pub\UIGraph.h" />
+    <ClInclude Include="pub\UIGraphNode.h" />
+    <ClInclude Include="pub\UIGridSizer.h" />
+    <ClInclude Include="pub\UIInternal.h" />
+    <ClInclude Include="pub\UILabel.h" />
+    <ClInclude Include="pub\UILib.h" />
+    <ClInclude Include="pub\UIList.h" />
+    <ClInclude Include="pub\UIMenu.h" />
+    <ClInclude Include="pub\UIMessageEntry.h" />
+    <ClInclude Include="pub\UIMinimap.h" />
+    <ClInclude Include="pub\UIModalDialog.h" />
+    <ClInclude Include="pub\UIPairedBox.h" />
+    <ClInclude Include="pub\UIPane.h" />
+    <ClInclude Include="pub\UIProgressBar.h" />
+    <ClInclude Include="pub\UIRadioButton.h" />
+    <ClInclude Include="pub\UIRectangularSelection.h" />
+    <ClInclude Include="pub\UIScrollbar.h" />
+    <ClInclude Include="pub\UISeparator.h" />
+    <ClInclude Include="pub\UISerialize.h" />
+    <ClInclude Include="pub\UISizer.h" />
+    <ClInclude Include="pub\UISkin.h" />
+    <ClInclude Include="pub\UISlider.h" />
+    <ClInclude Include="pub\UISliderTextEntry.h" />
+    <ClInclude Include="pub\UISMFView.h" />
+    <ClInclude Include="pub\UISpinner.h" />
+    <ClInclude Include="pub\UISpinnerEntry.h" />
+    <ClInclude Include="pub\UISprite.h" />
+    <ClInclude Include="pub\UIStatusWindow.h" />
+    <ClInclude Include="pub\UIStyle.h" />
+    <ClInclude Include="pub\UITabs.h" />
+    <ClInclude Include="pub\UITexSplit.h" />
+    <ClInclude Include="pub\UITextArea.h" />
+    <ClInclude Include="pub\UITextEntry.h" />
+    <ClInclude Include="pub\UITextureAssembly.h" />
+    <ClInclude Include="pub\UITextureEntry.h" />
+    <ClInclude Include="pub\UITimeline.h" />
+    <ClInclude Include="pub\UITooltips.h" />
+    <ClInclude Include="pub\UITree.h" />
+    <ClInclude Include="pub\UITreechart.h" />
+    <ClInclude Include="pub\UIWebView.h" />
+    <ClInclude Include="pub\UIWidgetTree.h" />
+    <ClInclude Include="pub\UIWindow.h" />
+    <ClInclude Include="smf\smf_format.h" />
+    <ClInclude Include="smf\smf_parse.h" />
+    <ClInclude Include="UI2Lib_AnonAutoRunIncludes.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\StructParserStub\StructParserStub.vcxproj">
+      <Project>{1d29e421-93b2-4e32-9186-7fafc3971c5b}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

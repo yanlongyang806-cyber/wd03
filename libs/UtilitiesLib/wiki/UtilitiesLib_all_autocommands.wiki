@@ -1,0 +1,2481 @@
+h4.ATR_GenerateLockReport (AccessLevel 9) [Notes|Command_ATR_GenerateLockReport_UtilitiesLib]
+*Parameter 1: search (sentence)*
+No comment provided
+
+h4.AcknowledgeAllDuplicateAlerts (AccessLevel 9) [Notes|Command_AcknowledgeAllDuplicateAlerts_UtilitiesLib]
+No comment provided
+
+h4.AddSimpleMonitoree (AccessLevel 9) [Notes|Command_AddSimpleMonitoree_UtilitiesLib]
+*Parameter 1: pName (string)*
+*Parameter 2: pMachineName (string)*
+*Parameter 3: pRestartingCommand (string)*
+won't do anything after simpleStatusReporting is already going
+
+
+h4.ApplyPathOperations (AccessLevel 9) [Notes|Command_ApplyPathOperations_UtilitiesLib]
+*Parameter 1: path (string)*
+*Parameter 2: operations (sentence)*
+Applies a series of ObjectPath operations to the passed in path
+
+
+h4.AttemptToConnectNetLinkForPrintf (AccessLevel 9) [Notes|Command_AttemptToConnectNetLinkForPrintf_UtilitiesLib]
+*Parameter 1: pServerName (string)*
+*Parameter 2: iPortNum (int)*
+*Parameter 3: iId (int)*
+*Parameter 4: pName (string)*
+No comment provided
+
+h4.AutoBeginStatusReporting (AccessLevel 9) [Notes|Command_AutoBeginStatusReporting_UtilitiesLib]
+*Parameter 1: pWhoToEmail (string)*
+launches a local controllertracker, reports to it for status reporting, has it send emails to (presumably) me
+
+
+h4.SetAutoStartup (AccessLevel 9) [Notes|Command_SetAutoStartup_UtilitiesLib]
+*Parameter 1: pTask (string)*
+*Parameter 2: iIsOn (int)*
+No comment provided
+
+h4.BeginExpressionServerMonitoring (AccessLevel 9) [Notes|Command_BeginExpressionServerMonitoring_UtilitiesLib]
+No comment provided
+
+h4.BeginMemLeakTracking (AccessLevel 9) [Notes|Command_BeginMemLeakTracking_UtilitiesLib]
+*Parameter 1: iPauseBeforeBeginning (int)*
+*Parameter 2: iPauseBetweenCHecks (int)*
+*Parameter 3: iIncreaseAmountThatIsALeakMegs (int)*
+*Parameter 4: iFirstIncreaseAllowanceMegs (int)*
+*Parameter 5: pAlertKeyPrefix (string)*
+No comment provided
+
+h4.BeginSentryServerPrintfTest (AccessLevel 9) [Notes|Command_BeginSentryServerPrintfTest_UtilitiesLib]
+No comment provided
+
+h4.BeginSpammingAlerts (AccessLevel 9) [Notes|Command_BeginSpammingAlerts_UtilitiesLib]
+No comment provided
+
+h4.BeginSpammingPrintfs (AccessLevel 9) [Notes|Command_BeginSpammingPrintfs_UtilitiesLib]
+Periodically print random strings to the console.
+
+
+h4.BeginStatusReporting (AccessLevel 9) [Notes|Command_BeginStatusReporting_UtilitiesLib]
+*Parameter 1: pMyName (string)*
+*Parameter 2: pControllerTrackerName (string)*
+*Parameter 3: iMyMainPortNumber (int)*
+No comment provided
+
+h4.FILE_EXISTS (AccessLevel 9) [Notes|Command_FILE_EXISTS_UtilitiesLib]
+*Returns: bool*
+*Parameter 1: pFileName (string)*
+No comment provided
+
+h4.FILE_SIZE (AccessLevel 9) [Notes|Command_FILE_SIZE_UtilitiesLib]
+*Returns: int*
+*Parameter 1: pFileName (string)*
+No comment provided
+
+h4.LASTRUN_VARIABLE (AccessLevel 9) [Notes|Command_LASTRUN_VARIABLE_UtilitiesLib]
+*Returns: string*
+*Parameter 1: pVarName (string)*
+No comment provided
+
+h4.HOUR_OF_DAY (AccessLevel 9) [Notes|Command_HOUR_OF_DAY_UtilitiesLib]
+*Returns: int*
+No comment provided
+
+h4.REMOVE_SUBSTRINGS (AccessLevel 9) [Notes|Command_REMOVE_SUBSTRINGS_UtilitiesLib]
+*Parameter 1: pInString (string)*
+*Parameter 2: pSubString (string)*
+No comment provided
+
+h4.XBOX_FILE_SIZE (AccessLevel 9) [Notes|Command_XBOX_FILE_SIZE_UtilitiesLib]
+*Returns: int*
+*Parameter 1: pFileName (string)*
+No comment provided
+
+h4.CLDupTest (AccessLevel 9) [Notes|Command_CLDupTest_UtilitiesLib]
+*Parameter 1: iFake (int)*
+insert this into CommandLineFromFile so that if that ever gets cmdparsed twice we will know
+
+
+h4.CheckSVNMergeOutputForConflicts (AccessLevel 9) [Notes|Command_CheckSVNMergeOutputForConflicts_UtilitiesLib]
+*Parameter 1: pFileName (string)*
+No comment provided
+
+h4.CmdParseAllocPrintReport (AccessLevel 9) [Notes|Command_CmdParseAllocPrintReport_UtilitiesLib]
+No comment provided
+
+h4.CmdParseDumpMessages (AccessLevel 9) [Notes|Command_CmdParseDumpMessages_UtilitiesLib]
+*Parameter 1: pchPrefix (string)*
+*Parameter 2: pExcept (CommandNameList struct)*
+*Parameter 3: pAdded (CommandNameList struct)*
+*Parameter 4: pchRoot (string)*
+Dump command messages into Commands_{Prefix}_User.ms and Commands_{Prefix}_CSR.ms.
+
+
+h4.CmdPrintInfo (AccessLevel 9) [Notes|Command_CmdPrintInfo_UtilitiesLib]
+*Parameter 1: pCommandName (string)*
+No comment provided
+
+h4.CommandLineFile (AccessLevel 9) [Notes|Command_CommandLineFile_UtilitiesLib]
+*Parameter 1: pStr (string)*
+fake command
+
+
+h4.ContextNameOnCB (AccessLevel 0) [Notes|Command_ContextNameOnCB_UtilitiesLib]
+*Parameter 1: pName (sentence)*
+No comment provided
+
+h4.EXE_WAS_BUILT_THIS_RUN (AccessLevel 9) [Notes|Command_EXE_WAS_BUILT_THIS_RUN_UtilitiesLib]
+*Returns: bool*
+*Parameter 1: pExeName (string)*
+returns true if the named file exists, and has a modification time more recent than the
+beginning of the current scripting run
+
+Note that this actually works on any file, not just .exes
+
+
+h4.GIMME_TIME_MINUTES_OLD (AccessLevel 9) [Notes|Command_GIMME_TIME_MINUTES_OLD_UtilitiesLib]
+*Returns: int*
+*Parameter 1: pGimmeTimeString (string)*
+No comment provided
+
+h4.STRING_IS_EMPTY (AccessLevel 9) [Notes|Command_STRING_IS_EMPTY_UtilitiesLib]
+*Returns: bool*
+*Parameter 1: pStr (string)*
+No comment provided
+
+h4.SVN_MERGE_OUTPUT_HAS_ERRORS (AccessLevel 9) [Notes|Command_SVN_MERGE_OUTPUT_HAS_ERRORS_UtilitiesLib]
+*Returns: bool*
+*Parameter 1: pFileName (string)*
+No comment provided
+
+h4.XBOX_IS_READY (AccessLevel 9) [Notes|Command_XBOX_IS_READY_UtilitiesLib]
+*Returns: bool*
+No comment provided
+
+h4.XBOX_IS_RUNNING_EXE (AccessLevel 9) [Notes|Command_XBOX_IS_RUNNING_EXE_UtilitiesLib]
+*Returns: bool*
+*Parameter 1: pName (string)*
+No comment provided
+
+h4.DebugFillStringCache (AccessLevel 9) [Notes|Command_DebugFillStringCache_UtilitiesLib]
+*Parameter 1: size (int)*
+No comment provided
+
+h4.Debug_BreakPoint (AccessLevel 9) [Notes|Command_Debug_BreakPoint_UtilitiesLib]
+*No Return*
+*Parameter 1: i (int)*
+No comment provided
+
+h4.DEFINED (AccessLevel 9) [Notes|Command_DEFINED_UtilitiesLib]
+*Returns: bool*
+*Parameter 1: pVarName (string)*
+No comment provided
+
+h4.DEFINED_AND_TRUE (AccessLevel 9) [Notes|Command_DEFINED_AND_TRUE_UtilitiesLib]
+*Returns: bool*
+*Parameter 1: pVarName (string)*
+No comment provided
+
+h4.DoExtraStatusReporting (AccessLevel 9) [Notes|Command_DoExtraStatusReporting_UtilitiesLib]
+*Parameter 1: pToWho (string)*
+No comment provided
+
+h4.DumpAllATRLocksToFile (AccessLevel 9) [Notes|Command_DumpAllATRLocksToFile_UtilitiesLib]
+No comment provided
+
+h4.DumpAllContracts (AccessLevel 9) [Notes|Command_DumpAllContracts_UtilitiesLib]
+*Parameter 1: pOutFileName (string)*
+No comment provided
+
+h4.DumpAtrLocksStringsFromFile (AccessLevel 9) [Notes|Command_DumpAtrLocksStringsFromFile_UtilitiesLib]
+*Parameter 1: filename (string)*
+No comment provided
+
+h4.DumpRefSystemStashTableStats (AccessLevel 9) [Notes|Command_DumpRefSystemStashTableStats_UtilitiesLib]
+No comment provided
+
+h4.DumpResourceSystemStashTableStats (AccessLevel 9) [Notes|Command_DumpResourceSystemStashTableStats_UtilitiesLib]
+No comment provided
+
+h4.EarlySuperEsc (AccessLevel 0) [Notes|Command_EarlySuperEsc_UtilitiesLib]
+*Parameter 1: pCommandName (string)*
+*Parameter 2: pSuperEscapedArg (string)*
+No comment provided
+
+h4.EnableSharedMemory (AccessLevel 9) [Notes|Command_EnableSharedMemory_UtilitiesLib]
+*Parameter 1: enable (int)*
+No comment provided
+
+h4.ErrorFilenamefNonBlockingNow (AccessLevel 9) [Notes|Command_ErrorFilenamefNonBlockingNow_UtilitiesLib]
+*Parameter 1: pFileName (string)*
+*Parameter 2: pString (sentence)*
+No comment provided
+
+h4.ErrorFilenamefNow (AccessLevel 9) [Notes|Command_ErrorFilenamefNow_UtilitiesLib]
+*Parameter 1: pFileName (string)*
+*Parameter 2: pString (sentence)*
+No comment provided
+
+h4.ExportCSVCommandFile (AccessLevel 9) [Notes|Command_ExportCSVCommandFile_UtilitiesLib]
+No comment provided
+
+h4.ExprFuncTableIncludesExpr (AccessLevel 9) [Notes|Command_ExprFuncTableIncludesExpr_UtilitiesLib]
+*Returns: bool*
+*Parameter 1: pTableName (string)*
+*Parameter 2: pExprName (string)*
+there are about 8 levels of meta going on here, but basically this expression takes in a func table
+name (specified in exprContextCreateFunctionTable()) and a func name, and returns true if that 
+func is in that func table
+
+
+h4.FilesAllExistInDir (AccessLevel 9) [Notes|Command_FilesAllExistInDir_UtilitiesLib]
+*Parameter 1: pRootDir (string)*
+*Parameter 2: pExtension (string)*
+*Parameter 3: pFiles (sentence)*
+given a root dir and an extension and a comma-separated list of files,
+checks whether every one of those files exists somewhere in the directory hierarchy
+
+returns error string if files don't exist, "0" if they all do
+can't be an AUTO_EXPR because of ACMD_SENTENCE
+
+
+h4.FolderCacheAnalyze (AccessLevel 9) [Notes|Command_FolderCacheAnalyze_UtilitiesLib]
+Analyzes the folder cache
+
+
+h4.FolderCacheDoCallbacks (AccessLevel 9) [Notes|Command_FolderCacheDoCallbacks_UtilitiesLib]
+returns 1 if it did something
+
+
+h4.FolderCacheGenCoreMapping (AccessLevel 9) [Notes|Command_FolderCacheGenCoreMapping_UtilitiesLib]
+*Parameter 1: rootfolder (string)*
+Prints to the console a mapping to be placed into CoreExclude.txt for a given folder
+
+
+h4.ForceReloadsByTouchingFiles_All (AccessLevel 9) [Notes|Command_ForceReloadsByTouchingFiles_All_UtilitiesLib]
+No comment provided
+
+h4.ForceReloadsByTouchingFiles_OneByOne (AccessLevel 9) [Notes|Command_ForceReloadsByTouchingFiles_OneByOne_UtilitiesLib]
+No comment provided
+
+h4.ForkPrintfsToFile (AccessLevel 0) [Notes|Command_ForkPrintfsToFile_UtilitiesLib]
+*Parameter 1: pFileName (string)*
+No comment provided
+
+h4.GET_ENVIRONMENT_VARIABLE (AccessLevel 9) [Notes|Command_GET_ENVIRONMENT_VARIABLE_UtilitiesLib]
+*Parameter 1: pVarName (string)*
+No comment provided
+
+h4.GSM_GetFullStateString (AccessLevel 9) [Notes|Command_GSM_GetFullStateString_UtilitiesLib]
+primarily for use by testClient
+
+
+h4.GSM_StateContains (AccessLevel 9) [Notes|Command_GSM_StateContains_UtilitiesLib]
+*Returns: bool*
+*Parameter 1: pState (string)*
+No comment provided
+
+h4.GSM_SwitchToState (AccessLevel 9) [Notes|Command_GSM_SwitchToState_UtilitiesLib]
+*Parameter 1: pchNewState (sentence)*
+No comment provided
+
+h4.GenerateLog (AccessLevel 9) [Notes|Command_GenerateLog_UtilitiesLib]
+*Parameter 1: n (int)*
+No comment provided
+
+h4.GetATRLocksString (AccessLevel 9) [Notes|Command_GetATRLocksString_UtilitiesLib]
+*Parameter 1: pFuncName (string)*
+No comment provided
+
+h4.GetCurGimmeDateString (AccessLevel 9) [Notes|Command_GetCurGimmeDateString_UtilitiesLib]
+No comment provided
+
+h4.GetCurSVNRev (AccessLevel 9) [Notes|Command_GetCurSVNRev_UtilitiesLib]
+*Parameter 1: pFolderName (string)*
+No comment provided
+
+h4.GetDescriptiveSVNCheckinStrings (AccessLevel 9) [Notes|Command_GetDescriptiveSVNCheckinStrings_UtilitiesLib]
+*Parameter 1: pRepository (string)*
+*Parameter 2: pCheckinNums (sentence)*
+returns something that looks like this:
+59234 awerner mar 15 800 "this is the comment"
+61234 jesser mar 16 800 "this is another comment"
+
+pCheckinNums is comma-separated
+
+
+h4.GetEntityHTMLHeader (AccessLevel 9) [Notes|Command_GetEntityHTMLHeader_UtilitiesLib]
+*Parameter 1: pKeyString (string)*
+Callback that gets the HTML header for an entity. In ServerLib because it needs to work on MCPs and GameServers.
+
+
+h4.GetGimmeBranch (AccessLevel 9) [Notes|Command_GetGimmeBranch_UtilitiesLib]
+*Parameter 1: pFolderName (string)*
+No comment provided
+
+h4.GetJunctionNameFromFolderName (AccessLevel 9) [Notes|Command_GetJunctionNameFromFolderName_UtilitiesLib]
+*Parameter 1: pFolderName (string)*
+No comment provided
+
+h4.GetLinkToLogDir (AccessLevel 9) [Notes|Command_GetLinkToLogDir_UtilitiesLib]
+*Parameter 1: pLinkName (string)*
+No comment provided
+
+h4.GetLinkToLogFile (AccessLevel 9) [Notes|Command_GetLinkToLogFile_UtilitiesLib]
+*Parameter 1: pLogFileName (string)*
+*Parameter 2: pLinkName (sentence)*
+No comment provided
+
+h4.GetLogDir (AccessLevel 9) [Notes|Command_GetLogDir_UtilitiesLib]
+No comment provided
+
+h4.GetLogFileName (AccessLevel 9) [Notes|Command_GetLogFileName_UtilitiesLib]
+*Parameter 1: pShortName (string)*
+No comment provided
+
+h4.GetLongTermVariable (AccessLevel 9) [Notes|Command_GetLongTermVariable_UtilitiesLib]
+*Parameter 1: pVarName (string)*
+No comment provided
+
+h4.GET_WORD_AFTER_WORD (AccessLevel 9) [Notes|Command_GET_WORD_AFTER_WORD_UtilitiesLib]
+*Parameter 1: pInString (string)*
+*Parameter 2: pWord (string)*
+*Parameter 3: pFailReturn (string)*
+divides a string into words, looks for the word, if found, returns the next word, if not round, returns the fail word
+
+
+h4.GetProductName (AccessLevel 9) [Notes|Command_GetProductName_UtilitiesLib]
+*Returns: string*
+Get the product logical name, e.g. "FightClub", "StarTrek".
+
+
+h4.GetSVNBranch (AccessLevel 9) [Notes|Command_GetSVNBranch_UtilitiesLib]
+*Parameter 1: pFolderName (string)*
+No comment provided
+
+h4.GetSVNCountFromFile (AccessLevel 9) [Notes|Command_GetSVNCountFromFile_UtilitiesLib]
+*Parameter 1: pFileName (string)*
+No comment provided
+
+h4.GetSVNNumberWhenBranchWasCreated (AccessLevel 9) [Notes|Command_GetSVNNumberWhenBranchWasCreated_UtilitiesLib]
+*Parameter 1: pBranchName (string)*
+No comment provided
+
+h4.GetScriptRunningTime (AccessLevel 9) [Notes|Command_GetScriptRunningTime_UtilitiesLib]
+No comment provided
+
+h4.GetShardInfoString (AccessLevel 9) [Notes|Command_GetShardInfoString_UtilitiesLib]
+No comment provided
+
+h4.GetShortProductName (AccessLevel 9) [Notes|Command_GetShortProductName_UtilitiesLib]
+*Returns: string*
+Get the short product logical name, e.g. "FC", "STO".
+
+
+h4.GetStatusFileName (AccessLevel 9) [Notes|Command_GetStatusFileName_UtilitiesLib]
+*Parameter 1: pShortName (string)*
+No comment provided
+
+h4.GetStepDuration (AccessLevel 9) [Notes|Command_GetStepDuration_UtilitiesLib]
+No comment provided
+
+h4.GetTriviaFromFile (AccessLevel 9) [Notes|Command_GetTriviaFromFile_UtilitiesLib]
+*Parameter 1: pFileName (string)*
+*Parameter 2: pTriviaName (string)*
+No comment provided
+
+h4.version (AccessLevel 0) [Notes|Command_version_UtilitiesLib]
+Displays the current build version
+
+
+h4.ListObjectPathFields (AccessLevel 9) [Notes|Command_ListObjectPathFields_UtilitiesLib]
+*Parameter 1: path (string)*
+List all structure fields found in the structure that path resolves to
+
+
+h4.ListObjectPathKeys (AccessLevel 9) [Notes|Command_ListObjectPathKeys_UtilitiesLib]
+*Parameter 1: path (string)*
+List all keys found in the EArray that path resolves to
+
+
+h4.LoadAllTranslations (AccessLevel 9) [Notes|Command_LoadAllTranslations_UtilitiesLib]
+No comment provided
+
+h4.LogMemTrackOps (AccessLevel 9) [Notes|Command_LogMemTrackOps_UtilitiesLib]
+Enable memtrack ops debugging.
+
+
+h4.LogNow (AccessLevel 9) [Notes|Command_LogNow_UtilitiesLib]
+*Parameter 1: pLog (sentence)*
+No comment provided
+
+h4.LogPacketTrackers (AccessLevel 9) [Notes|Command_LogPacketTrackers_UtilitiesLib]
+No comment provided
+
+h4.MakeCommandsForCSV (AccessLevel 9) [Notes|Command_MakeCommandsForCSV_UtilitiesLib]
+No comment provided
+
+h4.MemLeakTracking_ForceAnalysisNow (AccessLevel 9) [Notes|Command_MemLeakTracking_ForceAnalysisNow_UtilitiesLib]
+No comment provided
+
+h4.NewAnimationSystem (AccessLevel 0) [Notes|Command_NewAnimationSystem_UtilitiesLib]
+*Parameter 1: bNew (int)*
+No comment provided
+
+h4.NoSharedMemory (AccessLevel 9) [Notes|Command_NoSharedMemory_UtilitiesLib]
+*Parameter 1: disable (int)*
+Disable shared memory
+
+
+h4.NonBlockingContainerQuery_XMLRPC (AccessLevel 9) [Notes|Command_NonBlockingContainerQuery_XMLRPC_UtilitiesLib]
+*Parameter 1: pQuery (NonBlockingXMLRPCContainerQuery_QueryStruct struct)*
+No comment provided
+
+h4.NORMALIZE_LIST (AccessLevel 9) [Notes|Command_NORMALIZE_LIST_UtilitiesLib]
+*Parameter 1: pInString (string)*
+given an input string that is a comma, or linebreak, separated list items, returns a string that
+is a comma-separated list of items, alphabetized, with all backslashes replaced with forward slashes
+
+
+h4.NORMALIZE_LIST_BACKSLASHES (AccessLevel 9) [Notes|Command_NORMALIZE_LIST_BACKSLASHES_UtilitiesLib]
+*Parameter 1: pInString (string)*
+given an input string that is a comma, or linebreak, separated list items, returns a string that
+is a comma-separated list of items, alphabetized, with all forward slashes replaced with backslashes
+
+
+h4.NotesServer_SetNote (AccessLevel 9) [Notes|Command_NotesServer_SetNote_UtilitiesLib]
+*Parameter 1: pNoteName (string)*
+*Parameter 2: pScopeName (string)*
+*Parameter 3: bCritical (bool)*
+*Parameter 4: pNoteText (sentence)*
+No comment provided
+
+h4.PoolEArrays (AccessLevel 0) [Notes|Command_PoolEArrays_UtilitiesLib]
+dummy AUTO_COMMAND to avoid error message
+
+
+h4.PrintDataDirs (AccessLevel 9) [Notes|Command_PrintDataDirs_UtilitiesLib]
+No comment provided
+
+h4.PrintStringCacheSources (AccessLevel 9) [Notes|Command_PrintStringCacheSources_UtilitiesLib]
+No comment provided
+
+h4.PrintStringCacheStats (AccessLevel 9) [Notes|Command_PrintStringCacheStats_UtilitiesLib]
+No comment provided
+
+h4.ProdVersion (AccessLevel 9) [Notes|Command_ProdVersion_UtilitiesLib]
+No comment provided
+
+h4.RAMOverflowNow (AccessLevel 9) [Notes|Command_RAMOverflowNow_UtilitiesLib]
+*Parameter 1: iBytesAtATime (int)*
+No comment provided
+
+h4.ReadObjectPath (AccessLevel 9) [Notes|Command_ReadObjectPath_UtilitiesLib]
+*Parameter 1: path (string)*
+Returns a string version of whatever the passed in object path resolves to
+
+
+h4.ReceiveStats_CaptureDelta (AccessLevel 9) [Notes|Command_ReceiveStats_CaptureDelta_UtilitiesLib]
+*Parameter 1: iNumSeconds (int)*
+clear all ReceiveStats, then capture a specified number of seconds of data. 0 to cancel
+and go back to normal operation. If gbTrackLinkReceiveStats is off, this will turn it on, then turn it back off when the delta is done
+
+
+h4.RefSystem_CheckIntegrity (AccessLevel 9) [Notes|Command_RefSystem_CheckIntegrity_UtilitiesLib]
+Checks the reference system for any invalid data
+
+
+h4.RegexExtract (AccessLevel 9) [Notes|Command_RegexExtract_UtilitiesLib]
+*Parameter 1: regex (string)*
+*Parameter 2: input (string)*
+*Parameter 3: defaultOutput (string)*
+No comment provided
+
+h4.RegexExtract (AccessLevel 9) [Notes|Command_RegexExtract_UtilitiesLib]
+*Returns: string*
+*Parameter 1: regex (string)*
+*Parameter 2: input (string)*
+*Parameter 3: defaultOutput (string)*
+No comment provided
+
+h4.REMOVE_ITEMS_MATCHING_SUBSTRS (AccessLevel 9) [Notes|Command_REMOVE_ITEMS_MATCHING_SUBSTRS_UtilitiesLib]
+*Parameter 1: pMainList (string)*
+*Parameter 2: pSubstrings (string)*
+given a comma-separated list of items, and a comma-separated list of substrings,
+removes all items from the main list any of which contains any of the substrings
+
+
+h4.ResourceOverlayLoad (AccessLevel 0) [Notes|Command_ResourceOverlayLoad_UtilitiesLib]
+*Parameter 1: pchDictName (string)*
+*Parameter 2: pchOverlay (string)*
+No comment provided
+
+h4.RestartCommand (AccessLevel 9) [Notes|Command_RestartCommand_UtilitiesLib]
+*Parameter 1: fullCommandLine (sentence)*
+No comment provided
+
+h4.SVNVersion (AccessLevel 9) [Notes|Command_SVNVersion_UtilitiesLib]
+No comment provided
+
+h4.FolderIsSVNRepository (AccessLevel 9) [Notes|Command_FolderIsSVNRepository_UtilitiesLib]
+*Parameter 1: pFolderName (string)*
+No comment provided
+
+h4.ScratchStackDumpStats (AccessLevel 9) [Notes|Command_ScratchStackDumpStats_UtilitiesLib]
+No comment provided
+
+h4.SemiSharedMemory (AccessLevel 9) [Notes|Command_SemiSharedMemory_UtilitiesLib]
+*Parameter 1: enable (int)*
+Disable shared memory
+
+
+h4.SendCommandToSimpleStatusMonitoree (AccessLevel 1) [Notes|Command_SendCommandToSimpleStatusMonitoree_UtilitiesLib]
+*Parameter 1: pSystemName (string)*
+*Parameter 2: pCommandString (sentence)*
+note that the access level is checked on the other side as well, so someone with AL 1 can access this command
+and try to send an AL 4 command, but it will fail over there
+
+
+h4.ServerSaving (AccessLevel 0) [Notes|Command_ServerSaving_UtilitiesLib]
+*Parameter 1: serverSaving (int)*
+No comment provided
+
+h4.setf (AccessLevel 9) [Notes|Command_setf_UtilitiesLib]
+*Parameter 1: pName (string)*
+*Parameter 2: fValue (float)*
+Sets an AUTO_FLOAT
+
+
+h4.SetBaseContainerIDs (AccessLevel 9) [Notes|Command_SetBaseContainerIDs_UtilitiesLib]
+*Parameter 1: baseContainerID (int)*
+*Parameter 2: maxContainerID (int)*
+No comment provided
+
+h4.SetCachedDeleteTimeout (AccessLevel 9) [Notes|Command_SetCachedDeleteTimeout_UtilitiesLib]
+*Parameter 1: timeout (int)*
+No comment provided
+
+h4.SetCoresForThread (AccessLevel 9) [Notes|Command_SetCoresForThread_UtilitiesLib]
+*Parameter 1: iThreadID (int)*
+*Parameter 2: iCoreNum (int)*
+No comment provided
+
+h4.SetLocaleIsImplemented (AccessLevel 0) [Notes|Command_SetLocaleIsImplemented_UtilitiesLib]
+*Parameter 1: pName (string)*
+*Parameter 2: iSet (int)*
+No comment provided
+
+h4.SetLongTermVariable (AccessLevel 9) [Notes|Command_SetLongTermVariable_UtilitiesLib]
+*Parameter 1: pVarName (string)*
+*Parameter 2: pVarValue (string)*
+No comment provided
+
+h4.SetObjectPath (AccessLevel 9) [Notes|Command_SetObjectPath_UtilitiesLib]
+*Parameter 1: path (string)*
+*Parameter 2: value (sentence)*
+Sets what path resolves to to the passed in string value
+
+
+h4.SetOverlord (AccessLevel 9) [Notes|Command_SetOverlord_UtilitiesLib]
+*Parameter 1: pOverlord (string)*
+No comment provided
+
+h4.SetShardCategoryManually (AccessLevel 9) [Notes|Command_SetShardCategoryManually_UtilitiesLib]
+*Parameter 1: pCategory (string)*
+usually not used, because it gets set in the shard info string
+
+
+h4.SetShardInfoString (AccessLevel 9) [Notes|Command_SetShardInfoString_UtilitiesLib]
+*Parameter 1: pShardInfoString (sentence)*
+No comment provided
+
+h4.SetSharedMachineIndex (AccessLevel 0) [Notes|Command_SetSharedMachineIndex_UtilitiesLib]
+*Parameter 1: iVal (int)*
+No comment provided
+
+h4.SetTestServer (AccessLevel 0) [Notes|Command_SetTestServer_UtilitiesLib]
+*Parameter 1: pcHostname (string)*
+No comment provided
+
+h4.ShowObjectPathCacheStats (AccessLevel 9) [Notes|Command_ShowObjectPathCacheStats_UtilitiesLib]
+No comment provided
+
+h4.SimpleStatusMonitoring_Begin (AccessLevel 9) [Notes|Command_SimpleStatusMonitoring_Begin_UtilitiesLib]
+*Parameter 1: iPort (int)*
+*Parameter 2: eFlags (enum)*
+No comment provided
+
+h4.SimpleStatusMonitoring_RestartSystem (AccessLevel 9) [Notes|Command_SimpleStatusMonitoring_RestartSystem_UtilitiesLib]
+*Parameter 1: pName (string)*
+No comment provided
+
+h4.SimpleStatusMonitoring_TellSystemToShutDown (AccessLevel 9) [Notes|Command_SimpleStatusMonitoring_TellSystemToShutDown_UtilitiesLib]
+*Parameter 1: pSystemName (string)*
+No comment provided
+
+h4.SpecialHeapForStructStrings (AccessLevel 9) [Notes|Command_SpecialHeapForStructStrings_UtilitiesLib]
+*Parameter 1: iSet (int)*
+No comment provided
+
+h4.SpecialHeapForTSMPs (AccessLevel 9) [Notes|Command_SpecialHeapForTSMPs_UtilitiesLib]
+*Parameter 1: iSet (int)*
+No comment provided
+
+h4.StartSpammingLogs (AccessLevel 9) [Notes|Command_StartSpammingLogs_UtilitiesLib]
+*Parameter 1: iNumPerSecond (int)*
+No comment provided
+
+h4.StaticDefineDumpMessages (AccessLevel 9) [Notes|Command_StaticDefineDumpMessages_UtilitiesLib]
+*Parameter 1: pchName (string)*
+Dump a .ms file for a static define.
+
+
+h4.StatisticsTest (AccessLevel 9) [Notes|Command_StatisticsTest_UtilitiesLib]
+No comment provided
+
+h4.SuperEsc (AccessLevel 0) [Notes|Command_SuperEsc_UtilitiesLib]
+*Parameter 1: pCommandName (string)*
+*Parameter 2: pSuperEscapedArg (string)*
+this command is used to bootstrap super-escaped commands on the command line.
+
+
+h4.TT_GetCategoriesList (AccessLevel 9) [Notes|Command_TT_GetCategoriesList_UtilitiesLib]
+No comment provided
+
+h4.TT_GetPublicCategoriesList (AccessLevel 9) [Notes|Command_TT_GetPublicCategoriesList_UtilitiesLib]
+No comment provided
+
+h4.TaskServerPort (AccessLevel 0) [Notes|Command_TaskServerPort_UtilitiesLib]
+*Parameter 1: iPort (int)*
+No comment provided
+
+h4.TestAlertWithKey (AccessLevel 9) [Notes|Command_TestAlertWithKey_UtilitiesLib]
+*Parameter 1: pKey (string)*
+No comment provided
+
+h4.TestDeferredAlerts (AccessLevel 9) [Notes|Command_TestDeferredAlerts_UtilitiesLib]
+No comment provided
+
+h4.TestTestHarness (AccessLevel 9) [Notes|Command_TestTestHarness_UtilitiesLib]
+Test the test harness itself
+
+
+h4.TestTextParser (AccessLevel 9) [Notes|Command_TestTextParser_UtilitiesLib]
+Runs tests on the textparser system, and prints results to console
+
+
+h4.TestTextParser_NoShared (AccessLevel 9) [Notes|Command_TestTextParser_NoShared_UtilitiesLib]
+No comment provided
+
+h4.TestTriggerAlert (AccessLevel 9) [Notes|Command_TestTriggerAlert_UtilitiesLib]
+*Parameter 1: pLevel (string)*
+*Parameter 2: pCategory (string)*
+*Parameter 3: pString (sentence)*
+No comment provided
+
+h4.TRUNCATE_STRING_AFTER_SUBSTR (AccessLevel 9) [Notes|Command_TRUNCATE_STRING_AFTER_SUBSTR_UtilitiesLib]
+*Parameter 1: pInString (string)*
+*Parameter 2: pSubStr (string)*
+given a string and a substring, finds the substring in the string. If it's there,
+returns a new string which is part of the main string AFTER the last occurrence of the substring
+
+
+h4.TRUNCATE_STRING_AT_SUBSTR (AccessLevel 9) [Notes|Command_TRUNCATE_STRING_AT_SUBSTR_UtilitiesLib]
+*Parameter 1: pInString (string)*
+*Parameter 2: pSubStr (string)*
+given a string and a substring, finds the substring in the string. If it's there,
+returns a new string which is just the main string up to, but not including, the 
+first occurrence of the substr
+
+
+h4.UpdatePerformanceCmd (AccessLevel 9) [Notes|Command_UpdatePerformanceCmd_UtilitiesLib]
+*Parameter 1: iThreadID (int)*
+No comment provided
+
+h4.UseMovementGraphs (AccessLevel 0) [Notes|Command_UseMovementGraphs_UtilitiesLib]
+*Parameter 1: bApply (int)*
+No comment provided
+
+h4.UseNWOMovementAndAnimationOptions (AccessLevel 0) [Notes|Command_UseNWOMovementAndAnimationOptions_UtilitiesLib]
+*Parameter 1: bApply (int)*
+No comment provided
+
+h4.UseRealAccessLevelInUGC (AccessLevel 0) [Notes|Command_UseRealAccessLevelInUGC_UtilitiesLib]
+*Parameter 1: iSet (int)*
+No comment provided
+
+h4.UseSTOMovementAndAnimationOptions (AccessLevel 0) [Notes|Command_UseSTOMovementAndAnimationOptions_UtilitiesLib]
+*Parameter 1: bApply (int)*
+No comment provided
+
+h4.KillMeWhenAnotherProcessDies (AccessLevel 9) [Notes|Command_KillMeWhenAnotherProcessDies_UtilitiesLib]
+*Parameter 1: pExeName (string)*
+*Parameter 2: iOtherProcessPID (int)*
+No comment provided
+
+h4.VerboseResourceLoggingPerDict (AccessLevel 9) [Notes|Command_VerboseResourceLoggingPerDict_UtilitiesLib]
+*Parameter 1: pDictionaryName (string)*
+No comment provided
+
+h4.VerifyCommandAndStructContractAndQuit (AccessLevel 9) [Notes|Command_VerifyCommandAndStructContractAndQuit_UtilitiesLib]
+*Parameter 1: pInFileName (string)*
+*Parameter 2: pOutFileName (string)*
+No comment provided
+
+h4.VersionSlow (AccessLevel 0) [Notes|Command_VersionSlow_UtilitiesLib]
+displays the version a second later, useful for debugging things that depend on slow command return
+
+
+h4.WriteDictionaryDependencies (AccessLevel 9) [Notes|Command_WriteDictionaryDependencies_UtilitiesLib]
+No comment provided
+
+h4.WriteOutPOFiles (AccessLevel 9) [Notes|Command_WriteOutPOFiles_UtilitiesLib]
+*Parameter 1: iLocale (int)*
+No comment provided
+
+h4.WriteVMapNow (AccessLevel 9) [Notes|Command_WriteVMapNow_UtilitiesLib]
+No comment provided
+
+h4.activateStaleContainerCleanup (AccessLevel 9) [Notes|Command_activateStaleContainerCleanup_UtilitiesLib]
+No comment provided
+
+h4.alertfNow (AccessLevel 9) [Notes|Command_alertfNow_UtilitiesLib]
+*Parameter 1: errorString (sentence)*
+No comment provided
+
+h4.allocNow (AccessLevel 9) [Notes|Command_allocNow_UtilitiesLib]
+*Parameter 1: size (int)*
+No comment provided
+
+h4.allocNowMegs (AccessLevel 9) [Notes|Command_allocNowMegs_UtilitiesLib]
+*Parameter 1: size (int)*
+No comment provided
+
+h4.assertNow (AccessLevel 9) [Notes|Command_assertNow_UtilitiesLib]
+*Parameter 1: errorString (sentence)*
+No comment provided
+
+h4.bigAlloc (AccessLevel 9) [Notes|Command_bigAlloc_UtilitiesLib]
+No comment provided
+
+h4.bigFree (AccessLevel 9) [Notes|Command_bigFree_UtilitiesLib]
+No comment provided
+
+h4.BanCommand (AccessLevel 9) [Notes|Command_BanCommand_UtilitiesLib]
+*Parameter 1: pCommand (string)*
+No comment provided
+
+h4.DumpMessageMemory (AccessLevel 9) [Notes|Command_DumpMessageMemory_UtilitiesLib]
+No comment provided
+
+h4.exec (AccessLevel 9) [Notes|Command_exec_UtilitiesLib]
+*Parameter 1: filename (string)*
+Executes each line in a file as a slash command
+
+
+h4.commDefaultTimeout (AccessLevel 9) [Notes|Command_commDefaultTimeout_UtilitiesLib]
+*Parameter 1: milliseconds (int)*
+No comment provided
+
+h4.commDefaultVerify (AccessLevel 9) [Notes|Command_commDefaultVerify_UtilitiesLib]
+*Parameter 1: enabled (int)*
+No comment provided
+
+h4.NetLag (AccessLevel 0) [Notes|Command_NetLag_UtilitiesLib]
+*Parameter 1: msecs (int)*
+No comment provided
+
+h4.netNoCompress (AccessLevel 0) [Notes|Command_netNoCompress_UtilitiesLib]
+*Parameter 1: no_compress (int)*
+No comment provided
+
+h4.netNoVerify (AccessLevel 0) [Notes|Command_netNoVerify_UtilitiesLib]
+*Parameter 1: no_packet_verify (int)*
+No comment provided
+
+h4.conMemBudgets (AccessLevel 9) [Notes|Command_conMemBudgets_UtilitiesLib]
+No comment provided
+
+h4.crashBadThread (AccessLevel 9) [Notes|Command_crashBadThread_UtilitiesLib]
+No comment provided
+
+h4.crashDivZero (AccessLevel 9) [Notes|Command_crashDivZero_UtilitiesLib]
+No comment provided
+
+h4.crashInvalidFloat (AccessLevel 9) [Notes|Command_crashInvalidFloat_UtilitiesLib]
+No comment provided
+
+h4.crashNow (AccessLevel 9) [Notes|Command_crashNow_UtilitiesLib]
+No comment provided
+
+h4.dbDumpSchemaToSQL (AccessLevel 9) [Notes|Command_dbDumpSchemaToSQL_UtilitiesLib]
+*Parameter 1: namedtype (string)*
+*Parameter 2: to_dir (string)*
+No comment provided
+
+h4.hide_dbg (AccessLevel 9) [Notes|Command_hide_dbg_UtilitiesLib]
+*Parameter 1: watch_name (string)*
+No comment provided
+
+h4.show_dbg (AccessLevel 9) [Notes|Command_show_dbg_UtilitiesLib]
+*Parameter 1: watch_name (string)*
+No comment provided
+
+h4.deactivateStaleContainerCleanup (AccessLevel 9) [Notes|Command_deactivateStaleContainerCleanup_UtilitiesLib]
+No comment provided
+
+h4.delayedCmd (AccessLevel 9) [Notes|Command_delayedCmd_UtilitiesLib]
+*Parameter 1: sec (float)*
+*Parameter 2: cmdStr (sentence)*
+No comment provided
+
+h4.disableFPExceptions (AccessLevel 0) [Notes|Command_disableFPExceptions_UtilitiesLib]
+*Parameter 1: disabled (int)*
+No comment provided
+
+h4.disableLastAuthor (AccessLevel 9) [Notes|Command_disableLastAuthor_UtilitiesLib]
+*Parameter 1: disable (bool)*
+No comment provided
+
+h4.disableStructPackCRCs (AccessLevel 9) [Notes|Command_disableStructPackCRCs_UtilitiesLib]
+*Parameter 1: value (int)*
+No comment provided
+
+h4.dontLogErrors (AccessLevel 9) [Notes|Command_dontLogErrors_UtilitiesLib]
+*Parameter 1: bDontLogErrors (bool)*
+Disables logging of errors to ERRORS.log
+
+
+h4.enableFPException (AccessLevel 0) [Notes|Command_enableFPException_UtilitiesLib]
+*Parameter 1: exception (string)*
+Enables floating point exceptions.  Valid parameters are: Inexact, Underflow, Overflow, ZeroDivide, Invalid, Denormal or All
+
+
+h4.enableFPException (AccessLevel 9) [Notes|Command_enableFPException_UtilitiesLib]
+*Parameter 1: exception (string)*
+Enables floating point exceptions.  Valid parameters are: Inexact, Underflow, Overflow, ZeroDivide, Invalid, Denormal or All
+
+
+h4.errorDetailsfNow (AccessLevel 9) [Notes|Command_errorDetailsfNow_UtilitiesLib]
+*Parameter 1: errorString (string)*
+*Parameter 2: errorDetails (sentence)*
+No comment provided
+
+h4.errorfNow (AccessLevel 9) [Notes|Command_errorfNow_UtilitiesLib]
+*Parameter 1: errorString (sentence)*
+No comment provided
+
+h4.ChooseFloat (AccessLevel 9) [Notes|Command_ChooseFloat_UtilitiesLib]
+*Returns: F64*
+*Parameter 1: which (int)*
+*Parameter 2: a (F64)*
+*Parameter 3: b (F64)*
+No comment provided
+
+h4.ChooseInt (AccessLevel 9) [Notes|Command_ChooseInt_UtilitiesLib]
+*Returns: int*
+*Parameter 1: which (int)*
+*Parameter 2: a (int)*
+*Parameter 3: b (int)*
+No comment provided
+
+h4.ChooseInt64 (AccessLevel 9) [Notes|Command_ChooseInt64_UtilitiesLib]
+*Returns: S64*
+*Parameter 1: which (int)*
+*Parameter 2: a (S64)*
+*Parameter 3: b (S64)*
+No comment provided
+
+h4.ChooseString (AccessLevel 9) [Notes|Command_ChooseString_UtilitiesLib]
+*Returns: string*
+*Parameter 1: which (int)*
+*Parameter 2: a (string)*
+*Parameter 3: b (string)*
+No comment provided
+
+h4.exprDebugDestroyLeak (AccessLevel 9) [Notes|Command_exprDebugDestroyLeak_UtilitiesLib]
+No comment provided
+
+h4.exprDebugIncrement (AccessLevel 9) [Notes|Command_exprDebugIncrement_UtilitiesLib]
+*Returns: int*
+*Parameter 1: i (int)*
+No comment provided
+
+h4.exprDebugRegressionTest (AccessLevel 9) [Notes|Command_exprDebugRegressionTest_UtilitiesLib]
+*Parameter 1: assertOnError (int)*
+No comment provided
+
+h4.Abs (AccessLevel 9) [Notes|Command_Abs_UtilitiesLib]
+*Returns: float*
+*Parameter 1: v (float)*
+Returns the absolute value of the number <v>
+
+
+h4.ArcTan (AccessLevel 9) [Notes|Command_ArcTan_UtilitiesLib]
+*Returns: float*
+*Parameter 1: slope (float)*
+Returns the angle of <slope> in degrees
+
+
+h4.ArcTan2 (AccessLevel 9) [Notes|Command_ArcTan2_UtilitiesLib]
+*Returns: float*
+*Parameter 1: y (float)*
+*Parameter 2: x (float)*
+Returns the angle of <y> / <x> in degrees
+
+
+h4.Ceil (AccessLevel 9) [Notes|Command_Ceil_UtilitiesLib]
+*Returns: float*
+*Parameter 1: v (float)*
+Returns the ceiling of the number <v>
+
+
+h4.Clamp (AccessLevel 9) [Notes|Command_Clamp_UtilitiesLib]
+*Returns: float*
+*Parameter 1: v (float)*
+*Parameter 2: min (float)*
+*Parameter 3: max (float)*
+Clamps the number <v> between <min> and <max>
+
+
+h4.ConsolePrint (AccessLevel 9) [Notes|Command_ConsolePrint_UtilitiesLib]
+*No Return*
+*Parameter 1: str (string)*
+DEBUGGING: prints the passed in string to the server console
+
+
+h4.Cosine (AccessLevel 9) [Notes|Command_Cosine_UtilitiesLib]
+*Returns: float*
+*Parameter 1: degAngle (float)*
+Returns the cosine of <angle> degrees
+
+
+h4.DaysSince2000 (AccessLevel 9) [Notes|Command_DaysSince2000_UtilitiesLib]
+*Returns: int*
+No comment provided
+
+h4.TimeDaysSince2000 (AccessLevel 9) [Notes|Command_TimeDaysSince2000_UtilitiesLib]
+*Returns: int*
+Returns the number of days since January 1st, 2000.
+
+
+h4.Floor (AccessLevel 9) [Notes|Command_Floor_UtilitiesLib]
+*Returns: float*
+*Parameter 1: v (float)*
+Returns the floor of the number <v>
+
+
+h4.TimeHoursSince2000 (AccessLevel 9) [Notes|Command_TimeHoursSince2000_UtilitiesLib]
+*Returns: int*
+Returns the number of hours since January 1st, 2000.
+
+
+h4.HoursSince2000 (AccessLevel 9) [Notes|Command_HoursSince2000_UtilitiesLib]
+*Returns: int*
+No comment provided
+
+h4.Log (AccessLevel 9) [Notes|Command_Log_UtilitiesLib]
+*Returns: float*
+*Parameter 1: v (float)*
+Returns the natural log of the number <v>
+
+
+h4.Log2 (AccessLevel 9) [Notes|Command_Log2_UtilitiesLib]
+*Returns: float*
+*Parameter 1: v (float)*
+Returns the base 2 log of the number <v>
+
+
+h4.Max (AccessLevel 9) [Notes|Command_Max_UtilitiesLib]
+*Returns: float*
+*Parameter 1: a (float)*
+*Parameter 2: b (float)*
+Returns the bigger value of the two passed in numbers
+
+
+h4.Min (AccessLevel 9) [Notes|Command_Min_UtilitiesLib]
+*Returns: float*
+*Parameter 1: a (float)*
+*Parameter 2: b (float)*
+Returns the smaller value of the two passed in numbers
+
+
+h4.mod (AccessLevel 9) [Notes|Command_mod_UtilitiesLib]
+*Returns: S64*
+*Parameter 1: divident (int)*
+*Parameter 2: divisor (int)*
+Returns <divident> modulus <divisor>
+
+
+h4.modfloat (AccessLevel 9) [Notes|Command_modfloat_UtilitiesLib]
+*Returns: float*
+*Parameter 1: total (float)*
+*Parameter 2: piece (float)*
+Subtracts <piece> from <total> until <total> is less than <piece>.
+
+
+h4.RandomFloat (AccessLevel 9) [Notes|Command_RandomFloat_UtilitiesLib]
+*Returns: float*
+*Parameter 1: min (float)*
+*Parameter 2: max (float)*
+Returns a random float between <min> and <max> (actually [min, max), but close enough)
+
+
+h4.RandomInt (AccessLevel 9) [Notes|Command_RandomInt_UtilitiesLib]
+*Returns: int*
+*Parameter 1: min (int)*
+*Parameter 2: max (int)*
+Returns a random integer between <min> and <max> (inclusive)
+
+
+h4.RandomIntFullRange (AccessLevel 9) [Notes|Command_RandomIntFullRange_UtilitiesLib]
+*Returns: int*
+Returns a random integer
+
+
+h4.RandomIntSeeded (AccessLevel 9) [Notes|Command_RandomIntSeeded_UtilitiesLib]
+*Returns: int*
+*Parameter 1: min (int)*
+*Parameter 2: max (int)*
+*Parameter 3: seed (int)*
+Returns a random integer between <min> and <max> (inclusive), using the provided random seed
+
+
+h4.RandomIntString (AccessLevel 9) [Notes|Command_RandomIntString_UtilitiesLib]
+*Returns: string*
+*Parameter 1: pchNumbers (string)*
+Replaces each number n in the input string with n random numbers. Consecutive numbers
+are delimited by a space character
+Good for making random techy numbers in STO
+
+
+h4.RangeInEx (AccessLevel 9) [Notes|Command_RangeInEx_UtilitiesLib]
+*Returns: int*
+*Parameter 1: v (float)*
+*Parameter 2: min (float)*
+*Parameter 3: max (float)*
+Returns true if the number <v> is in the range [<min>..<max>).  Note that it's inclusive of min, and exclusive of max.
+
+
+h4.Sine (AccessLevel 9) [Notes|Command_Sine_UtilitiesLib]
+*Returns: float*
+*Parameter 1: degAngle (float)*
+Returns the sine of <angle> in degrees
+
+
+h4.SquareRoot (AccessLevel 9) [Notes|Command_SquareRoot_UtilitiesLib]
+*Returns: float*
+*Parameter 1: value (float)*
+Returns the square root of <value> or -1 if <value> is less than 0
+
+
+h4.StrContains (AccessLevel 9) [Notes|Command_StrContains_UtilitiesLib]
+*Returns: int*
+*Parameter 1: str1 (string)*
+*Parameter 2: str2 (string)*
+Returns whether <str1> contains the string <str2>
+
+
+h4.StrFind (AccessLevel 9) [Notes|Command_StrFind_UtilitiesLib]
+*Returns: S64*
+*Parameter 1: str1 (string)*
+*Parameter 2: str2 (string)*
+Find the index of the first occurrence of <str2> in <str1>, or a negative number if not found.
+
+
+h4.StrFindLast (AccessLevel 9) [Notes|Command_StrFindLast_UtilitiesLib]
+*Returns: S64*
+*Parameter 1: str1 (string)*
+*Parameter 2: str2 (string)*
+Find the index of the last occurrence of <str2> in <str1>, or a negative number if not found.
+
+
+h4.StrFindNext (AccessLevel 9) [Notes|Command_StrFindNext_UtilitiesLib]
+*Returns: S64*
+*Parameter 1: str1 (string)*
+*Parameter 2: str2 (string)*
+*Parameter 3: pos (S64)*
+Find the index of the next occurrence of <str2> in <str1> starting from <pos>, or a negative number if not found.
+
+
+h4.StrFindPrevious (AccessLevel 9) [Notes|Command_StrFindPrevious_UtilitiesLib]
+*Returns: S64*
+*Parameter 1: str1 (string)*
+*Parameter 2: str2 (string)*
+*Parameter 3: pos (S64)*
+Find the index of the preceding occurrence of <str2> in <str1> starting from <pos>, or a negative number if not found.
+
+
+h4.StrLength (AccessLevel 9) [Notes|Command_StrLength_UtilitiesLib]
+*Returns: S64*
+*Parameter 1: str (string)*
+Get the length of <str>
+
+
+h4.StringToFloat (AccessLevel 9) [Notes|Command_StringToFloat_UtilitiesLib]
+*Returns: float*
+*Parameter 1: pchString (string)*
+Convert a string to a floating point number, or 0 if the string is not valid.
+
+
+h4.StringToInt (AccessLevel 9) [Notes|Command_StringToInt_UtilitiesLib]
+*Returns: int*
+*Parameter 1: pchInt (string)*
+Return a int from a given string
+
+
+h4.StringToInt64 (AccessLevel 9) [Notes|Command_StringToInt64_UtilitiesLib]
+*Returns: S64*
+*Parameter 1: pchInt (string)*
+Return a 64-bit int from a given string
+
+
+h4.TimeSinceSS2000 (AccessLevel 9) [Notes|Command_TimeSinceSS2000_UtilitiesLib]
+*Returns: int*
+*Parameter 1: iInTime (int)*
+same as the above, but input time is secsSince2000
+
+
+h4.GetHueFromRGB (AccessLevel 9) [Notes|Command_GetHueFromRGB_UtilitiesLib]
+*Returns: float*
+*Parameter 1: fR (float)*
+*Parameter 2: fG (float)*
+*Parameter 3: fB (float)*
+Return the distance that the mouse is from the gen's unpadded screen box.
+
+
+h4.GetSaturationFromRGB (AccessLevel 9) [Notes|Command_GetSaturationFromRGB_UtilitiesLib]
+*Returns: float*
+*Parameter 1: fR (float)*
+*Parameter 2: fG (float)*
+*Parameter 3: fB (float)*
+Return the distance that the mouse is from the gen's unpadded screen box.
+
+
+h4.GetValueFromRGB (AccessLevel 9) [Notes|Command_GetValueFromRGB_UtilitiesLib]
+*Returns: float*
+*Parameter 1: fR (float)*
+*Parameter 2: fG (float)*
+*Parameter 3: fB (float)*
+Return the distance that the mouse is from the gen's unpadded screen box.
+
+
+h4.IsProductionEditMode (AccessLevel 9) [Notes|Command_IsProductionEditMode_UtilitiesLib]
+*Returns: bool*
+No comment provided
+
+h4.IsReferenceLoaded (AccessLevel 9) [Notes|Command_IsReferenceLoaded_UtilitiesLib]
+*Returns: int*
+*Parameter 1: pchType (string)*
+*Parameter 2: pchReference (string)*
+Use this to check whether a handle is loaded by the ref system. ex: IsReferenceLoaded("ItemDef", pItem.hItemDef) . An invalid handle or type will yield 0.
+
+
+h4.LinearInterpolate (AccessLevel 9) [Notes|Command_LinearInterpolate_UtilitiesLib]
+*Returns: float*
+*Parameter 1: fFrom (float)*
+*Parameter 2: fTo (float)*
+*Parameter 3: fMod (float)*
+Interpolate a number From -> To. Where Mod controls the interpolation.
+
+
+h4.RGBAIntSwapBytes (AccessLevel 9) [Notes|Command_RGBAIntSwapBytes_UtilitiesLib]
+*Returns: int*
+*Parameter 1: uRGBA (int)*
+Convert a color value from an int packed form to a byte packed form (i.e. endian swap if necessary)
+
+
+h4.TimeLocalOffsetFromUTC (AccessLevel 9) [Notes|Command_TimeLocalOffsetFromUTC_UtilitiesLib]
+*Returns: S64*
+No comment provided
+
+h4.fatalErrorDetailsfNow (AccessLevel 9) [Notes|Command_fatalErrorDetailsfNow_UtilitiesLib]
+*Parameter 1: errorString (string)*
+*Parameter 2: detailsString (string)*
+No comment provided
+
+h4.fatalErrorfNow (AccessLevel 9) [Notes|Command_fatalErrorfNow_UtilitiesLib]
+*Parameter 1: errorString (sentence)*
+No comment provided
+
+h4.fileCacheDump (AccessLevel 9) [Notes|Command_fileCacheDump_UtilitiesLib]
+No comment provided
+
+h4.fileCacheTimestampDump (AccessLevel 9) [Notes|Command_fileCacheTimestampDump_UtilitiesLib]
+No comment provided
+
+h4.fileLastChangedSS2000 (AccessLevel 9) [Notes|Command_fileLastChangedSS2000_UtilitiesLib]
+*Parameter 1: refname (string)*
+No comment provided
+
+h4.LoadAllUserNamespaces (AccessLevel 0) [Notes|Command_LoadAllUserNamespaces_UtilitiesLib]
+*Parameter 1: ignored (int)*
+No comment provided
+
+h4.LoadUserNamespaces (AccessLevel 0) [Notes|Command_LoadUserNamespaces_UtilitiesLib]
+*Parameter 1: pchNamespaces (string)*
+No comment provided
+
+h4.forceFPExceptions (AccessLevel 0) [Notes|Command_forceFPExceptions_UtilitiesLib]
+*Parameter 1: enabled (int)*
+No comment provided
+
+h4.forceStackWalk (AccessLevel 9) [Notes|Command_forceStackWalk_UtilitiesLib]
+No comment provided
+
+h4.gimmeDLLDemoMode (AccessLevel 0) [Notes|Command_gimmeDLLDemoMode_UtilitiesLib]
+*Parameter 1: demoMode (int)*
+No comment provided
+
+h4.gimmeDLLDisable (AccessLevel 0) [Notes|Command_gimmeDLLDisable_UtilitiesLib]
+*Parameter 1: disable (int)*
+No comment provided
+
+h4.hashFunctionTest (AccessLevel 9) [Notes|Command_hashFunctionTest_UtilitiesLib]
+*Parameter 1: dummy (int)*
+No comment provided
+
+h4.HeapValidateAll (AccessLevel 9) [Notes|Command_HeapValidateAll_UtilitiesLib]
+Validates all process heaps and small alloc memory pools
+
+
+h4.help_cmd (AccessLevel 0) [Notes|Command_help_cmd_UtilitiesLib]
+*Parameter 1: pCommandName (string)*
+the command line -help menu
+
+
+h4.hogUnsafeMode (AccessLevel 0) [Notes|Command_hogUnsafeMode_UtilitiesLib]
+*Parameter 1: unsafe (int)*
+Sets hoggs to unsafe mode for testing purposes
+
+
+h4.infLoopNow (AccessLevel 9) [Notes|Command_infLoopNow_UtilitiesLib]
+No comment provided
+
+h4.infRecurseNow (AccessLevel 9) [Notes|Command_infRecurseNow_UtilitiesLib]
+No comment provided
+
+h4.infotrackEndFrameInternal (AccessLevel 9) [Notes|Command_infotrackEndFrameInternal_UtilitiesLib]
+*Parameter 1: infotag (string)*
+No comment provided
+
+h4.infotrackPrint (AccessLevel 9) [Notes|Command_infotrackPrint_UtilitiesLib]
+*Parameter 1: infotag (string)*
+No comment provided
+
+h4.infotrackStartFrameInternal (AccessLevel 9) [Notes|Command_infotrackStartFrameInternal_UtilitiesLib]
+*Parameter 1: infotag (string)*
+*Parameter 2: subtype (string)*
+No comment provided
+
+h4.ipToCountryName (AccessLevel 9) [Notes|Command_ipToCountryName_UtilitiesLib]
+*Parameter 1: iIP (int)*
+calling this function loads in 4 megabytes of ip directory data, which then hangs around forever
+
+
+h4.ipfReload (AccessLevel 9) [Notes|Command_ipfReload_UtilitiesLib]
+No comment provided
+
+h4.ipfTest (AccessLevel 9) [Notes|Command_ipfTest_UtilitiesLib]
+*Parameter 1: ipstr (string)*
+No comment provided
+
+h4.ipfTestGroup (AccessLevel 9) [Notes|Command_ipfTestGroup_UtilitiesLib]
+*Parameter 1: ipstr (string)*
+No comment provided
+
+h4.linAllocTest (AccessLevel 9) [Notes|Command_linAllocTest_UtilitiesLib]
+Tests the linear allocator
+
+
+h4.logSetDir (AccessLevel 9) [Notes|Command_logSetDir_UtilitiesLib]
+*Parameter 1: dir (string)*
+No comment provided
+
+h4.memBudgetOverrideBudgets (AccessLevel 9) [Notes|Command_memBudgetOverrideBudgets_UtilitiesLib]
+*Parameter 1: config_file (string)*
+Loads a new memory budget file, overwriting the budget values currently loaded
+
+
+h4.MemlogDump (AccessLevel 9) [Notes|Command_MemlogDump_UtilitiesLib]
+Print out allocation statistics to c:\memlog.txt, and small allocs to c:\memlogSA.txt
+
+
+h4.MemlogDumpFile (AccessLevel 9) [Notes|Command_MemlogDumpFile_UtilitiesLib]
+*Parameter 1: filename (string)*
+No comment provided
+
+h4.MemlogDumpFileOnly (AccessLevel 9) [Notes|Command_MemlogDumpFileOnly_UtilitiesLib]
+*Parameter 1: filename (string)*
+No comment provided
+
+h4.memMonitorDisplayStats (AKA mmds) (AccessLevel 9) [Notes|Command_memMonitorDisplayStats_UtilitiesLib]
+No comment provided
+
+h4.mmdsXBOX (AKA memMonitorDisplayXMemStats) (AccessLevel 9) [Notes|Command_mmdsXBOX_UtilitiesLib]
+Show memory stats
+
+
+h4.memTrackAddFakeMemoryUsage (AccessLevel 9) [Notes|Command_memTrackAddFakeMemoryUsage_UtilitiesLib]
+*Parameter 1: amount (S64)*
+No comment provided
+
+h4.memTrackDumpHeap (AccessLevel 9) [Notes|Command_memTrackDumpHeap_UtilitiesLib]
+Dumps the main Cryptic heap to c:\memlog.csv
+
+
+h4.memTrackEntriesAnalyze (AccessLevel 9) [Notes|Command_memTrackEntriesAnalyze_UtilitiesLib]
+No comment provided
+
+h4.memTrackPrintWorkingSetNoUpdate (AKA mmpwsnu) (AccessLevel 9) [Notes|Command_memTrackPrintWorkingSetNoUpdate_UtilitiesLib]
+*Parameter 1: search (string)*
+Prints a summary of the working set of each module without updating
+
+
+h4.memTrackPrintWorkingSetNoUpdateShort (AKA mmpwsnuShort) (AccessLevel 9) [Notes|Command_memTrackPrintWorkingSetNoUpdateShort_UtilitiesLib]
+Prints a short summary of the working set of each module without updating
+
+
+h4.memTrackPrintWorkingSet (AKA mmpws) (AccessLevel 9) [Notes|Command_memTrackPrintWorkingSet_UtilitiesLib]
+*Parameter 1: search (string)*
+Prints a summary of the working set of each module since the last query
+
+
+h4.memTrackPrintWorkingSetShort (AKA mmpwsShort) (AccessLevel 9) [Notes|Command_memTrackPrintWorkingSetShort_UtilitiesLib]
+Prints a short summary of the working set of each module since the last query
+
+
+h4.mmdsShort (AccessLevel 9) [Notes|Command_mmdsShort_UtilitiesLib]
+No comment provided
+
+h4.mmplNoUser (AccessLevel 9) [Notes|Command_mmplNoUser_UtilitiesLib]
+*Parameter 1: count (int)*
+No comment provided
+
+h4.mmpl (AccessLevel 9) [Notes|Command_mmpl_UtilitiesLib]
+*Parameter 1: search (string)*
+Displays all memory allocations per line, optional search param
+
+
+h4.mmplShort (AccessLevel 9) [Notes|Command_mmplShort_UtilitiesLib]
+Displays the top 50 memory allocations per line
+
+
+h4.msgDirectoryWordCount (AccessLevel 9) [Notes|Command_msgDirectoryWordCount_UtilitiesLib]
+*Parameter 1: pchDir (string)*
+Counts the total number of words in messages in the given directory and all subfolders.
+
+
+h4.multiCommand (AccessLevel 9) [Notes|Command_multiCommand_UtilitiesLib]
+*Parameter 1: pCommandString (sentence)*
+special command for making macros that have conditional behaviors... talk to Alex W
+
+
+h4.netDumpCapture (AccessLevel 9) [Notes|Command_netDumpCapture_UtilitiesLib]
+*Parameter 1: filename (string)*
+Dump a previously-stopped capture.
+
+
+h4.NetXLSP (AccessLevel 9) [Notes|Command_NetXLSP_UtilitiesLib]
+*Parameter 1: on (int)*
+No comment provided
+
+h4.objDumpDatabase (AccessLevel 9) [Notes|Command_objDumpDatabase_UtilitiesLib]
+*Parameter 1: path (string)*
+No comment provided
+
+h4.objDumpDatabaseToSQL (AccessLevel 9) [Notes|Command_objDumpDatabaseToSQL_UtilitiesLib]
+*Parameter 1: namedtype (string)*
+*Parameter 2: path (string)*
+No comment provided
+
+h4.objLoadDatabaseDump (AccessLevel 9) [Notes|Command_objLoadDatabaseDump_UtilitiesLib]
+*Parameter 1: filename (string)*
+No comment provided
+
+h4.objPrintLoadStats (AccessLevel 9) [Notes|Command_objPrintLoadStats_UtilitiesLib]
+No comment provided
+
+h4.objPrintRepositoryStats (AccessLevel 9) [Notes|Command_objPrintRepositoryStats_UtilitiesLib]
+No comment provided
+
+h4.objPrintUnpackStats (AccessLevel 9) [Notes|Command_objPrintUnpackStats_UtilitiesLib]
+No comment provided
+
+h4.objUnpackContainersOfType (AccessLevel 9) [Notes|Command_objUnpackContainersOfType_UtilitiesLib]
+*Parameter 1: globalTypeName (string)*
+No comment provided
+
+h4.oncePerFrame (AccessLevel 9) [Notes|Command_oncePerFrame_UtilitiesLib]
+*Parameter 1: cmdStr (sentence)*
+No comment provided
+
+h4.oncePerFrameClear (AccessLevel 9) [Notes|Command_oncePerFrameClear_UtilitiesLib]
+No comment provided
+
+h4.oncePerFrameCount (AccessLevel 9) [Notes|Command_oncePerFrameCount_UtilitiesLib]
+*Parameter 1: count (int)*
+*Parameter 2: cmdStr (sentence)*
+No comment provided
+
+h4.printAutoTransNonHelpers (AccessLevel 9) [Notes|Command_printAutoTransNonHelpers_UtilitiesLib]
+No comment provided
+
+h4.printDictionarySubscriptions (AccessLevel 9) [Notes|Command_printDictionarySubscriptions_UtilitiesLib]
+*Parameter 1: nameSubString (string)*
+No comment provided
+
+h4.printExprTagStats (AccessLevel 9) [Notes|Command_printExprTagStats_UtilitiesLib]
+No comment provided
+
+h4.printMemoryPoolInfo (AccessLevel 9) [Notes|Command_printMemoryPoolInfo_UtilitiesLib]
+No comment provided
+
+h4.printPRBTCounts (AccessLevel 9) [Notes|Command_printPRBTCounts_UtilitiesLib]
+No comment provided
+
+h4.printSharedMemory (AccessLevel 9) [Notes|Command_printSharedMemory_UtilitiesLib]
+No comment provided
+
+h4.printTrivia (AccessLevel 9) [Notes|Command_printTrivia_UtilitiesLib]
+Returns all current global trivia
+
+
+h4.printf_time (AccessLevel 9) [Notes|Command_printf_time_UtilitiesLib]
+No comment provided
+
+h4.profilerConnect (AccessLevel 9) [Notes|Command_profilerConnect_UtilitiesLib]
+*Parameter 1: hostName (string)*
+No comment provided
+
+h4.profilerConnectPort (AccessLevel 9) [Notes|Command_profilerConnectPort_UtilitiesLib]
+*Parameter 1: hostName (string)*
+*Parameter 2: hostPort (int)*
+No comment provided
+
+h4.removeConsoleCloseButton (AccessLevel 9) [Notes|Command_removeConsoleCloseButton_UtilitiesLib]
+*Parameter 1: iDummy (int)*
+Disable the console close button, and use safe Ctrl-C handler.
+
+
+h4.resSyncAllDictionariesToServer (AccessLevel 9) [Notes|Command_resSyncAllDictionariesToServer_UtilitiesLib]
+No comment provided
+
+h4.saveSystemSpecs (AccessLevel 9) [Notes|Command_saveSystemSpecs_UtilitiesLib]
+Saves the system specs string to logs/systemspecs.log
+
+
+h4.setAccountServer (AccessLevel 0) [Notes|Command_setAccountServer_UtilitiesLib]
+*Parameter 1: pAccountServer (string)*
+No comment provided
+
+h4.setCrashBeganEvent (AccessLevel 0) [Notes|Command_setCrashBeganEvent_UtilitiesLib]
+*Parameter 1: pEventName (string)*
+No comment provided
+
+h4.setCrashCompletedEvent (AccessLevel 0) [Notes|Command_setCrashCompletedEvent_UtilitiesLib]
+*Parameter 1: pEventName (string)*
+No comment provided
+
+h4.setErrorTracker (AccessLevel 0) [Notes|Command_setErrorTracker_UtilitiesLib]
+*Parameter 1: pErrorTracker (string)*
+No comment provided
+
+h4.ForceAccountTicket (AccessLevel 9) [Notes|Command_ForceAccountTicket_UtilitiesLib]
+*Parameter 1: filename (string)*
+No comment provided
+
+h4.setFreeVirtualMemory (AccessLevel 0) [Notes|Command_setFreeVirtualMemory_UtilitiesLib]
+*Parameter 1: mb (int)*
+No comment provided
+
+h4.ProductionEdit (AccessLevel 0) [Notes|Command_ProductionEdit_UtilitiesLib]
+*Parameter 1: enable (bool)*
+No comment provided
+
+h4.simplygonDumpRecentLogs (AccessLevel 9) [Notes|Command_simplygonDumpRecentLogs_UtilitiesLib]
+No comment provided
+
+h4.simplygonSetOutputToConsole (AccessLevel 9) [Notes|Command_simplygonSetOutputToConsole_UtilitiesLib]
+*Parameter 1: outputToConsole (bool)*
+No comment provided
+
+h4.stackOverflowNow (AccessLevel 9) [Notes|Command_stackOverflowNow_UtilitiesLib]
+*Parameter 1: iBytesAtATime (int)*
+No comment provided
+
+h4.strfmt_Test (AccessLevel 9) [Notes|Command_strfmt_Test_UtilitiesLib]
+No comment provided
+
+h4.testRun (AccessLevel 9) [Notes|Command_testRun_UtilitiesLib]
+*Parameter 1: match (string)*
+Run all tests matching match string
+
+
+h4.testRunTimed (AccessLevel 9) [Notes|Command_testRunTimed_UtilitiesLib]
+*Parameter 1: match (string)*
+Run Tests matching string, and also write profiling data
+
+
+h4.testRunToConsole (AccessLevel 9) [Notes|Command_testRunToConsole_UtilitiesLib]
+*Parameter 1: match (string)*
+Run Tests matching string and report to console
+
+
+h4.testTriangleLineIntersect (AccessLevel 9) [Notes|Command_testTriangleLineIntersect_UtilitiesLib]
+No comment provided
+
+h4.timeGetTimeTestResolution (AccessLevel 9) [Notes|Command_timeGetTimeTestResolution_UtilitiesLib]
+No comment provided
+
+h4.timerRecordEnd (AccessLevel 9) [Notes|Command_timerRecordEnd_UtilitiesLib]
+Stops any current profiler recording or playback
+
+
+h4.timerRecordPlay (AccessLevel 9) [Notes|Command_timerRecordPlay_UtilitiesLib]
+*Parameter 1: filename (string)*
+Plays back previously recorded profiler information, at the given filename
+
+
+h4.timerRecordStart (AccessLevel 9) [Notes|Command_timerRecordStart_UtilitiesLib]
+*Parameter 1: filename (string)*
+Starts recording profiling information to the given filename
+
+
+h4.timerRecordThreadStart (AccessLevel 9) [Notes|Command_timerRecordThreadStart_UtilitiesLib]
+*Parameter 1: fileName (string)*
+No comment provided
+
+h4.timerRecordThreadStop (AccessLevel 9) [Notes|Command_timerRecordThreadStop_UtilitiesLib]
+No comment provided
+
+h4.timerSetMaxDepth (AccessLevel 9) [Notes|Command_timerSetMaxDepth_UtilitiesLib]
+*Parameter 1: depth (int)*
+No comment provided
+
+h4.timerTestStartWithoutStop (AccessLevel 9) [Notes|Command_timerTestStartWithoutStop_UtilitiesLib]
+*Parameter 1: count (int)*
+No comment provided
+
+h4.timerTrackCallStacks (AccessLevel 9) [Notes|Command_timerTrackCallStacks_UtilitiesLib]
+*Parameter 1: enabled (int)*
+No comment provided
+
+h4.tpsDirtyBits (AccessLevel 9) [Notes|Command_tpsDirtyBits_UtilitiesLib]
+No comment provided
+
+h4.ugc_DevMode (AccessLevel 0) [Notes|Command_ugc_DevMode_UtilitiesLib]
+*Parameter 1: value (bool)*
+No comment provided
+
+h4.virtualMemoryAnalyze (AccessLevel 9) [Notes|Command_virtualMemoryAnalyze_UtilitiesLib]
+Display some stats about virtual memory usage to the Win32 console
+
+
+h4.xperfView (AccessLevel 9) [Notes|Command_xperfView_UtilitiesLib]
+*Parameter 1: filename (string)*
+Views an xperf Trace
+
+
+h4.AddFakeTranslations (int) - (AccessLevel 9) [Notes|Command_AddFakeTranslations_UtilitiesLib]
+No comment provided
+
+h4.AlertLogErrors (int) - (AccessLevel 9) [Notes|Command_AlertLogErrors_UtilitiesLib]
+No comment provided
+
+h4.AllErrorFilenamesNonBlocking (int) - (AccessLevel 0) [Notes|Command_AllErrorFilenamesNonBlocking_UtilitiesLib]
+No comment provided
+
+h4.AllFilesHeavy (int) - (AccessLevel 9) [Notes|Command_AllFilesHeavy_UtilitiesLib]
+if true, then rotate every file every hour, rather than only files that get above a certain size
+
+
+h4.AllocationTimeAlertCriticalThreshold (int) - (AccessLevel 9) [Notes|Command_AllocationTimeAlertCriticalThreshold_UtilitiesLib]
+No comment provided
+
+h4.AllocationTimeAlertEnabled (int) - (AccessLevel 9) [Notes|Command_AllocationTimeAlertEnabled_UtilitiesLib]
+No comment provided
+
+h4.AllocationTimeAlertThreshold (float) - (AccessLevel 9) [Notes|Command_AllocationTimeAlertThreshold_UtilitiesLib]
+No comment provided
+
+h4.AllowChangeOfBaseContainerID (int) - (AccessLevel 9) [Notes|Command_AllowChangeOfBaseContainerID_UtilitiesLib]
+No comment provided
+
+h4.AllowCommandsOverStatusReportingLinks (int) - (AccessLevel 9) [Notes|Command_AllowCommandsOverStatusReportingLinks_UtilitiesLib]
+No comment provided
+
+h4.AlwaysFailToParseLogs (int) - (AccessLevel 9) [Notes|Command_AlwaysFailToParseLogs_UtilitiesLib]
+No comment provided
+
+h4.AlwaysParseAllActions (int) - (AccessLevel 9) [Notes|Command_AlwaysParseAllActions_UtilitiesLib]
+if true, then try to parse all serverLogs regardless of whether the action name seems to be one that we want
+
+
+h4.BackgroundThreadsCanMoveScanStart (int) - (AccessLevel 9) [Notes|Command_BackgroundThreadsCanMoveScanStart_UtilitiesLib]
+No comment provided
+
+h4.BinsMustExist (int) - (AccessLevel 9) [Notes|Command_BinsMustExist_UtilitiesLib]
+global flag set during production build testing after makeBinsAndExit has run, to ensure that all
+bins exist
+
+
+h4.CacheVerifyOnly (int) - (AccessLevel 0) [Notes|Command_CacheVerifyOnly_UtilitiesLib]
+No comment provided
+
+h4.CachedDeleteTimeout (int) - (AccessLevel 9) [Notes|Command_CachedDeleteTimeout_UtilitiesLib]
+Sets how long to keep deleted characters in the cache.
+
+
+h4.CategoryFile (string) - (AccessLevel 0) [Notes|Command_CategoryFile_UtilitiesLib]
+No comment provided
+
+h4.CheckForChangedDefaultStringsForTranslations (int) - (AccessLevel 9) [Notes|Command_CheckForChangedDefaultStringsForTranslations_UtilitiesLib]
+if true, then when loading translations, check if the default string has changed (ie, the english 
+string has changed since the strings were translated)
+
+
+h4.CompactStatusTables (int) - (AccessLevel 9) [Notes|Command_CompactStatusTables_UtilitiesLib]
+No comment provided
+
+h4.CompiledObjectPathCacheSize (int) - (AccessLevel 0) [Notes|Command_CompiledObjectPathCacheSize_UtilitiesLib]
+No comment provided
+
+h4.CompressDirectAccountLink (int) - (AccessLevel 9) [Notes|Command_CompressDirectAccountLink_UtilitiesLib]
+No comment provided
+
+h4.CompressPersistentAccountLinks (int) - (AccessLevel 9) [Notes|Command_CompressPersistentAccountLinks_UtilitiesLib]
+No comment provided
+
+h4.ContainerAccessUnloadThresholdHours (int) - (AccessLevel 9) [Notes|Command_ContainerAccessUnloadThresholdHours_UtilitiesLib]
+No comment provided
+
+h4.ContainerCompressionLevel (int) - (AccessLevel 9) [Notes|Command_ContainerCompressionLevel_UtilitiesLib]
+Compression level for piglib.
+TODO: Make this a parameter to the ContainerStore external interface in objContainerIO.h.
+
+
+h4.ContainerIDAlertThrottleTimeSeconds (int) - (AccessLevel 9) [Notes|Command_ContainerIDAlertThrottleTimeSeconds_UtilitiesLib]
+No comment provided
+
+h4.ContainerPlayedUnloadThresholdHours (int) - (AccessLevel 9) [Notes|Command_ContainerPlayedUnloadThresholdHours_UtilitiesLib]
+No comment provided
+
+h4.ContainerPreloadThresholdHours (int) - (AccessLevel 9) [Notes|Command_ContainerPreloadThresholdHours_UtilitiesLib]
+No comment provided
+
+h4.ContainerRepackingCompressionLevel (int) - (AccessLevel 9) [Notes|Command_ContainerRepackingCompressionLevel_UtilitiesLib]
+Compression level for repacking/unloading.
+TODO: Make this a parameter to the ContainerStore external interface in objContainerIO.h.
+
+
+h4.ContainerUnloadMaxRate (int) - (AccessLevel 9) [Notes|Command_ContainerUnloadMaxRate_UtilitiesLib]
+Maximum number of stale containers to unload per second
+
+
+h4.ContainerUnloadProcessTime (int) - (AccessLevel 9) [Notes|Command_ContainerUnloadProcessTime_UtilitiesLib]
+Maximum time to spend unloading stale containers per second (in milliseconds)
+
+
+h4.ContainerUnloadTypeProcessTime (int) - (AccessLevel 9) [Notes|Command_ContainerUnloadTypeProcessTime_UtilitiesLib]
+Maximum time to spend unloading stale containers of one type per second (in milliseconds)
+
+
+h4.CrashOnPlayerLeaveMap (int) - (AccessLevel 9) [Notes|Command_CrashOnPlayerLeaveMap_UtilitiesLib]
+No comment provided
+
+h4.DbLoadTimeReport (int) - (AccessLevel 9) [Notes|Command_DbLoadTimeReport_UtilitiesLib]
+Print a DB load time report.
+
+
+h4.DeactivateConsoleDebug (int) - (AccessLevel 0) [Notes|Command_DeactivateConsoleDebug_UtilitiesLib]
+No comment provided
+
+h4.DealWithDeleteMarkersOnLoad (int) - (AccessLevel 9) [Notes|Command_DealWithDeleteMarkersOnLoad_UtilitiesLib]
+No comment provided
+
+h4.DebugForceSlowAllocation (int) - (AccessLevel 9) [Notes|Command_DebugForceSlowAllocation_UtilitiesLib]
+This forces the slow allocation check to think the allocation was slow. It does not actually make anything happen slowly.
+
+
+h4.DelayBeforeRetryingFailedIPLookup (int) - (AccessLevel 9) [Notes|Command_DelayBeforeRetryingFailedIPLookup_UtilitiesLib]
+if an IP lookup of a string fails, don't try again for this many seconds
+
+
+h4.DirectoryForCompletionFiles (string) - (AccessLevel 9) [Notes|Command_DirectoryForCompletionFiles_UtilitiesLib]
+if set, then whenever we close a log file "for good", either because we rotated past it or because we're shutting down,
+write a tag file into this directory. So if we close "gameserver/damageevents_1234.gz", write "gameserver/damagevents/1234.gz.complete"
+
+
+h4.DisableAtExit (int) - (AccessLevel 9) [Notes|Command_DisableAtExit_UtilitiesLib]
+For debugging, profiling, etc.
+
+
+h4.DisableContainerSaveSemaphore (int) - (AccessLevel 9) [Notes|Command_DisableContainerSaveSemaphore_UtilitiesLib]
+If true, disable code to throttle saves based on sContainerSavesOutstanding.
+
+
+h4.DisableFreeDiskSpaceCheck (int) - (AccessLevel 9) [Notes|Command_DisableFreeDiskSpaceCheck_UtilitiesLib]
+No comment provided
+
+h4.DisableMemTrackLogHealth (int) - (AccessLevel 9) [Notes|Command_DisableMemTrackLogHealth_UtilitiesLib]
+Emergency option to disable health logging, if it causes some sort of problem.
+
+
+h4.DisableNewCRCCode (int) - (AccessLevel 9) [Notes|Command_DisableNewCRCCode_UtilitiesLib]
+No comment provided
+
+h4.DisablePrintf (int) - (AccessLevel 9) [Notes|Command_DisablePrintf_UtilitiesLib]
+Turn off most printing to the console.
+
+
+h4.DisableTranslation (int) - (AccessLevel 9) [Notes|Command_DisableTranslation_UtilitiesLib]
+No comment provided
+
+h4.DisableZippedDataCachingInSaveThreads (int) - (AccessLevel 9) [Notes|Command_DisableZippedDataCachingInSaveThreads_UtilitiesLib]
+No comment provided
+
+h4.DiskLoadingMode (int) - (AccessLevel 9) [Notes|Command_DiskLoadingMode_UtilitiesLib]
+No comment provided
+
+h4.DisplayInvalidAddress (int) - (AccessLevel 9) [Notes|Command_DisplayInvalidAddress_UtilitiesLib]
+No comment provided
+
+h4.DoFullDebugFixupInProdMode (int) - (AccessLevel 9) [Notes|Command_DoFullDebugFixupInProdMode_UtilitiesLib]
+No comment provided
+
+h4.DoNotSendMachineID (int) - (AccessLevel 0) [Notes|Command_DoNotSendMachineID_UtilitiesLib]
+No comment provided
+
+h4.DontCheckAccessLevelForCommands (int) - (AccessLevel 0) [Notes|Command_DontCheckAccessLevelForCommands_UtilitiesLib]
+this is obviously hilariously unsafe but is only present on the server
+
+
+h4.DontCheckIfTablesAreValidForWriting (int) - (AccessLevel 9) [Notes|Command_DontCheckIfTablesAreValidForWriting_UtilitiesLib]
+No comment provided
+
+h4.DumpGSMTransitions (int) - (AccessLevel 9) [Notes|Command_DumpGSMTransitions_UtilitiesLib]
+No comment provided
+
+h4.EmailFailAlertThrottle (int) - (AccessLevel 9) [Notes|Command_EmailFailAlertThrottle_UtilitiesLib]
+No comment provided
+
+h4.EnableObjectPathCache (int) - (AccessLevel 0) [Notes|Command_EnableObjectPathCache_UtilitiesLib]
+No comment provided
+
+h4.EnableStaleContainerCleanup (int) - (AccessLevel 9) [Notes|Command_EnableStaleContainerCleanup_UtilitiesLib]
+No comment provided
+
+h4.EnableTLSCompiledObjectPaths (int) - (AccessLevel 0) [Notes|Command_EnableTLSCompiledObjectPaths_UtilitiesLib]
+No comment provided
+
+h4.ErrorOnFullLocks (int) - (AccessLevel 9) [Notes|Command_ErrorOnFullLocks_UtilitiesLib]
+if true, then error when someone tries to lock a full container arg without ATR_ALLOW_FULL_LOCK
+
+
+h4.ErrorOnNoAtrLocks (int) - (AccessLevel 9) [Notes|Command_ErrorOnNoAtrLocks_UtilitiesLib]
+if true, then error when a transaction does not have ATR_LOCKS defined
+
+
+h4.ErrorfOnAlerts (int) - (AccessLevel 9) [Notes|Command_ErrorfOnAlerts_UtilitiesLib]
+No comment provided
+
+h4.ExprDeclareTypeDebug (int) - (AccessLevel 9) [Notes|Command_ExprDeclareTypeDebug_UtilitiesLib]
+No comment provided
+
+h4.ExtraHeaderDataConfigBinPath (string) - (AccessLevel 9) [Notes|Command_ExtraHeaderDataConfigBinPath_UtilitiesLib]
+No comment provided
+
+h4.ExtraHeaderDataConfigPath (string) - (AccessLevel 9) [Notes|Command_ExtraHeaderDataConfigPath_UtilitiesLib]
+No comment provided
+
+h4.FailAllCommConnects (int) - (AccessLevel 9) [Notes|Command_FailAllCommConnects_UtilitiesLib]
+No comment provided
+
+h4.FolderForCachedErrorTextFiles (string) - (AccessLevel 9) [Notes|Command_FolderForCachedErrorTextFiles_UtilitiesLib]
+if this is set, and if you end up reading text files and writing a binary file, then write a cached error file to 
+this folder
+
+
+h4.ForceBinCreateDoesntForceTextFileReading (int) - (AccessLevel 9) [Notes|Command_ForceBinCreateDoesntForceTextFileReading_UtilitiesLib]
+Normally ForceBinCreate means "always read from text files no matter what, then always write the bin file no matter what". 
+This option changes that to "do whatever reading you would normally do, then always write the bin file no matter what". This 
+vastly speeds up makebins, at the price of a drop in dependability
+
+
+h4.ForceDoXperf (int) - (AccessLevel 9) [Notes|Command_ForceDoXperf_UtilitiesLib]
+No comment provided
+
+h4.ForceLoadAllTranslations (int) - (AccessLevel 9) [Notes|Command_ForceLoadAllTranslations_UtilitiesLib]
+No comment provided
+
+h4.ForceNoXperf (int) - (AccessLevel 9) [Notes|Command_ForceNoXperf_UtilitiesLib]
+No comment provided
+
+h4.ForceReadBinFilesForMultiplexedMakebins (int) - (AccessLevel 9) [Notes|Command_ForceReadBinFilesForMultiplexedMakebins_UtilitiesLib]
+special override set by multiplexed makebins... force read the bin file even if FORCE_REBUILD is set
+
+
+h4.FreeThreadInputQueueSize (int) - (AccessLevel 9) [Notes|Command_FreeThreadInputQueueSize_UtilitiesLib]
+No comment provided
+
+h4.FreeThreadNumThreads (int) - (AccessLevel 9) [Notes|Command_FreeThreadNumThreads_UtilitiesLib]
+No comment provided
+
+h4.GenerateLogReport (int) - (AccessLevel 9) [Notes|Command_GenerateLogReport_UtilitiesLib]
+AUTO_CMD_INT(gContainerSource.hogMerge,HogMerge) ACMD_COMMANDLINE;
+
+
+h4.IgnoreAllErrors (int) - (AccessLevel 9) [Notes|Command_IgnoreAllErrors_UtilitiesLib]
+No comment provided
+
+h4.IgnoreProgrammerMode (int) - (AccessLevel 9) [Notes|Command_IgnoreProgrammerMode_UtilitiesLib]
+If true, will ignore programmer mode for this process even if the registry key is set
+
+
+h4.IgnoreTextureErrors (int) - (AccessLevel 0) [Notes|Command_IgnoreTextureErrors_UtilitiesLib]
+Don't error on missing textures
+
+
+h4.IsContinuousBuilder (int) - (AccessLevel 0) [Notes|Command_IsContinuousBuilder_UtilitiesLib]
+No comment provided
+
+h4.KeepFileDataOnUnpack (int) - (AccessLevel 9) [Notes|Command_KeepFileDataOnUnpack_UtilitiesLib]
+No comment provided
+
+h4.LagOnContainerSave (int) - (AccessLevel 9) [Notes|Command_LagOnContainerSave_UtilitiesLib]
+Debug command: lag this many milliseconds before saving each container
+
+
+h4.LarvaColonySize (int) - (AccessLevel 0) [Notes|Command_LarvaColonySize_UtilitiesLib]
+No comment provided
+
+h4.LeaveCrashesUpForever (int) - (AccessLevel 9) [Notes|Command_LeaveCrashesUpForever_UtilitiesLib]
+If true, then when something crashes, just sit there forever
+so it can be debugged. The controller has special rules for propagating this to
+other servers in the shard
+
+
+h4.ListCutoffSize (int) - (AccessLevel 9) [Notes|Command_ListCutoffSize_UtilitiesLib]
+No comment provided
+
+h4.LoadFilesPrintf (int) - (AccessLevel 9) [Notes|Command_LoadFilesPrintf_UtilitiesLib]
+No comment provided
+
+h4.LogCountingMode (int) - (AccessLevel 0) [Notes|Command_LogCountingMode_UtilitiesLib]
+No comment provided
+
+h4.LogFramePerf (int) - (AccessLevel 9) [Notes|Command_LogFramePerf_UtilitiesLib]
+If true, log frame performance information in LOG_FRAMEPERF.
+
+
+h4.LogResourceRequests (int) - (AccessLevel 9) [Notes|Command_LogResourceRequests_UtilitiesLib]
+No comment provided
+
+h4.LongFrameThresholdMs (int) - (AccessLevel 9) [Notes|Command_LongFrameThresholdMs_UtilitiesLib]
+Threshold for logging long frames.
+
+
+h4.MailServer (string) - (AccessLevel 9) [Notes|Command_MailServer_UtilitiesLib]
+No comment provided
+
+h4.MakeUniqueMemLeakAlertKeys (int) - (AccessLevel 9) [Notes|Command_MakeUniqueMemLeakAlertKeys_UtilitiesLib]
+if true, then try to deduce the largest leaking culprit, append its name to the alert key. Stephen wants this
+off for now
+
+
+h4.MaxAlertsPerKey (int) - (AccessLevel 9) [Notes|Command_MaxAlertsPerKey_UtilitiesLib]
+No comment provided
+
+h4.MaxAllowedLogSize (int) - (AccessLevel 9) [Notes|Command_MaxAllowedLogSize_UtilitiesLib]
+No comment provided
+
+h4.MaxContainerSavesOutstanding (int) - (AccessLevel 9) [Notes|Command_MaxContainerSavesOutstanding_UtilitiesLib]
+Maximum number of simultaneous container save requests to process.
+
+
+h4.MaxDelayOfPendingRotates (int) - (AccessLevel 9) [Notes|Command_MaxDelayOfPendingRotates_UtilitiesLib]
+No comment provided
+
+h4.MaxNumLeaksToSendInAlert (int) - (AccessLevel 9) [Notes|Command_MaxNumLeaksToSendInAlert_UtilitiesLib]
+when alerting on potentialy mem leaks, list the top N
+
+
+h4.MaxNumberOfPendingRotates (int) - (AccessLevel 9) [Notes|Command_MaxNumberOfPendingRotates_UtilitiesLib]
+No comment provided
+
+h4.MaxResourcePacket (int) - (AccessLevel 9) [Notes|Command_MaxResourcePacket_UtilitiesLib]
+No comment provided
+
+h4.MemCorruptionFishing (int) - (AccessLevel 0) [Notes|Command_MemCorruptionFishing_UtilitiesLib]
+No comment provided
+
+h4.MemPoolAllSchemaStructs (int) - (AccessLevel 9) [Notes|Command_MemPoolAllSchemaStructs_UtilitiesLib]
+No comment provided
+
+h4.MemPoolAllSchemaStructsPoolSize (int) - (AccessLevel 9) [Notes|Command_MemPoolAllSchemaStructsPoolSize_UtilitiesLib]
+No comment provided
+
+h4.MemReportZeroTotalAllocs (int) - (AccessLevel 9) [Notes|Command_MemReportZeroTotalAllocs_UtilitiesLib]
+No comment provided
+
+h4.MessageExpressionDebug (int) - (AccessLevel 9) [Notes|Command_MessageExpressionDebug_UtilitiesLib]
+Turn on Errorf dialogs for various things that can go wrong in message expressions.
+
+
+h4.MinBlockSizeForSchemaStructs (int) - (AccessLevel 9) [Notes|Command_MinBlockSizeForSchemaStructs_UtilitiesLib]
+No comment provided
+
+h4.MinDelayBetweenXperfs (int) - (AccessLevel 9) [Notes|Command_MinDelayBetweenXperfs_UtilitiesLib]
+No comment provided
+
+h4.MinRelevantAmountForMemLeakCategory (int) - (AccessLevel 9) [Notes|Command_MinRelevantAmountForMemLeakCategory_UtilitiesLib]
+when categorizing leaks and listing leaks within each category, only list leaks of this  amount or greater
+
+
+h4.NetCaptureBufferSize (int) - (AccessLevel 9) [Notes|Command_NetCaptureBufferSize_UtilitiesLib]
+Set the size of the capture buffer for AllowCaptureRequestOnPort in bytes.
+
+
+h4.NetLagVary (int) - (AccessLevel 0) [Notes|Command_NetLagVary_UtilitiesLib]
+No comment provided
+
+h4.NetRequestPeerCaptureOnPort (int) - (AccessLevel 9) [Notes|Command_NetRequestPeerCaptureOnPort_UtilitiesLib]
+Set to a port number to capture on once.
+
+
+h4.NeverConnectToController (int) - (AccessLevel 9) [Notes|Command_NeverConnectToController_UtilitiesLib]
+No comment provided
+
+h4.NewTextDiffMode (int) - (AccessLevel 9) [Notes|Command_NewTextDiffMode_UtilitiesLib]
+temporary variable while introducing new text diff mode...
+0, default, means do both old and new, asserting that
+they match. 1 = use new mode. 2 = use old mode
+
+
+h4.NoCallStacksOnErrors (int) - (AccessLevel 9) [Notes|Command_NoCallStacksOnErrors_UtilitiesLib]
+No comment provided
+
+h4.NoTestServer (int) - (AccessLevel 9) [Notes|Command_NoTestServer_UtilitiesLib]
+Do not do Test Server interaction, ever
+
+
+h4.NonBlockingContainerIterators_Granularity (int) - (AccessLevel 9) [Notes|Command_NonBlockingContainerIterators_Granularity_UtilitiesLib]
+No comment provided
+
+h4.NonBlockingContainerIterators_MsecsPerTick (int) - (AccessLevel 9) [Notes|Command_NonBlockingContainerIterators_MsecsPerTick_UtilitiesLib]
+No comment provided
+
+h4.NonBlockingContainerIterators_SkipTicks (int) - (AccessLevel 9) [Notes|Command_NonBlockingContainerIterators_SkipTicks_UtilitiesLib]
+No comment provided
+
+h4.NoteSettingFailureAlertTime (int) - (AccessLevel 9) [Notes|Command_NoteSettingFailureAlertTime_UtilitiesLib]
+Alert if we try to set a note on the note server but fail for this many seconds
+
+
+h4.NotesServerName (string) - (AccessLevel 0) [Notes|Command_NotesServerName_UtilitiesLib]
+No comment provided
+
+h4.OldJournalHours (int) - (AccessLevel 9) [Notes|Command_OldJournalHours_UtilitiesLib]
+No comment provided
+
+h4.OldOfflineDays (int) - (AccessLevel 9) [Notes|Command_OldOfflineDays_UtilitiesLib]
+No comment provided
+
+h4.OldPendingHours (int) - (AccessLevel 9) [Notes|Command_OldPendingHours_UtilitiesLib]
+No comment provided
+
+h4.OldSnapshotDays (int) - (AccessLevel 9) [Notes|Command_OldSnapshotDays_UtilitiesLib]
+No comment provided
+
+h4.OldSnapshotHours (int) - (AccessLevel 9) [Notes|Command_OldSnapshotHours_UtilitiesLib]
+No comment provided
+
+h4.OldSnapshotMinutes (int) - (AccessLevel 9) [Notes|Command_OldSnapshotMinutes_UtilitiesLib]
+No comment provided
+
+h4.OnlyReadBinFilesIfCachedErrorFileExists (int) - (AccessLevel 9) [Notes|Command_OnlyReadBinFilesIfCachedErrorFileExists_UtilitiesLib]
+The "cached error text file" system is in use. So if you're going to potentially read a bin file, only do so
+if there's an up to date cached error text file for it
+
+
+h4.OverrideGimmeBranchNum (int) - (AccessLevel 9) [Notes|Command_OverrideGimmeBranchNum_UtilitiesLib]
+gimme branch numbers are currently broken, setting a kludge so the CBs can keep working
+
+
+h4.PauseZippedDataCachingInSaveThreads (int) - (AccessLevel 9) [Notes|Command_PauseZippedDataCachingInSaveThreads_UtilitiesLib]
+No comment provided
+
+h4.PrintCallstackReport (int) - (AccessLevel 9) [Notes|Command_PrintCallstackReport_UtilitiesLib]
+Print the callstack report on crash, if available.
+
+
+h4.PrintfAllAlerts (int) - (AccessLevel 9) [Notes|Command_PrintfAllAlerts_UtilitiesLib]
+No comment provided
+
+h4.PruneDeleted (int) - (AccessLevel 9) [Notes|Command_PruneDeleted_UtilitiesLib]
+No comment provided
+
+h4.PublicCategory (string) - (AccessLevel 0) [Notes|Command_PublicCategory_UtilitiesLib]
+No comment provided
+
+h4.PurgeHogOnFailedContainer (int) - (AccessLevel 9) [Notes|Command_PurgeHogOnFailedContainer_UtilitiesLib]
+No comment provided
+
+h4.SaveContainerFlushPeriod (int) - (AccessLevel 9) [Notes|Command_SaveContainerFlushPeriod_UtilitiesLib]
+No comment provided
+
+h4.ScratchStackDisableResize (int) - (AccessLevel 9) [Notes|Command_ScratchStackDisableResize_UtilitiesLib]
+No comment provided
+
+h4.ScratchStackPrintResizes (int) - (AccessLevel 9) [Notes|Command_ScratchStackPrintResizes_UtilitiesLib]
+No comment provided
+
+h4.ScratchStackVerboseDebug (int) - (AccessLevel 9) [Notes|Command_ScratchStackVerboseDebug_UtilitiesLib]
+No comment provided
+
+h4.SecsBeforeAlertWhenSentryServerPacketSendsFail (int) - (AccessLevel 9) [Notes|Command_SecsBeforeAlertWhenSentryServerPacketSendsFail_UtilitiesLib]
+when trying to send a packet to the sentry server, alert if it takes more than this many seconds to send
+
+
+h4.SendUpdatesToContinuousBuilder (int) - (AccessLevel 0) [Notes|Command_SendUpdatesToContinuousBuilder_UtilitiesLib]
+send update strings to the CB that is running, but don't do any of the other g_isContinuousBuilder behaviors
+(used for patchclient during prod builds where we want timing info, but aren't really testing patchclient per se)
+
+
+h4.SentryServer (string) - (AccessLevel 9) [Notes|Command_SentryServer_UtilitiesLib]
+No comment provided
+
+h4.SerializePrintf (int) - (AccessLevel 9) [Notes|Command_SerializePrintf_UtilitiesLib]
+If set, serialize all printf() calls to preserve colors when multiple threads are using printf() simultaneously.
+This was added by msimpson in 2007, probably for of his physics debugging code, but I think it's a bad idea.  It causes deadlocks in various
+exceptional circumstances, and poor performance in situations that would otherwise be OK.  I think the minor cosmetic problems of concurrent
+colored printf is not worth the risk.  It's possible that this is something that we want in only in dev mode, or perhaps only for certain
+app types, but for now, I'm just going to leave it off by default.
+
+
+h4.SetTestServerPort (int) - (AccessLevel 0) [Notes|Command_SetTestServerPort_UtilitiesLib]
+No comment provided
+
+h4.ShowKeyIfNoTranslation (int) - (AccessLevel 9) [Notes|Command_ShowKeyIfNoTranslation_UtilitiesLib]
+No comment provided
+
+h4.SimpleStatusMonitoring_UseSentryServer (int) - (AccessLevel 9) [Notes|Command_SimpleStatusMonitoring_UseSentryServer_UtilitiesLib]
+No comment provided
+
+h4.SkipOfflineHoggReopenForReplay (int) - (AccessLevel 9) [Notes|Command_SkipOfflineHoggReopenForReplay_UtilitiesLib]
+No comment provided
+
+h4.SkipPeriodicContainerSaves (int) - (AccessLevel 9) [Notes|Command_SkipPeriodicContainerSaves_UtilitiesLib]
+No comment provided
+
+h4.SlowSaveTickAlertThreshold (int) - (AccessLevel 9) [Notes|Command_SlowSaveTickAlertThreshold_UtilitiesLib]
+No comment provided
+
+h4.StackwalkBoundaryScanTest (int) - (AccessLevel 0) [Notes|Command_StackwalkBoundaryScanTest_UtilitiesLib]
+Stackwalk boundary scan testing value
+0x0001 : pSymGetModuleInfo64() fails
+0x0002 : pSymFromAddr() fails
+0x0004 : Always run fallback stackwalk
+0x0008 : Fallback frame pointer unwinding fails
+0x0010 : GetModuleHandleEx fails in fallback
+0x0020 : VirtualQuery fails in fallback
+0x0040 : Module base fallback fails
+0x0080 : Print callstacks and callstack reports.
+0x0100 : Use frame size unwinder (experimental)
+0x0200 : Always use fallback callstack
+
+
+h4.StaleContainerCheckInterval (int) - (AccessLevel 9) [Notes|Command_StaleContainerCheckInterval_UtilitiesLib]
+Interval between stale container checks (changes take effect after running DeactivateStaleContainerCleanup and then ActivateStaleContainerCleanup)
+
+
+h4.StaleContainerProcessTime (int) - (AccessLevel 9) [Notes|Command_StaleContainerProcessTime_UtilitiesLib]
+Maximum time to spend queueing stale containers for unloading each check interval (in milliseconds)
+
+
+h4.StaleContainerTypeProcessTime (int) - (AccessLevel 9) [Notes|Command_StaleContainerTypeProcessTime_UtilitiesLib]
+Maximum time to spend queueing stale containers of one type for unloading each check interval (in milliseconds)
+
+
+h4.StartedByStayUp (int) - (AccessLevel 0) [Notes|Command_StartedByStayUp_UtilitiesLib]
+No comment provided
+
+h4.StatusReportingAlertRate (int) - (AccessLevel 9) [Notes|Command_StatusReportingAlertRate_UtilitiesLib]
+Max number of alerts to mirror to Controller Tracker per STATUS_REPORTING_INTERVAL
+
+
+h4.StatusReportingFailAlertTime (int) - (AccessLevel 9) [Notes|Command_StatusReportingFailAlertTime_UtilitiesLib]
+No comment provided
+
+h4.StayUpCount (int) - (AccessLevel 0) [Notes|Command_StayUpCount_UtilitiesLib]
+No comment provided
+
+h4.StayUpParentExeName (string) - (AccessLevel 0) [Notes|Command_StayUpParentExeName_UtilitiesLib]
+No comment provided
+
+h4.StayUpParentPid (int) - (AccessLevel 0) [Notes|Command_StayUpParentPid_UtilitiesLib]
+No comment provided
+
+h4.StrictMerge (int) - (AccessLevel 9) [Notes|Command_StrictMerge_UtilitiesLib]
+AUTO_CMD_INT(gContainerSource.hogMerge,HogMerge) ACMD_COMMANDLINE;
+
+
+h4.TestServerUsesMultiplex (int) - (AccessLevel 9) [Notes|Command_TestServerUsesMultiplex_UtilitiesLib]
+Connect to Test Server via Multiplexer
+
+
+h4.TimeBeforeResendWithNoVerify (int) - (AccessLevel 9) [Notes|Command_TimeBeforeResendWithNoVerify_UtilitiesLib]
+if we send a packet and don't get a verify, re-send it every n seconds
+
+
+h4.TimePrintfInterval (int) - (AccessLevel 9) [Notes|Command_TimePrintfInterval_UtilitiesLib]
+if you add -TimePrintfInterval 60 to the command line, the server will printf the time every 60 seconds
+
+
+h4.TimeStampAllPrintfs (int) - (AccessLevel 9) [Notes|Command_TimeStampAllPrintfs_UtilitiesLib]
+No comment provided
+
+h4.TrackLinkReceiveStats (int) - (AccessLevel 9) [Notes|Command_TrackLinkReceiveStats_UtilitiesLib]
+No comment provided
+
+h4.TrackMemLeaksInDevMode (int) - (AccessLevel 9) [Notes|Command_TrackMemLeaksInDevMode_UtilitiesLib]
+No comment provided
+
+h4.TryToRotateAllFilesAtOnce (int) - (AccessLevel 9) [Notes|Command_TryToRotateAllFilesAtOnce_UtilitiesLib]
+if true, then whenever we rotate a file, we also check all other files to see if they need to be rotated... this means
+that if we have log files A and B, both in the 1:00 filename, and then at 1:01 we write something into B, it will close 1:00 
+B and open 2:00 B, but will also close 1:00 A
+
+
+h4.UnloadOnCachedDelete (int) - (AccessLevel 9) [Notes|Command_UnloadOnCachedDelete_UtilitiesLib]
+No comment provided
+
+h4.UnloadOnHeaderCreate (int) - (AccessLevel 9) [Notes|Command_UnloadOnHeaderCreate_UtilitiesLib]
+No comment provided
+
+h4.UseCrazyBigDefaultContainerStoreSize (int) - (AccessLevel 9) [Notes|Command_UseCrazyBigDefaultContainerStoreSize_UtilitiesLib]
+No comment provided
+
+h4.UseDiskOrder (int) - (AccessLevel 9) [Notes|Command_UseDiskOrder_UtilitiesLib]
+No comment provided
+
+h4.UseFreeThread (int) - (AccessLevel 9) [Notes|Command_UseFreeThread_UtilitiesLib]
+No comment provided
+
+h4.UseNewPathFlow (int) - (AccessLevel 9) [Notes|Command_UseNewPathFlow_UtilitiesLib]
+No comment provided
+
+h4.UseOldSentryServerComm (int) - (AccessLevel 9) [Notes|Command_UseOldSentryServerComm_UtilitiesLib]
+No comment provided
+
+h4.VerboseLogParsing (int) - (AccessLevel 9) [Notes|Command_VerboseLogParsing_UtilitiesLib]
+No comment provided
+
+h4.VerifyAllLoadedMessagesAreTranslated (int) - (AccessLevel 9) [Notes|Command_VerifyAllLoadedMessagesAreTranslated_UtilitiesLib]
+No comment provided
+
+h4.WriteBinManifest (int) - (AccessLevel 9) [Notes|Command_WriteBinManifest_UtilitiesLib]
+No comment provided
+
+h4.WriteLayoutFiles (int) - (AccessLevel 9) [Notes|Command_WriteLayoutFiles_UtilitiesLib]
+No comment provided
+
+h4.WriteTextMetadata (int) - (AccessLevel 9) [Notes|Command_WriteTextMetadata_UtilitiesLib]
+No comment provided
+
+h4.ZipAllLogs (int) - (AccessLevel 9) [Notes|Command_ZipAllLogs_UtilitiesLib]
+No comment provided
+
+h4.allow_free_callback (int) - (AccessLevel 9) [Notes|Command_allow_free_callback_UtilitiesLib]
+No comment provided
+
+h4.allow_hogg_upgrade (int) - (AccessLevel 0) [Notes|Command_allow_hogg_upgrade_UtilitiesLib]
+Enable automatic hogg upgrading process
+
+
+h4.apr1force (int) - (AccessLevel 9) [Notes|Command_apr1force_UtilitiesLib]
+Disables development April Fool's gags
+
+
+h4.binLeaveUntouchedFiles (int) - (AccessLevel 9) [Notes|Command_binLeaveUntouchedFiles_UtilitiesLib]
+No comment provided
+
+h4.clear_guardbands (int) - (AccessLevel 0) [Notes|Command_clear_guardbands_UtilitiesLib]
+No comment provided
+
+h4.commCmdQueueSize (int) - (AccessLevel 9) [Notes|Command_commCmdQueueSize_UtilitiesLib]
+Set commCmdQueueSize to 0 to force the production mode value, otherwise use >1 to set it.
+
+
+h4.d3d11Enable (int) - (AccessLevel 0) [Notes|Command_d3d11Enable_UtilitiesLib]
+No comment provided
+
+h4.d3d9exEnable (int) - (AccessLevel 0) [Notes|Command_d3d9exEnable_UtilitiesLib]
+No comment provided
+
+h4.debugshortenStaleContainerThreshold (int) - (AccessLevel 9) [Notes|Command_debugshortenStaleContainerThreshold_UtilitiesLib]
+No comment provided
+
+h4.delay_hog_loading (int) - (AccessLevel 9) [Notes|Command_delay_hog_loading_UtilitiesLib]
+Artificially slows down hog operations, in ms
+
+
+h4.disableCoarseTimer (int) - (AccessLevel 9) [Notes|Command_disableCoarseTimer_UtilitiesLib]
+No comment provided
+
+h4.disableEditors (int) - (AccessLevel 0) [Notes|Command_disableEditors_UtilitiesLib]
+If set, disable editor setup and access
+
+
+h4.disable_folder_cache_monitor_thread (int) - (AccessLevel 9) [Notes|Command_disable_folder_cache_monitor_thread_UtilitiesLib]
+Disables running a thread for folder cache updates
+
+
+h4.disable_truncate_assert (int) - (AccessLevel 9) [Notes|Command_disable_truncate_assert_UtilitiesLib]
+Disables some hogg error checking
+
+
+h4.diskAccessAllowed (int) - (AccessLevel 9) [Notes|Command_diskAccessAllowed_UtilitiesLib]
+Sets a flag saying whether or not disk access should be allowed from the
+primary thread (for performance debugging)
+
+
+h4.dontReportErrorsToErrorTracker (int) - (AccessLevel 9) [Notes|Command_dontReportErrorsToErrorTracker_UtilitiesLib]
+Disables sending errors to the error tracker
+
+
+h4.dynamicCacheAsserts (int) - (AccessLevel 9) [Notes|Command_dynamicCacheAsserts_UtilitiesLib]
+Makes the dynamic cache assert on error instead of just printfing
+
+
+h4.enableErrorThreading (int) - (AccessLevel 0) [Notes|Command_enableErrorThreading_UtilitiesLib]
+No comment provided
+
+h4.enableExprConsolePrint (int) - (AccessLevel 9) [Notes|Command_enableExprConsolePrint_UtilitiesLib]
+No comment provided
+
+h4.enableLFH (int) - (AccessLevel 9) [Notes|Command_enableLFH_UtilitiesLib]
+No comment provided
+
+h4.englishOnly (int) - (AccessLevel 0) [Notes|Command_englishOnly_UtilitiesLib]
+Only loads english dictionaries
+
+
+h4.errorOnSendMissingMessageTranslations (int) - (AccessLevel 9) [Notes|Command_errorOnSendMissingMessageTranslations_UtilitiesLib]
+No comment provided
+
+h4.fakeTransgaming (int) - (AccessLevel 0) [Notes|Command_fakeTransgaming_UtilitiesLib]
+No comment provided
+
+h4.fakeWineVersion (string) - (AccessLevel 0) [Notes|Command_fakeWineVersion_UtilitiesLib]
+No comment provided
+
+h4.fill_on_alloc (int) - (AccessLevel 0) [Notes|Command_fill_on_alloc_UtilitiesLib]
+No comment provided
+
+h4.fill_on_free (int) - (AccessLevel 0) [Notes|Command_fill_on_free_UtilitiesLib]
+No comment provided
+
+h4.fix (int) - (AccessLevel 0) [Notes|Command_fix_UtilitiesLib]
+Use the "fix" version of the data files regardless of whether or not we look like we're in fix
+
+
+h4.forceBinCreate (int) - (AccessLevel 9) [Notes|Command_forceBinCreate_UtilitiesLib]
+Forces bin files to be written, even if they have errors
+
+
+h4.forceServerMode (int) - (AccessLevel 9) [Notes|Command_forceServerMode_UtilitiesLib]
+No comment provided
+
+h4.force_bad_cpu (int) - (AccessLevel 9) [Notes|Command_force_bad_cpu_UtilitiesLib]
+Forces the timing code to use the code that gets ran on bad multi-core/cpu systems whose timers drift per-core
+
+
+h4.freezeOnCrash (int) - (AccessLevel 0) [Notes|Command_freezeOnCrash_UtilitiesLib]
+Freeze all threads, including the faulting thread, on exceptions and asserts.  If the faulting thread is unfrozen, the process will proceed to crash normally.
+
+
+h4.gsmPrintStateChanges (int) - (AccessLevel 9) [Notes|Command_gsmPrintStateChanges_UtilitiesLib]
+No comment provided
+
+h4.hog_verbose (int) - (AccessLevel 9) [Notes|Command_hog_verbose_UtilitiesLib]
+Display extra hogg diagnostic information
+
+
+h4.hog_verify_crcs (int) - (AccessLevel 9) [Notes|Command_hog_verify_crcs_UtilitiesLib]
+Verify all CRCs passed in to hog update functions
+
+
+h4.ipfFile (string) - (AccessLevel 9) [Notes|Command_ipfFile_UtilitiesLib]
+No comment provided
+
+h4.logHogTransactions (int) - (AccessLevel 9) [Notes|Command_logHogTransactions_UtilitiesLib]
+No comment provided
+
+h4.maxTriangleSplits (int) - (AccessLevel 9) [Notes|Command_maxTriangleSplits_UtilitiesLib]
+debug command for limiting the number of triangle splits that happen in a boolean operation to track down which one is causing problems
+
+
+h4.memMonitorBreakOnAlloc (sentence) - (AccessLevel 9) [Notes|Command_memMonitorBreakOnAlloc_UtilitiesLib]
+Instructs the memory tracking code to signal a breakpoint if an allocation occurs in the specified file
+
+
+h4.memMonitorBreakOnAllocDisableReset (int) - (AccessLevel 9) [Notes|Command_memMonitorBreakOnAllocDisableReset_UtilitiesLib]
+No comment provided
+
+h4.memMonitorBreakOnAllocLine (int) - (AccessLevel 9) [Notes|Command_memMonitorBreakOnAllocLine_UtilitiesLib]
+Instructs the memory tracking code to signal a breakpoint if an allocation occurs in the specified file
+
+
+h4.netAllowCaptureRequestOnPort (int) - (AccessLevel 9) [Notes|Command_netAllowCaptureRequestOnPort_UtilitiesLib]
+Set to a port number to capture on once.
+
+
+h4.netCompressLevel (int) - (AccessLevel 0) [Notes|Command_netCompressLevel_UtilitiesLib]
+No comment provided
+
+h4.netNoSendBuffer (int) - (AccessLevel 9) [Notes|Command_netNoSendBuffer_UtilitiesLib]
+No comment provided
+
+h4.netSaveCompressBufferSize (int) - (AccessLevel 0) [Notes|Command_netSaveCompressBufferSize_UtilitiesLib]
+No comment provided
+
+h4.netSaveCompressState (int) - (AccessLevel 0) [Notes|Command_netSaveCompressState_UtilitiesLib]
+No comment provided
+
+h4.netStopCapture (int) - (AccessLevel 9) [Notes|Command_netStopCapture_UtilitiesLib]
+Stop a capture started by AllowCaptureRequestOnPort.
+
+
+h4.noSetErrorMode (int) - (AccessLevel 0) [Notes|Command_noSetErrorMode_UtilitiesLib]
+No comment provided
+
+h4.no_apr1 (int) - (AccessLevel 9) [Notes|Command_no_apr1_UtilitiesLib]
+Disables development April Fool's gags
+
+
+h4.no_assert_on_hogg_write (int) - (AccessLevel 9) [Notes|Command_no_assert_on_hogg_write_UtilitiesLib]
+Disables asserting on hogg write errors
+
+
+h4.numSaveThreads (int) - (AccessLevel 9) [Notes|Command_numSaveThreads_UtilitiesLib]
+No comment provided
+
+h4.num_cores (int) - (AccessLevel 0) [Notes|Command_num_cores_UtilitiesLib]
+Sets the number of cores/CPUs to be used
+
+
+h4.objPathCacheStatsDetailed (int) - (AccessLevel 9) [Notes|Command_objPathCacheStatsDetailed_UtilitiesLib]
+No comment provided
+
+h4.parserTimingFlags (int) - (AccessLevel 9) [Notes|Command_parserTimingFlags_UtilitiesLib]
+No comment provided
+
+h4.printContainerReceives (int) - (AccessLevel 9) [Notes|Command_printContainerReceives_UtilitiesLib]
+No comment provided
+
+h4.printContainerSends (int) - (AccessLevel 9) [Notes|Command_printContainerSends_UtilitiesLib]
+No comment provided
+
+h4.printResRequestCorrections (int) - (AccessLevel 9) [Notes|Command_printResRequestCorrections_UtilitiesLib]
+No comment provided
+
+h4.printSubscriptionChanges (int) - (AccessLevel 9) [Notes|Command_printSubscriptionChanges_UtilitiesLib]
+No comment provided
+
+h4.productionMode (int) - (AccessLevel 0) [Notes|Command_productionMode_UtilitiesLib]
+Forcing production mode status, usually with -productionMode.
+0: Force production mode off
+1: Force production mode on
+-1: Use default production mode value
+
+
+h4.productionModeBins (int) - (AccessLevel 0) [Notes|Command_productionModeBins_UtilitiesLib]
+Assumes bin files are up to date, like in production mode
+
+
+h4.quickLoadMessages (int) - (AccessLevel 9) [Notes|Command_quickLoadMessages_UtilitiesLib]
+Disables loading of messages for faster startup in development
+
+
+h4.setEnableActivityParsing (int) - (AccessLevel 9) [Notes|Command_setEnableActivityParsing_UtilitiesLib]
+Option to allow disabling of activity parsing in case of problems.
+
+
+h4.setPatchClient (string) - (AccessLevel 0) [Notes|Command_setPatchClient_UtilitiesLib]
+Allow the full path of patchclient to be overriden.
+
+
+h4.setPatchClient64 (string) - (AccessLevel 0) [Notes|Command_setPatchClient64_UtilitiesLib]
+Allow the full path of patchclient to be overriden.
+
+
+h4.show_physical_untracked (int) - (AccessLevel 9) [Notes|Command_show_physical_untracked_UtilitiesLib]
+During each loading step, shows the amount of untracked physical memory and other metrics.
+
+
+h4.simplygonAutoShutdownCount (int) - (AccessLevel 9) [Notes|Command_simplygonAutoShutdownCount_UtilitiesLib]
+No comment provided
+
+h4.simplygonEnabled (int) - (AccessLevel 9) [Notes|Command_simplygonEnabled_UtilitiesLib]
+No comment provided
+
+h4.simplygonErrorScale (float) - (AccessLevel 9) [Notes|Command_simplygonErrorScale_UtilitiesLib]
+No comment provided
+
+h4.simplygonErrorUseRadius (int) - (AccessLevel 9) [Notes|Command_simplygonErrorUseRadius_UtilitiesLib]
+No comment provided
+
+h4.simplygonMaxPixelDeviation (int) - (AccessLevel 9) [Notes|Command_simplygonMaxPixelDeviation_UtilitiesLib]
+No comment provided
+
+h4.simplygonResolution (int) - (AccessLevel 9) [Notes|Command_simplygonResolution_UtilitiesLib]
+No comment provided
+
+h4.simplygonSuperSample (int) - (AccessLevel 9) [Notes|Command_simplygonSuperSample_UtilitiesLib]
+No comment provided
+
+h4.simplygonTexHeight (int) - (AccessLevel 9) [Notes|Command_simplygonTexHeight_UtilitiesLib]
+No comment provided
+
+h4.simplygonTexWidth (int) - (AccessLevel 9) [Notes|Command_simplygonTexWidth_UtilitiesLib]
+No comment provided
+
+h4.taskServerAddr (string) - (AccessLevel 9) [Notes|Command_taskServerAddr_UtilitiesLib]
+Sets the address of the TaskServer to connect to
+
+
+h4.ugc_NumReviewsBeforeNonReviewerCanPlay (int) - (AccessLevel 9) [Notes|Command_ugc_NumReviewsBeforeNonReviewerCanPlay_UtilitiesLib]
+No comment provided
+
+h4.ugc_ShardName (string) - (AccessLevel 0) [Notes|Command_ugc_ShardName_UtilitiesLib]
+This should be passed in with "-ugc_ShardName MyUgcShard" at the command line for GameServers, the LoginServer, and the MapManager
+
+
+h4.useScopedExpr (int) - (AccessLevel 9) [Notes|Command_useScopedExpr_UtilitiesLib]
+No comment provided
+
+h4.use_load_perfinfo_timers (int) - (AccessLevel 1) [Notes|Command_use_load_perfinfo_timers_UtilitiesLib]
+No comment provided
+
+h4.verbose (int) - (AccessLevel 9) [Notes|Command_verbose_UtilitiesLib]
+No comment provided
+
+h4.verifyDirtyBits (int) - (AccessLevel 9) [Notes|Command_verifyDirtyBits_UtilitiesLib]
+No comment provided
+
+h4.verifyHeaders (int) - (AccessLevel 9) [Notes|Command_verifyHeaders_UtilitiesLib]
+No comment provided
+
+h4.windowManagerNoDialogs (int) - (AccessLevel 9) [Notes|Command_windowManagerNoDialogs_UtilitiesLib]
+Transgaming's Cider doesn't support any of the Windows dialog creation functions, so we
+have to use CreateWindow and friends. This forces that functionality on, even under
+Windows.
+
+
+h4.workaround_cor15550 (int) - (AccessLevel 0) [Notes|Command_workaround_cor15550_UtilitiesLib]
+If 1, apply workaround for [COR-15550].  If 0, don't.  Otherwise, determine automatically.
+See below for an explanation of what this option does.
+
+

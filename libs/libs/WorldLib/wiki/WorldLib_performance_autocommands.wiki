@@ -1,0 +1,8 @@
+h4.terrainHighLodTriPercent (float) - (AccessLevel 9) [Notes|Command_terrainHighLodTriPercent_WorldLib]
+Sets the triangle percentage to use for the high LOD terrain when binning.  Defaults to 0.33 (33 percent).
+
+
+h4.terrainLodInitialTriPercent (float) - (AccessLevel 9) [Notes|Command_terrainLodInitialTriPercent_WorldLib]
+Sets the triangle percentage for the base lod.  Each subsequent lod is divied again by 4.  Defaults to 0.25 (25 percent).
+
+

@@ -1,0 +1,147 @@
+h4.EntCropAllegiance (AccessLevel 9) [Notes|Command_EntCropAllegiance_AILib]
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: allegianceName (string)*
+Removes entities that do not have the specified Allegiance
+
+
+h4.EntCropAttribPositive (AccessLevel 9) [Notes|Command_EntCropAttribPositive_AILib]
+*No Return*
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: attribName (string)*
+Removes all entities for which the specified attrib positive
+
+
+h4.EntCropClass (AccessLevel 9) [Notes|Command_EntCropClass_AILib]
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: className (string)*
+No comment provided
+
+h4.EntCropClassCategory (AccessLevel 9) [Notes|Command_EntCropClassCategory_AILib]
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: classCategoryName (string)*
+No comment provided
+
+h4.EntCropCombatState (AccessLevel 9) [Notes|Command_EntCropCombatState_AILib]
+*No Return*
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: stateName (string)*
+Removes entities that are not in the state with the specified name
+
+
+h4.EntCropCritterSubRank (AccessLevel 9) [Notes|Command_EntCropCritterSubRank_AILib]
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: subRankName (string)*
+Removes entities that are of the specified sub rank
+
+
+h4.EntCropCritters (AccessLevel 9) [Notes|Command_EntCropCritters_AILib]
+*No Return*
+*Parameter 1: entsInOut (Entity Array (modified))*
+Removes non-critters from the past in array
+
+
+h4.EntCropDead (AccessLevel 9) [Notes|Command_EntCropDead_AILib]
+*No Return*
+*Parameter 1: entsInOut (Entity Array (modified))*
+Removes all entities that are not dead
+
+
+h4.EntCropExpLevel (AccessLevel 9) [Notes|Command_EntCropExpLevel_AILib]
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: minLevel (int)*
+*Parameter 3: maxLevel (int)*
+Removes every entity from the array whose level isn't in the specified range
+
+
+h4.EntCropFaction (AccessLevel 9) [Notes|Command_EntCropFaction_AILib]
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: factionName (string)*
+Removes entities that do not have the specified faction
+
+
+h4.EntCropGang (AccessLevel 9) [Notes|Command_EntCropGang_AILib]
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: gang (int)*
+Removes entities that are not on the specified gang
+
+
+h4.EntCropHasItem (AccessLevel 9) [Notes|Command_EntCropHasItem_AILib]
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: itemName (string)*
+*Parameter 3: count (int)*
+No comment provided
+
+h4.EntCropInCombat (AccessLevel 9) [Notes|Command_EntCropInCombat_AILib]
+*No Return*
+*Parameter 1: entsInOut (Entity Array (modified))*
+Removes entities that do not have the combat mode
+Adds no functionality to CropMode above, but has a clearer name for designer use
+
+
+h4.EntCropJob (AccessLevel 9) [Notes|Command_EntCropJob_AILib]
+*No Return*
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: jobName (string)*
+Removes every entity from the array that's not doing the specified job
+
+
+h4.EntCropLevel (AccessLevel 9) [Notes|Command_EntCropLevel_AILib]
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: minLevel (int)*
+*Parameter 3: maxLevel (int)*
+Removes every entity from the array whose level isn't in the specified range
+
+
+h4.EntCropMode (AccessLevel 9) [Notes|Command_EntCropMode_AILib]
+*No Return*
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: modeName (string)*
+*Parameter 3: time (float)*
+Removes entities that do not have the specified mode.
+The time parameter is completely ignored, but it's less confusing to leave it in than to try to
+give it a name that indicates that designers should fill in a dummy value
+
+
+h4.EntCropNotSubRank (AccessLevel 9) [Notes|Command_EntCropNotSubRank_AILib]
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: subRankName (string)*
+Removes entities that are of the specified sub rank
+
+
+h4.EntCropPlayers (AccessLevel 9) [Notes|Command_EntCropPlayers_AILib]
+*No Return*
+*Parameter 1: entsInOut (Entity Array (modified))*
+Removes every entity from the passed in ent array that's not a player
+
+
+h4.EntCropSpeciesGroup (AccessLevel 9) [Notes|Command_EntCropSpeciesGroup_AILib]
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: speciesGroup (string)*
+Removes entities that do not have the specified SpeciesGroup
+
+
+h4.EntCropState (AccessLevel 9) [Notes|Command_EntCropState_AILib]
+*No Return*
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: stateName (string)*
+Removes every entity from the array that's not in a state with the specified name
+NOTE: this will check against all embedded FSMs the entity is currently using, so you can
+check against any of those states
+
+
+h4.EntCropStatusAttribs (AccessLevel 9) [Notes|Command_EntCropStatusAttribs_AILib]
+*No Return*
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: hold (int)*
+*Parameter 3: root (int)*
+*Parameter 4: confuse (int)*
+*Parameter 5: knock (int)*
+No comment provided
+
+h4.EntCropXRandom (AccessLevel 9) [Notes|Command_EntCropXRandom_AILib]
+*No Return*
+*Parameter 1: entsIn (Entity Array)*
+*Parameter 2: num (int)*
+Removes entities from the passed in ent array at random until <num> are left
+
+

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="autogen\SnmpLib_AutoGen_1.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoGen\SnmpLib_AutoGen_2.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="snmplib.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="snmplib.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="AutoGen">
+      <UniqueIdentifier>{541942a4-89bf-48d9-b2c5-de5f154d2a0f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

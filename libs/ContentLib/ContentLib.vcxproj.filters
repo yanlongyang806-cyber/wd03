@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="autogen\ContentLib_AutoGen_1.c">
+      <Filter>Autogen</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoGen\ContentLib_AutoGen_2.c">
+      <Filter>Autogen</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceCommands.c" />
+    <ClCompile Include="ResourceDataBackend.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pub\ResourceCommands.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceDataBackend.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Autogen">
+      <UniqueIdentifier>{345e9262-482f-4f5d-a0f3-19ffba02bb94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pub">
+      <UniqueIdentifier>{d583cd5f-e479-4ae1-8dec-21fa9fd69a55}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

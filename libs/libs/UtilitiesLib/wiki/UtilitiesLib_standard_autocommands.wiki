@@ -1,0 +1,18 @@
+h4.mmdsXBOX (AKA memMonitorDisplayXMemStats) (AccessLevel 9) [Notes|Command_mmdsXBOX_UtilitiesLib]
+Show memory stats
+
+
+h4.timerRecordEnd (AccessLevel 9) [Notes|Command_timerRecordEnd_UtilitiesLib]
+Stops any current profiler recording or playback
+
+
+h4.timerRecordPlay (AccessLevel 9) [Notes|Command_timerRecordPlay_UtilitiesLib]
+*Parameter 1: filename (string)*
+Plays back previously recorded profiler information, at the given filename
+
+
+h4.timerRecordStart (AccessLevel 9) [Notes|Command_timerRecordStart_UtilitiesLib]
+*Parameter 1: filename (string)*
+Starts recording profiling information to the given filename
+
+

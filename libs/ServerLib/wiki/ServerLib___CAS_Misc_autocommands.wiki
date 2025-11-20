@@ -1,0 +1,20 @@
+h4.NumTransToAlert_GS (int) - (AccessLevel 9) [Notes|Command_NumTransToAlert_GS_ServerLib]
+If there are more than this managed transactions at once, something is probably wrong, generate
+an alert (GS)
+
+
+h4.NumTransToAlert_ObjectDB (int) - (AccessLevel 9) [Notes|Command_NumTransToAlert_ObjectDB_ServerLib]
+If there are more than this managed transactions at once, something is probably wrong, generate
+an alert (Object DB)
+
+
+h4.NumTransToAlert_Other (int) - (AccessLevel 9) [Notes|Command_NumTransToAlert_Other_ServerLib]
+If there are more than this managed transactions at once, something is probably wrong, generate
+an alert (Other servers)
+
+
+h4.SecondsBeforeNumTransAlerts (int) - (AccessLevel 9) [Notes|Command_SecondsBeforeNumTransAlerts_ServerLib]
+When a server starts up, wait this many seconds before generating Too_Many_Trans alerts (lots of ContainerMoves usually
+happen at startup, for instance)
+
+

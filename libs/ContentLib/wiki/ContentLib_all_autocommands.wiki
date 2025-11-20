@@ -1,0 +1,19 @@
+h4.OutputDictionaryInfo (AccessLevel 9) [Notes|Command_OutputDictionaryInfo_ContentLib]
+*Parameter 1: dictionaryName (string)*
+*Parameter 2: fileName (string)*
+No comment provided
+
+h4.OutputObjectInfo (AccessLevel 9) [Notes|Command_OutputObjectInfo_ContentLib]
+*Parameter 1: dictionaryName (string)*
+*Parameter 2: resourceName (string)*
+*Parameter 3: fileName (string)*
+No comment provided
+
+h4.PerformDataCopy (AccessLevel 9) [Notes|Command_PerformDataCopy_ContentLib]
+*Parameter 1: fileName (string)*
+No comment provided
+
+h4.resVerifyWritable (AccessLevel 9) [Notes|Command_resVerifyWritable_ContentLib]
+Checks the read-only status against the filesystem for all ResourceInfos
+
+

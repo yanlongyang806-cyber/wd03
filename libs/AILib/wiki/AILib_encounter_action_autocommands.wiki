@@ -1,0 +1,34 @@
+h4.MastermindGetHeatValue (AccessLevel 9) [Notes|Command_MastermindGetHeatValue_AILib]
+*Returns: float*
+Function to add to the heat level, will not go past min/max
+
+
+h4.MastermindGetNumDeadPlayers (AccessLevel 9) [Notes|Command_MastermindGetNumDeadPlayers_AILib]
+*Returns: int*
+No comment provided
+
+h4.MastermindGetTeamAverageHealth (AccessLevel 9) [Notes|Command_MastermindGetTeamAverageHealth_AILib]
+*Returns: float*
+Returns the average health percent of the members on the team
+
+
+h4.MastermindGetTeamHealthPercent (AccessLevel 9) [Notes|Command_MastermindGetTeamHealthPercent_AILib]
+*Returns: float*
+Returns the team's health as a percent of the total health of all the members
+
+
+h4.MastermindGetTimeSinceEnteredNewRoom (AccessLevel 9) [Notes|Command_MastermindGetTimeSinceEnteredNewRoom_AILib]
+*Returns: float*
+Returns the time in seconds since any player entered a new room 
+
+
+h4.MastermindGetTimeSinceLastCombat (AccessLevel 9) [Notes|Command_MastermindGetTimeSinceLastCombat_AILib]
+*Returns: float*
+Returns the time in seconds since the team was last in combat 
+
+
+h4.MastermindGetTimeSinceLastDeath (AccessLevel 9) [Notes|Command_MastermindGetTimeSinceLastDeath_AILib]
+*Returns: float*
+Returns the time in seconds since the last death of a player. 
+
+

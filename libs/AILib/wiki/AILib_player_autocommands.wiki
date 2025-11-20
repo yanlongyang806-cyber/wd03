@@ -1,0 +1,7 @@
+h4.SetPowerMode (AccessLevel 9) [Notes|Command_SetPowerMode_AILib]
+*No Return*
+*Parameter 1: mode (string)*
+*Parameter 2: on (int)*
+Turns the power mode for this entity on or off (lasts until cleared)
+
+

@@ -1,0 +1,8 @@
+h4.Terrain.genesisEnableRoomDebugImages (AccessLevel 9) [Notes|Command_Terrain.genesisEnableRoomDebugImages_WorldLib]
+*Parameter 1: debug (int)*
+No comment provided
+
+h4.Terrain.AllowLongRamps (AccessLevel 9) [Notes|Command_Terrain.AllowLongRamps_WorldLib]
+*Parameter 1: allow (bool)*
+No comment provided
+

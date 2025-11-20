@@ -1,0 +1,2265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\3rdparty\simplygon\SimplygonSDKLoader.cpp">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\GlobalComm.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoGen\UtilitiesLib_AutoGen_1.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoGen\UtilitiesLib_AutoGen_2.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="clearsilver.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="components\Alerts.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\Array.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\AssociationList.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\AssociativeCache.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\auto_float.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\AutoStartupSupport.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\AutoStructSupport.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\AutoTransSupport.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\BinarySearchTree.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\BitArray.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\bitfield.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\BitStream.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\BlockEarray.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\BloomFilter.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\BuildScripting.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\ByteBlock.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\CachedGlobalObjectList.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\ChatData.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\ChoiceTable_common.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\cmdparse_http.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\CommandQueue.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\CommandScheduling.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\ControllerLink.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\datalist.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\earray.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\eset.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\EString.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\Expression.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\ExpressionContext.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\ExpressionDebug.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\ExpressionEvaluate.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\ExpressionEvaluateBody.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\ExpressionEvaluateForAutogenIncluding.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\ExpressionEvaluateSC.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\ExpressionFunc.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\ExpressionParse.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\ExpressionTokenize.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\ExprHttp.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\FileAppending.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\FileServing.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\FilespecMap.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\FileVersionList.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\FloatAverager.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\Frustum.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\GenericFileServing.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\GenericGraph.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\genericlist.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\GenericMesh.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\GenericMeshReduce.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\GenericMeshReduceOpt.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\GenericMeshRemesh.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\GenericPoly.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\GenericPreProcess.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\GenericWorkerThread.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\GimmeUtils.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\GlobalStateMachine.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\GlobalTypes.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\gridpoly.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\GWTCmdQueue.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\HashFunctions.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\httpJpegLibrary.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\HttpXpathSupport.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\HybridObj.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\ImbeddedList.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\InfoTracker.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\InstancedStateMachine.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\InStringCommands.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\LateLinkSupport.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\LinearAllocator.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\MedianTracker.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\MemAlloc.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\MemoryPool.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\MemRef.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\MemReport.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\MemTrack.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\MemTrackLog.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\metatask.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\MirrorRingBuffer.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\MRUList.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\MultiVal.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\MultiWorkerThread.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\NamedBitArray.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\NameList.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\NameTable.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\NameValuePair.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\NetLinkPrintf.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\NotesServerComm.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\objContainer.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\objContainerIO.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\ObjectPool.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\objIndex.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\objPath.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\objSchema.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\Octree.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\PoolQueue.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\ProductInfo.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\Queue.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\ReadPNG.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\RedBlackTree.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\ReferenceList.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\ReferenceSystem.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\ReferenceSystemOpt.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\Regex.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\ResourceInfo.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\ResourceSystemIO.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\RingBuffer.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\RingStream.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\ScratchStack.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\SentryServerComm.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\SharedHeap.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\sharedmalloc.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\SharedMemory.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\SimpleSet.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\SimplygonInterface.cpp">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\SortedArray.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\SparseGrid.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\StashSet.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\StashTable.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\StateMachine.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\StatusReporting.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\StringCache.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\StringTable.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\StructParserTest.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\SVNUtils.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\TestHarness.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\ThreadSafeMemoryPool.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\ThreadSafePriorityCache.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\ThreadSafeQueue.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\TriCube\fpcube.c">
+      <Filter>components\TriCube</Filter>
+    </ClCompile>
+    <ClCompile Include="components\TriCube\pcube.c">
+      <Filter>components\TriCube</Filter>
+    </ClCompile>
+    <ClCompile Include="components\tritri_isectline.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\WorkerThread.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\WorldVariable.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\WritePNG.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\XMLWriter.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="heaps\dlmalloc.c">
+      <Filter>heaps</Filter>
+    </ClCompile>
+    <ClCompile Include="heaps\nedmalloc.c">
+      <Filter>heaps</Filter>
+    </ClCompile>
+    <ClCompile Include="heaps\tlsf.c">
+      <Filter>heaps</Filter>
+    </ClCompile>
+    <ClCompile Include="language\AppLocale.c">
+      <Filter>language</Filter>
+    </ClCompile>
+    <ClCompile Include="language\CommandTranslation.c">
+      <Filter>language</Filter>
+    </ClCompile>
+    <ClCompile Include="language\Message.c">
+      <Filter>language</Filter>
+    </ClCompile>
+    <ClCompile Include="language\MessageReport.c">
+      <Filter>language</Filter>
+    </ClCompile>
+    <ClCompile Include="language\MessageStore.c">
+      <Filter>language</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageExpressions.c">
+      <Filter>language</Filter>
+    </ClCompile>
+    <ClCompile Include="net\accountnet.c">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="net\netbsd.c">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="net\netcomm.c">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="net\netFileSendingMode.c">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="net\nethandshake.c">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="net\netiocp.c">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="net\netipfilter.c">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="net\netlink.c">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="net\netpacket.c">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="net\netpacketutil.c">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="net\netreceive.c">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="net\netreplay.c">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="net\netsendthread.c">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="net\netsmtp.c">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="net\websrv.c">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="net\xsock.c">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="network\bindiff.c">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="network\crypt.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="network\fingerprint.c">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="network\sock.c">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleWindowManager.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="textparserHDF.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="TextParserServerMon.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="tiff.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="TimedCallback.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utilitiesLib.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\AtExit.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\bounds.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\Breakpoint.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\callstack.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\Capsule.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\Category.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\CBox.c" />
+    <ClCompile Include="utils\cJSON.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\cmdparse.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\CmdParseJson.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\Color.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\CommandAndStructContracts.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\CommandFileParser.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\commandline.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\ConsoleDebug.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\ContinuousBuilderSupport.c" />
+    <ClCompile Include="utils\ControllerScriptingSupport.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\ControllerStartupSupport.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\conversions.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\ConvertUtf.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\cpu_count.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\crunch.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\CrypticDXT.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\crypticerror.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\csv.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\DebugState.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\deepspace.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\DirMonitor.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\disasm.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\dobbs_hash.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\DynamicCache.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\endian.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\error.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\errornet.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\errorprogressdlg.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\eval.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\EventCountingHeatMap.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\EventTimingLog.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\fastAtoi.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\file.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\fileCache.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\fileLoader.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\fileutil.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\fileutil2.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\fileutil_opt.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\fileWatch.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\FilteredList.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\FolderCache.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\FolderCacheNode.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\FragmentedBuffer.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\FreeThread.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\genericDialog.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\gimmeDLLWrapper.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\hoglib.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\hogutil.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\htmlForms.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\httpAsync.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\HttpClient.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\ImageUtil.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\IntFIFO.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\iocp.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\jpeg.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\LineDist.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\LinkToMultiplexer.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\ListView.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\logging.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\LogParsing.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\LogParsingFileBuckets.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\mathutil.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\MatrixStack.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\memcheck.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\MemLeakTracking.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\memlog.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\MemoryBudget.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\MemoryHeap.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\MemoryMonitor.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\MIMEParse.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\Money.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\monitorDetectEDID.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\multiMon.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\mutex.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\oauth.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\osdependent.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\OsPermissions.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\ParsePEHeader.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\patchclient.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\PerfLogger.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\PigFileWrapper.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\piglib.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\pipeClient.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\pipeServer.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\PixelCircle.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\Prefs.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\process_util.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\ProdBuildVersion.c" />
+    <ClCompile Include="utils\ProjFileHackery.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\qsortG.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\Quat.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\quick_sprintf.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\rand.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\RateLimit.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\RegistryReader.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\ResourceManager.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\ResourceSearch.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\ResourceTags.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\rgb_hsv.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\scriptvars.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\Semaphore.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\serialize.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\SimpleCpuUsage.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\SimpleParser.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\SimpleStatusMonitoring.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\simplexNoise.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\sm_parser.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\sm_utils.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\ssemath.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\stackwalk.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\stackwalkfallback.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\statistics.c">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\StayUp.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\StringFormat.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\strings_opt.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\StringUtil.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\StructCopy.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\structDefines.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\structHist.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\StructInit.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\structInternals.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\StructMod.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\structNet.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\structPack.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\structTokenizer.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\SubStringSearchTree.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\SuccessCounter.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\SuperAssert.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\synchronization.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\systemspecs.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\sysutil.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\TaskProfile.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\TaskServerClientInterface.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\TestServerIntegration.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\TextBuffer.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\TextFilter.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\textparser.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\textparsercallbacks.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\textparsercallbacks_opt.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\textparserHTML.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\TextParserInheritance.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\textparserJSON.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\textparserReg.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\TextParserSimpleInheritance.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\textparserUtils.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\textparserXML.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\tga.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\threadedFileCopy.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\ThreadManager.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\ticketenums.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\ticketnet.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\timing.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\timing_profiler.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\tokenstore.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\trivia.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\UGCProjectUtils.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\UIColor.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\UnitSpec.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\url.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\Utf8.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\utils.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\utils_opt.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\uuid.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\videoMemory.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\VirtualMemory.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\Wavelet.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\winfiletime.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\WinTabUtil.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\winutil.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\WTex.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\zutils.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="version\AppRegCache.c">
+      <Filter>version</Filter>
+    </ClCompile>
+    <ClCompile Include="version\AppVersion.c">
+      <Filter>version</Filter>
+    </ClCompile>
+    <ClCompile Include="XUtil.c">
+      <Filter>xbox</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Utilities\NotesServer\NotesServer_pub.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Utilities\SentryServer\sentrypub.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\GlobalComm.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ServerLib\pub\ShardCluster.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="assert\assert.h" />
+    <ClInclude Include="clearsilver.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="components\Alerts.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\Array.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\AssociationList.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\AssociativeCache.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\auto_float.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\AutoStartupSupport.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\AutoTransDefs.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\AutoTransHelperDefs.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\AutoTransSupport.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\BinarySearchTree.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\BitArray.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\bitfield.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\BitStream.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\BlockEarray.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\BloomFilter.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\BuildScripting.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\ByteBlock.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\CachedGlobalObjectList.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\ChatData.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\ChoiceTable_common.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\cmdparse_http.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\CommandQueue.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\CommandScheduling.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\ControllerLink.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\datalist.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\earray.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\earray_inline.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\eset.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\EString.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\Expression.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\ExpressionDebug.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\ExpressionFunc.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\ExpressionMinimal.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\ExpressionParse.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\ExpressionPrivate.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\ExpressionTokenize.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\ExprHttp.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\FileAppending.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\FileServing.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\FilespecMap.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\FileVersionList.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\FloatAverager.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\Frustum.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\FrustumInl.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\GenericFileServing.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\GenericGraph.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\genericlist.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\GenericMesh.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\GenericMeshBits.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\GenericMeshPrivate.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\GenericMeshRemesh.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\GenericPoly.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\GenericPreProcess.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\GenericWorkerThread.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\GimmeUtils.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\GlobalStateMachine.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\GlobalTypeEnum.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\GlobalTypes.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\gridpoly.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\GWTCmdQueue.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\HashFunctions.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\httpJpegLibrary.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\HttpXpathSupport.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\HybridObj.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\ImbeddedList.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\InfoTracker.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\InstancedStateMachine.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\InStringCommands.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\LateLinkSupport.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\LinearAllocator.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\MedianTracker.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\MemAlloc.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\MemoryPool.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\MemoryPoolDebug.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\MemRef.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\MemReport.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\MemTrack.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\MemTrackLog.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\metatask.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\MirrorRingBuffer.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\MRUList.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\MultiVal.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\MultiWorkerThread.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\NamedBitArray.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\NameList.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\NameTable.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\NameValuePair.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\NetLinkPrintf.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\NotesServerComm.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\objContainer.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\objContainerIO.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\ObjectPool.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\objEnums.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\objIndex.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\objPath.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\objSchema.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\Octree.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\PoolQueue.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\ProductInfo.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\Queue.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\ReadPNG.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\RedBlackTree.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\ReferenceList.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\ReferenceSystem.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\ReferenceSystem_Internal.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\Regex.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\RemoteAutoCommandSupport.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\ResourceInfo.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\ResourceSystem_Internal.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\RingBuffer.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\RingStream.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\ScratchStack.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\SentryServerComm.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\SharedHeap.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sharedmalloc.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\SharedMemory.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\SimpleSet.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\SimplygonInterface.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\SortedArray.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\SparseGrid.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\StashSet.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\StashTable.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\StateMachine.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\StatusReporting.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\StringCache.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\StringTable.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\SVNUtils.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\TestHarness.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\ThreadSafeMemoryPool.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\ThreadSafePriorityCache.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\ThreadSafeQueue.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\TransactionOutcomes.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\TriCube\fpcube.h">
+      <Filter>components\TriCube</Filter>
+    </ClInclude>
+    <ClInclude Include="components\TriCube\pcube.h">
+      <Filter>components\TriCube</Filter>
+    </ClInclude>
+    <ClInclude Include="components\TriCube\vec.h">
+      <Filter>components\TriCube</Filter>
+    </ClInclude>
+    <ClInclude Include="components\tritri_isectline.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\WorkerThread.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\WorldVariable.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\WritePNG.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\WTCmdPacket.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\XMLParsing.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\XMLWriter.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="CrypticPorts.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="heaps\dlmalloc.h">
+      <Filter>heaps</Filter>
+    </ClInclude>
+    <ClInclude Include="heaps\malloc.c.h">
+      <Filter>heaps</Filter>
+    </ClInclude>
+    <ClInclude Include="heaps\nedmalloc.h">
+      <Filter>heaps</Filter>
+    </ClInclude>
+    <ClInclude Include="heaps\tlsf.h">
+      <Filter>heaps</Filter>
+    </ClInclude>
+    <ClInclude Include="language\AppLocale.h">
+      <Filter>language</Filter>
+    </ClInclude>
+    <ClInclude Include="language\CommandTranslation.h">
+      <Filter>language</Filter>
+    </ClInclude>
+    <ClInclude Include="language\Message.h">
+      <Filter>language</Filter>
+    </ClInclude>
+    <ClInclude Include="language\MessageExpressions.h">
+      <Filter>language</Filter>
+    </ClInclude>
+    <ClInclude Include="language\MessageReport.h">
+      <Filter>language</Filter>
+    </ClInclude>
+    <ClInclude Include="language\MessageStore.h">
+      <Filter>language</Filter>
+    </ClInclude>
+    <ClInclude Include="net\accountnet.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="net\net.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="net\netbsd.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="net\nethandshake.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="net\netiocp.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="net\netipfilter.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="net\netlink.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="net\netpacket.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="net\netpacketutil.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="net\netprivate.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="net\netreceive.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="net\netreplay.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="net\netsendthread.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="net\netsmtp.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="net\websrv.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="net\xsock.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="network\bindiff.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="network\crypt.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="network\fingerprint.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="network\sock.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="Organization.h" />
+    <ClInclude Include="SimpleWindowManager.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="stdtypes.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="tiff.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="TimedCallback.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utilitiesLib.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="UtilitiesLib_AnonAutoRunIncludes.h" />
+    <ClInclude Include="utils\AtExit.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\bounds.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\Breakpoint.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\callstack.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\Capsule.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\Category.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\Cbox.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\cJSON.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\cmdparse.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\CmdParseJson.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\Color.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\CommandFileParser.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\CommandLine.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\ConsoleDebug.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\ContinuousBuilderSupport.h" />
+    <ClInclude Include="utils\ControllerScriptingSupport.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\ControllerStartupSupport.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\conversions.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\ConvertUtf.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\cpu_count.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\CRTSafetyWrapper.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\crunch.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\CrypticDXT.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\crypticerror.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\csv.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\Curve.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\DebugState.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\deepspace.h" />
+    <ClInclude Include="utils\DirectDrawTypes.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\DirMonitor.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\disasm.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\dobbs_hash.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\DynamicCache.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\endian.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\error.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\errornet.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\errorprogressdlg.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\eval.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\EventCountingHeatMap.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\EventTimingLog.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\fastAtoi.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\file.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\fileCache.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\fileLoader.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\fileutil.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\fileutil2.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\fileWatch.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\FilteredList.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\FloatBranch.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\FolderCache.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\fpmacros.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\FragmentedBuffer.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\FreeThread.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\genericDialog.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\gimmeDLLPublicInterface.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\gimmeDLLWrapper.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\headshotUtils.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\hoglib.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\hogutil.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\htmlForms.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\httpAsync.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\HttpClient.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\ImageTypes.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\ImageUtil.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\IntFIFO.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\iocp.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\jpeg.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\jpeglib.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\LineDist.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\LinkToMultiplexer.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\ListView.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\logging.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\loggingEnums.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\LogParsing.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\LogParsingFileBuckets.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\mathn.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\mathn_internal.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\mathutil.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\MatrixStack.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\memcheck.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\MemLeakTracking.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\memlog.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\MemoryBudget.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\MemoryMonitor.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\MIMEParse.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\Money.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\monitorDetectEDID.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\multiMon.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\Multiplex.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\mutex.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\oauth.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\osdependent.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\OsPermissions.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\ParsePEHeader.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\patchclient.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\PerfLogger.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\PigFileWrapper.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\piglib.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\piglib_internal.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\pipeClient.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\pipeServer.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\PixelCircle.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\Prefs.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\process_util.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\qsortG.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\quadric.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\quadric_internal.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\Quat.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\rand.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\RateLimit.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\RegistryReader.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\ResourceManager.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\ResourceSearch.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\rgb_hsv.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\scriptvars.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\Semaphore.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\serialize.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\SimpleCpuUsage.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\SimpleParser.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\SimpleStatusMonitoring.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\simplexNoise.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\sm_parser.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\ssemath.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\stackwalk.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\stackwalkfallback.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\statistics.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\StayUp.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\StringFormat.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\strings_opt.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\StringUtil.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\StructCopy.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\structDefines.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\structHist.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\StructInit.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\structInternals.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\StructMod.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\structNet.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\structoldnames.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\structPack.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\structTokenizer.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\SubStringSearchTree.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\SuccessCounter.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\SuperAssert.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\synchronization.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\systemspecs.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\sysutil.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\TaskProfile.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\TaskServerClientInterface.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\TestServerIntegration.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\TextBuffer.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\TextFilter.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\textparser.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\TextParserCallbacks.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\textParserCallbacks_Inline.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\TextParserEnums.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\TextParserHDF.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\TextParserHtml.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\TextParserInheritance.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\textparserJSON.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\TextParserSimpleInheritance.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\textparserUtils.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\textparserUtils_inline.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\textParserXML.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\tga.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\threadedFileCopy.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\ThreadManager.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\ticketenums.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\ticketnet.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\timing.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\timing_profiler.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\timing_profiler_interface.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\tokenstore.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\tokenstore_inline.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\trivia.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\UGCProjectUtils.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\UIColor.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\UnitSpec.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\url.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\UTF8.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\utf8_prototypes.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\UtilitiesLibEnums.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\utils.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\uuid.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\Vec4H.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\Vec4H_PC.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\Vec4H_Xbox.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\Vec4Hswizzle.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\videoMemory.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\VirtualMemory.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\Wavelet.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\windefinclude.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\winfiletime.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\wininclude.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\WinTabUtil.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\winutil.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\WTex.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\XboxThreads.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\zutils.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="version\AppRegCache.h">
+      <Filter>version</Filter>
+    </ClInclude>
+    <ClInclude Include="version\AppVersion.h">
+      <Filter>version</Filter>
+    </ClInclude>
+    <ClInclude Include="XUtil.h">
+      <Filter>xbox</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="cpuid64.asm">
+      <Filter>utils</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="AutoGen">
+      <UniqueIdentifier>{55905d18-de15-460a-ad32-9e9a82afb5f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{4a0df333-affe-4bf8-8d7c-7384ea8edee5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components">
+      <UniqueIdentifier>{e39dd913-83ac-46ad-8380-590ae01dfc10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\TriCube">
+      <UniqueIdentifier>{cee4a6e8-bcae-434b-b592-6da365ad582b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExternHeaders">
+      <UniqueIdentifier>{de06a10b-c20e-4914-86cd-9f93f6a98bba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="heaps">
+      <UniqueIdentifier>{f50e8977-2c64-4e28-8ab6-5399e39f008e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="language">
+      <UniqueIdentifier>{67a8f3b3-55ca-4d45-b86b-1f5f0995097c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net">
+      <UniqueIdentifier>{4fdeb77f-654d-490c-9eef-ffa9e93be354}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils">
+      <UniqueIdentifier>{fbea1506-22eb-486b-b630-5dfdf3ca445c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="version">
+      <UniqueIdentifier>{7bacac6d-b988-4338-8833-795edbdfc3bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xbox">
+      <UniqueIdentifier>{72f52ae6-5fc5-4a75-8742-96b1ac017347}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="utils\mathutil.inl">
+      <Filter>utils</Filter>
+    </None>
+  </ItemGroup>
+</Project>

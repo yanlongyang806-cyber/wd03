@@ -1,0 +1,493 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="AutoGen\UI2Lib_AutoGen_1.c">
+      <Filter>Autogen</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoGen\UI2Lib_AutoGen_2.c">
+      <Filter>Autogen</Filter>
+    </ClCompile>
+    <ClCompile Include="gen\UIGen.c">
+      <Filter>gen</Filter>
+    </ClCompile>
+    <ClCompile Include="gen\UIGenBox.c">
+      <Filter>gen</Filter>
+    </ClCompile>
+    <ClCompile Include="gen\UIGenButton.c">
+      <Filter>gen</Filter>
+    </ClCompile>
+    <ClCompile Include="gen\UIGenCheckButton.c">
+      <Filter>gen</Filter>
+    </ClCompile>
+    <ClCompile Include="gen\UIGenColorChooser.c">
+      <Filter>gen</Filter>
+    </ClCompile>
+    <ClCompile Include="gen\UIGenCommands.c">
+      <Filter>gen</Filter>
+    </ClCompile>
+    <ClCompile Include="gen\UIGenDebug.c">
+      <Filter>gen</Filter>
+    </ClCompile>
+    <ClCompile Include="gen\UIGenDnD.c">
+      <Filter>gen</Filter>
+    </ClCompile>
+    <ClCompile Include="gen\UIGenExpressions.c">
+      <Filter>gen</Filter>
+    </ClCompile>
+    <ClCompile Include="gen\UIGenJail.c">
+      <Filter>gen</Filter>
+    </ClCompile>
+    <ClCompile Include="gen\UIGenLayers.c">
+      <Filter>gen</Filter>
+    </ClCompile>
+    <ClCompile Include="gen\UIGenLayoutBox.c">
+      <Filter>gen</Filter>
+    </ClCompile>
+    <ClCompile Include="gen\UIGenList.c">
+      <Filter>gen</Filter>
+    </ClCompile>
+    <ClCompile Include="gen\UIGenLoading.c">
+      <Filter>gen</Filter>
+    </ClCompile>
+    <ClCompile Include="gen\UIGenMovableBox.c">
+      <Filter>gen</Filter>
+    </ClCompile>
+    <ClCompile Include="gen\UIGenOpt.c">
+      <Filter>gen</Filter>
+    </ClCompile>
+    <ClCompile Include="gen\UIGenScrollbar.c">
+      <Filter>gen</Filter>
+    </ClCompile>
+    <ClCompile Include="gen\UIGenScrollView.c">
+      <Filter>gen</Filter>
+    </ClCompile>
+    <ClCompile Include="gen\UIGenSlider.c">
+      <Filter>gen</Filter>
+    </ClCompile>
+    <ClCompile Include="gen\UIGenSMF.c">
+      <Filter>gen</Filter>
+    </ClCompile>
+    <ClCompile Include="gen\UIGenSprite.c">
+      <Filter>gen</Filter>
+    </ClCompile>
+    <ClCompile Include="gen\UIGenStructs.c">
+      <Filter>gen</Filter>
+    </ClCompile>
+    <ClCompile Include="gen\UIGenTabGroup.c">
+      <Filter>gen</Filter>
+    </ClCompile>
+    <ClCompile Include="gen\UIGenText.c">
+      <Filter>gen</Filter>
+    </ClCompile>
+    <ClCompile Include="gen\UIGenTextArea.c">
+      <Filter>gen</Filter>
+    </ClCompile>
+    <ClCompile Include="gen\UIGenTextEntry.c">
+      <Filter>gen</Filter>
+    </ClCompile>
+    <ClCompile Include="gen\UIGenTooltips.c">
+      <Filter>gen</Filter>
+    </ClCompile>
+    <ClCompile Include="gen\UIGenTutorial.c">
+      <Filter>gen</Filter>
+    </ClCompile>
+    <ClCompile Include="gen\UIGenWebView.c">
+      <Filter>gen</Filter>
+    </ClCompile>
+    <ClCompile Include="gen\UIGenWidget.c">
+      <Filter>gen</Filter>
+    </ClCompile>
+    <ClCompile Include="gen\UIGenWindowManager.c">
+      <Filter>gen</Filter>
+    </ClCompile>
+    <ClCompile Include="HTMLViewer.c" />
+    <ClCompile Include="pub\UIFlowchart.c" />
+    <ClCompile Include="smf\smf_format.c">
+      <Filter>smf</Filter>
+    </ClCompile>
+    <ClCompile Include="smf\smf_parse.c">
+      <Filter>smf</Filter>
+    </ClCompile>
+    <ClCompile Include="smf\smf_render.c">
+      <Filter>smf</Filter>
+    </ClCompile>
+    <ClCompile Include="UIAccordion.c" />
+    <ClCompile Include="UIAutoWidget.c" />
+    <ClCompile Include="UIAuxDevice.c" />
+    <ClCompile Include="UIBarGraph.c" />
+    <ClCompile Include="UIBoxSizer.c" />
+    <ClCompile Include="UIButton.c" />
+    <ClCompile Include="UIButtonCombo.c" />
+    <ClCompile Include="UICheckButton.c" />
+    <ClCompile Include="UIColorButton.c" />
+    <ClCompile Include="UIColorCombo.c" />
+    <ClCompile Include="UIColorSlider.c" />
+    <ClCompile Include="UIComboBox.c" />
+    <ClCompile Include="UICoordinate.c" />
+    <ClCompile Include="UICore.c" />
+    <ClCompile Include="UICursor.c" />
+    <ClCompile Include="UIDialog.c" />
+    <ClCompile Include="UIDictionaryEntry.c" />
+    <ClCompile Include="UIDnD.c" />
+    <ClCompile Include="UIDropSliderTextEntry.c" />
+    <ClCompile Include="UIEditable.c" />
+    <ClCompile Include="UIExpander.c" />
+    <ClCompile Include="UIExpressionEntry.c" />
+    <ClCompile Include="UIFileBrowser.c" />
+    <ClCompile Include="UIFileNameEntry.c" />
+    <ClCompile Include="UIFilteredList.c" />
+    <ClCompile Include="UIFocus.c" />
+    <ClCompile Include="UIGraph.c" />
+    <ClCompile Include="UIGraphNode.c" />
+    <ClCompile Include="UIGridSizer.c" />
+    <ClCompile Include="UILabel.c" />
+    <ClCompile Include="UIList.c" />
+    <ClCompile Include="UIMenu.c" />
+    <ClCompile Include="UIMessageEntry.c" />
+    <ClCompile Include="UIMinimap.c" />
+    <ClCompile Include="UIModalDialog.c" />
+    <ClCompile Include="UIPairedBox.c" />
+    <ClCompile Include="UIPane.c" />
+    <ClCompile Include="UIProgressBar.c" />
+    <ClCompile Include="UIRadioButton.c" />
+    <ClCompile Include="UIRectangularSelection.c" />
+    <ClCompile Include="UIScrollbar.c" />
+    <ClCompile Include="UISeparator.c" />
+    <ClCompile Include="UISerialize.c" />
+    <ClCompile Include="UISizer.c" />
+    <ClCompile Include="UISkin.c" />
+    <ClCompile Include="UISlider.c" />
+    <ClCompile Include="UISliderTextEntry.c" />
+    <ClCompile Include="UISMFView.c" />
+    <ClCompile Include="UISpinner.c" />
+    <ClCompile Include="UISpinnerEntry.c" />
+    <ClCompile Include="UISprite.c" />
+    <ClCompile Include="UIStatusWindow.c" />
+    <ClCompile Include="UIStyle.c" />
+    <ClCompile Include="UITabs.c" />
+    <ClCompile Include="UITexSplit.c" />
+    <ClCompile Include="UITextArea.c" />
+    <ClCompile Include="UITextEntry.c" />
+    <ClCompile Include="UITextureAssembly.c" />
+    <ClCompile Include="UITextureEntry.c" />
+    <ClCompile Include="UITimeline.c" />
+    <ClCompile Include="UITooltips.c" />
+    <ClCompile Include="UITree.c" />
+    <ClCompile Include="UITreechart.c" />
+    <ClCompile Include="UIWebView.c" />
+    <ClCompile Include="UIWidgetTree.c" />
+    <ClCompile Include="UIWindow.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\UtilitiesLib\language\Message.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UtilitiesLib\utils\structInternals.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="gen\UIGenBox.h">
+      <Filter>gen</Filter>
+    </ClInclude>
+    <ClInclude Include="gen\UIGenButton.h">
+      <Filter>gen</Filter>
+    </ClInclude>
+    <ClInclude Include="gen\UIGenCheckButton.h">
+      <Filter>gen</Filter>
+    </ClInclude>
+    <ClInclude Include="gen\UIGenDnD.h">
+      <Filter>gen</Filter>
+    </ClInclude>
+    <ClInclude Include="gen\UIGenLayoutBox.h">
+      <Filter>gen</Filter>
+    </ClInclude>
+    <ClInclude Include="gen\UIGenMovableBox.h">
+      <Filter>gen</Filter>
+    </ClInclude>
+    <ClInclude Include="gen\UIGenPrivate.h">
+      <Filter>gen</Filter>
+    </ClInclude>
+    <ClInclude Include="gen\UIGenScrollView.h">
+      <Filter>gen</Filter>
+    </ClInclude>
+    <ClInclude Include="gen\UIGenSlider.h">
+      <Filter>gen</Filter>
+    </ClInclude>
+    <ClInclude Include="gen\UIGenSMF.h">
+      <Filter>gen</Filter>
+    </ClInclude>
+    <ClInclude Include="gen\UIGenTabGroup.h">
+      <Filter>gen</Filter>
+    </ClInclude>
+    <ClInclude Include="gen\UIGenTextArea.h">
+      <Filter>gen</Filter>
+    </ClInclude>
+    <ClInclude Include="gen\UIGenWebView.h">
+      <Filter>gen</Filter>
+    </ClInclude>
+    <ClInclude Include="gen\UIGenWindowManager.h">
+      <Filter>gen</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\HTMLViewer.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\smf_render.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UIAccordion.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UIAutoWidget.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UIAuxDevice.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UIBarGraph.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UIBoxSizer.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UIButton.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UIButtonCombo.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UICheckButton.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UIColorButton.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UIColorCombo.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UIColorSlider.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UIComboBox.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UICoordinate.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UICore.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UIDialog.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UIDictionaryEntry.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UIDnD.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UIDropSliderTextEntry.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UIEditable.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UIExpander.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UIExpressionEntry.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UIFileBrowser.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UIFileNameEntry.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UIFilteredList.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UIFlowchart.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UIFocus.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UIGen.h">
+      <Filter>gen</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UIGenColorChooser.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UIGenJail.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UIGenList.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UIGenScrollbar.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UIGenSprite.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UIGenText.h">
+      <Filter>gen</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UIGenTextEntry.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UIGenTutorial.h">
+      <Filter>gen</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UIGenWidget.h">
+      <Filter>gen</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UIGraph.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UIGraphNode.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UIGridSizer.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UIInternal.h" />
+    <ClInclude Include="pub\UILabel.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UILib.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UIList.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UIMenu.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UIMessageEntry.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UIMinimap.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UIModalDialog.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UIPairedBox.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UIPane.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UIProgressBar.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UIRadioButton.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UIRectangularSelection.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UIScrollbar.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UISeparator.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UISerialize.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UISizer.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UISkin.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UISlider.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UISliderTextEntry.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UISMFView.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UISpinner.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UISpinnerEntry.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UISprite.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UIStatusWindow.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UIStyle.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UITabs.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UITexSplit.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UITextArea.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UITextEntry.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UITextureAssembly.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UITextureEntry.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UITimeline.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UITooltips.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UITree.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UITreechart.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UIWebView.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UIWidgetTree.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\UIWindow.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="smf\smf_format.h">
+      <Filter>smf</Filter>
+    </ClInclude>
+    <ClInclude Include="smf\smf_parse.h">
+      <Filter>smf</Filter>
+    </ClInclude>
+    <ClInclude Include="UI2Lib_AnonAutoRunIncludes.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Autogen">
+      <UniqueIdentifier>{8680e9a5-0e8d-4108-9076-5f54afd0b6b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExternHeaders">
+      <UniqueIdentifier>{7bda9fb8-9a4c-45b0-a73d-9e5d7939055f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gen">
+      <UniqueIdentifier>{2da7ef13-76b5-4745-9782-5af558317225}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pub">
+      <UniqueIdentifier>{1e591cf3-eb20-4671-9dca-27d568b5112f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="smf">
+      <UniqueIdentifier>{49b5611e-c5f1-486a-8628-ad3bf9798b4e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

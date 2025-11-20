@@ -1,0 +1,27 @@
+h4.SetRegionSkyOverride1 (AccessLevel 9) [Notes|Command_SetRegionSkyOverride1_WorldLib]
+*No Return*
+*Parameter 1: region_name (string)*
+*Parameter 2: fade_percent (float)*
+*Parameter 3: fade_rate (float)*
+*Parameter 4: sky1 (string)*
+No comment provided
+
+h4.SetRegionSkyOverride2 (AccessLevel 9) [Notes|Command_SetRegionSkyOverride2_WorldLib]
+*No Return*
+*Parameter 1: region_name (string)*
+*Parameter 2: fade_percent (float)*
+*Parameter 3: fade_rate (float)*
+*Parameter 4: sky1 (string)*
+*Parameter 5: sky2 (string)*
+No comment provided
+
+h4.SetRegionSkyOverride3 (AccessLevel 9) [Notes|Command_SetRegionSkyOverride3_WorldLib]
+*No Return*
+*Parameter 1: region_name (string)*
+*Parameter 2: fade_percent (float)*
+*Parameter 3: fade_rate (float)*
+*Parameter 4: sky1 (string)*
+*Parameter 5: sky2 (string)*
+*Parameter 6: sky3 (string)*
+No comment provided
+

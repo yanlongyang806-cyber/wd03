@@ -1,0 +1,144 @@
+h4.MapSnapIterations (AccessLevel 9) [Notes|Command_MapSnapIterations_WorldLib]
+*Parameter 1: value (int)*
+No comment provided
+
+h4.bcnNoLoad (AKA noAI) (AccessLevel 9) [Notes|Command_bcnNoLoad_WorldLib]
+*Parameter 1: value (int)*
+No comment provided
+
+h4.bcnNoLoadIfSpace (AccessLevel 9) [Notes|Command_bcnNoLoadIfSpace_WorldLib]
+*Parameter 1: value (int)*
+No comment provided
+
+h4.noPatchSync (AccessLevel 9) [Notes|Command_noPatchSync_WorldLib]
+*Parameter 1: d (int)*
+No comment provided
+
+h4.bcHide (AccessLevel 9) [Notes|Command_bcHide_WorldLib]
+*Parameter 1: hide (int)*
+No comment provided
+
+h4.bcIgnoreInputs (AccessLevel 9) [Notes|Command_bcIgnoreInputs_WorldLib]
+*Parameter 1: unused (int)*
+No comment provided
+
+h4.bcCPULimit (AccessLevel 9) [Notes|Command_bcCPULimit_WorldLib]
+*Parameter 1: limit (int)*
+No comment provided
+
+h4.bcUseGimme (AccessLevel 9) [Notes|Command_bcUseGimme_WorldLib]
+*Parameter 1: d (int)*
+No comment provided
+
+h4.beaconUseLocal (AccessLevel 9) [Notes|Command_beaconUseLocal_WorldLib]
+*Parameter 1: d (int)*
+No comment provided
+
+h4.useMasterC (AccessLevel 9) [Notes|Command_useMasterC_WorldLib]
+*Parameter 1: mastername (string)*
+No comment provided
+
+h4.usePatchC (AccessLevel 9) [Notes|Command_usePatchC_WorldLib]
+*Parameter 1: patchname (string)*
+No comment provided
+
+h4.beaconautoserver (AccessLevel 9) [Notes|Command_beaconautoserver_WorldLib]
+*Parameter 1: not_used (int)*
+No comment provided
+
+h4.beaconclient (AccessLevel 9) [Notes|Command_beaconclient_WorldLib]
+*Parameter 1: not_used (int)*
+No comment provided
+
+h4.beaconmasterserver (AccessLevel 9) [Notes|Command_beaconmasterserver_WorldLib]
+*Parameter 1: not_used (int)*
+No comment provided
+
+h4.beaconmastername (AccessLevel 9) [Notes|Command_beaconmastername_WorldLib]
+*Parameter 1: servername (string)*
+No comment provided
+
+h4.beaconpseudoauto (AccessLevel 9) [Notes|Command_beaconpseudoauto_WorldLib]
+*Parameter 1: not_used (int)*
+No comment provided
+
+h4.beaconrequestserver (AccessLevel 9) [Notes|Command_beaconrequestserver_WorldLib]
+*Parameter 1: not_used (int)*
+No comment provided
+
+h4.beaconserver (AccessLevel 9) [Notes|Command_beaconserver_WorldLib]
+*Parameter 1: not_used (int)*
+No comment provided
+
+h4.beaconservername (AccessLevel 9) [Notes|Command_beaconservername_WorldLib]
+*Parameter 1: servername (string)*
+No comment provided
+
+h4.beaconworkduringuseractivity (AccessLevel 9) [Notes|Command_beaconworkduringuseractivity_WorldLib]
+*Parameter 1: on (int)*
+No comment provided
+
+h4.bcnReqProcessProject (AccessLevel 9) [Notes|Command_bcnReqProcessProject_WorldLib]
+*Parameter 1: projectName (string)*
+No comment provided
+
+h4.bcNoPS (AccessLevel 9) [Notes|Command_bcNoPS_WorldLib]
+*Parameter 1: d (int)*
+No comment provided
+
+h4.bcNoUpdate (AccessLevel 9) [Notes|Command_bcNoUpdate_WorldLib]
+*Parameter 1: d (int)*
+No comment provided
+
+h4.testBladeFile (AccessLevel 9) [Notes|Command_testBladeFile_WorldLib]
+*Parameter 1: unused (int)*
+No comment provided
+
+h4.useLocalSrc (AccessLevel 9) [Notes|Command_useLocalSrc_WorldLib]
+*Parameter 1: d (int)*
+No comment provided
+
+h4.useMasterS (AccessLevel 9) [Notes|Command_useMasterS_WorldLib]
+*Parameter 1: mastername (string)*
+No comment provided
+
+h4.usePatchS (AccessLevel 9) [Notes|Command_usePatchS_WorldLib]
+*Parameter 1: patchname (string)*
+No comment provided
+
+h4.beaconLF (AccessLevel 9) [Notes|Command_beaconLF_WorldLib]
+*Parameter 1: d (int)*
+No comment provided
+
+h4.bcSharded (AccessLevel 9) [Notes|Command_bcSharded_WorldLib]
+*Parameter 1: d (int)*
+Tells the beacon client it's sharded, but doesn't give it ids and stuff
+
+
+h4.beaconLocal (AccessLevel 9) [Notes|Command_beaconLocal_WorldLib]
+*Parameter 1: d (int)*
+Tells the beaconserver not to start/use patch services and run clients from src
+
+
+h4.doNotTakePhotos (AccessLevel 9) [Notes|Command_doNotTakePhotos_WorldLib]
+*Parameter 1: value (int)*
+No comment provided
+
+h4.terrainIntentiallyFreeLeakedMemory (AccessLevel 9) [Notes|Command_terrainIntentiallyFreeLeakedMemory_WorldLib]
+No comment provided
+
+h4.terrainIntentionallyLeakAllMemory (AccessLevel 9) [Notes|Command_terrainIntentionallyLeakAllMemory_WorldLib]
+*Parameter 1: buffer_size (int)*
+No comment provided
+
+h4.terrainIntentionallyLeakMemory (AccessLevel 9) [Notes|Command_terrainIntentionallyLeakMemory_WorldLib]
+*Parameter 1: size (int)*
+No comment provided
+
+h4.wcTestMapReloadCRC (AccessLevel 9) [Notes|Command_wcTestMapReloadCRC_WorldLib]
+No comment provided
+
+h4.ClientSetVisibleChildAll (AccessLevel 0) [Notes|Command_ClientSetVisibleChildAll_WorldLib]
+*Parameter 1: child_idx (int)*
+No comment provided
+

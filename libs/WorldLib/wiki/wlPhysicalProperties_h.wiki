@@ -1,0 +1,26 @@
+{anchor:PhysicalProperties}
+
+_auto-generated from I:\Night\Night\src\libs\WorldLib\pub\wlPhysicalProperties.h_
+
+h3.PhysicalProperties
+
+*countAs* < string >
+-	What this physical property is treated as for FX/Civ/Etc.
+
+*Reverb* < float >
+-	How much this material occludes reverb reflections
+
+*Dampen* < float >
+-	How much this material occludes sound
+
+*Restitution* < float >
+-	[0.0 - 1.0] How much this material bounces in a physics simulation
+
+*SFriction* < float >
+-	[0.0 - Inf] Static friction is how hard it is to move an object when it is still. Values above 1.0 mean very sticky objects.
+
+*DFriction* < float >
+-	[0.0 - 1.0] Dynamic friction is how hard it is to move an object when it is moving
+
+*Civilian*
+-	Which types of civilians can walk on this

@@ -1,0 +1,4 @@
+h4.audioShowAnimBits (int) - (AccessLevel 9) [Notes|Command_audioShowAnimBits_WorldLib]
+Writes audio debug info to the screen
+
+

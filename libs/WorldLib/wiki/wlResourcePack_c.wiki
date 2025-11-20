@@ -1,0 +1,12 @@
+{anchor:ResourcePackParsed}
+
+_auto-generated from I:\Night\Night\src\libs\WorldLib\wlResourcePack.c_
+
+h3.Resource Pack File Doc
+
+*packname* < string >
+-	A unique name for the pack that will be referenced by the map files.
+
+*Folder* < string1 >
+*Folder* < string2 >
+-	Folders to include in the pack (recursive).

@@ -1,0 +1,24 @@
+h4.ContainerUnloadMaxRate (int) - (AccessLevel 9) [Notes|Command_ContainerUnloadMaxRate_UtilitiesLib]
+Maximum number of stale containers to unload per second
+
+
+h4.ContainerUnloadProcessTime (int) - (AccessLevel 9) [Notes|Command_ContainerUnloadProcessTime_UtilitiesLib]
+Maximum time to spend unloading stale containers per second (in milliseconds)
+
+
+h4.ContainerUnloadTypeProcessTime (int) - (AccessLevel 9) [Notes|Command_ContainerUnloadTypeProcessTime_UtilitiesLib]
+Maximum time to spend unloading stale containers of one type per second (in milliseconds)
+
+
+h4.StaleContainerCheckInterval (int) - (AccessLevel 9) [Notes|Command_StaleContainerCheckInterval_UtilitiesLib]
+Interval between stale container checks (changes take effect after running DeactivateStaleContainerCleanup and then ActivateStaleContainerCleanup)
+
+
+h4.StaleContainerProcessTime (int) - (AccessLevel 9) [Notes|Command_StaleContainerProcessTime_UtilitiesLib]
+Maximum time to spend queueing stale containers for unloading each check interval (in milliseconds)
+
+
+h4.StaleContainerTypeProcessTime (int) - (AccessLevel 9) [Notes|Command_StaleContainerTypeProcessTime_UtilitiesLib]
+Maximum time to spend queueing stale containers of one type for unloading each check interval (in milliseconds)
+
+

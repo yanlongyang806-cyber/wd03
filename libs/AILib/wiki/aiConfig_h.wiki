@@ -1,0 +1,699 @@
+{anchor:AIConfig}
+
+_auto-generated from I:\Night\Night\src\libs\AILib\pub\aiConfig.h_
+
+h3.AIConfig
+
+*inheritConfigs* < string1 >
+*inheritConfigs* < string2 >
+-	AIConfigs that this inherits from - applied in order, so later ones override earlier
+
+*TargetingRequires*
+-	Expression that returns either true or false. If this expression returns false the target
+-	will be skipped for targeting (i.e. be effectively untargetable)
+
+*TargetingRating*
+-	Expression that returns a number (which will then get normalized between the min and max.
+-	After clamping and scaling according to the danger factors, this number gets included in
+-	aggro calculations exactly like the other aggro factors
+
+*offtickActions* (multiple allowed)
+-	Cascading checks to allow expressions to be run off tick
+
+*\{*
+-	*name* < string >
+--	The name of the AIOfftickConfig, used for description and inheritance
+-	*Initialize*
+--	Run only once at the first AI tick, after the first FSM tick; use for initialization!
+-	*CoarseCheck*
+--	Determines if the fineCheck should be executed every frame
+-	*FineCheck*
+--	Determines if the Action should be executed
+-	*Action*
+--	Expression which is run if fineCheck is true
+-	*maxCount* < int >
+--	Tells the AI to execute the action only N times
+-	*maxPerCombat* < int >
+--	Tells the AI to execute the action only  N times per combat
+-	*maxPerThink* < int >
+--	Once the action is fired N times, don't do the finecheck again till the coarsecheck passes next AI tick
+-	*runAITick*
+--	Tells the AI to execute the FSM when the FineCheck goes off, in addition to the action
+-	*combatOnly*
+--	Only run action in combat
+
+*\}*
+
+*targetingRatingMin* < float >
+-	The minimum number the targetingRating expression's result will get normalized to. If the
+-	min is 2, a value of 2 will mean a 0 getting passed in to the danger factors for scaling
+
+*targetingRatingMax* < float >
+-	The maximum number the targetingRating expression's result will get normalized to. If the
+-	max is 4, a value of 4 will mean a 1 getting passed in to the danger factors for scaling
+
+*prefMinRange* < float >
+-	The minimum range that a critter will try to stay at
+
+*prefMaxRange* < float >
+-	The maximum range that a critter will try to stay at
+
+*prefMinRangeMoveTime* < float >
+-	NOT IMPLEMENTED: The time until a critter will move in from a range farther than his
+-	preferred range
+
+*prefMaxRangeMoveTime* < float >
+-	The time until a character will run away when closer than his preferred range
+
+*grievedHealingLevels* < float1 >
+*grievedHealingLevels* < float2 >
+-	When a critter leashes, it will heal up to the next ratio defined in this array
+-	E.g., 33, 66, 100 will make a critter at 50% health heal to 66%
+
+*combatMaxReinforceDist* < float >
+-	The maximum range that a team member will look for reinforcements
+
+*combatMaxProtectDist* < float >
+-	This is the "leash" range that controls how far away a foe is allowed to be before
+-	he becomes an invalid attack target. Default is 300 ft
+
+*combatMaxProtectDistTeamPriority* < int >
+-	if non-zero, this will make the team use the combatMaxProtectDist of the highest priority
+-	if there is a tie, will use the greatest combatMaxProtectDist
+
+*combatMaxRunAwayCount* < int >
+-	This is the number of times the critter will back away to range per fight
+
+*combatEngagedRange* < float >
+-	If an enemy gets within this radius, stop trying to run away
+
+*combatMinimumThrottlePercentage* < float >
+-	The minimum throttle percentage the critter should maintain during combat
+
+*combatMaximumYVariance* < float >
+-	The maximum Y range this critter will pick to offset itself from the player
+
+*coherencyCombatHoldDist* < float >
+-	The maximum distance a team member will be allowed to move from their leash distance
+
+*maxRunAwayAngle* < float >
+-	This is the angle centered directly away from the attack target a critter will look
+-	for paths to run away (so that cornering someone actually corners them). Default is 180 degrees
+
+*healingActionWeightMin* < float >
+-	The minimum weight for a healing action relative to buffing or attacking. Only applies if
+-	this critter has usable healing powers. The healing factor is scaled between min and max
+-	based on health of the target. Default is 0.5
+
+*healingActionWeightMax* < float >
+-	The maximum weight for a healing action relative to buffing or attacking. Only applies if
+-	this critter has usable healing powers. The healing factor is scaled between min and max
+-	based on health of the target. Default is 2
+
+*inCombatHPHealThreshold* < float >
+-	threshold when deciding to heal in combat
+
+*inCombatShieldHealThreshold* < float >
+-	threshold when deciding to heal shield in combat
+
+*ooCombatHPHealThreshold* < float >
+-	threshold when deciding to heal when out of combat
+
+*ooCombatShieldHealThreshold* < float >
+-	threshold when deciding to heal shield when out of combat
+
+*teamAssignmentActionWeight* < float >
+-	
+
+*attackActionWeight* < float >
+-	The weight for attacking as opposed to healing or buffing. Default is 1
+
+*buffActionWeight* < float >
+-	The weight for buffing as opposed to healing or attacking. Default 1
+
+*controlPowerActionWeight* < float >
+-	The weight for doing a control power as opposed to buffing, attacking, etc. Default is 1
+
+*combatJobSearchWeight* < float >
+-	The weight for searching for a combat job as opposed to bugging, attacking, etc. Default is 1
+
+*preferredAITag* < string >
+-	Preferred power type - critter will use powers tagged with this before other powers
+
+*fov* < float >
+-	Field of view of the critter, controlling the angle (centered directly forward) in which
+-	the critter can see. Note there is also the 10 feet "360 fov" area in which critters are
+-	guaranteed to be able to notice you
+
+*botheredAggroHistoryTime* < int >
+-	Time to calculate average aggro over to control aggroing attacktargets. Default is 4 sec
+
+*botheredAggroHistoryThreshold* < float >
+-	Threshold average calculated aggro has to be over to consider an enemy a worthy attack
+-	target (unless you're force bothered by other means). Default is 0.054
+
+*botheredDropAggroHistoryThreshold* < float >
+-	Threshold average calculated aggro has to be below to lose aggro. Default is 0.03
+
+*grievedRangedAttackTime* < float >
+-	Time after which the critter will give up trying to get into range and start doing ranged
+-	attacks instead. Default is 10 sec
+
+*grievedRecoveryTime* < float >
+-	Time to do ranged attacks when you feel grieved. After this runs out the critter will
+-	start chasing the player again. Default is 10 sec
+
+*spawnAggroTime* < float >
+-	Time until you will aggro people
+
+*stareDownTime* < float >
+-	Time from when someone enters your perception radius until you consider them a valid target
+
+*ownerAggroDistributionInitial* < float >
+-	Amount of aggro that is instantly transferred to the pet's owner when a pet attacks something
+
+*invisibleAttackTargetDuration* < float >
+-	How long after your target goes invisible that you allow for running to his last known pos
+
+*targetMemoryDuration* < float >
+-	Number of seconds the critter will "remember" a target it can't see anymore
+
+*aggroYDiffCap* < float >
+-	Maximum y difference to allow possible targets to be evaluated for initial aggro
+
+*awareRatio* < float >
+-	TODO: Remove the old names
+-	Sets the ratio of aware radius to aggro radius, default = 2/3rds
+
+*overrideAggroRadius* < float >
+-	Specific override to the powers perception radius number. Default is 0 feet (off)
+
+*overrideProximityRadius* < float >
+-	Specific override to the powers proximity radius number. Default is 0 feet (off)
+
+*socialAggroPrimaryDist* < float >
+-	Overrides regionrules to specify the primary social aggro dist
+
+*socialAggroSecondaryDist* < float >
+-	Overrides regionrules to specify the primary social aggro dist
+
+*staredownAdditiveAggroRadius* < float >
+-	When in staredown, an additional distance that it added to the aggro radius so that the aggroing entity
+-	must step back the aggro radius + this radius to get out of staredown
+
+*seekTargetOverrideAggroRadius* < float >
+-	if non-zero, will apply this override aggro radius to critters vs specificly set entities
+
+*leashRangeCurrentTargetDistAdd* < float >
+-	The range that is used to add to the leash range if the target is the current target
+
+*leashRangePreferredTargetDistAdd* < float >
+-	The additional distance added to our leash when the target is our preferred target
+
+*outOfFOVAggroRadius* < float >
+-	the range when out of FOV that the critter will aggro. Defaults to 10
+
+*globalPowerRecharge* < float >
+-	Time to wait between executing powers. Default is 0 sec (off)
+-	the time is measured from when the ai first queues the power
+
+*randomizedPowerDelay* < float >
+-	Time randomized power delay - when AI decides to use a power, it adds [0,this] to the time.  
+-	Default is 0.75.
+
+*combatTokenRateSelf* < float >
+-	Fraction of an combat token generated per second for myself (Default=0)
+
+*combatTokenRateSocial* < float >
+-	Fraction of an combat token generated per second for team (including self) (Default = 1/6)
+
+*dangerFactors*
+-	Factors controlling how much to scale individual aggro factors to decide total aggro
+
+*\{*
+-	*distFromMe* < float >
+--	The multiplier that controls how heavy to weigh distance from the critter to its target for aggro calculation. Defaults to 0.5
+-	*personalSpace* < float >
+--	The multiplier that controls how heavy to weigh distance from the critter to its target for aggro calculation. Defaults to 3
+-	*distFromGuardPoint* < float >
+--	The multiplier that controls how heavy to weigh distance from the critter to its guard point (by default team spawn location) for aggro calculation. Defaults to 0.2
+-	*damageToMe* < float >
+--	The multiplier that controls how heavy to weigh damage done to the critter for aggro calculation. Defaults to 4
+-	*damageToFriends* < float >
+--	The multiplier that controls how heavy to weigh damage done to friends for aggro calculation. Defaults to 1
+-	*statusToMe* < float >
+--	The multiplier that controls how heavy to weigh status effects done to the critter for aggro calculation. Defaults to 2
+-	*statusToFriends* < float >
+--	The multiplier that controls how heavy to weigh status effects done to friends for aggro calculation. Defaults to 1
+-	*healingEnemies* < float >
+--	The multiplier that controls how heavy to weigh healing actions against enemies for aggro calculation. Defaults to 1
+-	*targetStickiness* < float >
+--	The multiplier that controls how heavy to weigh the target already being your current attack target. Defaults to 0
+-	*teamOrders* < float >
+--	The multiplier that controls how heavy to weigh which target your team assigned you. Defaults to 0.4
+-	*threatToMe* < float >
+--	The multiplier that controls how heavy to weigh threat done to the critter for aggro calculation. Defaults to 1
+-	*threatToFriends* < float >
+--	The multiplier that controls how heavy to weigh threat done to friends for aggro calculation. Defaults to 0
+-	*targetingRatingExpr* < float >
+--	The multiplier that controls how heavy to weigh the results of the targeting rating expression for aggro calculation. Defaults to 0
+
+*\}*
+
+*dangerScalars*
+-	Scalars controlling how much to scale overall aggro
+
+*\{*
+-	*leashDecayScaleMin* < float >
+--	The scalar that controls how much to scale the total aggro to making leashing seem more natural. Defaults to [0, 1]
+
+*\}*
+
+*aggro*
+-	aggro2 related config
+
+*\{*
+-	*OverrideAggroDef* < AIAggroDefRef >
+--	for aggro2, the aggro def that will be used, otherwise will use "default"
+-	*override* (multiple allowed)
+-	*\{*
+--	*PostScale* < float >
+---	an override postScale of 0 will be ignored and use the value in the aiAggroFile instead
+---	if you wish to disable the bucket, use the field Enabled
+--	*Enabled*
+---	if this field is enabled or not, defaults to enabled
+-	*\}*
+
+*\}*
+
+*movementParams*
+-	Values controlling movement
+
+*overrideMovementSpeed* < float >
+-	Overrides critter's movement speed
+
+*overrideMovementTurnRate* < float >
+-	Overrides critter's movement turn rate (supported for flight only) (0 means insta-turn)
+
+*overrideMovementFriction* < float >
+-	Overrides critter's movement friction
+
+*overrideMovementTraction* < float >
+-	Overrides critter's movement traction
+
+*distBeforeWaypointToSpline* < float >
+-	Determines how far ahead of a shortcut to attempt pseudospline
+
+*movementYOffset* < float >
+-	Makes movement targets automatically offset by this amount vertically
+
+*jumpHeightCostMult* < float >
+-	How much the AI dislikes jumping - this is a multiplier on the height to jump.  Default 2
+
+*jumpCostInFeet* < float >
+-	How much the AI dislikes jumping - this is 'virtual distance'.  Defaults to 10.
+
+*jumpDistCostMult* < float >
+-	How much the AI dislikes jumping - this is the multiplier on the XZ dist.  Default is 2.
+
+*minimumThrottlePercentage* < float >
+-	Forces movement speed to be faster than the given throttle percentage
+
+*dontRotate*
+-	Disables movement based rotation (independent of powers rotating the critter to face its target)
+
+*immobile*
+-	Complete disables movement for this entity
+
+*alwaysFly*
+-	Forces flying to always be used, even if the power is able to be turned off
+
+*neverFly*
+-	Forces flying to be ignored, even if the power is able to be turned on
+
+*collisionlessMovement*
+-	Ignores collision for movement code (does not actually turn the entity noColl)
+
+*noWorldColl*
+-	Ignores world collision
+
+*continuousCombatMovement*
+-	Makes the critter always move during combat
+
+*noContinousCombatFacing*
+-	When paired with continuous combat movement, disables automatic facing at the end of movement
+-	Used for continuous movement for ground critters, fixes a jittery movement bug
+
+*meleeCombatMovement*
+-	If set move like a melee critter (either offset movement or follow, depending on whether
+-	meleeMovementOffset is set)
+
+*meleeMovementOffset*
+-	If set try do a follow offset at the specified range instead of following when
+-	doing melee movement
+
+*meleeMovementUseRange*
+-	if doing meleeCombatMovement If set if following an entity, stop if within the preferred range
+-	is trumped by meleeMovementOffset
+
+*pitchWhenMoving*
+-	Makes the critter pitch up or down when moving vertically
+
+*bankWhenMoving*
+-	Makes the critter not bank while flying
+
+*teleportDisabled*
+-	disables the critter from teleporting due to being stuck
+
+*ignoreAvoid*
+-	an aiConfig override, AI ignores all avoid volumes
+
+*combatMovementParams*
+-	Values controlling combat movement
+
+*arcDistance* < float >
+-	Try to pick locations near your current one, but not your current one
+
+*clumping* < float >
+-	Try to pick locations that are full of others
+
+*softAvoid* < float >
+-	Try to pick locations far from soft avoid volumes
+
+*avoidOccupiedPositions* < float >
+-	Try to avoid any combat position which is occupied by some other entity.
+
+*stayTogether* < float >
+-	Try to pick locations that are near the average position of your own team
+
+*flanking* < float >
+-	Try to pick locations that are opposite those with enemies
+
+*targetShields* < float >
+-	Try to move such that you're in the weakest shield arc of your target
+
+*turnWeakShieldTo* < float >
+-	Try to move such that your weakest shield is turned to your target
+
+*turnStrongShieldTo* < float >
+-	Try to move such that your stronger shields are turned to your target
+
+*turnWeakShieldToMostDamage* < float >
+-	Try to move such that your weakest shield is turned to the enemy who has done the most damage
+
+*preferArcLimitedLocations* < float >
+-	Try to move such that your arc-limited powers are usable
+
+*circlingManeuvers* < float >
+-	Try to move to spaces opposite, but not behind your opponent (90-135 deg)
+
+*currentLocation* < float >
+-	Try to move to the current space
+
+*neighborLocation* < float >
+-	Try to move to an adjacent space
+
+*yOffset* < float >
+-	Try to move such that your Y is different (suggested [-5 - 0])
+
+*softCoherency* < float >
+-	
+
+*randomWeight* < float >
+-	Number to randomize adding to all positions (i.e. [0-#])
+
+*positionChangeTime* < int >
+-	How often to force a combat position re-evaluation
+
+*timedPositionChanges*
+-	If true, instead of evaluating the current position to see if it is disliked,
+-	do a move every <PositionChangeTime> seconds, regardless of current position like
+-	Not to be confused with periodicMovementUpdate, which still allows control by dislike.
+
+*combatPositioningUseCoherency*
+-	When doing combat positioning, respect coherency
+
+*combatDontFaceTarget*
+-	When doing combat, do not turn to face target
+
+*periodicMovementUpdate*
+-	Periodically force a combat movement update
+-	Not to be confused with timedPositionChanges, which ignores control by dislike.
+
+*skipPositionRevaluation*
+-	skips the positions reevaluation part of the combat movement. Will mainly only move if out of range
+
+*shieldHealWeight* < float >
+-	The weight each shield point is valued at, used to determine importance of shields
+-	relative to health points
+
+*ressurectWeight* < float >
+-	the weight at which a dead teammate is valued at to determine the importance relative to 
+-	someone who needs healing. Healing has a max of ~1 for someone who is almost dead
+
+*initialAggroWaitTimeMin* < float >
+-	When a team goes into combat, the times used to calculate how long it will take before they respond
+
+*initialAggroWaitTimeRange* < float >
+-	When a team goes into combat, the times used to calculate how long it will take before they respond
+
+*ignoreLevelDifference*
+-	Makes this entity ignore the normal "don't attack higher level players" behavior
+
+*skipLeashing*
+-	Skips the leashing part of combat
+-	Disqualify enemies for being outside of leashing range, but
+-	don't go into AITEAM_COMBAT_STATE_LEASH
+
+*ignoreMaxProtectRadius*
+-	Turns off leashing based on CombatMaxProtectDist entirely
+
+*addLegalTargetWhenTargeted*
+-	Makes the critter add legal team targets for every opponent critter that targets it
+-	NOTE: This setting will apply to everyone on the team if it is turned on for any of the
+-	critters on the team at all
+
+*addLegalTargetWhenMemberAttacks*
+-	Makes the critter add legal team targets for opponents that are targeted BY the team
+-	Generally only useful when there is a player on the team to initiate combat
+
+*useHealBuffAssignmentsOOC*
+-	Turned on for team if any member on the team has this set
+-	When out of combat, the team will continue to perform healing/buff assignments
+
+*dontDoInCombatRezzing*
+-	Whether or not rezzing in combat is allowed
+
+*teamForceAttackTargetOnAggro*
+-	using the team attack target assignments, when the team is first aggro'ed force the ai's 
+-	attack target to be what the team would assign them
+
+*socialAggroAlwaysAddTeamToCombatTeam*
+-	if true, will add the whole aiteam to the combat team.
+
+*peMovementModeTypes* < NONE | SPRINT | AIM | ROLL | SAFETY_TELEPORT | COUNT > [#AIMovementModeType]
+
+*peMovementModeTypes* < NONE | SPRINT | AIM | ROLL | SAFETY_TELEPORT | COUNT > [#AIMovementModeType]
+
+-	A list of movement mode types available to this ai
+
+*movModeSafetyTeleport*
+-	safety teleport movement mode data
+
+*\{*
+-	*StrandedDist* < float >
+--	the distance at which the stranded checks begin
+-	*StrandedDistMax* < float >
+--	once we cross this distance, auto-teleport
+-	*StrandedTimeout* < float >
+--	after starting the stranded checking, the timeout before the entity teleports
+-	*AvgDistPerSec* < float >
+--	the average distance per second that the entity is expect to gain on the movement target
+-	*MinTimeCheckingStranded* < float >
+--	amount of time must pass before allowed to teleport
+
+*\}*
+
+*sharedAggroScale* < float >
+-	when sharing damage/threat how much the damage gets scaled before sending it
+
+*CombatRoleDef* < string >
+-	the default combat role definition that will be used.
+-	note that the first entity with a valid combatRole def that is added to the team will set the 
+-	combat role def for the team.
+
+*CombatRoleName* < string >
+-	The role within the combat role def that this will use
+-	this is overridden by any role passed into aiInit
+
+*dontAllowJobs*
+-	This critter won't be given any jobs
+
+*dontChangeAttackTarget*
+-	Keeps this entity from changing attack targets unless forcibly assigned
+
+*dontReinforce*
+-	Determines whether the critter will consider or be considered reinforcement
+
+*dontRandomizePowerUse*
+-	Tells the critter not to randomize power activation time - normally will add up to 0.75s variation to all powers
+-	This should generally be only on unique critters, otherwise they will tend to sync power usage
+
+*dontUsePowers*
+-	Move to set up but don't actually execute attack powers. This is useful for temporarily running away or something related
+
+*dontErrorOnLowPerception*
+-	Turns off the warning about excessively low perception/awareness radii
+
+*dontAggroInAggroRadius*
+-	Turns off aggroing things based on perception radius
+
+*dontAggroAtAll*
+-	Completely turn off aggro, saves CPU on totally passive objects
+
+*dontDoGrievedHealing*
+-	Controls whether the critter does not do run away healing
+
+*useCombatPositionSlots*
+-	Controls whether the critter uses the combat position slots
+
+*useCoherencyTargetRestriction*
+-	uses the coherency values for the targeting restriction
+-	this only applies if the leash type is set to something other than AI_LEASH_TYPE_DEFAULT
+
+*addPowersRangeToLeashDist*
+-	adds the powers range (preffered distances in hostile targeting) when computing leash distance
+
+*roamingLeash*
+-	Makes the critter leash off of his current position when entering combat instead of
+-	his spawn point
+
+*allowCombatWhileUntargetable*
+-	Allows targeting of enemies while the critter itself is untargetable
+
+*controlledPet*
+-	Makes this pet controllable through the UI
+
+*alwaysScarePedestrians*
+-	Marks critters to always scare pedestrians; not just only when they are in combat
+
+*ignoreLeashDespawn*
+-	Marks the critter to ignore the leash despawn that happens when a critter without
+-	an encounter leashes.
+
+*leashOnNonStaticOverride*
+-	Tells the critter to ignore the aiglobalsetting to not leash on non static maps
+
+*despawnOnLeash*
+-	Marks the critter to leash when despawning, even if part of an encounter
+-	Redundant for any sort of summoned critter
+
+*useDynamicPrefRange*
+-	Determines whether the NPC will use the dynamic preferred range calculations (if not set, it will use standard preferred range)
+
+*controlledPetUseRally*
+-	A temporary flag to initialize on controlled pet rallying until I can find a better place to know when to turn it on
+-	(or maybe controlled pets always use rally points)
+
+*dontTransferAggroOnDeath*
+-	A flag that specifies that pets do not dump aggro on owner when the pet dies
+-	Useful for pets that are truly independent.
+
+*doTeamAssignmentActionImmediately*
+-	an override to have the AI immediately do any team assignments (like healing, curing, etc.) as they come up
+
+*dontSearchForCombatJobs*
+-	When this is set the critter does not look for combat jobs automatically.
+
+*untargetable*
+-	an aiConfig override, does not allow any other AI to target
+
+*disableCombatFSM*
+-	an aiConfig override, does not allow any other AI to target
+
+*tetherToAmbientPosition*
+-	when in ambient behavior, keeps the entity to where it spawned at or last moved to
+-	defaults to on
+
+*ignoreSocialAggroPulse*
+-	whether the ai will do and/or accept social aggro pulses
+
+*socialAggroAsTeam*
+-	whether the AI still grabs its non-combat team even in social aggro
+
+*ignoreImmobileTargetRestriction*
+-	if set, the AI will ignore immobile target restrictions where it disqualifies targets if it has no powers to cast on them
+
+*respondToAttacksWhileLeashing*
+-	if set, the AI will stop leashing if they are attacked while they are leashing
+
+*controlledPetStartInCurState* < int >
+-	Sets the pet to the currently selected state when spawned (to keep all pets in sync)
+
+*controlledPetStartInCurStance* < int >
+-	Sets the pet to the currently selected stance when spawned (to keep all pets in sync)
+
+*pedestrianScareDistance* < float >
+-	Sets the distance at which critters will scare nearby civilians when NOT in combat
+
+*pedestrianScareDistanceInCombat* < float >
+-	The distance at which critters in combat will scare nearby civilians
+
+*sayMessageDistance* < float >
+-	The distance used in determining which players should see the messages said by the NPCs. 
+-	This value cannot be greater than overrideProximityRadius (or the default proximity radius if the overrideProximityRadius is not defined).
+-	This value is ignored if it's equal to or less than 0.
+
+*HitAndWaitCombatStyleConfig*
+-	Hit and wait combat style config
+
+*\{*
+-	*MinMovementWaitTime* < float >
+--	The minimum number of seconds the critter needs to wait
+--	before going after the target when they use a power
+-	*MaxMovementWaitTime* < float >
+--	The maximum number of seconds the critter needs to wait
+--	before going after the target when they use a power
+-	*MinDistanceToTargetWhileWaiting* < float >
+--	The minimum range to keep while in waiting state
+-	*MaxDistanceToTargetWhileWaiting* < float >
+--	The maximum range to keep while in waiting state
+-	*BackAwayDistance* < float >
+--	The distance to back away once the entity hits their target.
+--	The value must be between fMinDistanceToTargetWhileWaiting and fMaxDistanceToTargetWhileWaiting
+-	*BackAwayCancelLastDamageTimespan* < float >
+--	Entity checks if they took damage in last fBackAwayCancelLastDamageTime seconds.
+--	If they did they cancel the back away movement
+-	*MinHitAndWaitAttackersToEnable* < int >
+--	The minimum number of attackers using a HitAndWaitCombatStyleConfig config before the ai will 
+--	use the HitAndWaitCombatStyleConfig
+
+*\}*
+
+*BrawlerCombatConfig*
+
+*\{*
+-	*Tag* < string >
+--	the Tag that should correspond to a role tag in the BrawlerConfig
+-	*Override*
+-	*\{*
+--	*Tag* < string >
+---	the tag to be referenced by the aiConfig's BrawlerCombatConfig
+--	*SiblingTags* < string1 >
+--	*SiblingTags* < string2 >
+---	any other brawler roles this role should care about when considering its MaxEngaged
+--	*MaxEngaged* < int >
+---	The max this role cares to have engaged
+--	*MinDistanceToTargetWhileWaiting* < float >
+---	The minimum range to keep while in waiting state
+--	*MaxDistanceToTargetWhileWaiting* < float >
+---	The maximum range to keep while in waiting state
+--	*BackAwayDistance* < float >
+---	The distance to back away once the entity hits their target.
+---	The value must be between fMinDistanceToTargetWhileWaiting and fMaxDistanceToTargetWhileWaiting
+--	*PercentChancePerTickToEngage* < float >
+---	the percent chance per tick that this guy will be forced to run in to engage. 
+---	This will not occur if there are already more than the MaxEngaged forced to engage.
+-	*\}*
+
+*\}*

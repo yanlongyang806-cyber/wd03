@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="AutoGen\inputlib_AutoGen_1.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoGen\InputLib_AutoGen_2.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="input.c" />
+    <ClCompile Include="inputCommandParse.c" />
+    <ClCompile Include="inputExpressions.c" />
+    <ClCompile Include="inputGamepad.c" />
+    <ClCompile Include="inputIME.c" />
+    <ClCompile Include="inputJoystick.c" />
+    <ClCompile Include="inputKeyBind.c" />
+    <ClCompile Include="inputLib.c" />
+    <ClCompile Include="inputMouse.c" />
+    <ClCompile Include="inputRaw.c" />
+    <ClCompile Include="x360\inputGamepad360.c">
+      <Filter>x360</Filter>
+    </ClCompile>
+    <ClCompile Include="x360\inputKeyboard360.c">
+      <Filter>x360</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="input.h" />
+    <ClInclude Include="inputIME.h" />
+    <ClInclude Include="inputJoystickInternal.h" />
+    <ClInclude Include="InputLib_AnonAutoRunIncludes.h" />
+    <ClInclude Include="inputRaw.h" />
+    <ClInclude Include="pub\inputCommandParse.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\inputData.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\inputGamepad.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\inputJoystick.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\inputKeyBind.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\inputLib.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\inputLibEnums.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\inputMouse.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\inputText.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="x360\inputGamepad360.h">
+      <Filter>x360</Filter>
+    </ClInclude>
+    <ClInclude Include="x360\inputKeyboard360.h">
+      <Filter>x360</Filter>
+    </ClInclude>
+    <ClInclude Include="x360\inputXboxStub.h">
+      <Filter>x360</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="AutoGen">
+      <UniqueIdentifier>{6e7d58ac-0534-41e6-8942-3f292d6f4afb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pub">
+      <UniqueIdentifier>{c3f0a015-5d21-4c6c-ac66-8da94ba26d30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="x360">
+      <UniqueIdentifier>{dc09bfee-f56b-415b-bf01-89b1bb3b8d80}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

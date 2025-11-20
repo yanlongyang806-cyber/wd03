@@ -1,0 +1,204 @@
+{anchor:EAICivilianType}
+_auto-generated from I:\Night\Night\src\libs\AILib\aiCivilianPrivate.h_
+h3. Enumerated type *EAICivilianType* - (null)
+*NULL*
+*PERSON*
+*CAR*
+*TROLLEY*
+*COUNT*
+{anchor:CivGenState}
+_auto-generated from I:\Night\Night\src\libs\AILib\aiCivilianPrivate.h_
+h3. Enumerated type *CivGenState* - (null)
+*NONE*
+*GRID*
+*EDGE*
+*EDGE2*
+*EDGE3*
+*LINE*
+*LINE2*
+*LINE3*
+*POSTLINE*
+*PAIR*
+*PAIR2*
+*LANE*
+*LEG*
+*LEG2*
+*LEG3*
+*LEG4*
+*INT0*
+*INT1*
+*INT2*
+*INT3*
+*INT4*
+*SPLIT*
+*MIN*
+*COPLANAR*
+*CROSSWALK*
+*PATHPOINTS*
+*CURVEFITTING*
+*FIN*
+*FILE*
+*DONE*
+*COUNT*
+{anchor:AICivilianMapDef}
+
+_auto-generated from I:\Night\Night\src\libs\AILib\aiCivilianPrivate.h_
+
+h3.AICivilianMapDef
+
+*Name* < string >
+-	the name of the civilian def
+
+*inheritConfigs* < string1 >
+*inheritConfigs* < string2 >
+-	AIConfigs that this inherits from - applied in order, so later ones override earlier
+
+*pedestrian*
+-	pedestrian type parameters
+
+*\{*
+-	*CivDef* (multiple allowed)
+--	List of civilian type definitions
+-	*\{*
+--	*CivilianDefName* < string >
+---	the name of this civilian
+--	*CritterDef* < string >
+---	the name of the CRITTER def
+--	*MinimumSpeed* < float >
+---	the minimum speed the civilian will normally move at
+--	*SpeedRange* < float >
+---	the range of speed from the minimum
+--	*FearBehaviorFSMOverride* < string >
+---	optional FSM to override the scared behavior
+--	*AnimListDefault* < string >
+---	an anim list that is applied to the civilian when it is in its default behavior
+--	*PedestrianChatterMessage* < string >
+---	this is an override chatter message to the default chatter message in pedestrian type
+--	*ExprBlockOnScared*
+---	An optional expression that is run when the pedestrian becomes scared
+---	this is an override to the AICivPedestrianTypeDef's AICivPedestrianScaredParams
+--	*onClick*
+---	override on click behaviors
+-	*\}*
+-	*scaredParams*
+--	the parameters for how the civilian are scared
+-	*\{*
+--	*PedestrainScaredMessage* < string >
+---	the message that the pedestrians will use when scared
+--	*ScaredTime* < float >
+---	default scared behavior: The amount of time the civilian will be scared for
+--	*RescareTime* < float >
+---	after being scared, the timeout before civilians can be scared again
+--	*CowerChance* < float >
+---	when scared by something in front of you, the chance that the ped will cower
+---	Value should be between 0 - 1
+--	*CowerTime* < float >
+---	time the pedestrian will cower before running
+--	*MessageChance* < float >
+---	the chance when scared that they will say something
+--	*ScaredHeight* < float >
+---	civilian will ignore scaring objects beyond this height
+--	*UseCritterSpeed*
+---	When scared, uses the critter speed. Allows civilians to respond to movement impairing powers
+--	*ExprBlockOnScared*
+---	An optional expression that is run when the pedestrian becomes scared
+-	*\}*
+-	*POIParams*
+--	The point of interest / ambient job parameters
+-	*\{*
+--	*AmbientAnimDuration* < float >
+---	the duration that the jobs that use animations will run for
+--	*AmbientJobCooldownTime* < float >
+---	the time before the job can be used again in seconds after it was finished being used last
+--	*AmbientJobCalloutRange* < float >
+---	the radius from the POI that civilians will be searched for
+--	*AmbientJobCheckLineOfSight* < int >
+---	if the ambient job needs line of sight to the pedestrian to have the pedestrian use it
+-	*\}*
+-	*wanderParams*
+--	the parameters that pertain to wander behavior
+-	*\{*
+--	*WanderTimeMin* < float >
+---	the minimum time the pedestrian will wander
+--	*WanderTimeRange* < float >
+---	the random range of time from the minimum that the pedestrian will wander
+--	*TimeAtPointAvg* < float >
+---	The average time the pedestrian will stay idle at a wander point
+-	*\}*
+-	*emoteReaction*
+--	the emote reaction def
+-	*onClick*
+--	the on click def
+-	*PedestrianChatterMessage* < string >
+--	the message that is played when the pedestrians randomly chatter
+-	*PlayerKillCritterFSM* < string >
+--	The FSM that runs when a pedestrian kills a nearby critter
+-	*UseStrictDistribution* < int >
+--	boolean value- if true, then when spawning a new civilian it will try and keep the ratios defined
+
+*\}*
+
+*car*
+-	car type parameters.
+
+*\{*
+-	*CivDef* (multiple allowed)
+--	List of civilian type definitions.
+--	Note that the parameters of the "CivDef" are the same as the ones in the pedestrian 
+--	but the auto-wiki is not duplicating the structure information
+-	*CarHonkSoundName* < string >
+--	the sound that is played when a car honks
+
+*\}*
+
+*trolley*
+-	trolley type parameters
+
+*leg*
+-	leg definition info
+
+*\{*
+-	*LegDef* (multiple allowed)
+--	List of leg definitions
+-	*\{*
+--	*Name* < string >
+---	The name of this leg definition to be referenced
+--	*LegUseChance* < float >
+---	The chance that the leg will be chosen when pathing
+---	Range is 0.0 - 1.0, default is 1
+-	*\}*
+
+*\}*
+
+*npcs* < int >
+-	the absolute number civilians that should be spawned for a given type
+
+*cars* < int >
+-	the absolute number civilians that should be spawned for a given type
+
+*trolleys* < int >
+-	the absolute number civilians that should be spawned for a given type
+
+*unitsPerNPC* < int >
+-	a density setting, number of units per type. 
+-	The sum of the lengths of all the legs is used to calculate the desired number of civilian.
+-	the desired count is calculated by: leg distance / unitsPerType
+-	note: a non-zero desired amount will override this density
+
+*unitsPerCar* < int >
+-	a density setting, number of units per type. 
+-	The sum of the lengths of all the legs is used to calculate the desired number of civilian.
+-	the desired count is calculated by: leg distance / unitsPerType
+-	note: a non-zero desired amount will override this density
+
+*unitsPerTrolley* < int >
+-	a density setting, number of units per type. 
+-	The sum of the lengths of all the legs is used to calculate the desired number of civilian.
+-	the desired count is calculated by: leg distance / unitsPerType
+-	note: a non-zero desired amount will override this density
+
+*PedestrianFaction* < string >
+-	the faction that pedestrians will use when determining if the pedestrian will be scared by another character
+
+*EnableLegsWhenPlayerEntersRegion*
+-	if true, legs will start off disabled until a player enters the region

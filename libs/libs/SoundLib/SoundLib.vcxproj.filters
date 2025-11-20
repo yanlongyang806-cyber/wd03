@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="adebug.c" />
+    <ClCompile Include="AutoGen\SoundLib_AutoGen_1.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoGen\SoundLib_AutoGen_2.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="event_sys.cpp" />
+    <ClCompile Include="gDebug.c" />
+    <ClCompile Include="sndAnim.c" />
+    <ClCompile Include="sndCluster.c" />
+    <ClCompile Include="sndCmdRemote.c" />
+    <ClCompile Include="sndCommandParse.c" />
+    <ClCompile Include="sndConn.c" />
+    <ClCompile Include="sndDebug2.c" />
+    <ClCompile Include="sndFade.c" />
+    <ClCompile Include="sndFx.c" />
+    <ClCompile Include="sndLOD.c" />
+    <ClCompile Include="sndMemory.c" />
+    <ClCompile Include="sndMission.c" />
+    <ClCompile Include="sndMixer.c" />
+    <ClCompile Include="sndMusic.c" />
+    <ClCompile Include="sndObject.c" />
+    <ClCompile Include="sndQueue.c" />
+    <ClCompile Include="sndSource.c" />
+    <ClCompile Include="sndSpace.c" />
+    <ClCompile Include="sndVoice.c" />
+    <ClCompile Include="sound.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="event_sys.h" />
+    <ClInclude Include="pub\adebug.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\gDebug.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\sndMemory.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\sndVoice.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\soundLib.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="sndAnim.h" />
+    <ClInclude Include="sndCluster.h" />
+    <ClInclude Include="sndConn.h" />
+    <ClInclude Include="sndDebug2.h" />
+    <ClInclude Include="sndFade.h" />
+    <ClInclude Include="sndFx.h" />
+    <ClInclude Include="sndLibPrivate.h" />
+    <ClInclude Include="sndLOD.h" />
+    <ClInclude Include="sndMission.h" />
+    <ClInclude Include="sndMixer.h" />
+    <ClInclude Include="sndMusic.h" />
+    <ClInclude Include="sndObject.h" />
+    <ClInclude Include="sndQueue.h" />
+    <ClInclude Include="sndSource.h" />
+    <ClInclude Include="sndSpace.h" />
+    <ClInclude Include="SoundLib_AnonAutoRunIncludes.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="AutoGen">
+      <UniqueIdentifier>{e8220378-1e81-4b80-a4b3-91e12e2313ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pub">
+      <UniqueIdentifier>{67a30556-258f-438c-8779-917366dfd3dc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

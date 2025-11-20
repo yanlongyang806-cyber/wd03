@@ -1,0 +1,6 @@
+h4.enablePlayerAI (int) - (AccessLevel 9) [Notes|Command_enablePlayerAI_AILib]
+No comment provided
+
+h4.enablePlayerAIMovement (int) - (AccessLevel 9) [Notes|Command_enablePlayerAIMovement_AILib]
+No comment provided
+

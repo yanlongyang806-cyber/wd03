@@ -1,0 +1,926 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\3rdparty\bink\binktexturesDX11.cpp">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdparty\bink\binktexturesDX9.cpp">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoGen\XRenderLib_AutoGen_1.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoGen\XRenderLib_AutoGen_2.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="nvapi_wrapper.cpp">
+      <Filter>nonthread</Filter>
+    </ClCompile>
+    <ClCompile Include="pub\DXVersionCheck.c">
+      <Filter>pub</Filter>
+    </ClCompile>
+    <ClCompile Include="thread\rt_xcursor.c">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="thread\rt_xdevice.c">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="thread\rt_xdrawlist.c">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="thread\rt_xdrawmode.c">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="thread\rt_xfastparticles.c">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="thread\rt_xFMV.c">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="thread\rt_xgeo.c">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="thread\rt_xmodel.c">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="thread\rt_xparticle.c">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="thread\rt_xpostprocessing.c">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="thread\rt_xprimitive.c">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="thread\rt_xshader.c">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="thread\rt_xshaderdata.c">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="thread\rt_xShaderServerInterface.c">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="thread\rt_xsprite.c">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="thread\rt_xstate.c">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="thread\rt_xsurface.c">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="thread\rt_xtextures.c">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="xdevice.c">
+      <Filter>nonthread</Filter>
+    </ClCompile>
+    <ClCompile Include="xsurface.c">
+      <Filter>nonthread</Filter>
+    </ClCompile>
+    <ClCompile Include="XWrapperInterface.c">
+      <Filter>nonthread</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\3rdparty\bink\binktextures.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdparty\DirectX\Include\D3D11.h">
+      <Filter>dx\DX11</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdparty\DirectX\Include\D3D11SDKLayers.h">
+      <Filter>dx\DX11</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdparty\DirectX\Include\D3D11Shader.h">
+      <Filter>dx\DX11</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdparty\DirectX\Include\d3d9.h">
+      <Filter>dx\DX9</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdparty\DirectX\Include\d3d9caps.h">
+      <Filter>dx\DX9</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdparty\DirectX\Include\d3d9types.h">
+      <Filter>dx\DX9</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdparty\DirectX\Include\D3Dcommon.h">
+      <Filter>dx\DX11</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdparty\DirectX\Include\D3Dcompiler.h">
+      <Filter>dx\DX11</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdparty\DirectX\Include\D3DCSX.h">
+      <Filter>dx\DX11</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdparty\DirectX\Include\D3DX11.h">
+      <Filter>dx\DX11</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdparty\DirectX\Include\D3DX11async.h">
+      <Filter>dx\DX11</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdparty\DirectX\Include\D3DX11core.h">
+      <Filter>dx\DX11</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdparty\DirectX\Include\D3DX11tex.h">
+      <Filter>dx\DX11</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdparty\DirectX\Include\d3dx9.h">
+      <Filter>dx\DX9</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdparty\DirectX\Include\d3dx9math.h">
+      <Filter>dx\DX9</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdparty\DirectX\Include\d3dx9shader.h">
+      <Filter>dx\DX9</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdparty\DirectX\Include\d3dx9tex.h">
+      <Filter>dx\DX9</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdparty\DirectX\Include\DXGI.h">
+      <Filter>dx\DX11</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdparty\DirectX\Include\DXGIFormat.h">
+      <Filter>dx\DX11</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdparty\DirectX\Include\DXGIType.h">
+      <Filter>dx\DX11</Filter>
+    </ClInclude>
+    <ClInclude Include="nvapi_wrapper.h">
+      <Filter>nonthread</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\DXVersionCheck.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\XRenderLib.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\XWrapperInterface.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="thread\rt_xcursor.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="thread\rt_xdevice.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="thread\rt_xdrawlist.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="thread\rt_xdrawmode.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="thread\rt_xfastparticles.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="thread\rt_xFMV.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="thread\rt_xgeo.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="thread\rt_xmodel.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="thread\rt_xparticle.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="thread\rt_xpostprocessing.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="thread\rt_xprimitive.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="thread\rt_xshader.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="thread\rt_xshaderdata.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="thread\rt_xShaderServerInterface.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="thread\rt_xsprite.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="thread\rt_xstate.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="thread\rt_xStateEnums.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="thread\rt_xsurface.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="thread\rt_xtextures.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="xdevice.h">
+      <Filter>nonthread</Filter>
+    </ClInclude>
+    <ClInclude Include="xdx.h">
+      <Filter>nonthread</Filter>
+    </ClInclude>
+    <ClInclude Include="XRenderLib_AnonAutoRunIncludes.h">
+      <Filter>AutoGen</Filter>
+    </ClInclude>
+    <ClInclude Include="XRenderLibCallbacks.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="xsurface.h">
+      <Filter>nonthread</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="AutoGen">
+      <UniqueIdentifier>{8635176e-6c36-494c-8bc2-e4e995eecf20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dx">
+      <UniqueIdentifier>{e6892b29-e7ae-4570-a232-4030a3f661b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dx\DX11">
+      <UniqueIdentifier>{d51515d4-312d-4bcc-a05c-cfc8ffde52b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dx\DX9">
+      <UniqueIdentifier>{d5f2be9a-15a4-4d12-8af5-c34c45627acb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nonthread">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="pub">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
+    </Filter>
+    <Filter Include="shaders">
+      <UniqueIdentifier>{c774f029-b781-4dc5-98f5-4bad033dfd62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shaders\effects">
+      <UniqueIdentifier>{e2d3488b-1afa-474c-94e0-8841f6a9b908}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shaders\LightingModels">
+      <UniqueIdentifier>{1892d1a9-7d52-4a56-98b8-629433984ed5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shaders\Lights">
+      <UniqueIdentifier>{f3fd07d5-434d-48b2-a4d5-9cee24711eaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shaders\ops">
+      <UniqueIdentifier>{22dfdb73-b143-48de-8737-3e812fd58af5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thread">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\3rdparty\DirectX\Include\d3dx9math.inl">
+      <Filter>dx\DX9</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\D3D11.MaterialProfile">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\d3d11_ps_constants.hlsl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\d3d11_vs_constants.hlsl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\D3D9.MaterialProfile">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\d3d9_ps_constants.hlsl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\d3d9_vs_constants.hlsl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\debug_inc.hlsl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\default.phl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\define_inc.hlsl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\depth_inc.hlsl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\dist_field_sprite_2d.phl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\effects\blueshift.phl">
+      <Filter>shaders\effects</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\effects\blur.phl">
+      <Filter>shaders\effects</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\effects\cubemap_fill.phl">
+      <Filter>shaders\effects</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\effects\deferred_lit.phl">
+      <Filter>shaders\effects</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\effects\deferred_scatter.phl">
+      <Filter>shaders\effects</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\effects\deferred_shadow.phl">
+      <Filter>shaders\effects</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\effects\deferred_unlit.phl">
+      <Filter>shaders\effects</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\effects\depth_of_field.phl">
+      <Filter>shaders\effects</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\effects\fill.phl">
+      <Filter>shaders\effects</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\effects\glare.phl">
+      <Filter>shaders\effects</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\effects\low_res_alpha_edge_detect.phl">
+      <Filter>shaders\effects</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\effects\NoAlphaBlit.phl">
+      <Filter>shaders\effects</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\effects\postprocess1.phl">
+      <Filter>shaders\effects</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\effects\postprocess2.phl">
+      <Filter>shaders\effects</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\effects\postprocess3.phl">
+      <Filter>shaders\effects</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\effects\recover_alpha_for_headshot.phl">
+      <Filter>shaders\effects</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\effects\resolve_msaa_16_depth.phl">
+      <Filter>shaders\effects</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\effects\resolve_msaa_2_depth.phl">
+      <Filter>shaders\effects</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\effects\resolve_msaa_4_depth.phl">
+      <Filter>shaders\effects</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\effects\resolve_msaa_8_depth.phl">
+      <Filter>shaders\effects</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\effects\shrink4.phl">
+      <Filter>shaders\effects</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\effects\smart_blur.phl">
+      <Filter>shaders\effects</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\effects\ssao_prepass.phl">
+      <Filter>shaders\effects</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\effects\target_halo.phl">
+      <Filter>shaders\effects</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\effects\tone_curve.phl">
+      <Filter>shaders\effects</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\effects\ui_postprocess.phl">
+      <Filter>shaders\effects</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\effects\zocclusion_test.phl">
+      <Filter>shaders\effects</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\error.phl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\error.vhl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\error_domain_shader.dhl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\error_hull_shader.hhl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\fast_particles.vhl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\hs_outputs.hlsl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\light_inc.hlsl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\LightingModels\Standard.LightingModel">
+      <Filter>shaders\LightingModels</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\Lights\directional_light.Light">
+      <Filter>shaders\Lights</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\Lights\point_light.Light">
+      <Filter>shaders\Lights</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\Lights\projector_light.Light">
+      <Filter>shaders\Lights</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\Lights\spot_light.Light">
+      <Filter>shaders\Lights</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\normal.vhl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\Add.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\AlphaPlaneFade.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\Assembler.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\AtmosphericScatter_Space.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\BuildingLights.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\BuildingLightsColored.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\CameraDist.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\CharacterBacklightColor.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\Clamp.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\Color0.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\ColorTint2b.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\ColorTint2b_IgnoreAlpha.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\ColorTint4.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\ColorTint4_IgnoreAlpha.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\ColorTint4b.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\ColorTint4b_IgnoreAlpha.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\ColorValue.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\Comparison.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\Comparison_LessThan.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\DepthColorSelect.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\DepthFade.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\DepthFadeVolumeBoundary.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\DepthFadeWeight.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\Dither_Pattern_4.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\Divide.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\DotProduct.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\DualColor.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\DualColor_IgnoreAlpha.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\Floor.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\ForceHDROutput.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\FresnelTerm.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\FresnelTerm_Advanced.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\Glow.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\GradientInterval.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\HeightmapBlend.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\HSV_to_RGB.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\Invert.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\Jiggle.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\Kill.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\lerp.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\LERP4.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\LERP_IgnoreAlpha.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\LightBleed.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\LightBleedTransform.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\LightmapHL2Basis.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\MaskCombine.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\Max.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\Min.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\Multiply.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\MultiplyAdd.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\NormalAdd.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\NormalCombine_2+.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\NormalCombine_3.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\NormalCombine_4.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\Normalize.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\NormalReconstitute.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\OffsetScroll.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\OldDualColor.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\Oscillator.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\OutlineEdgeDetect.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\OutlineTexture.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\Output.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\Overlay.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\ProjectSpecialParam.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\Rand.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\ReflectionVector.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\Refract.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\RefractAndFade.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\Saturate.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\ScreenABSTexCoord.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\ScreenColor.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\ScreenColorBlurred.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\ScreenTexCoord.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\Scroll.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\SkyClearColor.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\Slider.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\Specular.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\Specular_WithValue.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\SpecularExpRange.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\SphericalCoordsVS.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\SphericalCoordsWS.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\Step.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\Subtract.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\Subtract_IgnoreAlpha.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\TangentToCamNormal.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\Terrain_0Detail.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\Terrain_1Detail.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\Terrain_2Detail.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\Terrain_3Detail.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\Terrain_Debug.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\TerrainMaterial_Preview.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\TerrainNX_0Detail.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\TerrainNX_1Detail.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\TerrainNX_2Detail.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\TerrainNX_3Detail.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\TerrainNXMaterial_Preview.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\TexCellScroll.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\TexCoord0.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\TexCoord1.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\TexCoordWorld.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\TexRotate.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\TexScrollScale.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\Texture.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\Texture_2+.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\Texture_3.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\Texture_4.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\Texture_5.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\Texture_6.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\Texture_7.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\Texture_8.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\Texture_RangeExpanded.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\TextureCubemap.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\TextureNormal.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\TextureNormal_2+.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\TextureNormal_3.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\TextureNormal_4.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\TextureNormal_5.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\TextureNormal_6.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\TextureNormal_7.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\TextureNormal_8.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\TextureNormalDXT5nm.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\TextureNormalDXT5nm_2+.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\TextureNormalDXT5nm_3.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\TextureNormalDXT5nm_4.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\TextureNormalDXT5nm_5.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\TextureNormalDXT5nm_6.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\TextureNormalDXT5nm_7.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\TextureNormalDXT5nm_8.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\TextureProjection.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\TextureProjectionWDepthmap.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\TextureRGBE.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\TextureSky_AmbientCube.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\TextureSky_Reflection.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\TextureWithKill.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\TexXfrm.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\TimeGradient.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\UniqueOffset.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\WaterDepthFade.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\WaterRefract.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ops\WorldSpaceNormal.phl">
+      <Filter>shaders\ops</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\outline_edge_detect.phl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\particles.phl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\perfTest.phl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\postprocess.vhl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ps_inc.hlsl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\rgb_hsv_inc.hlsl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\shared_inc.hlsl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\sprite.phl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\sprite.vhl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\sprite_2d.phl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\ssao.hlsl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\standard_domain_shader.dhl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\standard_hull_shader.hhl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\starfield.vhl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\terrain_heightmap.vhl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\vs_bend_inc.hlsl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\vs_cylinder_inc.hlsl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\vs_inc.hlsl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\vs_instance_inc.hlsl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\vs_outputs.hlsl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\vs_skin_inc.hlsl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\vs_standard_inc.hlsl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\vs_wind_inc.hlsl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\data\shaders\D3D\wireframe.phl">
+      <Filter>shaders</Filter>
+    </None>
+  </ItemGroup>
+</Project>

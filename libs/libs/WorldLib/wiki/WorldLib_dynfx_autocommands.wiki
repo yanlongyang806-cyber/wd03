@@ -1,0 +1,207 @@
+h4.dfxEdit (AccessLevel 9) [Notes|Command_dfxEdit_WorldLib]
+*Parameter 1: fx_name (string)*
+Open the named fx file in your favorite editor.
+
+
+h4.dfxKillAll (AccessLevel 9) [Notes|Command_dfxKillAll_WorldLib]
+Kill all fx systems
+
+
+h4.dfxMaxDrawn (AccessLevel 9) [Notes|Command_dfxMaxDrawn_WorldLib]
+*Parameter 1: uiNum (int)*
+Sets the absolute maximum number of FX objects (sprites, meshes, mesh-trails, or fast particle SYSTEMS) that will be drawn in any given frame. Defaults to 150 currently.
+
+
+h4.dfxMaxPriority (AccessLevel 9) [Notes|Command_dfxMaxPriority_WorldLib]
+*Parameter 1: pcPri (string)*
+Takes a value from 1 to 3. Sets the maximum Priority level that will be drawn. Useful for turning off Priority 3 or Priority 2 FX to see how they look without those FX.
+
+
+h4.dfxNoCostumeFX (AccessLevel 9) [Notes|Command_dfxNoCostumeFX_WorldLib]
+*Parameter 1: bNoFx (int)*
+No comment provided
+
+h4.dfxNoEnvironmentFX (AccessLevel 9) [Notes|Command_dfxNoEnvironmentFX_WorldLib]
+*Parameter 1: bNoFx (int)*
+No comment provided
+
+h4.dfxNoUIFX (AccessLevel 9) [Notes|Command_dfxNoUIFX_WorldLib]
+*Parameter 1: bNoFx (int)*
+No comment provided
+
+h4.dfxOpenDirectoryOf (AccessLevel 9) [Notes|Command_dfxOpenDirectoryOf_WorldLib]
+*Parameter 1: fx_name (string)*
+No comment provided
+
+h4.dfxPauseAll (AccessLevel 9) [Notes|Command_dfxPauseAll_WorldLib]
+*Parameter 1: pause (int)*
+Pause all fx systems
+
+
+h4.dfxPrintUnpackedFXList (AccessLevel 9) [Notes|Command_dfxPrintUnpackedFXList_WorldLib]
+Print out information about the current state of the dynfxinfo dictionary
+
+
+h4.dfxPrintUnpackedParticleList (AccessLevel 9) [Notes|Command_dfxPrintUnpackedParticleList_WorldLib]
+Print out information about the current state of the dynfxFastParticleInfo dictionary
+
+
+h4.dfxRecord (AccessLevel 9) [Notes|Command_dfxRecord_WorldLib]
+No comment provided
+
+h4.dfxRunEveryFX (AccessLevel 9) [Notes|Command_dfxRunEveryFX_WorldLib]
+Spawns on of every FX
+
+
+h4.dfxSetFxRate (AccessLevel 9) [Notes|Command_dfxSetFxRate_WorldLib]
+*Parameter 1: rate (float)*
+Sets how at what rate to run the fx systems
+Defaults to 1.0, or normal rate.
+
+
+h4.dfxSetHueOverride (AccessLevel 9) [Notes|Command_dfxSetHueOverride_WorldLib]
+*Parameter 1: i (int)*
+Sets whether or not the test hue set in dfxSetTestHue will override any hues from the powers system
+
+
+h4.dfxSetTestHue (AccessLevel 9) [Notes|Command_dfxSetTestHue_WorldLib]
+*Parameter 1: fHue (float)*
+Takes a value from 0 to 360. Sets the override test hue. Requires dfxSetHueOverride to work.
+
+
+h4.dfxSetTestSaturation (AccessLevel 9) [Notes|Command_dfxSetTestSaturation_WorldLib]
+*Parameter 1: fSaturation (float)*
+No comment provided
+
+h4.dfxSetTestValue (AccessLevel 9) [Notes|Command_dfxSetTestValue_WorldLib]
+*Parameter 1: fValue (float)*
+No comment provided
+
+h4.dfxTestFx (AccessLevel 9) [Notes|Command_dfxTestFx_WorldLib]
+*Parameter 1: fx_name (string)*
+Takes the name of an FX to test, on the local player.
+
+
+h4.dfxTestFx2d (AccessLevel 9) [Notes|Command_dfxTestFx2d_WorldLib]
+*Parameter 1: fx_name (string)*
+Takes the name of a 2D FX to test, on the UI.
+
+
+h4.dfxTestFxChangeColor (AccessLevel 9) [Notes|Command_dfxTestFxChangeColor_WorldLib]
+*Parameter 1: index (int)*
+*Parameter 2: vColor (xyzw vector)*
+No comment provided
+
+h4.dfxTestFxOnTarget (AccessLevel 9) [Notes|Command_dfxTestFxOnTarget_WorldLib]
+*Parameter 1: fx_name (string)*
+Takes the name of an FX to test, on the targeted entity.
+
+
+h4.dfxTestMessage (AccessLevel 9) [Notes|Command_dfxTestMessage_WorldLib]
+*Parameter 1: pcMessages (sentence)*
+Sends multiple messages to all fx currently playing on the player
+
+
+h4.dfxWriteTrackers (AccessLevel 9) [Notes|Command_dfxWriteTrackers_WorldLib]
+Writes a breakdown of the current fx and their counts to the console
+A precursor to the fx debugging window
+
+
+h4.dynClothClearCacheManually (AccessLevel 9) [Notes|Command_dynClothClearCacheManually_WorldLib]
+No comment provided
+
+h4.dynFxDumpExcludedFX (AccessLevel 0) [Notes|Command_dynFxDumpExcludedFX_WorldLib]
+No comment provided
+
+h4.dynFxExcludeFX (AccessLevel 0) [Notes|Command_dynFxExcludeFX_WorldLib]
+*Parameter 1: newFx (string)*
+No comment provided
+
+h4.dynFxSetFXExlusionList (AccessLevel 0) [Notes|Command_dynFxSetFXExlusionList_WorldLib]
+*Parameter 1: newList (string)*
+No comment provided
+
+h4.danimDrawBouncers (int) - (AccessLevel 9) [Notes|Command_danimDrawBouncers_WorldLib]
+Draw debug info for bouncers
+
+
+h4.dfxBreakOnDebugFX (int) - (AccessLevel 9) [Notes|Command_dfxBreakOnDebugFX_WorldLib]
+For programmers. If set to 1, fx that have been flagged as 'debug' will trigger a break point if the debugger is attached.
+
+
+h4.dfxDrawFxTransforms (int) - (AccessLevel 9) [Notes|Command_dfxDrawFxTransforms_WorldLib]
+Draw 3-axis vectors at each FX
+
+
+h4.dfxDrawFxVisibility (int) - (AccessLevel 9) [Notes|Command_dfxDrawFxVisibility_WorldLib]
+Draw visibility spheres at each FX
+
+
+h4.dfxDrawImpactTriggers (int) - (AccessLevel 9) [Notes|Command_dfxDrawImpactTriggers_WorldLib]
+Draw impact triggers
+
+
+h4.dfxDrawLabelsForAllFX (int) - (AccessLevel 9) [Notes|Command_dfxDrawLabelsForAllFX_WorldLib]
+Draw names for FX with the "Debug" flag set.
+
+
+h4.dfxDrawLabelsForDebug (int) - (AccessLevel 9) [Notes|Command_dfxDrawLabelsForDebug_WorldLib]
+Draw names for FX with the "Debug" flag set.
+
+
+h4.dfxDrawMeshTrailDebug (int) - (AccessLevel 9) [Notes|Command_dfxDrawMeshTrailDebug_WorldLib]
+Draw debug info for mesh trails
+
+
+h4.dfxDrawPhysics (int) - (AccessLevel 9) [Notes|Command_dfxDrawPhysics_WorldLib]
+No comment provided
+
+h4.dfxDrawRays (int) - (AccessLevel 9) [Notes|Command_dfxDrawRays_WorldLib]
+Draw the fx raycast rays, green if they hit, red if they miss
+
+
+h4.dfxDrawSkyVolumes (int) - (AccessLevel 9) [Notes|Command_dfxDrawSkyVolumes_WorldLib]
+Draw the shape of the fx sky volumes
+
+
+h4.dfxDrawSplatCollision (int) - (AccessLevel 9) [Notes|Command_dfxDrawSplatCollision_WorldLib]
+Draw the shape of the splat collision cylinder/cone
+
+
+h4.dfxDrawTrailTriangles (int) - (AccessLevel 9) [Notes|Command_dfxDrawTrailTriangles_WorldLib]
+Draw the triangles for any mesh trails
+
+
+h4.dfxFPBufferMax (int) - (AccessLevel 9) [Notes|Command_dfxFPBufferMax_WorldLib]
+If set to one, fast particle buffer is set to max rather than calculated. for debugging only
+
+
+h4.dfxFPErrorOnOverflow (int) - (AccessLevel 9) [Notes|Command_dfxFPErrorOnOverflow_WorldLib]
+If set to one, then any buffer overflows in the fast particle system will report the error
+
+
+h4.dfxForceFPUpdate (int) - (AccessLevel 9) [Notes|Command_dfxForceFPUpdate_WorldLib]
+No comment provided
+
+h4.dfxNoNewCameraFX (int) - (AccessLevel 9) [Notes|Command_dfxNoNewCameraFX_WorldLib]
+No comment provided
+
+h4.dfxNoWireframe (int) - (AccessLevel 9) [Notes|Command_dfxNoWireframe_WorldLib]
+Turn off wireframe for fx
+
+
+h4.dfxOff (int) - (AccessLevel 9) [Notes|Command_dfxOff_WorldLib]
+No comment provided
+
+h4.dfxShowCount (int) - (AccessLevel 9) [Notes|Command_dfxShowCount_WorldLib]
+Write to the screen how many fx objects currently exist
+
+
+h4.noFx (int) - (AccessLevel 9) [Notes|Command_noFx_WorldLib]
+Turn off all fx
+
+
+h4.noNewFx (int) - (AccessLevel 9) [Notes|Command_noNewFx_WorldLib]
+Turn off all fx
+
+

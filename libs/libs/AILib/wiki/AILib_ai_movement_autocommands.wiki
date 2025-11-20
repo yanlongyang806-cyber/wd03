@@ -1,0 +1,4 @@
+h4.MovementResetPath (AccessLevel 9) [Notes|Command_MovementResetPath_AILib]
+*No Return*
+No comment provided
+

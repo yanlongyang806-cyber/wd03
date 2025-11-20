@@ -1,0 +1,17 @@
+h4.MakePatchVersionsServerMonitorable (AccessLevel 9) [Notes|Command_MakePatchVersionsServerMonitorable_PatchClientLib]
+*Parameter 1: pServer (string)*
+*Parameter 2: pProductName (string)*
+No comment provided
+
+h4.ignorechecksum (AccessLevel 9) [Notes|Command_ignorechecksum_PatchClientLib]
+*Parameter 1: value (int)*
+No comment provided
+
+h4.patchxferhttpforcerange (int) - (AccessLevel 9) [Notes|Command_patchxferhttpforcerange_PatchClientLib]
+If set, send "whole file" requests as ranges.
+
+
+h4.patchxferhttpforcerangeaswholefile (int) - (AccessLevel 9) [Notes|Command_patchxferhttpforcerangeaswholefile_PatchClientLib]
+If set, send all requests as a request for the whole file, even if we only need a subrange.
+
+

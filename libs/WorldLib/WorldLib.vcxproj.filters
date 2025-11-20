@@ -1,0 +1,1022 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="AutoGen\worldlib_AutoGen_1.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoGen\WorldLib_AutoGen_2.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoLOD.c">
+      <Filter>geo</Filter>
+    </ClCompile>
+    <ClCompile Include="beacon.c">
+      <Filter>beacon</Filter>
+    </ClCompile>
+    <ClCompile Include="beaconAStar.c">
+      <Filter>beacon</Filter>
+    </ClCompile>
+    <ClCompile Include="beaconClient.c">
+      <Filter>beacon</Filter>
+    </ClCompile>
+    <ClCompile Include="beaconClientServer.c">
+      <Filter>beacon</Filter>
+    </ClCompile>
+    <ClCompile Include="beaconConnection.c">
+      <Filter>beacon</Filter>
+    </ClCompile>
+    <ClCompile Include="beaconDebug.c">
+      <Filter>beacon</Filter>
+    </ClCompile>
+    <ClCompile Include="beaconFile.c">
+      <Filter>beacon</Filter>
+    </ClCompile>
+    <ClCompile Include="beaconGenerate.c">
+      <Filter>beacon</Filter>
+    </ClCompile>
+    <ClCompile Include="beaconGenerateSwap.c">
+      <Filter>beacon</Filter>
+    </ClCompile>
+    <ClCompile Include="beaconPath.c">
+      <Filter>beacon</Filter>
+    </ClCompile>
+    <ClCompile Include="beaconServer.c">
+      <Filter>beacon</Filter>
+    </ClCompile>
+    <ClCompile Include="beaconServerFileThread.c">
+      <Filter>beacon</Filter>
+    </ClCompile>
+    <ClCompile Include="dynAction.c">
+      <Filter>dynamics\anim</Filter>
+    </ClCompile>
+    <ClCompile Include="dynAnimChart.c">
+      <Filter>dynamics\anim</Filter>
+    </ClCompile>
+    <ClCompile Include="dynAnimExpression.c">
+      <Filter>dynamics\anim</Filter>
+    </ClCompile>
+    <ClCompile Include="dynAnimGraph.c">
+      <Filter>dynamics\anim</Filter>
+    </ClCompile>
+    <ClCompile Include="dynAnimGraphUpdater.c">
+      <Filter>dynamics\anim</Filter>
+    </ClCompile>
+    <ClCompile Include="dynAnimInterface.c">
+      <Filter>dynamics\anim</Filter>
+    </ClCompile>
+    <ClCompile Include="dynAnimNodeAlias.c">
+      <Filter>dynamics\anim</Filter>
+    </ClCompile>
+    <ClCompile Include="dynAnimNodeAuxTransform.c">
+      <Filter>dynamics\anim</Filter>
+    </ClCompile>
+    <ClCompile Include="dynAnimOverride.c">
+      <Filter>dynamics\anim</Filter>
+    </ClCompile>
+    <ClCompile Include="dynAnimPhysics.c">
+      <Filter>dynamics\anim</Filter>
+    </ClCompile>
+    <ClCompile Include="dynAnimPhysInfo.c">
+      <Filter>dynamics\anim</Filter>
+    </ClCompile>
+    <ClCompile Include="dynAnimTemplate.c">
+      <Filter>dynamics\anim</Filter>
+    </ClCompile>
+    <ClCompile Include="dynAnimTrack.c">
+      <Filter>dynamics\anim</Filter>
+    </ClCompile>
+    <ClCompile Include="dynBitField.c">
+      <Filter>dynamics</Filter>
+    </ClCompile>
+    <ClCompile Include="dynCloth.c">
+      <Filter>dynamics\cloth</Filter>
+    </ClCompile>
+    <ClCompile Include="dynClothBuild.c">
+      <Filter>dynamics\cloth</Filter>
+    </ClCompile>
+    <ClCompile Include="dynClothCollide.c">
+      <Filter>dynamics\cloth</Filter>
+    </ClCompile>
+    <ClCompile Include="dynClothConstraint.c">
+      <Filter>dynamics\cloth</Filter>
+    </ClCompile>
+    <ClCompile Include="dynClothDebug.c">
+      <Filter>dynamics\cloth</Filter>
+    </ClCompile>
+    <ClCompile Include="dynClothInfo.c">
+      <Filter>dynamics\cloth</Filter>
+    </ClCompile>
+    <ClCompile Include="dynClothMesh.c">
+      <Filter>dynamics\cloth</Filter>
+    </ClCompile>
+    <ClCompile Include="dynClothMeshPrimitive.c">
+      <Filter>dynamics\cloth</Filter>
+    </ClCompile>
+    <ClCompile Include="dynClothObject.c">
+      <Filter>dynamics\cloth</Filter>
+    </ClCompile>
+    <ClCompile Include="dynClothWind.c">
+      <Filter>dynamics\cloth</Filter>
+    </ClCompile>
+    <ClCompile Include="dynCostume.c">
+      <Filter>dynamics\anim</Filter>
+    </ClCompile>
+    <ClCompile Include="dynCriticalNodes.c">
+      <Filter>dynamics\anim</Filter>
+    </ClCompile>
+    <ClCompile Include="dynDraw.c">
+      <Filter>dynamics\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="dynEngine.c">
+      <Filter>dynamics</Filter>
+    </ClCompile>
+    <ClCompile Include="dynFx.c">
+      <Filter>dynamics\fx</Filter>
+    </ClCompile>
+    <ClCompile Include="dynFxDamage.c">
+      <Filter>dynamics\fx</Filter>
+    </ClCompile>
+    <ClCompile Include="dynFxDebug.c">
+      <Filter>dynamics\fx</Filter>
+    </ClCompile>
+    <ClCompile Include="dynFxFastParticle.c">
+      <Filter>dynamics\fx</Filter>
+    </ClCompile>
+    <ClCompile Include="dynFxInfo.c">
+      <Filter>dynamics\fx</Filter>
+    </ClCompile>
+    <ClCompile Include="dynFxInterface.c">
+      <Filter>dynamics\fx</Filter>
+    </ClCompile>
+    <ClCompile Include="dynFxManager.c">
+      <Filter>dynamics\fx</Filter>
+    </ClCompile>
+    <ClCompile Include="dynFxParticle.c">
+      <Filter>dynamics\fx</Filter>
+    </ClCompile>
+    <ClCompile Include="dynFxPhysics.c">
+      <Filter>dynamics\fx</Filter>
+    </ClCompile>
+    <ClCompile Include="dynGroundReg.c">
+      <Filter>dynamics\anim</Filter>
+    </ClCompile>
+    <ClCompile Include="dynMove.c">
+      <Filter>dynamics\anim</Filter>
+    </ClCompile>
+    <ClCompile Include="dynMovement.c">
+      <Filter>dynamics\anim</Filter>
+    </ClCompile>
+    <ClCompile Include="dynMoveTransition.c">
+      <Filter>dynamics\anim</Filter>
+    </ClCompile>
+    <ClCompile Include="dynNode.c">
+      <Filter>dynamics</Filter>
+    </ClCompile>
+    <ClCompile Include="dynRagdoll.c">
+      <Filter>dynamics\anim</Filter>
+    </ClCompile>
+    <ClCompile Include="dynRagdollData.c">
+      <Filter>dynamics\anim</Filter>
+    </ClCompile>
+    <ClCompile Include="dynSeqData.c">
+      <Filter>dynamics\anim</Filter>
+    </ClCompile>
+    <ClCompile Include="dynSequencer.c">
+      <Filter>dynamics\anim</Filter>
+    </ClCompile>
+    <ClCompile Include="dynSkeleton.c">
+      <Filter>dynamics\anim</Filter>
+    </ClCompile>
+    <ClCompile Include="dynSkeletonMovement.c">
+      <Filter>dynamics\anim</Filter>
+    </ClCompile>
+    <ClCompile Include="dynStrand.c">
+      <Filter>dynamics\anim</Filter>
+    </ClCompile>
+    <ClCompile Include="dynThread.c">
+      <Filter>dynamics</Filter>
+    </ClCompile>
+    <ClCompile Include="dynWind.c">
+      <Filter>dynamics</Filter>
+    </ClCompile>
+    <ClCompile Include="dynWindCell.c">
+      <Filter>dynamics</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorServerMain.c">
+      <Filter>StaticWorld</Filter>
+    </ClCompile>
+    <ClCompile Include="Genesis\wlGenesis.c">
+      <Filter>Genesis</Filter>
+    </ClCompile>
+    <ClCompile Include="Genesis\wlGenesisExterior.c">
+      <Filter>Genesis</Filter>
+    </ClCompile>
+    <ClCompile Include="Genesis\wlGenesisExteriorDesign.c">
+      <Filter>Genesis</Filter>
+    </ClCompile>
+    <ClCompile Include="Genesis\wlGenesisExteriorNode.c">
+      <Filter>Genesis</Filter>
+    </ClCompile>
+    <ClCompile Include="Genesis\wlGenesisInterior.c">
+      <Filter>Genesis</Filter>
+    </ClCompile>
+    <ClCompile Include="Genesis\wlGenesisMissions.c">
+      <Filter>Genesis</Filter>
+    </ClCompile>
+    <ClCompile Include="Genesis\wlGenesisPopulate.c">
+      <Filter>Genesis</Filter>
+    </ClCompile>
+    <ClCompile Include="Genesis\wlGenesisRoom.c">
+      <Filter>Genesis</Filter>
+    </ClCompile>
+    <ClCompile Include="Genesis\wlGenesisSolarSystem.c">
+      <Filter>Genesis</Filter>
+    </ClCompile>
+    <ClCompile Include="MapSnap.c" />
+    <ClCompile Include="Materials.c" />
+    <ClCompile Include="PhysicsSDK.cpp">
+      <Filter>physics</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysicsSDKCommands.c">
+      <Filter>physics</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysicsSDKHelpers.cpp">
+      <Filter>physics</Filter>
+    </ClCompile>
+    <ClCompile Include="PSDKFluid.cpp">
+      <Filter>physics</Filter>
+    </ClCompile>
+    <ClCompile Include="pub\dynAnimGraphPub.c">
+      <Filter>pub</Filter>
+    </ClCompile>
+    <ClCompile Include="RoomConn.c">
+      <Filter>StaticWorld\Rooms</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticWorld\group.c">
+      <Filter>StaticWorld\GroupDefs</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticWorld\groupdbmodify.c">
+      <Filter>StaticWorld\GroupDefs</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticWorld\groupjournal.c">
+      <Filter>StaticWorld\GroupDefs</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticWorld\groupProperties.c">
+      <Filter>StaticWorld\GroupDefs</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticWorld\grouptrack.c">
+      <Filter>StaticWorld\GroupDefs</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticWorld\grouputil.c">
+      <Filter>StaticWorld\GroupDefs</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticWorld\ObjectLibrary.c">
+      <Filter>StaticWorld\GroupDefs</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticWorld\wlCurve.c">
+      <Filter>StaticWorld\Curves</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticWorld\wlCurveLibrary.c">
+      <Filter>StaticWorld\Curves</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticWorld\wlCurveNoOpt.c">
+      <Filter>StaticWorld\Curves</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticWorld\wlCurveScripts.c">
+      <Filter>StaticWorld\Curves</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticWorld\wlDebrisField.c">
+      <Filter>StaticWorld</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticWorld\wlEncounter.c">
+      <Filter>StaticWorld</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticWorld\wlInteraction.c">
+      <Filter>StaticWorld</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticWorld\wlPhysicalProperties.c" />
+    <ClCompile Include="StaticWorld\wlVolumes.c">
+      <Filter>StaticWorld</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticWorld\WorldCell.c">
+      <Filter>StaticWorld</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticWorld\WorldCellBinning.c">
+      <Filter>StaticWorld</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticWorld\WorldCellClustering.c">
+      <Filter>StaticWorld</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticWorld\WorldCellCollisionEntry.c">
+      <Filter>StaticWorld</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticWorld\WorldCellDrawableEntry.c">
+      <Filter>StaticWorld</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticWorld\WorldCellEntry.c">
+      <Filter>StaticWorld</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticWorld\WorldCellFXEntry.c">
+      <Filter>StaticWorld</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticWorld\WorldCellInteractionEntry.c">
+      <Filter>StaticWorld</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticWorld\WorldCellMiscEntry.c">
+      <Filter>StaticWorld</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticWorld\WorldCellStreaming.c">
+      <Filter>StaticWorld</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticWorld\WorldGrid.c">
+      <Filter>StaticWorld</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticWorld\WorldGridLoad.c">
+      <Filter>StaticWorld</Filter>
+    </ClCompile>
+    <ClCompile Include="staticWorld\WorldGridLoad_opt.c">
+      <Filter>StaticWorld</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticWorld\WorldGridRecv.c">
+      <Filter>StaticWorld</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticWorld\WorldGridSave.c">
+      <Filter>StaticWorld</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticWorld\WorldGridSend.c">
+      <Filter>StaticWorld</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticWorld\ZoneMap.c">
+      <Filter>StaticWorld</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticWorld\ZoneMapLayer.c">
+      <Filter>StaticWorld</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain\wlTerrainBrush.c">
+      <Filter>StaticWorld\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain\wlTerrainErode.c">
+      <Filter>StaticWorld\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain\wlTerrainQueue.c">
+      <Filter>StaticWorld\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain\wlTerrainSource.c">
+      <Filter>StaticWorld\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="UGC\wlUGC.c">
+      <Filter>UGC</Filter>
+    </ClCompile>
+    <ClCompile Include="wcoll\collcache.c">
+      <Filter>collision</Filter>
+    </ClCompile>
+    <ClCompile Include="wcoll\collide.c">
+      <Filter>collision</Filter>
+    </ClCompile>
+    <ClCompile Include="wcoll\ctri.c">
+      <Filter>collision</Filter>
+    </ClCompile>
+    <ClCompile Include="wcoll\entworldcoll.c">
+      <Filter>collision</Filter>
+    </ClCompile>
+    <ClCompile Include="wlCommandParse.c" />
+    <ClCompile Include="wlCostume.c">
+      <Filter>costume</Filter>
+    </ClCompile>
+    <ClCompile Include="wlExclusionGrid.c" />
+    <ClCompile Include="wlModelBinning.c">
+      <Filter>geo</Filter>
+    </ClCompile>
+    <ClCompile Include="wlModelBinningLOD.c">
+      <Filter>geo</Filter>
+    </ClCompile>
+    <ClCompile Include="wlModelBinningOpt.c">
+      <Filter>geo</Filter>
+    </ClCompile>
+    <ClCompile Include="wlModelData.c">
+      <Filter>geo</Filter>
+    </ClCompile>
+    <ClCompile Include="wlModelLoad.c">
+      <Filter>geo</Filter>
+    </ClCompile>
+    <ClCompile Include="wlModelReload.c">
+      <Filter>geo</Filter>
+    </ClCompile>
+    <ClCompile Include="wlPerf.c" />
+    <ClCompile Include="wlResourcePack.c" />
+    <ClCompile Include="wlSavedTaggedGroups.c">
+      <Filter>StaticWorld</Filter>
+    </ClCompile>
+    <ClCompile Include="wlSaveDXT.cpp" />
+    <ClCompile Include="wlSkelInfo.c">
+      <Filter>costume</Filter>
+    </ClCompile>
+    <ClCompile Include="wlSky.c" />
+    <ClCompile Include="wlTerrain.c">
+      <Filter>StaticWorld\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="wlTerrainAtlas.c">
+      <Filter>StaticWorld\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="wlTerrainBin.c">
+      <Filter>StaticWorld\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="wlTerrainObject.c">
+      <Filter>StaticWorld\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="wlTerrainObjectV2.c">
+      <Filter>StaticWorld\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="wlTime.c" />
+    <ClCompile Include="WorldColl.c">
+      <Filter>collision</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldCollBad.c">
+      <Filter>collision</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldCollFluid.c">
+      <Filter>collision</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldCollObject.c">
+      <Filter>collision</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldCollStoredModelData.c">
+      <Filter>collision</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldCollTest.c">
+      <Filter>collision</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldLib.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Common\GlobalEnums.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\MapDescription.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UtilitiesLib\components\GenericMeshRemesh.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoLOD.h">
+      <Filter>geo</Filter>
+    </ClInclude>
+    <ClInclude Include="beaconClient.h">
+      <Filter>beacon</Filter>
+    </ClInclude>
+    <ClInclude Include="beaconClientServerPrivate.h">
+      <Filter>beacon</Filter>
+    </ClInclude>
+    <ClInclude Include="beaconConnection.h">
+      <Filter>beacon</Filter>
+    </ClInclude>
+    <ClInclude Include="beaconFile.h">
+      <Filter>beacon</Filter>
+    </ClInclude>
+    <ClInclude Include="beaconGenerate.h">
+      <Filter>beacon</Filter>
+    </ClInclude>
+    <ClInclude Include="beaconPrivate.h">
+      <Filter>beacon</Filter>
+    </ClInclude>
+    <ClInclude Include="beaconServerPrivate.h">
+      <Filter>beacon</Filter>
+    </ClInclude>
+    <ClInclude Include="dynAction.h">
+      <Filter>dynamics\anim</Filter>
+    </ClInclude>
+    <ClInclude Include="dynAnimChart.h">
+      <Filter>dynamics\anim</Filter>
+    </ClInclude>
+    <ClInclude Include="dynAnimExpression.h">
+      <Filter>dynamics\anim</Filter>
+    </ClInclude>
+    <ClInclude Include="dynAnimGraph.h">
+      <Filter>dynamics\anim</Filter>
+    </ClInclude>
+    <ClInclude Include="dynAnimGraphUpdater.h">
+      <Filter>dynamics\anim</Filter>
+    </ClInclude>
+    <ClInclude Include="dynAnimOverride.h">
+      <Filter>dynamics\anim</Filter>
+    </ClInclude>
+    <ClInclude Include="dynAnimPhysics.h">
+      <Filter>dynamics\anim</Filter>
+    </ClInclude>
+    <ClInclude Include="dynAnimPhysInfo.h">
+      <Filter>dynamics\anim</Filter>
+    </ClInclude>
+    <ClInclude Include="dynAnimTemplate.h">
+      <Filter>dynamics\anim</Filter>
+    </ClInclude>
+    <ClInclude Include="dynAnimTrack.h">
+      <Filter>dynamics\anim</Filter>
+    </ClInclude>
+    <ClInclude Include="dynAnimTrackPrivate.h">
+      <Filter>dynamics\anim</Filter>
+    </ClInclude>
+    <ClInclude Include="dynClothCollide.h">
+      <Filter>dynamics\cloth</Filter>
+    </ClInclude>
+    <ClInclude Include="dynClothInfo.h">
+      <Filter>dynamics\cloth</Filter>
+    </ClInclude>
+    <ClInclude Include="dynClothPrivate.h">
+      <Filter>dynamics\cloth</Filter>
+    </ClInclude>
+    <ClInclude Include="dynClothWind.h">
+      <Filter>dynamics\cloth</Filter>
+    </ClInclude>
+    <ClInclude Include="dynCostume.h">
+      <Filter>dynamics\anim</Filter>
+    </ClInclude>
+    <ClInclude Include="dynCriticalNodes.h">
+      <Filter>dynamics\anim</Filter>
+    </ClInclude>
+    <ClInclude Include="dynEngine.h">
+      <Filter>dynamics</Filter>
+    </ClInclude>
+    <ClInclude Include="dynFx.h">
+      <Filter>dynamics\fx</Filter>
+    </ClInclude>
+    <ClInclude Include="dynFxPhysics.h">
+      <Filter>dynamics\fx</Filter>
+    </ClInclude>
+    <ClInclude Include="dynGroundReg.h">
+      <Filter>dynamics\anim</Filter>
+    </ClInclude>
+    <ClInclude Include="dynMove.h">
+      <Filter>dynamics\anim</Filter>
+    </ClInclude>
+    <ClInclude Include="dynMovement.h">
+      <Filter>dynamics\anim</Filter>
+    </ClInclude>
+    <ClInclude Include="dynMoveTransition.h">
+      <Filter>dynamics\anim</Filter>
+    </ClInclude>
+    <ClInclude Include="dynNodePrivate.h">
+      <Filter>dynamics</Filter>
+    </ClInclude>
+    <ClInclude Include="dynSeqData.h">
+      <Filter>dynamics\anim</Filter>
+    </ClInclude>
+    <ClInclude Include="dynSequencerPrivate.h">
+      <Filter>dynamics\anim</Filter>
+    </ClInclude>
+    <ClInclude Include="dynSkeletonMovement.h">
+      <Filter>dynamics\anim</Filter>
+    </ClInclude>
+    <ClInclude Include="dynStrand.h">
+      <Filter>dynamics\anim</Filter>
+    </ClInclude>
+    <ClInclude Include="dynThread.h">
+      <Filter>dynamics</Filter>
+    </ClInclude>
+    <ClInclude Include="dynWindCell.h">
+      <Filter>dynamics</Filter>
+    </ClInclude>
+    <ClInclude Include="MaterialsPrivate.h" />
+    <ClInclude Include="PhysicsSDKPrivate.h">
+      <Filter>physics</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\ActivityLogEnums.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\beacon.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\beaconAStar.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\beaconDebug.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\beaconPath.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\dynAnimGraphPub.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\dynAnimInterface.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\dynAnimNodeAlias.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\dynAnimNodeAuxTransform.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\dynBitField.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\dynCloth.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\dynClothMesh.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\dynDraw.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\dynFxDamage.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\dynFxDebug.h">
+      <Filter>dynamics\fx</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\dynFxEnums.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\dynFxFastParticle.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\dynFxInfo.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\dynFxInterface.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\dynFxManager.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\dynFxParticle.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\dynNode.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\dynNodeInline.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\dynRagdoll.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\dynRagdollData.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\dynSequencer.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\dynSkeleton.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\dynWind.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\EditorServerMain.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\groupdbmodify.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\MapSnap.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\MaterialEnums.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\Materials.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\ObjectLibrary.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\partition_enums.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\PhysicsSDK.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\RoomConn.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\wlAutoLOD.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\wlBeacon.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\wlCommandParse.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\wlCostume.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\wlCurve.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\wlCurveLibrary.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\wlCurveScripts.h">
+      <Filter>StaticWorld\Curves</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\wlDebrisField.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\wlEditorIncludes.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\wlEncounter.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\wlExclusionGrid.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\wlGenesis.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\wlGenesisExterior.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\wlGenesisExteriorDesign.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\wlGenesisExteriorNode.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\wlGenesisInterior.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\wlGenesisMissions.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\wlGenesisMissionsGameStructs.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\wlGenesisPopulate.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\wlGenesisRoom.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\wlGenesisSolarSystem.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\wlGroupPropertyStructs.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\wlInteraction.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\wlLight.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\wlModel.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\wlModelEnums.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\wlModelInline.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\wlPerf.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\wlPhysicalProperties.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\wlRoad.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\wlSavedTaggedGroups.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\wlSaveDXT.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\wlSkelInfo.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\wlSky.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\wlTerrain.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\wlTerrainBrush.h">
+      <Filter>StaticWorld\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\wlTerrainEnums.h">
+      <Filter>StaticWorld\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\wlTerrainErode.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\wlTerrainInline.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\wlTerrainQueue.h">
+      <Filter>StaticWorld\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\wlTerrainSource.h">
+      <Filter>StaticWorld\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\wlTime.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\wlUGC.h">
+      <Filter>UGC</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\wlVolumes.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\WorldBounds.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\WorldCellClustering.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\WorldColl.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\WorldGrid.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\WorldLib.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\WorldLibEnums.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\WorldLibStructs.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="RoomConnPrivate.h">
+      <Filter>StaticWorld\Rooms</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticWorld\group.h">
+      <Filter>StaticWorld\GroupDefs</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticWorld\groupjournal.h">
+      <Filter>StaticWorld\GroupDefs</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticWorld\groupProperties.h">
+      <Filter>StaticWorld\GroupDefs</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticWorld\grouptrack.h">
+      <Filter>StaticWorld\GroupDefs</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticWorld\grouputil.h">
+      <Filter>StaticWorld\GroupDefs</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticWorld\WorldCell.h">
+      <Filter>StaticWorld</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticWorld\WorldCellBinning.h">
+      <Filter>StaticWorld</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticWorld\WorldCellEntry.h">
+      <Filter>StaticWorld</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticWorld\WorldCellEntryPrivate.h">
+      <Filter>StaticWorld</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticWorld\WorldCellStreaming.h">
+      <Filter>StaticWorld</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticWorld\WorldCellStreamingPrivate.h">
+      <Filter>StaticWorld</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticWorld\WorldGridLoad.h">
+      <Filter>StaticWorld</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticWorld\WorldGridLoadPrivate.h">
+      <Filter>StaticWorld</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticWorld\WorldGridPrivate.h">
+      <Filter>StaticWorld</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticWorld\WorldGridRecv.h">
+      <Filter>StaticWorld</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticWorld\WorldGridSave.h">
+      <Filter>StaticWorld</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticWorld\WorldGridSend.h">
+      <Filter>StaticWorld</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticWorld\ZoneMap.h">
+      <Filter>StaticWorld</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticWorld\ZoneMapLayer.h">
+      <Filter>StaticWorld</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticWorld\ZoneMapLayerPrivate.h">
+      <Filter>StaticWorld</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticWorld\ZoneMapReport.h">
+      <Filter>StaticWorld</Filter>
+    </ClInclude>
+    <ClInclude Include="wcoll\collcache.h">
+      <Filter>collision</Filter>
+    </ClInclude>
+    <ClInclude Include="wcoll\collide.h">
+      <Filter>collision</Filter>
+    </ClInclude>
+    <ClInclude Include="wcoll\ctri.h">
+      <Filter>collision</Filter>
+    </ClInclude>
+    <ClInclude Include="wcoll\entworldcoll.h">
+      <Filter>collision</Filter>
+    </ClInclude>
+    <ClInclude Include="wlModelBinning.h">
+      <Filter>geo</Filter>
+    </ClInclude>
+    <ClInclude Include="wlModelBinningLOD.h">
+      <Filter>geo</Filter>
+    </ClInclude>
+    <ClInclude Include="wlModelBinningPrivate.h">
+      <Filter>geo</Filter>
+    </ClInclude>
+    <ClInclude Include="wlModelData.h">
+      <Filter>geo</Filter>
+    </ClInclude>
+    <ClInclude Include="wlModelLoad.h">
+      <Filter>geo</Filter>
+    </ClInclude>
+    <ClInclude Include="wlModelReload.h">
+      <Filter>geo</Filter>
+    </ClInclude>
+    <ClInclude Include="wlResourcePack.h" />
+    <ClInclude Include="wlState.h" />
+    <ClInclude Include="wlTerrainPrivate.h">
+      <Filter>StaticWorld\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="wlTimePrivate.h" />
+    <ClInclude Include="WorldCollPrivate.h">
+      <Filter>collision</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldLib_AnonAutoRunIncludes.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="AutoGen">
+      <UniqueIdentifier>{04a93c26-4dc5-4512-8f28-42d4ebef2342}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="beacon">
+      <UniqueIdentifier>{184016ec-f2ff-4805-8b24-4814dfc6dfcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="collision">
+      <UniqueIdentifier>{60615ab9-44b0-4c2d-b484-73954ea61c5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="costume">
+      <UniqueIdentifier>{33a17258-aa20-4895-96af-36528eb32540}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dynamics">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dynamics\anim">
+      <UniqueIdentifier>{a9cede03-af37-498f-a52f-1596451eac8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dynamics\cloth">
+      <UniqueIdentifier>{dd8d8779-ddb8-4ccd-aad0-86d04555be55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dynamics\draw">
+      <UniqueIdentifier>{9a59d617-37f5-40a0-93d0-ec95933cd273}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dynamics\fx">
+      <UniqueIdentifier>{0a4f4f9f-b2b8-4c35-8ced-6adb14a95d70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExternHeaders">
+      <UniqueIdentifier>{e2c8717f-cff4-4031-bfcb-dd3905fd84b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Genesis">
+      <UniqueIdentifier>{383ea59b-16ca-4353-98bb-42d08762799a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="geo">
+      <UniqueIdentifier>{eaace86d-0d31-41dd-9803-723066dd5b67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="physics">
+      <UniqueIdentifier>{58ae3cee-2d88-4cfb-88b6-aa30a424cad7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pub">
+      <UniqueIdentifier>{0ab84b2c-4f11-4aaa-8341-c15d10e8584b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
+    </Filter>
+    <Filter Include="StaticWorld">
+      <UniqueIdentifier>{ad856608-5188-4d93-b0f2-adc11a498009}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="StaticWorld\Curves">
+      <UniqueIdentifier>{0400e260-05bc-4307-9bec-1354f80855df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="StaticWorld\GroupDefs">
+      <UniqueIdentifier>{daafc918-d2e7-41ea-9210-82a4fab023fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="StaticWorld\Rooms">
+      <UniqueIdentifier>{d3303968-6349-4162-ac3b-1448b7d764e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="StaticWorld\Terrain">
+      <UniqueIdentifier>{e0eacdbb-698d-4dab-985b-73550892c62b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UGC">
+      <UniqueIdentifier>{6b4db7da-fb2d-4b97-aadf-15257e072ba6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="VTune\WorldLib.vpj" />
+  </ItemGroup>
+</Project>

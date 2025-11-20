@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\Core\Common\AutoGen\Controller_autogen_RemoteFuncs.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\Common\AutoGen\ObjectDB_autogen_RemoteFuncs.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\Common\AutoGen\TextureServer_autogen_RemoteFuncs.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\ShardCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CrossRoads\Common\TextFilterCommon.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\AccountStub.c" />
+    <ClCompile Include="..\Common\AutoGen\ServerLib_autogen_RemoteFuncs.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\AutoGen\ServerLib_autotransactions_autogen_wrappers.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoGen\serverlib_AutoGen_1.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoGen\ServerLib_AutoGen_2.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoSettings.c" />
+    <ClCompile Include="ChoiceTable.c" />
+    <ClCompile Include="GatewayPerf.c">
+      <Filter>gateway</Filter>
+    </ClCompile>
+    <ClCompile Include="GatewayUtil.c">
+      <Filter>gateway</Filter>
+    </ClCompile>
+    <ClCompile Include="GatewayWatcher.c">
+      <Filter>gateway</Filter>
+    </ClCompile>
+    <ClCompile Include="GenericHttpServing.c">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="HttpXpathRemoteCommands.c">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="JobManagerSupport.c" />
+    <ClCompile Include="LocalTransactionManager.c">
+      <Filter>transact</Filter>
+    </ClCompile>
+    <ClCompile Include="LogComm.c">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiplexedNetLinkList.c" />
+    <ClCompile Include="net\tls.c">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="net\tlsCommands.c">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="objects\objBackupCache.c">
+      <Filter>object</Filter>
+    </ClCompile>
+    <ClCompile Include="objects\objDCC.c">
+      <Filter>object</Filter>
+    </ClCompile>
+    <ClCompile Include="objects\objLocks.c">
+      <Filter>object</Filter>
+    </ClCompile>
+    <ClCompile Include="objects\objServerDB.c">
+      <Filter>object</Filter>
+    </ClCompile>
+    <ClCompile Include="objects\objServerTransactions.c">
+      <Filter>object</Filter>
+    </ClCompile>
+    <ClCompile Include="objects\objTransactionCommands.c">
+      <Filter>object</Filter>
+    </ClCompile>
+    <ClCompile Include="objects\objTransactions.c">
+      <Filter>object</Filter>
+    </ClCompile>
+    <ClCompile Include="objects\ServerLibPrefStore.c">
+      <Filter>object</Filter>
+    </ClCompile>
+    <ClCompile Include="objMerger.c" />
+    <ClCompile Include="objTesting.c" />
+    <ClCompile Include="PlayerBooter.c" />
+    <ClCompile Include="RemoteCommandGroup.c" />
+    <ClCompile Include="RemoteXMLRPC.c">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceDBSupport.c" />
+    <ClCompile Include="ServerLib.c">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="serverlib_structparsertests.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerLibCmdParse.c" />
+    <ClCompile Include="ServerLibPatching.c" />
+    <ClCompile Include="ServerMonitorCommands.c" />
+    <ClCompile Include="ShardCluster.c" />
+    <ClCompile Include="svrError.c">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="TransactionRequestManager.c">
+      <Filter>transact</Filter>
+    </ClCompile>
+    <ClCompile Include="TransactionSystemUtils.c">
+      <Filter>transact</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Core\Controller\Pub\ControllerPub.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\AppServerLib\pub\aslJobManagerPub.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\AppServerLib\pub\aslResourceDBPub.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\ShardCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\TextFilterCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\AccountStub.h" />
+    <ClInclude Include="..\Common\GlobalEnums.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\MapDescription.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ResourceDBUtils.h" />
+    <ClInclude Include="..\Common\ugcprojectcommon.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UtilitiesLib\components\FileServing.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UtilitiesLib\components\GlobalTypeEnum.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UtilitiesLib\components\GlobalTypes.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UtilitiesLib\components\HttpXpathSupport.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UtilitiesLib\components\objContainer.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UtilitiesLib\language\Message.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UtilitiesLib\net\accountnet.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UtilitiesLib\utils\logging.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UtilitiesLib\utils\UtilitiesLibEnums.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoSettings.h" />
+    <ClInclude Include="LocalTransactionManager_Internal.h">
+      <Filter>transact</Filter>
+    </ClInclude>
+    <ClInclude Include="net\tlsCommands.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="objects\objBackupCache.h">
+      <Filter>object</Filter>
+    </ClInclude>
+    <ClInclude Include="objects\objDCC.h">
+      <Filter>object</Filter>
+    </ClInclude>
+    <ClInclude Include="objects\objLocks.h">
+      <Filter>object</Filter>
+    </ClInclude>
+    <ClInclude Include="objects\objServerDB.h">
+      <Filter>object</Filter>
+    </ClInclude>
+    <ClInclude Include="objects\objTransactionCommands.h">
+      <Filter>object</Filter>
+    </ClInclude>
+    <ClInclude Include="objects\ServerLibPrefStore.h">
+      <Filter>object</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\ChoiceTable.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\GatewayPerf.h">
+      <Filter>gateway</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\GatewayUtil.h">
+      <Filter>gateway</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\GatewayWatcher.h">
+      <Filter>gateway</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\GenericHttpServing.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\JobManagerSupport.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\LocalTransactionManager.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\LogComm.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\MultiplexedNetLinkList.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\objMerger.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\objTransactions.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\PlayerBooter.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\RemoteCommandGroup.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\ResourceDBSupport.h" />
+    <ClInclude Include="pub\ServerLib.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\ServerLibCmdParse.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\ShardCluster.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\svrGlobalInfo.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\tls.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\TransactionSystem.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="svrError.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="TransactionRequestManager.h">
+      <Filter>transact</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="AutoGen">
+      <UniqueIdentifier>{a3ed985b-c9b6-4825-9a6d-206af919d125}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{b4a32758-0d19-44ea-bcdc-13debf094510}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="config">
+      <UniqueIdentifier>{4f47b05d-429b-4cde-8543-34ac8b3710da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExternHeaders">
+      <UniqueIdentifier>{733760b5-905a-4436-b46b-eb59bea44005}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gateway">
+      <UniqueIdentifier>{2826e5a9-15d3-48c6-8104-0f1f05f0c69f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="http">
+      <UniqueIdentifier>{6a9fa480-a25e-426f-ac56-e78a70f19715}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net">
+      <UniqueIdentifier>{f0d3efe8-fba1-4ca8-ad1e-194030279f8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="object">
+      <UniqueIdentifier>{6a5e298f-67cf-4037-9874-1f2f6c48db08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pub">
+      <UniqueIdentifier>{42f7225b-4b67-4997-9895-9eb1128fef41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="transact">
+      <UniqueIdentifier>{9b06fbc8-eef9-4da5-a125-e1f86473ed0d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

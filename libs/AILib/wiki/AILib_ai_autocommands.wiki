@@ -1,0 +1,233 @@
+h4.WipeAggroInfo (AccessLevel 9) [Notes|Command_WipeAggroInfo_AILib]
+*No Return*
+Removes all tracked data of any enemies this entity knows about
+
+
+h4.AmbientJobGetAnimListFromNode (AccessLevel 9) [Notes|Command_AmbientJobGetAnimListFromNode_AILib]
+*Returns: string*
+Returns the first animation defined in the job anim list for the ambient job location critter is occupying
+
+
+h4.AmbientJobGetNumUsers (AccessLevel 9) [Notes|Command_AmbientJobGetNumUsers_AILib]
+*Returns: int*
+Gets the number of users that are current at and using the ambient job
+
+
+h4.AssignPowerConfig (AccessLevel 9) [Notes|Command_AssignPowerConfig_AILib]
+*No Return*
+*Parameter 1: configName (string)*
+Assign the entity the specified power config, which can override settings like power weighting
+
+
+h4.ModDefHasTag (AccessLevel 9) [Notes|Command_ModDefHasTag_AILib]
+*Returns: int*
+*Parameter 1: tags (PowerTagsStruct struct)*
+*Parameter 2: tagName (string)*
+Returns true if the given tag is found 
+
+
+h4.CalloutFinished (AccessLevel 9) [Notes|Command_CalloutFinished_AILib]
+*No Return*
+Only valid for Civilians. Returns the civilian to its normal behavior.
+This should be called when the FSM is finished running.
+
+
+h4.CanUseOutOfCombatPowers (AccessLevel 9) [Notes|Command_CanUseOutOfCombatPowers_AILib]
+*Returns: int*
+No comment provided
+
+h4.ClearAllConfigMods (AccessLevel 9) [Notes|Command_ClearAllConfigMods_AILib]
+*No Return*
+Clears all ConfigMods
+
+
+h4.ClearAllPowerConfigMods (AccessLevel 9) [Notes|Command_ClearAllPowerConfigMods_AILib]
+*No Return*
+Clears all ConfigMods
+
+
+h4.ClearAttackTarget (AccessLevel 9) [Notes|Command_ClearAttackTarget_AILib]
+*No Return*
+Clears the critter's attack target
+
+
+h4.ClearMyOwner (AccessLevel 9) [Notes|Command_ClearMyOwner_AILib]
+*No Return*
+Clears the owner from the current entity and puts it on its own team
+
+
+h4.ClearPreferredTarget (AccessLevel 9) [Notes|Command_ClearPreferredTarget_AILib]
+*No Return*
+No comment provided
+
+h4.ClearSubTargetCategory (AccessLevel 9) [Notes|Command_ClearSubTargetCategory_AILib]
+*No Return*
+Clears the entity's subtarget category
+
+
+h4.DefaultDropOutOfCombat (AccessLevel 9) [Notes|Command_DefaultDropOutOfCombat_AILib]
+*Returns: int*
+Returns true if the overarching Combat FSM would stop being in combat. See comment at
+DefaultEnterCombat()
+
+
+h4.DefaultEnterCombat (AccessLevel 9) [Notes|Command_DefaultEnterCombat_AILib]
+*Returns: int*
+Returns true if the overarching Combat FSM would go into combat. This is useful for maintaining
+consistency between all of our simple FSMs and our more complicated ones even when we make 
+changes to how combat works
+
+
+h4.DeleteUIVar (AccessLevel 9) [Notes|Command_DeleteUIVar_AILib]
+*No Return*
+*Parameter 1: varName (string)*
+Removes a UI var
+
+
+h4.DoAnimDebug (AccessLevel 9) [Notes|Command_DoAnimDebug_AILib]
+*No Return*
+No comment provided
+
+h4.EntCloseToPathEnd (AccessLevel 9) [Notes|Command_EntCloseToPathEnd_AILib]
+*Returns: int*
+returns true if the entity has completed whatever movement it was trying to do
+
+
+h4.EntIsFinishedMovement (AccessLevel 9) [Notes|Command_EntIsFinishedMovement_AILib]
+*Returns: int*
+returns true if the entity has completed whatever movement it was trying to do
+
+
+h4.GetCalloutMsg (AccessLevel 9) [Notes|Command_GetCalloutMsg_AILib]
+*Returns: string*
+Only valid for civilians. Only valid for Item callouts
+Gets the callout message stored on the Civilian. Currently, it is only valid for Item callouts.
+
+
+h4.GetCritterDefName (AccessLevel 9) [Notes|Command_GetCritterDefName_AILib]
+*Returns: string*
+No comment provided
+
+h4.TimeSinceLastMoved (AccessLevel 9) [Notes|Command_TimeSinceLastMoved_AILib]
+*Returns: float*
+No comment provided
+
+h4.TimeSinceTeamBuffed (AccessLevel 9) [Notes|Command_TimeSinceTeamBuffed_AILib]
+*Returns: float*
+No comment provided
+
+h4.GoToOriginalSpawnPos (AccessLevel 9) [Notes|Command_GoToOriginalSpawnPos_AILib]
+*No Return*
+No comment provided
+
+h4.IsCalloutTargetAvailable (AccessLevel 9) [Notes|Command_IsCalloutTargetAvailable_AILib]
+*Returns: int*
+Only valid for civilians. Valid for all callouts: Item callouts, OnClick and Emote reactions
+Checks if the callout target is available (i.e. not interacting and not in combat)
+
+
+h4.IsPerformingOutOfCombatPower (AccessLevel 9) [Notes|Command_IsPerformingOutOfCombatPower_AILib]
+*Returns: int*
+Returns true if the entity is in currently in the process of performing an out of combat power
+
+
+h4.MastermindGetHeatValue (AccessLevel 9) [Notes|Command_MastermindGetHeatValue_AILib]
+*Returns: float*
+Function to add to the heat level, will not go past min/max
+
+
+h4.MastermindGetNumDeadPlayers (AccessLevel 9) [Notes|Command_MastermindGetNumDeadPlayers_AILib]
+*Returns: int*
+No comment provided
+
+h4.MastermindGetTeamAverageHealth (AccessLevel 9) [Notes|Command_MastermindGetTeamAverageHealth_AILib]
+*Returns: float*
+Returns the average health percent of the members on the team
+
+
+h4.MastermindGetTeamHealthPercent (AccessLevel 9) [Notes|Command_MastermindGetTeamHealthPercent_AILib]
+*Returns: float*
+Returns the team's health as a percent of the total health of all the members
+
+
+h4.MastermindGetTimeSinceEnteredNewRoom (AccessLevel 9) [Notes|Command_MastermindGetTimeSinceEnteredNewRoom_AILib]
+*Returns: float*
+Returns the time in seconds since any player entered a new room 
+
+
+h4.MastermindGetTimeSinceLastCombat (AccessLevel 9) [Notes|Command_MastermindGetTimeSinceLastCombat_AILib]
+*Returns: float*
+Returns the time in seconds since the team was last in combat 
+
+
+h4.MastermindGetTimeSinceLastDeath (AccessLevel 9) [Notes|Command_MastermindGetTimeSinceLastDeath_AILib]
+*Returns: float*
+Returns the time in seconds since the last death of a player. 
+
+
+h4.RemoveCombatCoherencyOverride (AccessLevel 9) [Notes|Command_RemoveCombatCoherencyOverride_AILib]
+*No Return*
+Removes the combat coherency override information from the AI
+
+
+h4.SendMessageTeam (AccessLevel 9) [Notes|Command_SendMessageTeam_AILib]
+*No Return*
+*Parameter 1: msgTag (string)*
+Sends specified message to all team members
+
+
+h4.SetDontSleep (AccessLevel 9) [Notes|Command_SetDontSleep_AILib]
+*No Return*
+*Parameter 1: on (int)*
+WARNING: Enables or disables sleep mode on an entity. Only turn off sleep mode is it's very
+important to keep this entity running even when no players are around
+
+
+h4.SetPowerMode (AccessLevel 9) [Notes|Command_SetPowerMode_AILib]
+*No Return*
+*Parameter 1: mode (string)*
+*Parameter 2: on (int)*
+Turns the power mode for this entity on or off (lasts until cleared)
+
+
+h4.SetTargetingListen (AccessLevel 9) [Notes|Command_SetTargetingListen_AILib]
+*No Return*
+*Parameter 1: on (int)*
+Enables the "targeted" message for the FSM
+
+
+h4.SetUIVar (AccessLevel 9) [Notes|Command_SetUIVar_AILib]
+*No Return*
+*Parameter 1: varName (string)*
+*Parameter 2: floatVal (float)*
+Sets a UI var <varName>,<floatVal> key value pair
+
+
+h4.SetUIVarMessage (AccessLevel 9) [Notes|Command_SetUIVarMessage_AILib]
+*No Return*
+*Parameter 1: varName (string)*
+*Parameter 2: msgKey (string)*
+Sets a UI var <varName>,<messageKey> key value pair
+
+
+h4.WipeMyAggroFromTarget (AccessLevel 9) [Notes|Command_WipeMyAggroFromTarget_AILib]
+*No Return*
+Removes my aggro from target critter
+
+
+h4.WipeMyAggroFromTeam (AccessLevel 9) [Notes|Command_WipeMyAggroFromTeam_AILib]
+*No Return*
+Removes all of my aggro from the target and its team.
+
+
+h4.WipeMyAggroGlobal (AccessLevel 9) [Notes|Command_WipeMyAggroGlobal_AILib]
+*No Return*
+Remove ALL of my aggro from every critter that knows about me
+
+
+h4.aiDebugHideUnusedStatus (int) - (AccessLevel 9) [Notes|Command_aiDebugHideUnusedStatus_AILib]
+No comment provided
+
+h4.aiDebugLogToFile (int) - (AccessLevel 9) [Notes|Command_aiDebugLogToFile_AILib]
+No comment provided
+

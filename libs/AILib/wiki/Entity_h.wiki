@@ -1,0 +1,301 @@
+{anchor:GlobalEntityFlags}
+_auto-generated from I:\Night\Night\src\libs\AILib\..\..\CrossRoads\Common\Entity\Entity.h_
+h3. Enumerated type *GlobalEntityFlags* - (null)
+*ENTITYFLAG_IS_PLAYER*
+*ENTITYFLAG_DEAD*
+*ENTITYFLAG_UNTARGETABLE*
+*ENTITYFLAG_UNSELECTABLE*
+*ENTITYFLAG_CIVILIAN*
+*ENTITYFLAG_CIV_PROCESSING_ONLY*
+*ENTITYFLAG_PLAYER_DISCONNECTED*
+*ENTITYFLAG_PLAYER_LOGGING_IN*
+*ENTITYFLAG_DONOTSEND*
+*ENTITYFLAG_DONOTDRAW*
+*ENTITYFLAG_IGNORE*
+*ENTITYFLAG_DESTROY*
+*ENTITYFLAG_PLAYER_LOGGING_OUT*
+*ENTITYFLAG_PET_LOGGING_IN*
+*ENTITYFLAG_DONOTFADE*
+*ENTITYFLAG_PUPPETPROGRESS*
+*ENTITYFLAG_PLAYER_INVITE_WHITELIST_ENABLED*
+*ENTITYFLAG_PLAYER_TRADE_WHITELIST_ENABLED*
+*ENTITYFLAG_PLAYER_DUEL_WHITELIST_ENABLED*
+*ENTITYFLAG_VANITYPET*
+*ENTITYFLAG_DOOR_SEQUENCE_IN_PROGRESS*
+*ENTITYFLAG_CRITTERPET*
+*ENTITYFLAG_PROJECTILE*
+*ENTITYFLAG_PET_LOGGING_OUT*
+{anchor:MissionReturnErrorType}
+_auto-generated from I:\Night\Night\src\libs\AILib\..\..\CrossRoads\Common\Entity\Entity.h_
+h3. Enumerated type *MissionReturnErrorType* - (null)
+*None*
+*InvalidMap*
+*InCombat*
+{anchor:NeedOrGreedChoice}
+_auto-generated from I:\Night\Night\src\libs\AILib\..\..\CrossRoads\Common\Entity\Entity.h_
+h3. Enumerated type *NeedOrGreedChoice* - (null)
+*None*
+*Pass*
+*Greed*
+*Need*
+*Count*
+{anchor:TeamState}
+_auto-generated from I:\Night\Night\src\libs\AILib\..\..\CrossRoads\Common\Entity\Entity.h_
+h3. Enumerated type *TeamState* - (null)
+*Member*
+*Invitee*
+*Requester*
+*LoggedOut*
+{anchor:EntityVisibilityState}
+_auto-generated from I:\Night\Night\src\libs\AILib\..\..\CrossRoads\Common\Entity\Entity.h_
+h3. Enumerated type *EntityVisibilityState* - (null)
+*Unknown*
+*Visible*
+*Hidden*
+{anchor:OffscreenType}
+_auto-generated from I:\Night\Night\src\libs\AILib\..\..\CrossRoads\Common\Entity\Entity.h_
+h3. Enumerated type *OffscreenType* - (null)
+*Target*
+*Team*
+*Player*
+*CritterFriendly*
+*CritterEnemy*
+{anchor:Entity}
+
+_auto-generated from I:\Night\Night\src\libs\AILib\..\..\CrossRoads\Common\Entity\Entity.h_
+
+h3.Entity Struct Documentation
+
+*myContainerID* < int >
+-	The transaction system ID, which may be 0 if this is not available to it
+
+*myEntityType* < int >
+-	The type of this entity, which is project specific
+
+*myDataEntityFlags* < int >
+-	Two sets of flags to make sure code and data aren't stomping each other 
+-	(would like a MOD system, akin to AIConfig).  When setting, |s them together into myEntityFlags.
+-	When checking, uses myEntityFlags still.
+
+*myEntityFlags* < int >
+-	Generic flags. Anyone can use these, but they are put up
+-	here so that they can be passed as masking flags to
+-	searches
+-	Now sent through the shit bucket instead of normal entity sending because
+-	it changes too often
+
+*mySendFlags* < int >
+-	GameServer -> Client update stuff.
+
+*iPartitionIdx_UseAccessor* < int >
+-	Partition the Entity belongs to.  Not sent because the client should have no need to know
+-	what partition it's in - every Entity it knows about should be in the same partition.
+
+*debugName* < string >
+-	The debug name of this entity
+
+*pPlayer*
+-	Player-specific information
+
+*pChar*
+-	Character information, such as hitpoints and powers
+
+*pSaved*
+-	Information to be saved to the database, that is used by players and other saved entities and only sent to self and teammates
+
+*pAttach*
+-	Has all the entity attaching/riding stuff if necessary
+
+*pCritter*
+-	Critter-specific information
+
+*pNemesis*
+-	Nemesis-specific information. Never filled in on "real" entities, only for container subscription
+
+*pInventoryV2*
+-	optional inventory bag(s)attached to this entity
+-	Inventory has its own special puppet copy code
+
+*pInventoryV1_Deprecated*
+-	old inventory, loaded for fixup only and then destroyed.
+
+*pSharedBankData*
+-	Shared Bank-specific information
+
+*ItemIDMax* < int >
+-	Item ID
+
+*pTeam*
+-	Team information for this entity
+-	This is not stored on the Player structure in order to allow for the possibility of NPCs on
+-	teams in the future
+
+*pEmailV3*
+-	Combined NPC/Player email.
+
+*pTeamUpRequest*
+-	Open team request. This player has stepped into a volume that allows him to join an active open team
+
+*hFaction* < CritterFactionRef >
+-	The KOS faction
+
+*hSubFaction* < CritterFactionRef >
+-	Player's sub faction
+
+*hFactionOverride* < CritterFactionRef >
+-	A temporary override faction used by PvP maps
+
+*hPowerFactionOverride* < CritterFactionRef >
+-	The temporary override faction from powers.  Wears off when the power does.
+
+*hWLCostume* < WLCostumeRef >
+-	The graphics state of the costume
+
+*costumeRef*
+-	Which costume to use for drawing this skel
+
+*\{*
+-	*pEffectiveCostume*
+--	The rule is to first look at the effective costume.  This is only present if powers/equipment alter the costume.
+--	Then look at the stored costume, which is set for persisted entities
+--	Then look at the substitute costume, which is used by special critters like Nemesis ones.
+--	Then look at the referenced costume, which is what most critter entities will have
+--	Destructible critters have no player costume.  They have a string name of the object it pulled geo from.
+-	*pMountCostume*
+--	Contains the costume data for the player's mount
+-	*bPredictDismount* < 0/1 >
+--	Client "dismount" prediction
+-	*hMood* < PCMoodRef >
+--	Mood is tracked outside the costume and is applied during costume generate
+-	*eaAdditionalFX* (multiple allowed)
+--	Additional FX can be set up in the world and are not persisted
+
+*\}*
+
+*Gender* < int >
+-	The gender of this entity (e.g. the avatar, not the account holder)
+
+*fHue* < float >
+-	Override hue for PowerFX, CostumeFX, etc.  Set at entity creation time, from CritterDef or
+-	EntCreate AttribMod.
+
+*pEquippedArt*
+-	State of ItemArt stuff from Inventory (perhaps should be inside Inventory struct?).
+-	Does not need to be sent until it needs to be used for prediction.
+
+*UIVars* (multiple allowed)
+-	Vars for the UI that can be set in an FSM or whereever
+
+*erCreator* < int >
+-	If this entity was created by another, this is the creator
+
+*erOwner* < int >
+-	If this entity was created by another, this is the ultimate creator
+
+*hCreatorNode* < WorldInteractionNodeRef >
+-	If this entity was created by an interaction node, this is the node
+
+*erCreatorTarget* < int >
+-	If this entity was created by another, this was their main target
+
+*Neighborhood*
+-	Which neighborhood the entity is in.
+
+*pGameEventInfo*
+-	Cached info for GameEvents, for performance
+
+*uiPowerReplaceIDMax* < int >
+-	Powers replacement
+
+*externalInnate*
+-	Data tracking the external innate effects on the entity
+
+*\{*
+-	*PowersExternalInnate* (multiple allowed)
+--	NONINDEXED All Innate Powers granted to the Entity through external means (maps, volumes, etc)
+
+*\}*
+
+*iAICombatTeamID* < int >
+-	This ID is generated by casting the AI combat team pointer in the game server to an integer. It's used by the client to check if the entities are from the same aggro group.
+
+*uiUpdateInactiveEntUI* < int >
+-	Part of what this timer checks is if pEntUI should be created,
+-	so it can't live on pEntUI unfortunately.
+
+*pEntUI*
+-	Part of what this timer checks is if pEntUI should be created,
+-	so it can't live on pEntUI unfortunately.
+-	Client-side only information about UI
+
+*\{*
+-	*uiLastOffscreenLoSCheck* < int >
+--	When the entity is offscreen, check LoS (when requested) periodically.
+--	TODO(MK): find a reasonable way of combining this with OffscreenUIData
+-	*uiLastDamaged* < int >
+--	Used by the client for lifebar fade in/out, and for
+--	displaying damage counters. In milliseconds.
+-	*uiLastFlank* < int >
+--	Similar to uiLastDamaged, but notes the time the Entity
+--	was last affected by a CombatTrackerNet with the Flank flag
+-	*uiLastDamagedByPlayer* < int >
+--	same as uiLastDamged, but watches only the player.  If we need to watch more ents,
+--	we will need to complicate the system
+-	*LastDamageAngle* < float >
+--	The last attack angle relative to the player's facing direction
+-	*LastDamageTangentAngle* < float >
+--	The last attack angle relative to the player's facing direction
+--	The angle of the vector tangent to the player's facing direction
+-	*uiLastDamageDirectionTimes* < int >
+--	The last time we were damaged from one of the enumerated directions
+-	*vuiLowerAtTime* < int >
+--	Entity screen box calculation / smoothing / caching.
+
+*\}*
+
+*fEntitySendDistance* < float >
+-	Entity send distance
+
+*fEntityMinSeeAtDistance* < float >
+-	Entity send distance
+-	This entity can always be seen at least this far regardless of perception value
+
+*bNoInterpAlphaOnSpawn*
+-	If Preserve alpha is set, then for one frame the alpha goal will be ignored and the set alpha will be used
+
+*bPreserveAlpha*
+-	If Preserve alpha is set, then for one frame the alpha goal will be ignored and the set alpha will be used
+
+*bImperceptible*
+-	this gets set based on whether this entity can be perceived by the client
+
+*bForceFadeOut*
+-	If cut scene is hiding this entity to control an entity that looks the same
+
+*bInCutscene*
+-	If cut scene is hiding this entity to control an entity that looks the same
+
+*bDeadBodyFaded*
+-	used by the deadBodies system
+
+*bDeathPredicted*
+-	death prediction, client only flag
+
+*factionDirtiedCount* < int >
+-	used to notify client that the faction has changed
+
+*fAlpha* < float >
+-	If this is set, it forces the entity to fade out
+
+*fHideTime* < float >
+-	don't set me directly, this gets calculated every frame in gclEntityTick
+
+*fCameraCollisionFade* < float >
+-	don't set me directly, this gets calculated every frame in gclEntityTick
+
+*astrMissionToGrant* < string >
+-	A single mission to grant during entity tick.  This exists
+-	so the LoginServer can grant UGC missions.
+
+*estrProjSpecificLogString* < string >
+-	Per entity description

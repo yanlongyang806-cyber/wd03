@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\Common\AutoGen\ErrorTrackerLib_autotransactions_autogen_wrappers.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ETCommon\ETCommonStructs.c">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ETCommon\ETDumps.c">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ETCommon\ETIncomingData.c">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ETCommon\ETShared.c">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ETCommon\ETShared_opt.c">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ETCommon\ETWebCommon.c">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ETCommon\symstore.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="autogen\ErrorTrackerLib_AutoGen_1.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoGen\ErrorTrackerLib_AutoGen_2.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="Backlog.c" />
+    <ClCompile Include="blame.c" />
+    <ClCompile Include="email.c" />
+    <ClCompile Include="email_opt.c" />
+    <ClCompile Include="ErrorEntry.c" />
+    <ClCompile Include="ErrorTracker.c" />
+    <ClCompile Include="ErrorTrackerDB.c" />
+    <ClCompile Include="ErrorTrackerHandlerInfo.c" />
+    <ClCompile Include="ErrorTrackerLib.c" />
+    <ClCompile Include="etTrivia.c" />
+    <ClCompile Include="Search.c" />
+    <ClCompile Include="WebInterface.c" />
+    <ClCompile Include="WebReport.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Common\ETCommon\ETCommonStructs.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ETCommon\ETDumps.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ETCommon\ETIncomingData.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ETCommon\ETShared.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ETCommon\ETWebCommon.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ETCommon\symstore.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UtilitiesLib\utils\HttpClient.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UtilitiesLib\utils\trivia.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Backlog.h" />
+    <ClInclude Include="blame.h" />
+    <ClInclude Include="email.h" />
+    <ClInclude Include="ErrorEntry.h" />
+    <ClInclude Include="ErrorTracker.h" />
+    <ClInclude Include="ErrorTrackerDB.h" />
+    <ClInclude Include="ErrorTrackerHandlerInfo.h" />
+    <ClInclude Include="ErrorTrackerLib.h" />
+    <ClInclude Include="errortrackerlibprivate.h" />
+    <ClInclude Include="etTrivia.h" />
+    <ClInclude Include="Search.h" />
+    <ClInclude Include="WebInterface.h" />
+    <ClInclude Include="WebReport.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="AutoGen">
+      <UniqueIdentifier>{be56fc6b-760d-4741-ab07-7138082e3dda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{d2479bef-9189-4267-834c-2199690e8b59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExternHeaders">
+      <UniqueIdentifier>{cd003359-abeb-496a-ad3a-38c73afb7020}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

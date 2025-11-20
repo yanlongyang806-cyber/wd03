@@ -1,0 +1,21 @@
+-----------------------------------------------------------------------------------------
+JDRAGO 2009/06/30 - 
+
+Until this becomes a formal library, you can pull out individual .h/.c combinations
+and directly link them into your application. 
+
+-----------------------------------------------------------------------------------------
+To use xboxHostIO.h/c:
+
+Note: This will introduce a dependency on xbdm.dll and msvcp71.dll to your executable.
+
+Add to "Configuration Properties / General / Additional Include Directories":
+
+    ../../3rdparty/xdk/win32;../../libs/HostIOLib;
+
+Add to "Configuration Properties / Linker / General / Additional Library Directories":
+
+    ../../3rdparty/xdk/win32lib;
+
+-----------------------------------------------------------------------------------------
+

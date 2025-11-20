@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="autogen\HttpLib_AutoGen_1.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoGen\HttpLib_AutoGen_2.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoXMLRPC.c" />
+    <ClCompile Include="HttpLib.c" />
+    <ClCompile Include="HttpServing.c" />
+    <ClCompile Include="HttpServingStats.c" />
+    <ClCompile Include="httputil.c" />
+    <ClCompile Include="jira.c" />
+    <ClCompile Include="jira_opt.c" />
+    <ClCompile Include="JSONRPC.c" />
+    <ClCompile Include="WebInterface\wiCommon.c">
+      <Filter>WebInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="XMLRPC.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\UtilitiesLib\net\accountnet.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UtilitiesLib\utils\url.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="HttpLib.h" />
+    <ClInclude Include="HttpServing.h" />
+    <ClInclude Include="HttpServingStats.h" />
+    <ClInclude Include="httputil.h" />
+    <ClInclude Include="jira.h" />
+    <ClInclude Include="JSONRPC.h" />
+    <ClInclude Include="WebInterface\wiCommon.h">
+      <Filter>WebInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="WebInterface\wiCommonInternal.h">
+      <Filter>WebInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="XMLRPC.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="AutoGen">
+      <UniqueIdentifier>{d1afaf10-0081-44a2-b34e-331257015d55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExternHeaders">
+      <UniqueIdentifier>{c5f6dde3-0ebd-456e-88b9-360143f11099}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WebInterface">
+      <UniqueIdentifier>{00ba0abe-2982-46bf-9060-9a97587f7f99}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

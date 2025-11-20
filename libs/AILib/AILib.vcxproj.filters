@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="aiAggro.c" />
+    <ClCompile Include="aiAmbient.c" />
+    <ClCompile Include="aiAnimList.c" />
+    <ClCompile Include="aiAvoid.c" />
+    <ClCompile Include="aiBrawlerCombat.c" />
+    <ClCompile Include="aiBScript.c" />
+    <ClCompile Include="aiCivilian.c" />
+    <ClCompile Include="aiCivilianCar.c" />
+    <ClCompile Include="aiCivilianPedestrian.c" />
+    <ClCompile Include="aiCivilianTraffic.c" />
+    <ClCompile Include="aiCivilianTrolley.c" />
+    <ClCompile Include="aiCivLegGeneration.c" />
+    <ClCompile Include="aiCivMovement.c" />
+    <ClCompile Include="aiCmdSlow.c" />
+    <ClCompile Include="aiCombat.c" />
+    <ClCompile Include="aiCombatJob.c" />
+    <ClCompile Include="aiCombatRoles.c" />
+    <ClCompile Include="aiConfig.c" />
+    <ClCompile Include="aiDebug.c" />
+    <ClCompile Include="aiFormation.c" />
+    <ClCompile Include="aiFSM.c" />
+    <ClCompile Include="aiGroupCombat.c" />
+    <ClCompile Include="aiJobs.c" />
+    <ClCompile Include="aiLib.c" />
+    <ClCompile Include="aiMastermind.c" />
+    <ClCompile Include="aiMastermindExpose.c" />
+    <ClCompile Include="aiMastermindHeat.c" />
+    <ClCompile Include="aiMessages.c" />
+    <ClCompile Include="aiMovement.c" />
+    <ClCompile Include="aiMovementModes.c" />
+    <ClCompile Include="aiMultiTickAction.c" />
+    <ClCompile Include="aiPowers.c" />
+    <ClCompile Include="aiStruct.c" />
+    <ClCompile Include="aiTeam.c" />
+    <ClCompile Include="AutoGen\AILib_AutoGen_1.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoGen\AILib_AutoGen_2.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\CrossRoads\Common\AnimList_Common.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\AttribMod.h">
+      <Filter>ExternHeaders\ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\AttribModFragility.h">
+      <Filter>ExternHeaders\ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\Character.h">
+      <Filter>ExternHeaders\ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\CharacterAttribs.h">
+      <Filter>ExternHeaders\ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\CombatPool.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\PowerActivation.h">
+      <Filter>ExternHeaders\ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\PowerApplication.h">
+      <Filter>ExternHeaders\ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\Powers.h">
+      <Filter>ExternHeaders\ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\PowerSlots.h">
+      <Filter>ExternHeaders\ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\PowerTree.h">
+      <Filter>ExternHeaders\ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\aiDebugShared.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\allegiance.h">
+      <Filter>ExternHeaders\ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\entCritter.h">
+      <Filter>ExternHeaders\ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\Entity.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\EntitySavedData.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\Player.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Mission\mapstate_common.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UtilitiesLib\components\Expression.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UtilitiesLib\components\GlobalTypes.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UtilitiesLib\net\accountnet.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UtilitiesLib\utils\UtilitiesLibEnums.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WorldLib\pub\beaconPath.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="aiAggro.h" />
+    <ClInclude Include="aiAmbient.h" />
+    <ClInclude Include="aiAvoid.h" />
+    <ClInclude Include="aiBrawlerCombat.h" />
+    <ClInclude Include="aiCivilian.h" />
+    <ClInclude Include="aiCivilianCar.h" />
+    <ClInclude Include="aiCivilianPedestrian.h" />
+    <ClInclude Include="aiCivilianPrivate.h" />
+    <ClInclude Include="aiCivilianTraffic.h" />
+    <ClInclude Include="aiCivilianTrolley.h" />
+    <ClInclude Include="AICivMovement.h" />
+    <ClInclude Include="aiCombatJob.h" />
+    <ClInclude Include="aiGroupCombat.h" />
+    <ClInclude Include="AILib_AnonAutoRunIncludes.h" />
+    <ClInclude Include="aiMastermindExpose.h" />
+    <ClInclude Include="aiMastermindHeat.h" />
+    <ClInclude Include="aiMessages.h" />
+    <ClInclude Include="aiMovementModes.h" />
+    <ClInclude Include="pub\aiAnimList.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\aiCombatRoles.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\aiConfig.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\aiDebug.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\aiEnums.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\aiExtern.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\aiFormation.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\aiJobs.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\aiLib.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\aiMastermind.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\aiMovement.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\aiMultiTickAction.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\aiPowers.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\aiStruct.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+    <ClInclude Include="pub\aiTeam.h">
+      <Filter>pub</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="AutoGen">
+      <UniqueIdentifier>{90a3d37f-f48a-45ba-8a9c-bb999e05336d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExternHeaders">
+      <UniqueIdentifier>{f4b8e670-861e-4351-8415-77076963350c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExternHeaders\ExternHeaders">
+      <UniqueIdentifier>{9658239e-8995-4358-bd6d-a8fe62357709}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pub">
+      <UniqueIdentifier>{7e3e7665-c543-486d-a5a5-4a03aab69d50}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="aiCivilianPrivate.inl" />
+  </ItemGroup>
+</Project>

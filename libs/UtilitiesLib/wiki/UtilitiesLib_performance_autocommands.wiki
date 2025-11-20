@@ -1,0 +1,5 @@
+h4.diskAccessAllowed (int) - (AccessLevel 9) [Notes|Command_diskAccessAllowed_UtilitiesLib]
+Sets a flag saying whether or not disk access should be allowed from the
+primary thread (for performance debugging)
+
+

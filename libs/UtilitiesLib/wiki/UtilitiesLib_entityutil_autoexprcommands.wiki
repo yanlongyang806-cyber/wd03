@@ -1,0 +1,25 @@
+h4.EntArrayIntersect (AccessLevel 9) [Notes|Command_EntArrayIntersect_UtilitiesLib]
+*No Return*
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: entsIn2 (Entity Array)*
+No comment provided
+
+h4.EntArrayUnion (AccessLevel 9) [Notes|Command_EntArrayUnion_UtilitiesLib]
+*No Return*
+*Parameter 1: entsIn1 (Entity Array (modified))*
+*Parameter 2: entsIn2 (Entity Array)*
+No comment provided
+
+h4.EntCount (AccessLevel 9) [Notes|Command_EntCount_UtilitiesLib]
+*Returns: int*
+*Parameter 1: entsIn (Entity Array)*
+Returns the number of entities in an ent array
+
+
+h4.SetEntArrayVar (AccessLevel 9) [Notes|Command_SetEntArrayVar_UtilitiesLib]
+*No Return*
+*Parameter 1: entsIn (Entity Array)*
+*Parameter 2: varName (string)*
+Stores an ent array for future reference
+
+

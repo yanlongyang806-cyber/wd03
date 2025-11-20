@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Full Debug|Win32">
+      <Configuration>Full Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Full Debug|x64">
+      <Configuration>Full Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{13E22C87-13EF-4A48-8CB2-001BFAC29837}</ProjectGuid>
+    <RootNamespace>RenderLib</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="..\..\PropertySheets\GeneralSettings.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="..\..\PropertySheets\GeneralSettings.props" />
+    <Import Project="..\..\PropertySheets\x64.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'" Label="PropertySheets">
+    <Import Project="..\..\PropertySheets\GeneralSettings.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|x64'" Label="PropertySheets">
+    <Import Project="..\..\PropertySheets\GeneralSettings.props" />
+    <Import Project="..\..\PropertySheets\x64.props" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../3rdparty/bink;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_WINDOWS;_CRTDBG_MAP_ALLOC=1;USEZLIB=1;RENDERLIB=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <TreatWarningAsError>false</TreatWarningAsError>
+    </ClCompile>
+    <Lib>
+    </Lib>
+    <PreBuildEvent>
+      <Command>..\..\utilities\bin\structparser X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_WINDOWS;_CRTDBG_MAP_ALLOC=1;USEZLIB=1;RENDERLIB=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+    </Lib>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <PreBuildEvent>
+      <Command>..\..\utilities\bin\structparser X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../3rdparty/bink;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_FULLDEBUG;_LIB;_WINDOWS;_CRTDBG_MAP_ALLOC=1;USEZLIB=1;RENDERLIB=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Lib>
+    </Lib>
+    <PreBuildEvent>
+      <Command>..\..\utilities\bin\structparser X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_FULLDEBUG;_LIB;_WINDOWS;_CRTDBG_MAP_ALLOC=1;USEZLIB=1;RENDERLIB=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+    </Lib>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <PreBuildEvent>
+      <Command>..\..\utilities\bin\structparser X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AutoGen\renderlib_AutoGen_1.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="AutoGen\RenderLib_AutoGen_2.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="pub\RdrDrawList.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="RdrCommandParse.c" />
+    <ClCompile Include="RdrDevice.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="RdrFMV.c" />
+    <ClCompile Include="RdrLightAssembly.c" />
+    <ClCompile Include="RdrShader.c" />
+    <ClCompile Include="RdrSurface.c" />
+    <ClCompile Include="RdrTexture.c" />
+    <ClCompile Include="RenderLib.c" />
+    <ClCompile Include="rt_winutil.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pub\RdrCommandParse.h" />
+    <ClInclude Include="pub\RdrDevice.h" />
+    <ClInclude Include="pub\RdrDeviceTrace.h" />
+    <ClInclude Include="pub\RdrDrawable.h" />
+    <ClInclude Include="pub\RdrDrawList.h" />
+    <ClInclude Include="pub\RdrEnums.h" />
+    <ClInclude Include="pub\RdrFMV.h" />
+    <ClInclude Include="pub\RdrGeometry.h" />
+    <ClInclude Include="pub\RdrHistogram.h" />
+    <ClInclude Include="pub\RdrLightAssembly.h" />
+    <ClInclude Include="pub\RdrShader.h" />
+    <ClInclude Include="pub\RdrStandardDevice.h" />
+    <ClInclude Include="pub\RdrState.h" />
+    <ClInclude Include="pub\RdrSurface.h" />
+    <ClInclude Include="pub\RdrTexture.h" />
+    <ClInclude Include="pub\RdrTextureEnums.h" />
+    <ClInclude Include="pub\RenderLib.h" />
+    <ClInclude Include="pub\ShaderServerInterface.h" />
+    <ClInclude Include="RdrDevicePrivate.h" />
+    <ClInclude Include="RdrDrawListPrivate.h" />
+    <ClInclude Include="RdrFMVPrivate.h" />
+    <ClInclude Include="RdrShaderPrivate.h" />
+    <ClInclude Include="RenderLib_AnonAutoRunIncludes.h" />
+    <ClInclude Include="rt_winutil.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\data\shaders\operations\Add.op" />
+    <None Include="..\..\data\shaders\operations\AlphaPlaneFade.op" />
+    <None Include="..\..\data\shaders\operations\Assembler.op" />
+    <None Include="..\..\data\shaders\operations\AtmosphericScatter_Space.op" />
+    <None Include="..\..\data\shaders\operations\BuildingLights.op" />
+    <None Include="..\..\data\shaders\operations\BuildingLightsColored.op" />
+    <None Include="..\..\data\shaders\operations\CameraDist.op" />
+    <None Include="..\..\data\shaders\operations\CharacterBacklightColor.op" />
+    <None Include="..\..\data\shaders\operations\Clamp.op" />
+    <None Include="..\..\data\shaders\operations\Color0.op" />
+    <None Include="..\..\data\shaders\operations\ColorTint2b.op" />
+    <None Include="..\..\data\shaders\operations\ColorTint2b_IgnoreAlpha.op" />
+    <None Include="..\..\data\shaders\operations\ColorTint3b.op.unused" />
+    <None Include="..\..\data\shaders\operations\ColorTint3b_IgnoreAlpha.op.unused" />
+    <None Include="..\..\data\shaders\operations\ColorTint4.op" />
+    <None Include="..\..\data\shaders\operations\ColorTint4_IgnoreAlpha.op" />
+    <None Include="..\..\data\shaders\operations\ColorTint4b.op" />
+    <None Include="..\..\data\shaders\operations\ColorTint4b_IgnoreAlpha.op" />
+    <None Include="..\..\data\shaders\operations\ColorValue.op" />
+    <None Include="..\..\data\shaders\operations\Comparison.op" />
+    <None Include="..\..\data\shaders\operations\Comparison_LessThan.op" />
+    <None Include="..\..\data\shaders\operations\DepthColorSelect.op" />
+    <None Include="..\..\data\shaders\operations\DepthFade.op" />
+    <None Include="..\..\data\shaders\operations\DepthFadeVolumeBoundary.op" />
+    <None Include="..\..\data\shaders\operations\DepthFadeWeight.op" />
+    <None Include="..\..\data\shaders\operations\Dither_Pattern_4.op" />
+    <None Include="..\..\data\shaders\operations\Divide.op" />
+    <None Include="..\..\data\shaders\operations\DotProduct.op" />
+    <None Include="..\..\data\shaders\operations\DualColor.op" />
+    <None Include="..\..\data\shaders\operations\DualColor_IgnoreAlpha.op" />
+    <None Include="..\..\data\shaders\operations\Floor.op" />
+    <None Include="..\..\data\shaders\operations\ForceHDROutput.op" />
+    <None Include="..\..\data\shaders\operations\FresnelTerm.op" />
+    <None Include="..\..\data\shaders\operations\FresnelTerm_Advanced.op" />
+    <None Include="..\..\data\shaders\operations\Glow.op" />
+    <None Include="..\..\data\shaders\operations\GradientInterval.op" />
+    <None Include="..\..\data\shaders\operations\HeightmapBlend.op" />
+    <None Include="..\..\data\shaders\operations\HSV_to_RGB.op" />
+    <None Include="..\..\data\shaders\operations\Invert.op" />
+    <None Include="..\..\data\shaders\operations\Jiggle.op" />
+    <None Include="..\..\data\shaders\operations\Kill.op" />
+    <None Include="..\..\data\shaders\operations\LERP.op" />
+    <None Include="..\..\data\shaders\operations\LERP4.op" />
+    <None Include="..\..\data\shaders\operations\LERP_IgnoreAlpha.op" />
+    <None Include="..\..\data\shaders\operations\LightBleed.op" />
+    <None Include="..\..\data\shaders\operations\LightBleedTransform.op" />
+    <None Include="..\..\data\shaders\operations\LightmapHL2Basis.op" />
+    <None Include="..\..\data\shaders\operations\MaskCombine.op" />
+    <None Include="..\..\data\shaders\operations\Max.op" />
+    <None Include="..\..\data\shaders\operations\Min.op" />
+    <None Include="..\..\data\shaders\operations\Multiply.op" />
+    <None Include="..\..\data\shaders\operations\MultiplyAdd.op" />
+    <None Include="..\..\data\shaders\operations\NormalAdd.op" />
+    <None Include="..\..\data\shaders\operations\NormalCombine_2+.op" />
+    <None Include="..\..\data\shaders\operations\NormalCombine_3.op" />
+    <None Include="..\..\data\shaders\operations\NormalCombine_4.op" />
+    <None Include="..\..\data\shaders\operations\Normalize.op" />
+    <None Include="..\..\data\shaders\operations\NormalReconstitute.op" />
+    <None Include="..\..\data\shaders\operations\NormalTexture_2+.op" />
+    <None Include="..\..\data\shaders\operations\NormalTexture_3.op" />
+    <None Include="..\..\data\shaders\operations\NormalTexture_4.op" />
+    <None Include="..\..\data\shaders\operations\NormalTexture_5.op" />
+    <None Include="..\..\data\shaders\operations\NormalTexture_6.op" />
+    <None Include="..\..\data\shaders\operations\NormalTexture_7.op" />
+    <None Include="..\..\data\shaders\operations\NormalTexture_8.op" />
+    <None Include="..\..\data\shaders\operations\OffsetScroll.op" />
+    <None Include="..\..\data\shaders\operations\OldDualColor.op" />
+    <None Include="..\..\data\shaders\operations\Oscillator.op" />
+    <None Include="..\..\data\shaders\operations\OutlineEdgeDetect.op" />
+    <None Include="..\..\data\shaders\operations\OutlineTexture.op" />
+    <None Include="..\..\data\shaders\operations\Output.op" />
+    <None Include="..\..\data\shaders\operations\Overlay.op" />
+    <None Include="..\..\data\shaders\operations\ProjectSpecialParam.op" />
+    <None Include="..\..\data\shaders\operations\Rand.op" />
+    <None Include="..\..\data\shaders\operations\ReflectionVector.op" />
+    <None Include="..\..\data\shaders\operations\Refract.op" />
+    <None Include="..\..\data\shaders\operations\RefractAndFade.op" />
+    <None Include="..\..\data\shaders\operations\Saturate.op" />
+    <None Include="..\..\data\shaders\operations\ScreenABSTexCoord.op" />
+    <None Include="..\..\data\shaders\operations\ScreenColor.op" />
+    <None Include="..\..\data\shaders\operations\ScreenColorBlurred.op" />
+    <None Include="..\..\data\shaders\operations\ScreenTexCoord.op" />
+    <None Include="..\..\data\shaders\operations\Scroll.op" />
+    <None Include="..\..\data\shaders\operations\SkyClearColor.op" />
+    <None Include="..\..\data\shaders\operations\Slider.op" />
+    <None Include="..\..\data\shaders\operations\Specular.op" />
+    <None Include="..\..\data\shaders\operations\Specular_WithValue.op" />
+    <None Include="..\..\data\shaders\operations\SpecularExpRange.op" />
+    <None Include="..\..\data\shaders\operations\SphericalCoordsVS.op" />
+    <None Include="..\..\data\shaders\operations\SphericalCoordsWS.op" />
+    <None Include="..\..\data\shaders\operations\Step.op" />
+    <None Include="..\..\data\shaders\operations\Subtract.op" />
+    <None Include="..\..\data\shaders\operations\Subtract_IgnoreAlpha.op" />
+    <None Include="..\..\data\shaders\operations\TangentToCamNormal.op" />
+    <None Include="..\..\data\shaders\operations\Terrain_0Detail.op" />
+    <None Include="..\..\data\shaders\operations\Terrain_1Detail.op" />
+    <None Include="..\..\data\shaders\operations\Terrain_2Detail.op" />
+    <None Include="..\..\data\shaders\operations\Terrain_3Detail.op" />
+    <None Include="..\..\data\shaders\operations\Terrain_Debug.op" />
+    <None Include="..\..\data\shaders\operations\TerrainMaterial_Preview.op" />
+    <None Include="..\..\data\shaders\operations\TerrainNX_0Detail.op" />
+    <None Include="..\..\data\shaders\operations\TerrainNX_1Detail.op" />
+    <None Include="..\..\data\shaders\operations\TerrainNX_2Detail.op" />
+    <None Include="..\..\data\shaders\operations\TerrainNX_3Detail.op" />
+    <None Include="..\..\data\shaders\operations\TerrainNXMaterial_Preview.op" />
+    <None Include="..\..\data\shaders\operations\TexCellScroll.op" />
+    <None Include="..\..\data\shaders\operations\TexCoord0.op" />
+    <None Include="..\..\data\shaders\operations\TexCoord1.op" />
+    <None Include="..\..\data\shaders\operations\TexCoordWorld.op" />
+    <None Include="..\..\data\shaders\operations\TexRotate.op" />
+    <None Include="..\..\data\shaders\operations\TexScrollScale.op" />
+    <None Include="..\..\data\shaders\operations\Texture.op" />
+    <None Include="..\..\data\shaders\operations\Texture_2.op" />
+    <None Include="..\..\data\shaders\operations\Texture_3.op" />
+    <None Include="..\..\data\shaders\operations\Texture_4.op" />
+    <None Include="..\..\data\shaders\operations\Texture_5.op" />
+    <None Include="..\..\data\shaders\operations\Texture_6.op" />
+    <None Include="..\..\data\shaders\operations\Texture_7.op" />
+    <None Include="..\..\data\shaders\operations\Texture_8.op" />
+    <None Include="..\..\data\shaders\operations\Texture_RangeExpanded.op" />
+    <None Include="..\..\data\shaders\operations\TextureNormal.op" />
+    <None Include="..\..\data\shaders\operations\TextureNormalDXT5nm.op" />
+    <None Include="..\..\data\shaders\operations\TextureNormalDXT5nm_2+.op" />
+    <None Include="..\..\data\shaders\operations\TextureNormalDXT5nm_3.op" />
+    <None Include="..\..\data\shaders\operations\TextureNormalDXT5nm_4.op" />
+    <None Include="..\..\data\shaders\operations\TextureNormalDXT5nm_5.op" />
+    <None Include="..\..\data\shaders\operations\TextureNormalDXT5nm_6.op" />
+    <None Include="..\..\data\shaders\operations\TextureNormalDXT5nm_7.op" />
+    <None Include="..\..\data\shaders\operations\TextureNormalDXT5nm_8.op" />
+    <None Include="..\..\data\shaders\operations\TextureProjection.op" />
+    <None Include="..\..\data\shaders\operations\TextureProjectionWDepthmap.op" />
+    <None Include="..\..\data\shaders\operations\TextureRGBE.op" />
+    <None Include="..\..\data\shaders\operations\TextureWithKill.op" />
+    <None Include="..\..\data\shaders\operations\TexXfrm.op" />
+    <None Include="..\..\data\shaders\operations\TimeGradient.op" />
+    <None Include="..\..\data\shaders\operations\UniqueOffset.op" />
+    <None Include="..\..\data\shaders\operations\WaterDepthFade.op" />
+    <None Include="..\..\data\shaders\operations\WaterRefract.op" />
+    <None Include="..\..\data\shaders\operations\WorldSpaceNormal.op" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\StructParserStub\StructParserStub.vcxproj">
+      <Project>{1d29e421-93b2-4e32-9186-7fafc3971c5b}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,9 @@
+h4.skelInfoEdit (AccessLevel 9) [Notes|Command_skelInfoEdit_WorldLib]
+*Parameter 1: skelinfo_name (string)*
+Open the named fx file in your favorite editor.
+
+
+h4.costumeShowSkeletonFiles (int) - (AccessLevel 9) [Notes|Command_costumeShowSkeletonFiles_WorldLib]
+Writes costume debug info to the screen
+
+

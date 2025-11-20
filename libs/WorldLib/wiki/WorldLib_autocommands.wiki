@@ -1,0 +1,695 @@
+h4.DebugPrintWorldDrawLogsToFile (AccessLevel 9) [Notes|Command_DebugPrintWorldDrawLogsToFile_WorldLib]
+*Parameter 1: pchFilename (string)*
+No comment provided
+
+h4.MakeBinsExclusionString (AccessLevel 9) [Notes|Command_MakeBinsExclusionString_WorldLib]
+*Parameter 1: pString (string)*
+No comment provided
+
+h4.MapsNotToBin (AccessLevel 9) [Notes|Command_MapsNotToBin_WorldLib]
+*Parameter 1: pMaps (string)*
+No comment provided
+
+h4.ModelUnload (AccessLevel 9) [Notes|Command_ModelUnload_WorldLib]
+Unloads all model geometry
+
+
+h4.OnlyMapToBin (AccessLevel 9) [Notes|Command_OnlyMapToBin_WorldLib]
+*Parameter 1: pMaps (string)*
+No comment provided
+
+h4.animThreads (AccessLevel 0) [Notes|Command_animThreads_WorldLib]
+*Parameter 1: iNum (int)*
+No comment provided
+
+h4.beaconDebugCountArrays (AccessLevel 9) [Notes|Command_beaconDebugCountArrays_WorldLib]
+No comment provided
+
+h4.beaconDebugLocalizeMemory (AccessLevel 9) [Notes|Command_beaconDebugLocalizeMemory_WorldLib]
+No comment provided
+
+h4.beaconDebugPrintInfo (AccessLevel 9) [Notes|Command_beaconDebugPrintInfo_WorldLib]
+No comment provided
+
+h4.beaconDebugSetLevel (AccessLevel 9) [Notes|Command_beaconDebugSetLevel_WorldLib]
+*Parameter 1: level (float)*
+No comment provided
+
+h4.beaconFileReport (AccessLevel 9) [Notes|Command_beaconFileReport_WorldLib]
+*Parameter 1: zmTypeStr (string)*
+*Parameter 2: wrTypeStr (string)*
+No comment provided
+
+h4.beaconReportLargestGalaxies (AccessLevel 9) [Notes|Command_beaconReportLargestGalaxies_WorldLib]
+No comment provided
+
+h4.beaconReportMostMemory (AccessLevel 9) [Notes|Command_beaconReportMostMemory_WorldLib]
+No comment provided
+
+h4.beaconReportStats (AccessLevel 9) [Notes|Command_beaconReportStats_WorldLib]
+No comment provided
+
+h4.bcnRequestAllowBeaconSkip (AccessLevel 9) [Notes|Command_bcnRequestAllowBeaconSkip_WorldLib]
+*Parameter 1: d (int)*
+No comment provided
+
+h4.BSAllowCRCMismatch (AccessLevel 9) [Notes|Command_BSAllowCRCMismatch_WorldLib]
+*Parameter 1: d (int)*
+No comment provided
+
+h4.BSForceRebeaconize (AccessLevel 9) [Notes|Command_BSForceRebeaconize_WorldLib]
+*Parameter 1: groundOnly (int)*
+*Parameter 2: spaceOnly (int)*
+*Parameter 3: includeNS (int)*
+No comment provided
+
+h4.BcnSetDefaultAngleDivisions (AccessLevel 9) [Notes|Command_BcnSetDefaultAngleDivisions_WorldLib]
+*Parameter 1: d (int)*
+No comment provided
+
+h4.beaconSetDebugBeacon (AccessLevel 9) [Notes|Command_beaconSetDebugBeacon_WorldLib]
+*Parameter 1: id (int)*
+*Parameter 2: pos (xyz vector)*
+No comment provided
+
+h4.beaconTestCommand (AccessLevel 9) [Notes|Command_beaconTestCommand_WorldLib]
+No comment provided
+
+h4.collcache_stats (AccessLevel 9) [Notes|Command_collcache_stats_WorldLib]
+No comment provided
+
+h4.collcache_toggle (AccessLevel 9) [Notes|Command_collcache_toggle_WorldLib]
+No comment provided
+
+h4.controlfpTest (AccessLevel 9) [Notes|Command_controlfpTest_WorldLib]
+*Parameter 1: enable (int)*
+No comment provided
+
+h4.danimCycleDebugSkeleton (AccessLevel 9) [Notes|Command_danimCycleDebugSkeleton_WorldLib]
+No comment provided
+
+h4.danimDebugListUncompressedAnimTrackBones (AccessLevel 9) [Notes|Command_danimDebugListUncompressedAnimTrackBones_WorldLib]
+*Parameter 1: pcAnimTrackHeader (string)*
+No comment provided
+
+h4.danimDebugListUncompressedAnimTrackData (AccessLevel 9) [Notes|Command_danimDebugListUncompressedAnimTrackData_WorldLib]
+*Parameter 1: pcAnimTrackHeader (string)*
+*Parameter 2: pcBoneName (string)*
+No comment provided
+
+h4.danimDumpCharts (AccessLevel 9) [Notes|Command_danimDumpCharts_WorldLib]
+No comment provided
+
+h4.danimPrintPlayerBones (AccessLevel 9) [Notes|Command_danimPrintPlayerBones_WorldLib]
+No comment provided
+
+h4.danimPrintPlayerBonesUnder (AccessLevel 9) [Notes|Command_danimPrintPlayerBonesUnder_WorldLib]
+*Parameter 1: bonename (string)*
+No comment provided
+
+h4.danimSetMountRiderScaleBlend (AccessLevel 9) [Notes|Command_danimSetMountRiderScaleBlend_WorldLib]
+*Parameter 1: fBlend (float)*
+No comment provided
+
+h4.debug_cluster_range (AccessLevel 9) [Notes|Command_debug_cluster_range_WorldLib]
+*Parameter 1: x1 (int)*
+*Parameter 2: x2 (int)*
+*Parameter 3: z1 (int)*
+*Parameter 4: z2 (int)*
+No comment provided
+
+h4.dfxDumpParamBlockReasons (AccessLevel 9) [Notes|Command_dfxDumpParamBlockReasons_WorldLib]
+No comment provided
+
+h4.dfxPrintMessageCount (AccessLevel 9) [Notes|Command_dfxPrintMessageCount_WorldLib]
+No comment provided
+
+h4.dumpAtlasBlock (AccessLevel 9) [Notes|Command_dumpAtlasBlock_WorldLib]
+*Parameter 1: x (int)*
+*Parameter 2: z (int)*
+*Parameter 3: lod (int)*
+No comment provided
+
+h4.dynClothPrintAllocations (AccessLevel 9) [Notes|Command_dynClothPrintAllocations_WorldLib]
+No comment provided
+
+h4.dynSkeletonValidateAll (AccessLevel 9) [Notes|Command_dynSkeletonValidateAll_WorldLib]
+No comment provided
+
+h4.forceEnableAmbientCube (AccessLevel 9) [Notes|Command_forceEnableAmbientCube_WorldLib]
+*Parameter 1: on (int)*
+No comment provided
+
+h4.genesisExteriorSetResolution (AccessLevel 9) [Notes|Command_genesisExteriorSetResolution_WorldLib]
+*Parameter 1: res (int)*
+No comment provided
+
+h4.genesisForceAllowUnfreeze (AccessLevel 9) [Notes|Command_genesisForceAllowUnfreeze_WorldLib]
+No comment provided
+
+h4.genesisInteriorEnableDebugImages (AccessLevel 9) [Notes|Command_genesisInteriorEnableDebugImages_WorldLib]
+No comment provided
+
+h4.genesisInteriorEnableVerboseMode (AccessLevel 9) [Notes|Command_genesisInteriorEnableVerboseMode_WorldLib]
+No comment provided
+
+h4.genesisPopulateEnableDebugImages (AccessLevel 9) [Notes|Command_genesisPopulateEnableDebugImages_WorldLib]
+*Parameter 1: enabled (int)*
+No comment provided
+
+h4.genesisPopulateEnableDebugPathImages (AccessLevel 9) [Notes|Command_genesisPopulateEnableDebugPathImages_WorldLib]
+*Parameter 1: enabled (int)*
+No comment provided
+
+h4.geoQueueBubble (AccessLevel 9) [Notes|Command_geoQueueBubble_WorldLib]
+*Parameter 1: ms (int)*
+No comment provided
+
+h4.ModelUnloadUnpacked (AccessLevel 9) [Notes|Command_ModelUnloadUnpacked_WorldLib]
+No comment provided
+
+h4.objCacheVerifyAll (AccessLevel 9) [Notes|Command_objCacheVerifyAll_WorldLib]
+*Parameter 1: on (int)*
+No comment provided
+
+h4.objectLibraryDumpMap (AccessLevel 9) [Notes|Command_objectLibraryDumpMap_WorldLib]
+*Parameter 1: load (int)*
+No comment provided
+
+h4.objectLibraryDumpToFile (AccessLevel 9) [Notes|Command_objectLibraryDumpToFile_WorldLib]
+No comment provided
+
+h4.objectLibraryTouchGroup (AccessLevel 9) [Notes|Command_objectLibraryTouchGroup_WorldLib]
+*Parameter 1: group_id (int)*
+No comment provided
+
+h4.psdkAssertOnFailure (AccessLevel 9) [Notes|Command_psdkAssertOnFailure_WorldLib]
+*Parameter 1: enabled (int)*
+No comment provided
+
+h4.psdkFindHeightFieldPoint (AccessLevel 9) [Notes|Command_psdkFindHeightFieldPoint_WorldLib]
+*Parameter 1: radius (float)*
+*Parameter 2: pos (xyz vector)*
+No comment provided
+
+h4.psdkPrintNewActorBounds (AccessLevel 9) [Notes|Command_psdkPrintNewActorBounds_WorldLib]
+*Parameter 1: enabled (int)*
+No comment provided
+
+h4.psdkPrintCookingClient (AccessLevel 9) [Notes|Command_psdkPrintCookingClient_WorldLib]
+*Parameter 1: enabled (int)*
+No comment provided
+
+h4.psdkPrintCookingServer (AccessLevel 9) [Notes|Command_psdkPrintCookingServer_WorldLib]
+*Parameter 1: enabled (int)*
+No comment provided
+
+h4.psdkPrintTestThing (AccessLevel 9) [Notes|Command_psdkPrintTestThing_WorldLib]
+*Parameter 1: enabled (int)*
+No comment provided
+
+h4.psdkDisableErrors (AccessLevel 9) [Notes|Command_psdkDisableErrors_WorldLib]
+*Parameter 1: disable (int)*
+No comment provided
+
+h4.psdkDisableHardware (AccessLevel 9) [Notes|Command_psdkDisableHardware_WorldLib]
+No comment provided
+
+h4.psdkSetDefaultLimits (AccessLevel 9) [Notes|Command_psdkSetDefaultLimits_WorldLib]
+No comment provided
+
+h4.psdkSetLimits (AccessLevel 9) [Notes|Command_psdkSetLimits_WorldLib]
+*Parameter 1: maxActors (int)*
+*Parameter 2: maxBodies (int)*
+*Parameter 3: maxStaticShapes (int)*
+*Parameter 4: maxDynamicShapes (int)*
+*Parameter 5: maxJoints (int)*
+No comment provided
+
+h4.terrainAtlasTest (AccessLevel 9) [Notes|Command_terrainAtlasTest_WorldLib]
+No comment provided
+
+h4.terrainObjectTestTraversal (AccessLevel 9) [Notes|Command_terrainObjectTestTraversal_WorldLib]
+*Parameter 1: w (int)*
+*Parameter 2: h (int)*
+No comment provided
+
+h4.terrainSetExclusionDensityScale (AccessLevel 9) [Notes|Command_terrainSetExclusionDensityScale_WorldLib]
+*Parameter 1: scale (float)*
+No comment provided
+
+h4.terrainSetExclusionFlags (AccessLevel 9) [Notes|Command_terrainSetExclusionFlags_WorldLib]
+*Parameter 1: flags (string)*
+No comment provided
+
+h4.testBinFile (AccessLevel 9) [Notes|Command_testBinFile_WorldLib]
+*Parameter 1: path (string)*
+No comment provided
+
+h4.wcCellPrintDebugInfo (AccessLevel 9) [Notes|Command_wcCellPrintDebugInfo_WorldLib]
+*Parameter 1: x (int)*
+*Parameter 2: z (int)*
+*Parameter 3: showAllObjects (int)*
+No comment provided
+
+h4.wcCreateAllScenes (AccessLevel 9) [Notes|Command_wcCreateAllScenes_WorldLib]
+No comment provided
+
+h4.wcConnectToPSDKDebuggerClient (AccessLevel 9) [Notes|Command_wcConnectToPSDKDebuggerClient_WorldLib]
+*Parameter 1: host (string)*
+*Parameter 2: port (int)*
+No comment provided
+
+h4.wcConnectToPSDKDebuggerServer (AccessLevel 9) [Notes|Command_wcConnectToPSDKDebuggerServer_WorldLib]
+*Parameter 1: host (string)*
+*Parameter 2: port (int)*
+No comment provided
+
+h4.wcForceSimulateStaticScenes (AccessLevel 9) [Notes|Command_wcForceSimulateStaticScenes_WorldLib]
+No comment provided
+
+h4.wcPrintDebugInfo (AccessLevel 9) [Notes|Command_wcPrintDebugInfo_WorldLib]
+No comment provided
+
+h4.wcPrintSceneInfo (AccessLevel 9) [Notes|Command_wcPrintSceneInfo_WorldLib]
+No comment provided
+
+h4.wcRecreateAllStaticScenes (AccessLevel 9) [Notes|Command_wcRecreateAllStaticScenes_WorldLib]
+No comment provided
+
+h4.wcSceneSetMaxActors (AccessLevel 9) [Notes|Command_wcSceneSetMaxActors_WorldLib]
+*Parameter 1: value (int)*
+No comment provided
+
+h4.wcSceneSetMaxBoundXYZ (AccessLevel 9) [Notes|Command_wcSceneSetMaxBoundXYZ_WorldLib]
+*Parameter 1: bound (int)*
+No comment provided
+
+h4.wcSceneSetPruningType (AccessLevel 9) [Notes|Command_wcSceneSetPruningType_WorldLib]
+*Parameter 1: staticPruningType (int)*
+*Parameter 2: dynamicPruningType (int)*
+No comment provided
+
+h4.wcSceneSetSubdivisionLevel (AccessLevel 9) [Notes|Command_wcSceneSetSubdivisionLevel_WorldLib]
+*Parameter 1: level (int)*
+No comment provided
+
+h4.wcThreaded (AKA wcThread) (AccessLevel 9) [Notes|Command_wcThreaded_WorldLib]
+*Parameter 1: enabled (int)*
+No comment provided
+
+h4.wcTestProdCRCS (AccessLevel 9) [Notes|Command_wcTestProdCRCS_WorldLib]
+No comment provided
+
+h4.wcoDestroy (AccessLevel 9) [Notes|Command_wcoDestroy_WorldLib]
+*Parameter 1: wcoPointer (U64)*
+No comment provided
+
+h4.wlTimeSet (AccessLevel 9) [Notes|Command_wlTimeSet_WorldLib]
+*Parameter 1: time (float)*
+No comment provided
+
+h4.wlTimeSetScale (AccessLevel 9) [Notes|Command_wlTimeSetScale_WorldLib]
+*Parameter 1: timescale (float)*
+No comment provided
+
+h4.wlTimeSetStepScaleDebug (AccessLevel 9) [Notes|Command_wlTimeSetStepScaleDebug_WorldLib]
+*Parameter 1: timestepscale (float)*
+No comment provided
+
+h4.wlTimeSetStepScaleGame (AccessLevel 9) [Notes|Command_wlTimeSetStepScaleGame_WorldLib]
+*Parameter 1: timestepscale (float)*
+No comment provided
+
+h4.wlTimeSetStepScaleLocal (AccessLevel 9) [Notes|Command_wlTimeSetStepScaleLocal_WorldLib]
+*Parameter 1: timestepscale (float)*
+No comment provided
+
+h4.worldBinUnpackDirectory (AccessLevel 9) [Notes|Command_worldBinUnpackDirectory_WorldLib]
+*Parameter 1: dir (string)*
+No comment provided
+
+h4.worldCellDepsFixup (AccessLevel 9) [Notes|Command_worldCellDepsFixup_WorldLib]
+*Parameter 1: log_filename (string)*
+*Parameter 2: build_root (string)*
+*Parameter 3: is_server (int)*
+No comment provided
+
+h4.worldCellInfoTest (AccessLevel 9) [Notes|Command_worldCellInfoTest_WorldLib]
+No comment provided
+
+h4.worldCellMaterialTemplateReport (AccessLevel 9) [Notes|Command_worldCellMaterialTemplateReport_WorldLib]
+*Parameter 1: include_fallbacks (bool)*
+No comment provided
+
+h4.worldCellMaterialTemplateReportMaps (AccessLevel 9) [Notes|Command_worldCellMaterialTemplateReportMaps_WorldLib]
+*Parameter 1: include_fallbacks (bool)*
+*Parameter 2: template_name (string)*
+No comment provided
+
+h4.worldCellTest (AccessLevel 9) [Notes|Command_worldCellTest_WorldLib]
+No comment provided
+
+h4.worldLoadWorldGridByPublicName (AccessLevel 9) [Notes|Command_worldLoadWorldGridByPublicName_WorldLib]
+*Parameter 1: public_name (string)*
+No comment provided
+
+h4.SetRegionSkyOverride1 (AccessLevel 9) [Notes|Command_SetRegionSkyOverride1_WorldLib]
+*Parameter 1: region_name (string)*
+*Parameter 2: fade_percent (float)*
+*Parameter 3: fade_rate (float)*
+*Parameter 4: sky1 (string)*
+No comment provided
+
+h4.SetRegionSkyOverride2 (AccessLevel 9) [Notes|Command_SetRegionSkyOverride2_WorldLib]
+*Parameter 1: region_name (string)*
+*Parameter 2: fade_percent (float)*
+*Parameter 3: fade_rate (float)*
+*Parameter 4: sky1 (string)*
+*Parameter 5: sky2 (string)*
+No comment provided
+
+h4.SetRegionSkyOverride3 (AccessLevel 9) [Notes|Command_SetRegionSkyOverride3_WorldLib]
+*Parameter 1: region_name (string)*
+*Parameter 2: fade_percent (float)*
+*Parameter 3: fade_rate (float)*
+*Parameter 4: sky1 (string)*
+*Parameter 5: sky2 (string)*
+*Parameter 6: sky3 (string)*
+No comment provided
+
+h4.worldTerrainAtlasTest (AccessLevel 9) [Notes|Command_worldTerrainAtlasTest_WorldLib]
+No comment provided
+
+h4.BcnExpensivePathsFail (int) - (AccessLevel 9) [Notes|Command_BcnExpensivePathsFail_WorldLib]
+No comment provided
+
+h4.BcnForcePathfindTimeout (int) - (AccessLevel 9) [Notes|Command_BcnForcePathfindTimeout_WorldLib]
+No comment provided
+
+h4.DebugLogDrawableLists (int) - (AccessLevel 9) [Notes|Command_DebugLogDrawableLists_WorldLib]
+No comment provided
+
+h4.DebugLogDrawableSubObjects (int) - (AccessLevel 9) [Notes|Command_DebugLogDrawableSubObjects_WorldLib]
+No comment provided
+
+h4.DebugLogInstanceParamLists (int) - (AccessLevel 9) [Notes|Command_DebugLogInstanceParamLists_WorldLib]
+No comment provided
+
+h4.DebugLogMaterialDraw (int) - (AccessLevel 9) [Notes|Command_DebugLogMaterialDraw_WorldLib]
+No comment provided
+
+h4.DebugLogModelDraw (int) - (AccessLevel 9) [Notes|Command_DebugLogModelDraw_WorldLib]
+No comment provided
+
+h4.DoMMPLDuringBinning (int) - (AccessLevel 0) [Notes|Command_DoMMPLDuringBinning_WorldLib]
+if true, then print out mmpl after every map binned
+
+
+h4.DoMultiplexedMakeBinsAsMaster (int) - (AccessLevel 9) [Notes|Command_DoMultiplexedMakeBinsAsMaster_WorldLib]
+if non-zero, specifies number of children to launch
+
+
+h4.DoMultiplexedMakeBinsAsSlave (int) - (AccessLevel 0) [Notes|Command_DoMultiplexedMakeBinsAsSlave_WorldLib]
+if non-zero, specifies the "index" of this slave (used for various reporting purposes)
+
+
+h4.EnableFastBinCheck (int) - (AccessLevel 9) [Notes|Command_EnableFastBinCheck_WorldLib]
+No comment provided
+
+h4.ExcludeBinningNamespaceMaps (int) - (AccessLevel 9) [Notes|Command_ExcludeBinningNamespaceMaps_WorldLib]
+No comment provided
+
+h4.FilenameForOnlyMapToBinErrors (string) - (AccessLevel 9) [Notes|Command_FilenameForOnlyMapToBinErrors_WorldLib]
+No comment provided
+
+h4.FolderForMultiplexedSlaveLogs (string) - (AccessLevel 9) [Notes|Command_FolderForMultiplexedSlaveLogs_WorldLib]
+No comment provided
+
+h4.LogInteractionChanges (int) - (AccessLevel 9) [Notes|Command_LogInteractionChanges_WorldLib]
+No comment provided
+
+h4.LogOverlapObjs (int) - (AccessLevel 9) [Notes|Command_LogOverlapObjs_WorldLib]
+No comment provided
+
+h4.MultiplexedMakeBinsMasterProcessPID (int) - (AccessLevel 9) [Notes|Command_MultiplexedMakeBinsMasterProcessPID_WorldLib]
+No comment provided
+
+h4.ObjectLibraryDebugEditingCopies (int) - (AccessLevel 9) [Notes|Command_ObjectLibraryDebugEditingCopies_WorldLib]
+No comment provided
+
+h4.allowRaisedSubBlocks (int) - (AccessLevel 9) [Notes|Command_allowRaisedSubBlocks_WorldLib]
+No comment provided
+
+h4.cluster_disable_build (int) - (AccessLevel 9) [Notes|Command_cluster_disable_build_WorldLib]
+Totally disable clustering/remeshing on maps. Takes precedence over all other settings. Even
+maps that do have regions with clustering enabled and debug_testWorldCluster will not override
+this setting. This just disables binning the data!
+
+
+h4.danimDisableHeightFixupFix (int) - (AccessLevel 9) [Notes|Command_danimDisableHeightFixupFix_WorldLib]
+Use the skelinfo to scale the base skeleton pBase for this individual skeleton
+
+
+h4.danimEchoKeywords (int) - (AccessLevel 9) [Notes|Command_danimEchoKeywords_WorldLib]
+Echos keywords as they are played
+
+
+h4.dclothAllBonesAreFullySkinned (int) - (AccessLevel 9) [Notes|Command_dclothAllBonesAreFullySkinned_WorldLib]
+No comment provided
+
+h4.dclothDebugStiffBoneSelection (int) - (AccessLevel 9) [Notes|Command_dclothDebugStiffBoneSelection_WorldLib]
+No comment provided
+
+h4.dclothDisable (int) - (AccessLevel 9) [Notes|Command_dclothDisable_WorldLib]
+No comment provided
+
+h4.dclothDisablePartialCollision (int) - (AccessLevel 9) [Notes|Command_dclothDisablePartialCollision_WorldLib]
+No comment provided
+
+h4.dclothDisablePartialControl (int) - (AccessLevel 9) [Notes|Command_dclothDisablePartialControl_WorldLib]
+No comment provided
+
+h4.dclothDrawClothAsNormalGeo (int) - (AccessLevel 9) [Notes|Command_dclothDrawClothAsNormalGeo_WorldLib]
+No comment provided
+
+h4.dclothDrawCollision (int) - (AccessLevel 9) [Notes|Command_dclothDrawCollision_WorldLib]
+No comment provided
+
+h4.dclothDrawNormals (int) - (AccessLevel 9) [Notes|Command_dclothDrawNormals_WorldLib]
+No comment provided
+
+h4.dclothDrawTangentSpace (int) - (AccessLevel 9) [Notes|Command_dclothDrawTangentSpace_WorldLib]
+No comment provided
+
+h4.dclothForceCollideToSkinnedPosition (int) - (AccessLevel 9) [Notes|Command_dclothForceCollideToSkinnedPosition_WorldLib]
+No comment provided
+
+h4.dclothForceNoCollideToSkinnedPosition (int) - (AccessLevel 9) [Notes|Command_dclothForceNoCollideToSkinnedPosition_WorldLib]
+No comment provided
+
+h4.dclothJustDrawWithSkinnedPositions (int) - (AccessLevel 9) [Notes|Command_dclothJustDrawWithSkinnedPositions_WorldLib]
+No comment provided
+
+h4.dclothLerpVisualsWithBones (int) - (AccessLevel 9) [Notes|Command_dclothLerpVisualsWithBones_WorldLib]
+No comment provided
+
+h4.dclothMaxLOD (int) - (AccessLevel 9) [Notes|Command_dclothMaxLOD_WorldLib]
+No comment provided
+
+h4.dclothMaxMovementToSkinnedPos (float) - (AccessLevel 9) [Notes|Command_dclothMaxMovementToSkinnedPos_WorldLib]
+No comment provided
+
+h4.dclothStageCollision (int) - (AccessLevel 9) [Notes|Command_dclothStageCollision_WorldLib]
+No comment provided
+
+h4.dclothStageConstraints (int) - (AccessLevel 9) [Notes|Command_dclothStageConstraints_WorldLib]
+No comment provided
+
+h4.dclothStagePhysics (int) - (AccessLevel 9) [Notes|Command_dclothStagePhysics_WorldLib]
+No comment provided
+
+h4.dclothTessellateAttachments (int) - (AccessLevel 9) [Notes|Command_dclothTessellateAttachments_WorldLib]
+No comment provided
+
+h4.debugAllowCancelDrawList (int) - (AccessLevel 9) [Notes|Command_debugAllowCancelDrawList_WorldLib]
+No comment provided
+
+h4.debug_TrackGeoInstances (int) - (AccessLevel 9) [Notes|Command_debug_TrackGeoInstances_WorldLib]
+No comment provided
+
+h4.debug_cluster_allow_local_remesh (int) - (AccessLevel 9) [Notes|Command_debug_cluster_allow_local_remesh_WorldLib]
+No comment provided
+
+h4.debug_cluster_distributed_remesh_retry_timeout (int) - (AccessLevel 9) [Notes|Command_debug_cluster_distributed_remesh_retry_timeout_WorldLib]
+Tunes the timeout, in seconds, before the client automatically retries a distributed task
+
+
+h4.debug_cluster_leaf_level (int) - (AccessLevel 9) [Notes|Command_debug_cluster_leaf_level_WorldLib]
+Tunes the number of distributed jobs allowed.
+
+
+h4.debug_cluster_max_distributed_tasks (int) - (AccessLevel 9) [Notes|Command_debug_cluster_max_distributed_tasks_WorldLib]
+Tunes the number of distributed jobs allowed.
+
+
+h4.debug_cluster_max_retries (int) - (AccessLevel 9) [Notes|Command_debug_cluster_max_retries_WorldLib]
+Tunes the number of times the client may reattempt failed remesh tasks for each world cell cluster.
+
+
+h4.debug_dumpWorldClusterSource (int) - (AccessLevel 9) [Notes|Command_debug_dumpWorldClusterSource_WorldLib]
+No comment provided
+
+h4.debug_ignore_remesh_atlas_hogg (int) - (AccessLevel 9) [Notes|Command_debug_ignore_remesh_atlas_hogg_WorldLib]
+No comment provided
+
+h4.debug_max_cluster_lod (int) - (AccessLevel 9) [Notes|Command_debug_max_cluster_lod_WorldLib]
+No comment provided
+
+h4.debug_obj_atlas_export (int) - (AccessLevel 9) [Notes|Command_debug_obj_atlas_export_WorldLib]
+Totally disable clustering/remeshing on maps. Takes precedence over all other settings. Even
+maps that do have regions with clustering enabled and debug_testWorldCluster will not override
+this setting. This just disables binning the data!
+
+
+h4.delayGeoLoading (int) - (AccessLevel 9) [Notes|Command_delayGeoLoading_WorldLib]
+Adds a delay to simulate slow loading of geometry
+
+
+h4.dfxDrawWindGrid (int) - (AccessLevel 9) [Notes|Command_dfxDrawWindGrid_WorldLib]
+No comment provided
+
+h4.dfxDrawWindGridForceYLevel (float) - (AccessLevel 9) [Notes|Command_dfxDrawWindGridForceYLevel_WorldLib]
+No comment provided
+
+h4.dfxEnableExtraAsserts (int) - (AccessLevel 9) [Notes|Command_dfxEnableExtraAsserts_WorldLib]
+No comment provided
+
+h4.dfxListUnused (int) - (AccessLevel 9) [Notes|Command_dfxListUnused_WorldLib]
+No comment provided
+
+h4.dfxWindBaseMag (float) - (AccessLevel 9) [Notes|Command_dfxWindBaseMag_WorldLib]
+No comment provided
+
+h4.dfxWindBaseMagRange (float) - (AccessLevel 9) [Notes|Command_dfxWindBaseMagRange_WorldLib]
+No comment provided
+
+h4.dfxWindForceMaxDisplacement (float) - (AccessLevel 9) [Notes|Command_dfxWindForceMaxDisplacement_WorldLib]
+No comment provided
+
+h4.dfxWindForceMaxFreq (float) - (AccessLevel 9) [Notes|Command_dfxWindForceMaxFreq_WorldLib]
+No comment provided
+
+h4.dfxWindForceMaxPower (float) - (AccessLevel 9) [Notes|Command_dfxWindForceMaxPower_WorldLib]
+No comment provided
+
+h4.dfxWindForceScale (float) - (AccessLevel 9) [Notes|Command_dfxWindForceScale_WorldLib]
+No comment provided
+
+h4.dfxWindGridDivisionDistance (float) - (AccessLevel 9) [Notes|Command_dfxWindGridDivisionDistance_WorldLib]
+No comment provided
+
+h4.dfxWindMaxDistanceFromCamSquared (float) - (AccessLevel 9) [Notes|Command_dfxWindMaxDistanceFromCamSquared_WorldLib]
+No comment provided
+
+h4.dfxWindQueuedForceMaxMag (float) - (AccessLevel 9) [Notes|Command_dfxWindQueuedForceMaxMag_WorldLib]
+No comment provided
+
+h4.dfxWindQueuedForceOffsetScale (float) - (AccessLevel 9) [Notes|Command_dfxWindQueuedForceOffsetScale_WorldLib]
+No comment provided
+
+h4.dfxWindQueuedForceScale (float) - (AccessLevel 9) [Notes|Command_dfxWindQueuedForceScale_WorldLib]
+No comment provided
+
+h4.dfxWindQueuedForceSpeedScale (float) - (AccessLevel 9) [Notes|Command_dfxWindQueuedForceSpeedScale_WorldLib]
+No comment provided
+
+h4.disableWpTracking (int) - (AccessLevel 9) [Notes|Command_disableWpTracking_WorldLib]
+No comment provided
+
+h4.disable_delayed_worldgrid (int) - (AccessLevel 0) [Notes|Command_disable_delayed_worldgrid_WorldLib]
+Disables delayed world grid loading which is enabled for patch streaming and/or
+development mode.  Can enable this if a) development mode is crashing or b)
+we have patch streaming on, but we actually pre-patch map data, and this code
+is causing problems
+
+
+h4.disable_precooked_data (int) - (AccessLevel 9) [Notes|Command_disable_precooked_data_WorldLib]
+Disables using precooked geometry collision meshes
+
+
+h4.dontBeStupid (int) - (AccessLevel 9) [Notes|Command_dontBeStupid_WorldLib]
+No comment provided
+
+h4.dynAnimDiableGroundRegIK (int) - (AccessLevel 9) [Notes|Command_dynAnimDiableGroundRegIK_WorldLib]
+No comment provided
+
+h4.dynAnimDisableGroundRegHeightBump (int) - (AccessLevel 9) [Notes|Command_dynAnimDisableGroundRegHeightBump_WorldLib]
+No comment provided
+
+h4.dynAnimDisableGroundRegHyperExPrevention (int) - (AccessLevel 9) [Notes|Command_dynAnimDisableGroundRegHyperExPrevention_WorldLib]
+No comment provided
+
+h4.dynAnimGraphUpdaterDisableHitReactError (int) - (AccessLevel 9) [Notes|Command_dynAnimGraphUpdaterDisableHitReactError_WorldLib]
+No comment provided
+
+h4.dynAnimGraphUpdaterDisableInterrupts (int) - (AccessLevel 9) [Notes|Command_dynAnimGraphUpdaterDisableInterrupts_WorldLib]
+No comment provided
+
+h4.dynAnimShowGroundRegBaseSkeleton (int) - (AccessLevel 9) [Notes|Command_dynAnimShowGroundRegBaseSkeleton_WorldLib]
+No comment provided
+
+h4.dynFxExclusionList (string) - (AccessLevel 9) [Notes|Command_dynFxExclusionList_WorldLib]
+No comment provided
+
+h4.dynFxTrackParamBlocks (int) - (AccessLevel 9) [Notes|Command_dynFxTrackParamBlocks_WorldLib]
+No comment provided
+
+h4.dynMovementBlendInPerSecond (float) - (AccessLevel 9) [Notes|Command_dynMovementBlendInPerSecond_WorldLib]
+No comment provided
+
+h4.dynMovementBlendOutPerSecond (float) - (AccessLevel 9) [Notes|Command_dynMovementBlendOutPerSecond_WorldLib]
+No comment provided
+
+h4.dynMovementLowerBlendSpeed (float) - (AccessLevel 9) [Notes|Command_dynMovementLowerBlendSpeed_WorldLib]
+No comment provided
+
+h4.dynMovementLowerBlendSpeedOld (float) - (AccessLevel 9) [Notes|Command_dynMovementLowerBlendSpeedOld_WorldLib]
+No comment provided
+
+h4.dynMovementNoTransitions (int) - (AccessLevel 9) [Notes|Command_dynMovementNoTransitions_WorldLib]
+No comment provided
+
+h4.dynOverrideAllBlendPerSecond (float) - (AccessLevel 9) [Notes|Command_dynOverrideAllBlendPerSecond_WorldLib]
+No comment provided
+
+h4.materialErrorOnMissingFallbacks (int) - (AccessLevel 9) [Notes|Command_materialErrorOnMissingFallbacks_WorldLib]
+No comment provided
+
+h4.obj_cache_disabled (int) - (AccessLevel 9) [Notes|Command_obj_cache_disabled_WorldLib]
+No comment provided
+
+h4.preserveSimplygonImages (int) - (AccessLevel 9) [Notes|Command_preserveSimplygonImages_WorldLib]
+SIMPLYGON TODO move to WorldClusterDebug struct
+
+
+h4.setAnimRate (float) - (AccessLevel 9) [Notes|Command_setAnimRate_WorldLib]
+Set Animation playback rate
+
+
+h4.setDynFxRate (float) - (AccessLevel 9) [Notes|Command_setDynFxRate_WorldLib]
+Set DynFx playback rate
+
+
+h4.wcAssertOnBadGridIndexClient (int) - (AccessLevel 9) [Notes|Command_wcAssertOnBadGridIndexClient_WorldLib]
+No comment provided
+
+h4.wcAssertOnBadGridIndexServer (int) - (AccessLevel 9) [Notes|Command_wcAssertOnBadGridIndexServer_WorldLib]
+No comment provided
+
+h4.wcNotificationOverride (int) - (AccessLevel 9) [Notes|Command_wcNotificationOverride_WorldLib]
+No comment provided
+
+h4.world_cell_open_per_frame_quota (int) - (AccessLevel 9) [Notes|Command_world_cell_open_per_frame_quota_WorldLib]
+No comment provided
+

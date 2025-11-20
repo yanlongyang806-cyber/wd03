@@ -1,0 +1,161 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_LINK DIALOGEX 0, 0, 350, 310
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Patch Link"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Link",IDLINK,237,289,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,293,289,50,14
+    EDITTEXT        IDC_EDIT_SERVER,7,16,336,14,ES_AUTOHSCROLL
+    LTEXT           "Patch Server Address",IDC_STATIC,7,7,70,8
+    LTEXT           "Connection Status",IDC_CONNECTION_STATUS,82,33,261,14
+    PUSHBUTTON      "Get Projects",IDC_GET_PROJECTS,7,33,69,14
+    LTEXT           "Projects",IDC_STATIC,7,51,27,8
+    CONTROL         "",IDC_PROJECT_LIST,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,60,336,111
+    CONTROL         "",IDC_PROGRESS,"msctls_progress32",WS_BORDER,7,258,336,13
+    LTEXT           "Download Feedback",IDC_DOWNLOAD_FEEDBACK,7,272,336,16
+    EDITTEXT        IDC_NOTES,7,175,336,80,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_DIALOG_SYNC DIALOGEX 0, 0, 350, 310
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Patch Sync"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Sync to Name",IDSYNCTONAME,229,289,58,14
+    PUSHBUTTON      "Cancel",IDCANCEL,293,289,50,14
+    CONTROL         "",IDC_NAME_LIST,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,27,336,144
+    LTEXT           "Connection Status",IDC_CONNECTION_STATUS,7,7,336,8
+    CONTROL         "",IDC_PROGRESS,"msctls_progress32",WS_BORDER,7,258,336,13
+    LTEXT           "Download Feedback",IDC_DOWNLOAD_FEEDBACK,7,272,336,16
+    LTEXT           "Named Views",IDC_STATIC,7,17,43,8
+    EDITTEXT        IDC_NOTES,7,175,336,80,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_DIALOG_GET_LATEST DIALOGEX 0, 0, 350, 310
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Patch Get Latest"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Get Latest",IDGETLATEST,237,289,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,293,289,50,14
+    LTEXT           "Connection Status",IDC_CONNECTION_STATUS,7,7,336,8
+    LTEXT           "Paths Selected",IDC_STATIC,7,17,48,8
+    CONTROL         "",IDC_PATH_LIST,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,27,336,144
+    EDITTEXT        IDC_NOTES,7,175,336,80,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_PROGRESS,"msctls_progress32",WS_BORDER,7,258,336,13
+    LTEXT           "Download Feedback",IDC_DOWNLOAD_FEEDBACK,7,272,336,16
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG_LINK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 343
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 303
+    END
+
+    IDD_DIALOG_SYNC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 343
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 303
+    END
+
+    IDD_DIALOG_GET_LATEST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 343
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 303
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_PATCH_ICON          ICON                    "../../libs/PatchClientLib/patch_icon.ico"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

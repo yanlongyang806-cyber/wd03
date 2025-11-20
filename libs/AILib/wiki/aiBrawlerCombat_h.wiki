@@ -1,0 +1,63 @@
+{anchor:BrawlerCombatGlobalConfig}
+
+_auto-generated from I:\Night\Night\src\libs\AILib\aiBrawlerCombat.h_
+
+h3.BrawlerCombatGlobalConfig
+
+*BrawlerRole* (multiple allowed)
+
+*\{*
+-	*Tag* < string >
+--	the tag to be referenced by the aiConfig's BrawlerCombatConfig
+-	*SiblingTags* < string1 >
+-	*SiblingTags* < string2 >
+--	any other brawler roles this role should care about when considering its MaxEngaged
+-	*MaxEngaged* < int >
+--	The max this role cares to have engaged
+-	*MinDistanceToTargetWhileWaiting* < float >
+--	The minimum range to keep while in waiting state
+-	*MaxDistanceToTargetWhileWaiting* < float >
+--	The maximum range to keep while in waiting state
+-	*BackAwayDistance* < float >
+--	The distance to back away once the entity hits their target.
+--	The value must be between fMinDistanceToTargetWhileWaiting and fMaxDistanceToTargetWhileWaiting
+-	*PercentChancePerTickToEngage* < float >
+--	the percent chance per tick that this guy will be forced to run in to engage. 
+--	This will not occur if there are already more than the MaxEngaged forced to engage.
+
+*\}*
+
+*ForceEngageTimeOnDamage* < float >
+-	The time after being damaged that the forced engaged can end. 
+-	Note that when forced to engage, the AI will keep engaging until it performs an attack power on the target
+{anchor:BrawlerCombatConfig}
+
+_auto-generated from I:\Night\Night\src\libs\AILib\aiBrawlerCombat.h_
+
+h3.BrawlerCombatConfig
+
+*Tag* < string >
+-	the Tag that should correspond to a role tag in the BrawlerConfig
+
+*Override*
+
+*\{*
+-	*Tag* < string >
+--	the tag to be referenced by the aiConfig's BrawlerCombatConfig
+-	*SiblingTags* < string1 >
+-	*SiblingTags* < string2 >
+--	any other brawler roles this role should care about when considering its MaxEngaged
+-	*MaxEngaged* < int >
+--	The max this role cares to have engaged
+-	*MinDistanceToTargetWhileWaiting* < float >
+--	The minimum range to keep while in waiting state
+-	*MaxDistanceToTargetWhileWaiting* < float >
+--	The maximum range to keep while in waiting state
+-	*BackAwayDistance* < float >
+--	The distance to back away once the entity hits their target.
+--	The value must be between fMinDistanceToTargetWhileWaiting and fMaxDistanceToTargetWhileWaiting
+-	*PercentChancePerTickToEngage* < float >
+--	the percent chance per tick that this guy will be forced to run in to engage. 
+--	This will not occur if there are already more than the MaxEngaged forced to engage.
+
+*\}*
