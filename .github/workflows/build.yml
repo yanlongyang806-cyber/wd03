@@ -402,6 +402,8 @@ jobs:
         $outputPathLog = "output-paths.log"
         try {
           # Build and capture output
+          # Note: For solution builds, MSBuild uses default output paths
+          # Output typically goes to: $(SolutionDir)$(Platform)\$(Configuration)\
           msbuild $buildTarget `
             /p:Configuration=$env:BUILD_CONFIGURATION `
             /p:Platform=$env:BUILD_PLATFORM `
@@ -410,7 +412,6 @@ jobs:
             /nologo `
             /fl `
             /flp:logfile=$buildLog;verbosity=detailed `
-            /p:OutDir=Debug\ `
             /p:TargetName=GameServer `
             2>&1 | Tee-Object -Variable buildOutput | Out-File -FilePath $outputPathLog -Encoding UTF8
           
@@ -419,11 +420,25 @@ jobs:
           # Extract output paths from build log
           Write-Host "`n=== Extracting Output Paths from Build Log ===" -ForegroundColor Cyan
           if (Test-Path $buildLog) {
-            $outputPaths = Select-String -Path $buildLog -Pattern "Output.*GameServer\.exe|Linking.*GameServer\.exe|Target.*GameServer\.exe|OutDir|OutputDirectory" -CaseSensitive:$false
+            # Look for actual output file paths
+            $outputPaths = Select-String -Path $buildLog -Pattern "Output.*GameServer\.exe|Linking.*GameServer\.exe|Target.*GameServer\.exe|OutDir|OutputDirectory|\.exe.*succeeded|Creating.*\.exe" -CaseSensitive:$false
             if ($outputPaths) {
               Write-Host "Found output path references:" -ForegroundColor Green
-              $outputPaths | Select-Object -First 10 | ForEach-Object {
+              $outputPaths | Select-Object -First 15 | ForEach-Object {
                 Write-Host "  $($_.Line.Trim())" -ForegroundColor Gray
+              }
+            }
+            
+            # Extract actual file paths from log
+            $exePaths = Select-String -Path $buildLog -Pattern "([A-Z]:[^:]*GameServer\.exe|\.\\[^:]*GameServer\.exe)" -CaseSensitive:$false
+            if ($exePaths) {
+              Write-Host "`nFound executable paths in log:" -ForegroundColor Green
+              $exePaths | Select-Object -First 5 | ForEach-Object {
+                $path = $_.Matches[0].Value
+                Write-Host "  $path" -ForegroundColor Cyan
+                if (Test-Path $path) {
+                  Write-Host "    -> File exists!" -ForegroundColor Green
+                }
               }
             }
           }
@@ -478,6 +493,40 @@ jobs:
             $lnk2019 | Select-Object -First 10 | ForEach-Object {
               $line = $_.Line -replace '.*LNK2019:\s*', ''
               Write-Host "  $line" -ForegroundColor Red
+            }
+          }
+          
+          # Check which projects were built successfully
+          Write-Host "`n=== Project Build Status ===" -ForegroundColor Cyan
+          $projectSuccess = Select-String -Path $buildLog -Pattern "Project.*succeeded|Project.*failed|Building.*\.vcxproj" -CaseSensitive:$false
+          if ($projectSuccess) {
+            Write-Host "Project build results:" -ForegroundColor Yellow
+            $projectSuccess | Select-Object -Last 20 | ForEach-Object {
+              if ($_.Line -match "succeeded|SUCCEEDED") {
+                Write-Host "  ✓ $($_.Line.Trim())" -ForegroundColor Green
+              } elseif ($_.Line -match "failed|FAILED|error") {
+                Write-Host "  ✗ $($_.Line.Trim())" -ForegroundColor Red
+              } else {
+                Write-Host "  ? $($_.Line.Trim())" -ForegroundColor Gray
+              }
+            }
+          }
+          
+          # Check for skipped projects
+          $skippedProjects = Select-String -Path $buildLog -Pattern "Skipping|skipping|will not be built" -CaseSensitive:$false
+          if ($skippedProjects) {
+            Write-Host "`nWARNING: Some projects were skipped:" -ForegroundColor Yellow
+            $skippedProjects | Select-Object -First 10 | ForEach-Object {
+              Write-Host "  $($_.Line.Trim())" -ForegroundColor Yellow
+            }
+          }
+          
+          # Check if NNOGameServer project was built
+          $gameServerBuild = Select-String -Path $buildLog -Pattern "NNOGameServer.*Build|Building.*NNOGameServer" -CaseSensitive:$false
+          if ($gameServerBuild) {
+            Write-Host "`nNNOGameServer build status:" -ForegroundColor Cyan
+            $gameServerBuild | Select-Object -Last 5 | ForEach-Object {
+              Write-Host "  $($_.Line.Trim())" -ForegroundColor $(if ($_.Line -match "succeeded") { "Green" } else { "Yellow" })
             }
           }
           
@@ -671,15 +720,19 @@ jobs:
         Write-Host "Looking for target executable: $targetExe" -ForegroundColor Cyan
         
         # Common output locations for Visual Studio projects
+        # MSBuild typically outputs to: $(SolutionDir)$(Platform)\$(Configuration)\
         $searchPaths = @(
           "Debug\$targetExe",
           "Debug\Win32\$targetExe",
           "Win32\Debug\$targetExe",
+          "$env:BUILD_PLATFORM\$env:BUILD_CONFIGURATION\$targetExe",
+          "$env:BUILD_CONFIGURATION\$targetExe",
           "Release\$targetExe",
           "Release\Win32\$targetExe",
           "Win32\Release\$targetExe",
           "bin\Debug\$targetExe",
           "bin\Release\$targetExe",
+          "bin\$env:BUILD_PLATFORM\$env:BUILD_CONFIGURATION\$targetExe",
           "$targetExe",
           ".\$targetExe"
         )
@@ -750,6 +803,28 @@ jobs:
             $exeFiles | Select-Object FullName, @{Name="Size(KB)";Expression={[math]::Round($_.Length/1KB,2)}} | Format-Table -AutoSize
             $foundOutputs = $true
             $allFoundFiles += $exeFiles
+          }
+        }
+        
+        # Search in solution-level output directories (common for solution builds)
+        if (-not $foundOutputs) {
+          Write-Host "Searching in solution-level output directories..." -ForegroundColor Yellow
+          $solutionOutputDirs = @(
+            "$env:BUILD_PLATFORM\$env:BUILD_CONFIGURATION",
+            "$env:BUILD_CONFIGURATION\$env:BUILD_PLATFORM",
+            ".\$env:BUILD_PLATFORM\$env:BUILD_CONFIGURATION"
+          )
+          foreach ($dir in $solutionOutputDirs) {
+            if (Test-Path $dir) {
+              Write-Host "Checking: $dir" -ForegroundColor Gray
+              $exeFiles = Get-ChildItem $dir -Filter "*.exe" -ErrorAction SilentlyContinue
+              if ($exeFiles) {
+                Write-Host "OK: Found .exe files in $dir:" -ForegroundColor Green
+                $exeFiles | Select-Object FullName, @{Name="Size(KB)";Expression={[math]::Round($_.Length/1KB,2)}} | Format-Table -AutoSize
+                $foundOutputs = $true
+                $allFoundFiles += $exeFiles
+              }
+            }
           }
         }
         
