@@ -57,7 +57,8 @@
       <OptimizeReferences>false</OptimizeReferences>
     </Link>
     <PreBuildEvent>
-      <Command>if exist "..\utilities\bin\structparser.exe" ("..\utilities\bin\structparser.exe" X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)) else (echo structparser.exe not found, skipping pre-build step)</Command>
+      <Command>if exist "..\utilities\bin\structparser.exe" ("..\utilities\bin\structparser.exe" X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)) else (echo structparser.exe not found, skipping pre-build step)
+exit /b 0</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">
@@ -74,7 +75,8 @@
       <OptimizeReferences>false</OptimizeReferences>
     </Link>
     <PreBuildEvent>
-      <Command>if exist "..\utilities\bin\structparser.exe" ("..\utilities\bin\structparser.exe" X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)) else (echo structparser.exe not found, skipping pre-build step)</Command>
+      <Command>if exist "..\utilities\bin\structparser.exe" ("..\utilities\bin\structparser.exe" X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)) else (echo structparser.exe not found, skipping pre-build step)
+exit /b 0</Command>
     </PreBuildEvent>
     <ResourceCompile>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
