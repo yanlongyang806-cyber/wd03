@@ -404,11 +404,14 @@ jobs:
           # Build and capture output
           # Note: For solution builds, MSBuild uses default output paths
           # Output typically goes to: $(SolutionDir)$(Platform)\$(Configuration)\
-          # Skip pre-build events since structparser.exe is not available in CI
+          # Disable ALL pre-build events globally since structparser.exe is not available in CI
+          # This affects all projects in the solution
           msbuild $buildTarget `
             /p:Configuration=$env:BUILD_CONFIGURATION `
             /p:Platform=$env:BUILD_PLATFORM `
+            /p:PreBuildEventUseInBuild=false `
             /p:SkipPreBuildEvent=true `
+            /p:PreBuildEvent= `
             /t:Build `
             /v:detailed `
             /nologo `
@@ -495,6 +498,20 @@ jobs:
             $lnk2019 | Select-Object -First 10 | ForEach-Object {
               $line = $_.Line -replace '.*LNK2019:\s*', ''
               Write-Host "  $line" -ForegroundColor Red
+            }
+          }
+          
+          # Check for pre-build event failures specifically
+          Write-Host "`n=== Pre-Build Event Failures ===" -ForegroundColor Cyan
+          $preBuildFailures = Select-String -Path $buildLog -Pattern "PreBuildEvent|pre-build|structparser|utilities.*bin" -CaseSensitive:$false
+          if ($preBuildFailures) {
+            Write-Host "Pre-build event related messages:" -ForegroundColor Yellow
+            $preBuildFailures | Select-Object -First 20 | ForEach-Object {
+              if ($_.Line -match "error|failed|not found|cannot") {
+                Write-Host "  ✗ $($_.Line.Trim())" -ForegroundColor Red
+              } else {
+                Write-Host "  ? $($_.Line.Trim())" -ForegroundColor Gray
+              }
             }
           }
           
