@@ -816,10 +816,10 @@ jobs:
           )
           foreach ($dir in $solutionOutputDirs) {
             if (Test-Path $dir) {
-              Write-Host "Checking: $dir" -ForegroundColor Gray
+              Write-Host "Checking: ${dir}" -ForegroundColor Gray
               $exeFiles = Get-ChildItem $dir -Filter "*.exe" -ErrorAction SilentlyContinue
               if ($exeFiles) {
-                Write-Host "OK: Found .exe files in $dir:" -ForegroundColor Green
+                Write-Host "OK: Found .exe files in ${dir}:" -ForegroundColor Green
                 $exeFiles | Select-Object FullName, @{Name="Size(KB)";Expression={[math]::Round($_.Length/1KB,2)}} | Format-Table -AutoSize
                 $foundOutputs = $true
                 $allFoundFiles += $exeFiles
