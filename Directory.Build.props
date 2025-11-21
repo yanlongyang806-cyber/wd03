@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!-- Global property to disable pre-build events in CI -->
+  <PropertyGroup>
+    <PreBuildEvent Condition="'$(SkipPreBuildEvent)' == 'true'"></PreBuildEvent>
+  </PropertyGroup>
+  
+  <!-- Override PreBuildEvent in all ItemDefinitionGroups -->
+  <ItemDefinitionGroup>
+    <PreBuildEvent Condition="'$(SkipPreBuildEvent)' == 'true'">
+      <Command></Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+</Project>
+
