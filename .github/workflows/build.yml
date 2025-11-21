@@ -366,13 +366,27 @@ jobs:
       id: build
       run: |
         Write-Host "=== Building GameServer ===" -ForegroundColor Cyan
+        $solutionPath = "NNOGameServer.sln"
         $projectPath = "NNOGameServer.vcxproj"
         $buildLog = "build.log"
         
+        Write-Host "Solution: $solutionPath" -ForegroundColor Gray
         Write-Host "Project: $projectPath" -ForegroundColor Gray
         Write-Host "Configuration: $env:BUILD_CONFIGURATION" -ForegroundColor Gray
         Write-Host "Platform: $env:BUILD_PLATFORM" -ForegroundColor Gray
         Write-Host ""
+        
+        # Check if solution file exists, use it if available
+        if (Test-Path $solutionPath) {
+          Write-Host "OK: Using solution file: $solutionPath" -ForegroundColor Green
+          $buildTarget = $solutionPath
+        } elseif (Test-Path $projectPath) {
+          Write-Host "WARNING: Solution file not found, using project file: $projectPath" -ForegroundColor Yellow
+          $buildTarget = $projectPath
+        } else {
+          Write-Host "ERROR: Neither solution nor project file found!" -ForegroundColor Red
+          exit 1
+        }
         
         # Check dependencies before building
         if ("${{ steps.check-deps.outputs.has_required }}" -ne "true") {
@@ -388,7 +402,7 @@ jobs:
         $outputPathLog = "output-paths.log"
         try {
           # Build and capture output
-          msbuild $projectPath `
+          msbuild $buildTarget `
             /p:Configuration=$env:BUILD_CONFIGURATION `
             /p:Platform=$env:BUILD_PLATFORM `
             /t:Build `
