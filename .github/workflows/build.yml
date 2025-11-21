@@ -404,9 +404,11 @@ jobs:
           # Build and capture output
           # Note: For solution builds, MSBuild uses default output paths
           # Output typically goes to: $(SolutionDir)$(Platform)\$(Configuration)\
+          # Skip pre-build events since structparser.exe is not available in CI
           msbuild $buildTarget `
             /p:Configuration=$env:BUILD_CONFIGURATION `
             /p:Platform=$env:BUILD_PLATFORM `
+            /p:SkipPreBuildEvent=true `
             /t:Build `
             /v:detailed `
             /nologo `
